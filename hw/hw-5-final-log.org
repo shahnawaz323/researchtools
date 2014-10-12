@@ -1,0 +1,46 @@
+#+STARTUP: showall
+
+# Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+#+TITLE:     Homework 5: Final log file submission
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     kurt@ccom.unh.edu
+#+DATE:      <2011-12-01 Thu>
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* TODO HOMEWORK
+  DEADLINE: <2011-12-06 Tue> by 5PM EDT
+
+- [ ] Make sure you have a log entry for each class.  You should have at
+  least 26 log entries.
+- [ ] Each day that there was class should have a top level org entry
+  ("*") with a date stamp that looks like <2011-12-02 Fri> ( C-c . )
+- [ ] Turn in your log file on the researchtools server as this file
+      ~/hw/05/log-$USER-$(date +%Y%m%d).org
+- [ ] Email mailto:kurt@ccom.unh.edu the md5 sum of the log file.  Do
+      not make this an attachment.
+  - The title must be "Research Tools Homework 5"
+- [ ] Tag each class with "class"
+
+You can transfer your log entry from your Ubuntu virtual machine using scp. 
+
+#+BEGIN_SRC sh
+scp yourlogfile.org yourusername@researchtools.ccom.nh:
+ssh researchtools.ccom.nh
+mkdir -p ~/hw/05
+mv yourlogfile.org ~/hw/05/log-$USER-$(date +%Y%m%d).org
+md5sum ~/hw/05/log-$USER-$(date +%Y%m%d).org 
+#+END_SRC
+
+Now email your md5sum to kurt@ccom.unh.edu with the title "research
+tools homework 5".
+
+If you want to verify the headings of your org-mode file, you can use
+S-TAB (that's shift and the tab key) to toggle outline modes or your
+can run these shell commands:
+
+#+BEGIN_SRC sh
+grep '^* ' ~/hw/05/log-$USER-$(date +%Y%m%d).org
+grep '^* ' ~/hw/05/log-$USER-$(date +%Y%m%d).org | wc -l
+#+END_SRC
+

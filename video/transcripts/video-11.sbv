@@ -1,0 +1,1628 @@
+0:00:01.649,0:00:05.560
+hello my name is courage where and today
+i'll be showing you
+
+0:00:05.560,0:00:09.649
+our research tools video number eleven
+python perfor
+
+0:00:09.649,0:00:11.249
+and i'll be talking about
+
+0:00:11.249,0:00:16.529
+the if construct while loops and
+command-line arguments
+
+0:00:16.529,0:00:20.200
+and will be did farther in the python
+last time we talked about
+
+0:00:20.200,0:00:21.420
+assignments function
+
+0:00:21.420,0:00:25.189
+ends and classes could be a building on
+those
+
+0:00:25.189,0:00:27.390
+so put up high pipeline
+
+0:00:27.390,0:00:29.810
+show inside and
+
+0:00:29.810,0:00:35.500
+permanent sold to typewriter on which is
+our against child the regular papon
+
+0:00:35.500,0:00:36.860
+and
+
+0:00:36.860,0:00:38.320
+dash dash
+
+0:00:38.320,0:00:40.930
+thailand
+
+0:00:40.930,0:00:45.539
+than our inside as i a python shell and
+let's take a quick look have the
+
+0:00:45.539,0:00:47.880
+if construct that lets you ask
+
+0:00:47.880,0:00:48.879
+yes no question
+
+0:00:48.879,0:00:51.930
+means and make decisions based on that
+
+0:00:51.930,0:00:54.169
+uh... let's take a quick drive-through
+
+0:00:54.169,0:00:55.440
+the basic if
+
+0:00:55.440,0:00:56.600
+syntax
+
+0:00:56.600,0:00:58.010
+will say gift
+
+0:00:58.010,0:01:03.760
+and then you give a true or false
+mistakes were disconnected troop
+
+0:01:03.760,0:01:05.310
+yes
+
+0:01:05.310,0:01:06.520
+press enter
+
+0:01:06.520,0:01:10.980
+i remember hearing type on that
+indentation controls our blocks of this
+
+0:01:10.980,0:01:13.390
+indentation start of the block
+
+0:01:13.390,0:01:15.220
+and then all blank line
+
+0:01:15.220,0:01:16.890
+ended up
+
+0:01:16.890,0:01:19.810
+so what happened here is we had if
+passed
+
+0:01:19.810,0:01:24.080
+uh... expression or thing that was
+evaluated its true or false comes in
+
+0:01:24.080,0:01:26.740
+next haven't followed up with the colon
+
+0:01:26.740,0:01:30.820
+and then if that's true what's in here
+is ron phillips to the
+
+0:01:30.820,0:01:32.770
+profits will say if
+
+0:01:32.770,0:01:34.720
+false
+
+0:01:34.720,0:01:36.050
+print
+
+0:01:36.050,0:01:37.020
+yes
+
+0:01:37.020,0:01:37.979
+now in this case
+
+0:01:37.979,0:01:41.999
+or not dennis the printed because this
+is false and so what's inside his mouth
+
+0:01:41.999,0:01:43.810
+around
+
+0:01:43.810,0:01:45.170
+so there was no
+
+0:01:45.170,0:01:46.710
+uh... yes
+
+0:01:46.710,0:01:51.530
+now lets out put that together we can
+also have a case for uh... if true we
+
+0:01:51.530,0:01:55.360
+could also have a house if it's falsely
+to take care
+
+0:01:55.360,0:01:56.930
+true
+
+0:01:56.930,0:01:57.860
+print
+
+0:01:57.860,0:02:02.259
+yes
+
+0:02:02.259,0:02:04.899
+back appear cults
+
+0:02:04.899,0:02:08.609
+and print
+
+0:02:08.609,0:02:12.379
+so in this case since this is true is
+gonna print yes it is not educating
+
+0:02:12.379,0:02:14.589
+themselves blocks will try to have
+
+0:02:14.589,0:02:16.930
+amplitude yes
+
+0:02:16.930,0:02:20.559
+and i have apparent weisman going back
+and at this here
+
+0:02:20.559,0:02:23.839
+it's a little bit we're inside i think
+one of the editing like this
+
+0:02:23.839,0:02:26.510
+so it's a false
+
+0:02:26.510,0:02:28.980
+and we'll go ahead and print
+
+0:02:28.980,0:02:30.030
+answered and
+
+0:02:30.030,0:02:35.269
+it should print no because this is false
+or something else
+
+0:02:35.269,0:02:36.030
+payens
+
+0:02:36.030,0:02:38.170
+then it will continue on through
+
+0:02:38.170,0:02:41.629
+temp right now
+
+0:02:41.629,0:02:45.149
+now in terms of expressions the kind of
+things you can put in there is anything
+
+0:02:45.149,0:02:48.929
+you want that if i was a true or false
+and that's the tide pools so please stay
+
+0:02:48.929,0:02:50.839
+tight
+
+0:02:50.839,0:02:52.729
+uh... faults
+
+0:02:52.729,0:02:56.290
+comes out to type
+
+0:02:56.290,0:02:59.829
+seeking a simple things like this one
+equaled one
+
+0:02:59.829,0:03:01.369
+the answers true
+
+0:03:01.369,0:03:04.129
+is it not equal that's false
+
+0:03:04.129,0:03:04.819
+youporn
+
+0:03:04.819,0:03:06.389
+greater van
+
+0:03:06.389,0:03:10.719
+or prisoner equal to anything along
+those lines that if i was a true or
+
+0:03:10.719,0:03:14.539
+false it can be uh... while complicate
+expressions with lots of pregnancies
+
+0:03:14.539,0:03:17.019
+because they wind equals two
+
+0:03:17.019,0:03:18.699
+eagle forum
+
+0:03:18.699,0:03:20.989
+and to equals two
+
+0:03:20.989,0:03:26.049
+this is the logical and operator
+
+0:03:26.049,0:03:28.789
+conceded not here recipient
+
+0:03:28.789,0:03:31.949
+and also say
+
+0:03:31.949,0:03:36.319
+or
+
+0:03:36.319,0:03:38.759
+seeking for a whole range of expression
+so
+
+0:03:38.759,0:03:39.559
+here
+
+0:03:39.559,0:03:43.810
+one does not equal to one and two cycles
+to use the word testing
+
+0:03:43.810,0:03:47.789
+various things that you can also do you
+some fun string comparisons
+
+0:03:47.789,0:03:49.169
+we can say
+
+0:03:49.169,0:03:51.099
+is
+
+0:03:51.099,0:03:52.409
+hell
+
+0:03:52.409,0:03:54.049
+in
+
+0:03:54.049,0:03:55.239
+hello
+
+0:03:55.239,0:03:57.739
+world
+
+0:03:57.739,0:04:01.739
+seeking to string test where you can say
+is something inside of
+
+0:04:01.739,0:04:05.199
+about how we can also do things like
+
+0:04:05.199,0:04:07.900
+let's say four and
+
+0:04:07.900,0:04:09.629
+wind
+
+0:04:09.629,0:04:11.799
+seven
+
+0:04:11.799,0:04:14.219
+false but that if we threw off
+
+0:04:14.219,0:04:15.869
+for analyst
+
+0:04:15.869,0:04:18.820
+then force actually inside of our list
+
+0:04:18.820,0:04:22.270
+so we can do some simple tests about
+things and we can look for patterns and
+
+0:04:22.270,0:04:24.710
+strings
+
+0:04:24.710,0:04:28.389
+three simple but it gets a lot of time
+there's also a really handy
+
+0:04:28.389,0:04:31.090
+and new functionality impact on that
+wasn't there
+
+0:04:31.090,0:04:32.639
+all along
+
+0:04:32.639,0:04:34.659
+at something like a statement
+
+0:04:34.659,0:04:35.650
+that lets you
+
+0:04:35.650,0:04:38.089
+composed stuff so they can say
+
+0:04:38.089,0:04:41.309
+with the right equal
+
+0:04:41.309,0:04:44.630
+if more when he calls zero
+
+0:04:44.630,0:04:46.949
+adults
+
+0:04:46.949,0:04:49.090
+not really
+
+0:04:49.090,0:04:53.150
+kal
+
+0:04:53.150,0:04:55.630
+and what this is as you have a statement
+
+0:04:55.630,0:04:58.580
+that will get returned
+
+0:04:58.580,0:05:01.479
+this is true otherwise
+
+0:05:01.479,0:05:04.100
+it's gonna return
+
+0:05:04.100,0:05:04.820
+and
+
+0:05:04.820,0:05:11.020
+what you can do with that if you can do
+simple things like
+
+0:05:11.020,0:05:13.079
+warranty cool
+
+0:05:13.079,0:05:16.339
+zero
+
+0:05:16.339,0:05:19.389
+is
+
+0:05:19.389,0:05:26.389
+mimicking profitable section here
+
+0:05:26.690,0:05:27.979
+paste
+
+0:05:27.979,0:05:30.139
+hands
+
+0:05:30.139,0:05:31.889
+and more tax
+
+0:05:31.889,0:05:33.659
+c cancer building up
+
+0:05:33.659,0:05:37.110
+westchester knows and things like that
+based on your daily cash anecdotal
+
+0:05:37.110,0:05:38.549
+reports that
+
+0:05:38.549,0:05:41.089
+that make a nicely formatted report out
+of
+
+0:05:41.089,0:05:42.460
+your result
+
+0:05:42.460,0:05:45.460
+soaking here are a little string got put
+in there
+
+0:05:45.460,0:05:52.460
+and everyone that and it's a
+
+0:05:54.069,0:05:56.150
+this then changed course
+
+0:05:56.150,0:05:59.249
+so you can get this really nice things
+like yes or no
+
+0:05:59.249,0:06:03.789
+and other such things as you do your
+reports they worked pretty well
+
+0:06:03.789,0:06:06.199
+uh...
+
+0:06:06.199,0:06:09.169
+and you can also view sign it's a very
+bills that we've heard this week so we
+
+0:06:09.169,0:06:12.159
+can stay in service
+
+0:06:12.159,0:06:14.110
+uh... he calls
+
+0:06:14.110,0:06:16.100
+yes here
+
+0:06:16.100,0:06:17.750
+true
+
+0:06:17.750,0:06:23.870
+zip reporting if they could see it
+corrupts else
+
+0:06:23.870,0:06:24.639
+answer
+
+0:06:24.639,0:06:25.810
+yes
+
+0:06:25.810,0:06:28.069
+and if we did
+
+0:06:28.069,0:06:31.360
+through its false still say
+
+0:06:31.360,0:06:33.770
+and in
+
+0:06:33.770,0:06:35.769
+come before coming
+
+0:06:35.769,0:06:38.120
+six
+
+0:06:38.120,0:06:40.620
+cancer
+
+0:06:40.620,0:06:41.519
+and that way
+
+0:06:41.519,0:06:44.229
+it worked really well for being able to
+you
+
+0:06:44.229,0:06:49.139
+uh... create some quick variables that
+you can use later on
+
+0:06:49.139,0:06:50.290
+uh... okay
+
+0:06:50.290,0:06:54.639
+so let's go over to you
+
+0:06:54.639,0:06:56.090
+are
+
+0:06:56.090,0:06:57.529
+peanuts window
+
+0:06:57.529,0:06:58.480
+animated
+
+0:06:58.480,0:07:00.819
+jump over to our
+
+0:07:00.819,0:07:04.169
+display here and we're gonna go ahead
+and try and work with some command-line
+
+0:07:04.169,0:07:05.319
+arguments
+
+0:07:05.319,0:07:06.099
+and
+
+0:07:06.099,0:07:07.909
+uh... for a look at
+
+0:07:07.909,0:07:10.849
+some simple things were as they tried
+
+0:07:10.849,0:07:12.999
+arg stockpiled
+
+0:07:12.999,0:07:14.770
+yourselves a little thing
+
+0:07:14.770,0:07:16.219
+in israeli girl
+
+0:07:16.219,0:07:16.919
+and
+
+0:07:16.919,0:07:20.439
+there's a special variable and placed on
+that helps you work with running
+
+0:07:20.439,0:07:21.519
+programs
+
+0:07:21.519,0:07:25.509
+so if we
+
+0:07:25.509,0:07:26.939
+name
+
+0:07:26.939,0:07:30.549
+this is a very special variable that
+changes its value depending on where it
+
+0:07:30.549,0:07:32.029
+is if it's in there
+
+0:07:32.029,0:07:34.090
+international running program
+
+0:07:34.090,0:07:36.400
+uh... it's actually in
+
+0:07:36.400,0:07:40.499
+set two main but if it's inside of a
+module when it's being called itself the
+
+0:07:40.499,0:07:41.819
+module name
+
+0:07:41.819,0:07:45.009
+so we'll go ahead and stay
+
+0:07:45.009,0:07:48.129
+underscores for name controller scored
+
+0:07:48.129,0:07:51.780
+inside of our trek art
+
+0:07:51.780,0:07:53.509
+and if we
+
+0:07:53.509,0:07:54.780
+run
+
+0:07:54.780,0:07:56.840
+try args
+
+0:07:56.840,0:07:58.310
+you'll see that sets in maine
+
+0:07:58.310,0:08:02.349
+but if we do imports try args
+
+0:08:02.349,0:08:03.810
+it's set to
+
+0:08:03.810,0:08:09.650
+the name of the module which is charged
+three sinking as the final down here
+
+0:08:09.650,0:08:13.030
+so what we can do in fact as we can say
+if
+
+0:08:13.030,0:08:15.089
+underscore name
+
+0:08:15.089,0:08:17.129
+because
+
+0:08:17.129,0:08:21.379
+main
+
+0:08:21.379,0:08:23.300
+too
+
+0:08:23.300,0:08:25.419
+policy act
+
+0:08:25.419,0:08:27.379
+whitey program
+
+0:08:27.379,0:08:29.639
+otherwise
+
+0:08:29.639,0:08:33.669
+uh... don't do that and acts like a
+module if you just load so we can say
+
+0:08:33.669,0:08:36.410
+print
+
+0:08:36.410,0:08:38.000
+and we can put that
+
+0:08:38.000,0:08:39.340
+inside of there
+
+0:08:39.340,0:08:42.080
+so we can say
+
+0:08:42.080,0:08:43.950
+we wanted to get main back
+
+0:08:43.950,0:08:47.770
+and if we and now we have to review
+reloaded
+
+0:08:47.770,0:08:52.060
+uh... trying cards because this is a
+module and once thought it it stays in
+
+0:08:52.060,0:08:56.430
+the most u_s_ chetori voted to keep
+important
+
+0:08:56.430,0:08:59.250
+and if you didn't print anything out of
+stock
+
+0:08:59.250,0:09:04.210
+so it's very unique and white typically
+tend to do with programs will say make a
+
+0:09:04.210,0:09:06.180
+function called main
+
+0:09:06.180,0:09:11.620
+animals say data
+
+0:09:11.620,0:09:14.560
+expert name
+
+0:09:14.560,0:09:15.730
+and that way
+
+0:09:15.730,0:09:19.630
+you have a function that you can use in
+the cancer really try arts and you could
+
+0:09:19.630,0:09:24.130
+always caught from inside of here
+working to try it works main
+
+0:09:24.130,0:09:26.210
+and we have are sort of me
+
+0:09:26.210,0:09:30.320
+so we have that option available to its
+whatever it was like
+
+0:09:30.320,0:09:34.570
+very handy but let's take a look at me
+and my arguments him for a start looking
+
+0:09:34.570,0:09:38.630
+into the standard library to come to a
+place on its it's chock full of helpful
+
+0:09:38.630,0:09:39.870
+utilities
+
+0:09:39.870,0:09:41.580
+and we're gonna comport
+
+0:09:41.580,0:09:45.690
+six two six module contains all sorts of
+system related stuff
+
+0:09:45.690,0:09:50.760
+success period in the region pressed
+having and see lots of
+
+0:09:50.760,0:09:54.440
+things are insiders how module space
+
+0:09:54.440,0:09:58.010
+and who only want is partly
+
+0:09:58.010,0:10:00.210
+amplitude party question mark
+
+0:10:00.210,0:10:04.880
+that it's actually a list sister harvey
+let's take a look what's in there
+
+0:10:04.880,0:10:08.400
+these are the command line arguments
+that we used for calling our python
+
+0:10:08.400,0:10:09.390
+script
+
+0:10:09.390,0:10:12.940
+so let's go ahead king and in here
+
+0:10:12.940,0:10:17.710
+for clinton import taxes a typically you
+put your imports for a particular file i
+
+0:10:17.710,0:10:19.590
+thought at the top
+
+0:10:19.590,0:10:22.660
+analyst take a look at
+
+0:10:22.660,0:10:25.070
+psystar party
+
+0:10:25.070,0:10:28.640
+and what does that can it be equal to so
+will go ahead and tied
+
+0:10:28.640,0:10:32.450
+system apart the interest of printout
+that memory mister coming into our
+
+0:10:32.450,0:10:33.750
+script
+
+0:10:33.750,0:10:36.350
+and let's go ahead and ron
+
+0:10:36.350,0:10:37.940
+try
+
+0:10:37.940,0:10:39.680
+so in there
+
+0:10:39.680,0:10:41.990
+just for her to meet their and
+
+0:10:41.990,0:10:46.200
+with women argument if route back to the
+shell scripting sections
+
+0:10:46.200,0:10:48.140
+we can put arguments after it
+
+0:10:48.140,0:10:50.170
+with israeli hello
+
+0:10:50.170,0:10:51.230
+world
+
+0:10:51.230,0:10:54.530
+presenter and will now see that it
+breaks out into
+
+0:10:54.530,0:10:56.010
+one argument
+
+0:10:56.010,0:10:58.690
+he states that we have a hell of a world
+
+0:10:58.690,0:11:01.220
+we could have two members want to you
+
+0:11:01.220,0:11:03.000
+one thousand
+
+0:11:03.000,0:11:06.250
+and weakened and work with those
+
+0:11:06.250,0:11:09.670
+pretty he needs to be a list of file
+names that could be a list of say
+
+0:11:09.670,0:11:14.190
+computers to connect to you working to
+process for jobs that you
+
+0:11:14.190,0:11:16.220
+to be any number of things
+
+0:11:16.220,0:11:19.700
+and this is the very simple wages
+crossing manner and so what we could do
+
+0:11:19.700,0:11:21.290
+this we can say
+
+0:11:21.290,0:11:25.220
+for
+
+0:11:25.220,0:11:26.870
+argument may be easier
+
+0:11:26.870,0:11:30.410
+in system argh
+
+0:11:30.410,0:11:33.020
+and print
+
+0:11:33.020,0:11:37.970
+pertinent
+
+0:11:37.970,0:11:41.270
+so go ahead and we'll get that fixed
+right
+
+0:11:41.270,0:11:44.870
+and you can see in argument karate to
+those things
+
+0:11:44.870,0:11:47.720
+and remember in python we can actually
+uh...
+
+0:11:47.720,0:11:51.050
+count those if you want to make it
+speaking numerator that really can t
+
+0:11:51.050,0:11:52.099
+functions
+
+0:11:52.099,0:11:55.030
+contract brennan's a list of things
+
+0:11:55.030,0:11:59.650
+and then we can say
+
+0:11:59.650,0:12:00.529
+uh...
+
+0:12:00.529,0:12:03.120
+underscored the killed readable
+
+0:12:03.120,0:12:05.600
+and
+
+0:12:05.600,0:12:09.970
+satis hard
+
+0:12:09.970,0:12:12.530
+org
+
+0:12:12.530,0:12:15.980
+so for running this it's going to look
+through it it'll put in the argument
+
+0:12:15.980,0:12:17.210
+number here
+
+0:12:17.210,0:12:18.720
+and in the apartment and
+
+0:12:18.720,0:12:19.960
+and arguments
+
+0:12:19.960,0:12:21.670
+and lived through each time
+
+0:12:21.670,0:12:24.450
+and right
+
+0:12:24.450,0:12:27.570
+making to you interesting things there's
+uh...
+
+0:12:27.570,0:12:28.540
+continuing
+
+0:12:28.540,0:12:30.980
+is a
+
+0:12:30.980,0:12:33.430
+function that
+
+0:12:33.430,0:12:35.440
+at the reserve were that you can call
+
+0:12:35.440,0:12:41.880
+that will jump around the loop if you
+forget something so we can say
+
+0:12:41.880,0:12:45.390
+hell
+
+0:12:45.390,0:12:47.860
+in
+
+0:12:47.860,0:12:51.560
+argument soren test to see if
+
+0:12:51.560,0:12:56.080
+though the word helen's inside of that
+string
+
+0:12:56.080,0:12:58.340
+hanging in here
+
+0:12:58.340,0:13:00.980
+one cents with our continuing
+
+0:13:00.980,0:13:04.160
+and annual have uh... quick
+
+0:13:04.160,0:13:05.689
+jump around so we need it
+
+0:13:05.689,0:13:08.310
+this if you see hal inside of the line
+
+0:13:08.310,0:13:11.130
+it comes down here jumps into this
+section
+
+0:13:11.130,0:13:15.160
+pat calls the continue looking teen
+doesnt is skipping this below uh... jump
+
+0:13:15.160,0:13:17.050
+up to the top
+
+0:13:17.050,0:13:22.780
+are hello parties disappear from this
+list let's go ahead and try it
+
+0:13:22.780,0:13:25.710
+and so up hello disappeared
+
+0:13:25.710,0:13:31.160
+and if you can make a little bit more
+obvious prince
+
+0:13:31.160,0:13:35.530
+skip
+
+0:13:35.530,0:13:38.540
+try that and could see a print skip
+allen
+
+0:13:38.540,0:13:42.880
+so this way you can loop around and what
+we can also do is you can
+
+0:13:42.880,0:13:44.509
+you something called breaking
+
+0:13:44.509,0:13:47.790
+and break will completely break out of
+the four-legged animal style continues
+
+0:13:47.790,0:13:50.370
+it won't continue on the table test
+
+0:13:50.370,0:13:52.090
+jump right out of it
+
+0:13:52.090,0:13:54.260
+will save print
+
+0:13:54.260,0:13:56.120
+tonya
+
+0:13:56.120,0:13:57.780
+well for
+
+0:13:57.780,0:14:00.140
+suing over time with her for live here
+
+0:14:00.140,0:14:01.450
+most a_t_f_
+
+0:14:01.450,0:14:04.910
+too
+
+0:14:04.910,0:14:10.740
+and arguments
+
+0:14:10.740,0:14:15.590
+to print
+
+0:14:15.590,0:14:20.150
+so what this will do it when it sees it
+number two you inside of that string
+
+0:14:20.150,0:14:23.680
+what it will do and that's the character
+to not be actually jer
+
+0:14:23.680,0:14:25.640
+it will then print give up
+
+0:14:25.640,0:14:27.000
+the breakthrough will
+
+0:14:27.000,0:14:29.240
+jump back at this for a loop till the
+end of this
+
+0:14:29.240,0:14:31.130
+the poorly did not do the rest of it
+
+0:14:31.130,0:14:33.300
+and jump down to the print at the bottom
+
+0:14:33.300,0:14:36.320
+let's go ahead and try this
+
+0:14:36.320,0:14:37.329
+run
+
+0:14:37.329,0:14:39.100
+and if we take a look here
+
+0:14:39.100,0:14:41.320
+we start off with are
+
+0:14:41.320,0:14:43.950
+printed sort of maine right there
+
+0:14:43.950,0:14:47.060
+then we're gonna hit
+
+0:14:47.060,0:14:52.890
+proved to be argue so of arguments cup
+ran out on this one right here
+
+0:14:52.890,0:14:55.990
+and now before that starts came
+
+0:14:55.990,0:14:59.010
+border first argument here
+
+0:14:59.010,0:15:03.720
+will come through they'd hell is not in
+our argument
+
+0:15:03.720,0:15:07.700
+she was not an argument so we're going
+to print and arguments which is right
+
+0:15:07.700,0:15:08.610
+here
+
+0:15:08.610,0:15:11.060
+come back around we have hello
+
+0:15:11.060,0:15:14.110
+and hello is in the ordinance will print
+
+0:15:14.110,0:15:14.970
+are
+
+0:15:14.970,0:15:16.260
+skip help
+
+0:15:16.260,0:15:20.160
+and then we'll say continue which just
+the top and keeps going
+
+0:15:20.160,0:15:24.380
+come back through it we have world walsh
+will use the sprints down here
+
+0:15:24.380,0:15:28.170
+and argument one yep that comes early
+and a prince
+
+0:15:28.170,0:15:32.550
+inhabit do inner strength
+
+0:15:32.550,0:15:35.980
+the heck if two argument yet so will
+give up
+
+0:15:35.980,0:15:37.120
+and
+
+0:15:37.120,0:15:39.510
+call this break which was going to hear
+
+0:15:39.510,0:15:43.160
+exit how to perform moved out to our
+print
+
+0:15:43.160,0:15:46.010
+and then you're program
+
+0:15:46.010,0:15:50.450
+so that's the basics of nehemiah are
+crossing we be brought back the for loop
+
+0:15:50.450,0:15:51.500
+a little bit
+
+0:15:51.500,0:15:55.080
+and review some of our guest s
+
+0:15:55.080,0:15:57.319
+she's quite nice uh... now
+
+0:15:57.319,0:16:01.960
+a couple things to look at it and tight
+on is there's this r_e_m_ python
+
+0:16:01.960,0:16:03.440
+menu item of the top
+
+0:16:03.440,0:16:07.320
+and right now it just says a recent
+let's go ahead and
+
+0:16:07.320,0:16:09.590
+riskin
+
+0:16:09.590,0:16:11.960
+and what i did is it looks through
+
+0:16:11.960,0:16:13.980
+are
+
+0:16:13.980,0:16:16.770
+and tried to find anything that you
+about dedicated
+
+0:16:16.770,0:16:18.129
+give us as a hanger
+
+0:16:18.129,0:16:22.100
+hanger to tack to jump to use of these
+are markers out functions classes things
+
+0:16:22.100,0:16:23.400
+like that
+
+0:16:23.400,0:16:26.000
+so if we say
+
+0:16:26.000,0:16:27.580
+hello
+
+0:16:27.580,0:16:31.320
+worlds
+
+0:16:31.320,0:16:32.129
+poll
+
+0:16:32.129,0:16:34.470
+world
+
+0:16:34.470,0:16:36.420
+i am python doesn't have it
+
+0:16:36.420,0:16:38.100
+at the hickory scam
+
+0:16:38.100,0:16:41.990
+it now has hello world so it knows about
+what's in your file
+
+0:16:41.990,0:16:43.940
+went three standard
+
+0:16:43.940,0:16:47.240
+uh... now which also say
+
+0:16:47.240,0:16:48.620
+mine
+
+0:16:48.620,0:16:49.990
+list
+
+0:16:49.990,0:16:54.400
+equals one and
+
+0:16:54.400,0:16:59.430
+we've got some western cleary skinless
+
+0:16:59.430,0:17:04.029
+there's nothing in there so if we go
+over to believe it's tools
+
+0:17:04.029,0:17:08.830
+you wanna make sure you turn on self
+source code per search semantic
+
+0:17:08.830,0:17:12.010
+with this is is extra functionality that
+lets it
+
+0:17:12.010,0:17:14.429
+understand your source code
+
+0:17:14.429,0:17:15.949
+turnout on
+
+0:17:15.949,0:17:19.480
+and will go ahead and put risky and if
+this works
+
+0:17:19.480,0:17:23.620
+and now it knows a lot more about your
+coded knows about variables
+
+0:17:23.620,0:17:25.520
+so there's my list again
+
+0:17:25.520,0:17:27.750
+jump to that mylist
+
+0:17:27.750,0:17:32.330
+functions in owes a lot all the
+functions we can't jump to main
+
+0:17:32.330,0:17:33.980
+and minku
+
+0:17:33.980,0:17:35.759
+imports it flows into art
+
+0:17:35.759,0:17:37.750
+importance
+
+0:17:37.750,0:17:39.700
+hard coded knows about
+
+0:17:39.700,0:17:42.600
+cinder blocks we've got to talk to him
+
+0:17:42.600,0:17:45.440
+so it's our biggest block down here
+
+0:17:45.440,0:17:47.150
+and what this is
+
+0:17:47.150,0:17:50.640
+is a helper to get you around the files
+it's figure we've been working with very
+
+0:17:50.640,0:17:52.520
+tiny files at this point
+
+0:17:52.520,0:17:56.080
+and they haven't spent big enough to
+really need to have
+
+0:17:56.080,0:17:58.370
+helpers to find what square peg
+
+0:17:58.370,0:18:02.340
+insanity max there's a lot of tools to
+help you manage your code and figure out
+
+0:18:02.340,0:18:04.169
+what's where
+
+0:18:04.169,0:18:07.970
+now i'm actually a couple of things to
+help you break after code and to to make
+
+0:18:07.970,0:18:10.299
+it more usable
+
+0:18:10.299,0:18:14.120
+there's a couple things you can do one
+of which is just style once if if say
+
+0:18:14.120,0:18:17.170
+you want to put a comment to break
+things up
+
+0:18:17.170,0:18:19.470
+we can do something like this so i mean
+
+0:18:19.470,0:18:22.220
+teach you first a quick imax
+
+0:18:22.220,0:18:25.390
+proper which is control you
+
+0:18:25.390,0:18:29.700
+which is uh... a repeat of court
+arguments g so if it if we just use
+
+0:18:29.700,0:18:33.200
+control you and then i care for every
+type normally the repeat that character
+
+0:18:33.200,0:18:35.429
+four times a minute patent
+
+0:18:35.429,0:18:37.390
+for the comment
+
+0:18:37.390,0:18:40.260
+and it will do for the default is for
+
+0:18:40.260,0:18:41.830
+politically what for
+
+0:18:41.830,0:18:43.140
+will do control you
+
+0:18:43.140,0:18:44.480
+forty
+
+0:18:44.480,0:18:46.680
+so four zero
+
+0:18:46.680,0:18:49.080
+and in the pound character
+
+0:18:49.080,0:18:51.430
+and there will then be
+
+0:18:51.430,0:18:54.030
+pound signs
+
+0:18:54.030,0:18:57.890
+and you can use something like that to
+break apart your code if it helps you
+
+0:18:57.890,0:19:01.450
+huseyni logical groups of things they do
+you have a couple functions that are
+
+0:19:01.450,0:19:04.380
+together
+
+0:19:04.380,0:19:11.380
+and of world
+
+0:19:15.010,0:19:16.060
+so in this case
+
+0:19:16.060,0:19:21.490
+we've now logically blocked arco depart
+and equal to a bigger one here so you
+
+0:19:21.490,0:19:23.270
+seventy
+
+0:19:23.270,0:19:25.020
+and then talent
+
+0:19:25.020,0:19:27.480
+arbuckle
+
+0:19:27.480,0:19:29.080
+if test at the bottom
+
+0:19:29.080,0:19:30.760
+so we don't have
+
+0:19:30.760,0:19:34.560
+animal to hunt impact on a risky and
+then you'll see now we have functions we
+
+0:19:34.560,0:19:37.460
+can jump two things this way
+
+0:19:37.460,0:19:42.300
+or you can see them logically on the
+screen with these visual separators in
+
+0:19:42.300,0:19:44.670
+there to help out
+
+0:19:44.670,0:19:48.800
+now python also has helpers and these
+are called talks to ring to help you
+
+0:19:48.800,0:19:53.720
+understand some of what's going on
+sophie you did
+
+0:19:53.720,0:19:55.270
+sess
+
+0:19:55.270,0:19:59.660
+missus module with and tell you all
+sorts of documentation about itself
+
+0:19:59.660,0:20:03.330
+now that's actually stored inside of the
+python source code and we can write her
+
+0:20:03.330,0:20:06.800
+own dark strings so if we see reload
+
+0:20:06.800,0:20:09.680
+try are xd
+
+0:20:09.680,0:20:11.940
+speech were on a diet or
+
+0:20:11.940,0:20:15.690
+for for art period and that's haven't
+
+0:20:15.690,0:20:17.970
+we can now see that
+
+0:20:17.970,0:20:21.070
+we have a mixture of things
+unfortunately we've got some stuff from
+
+0:20:21.070,0:20:22.740
+coming from her directory
+
+0:20:22.740,0:20:24.290
+we've also got
+
+0:20:24.290,0:20:27.270
+some of our functions in here can say
+
+0:20:27.270,0:20:28.510
+hello world
+
+0:20:28.510,0:20:29.680
+question mark
+
+0:20:29.680,0:20:32.970
+and that what it says here is that
+there's no docs tracks one still create
+
+0:20:32.970,0:20:36.659
+what's called the doc string for hello
+world
+
+0:20:36.659,0:20:39.140
+after the first line of any function
+
+0:20:39.140,0:20:44.190
+work last or right after variable we can
+create the scarlet talks trying
+
+0:20:44.190,0:20:49.270
+documentation string explains what's in
+there
+
+0:20:49.270,0:20:53.190
+and in our case this function is pretty
+boring but the idea is because uh...
+
+0:20:53.190,0:20:56.330
+nice and especially if you've got like
+math or
+
+0:20:56.330,0:20:59.369
+simpson while contest going on so to
+function at your work
+
+0:20:59.369,0:21:01.100
+hiding behind the scenes
+
+0:21:01.100,0:21:04.080
+it's good to you purpose in here so
+print
+
+0:21:04.080,0:21:09.100
+hello world
+
+0:21:09.100,0:21:13.440
+so let's go ahead and save dont and
+we'll come back here and will say
+
+0:21:13.440,0:21:18.520
+realtor aren't animal hit the apparel
+and was asking again for that doctoring
+
+0:21:18.520,0:21:21.750
+so now you can see rihanna documentation
+string
+
+0:21:21.750,0:21:25.960
+and that's pretty handy
+
+0:21:25.960,0:21:29.870
+if uh... one line doesn't get to it for
+you because often times you need lots of
+
+0:21:29.870,0:21:33.070
+instructions to explain things we can
+say
+
+0:21:33.070,0:21:36.210
+this is eight multi
+
+0:21:36.210,0:21:39.010
+line description
+
+0:21:39.010,0:21:41.150
+right lots
+
+0:21:41.150,0:21:43.770
+lots about c
+
+0:21:43.770,0:21:46.240
+function
+
+0:21:46.240,0:21:51.100
+so in this case we've used the python
+tripleco conventions do a multi line
+
+0:21:51.100,0:21:52.840
+string
+
+0:21:52.840,0:21:55.309
+so the string starts right here and
+hands
+
+0:21:55.309,0:21:57.309
+down here
+
+0:21:57.309,0:22:01.039
+and moved it lets you write as much as
+you want them below so will go ahead and
+
+0:22:01.039,0:22:03.700
+reload
+
+0:22:03.700,0:22:04.890
+demo tape
+
+0:22:04.890,0:22:06.620
+uh... troy
+
+0:22:06.620,0:22:09.000
+parks dot
+
+0:22:09.000,0:22:12.220
+tom and reduce birth name
+
+0:22:12.220,0:22:15.000
+and let's ask it for help on that one
+
+0:22:15.000,0:22:21.470
+and so now you can see that there's
+multiple lines of help written there
+
+0:22:21.470,0:22:24.750
+writing good documentation is so
+important how when you're just messing
+
+0:22:24.750,0:22:27.670
+around trying to figure something out
+may pop in at the time to write
+
+0:22:27.670,0:22:31.690
+documentation before you walk away from
+your coding let it sit for
+
+0:22:31.690,0:22:33.730
+days weeks months years
+
+0:22:33.730,0:22:36.910
+then you should be racing doctor-patient
+making sure that
+
+0:22:36.910,0:22:39.080
+everything that you do is explains
+
+0:22:39.080,0:22:41.100
+what may be obvious to you today
+
+0:22:41.100,0:22:44.650
+is not likely obvious to you in years to
+come or
+
+0:22:44.650,0:22:46.020
+uh... to other people
+
+0:22:46.020,0:22:49.840
+it's important to be with you that
+
+0:22:49.840,0:22:52.379
+and uh... i think that's all we have for
+now
+
+0:22:52.379,0:22:56.309
+this should get you going on creating
+someplace on code
+
+0:22:56.309,0:22:59.450
+we're gonna do a couple more concerts
+and then delete into you actually
+
+0:22:59.450,0:23:02.370
+working with some data and com thank you
+for joining
+

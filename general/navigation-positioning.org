@@ -1,0 +1,62 @@
+#+BEGIN_COMMENT
+Local Variables:
+mode: org
+mode: flyspell
+mode: auto-fill
+End:
+#+END_COMMENT
+
+#+STARTUP: showall
+
+#+TITLE:     Chapter XXX: Navigation, Positioning and Time
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu>
+#+DATE:      $Date: $
+#+DESCRIPTION: Marine Research Data Manipulation and Practices - Databases
+#+TEXT:      $Id: kurt-2010.org 13030 2010-01-14 13:33:15Z schwehr $
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:nil LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_HOME: http://schwehr.org
+
+* Introduction
+
+Knowing where and when you are is critical for surveying. This chapter
+will attempt to work through navigation/position issues. Time and
+position are intimately linked. Knowing any of x,y,z, roll, pitch, yaw
+and t can help you figure out the remaining variables.  For the oceans
+the problem is more difficult than on land.  First, vehicles are not
+usually stationary when they are trying to make positioning fixes
+(e.g. similar to the trouble with aircraft).  If you are on land and
+want to accurately know a position, you can integrate over time to
+beat down noise or wait for better satellite coverage.  Second, if you
+are under the water, RF energy of any usable frequency does not
+penetrate water in any sort of meaningful way.  That means you must
+use much longer wavelength acoustic energy that has much larger
+refraction issues than RF through the atmosphere (this is just a
+generalization).
+
+
+- time:
+  - Low freq
+  - CDMA etc
+  - ntp
+  - ieee ptp
+  - GPS
+- where
+  - Dead reckoning
+  - Magnetic direction
+    - IGRF
+  - Bearing fixes
+    - ground and stars
+    - SLAM
+
+* References
+
+- http://en.wikipedia.org/wiki/Satellite_navigation
+- http://news.slashdot.org/story/11/12/27/143255/china-begins-using-new-global-positioning-satellites
+- US GPS III http://www.lockheedmartin.com/news/press_releases/2011/1213_ss_gps.html

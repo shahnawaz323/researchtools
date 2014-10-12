@@ -1,0 +1,167 @@
+#+STARTUP: showall
+* Introduction / Purpose
+
+This is the beginnings of my second attempt to build a workhorse VM
+for geospatial science types.  My first attempt was build from Ubuntu 
+11.04 on VMWare Fusion 3.  I hope this one will do better as it is
+built on 12.04 LTS (Long Term Support) and I gained at least some
+experience from the first iteration.  That first time around, I was
+under the gun to have something ready for the first day of class.
+At that point, I had to freeze what I was doing.  Changing the virtual
+machine out from under the students when I was just starting to
+understand the implications myself was going to be a recipe for disaster.
+
+Iteration 2 is being done with several goals in mind:
+
+- a learning environment
+- a safe place for me to try lots of techniques and libraries
+- show others how I set things up - Let them built all or part
+  themselves.
+- figure out how to shrink this better and build live DVD/USB releases
+- a virtual machine that you could use while at sea *without internet*
+- possibly a virtual machine that CCOM could deploy to students and
+  researchers that need a linux like environment on their Windows PCs
+  and Macs.
+
+There are a number of linux distributions available that match this
+already, but with my idea of building up a puppet or chef build up, I
+think I might have something that is a little more transparent and
+flexible.  I wish Poseidon had their "how did we do it" right up front.
+
+Alternatives: [[http://distrowatch.com/search.php?category%3DScientific][DistroWatch scientific category]]
+
+- https://sites.google.com/site/poseidonlinux/Home
+- https://www.scientificlinux.org/
+- http://modifyubuntu.com/
+
+I don't want to be a distribution, but more a collection of knowledge
+on how to get what you might want and how to use it to study the
+outside world.
+
+* Rough specs
+
+- Based on Ubuntu 12.04 LTS
+- 64-bit desktop
+- Built using VMWare Fusion 4
+
+* TODO Ideas 
+
+- Can I use a configuration management system to script the zero to
+  full blown system?  http://bhuga.net/puppet-vs-chef
+  - http://wiki.opscode.com/display/chef/Home
+  - http://projects.puppetlabs.com/projects/puppet
+  - Probably not: http://www.gnu.org/software/cfengine/
+
+* Initial VM creation with vmware
+
+- User Name: Research Tools
+- user: research
+- pass: !rt2012vm
+
+* Help
+
+** About packages
+
+#+BEGIN_SRC sh
+apt-cache search emacs # About emacs
+apt-cache show python-pandas # describe the package
+sudo apt-get install python-pandas # install a package and dependencies
+#+END_SRC
+
+** updating
+
+#+BEGIN_SRC sh
+apt-get update 
+apt-get upgrade
+#+END_SRC
+
+* Ubuntu / Debian admin things
+
+- Verion: dpkg -s org-mode
+
+* Snagging from osgeo live
+
+* General setup
+
+** apt-get stuff
+
+*** general admin
+
+- keepassx
+- screen # allow a terminal to manage multiple sessions
+
+*** emacs and coding
+
+- emacs23
+- org-mode
+- sudo apt-get install yasnippet pymacs debian-el dictionary-el erc git-el 
+- sudo apt-get install css-mode easypg emacs-jabber
+- sudo apt-get install id-utils magit python-ropemacs riece wget-el yaml-mode slime
+
+*** python
+
+- ipython # great interactive python shell and notebook
+- python-lxml # XML parser
+- kodos # *essential* Regular expression tool 
+- python-virtualenv
+- pylint
+- pyflakes
+- python-mox # mocking for tests
+
+#+BEGIN_SRC sh
+sudo apt-get install python-{lxml,virtualenv} pylint pyflakes pychecker python-mox 
+#+END_SRC
+
+**** Science
+
+- python-pandas
+
+**** Geospatial
+
+- python-gdal
+- python-shapely
+- python-kml
+- python-pyproj
+- python-mpltoolkits.basemap
+
+#+BEGIN_SRC sh
+sudo apt-get install python-{gdal,shapely,kml,pyproj}
+#+END_SRC
+
+*** networking
+
+#+BEGIN_SRC sh
+sudo apt-get install wireshark nmap tcpdump socat
+#+END_SRC
+
+* Puppet
+
+http://vagrantup.com/
+
+Can I get the system to be controlled via puppet?
+
+#+BEGIN_SRC sh
+apt-cache showpkg puppet
+apt-cache search puppet
+apt-cache show vagrant
+
+sudo apt-get update
+sudo apt-get upgrade
+
+sudo apt-get install puppet-el puppet puppetmaster
+sudo apt-get install emacs org-mode
+
+puppetd --version
+# 2.7.11
+
+wget http://bitfieldconsulting.com/files/powering-up-with-puppet.tar.gz
+cd /etc
+sudo tar xf ~/powering-up-with-puppet.tar.gz
+
+sudo service puppetmaster status
+# * master is running
+
+sudo puppet cert --list
+
+#+END_SRC
+

@@ -1,0 +1,264 @@
+#+STARTUP: showall
+
+#+TITLE: Virtual Machine - notes on creating the VM Ware appliance
+#+DATE: Fall 2011.  Updated <2011-10-03 Mon>
+#+AUTHOR: Kurt Schwehr
+# License: Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+* WARNING
+
+This is a very rough document at the moment!
+
+Plus, not all of these packages are in the vm-20110908 virtual machine.
+
+* TODO not yet done and I can at least think of them
+
+- [ ] qgis-grass-plugin
+- [ ] mapserver
+- [ ] mapnik
+- [ ] package mbsystem as a debian .deb
+- [ ] Notes from mbsystem mailing list / poseidonlinux on how to build a really small vm
+
+* Introduction
+
+- https://help.ubuntu.com/community/UbuntuScience
+- http://www.poseidonlinux.org/
+
+* Installing packages via built in deb
+
+** Account utilities - file and password management
+
+#+BEGIN_SRC sh
+sudo apt-get install keepassx
+#+END_SRC
+
+For dropbox, see [[http://vislab-ccom.unh.edu/~schwehr/rt/6-keypassx-dropbox.html][Lecture 6: KeePassX and Dropbox]]
+
+** Misc Science
+
+#+BEGIN_SRC sh
+sudo apt-get install octave3.2  # Similar syntax to matlab
+sudo apt-get r-base r-cran-maptools # GNU R statistical computation and graphics system
+sudo apt-get install libkml0
+sudo apt-get install gnudatalanguage # aka gdl.  Compatible with Interactive Data Lanuage (IDL)
+#+END_SRC
+
+** Emacs text editor
+
+#+BEGIN_SRC sh
+sudo apt-get install emacs23
+sudo apt-get install org-mode
+sudo apt-get install bbdb yasnippet pymacs css-mode debian-el dictionary-el easypg edb emacs-jabber erc git-el global gnuplot-mode
+sudo apt-get install id-utils liece magit mell python-mode python-ropemacs riece slime wget-el yaml-mode
+#+END_SRC
+
+** Misc coding
+
+#+BEGIN_SRC sh
+sudo apt-get install source-highlight tree
+#+END_SRC
+
+** GIS related
+
+#+BEGIN_SRC sh
+sudo apt-get install qgis
+sudo apt-get install gdal-bin
+sudo apt-get python-gdal
+sudo apt-get install grass
+sudo apt-get install gpsbabel gpsd gpsd-clients
+sudo apt-get install gmt gmt-coast-low 
+sudo apt-get install worldwind
+#+END_SRC
+
+# http://www.khattam.info/solved-package-dependencies-cannot-be-resolved-while-installing-qgis-plugin-grass-2010-09-12.html
+# sudo apt-get install qgis-plugin-grass
+
+** Python
+
+#+BEGIN_SRC sh
+sudo apt-get install python-shapely
+sudo apt-get install python-pyproj
+sudo apt-get install python-kml
+sudo apt-get install ipython
+sudo apt-get install python-scitools python-matplotlib python-matplotlib-data
+sudo apt-get install diveintopython python-beautifulsoup python-daemon python-dateutil python-debian python-dev python-examples
+sudo apt-get install python-genshi python-geoip python-imaging python-jabber python-jinja2
+sudo apt-get install python-ldap python-levenshtein python-lockfile python-lxml python-magic
+sudo apt-get install python-mako python-markupsafe python-mysqldb python-nose
+sudo apt-get install python-numpy python-notify python-oauth python-ogg python-openid python-openssl python-paramiko python-parsedatetime
+sudo apt-get install python-paste python-pastedeploy python-pastescript python-pexpect python-pkg-resources python-protobuf python-psycopg2 python-pyasn1 python-pycurl python-pygments python-pygresql
+sudo apt-get install python-pylibacl python-pyrex  # err... which one was py26?
+sudo apt-get install python-rdflib python-reportlab python-rrdtool python-rsvg python-serial python-setuptools 
+sudo apt-get install python-smbc python-speechd python-sphinx python-svn python-twisted
+sudo apt-get install python-vobject python-yaml
+sudo apt-get install python-virtualenv
+sudo apt-get install kodos # regular expression builder / tester
+#+END_SRC
+
+* Installing packages custom
+
+- Download the deb here http://www.google.com/earth/
+#+BEGIN_SRC sh
+sudo apt-get install lsb-core
+sudo apt-get -f install  # may not be required
+sudo dpkg -i google-earth-stable_current_i386.deb 
+#+END_SRC
+
+* Shrinking - removing packages
+
+#+BEGIN_SRC sh
+# list installed packages
+dpkg --get-selections | grep -i libre
+sudo apt-get remove libreoffice-core
+#+END_SRC
+
+Need to see what I can do with this:
+
+#+BEGIN_SRC sh
+sudo apt-get install fslint
+#+END_SRC
+
+
+* Shrinking
+
+http://kegel.com/linux/jeos-vmware-player/jeos-vmware-player-howto.html
+
+TODO: Why did I need to install aptitude?
+
+#+begin_src sh
+sudo apt-get clean
+rm -rf /lib/linux-restricted-modules
+rm /var/log/dpkg.log
+rm /var/cache/apt/*pkgcache.bin
+sudo apt-get autoremove
+df -h .
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              19G  3.9G   14G  22% /
+sudo apt-get install aptitude
+sudo apt-get update
+sudo apt-get upgrade # seems to have done right thing.
+#+end_src
+
+/var/cache/apt/archives/ and /var/cache/apt/archives/partial/
+
+http://www.howtoforge.com/how-to-shrink-vmware-virtual-disk-files-vmdk
+
+#+BEGIN_EXAMPLE
+ls -lSr *.vmdk
+-rw-------@ 1 schwehr  staff        1016 Aug 26 16:06 Ubuntu-11.04-32bit.vmdk
+-rw-------@ 1 schwehr  staff       65536 Aug 26 16:25 Ubuntu-11.04-32bit-s011.vmdk
+-rw-------@ 1 schwehr  staff    12058624 Aug 26 16:25 Ubuntu-11.04-32bit-s010.vmdk
+-rw-------@ 1 schwehr  staff   144506880 Aug 26 16:25 Ubuntu-11.04-32bit-s006.vmdk
+-rw-------@ 1 schwehr  staff   286851072 Aug 26 16:25 Ubuntu-11.04-32bit-s004.vmdk
+-rw-------@ 1 schwehr  staff   305004544 Aug 26 16:25 Ubuntu-11.04-32bit-s005.vmdk
+-rw-------@ 1 schwehr  staff   383123456 Aug 26 16:25 Ubuntu-11.04-32bit-s009.vmdk
+-rw-------@ 1 schwehr  staff   649723904 Aug 26 16:25 Ubuntu-11.04-32bit-s003.vmdk
+-rw-------@ 1 schwehr  staff   735117312 Aug 26 16:25 Ubuntu-11.04-32bit-s007.vmdk
+-rw-------@ 1 schwehr  staff   854458368 Aug 26 16:25 Ubuntu-11.04-32bit-s008.vmdk
+-rw-------@ 1 schwehr  staff   968556544 Aug 26 16:25 Ubuntu-11.04-32bit-s002.vmdk
+-rw-------@ 1 schwehr  staff  1870331904 Aug 26 16:25 Ubuntu-11.04-32bit-s001.vmdk
+
+
+Library/Application\ Support/VMware\ Fusion/vmware-vdiskmanager -d Ubuntu-11.04-32bit.vmdk 
+  Defragment: 12% done.
+
+ls -lSr *.vmdk-rw-------@ 1 schwehr  staff        1016 Aug 26 16:06 Ubuntu-11.04-32bit.vmdk
+-rw-------@ 1 schwehr  staff       65536 Aug 26 16:33 Ubuntu-11.04-32bit-s011.vmdk
+-rw-------@ 1 schwehr  staff    12058624 Aug 26 16:33 Ubuntu-11.04-32bit-s010.vmdk
+-rw-------@ 1 schwehr  staff   144506880 Aug 26 16:33 Ubuntu-11.04-32bit-s006.vmdk
+-rw-------@ 1 schwehr  staff   286851072 Aug 26 16:33 Ubuntu-11.04-32bit-s004.vmdk
+-rw-------@ 1 schwehr  staff   305004544 Aug 26 16:33 Ubuntu-11.04-32bit-s005.vmdk
+-rw-------@ 1 schwehr  staff   383123456 Aug 26 16:33 Ubuntu-11.04-32bit-s009.vmdk
+-rw-------@ 1 schwehr  staff   649723904 Aug 26 16:33 Ubuntu-11.04-32bit-s003.vmdk
+-rw-------@ 1 schwehr  staff   735117312 Aug 26 16:33 Ubuntu-11.04-32bit-s007.vmdk
+-rw-------@ 1 schwehr  staff   854458368 Aug 26 16:33 Ubuntu-11.04-32bit-s008.vmdk
+-rw-------@ 1 schwehr  staff   968556544 Aug 26 16:33 Ubuntu-11.04-32bit-s002.vmdk
+-rw-------@ 1 schwehr  staff  1870331904 Aug 26 16:33 Ubuntu-11.04-32bit-s001.vmdk
+
+/Library/Application\ Support/VMware\ Fusion/vmware-vdiskmanager -k Ubuntu-11.04-32bit.vmdk   Shrink: 10% done.
+
+ls -lSr *.vmdk
+-rw-------@ 1 schwehr  staff        1016 Aug 26 16:06 Ubuntu-11.04-32bit.vmdk
+-rw-------@ 1 schwehr  staff       65536 Aug 26 16:37 Ubuntu-11.04-32bit-s011.vmdk
+-rw-------@ 1 schwehr  staff    12058624 Aug 26 16:37 Ubuntu-11.04-32bit-s010.vmdk
+-rw-------@ 1 schwehr  staff   144506880 Aug 26 16:37 Ubuntu-11.04-32bit-s006.vmdk
+-rw-------@ 1 schwehr  staff   286851072 Aug 26 16:37 Ubuntu-11.04-32bit-s004.vmdk
+-rw-------@ 1 schwehr  staff   305004544 Aug 26 16:37 Ubuntu-11.04-32bit-s005.vmdk
+-rw-------@ 1 schwehr  staff   383123456 Aug 26 16:37 Ubuntu-11.04-32bit-s009.vmdk
+-rw-------@ 1 schwehr  staff   649723904 Aug 26 16:37 Ubuntu-11.04-32bit-s003.vmdk
+-rw-------@ 1 schwehr  staff   735117312 Aug 26 16:37 Ubuntu-11.04-32bit-s007.vmdk
+-rw-------@ 1 schwehr  staff   854458368 Aug 26 16:37 Ubuntu-11.04-32bit-s008.vmdk
+-rw-------@ 1 schwehr  staff   968556544 Aug 26 16:37 Ubuntu-11.04-32bit-s002.vmdk
+-rw-------@ 1 schwehr  staff  1869873152 Aug 26 16:37 Ubuntu-11.04-32bit-s001.vmdk
+
+# schwehr@Catbox4-MBAir.local 90 $ cd && du -hs
+5.8G	.
+#+END_EXAMPLE
+
+Not really shrinking...
+
+Apparently, I have to copy the image.
+
+#+BEGIN_EXAMPLE 
+/Library/Application\ Support/VMware\ Fusion/vmware-vdiskmanager -r Ubuntu-11.04-32bit.vmdk -t 0 new.vmdk
+#+END_EXAMPLE
+
+type 0 is a single growable file
+
+#+BEGIN_EXAMPLE 
+ls -lSh new.vmdk 
+-rw-------@ 1 schwehr  staff   5.8G Aug 26 16:44 new.vmdk
+#+END_EXAMPLE
+
+Running schrink from sudo vmware-tools inside of the guest ubuntu os
+#+BEGIN_EXAMPLE 
+dfschwehr@ubuntu:~$ df -h .
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              19G  5.3G   13G  30% /
+schwehr@ubuntu:~$ df -h .
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              19G  4.1G   14G  23% /
+schwehr@ubuntu:~$ 
+#+END_EXAMPLE
+
+
+- http://maketecheasier.com/8-ways-to-maintain-a-clean-lean-ubuntu-machine/2008/10/07
+- http://maketecheasier.com/shrink-your-virtualbox-vm/2009/04/06
+#+BEGIN_EXAMPLE 
+df -h .
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda1              19G  3.9G   14G  22% /
+
+sudo apt-get autoclean
+sudo apt-get clean
+sudo apt-get autoremove
+
+sudo vmware
+shrink
+
+/Library/Application\ Support/VMware\ Fusion/vmware-vdiskmanager -r Ubuntu-11.04-32bit.vmdk -t 0 ubuntu-rt-20110908.vmdk
+
+# /Library/Application\ Support/VMware\ Fusion/vmware-vdiskmanager -k ubuntu-rt-20110908.vmdk 
+# This made no difference
+#+END_EXAMPLE
+
+* Networking helpers
+
+#+BEGIN_SRC sh
+sudo apt-get install wireshark nmap tcpdump
+sudo apt-get socat
+#+END_SRC
+
+* Tweaking the setup of a virtual machine
+
+** Graphics
+
+Jordan suggested upping the video memory.
+
+#+BEGIN_EXAMPLE 
+svga.vramSize = "<num bytes>"
+
+The default for all VMs is 16MB.  The VM has to be restarted in order
+for the change to take effect.
+#+END_EXAMPLE
+

@@ -1,0 +1,825 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 24: Python - parsing binary data 4 - SBET IMU data
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-11-22 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: struct numpy sbet imu navigation binary hg mercurial ipython
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* COMMENT todo items for Kurt
+
+- work with multiple sbet files
+- reset ipython workspace
+- page ipython
+- psearch name* type
+- ipython bookmark
+- filenames = !ls *.bag | sort
+
+* Please do not
+
+update until the professor asks you to.
+
+* Introduction
+
+Goals
+
+- [ ] using argparse to handle the command line
+- [ ] saving binary data to matlab format.  Read it in octave
+- [ ] using numpy to save the file
+- [ ] writing a KML
+- [ ] creating an SQL database with sqlite3.  Viewing it with SQLite Manager
+
+* See Also
+
+- Original single document of [[https://bitbucket.org/schwehr/researchtools/src/tip/general/python-binary-files.org][Python - parsing binary data files]] (points to the most recent version in bitbucket)
+
+* What is GIS?
+
+Now that you have been doing Geographic Information System (GIS) tasks
+for quite a few classes, let me share with you how I view GIS.  This figure
+is not perfect and is a gross oversimplification, but it is useful.  The
+goal of GIS is "Informed Decision Making", which in NOAA equates to Coastal 
+and Marine Spatial Planning (CMSP), safely navigating ships and many other 
+decision making processes.
+
+# [[./figure/what-is-gis.jpg]]
+[[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/figures/what-is-gis.jpg][What is GIS?]]
+
+* Setup
+
+Start emacs
+
+Open a terminal and start ipython
+
+In the past, we did the setup in the bash shell, but we can do everything from ipython.
+
+#+BEGIN_SRC python
+# update your mercurial repository of the class notes
+cd ~/projects/researchtools/class
+bookmark -l
+bookmark hgclass # Save this for next class
+bookmark -l
+
+ls -l > ~/before.txt
+!hg pull
+!hg update
+ls -l > ~/after.txt
+!diff --unified ~/before.txt ~/after.txt
+# You will see nothing if you already updated everything for today's classxs
+
+mkdir ~/class/24
+cd ~/class/24
+bookmark c24
+bookmark -l
+
+cd hgclass
+pwd
+cd c24
+pwd
+
+logstart -o -r log-class-24.py append
+
+dhist
+cd -1
+cd -2
+
+alias
+alias rtupdate (cd ~/projects/researchtools; hg pull; hg update)
+store rtupdate 
+alias
+rtupdate
+
+# Sadly, I don't know how to save an alias in a simple/clean fashion.
+# "store" for aliases is broken in ipython 0.11
+# http://stackoverflow.com/questions/8183986/saving-ipython-aliases
+
+# Fetch the sbet file:
+
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2010_202_S220_subsampled.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2011_194_S250A_Stbd_subsampled.sbet.bz2
+
+!bunzip2 sample.sbet.bz2
+!bunzip2 2010_202_S220_subsampled.sbet.bz2
+!bunzip2 2011_194_S250A_Stbd_subsampled.sbet.bz2
+
+!md5sum sample.sbet
+196c21f16f07ceae180888b12e9edc56  sample.sbet
+
+!md5sum 2010_202_S220_subsampled.sbet
+e8f7283deb887e16b05b08581bd7d2bb  2010_202_S220_subsampled.sbet
+
+!md5sum 2011_194_S250A_Stbd_subsampled.sbet
+72e5bab716485b53ecde9aa1cfc90719  2011_194_S250A_Stbd_subsampled.sbet
+#+END_SRC
+
+To remove a bookmark, do 
+
+#+BEGIN_SRC python
+bookmark -d c24
+#+END_SRC
+
+To get rid of all bookmarks:
+
+#+BEGIN_SRC python
+bookmark -r
+#+END_SRC
+
+* Creating a bash alias for mercurial updating the class
+
+Getting the lastest version of the class notes by hand in bash looks like this:
+
+#+BEGIN_EXAMPLE
+researchtools@ubuntu:~$ cd ~/projects/researchtools/
+
+researchtools@ubuntu:~/projects/researchtools$ hg pull
+
+warning: bitbucket.org certificate with fingerprint 81:2b:08:90:dc:d3:71:ee:e0:7c:b4:75:ce:9b:6c:48:94:56:a1:fe not verified (check hostfingerprints or web.cacerts config setting)
+pulling from https://bitbucket.org/schwehr/researchtools
+warning: bitbucket.org certificate with fingerprint 81:2b:08:90:dc:d3:71:ee:e0:7c:b4:75:ce:9b:6c:48:94:56:a1:fe not verified (check hostfingerprints or web.cacerts config setting)
+searching for changes
+# -- snip --
+warning: bitbucket.org certificate with fingerprint 81:2b:08:90:dc:d3:71:ee:e0:7c:b4:75:ce:9b:6c:48:94:56:a1:fe not verified (check hostfingerprints or web.cacerts config setting)
+adding changesets
+adding manifests
+adding file changes
+added 4 changesets with 7 changes to 5 files
+(run 'hg update' to get a working copy)
+
+researchtools@ubuntu:~/projects/researchtools$ hg update
+merging class/23-python-binary-files-part-3.org
+4 files updated, 1 files merged, 0 files removed, 0 files unresolved
+#+END_EXAMPLE
+
+That's not hard, but we want to make this trivial.  Edit your
+~/.bash_aliases file.  Add this line:
+
+#+BEGIN_SRC sh
+# Specific to the research tools class
+alias rtupdate='(cd ~/projects/researchtools; hg pull; hg update)'
+#+END_SRC
+
+The parentheses "()" around the command create a "scope" in which the
+=cd= command lives.  When bash gets to the right hand ")" is will back
+out of the researchtools directory and leave you where you started.
+
+These aliases are not active until you create a new terminal or source the
+alias file in an existing terminal.
+
+#+BEGIN_SRC sh
+alias rtupdate # try to list the alias
+# bash: alias: rtupdate: not found
+source ~/.bash_aliases
+alias rtupdate
+# your new alias should show up
+
+# To list all aliases:
+alias
+#+END_SRC
+
+* Where were we last time?
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+'''Decode Applanix POSPac SBET IMU binary files'''
+
+import struct
+import math
+# Use the pprint function from the pprint module
+from pprint import pprint
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+datagram_size = 136 # 8*17 bytes per datagram
+
+def num_datagrams(data):
+    'How many packets are in data'
+
+    assert( len(data) % datagram_size == 0 )
+
+    return len(data) / datagram_size
+
+def get_offset(datagram_number):
+    'Calculate the starting offset of a datagram.  First datagram is number 0'
+    return datagram_number * datagram_size
+
+def decode(data, offset=0):
+    'Decipher a SBET datagram from binary'
+    values = struct.unpack('17d',data[ offset + 0 : offset + 8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+
+def load_sbet_file(filename):
+    '''This is a GENERATOR that we can loop over with a for'''
+    sbet_file = open(filename)
+    sbet_data = sbet_file.read()
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+        datagram['index'] = datagram_index
+        yield datagram
+        
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    print 'Number of datagrams:', num_datagrams(sbet_data)
+
+    print 'Datagram Number, Time, x, y'
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+
+        print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+    
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC
+
+* Command line arguments				    :commandlineargs:
+
+** TODO fileinput
+
+If we were not working with binary files, we might try the [[http://docs.python.org/library/fileinput][fileinput]] module.
+However, I'll have to leave that for another time.
+
+** searching for files with glob				       :glob:
+
+If we know something about the names of the files we want to work
+with, we can use [[http://docs.python.org/library/glob][glob]].  Glob gives us bash command line like file name
+expansion with "*", "?", and "[0-9]" style expansion.  Try it from
+inside of ipython:
+
+#+BEGIN_SRC python
+import glob
+glob.glob('*.py')
+glob.glob('*.sbet')
+#+END_SRC
+
+Now change your main to handle all of the sbet files in the current
+directory.  This is not a good way to handle files, but it can be useful.
+
+Indent code in main with C-c >, change the load_sbet_file to take a
+=filename= argument and add the for loop.  
+
+Remove the open, read, and print of the number of datagrams lines.
+
+You main function should look like this:
+
+#+BEGIN_SRC python
+def main():
+    print 'Starting main'
+
+    import glob
+
+    for filename in glob.glob('*.sbet'):
+        print '====',filename,'===='
+        print 'Datagram Number, Time, x, y'
+
+        for datagram_index, datagram in enumerate(load_sbet_file(filename)):
+            if datagram_index % 10 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+#+END_SRC
+
+Now run it from ipython:
+
+#+BEGIN_SRC python
+run sbet
+#+END_SRC
+
+** Simple route with sys.argv						:sys:
+
+Bet yet, the person using the sbet.py program should be able to
+specify which sbet files she wants to use.  We can do this by using
+sys.argv.  Check out argv from ipython:
+
+#+BEGIN_SRC python
+import sys
+print sys.argv
+
+# any file names specified will be after the 1st parameter, which
+# is the name of the program.
+
+print sys.argv[1:]
+#+END_SRC
+
+Remove the glob code from your main and replace it to use sys.argv.
+Your code should look like this:
+
+#+BEGIN_SRC python
+def main():
+    print 'Starting main'
+
+    import sys
+
+    for filename in sys.argv[1:]:
+        print '====',filename,'===='
+        print 'Datagram Number, Time, x, y'
+
+        for datagram_index, datagram in enumerate(load_sbet_file(filename)):
+            if datagram_index % 10 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+#+END_SRC
+
+It would be nice if shell expansion of "glob" style worked, but for ipython
+0.10.2, we have to list out all the file names
+
+http://stackoverflow.com/questions/8227705/run-from-ipython-with-glob-style-expansion
+
+#+BEGIN_SRC python
+filenames
+run sbet.py sample.sbet 2010_202_S220_subsampled.sbet 2011_194_S250A_Stbd_subsampled.sbet
+#+END_SRC
+
+Your results should look like this:
+
+#+BEGIN_EXAMPLE
+starting to run script...
+Starting main
+==== sample.sbet ====
+Datagram Number, Time, x, y
+0 334959.004823 -146.675232704 60.4443123064
+10 335458.991726 -146.631176844 60.4833850599
+20 335958.978642 -146.615374641 60.488061874
+30 336458.965552 -146.610408727 60.4884544574
+40 336958.952453 -146.602068248 60.4880620038
+50 337458.939347 -146.601381986 60.4873117644
+60 337958.926239 -146.614299722 60.488558233
+70 338458.913138 -146.631671861 60.4823912283
+80 338958.900046 -146.6171884 60.4849670034
+90 339458.886961 -146.638808522 60.4798499224
+100 339958.873884 -146.641052374 60.4777459053
+110 340458.860796 -146.640432902 60.4794631211
+120 340958.847702 -146.639497417 60.4777739654
+130 341458.834603 -146.64539724 60.4721610761
+140 341958.821503 -146.63946463 60.4730424798
+150 342458.808406 -146.65277304 60.467285398
+160 342958.795311 -146.669429917 60.4556509106
+==== 2010_202_S220_subsampled.sbet ====
+Datagram Number, Time, x, y
+0 309498.001641 -168.105985062 65.5652441157
+10 310497.990568 -168.14460618 65.576237069
+20 311497.979504 -168.217203577 65.5765027734
+30 312497.968453 -168.286847083 65.5766343791
+40 313497.957407 -168.360572515 65.5768083537
+50 314497.946366 -168.430597117 65.5767847792
+60 315497.935336 -168.502290483 65.5768396777
+70 316497.924312 -168.562203526 65.5784574745
+==== 2011_194_S250A_Stbd_subsampled.sbet ====
+Datagram Number, Time, x, y
+0 273498.006144 -75.6779674319 36.9993413966
+10 274498.035903 -75.6686272625 37.0166578669
+20 275498.065662 -75.6303574293 37.0128677637
+30 276498.09543 -75.5838353852 37.0129553714
+40 277498.125213 -75.5375106226 37.013026657
+50 278498.155027 -75.5016787502 37.0139588907
+60 279498.184882 -75.544032377 37.0140028866
+70 280498.214787 -75.5869761469 37.0139670547
+80 281498.244734 -75.6296578787 37.0137003076
+90 282498.274713 -75.6712520852 37.0123495064
+100 283498.304712 -75.6345773566 37.0144177023
+110 284498.33472 -75.5934162586 37.0146980809
+120 285498.364735 -75.552605247 37.0144545719
+130 286498.394766 -75.5115917803 37.0146829522
+140 287498.424822 -75.5230051401 37.0154931321
+150 288498.454905 -75.5635060081 37.0154547408
+160 289498.485012 -75.6045727647 37.0156019109
+170 290498.515137 -75.645795915 37.0153942394
+180 291498.545265 -75.6613422226 37.0160430919
+190 292498.575392 -75.6248025467 37.0159742854
+200 293498.605513 -75.5837033162 37.0163109221
+210 294498.63563 -75.5420885061 37.0157435582
+220 295498.665747 -75.5011903989 37.0152076818
+230 296498.695871 -75.5359292325 37.0165480198
+240 297498.726 -75.576711627 37.0167642931
+250 298498.756139 -75.6165338265 37.0169717959
+260 299498.786282 -75.6577022044 37.0168299723
+270 0.0 0.0 0.0
+280 0.0 0.0 0.0
+290 0.0 0.0 0.0
+300 0.0 0.0 0.0
+310 0.0 0.0 0.0
+320 0.0 0.0 0.0
+330 0.0 0.0 0.0
+340 0.0 0.0 0.0
+350 0.0 0.0 0.0
+360 0.0 0.0 0.0
+370 0.0 0.0 0.0
+380 0.0 0.0 0.0
+390 0.0 0.0 0.0
+400 0.0 0.0 0.0
+410 0.0 0.0 0.0
+420 0.0 0.0 0.0
+430 0.0 0.0 0.0
+440 0.0 0.0 0.0
+450 0.0 0.0 0.0
+460 0.0 0.0 0.0
+470 0.0 0.0 0.0
+480 0.0 0.0 0.0
+490 0.0 0.0 0.0
+500 0.0 0.0 0.0
+510 0.0 0.0 0.0
+520 299498.786282 -75.6577022044 37.0168299723
+530 299998.801354 -75.6780952432 37.0165026156
+script done!
+#+END_EXAMPLE
+
+Uh oh!  Zeros!
+
+** More flexible arguments
+
+Please do *NOT* write your own command line option parse.  Also,
+please don't use the older "optparse".  If you use argparse, other people
+will be better able to work with your code.
+
+http://www.doughellmann.com/PyMOTW/argparse/
+
+Change your main to look like this:
+
+#+BEGIN_SRC python
+def main():
+    print 'Starting main'
+
+    import sys, argparse
+
+    parser = argparse.ArgumentParser(description='Parse SBET files')
+    parser.add_argument('filenames', type=str, nargs='+', help='SBET files')
+    args = parser.parse_args() # uses sys.argv
+
+    for filename in args.filenames:
+        print '====',filename,'===='
+        print 'Datagram Number, Time, x, y'
+
+        for datagram_index, datagram in enumerate(load_sbet_file(filename)):
+            if datagram_index % 10 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+#+END_SRC
+
+Now try running it from ipython:
+
+#+BEGIN_SRC python
+run sbet.py --help
+run sbet.py sample.sbet 2010_202_S220_subsampled.sbet 2011_194_S250A_Stbd_subsampled.sbet
+#+END_SRC
+
+We do not need any options right now, but this is a much better way to
+handle command line arguments.
+
+* It is time to write out kml files					:kml:
+
+Inside of main, we need to create the kml:
+
+#+BEGIN_SRC python
+    for filename in args.filenames:
+        out = open(filename+'.kml','w')
+        out.write('''<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+            <Placemark>
+                    <name>{filename}</name>
+                    <LineString>
+                            <coordinates>
+        '''.format(filename=filename) )
+
+        for datagram_index, datagram in enumerate(load_sbet_file(filename)):
+            if datagram_index % 10 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+            out.write('{x},{y}\n'.format(x=datagram['lon_deg'], y=datagram['lat_deg']))
+
+        out.write('''\t\t\t\t</coordinates>
+\t\t\t</LineString>
+\t\t</Placemark>
+\t</Document>
+</kml>
+        ''')
+#+END_SRC
+
+
+* Histories
+
+** history from ipython
+
+#+BEGIN_SRC python
+In [92]: history 1 92
+1 : _ip.magic("cd class")
+2 : _ip.system("ls -F ")
+3 : _ip.system("ls -F -l")
+4 : _ip.magic("pwd ")
+5 : _ip.magic("cd researchtools/class/")
+6 : _ip.magic("pwd ")
+7 : _ip.system("hg pull")
+8 : _ip.system("hg update")
+9 : _ip.system("ls -F -l > ~/after.txt")
+11: _ip.system("diff  --unified ~/before.txt ~/after.txt")
+12: _ip.system("mkdir ~/class/24")
+14: _ip.magic("cd ~/class/24")
+15: _ip.magic("bookmark c24")
+16: _ip.magic("bookmark -l")
+17: _ip.magic("pwd ")
+18: _ip.magic("cd hgclass")
+19: _ip.magic("pwd ")
+20: _ip.magic("bookmark -l")
+21: _ip.magic("cd c24")
+22: _ip.magic("cd hgclass")
+23: _ip.magic("cd class")
+24: _ip.magic("pwd ")
+25: _ip.magic("bookmark hgclass")
+26: _ip.magic("bookmark -l")
+27: _ip.magic("cd c24")
+28: _ip.magic("pwd ")
+29: _ip.magic("logstart -o -r log-class-24.py append")
+30: _ip.system("ls -F ")
+31: _ip.system("less log-class-24.py")
+32: _ip.magic("dhist ")
+34: _ip.magic("cd -2")
+35: _ip.magic("cd -1")
+36: _dh
+37: _dh[1]
+38: _ip.magic("alias ")
+39: _ip.magic("alias rtupdate (cd /home/researchtools/projects/researchtools/; hg pull; hg update)")
+40: _ip.system("(cd /home/researchtools/projects/researchtools/; hg pull; hg update) ")
+41: _ip.magic("pwd ")
+42: _ip.magic("cd c24")
+43: _ip.magic("alias ")
+45: _ip.magic("store rtupdate")
+46: _ip.system("curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2")
+47: _ip.system("curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2010_202_S220_subsampled.sbet.bz2")
+48: _ip.system("curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2011_194_S250A_Stbd_subsampled.sbet.bz2")
+50: _ip.system("ls -F -l")
+51: _ip.system("bunzip2 sample.sbet.bz2")
+52: _ip.system("bunzip2 2010_202_S220_subsampled.sbet.bz2")
+53: _ip.system("bunzip2 2011_194_S250A_Stbd_subsampled.sbet.bz2")
+54: _ip.system("ls -F -l")
+55: _ip.magic("run sbet.py")
+56: import glob
+57: glob.glob('*.py')
+58: glob.glob('*.sbet')
+59: _ip.system("ls -F ")
+60: glob.glob('2010*')
+62: _ip.magic("run sbet.py")
+63: import sys
+64: sys.argv
+65: print sys.argv
+66: print sys.argv[1:]
+68: _ip.magic("run sbet.py sample.sbet")
+69: _ip.system("ls -F ")
+70: _ip.magic("run sbet.py sample.sbet 2010_202_S220_subsampled.sbet")
+71: import argparse
+72: parser = argparse.ArgumentParser(description='Parse SBET files')
+73: args = parser.parse_args()
+74: args
+75: parser.parse_args(['--help',] )
+76: _ip.magic("run sbet.py --help")
+77: _ip.magic("run sbet.py")
+80: _ip.magic("run sbet.py sample.sbet")
+82: _ip.magic("run sbet.py sample.sbet 2011_194_S250A_Stbd_subsampled.sbet")
+86: _ip.magic("pwd ")
+87: _ip.magic("run sbet.py sample.sbet 2010_202_S220_subsampled.sbet 2011_194_S250A_Stbd_subsampled.sbet")
+88: _ip.system("ls -F -l")
+89: _ip.system("less 2011_194_S250A_Stbd_subsampled.sbet.kml")
+90: import sys
+91: sys.float_info.epsilon
+#+END_SRC
+
+** ipython log
+
+#+BEGIN_SRC python
+cd class
+ls
+ls -l
+pwd
+#[Out]# '/home/researchtools/projects'
+cd researchtools/class/
+pwd
+#[Out]# '/home/researchtools/projects/researchtools/class'
+!hg pull
+!hg update
+ls -l > ~/after.txt
+!diff  --unified ~/before.txt ~/after.txt
+mkdir ~/class/24
+cd ~/class/24
+bookmark c24
+bookmark -l
+pwd
+#[Out]# '/home/researchtools/class/24'
+cd hgclass
+pwd
+#[Out]# '/home/researchtools/projects/researchtools'
+bookmark -l
+cd c24
+cd hgclass
+cd class
+pwd
+#[Out]# '/home/researchtools/projects/researchtools/class'
+bookmark hgclass
+bookmark -l
+cd c24
+pwd
+#[Out]# '/home/researchtools/class/24'
+ls
+less log-class-24.py
+dhist
+cd -2
+cd -1
+_dh
+_dh[1]
+#[Out]# '/home/researchtools/class/10'
+alias
+alias rtupdate (cd /home/researchtools/projects/researchtools/; hg pull; hg update)
+rtupdate
+pwd
+#[Out]# '/home/researchtools/class/10'
+cd c24
+alias 
+store rtupdate
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2010_202_S220_subsampled.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2011_194_S250A_Stbd_subsampled.sbet.bz2
+ls -l
+!bunzip2 sample.sbet.bz2
+!bunzip2 2010_202_S220_subsampled.sbet.bz2
+!bunzip2 2011_194_S250A_Stbd_subsampled.sbet.bz2
+ls -l
+run sbet.py
+import glob
+glob.glob('*.py')
+#[Out]# ['log-class-24.py', 'sbet.py']
+glob.glob('*.sbet')
+#[Out]# ['2010_202_S220_subsampled.sbet', 'sample.sbet', '2011_194_S250A_Stbd_subsampled.sbet']
+ls
+glob.glob('2010*')
+#[Out]# ['2010_202_S220_subsampled.sbet']
+run sbet.py
+import sys
+sys.argv
+#[Out]# ['/usr/bin/ipython']
+print sys.argv
+print sys.argv[1:]
+run sbet.py sample.sbet
+ls
+run sbet.py sample.sbet 2010_202_S220_subsampled.sbet
+import argparse
+parser = argparse.ArgumentParser(description='Parse SBET files')
+args = parser.parse_args()
+args
+#[Out]# Namespace()
+parser.parse_args(['--help',] )
+run sbet.py --help
+run sbet.py
+run sbet.py sample.sbet
+run sbet.py sample.sbet 2011_194_S250A_Stbd_subsampled.sbet
+run sbet.py sample.sbet 2011_194_S250A_Stbd_subsampled.sbet
+pwd
+#[Out]# '/home/researchtools/class/24'
+run sbet.py sample.sbet 2010_202_S220_subsampled.sbet 2011_194_S250A_Stbd_subsampled.sbet
+ls -l
+less 2011_194_S250A_Stbd_subsampled.sbet.kml
+import sys
+sys.float_info.epsilon
+#[Out]# 2.220446049250313e-16
+history 1 92
+#+END_SRC
+
+** bash history
+
+#+BEGIN_SRC sh
+ 2000  ipython
+ 2001  cd projects/researchtools/class/
+ 2002  ls
+ 2003  mv 24-python-binary-files-part-4.org{,.old}
+ 2004  ls
+ 2005  fg
+ 2006  cd ../..
+ 2007  rm -rf researchtools/
+ 2008  hg clone https://bitbucket.org/schwehr/researchtools
+ 2009  ipython
+ 2010  cd ~/class/24
+ 2011  ls -l
+ 2012  chmod +x sbet.py
+ 2013  ls -l *.py
+ 2014  ./sbet.py --help
+ 2015  ./sbet.py sample.sbet 
+ 2016  ./sbet.py *.sbet
+ 2017  fg
+ 2018  history
+#+END_SRC
+
+
+** final source
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+'''Decode Applanix POSPac SBET IMU binary files'''
+
+import struct
+import math
+# Use the pprint function from the pprint module
+from pprint import pprint
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+datagram_size = 136 # 8*17 bytes per datagram
+
+def num_datagrams(data):
+    'How many packets are in data'
+
+    assert( len(data) % datagram_size == 0 )
+
+    return len(data) / datagram_size
+
+def get_offset(datagram_number):
+    'Calculate the starting offset of a datagram.  First datagram is number 0'
+    return datagram_number * datagram_size
+
+def decode(data, offset=0):
+    'Decipher a SBET datagram from binary'
+    values = struct.unpack('17d',data[ offset + 0 : offset + 8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+
+def load_sbet_file(filename):
+    '''This is a GENERATOR that we can loop over with a for'''
+    sbet_file = open(filename)
+    sbet_data = sbet_file.read()
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+        datagram['index'] = datagram_index
+        yield datagram
+        
+def main():
+    import glob
+    import sys
+
+    print 'Starting main'
+
+    import sys, argparse
+
+    parser = argparse.ArgumentParser(description='Parse SBET files')
+    parser.add_argument('filenames', type=str, nargs='+', help='SBET files')
+    args = parser.parse_args() # uses sys.argv
+
+    print 'filenames:', args.filenames
+
+    for filename in args.filenames:
+        print '====',filename,'===='
+        out = open(filename+'.kml', 'w')
+        out.write('''<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+            <Placemark>
+                    <name>{filename}</name>
+                    <LineString>
+                            <coordinates>
+        '''.format(filename=filename) )
+
+        print 'Datagram Number, Time, x, y'
+        for datagram_index, datagram in enumerate(load_sbet_file( filename )):
+            if datagram_index % 20 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+            out.write('{x},{y}\n'.format(x=datagram['lon_deg'], y=datagram['lat_deg']))
+
+        out.write('''\t\t\t\t</coordinates>
+\t\t\t</LineString>
+\t\t</Placemark>
+\t</Document>
+</kml>
+        ''')
+    
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC

@@ -1,0 +1,1610 @@
+0:00:01.420,0:00:05.500
+hello and welcome to u video a pic of
+research tools two thousand eleven
+
+0:00:05.500,0:00:07.610
+is videos python part to you
+
+0:00:07.610,0:00:09.329
+wearing tight on
+
+0:00:09.329,0:00:11.369
+in this field i'll be going through
+
+0:00:11.369,0:00:14.359
+many of the way so you can run python
+
+0:00:14.359,0:00:15.819
+there are quite a few
+
+0:00:15.819,0:00:19.269
+and this will give you a sense of the
+diversity of ways the python can be
+
+0:00:19.269,0:00:20.720
+called
+
+0:00:20.720,0:00:24.009
+that might be a little confusing so i
+recommend going through just taking a
+
+0:00:24.009,0:00:24.550
+look
+
+0:00:24.550,0:00:27.359
+come watching it and then coming back
+through and trying to understand how
+
+0:00:27.359,0:00:30.189
+each of them is different
+
+0:00:30.189,0:00:32.910
+let's go ahead and get started by mister
+alright
+
+0:00:32.910,0:00:38.320
+configuring my email expand my bash
+arcing
+
+0:00:38.320,0:00:42.160
+now i've got open here
+
+0:00:42.160,0:00:46.330
+uh... configuration file that's helping
+me out called uh... video eight uh...
+
+0:00:46.330,0:00:51.030
+organ this is just my notes for today
+
+0:00:51.030,0:00:54.160
+now delicate rolex tutsies but uh...
+
+0:00:54.160,0:00:57.550
+the buffer here and i'm gonna go ahead
+and and it might dot
+
+0:00:57.550,0:01:00.700
+dash r_c_ final
+
+0:01:00.700,0:01:03.099
+in a minute on the bottom and that's
+actually a
+
+0:01:03.099,0:01:05.650
+amanda and i think greater then
+
+0:01:05.650,0:01:07.799
+turn off the bottom
+
+0:01:07.799,0:01:10.630
+control lexico jump over to buffers
+
+0:01:10.630,0:01:15.090
+i really want to grab the satellite
+hirschfeld control space down would be a
+
+0:01:15.090,0:01:18.070
+real and then uh... w_-two copied
+
+0:01:18.070,0:01:22.600
+control expose jumped back over to the
+window and control wide
+
+0:01:22.600,0:01:24.220
+yet
+
+0:01:24.220,0:01:28.310
+i'm gonna go ahead and say that
+controllers controller us
+
+0:01:28.310,0:01:31.760
+we won't be using this one in the studio
+but this is a great time to get in there
+
+0:01:31.760,0:01:35.909
+and actually see it and it
+
+0:01:35.909,0:01:39.360
+okay so now the next in the ready to
+configure are set up
+
+0:01:39.360,0:01:43.570
+is for a look at our documents final
+sonika control expo
+
+0:01:43.570,0:01:46.250
+controllers controller left open the
+file
+
+0:01:46.250,0:01:50.840
+and our team acts like i_b_m_ pressed
+have interesting facts
+
+0:01:50.840,0:01:53.830
+there's currently nothing in my
+documents while he may have stuff in
+
+0:01:53.830,0:01:56.009
+here that you're adding to
+
+0:01:56.009,0:01:59.170
+and the first section that i mean and is
+
+0:01:59.170,0:02:01.649
+break in here or copy this text
+
+0:02:01.649,0:02:06.189
+pictured in not to copy the pound plus
+and source begin source
+
+0:02:06.189,0:02:09.310
+tzameret w copied control expo
+
+0:02:09.310,0:02:10.519
+and yet
+
+0:02:10.519,0:02:12.059
+puts it we have here
+
+0:02:12.059,0:02:13.120
+in this section
+
+0:02:13.120,0:02:16.709
+we're telling team acts that we really
+want to use of or growing
+
+0:02:16.709,0:02:18.320
+so soon or install
+
+0:02:18.320,0:02:21.980
+and that is telling it which languages
+we would like to have a install for
+
+0:02:21.980,0:02:24.239
+actually writing scripts
+
+0:02:24.239,0:02:26.329
+the ones that we need for sure in this
+
+0:02:26.329,0:02:30.329
+video are estate for bashed hymns
+
+0:02:30.329,0:02:33.219
+take long for a python code
+
+0:02:33.219,0:02:36.569
+in here i also have some notes you can
+add some more so let's go ahead and grab
+
+0:02:36.569,0:02:40.459
+a few more languages that might be
+useful to people down the road
+
+0:02:40.459,0:02:45.569
+the copy this section at W to explode
+and look over here at uh... pythons
+
+0:02:45.569,0:02:49.589
+complete agreement
+
+0:02:49.589,0:02:52.849
+so now we have our languages and their
+spent on this is a running until we
+
+0:02:52.849,0:02:54.479
+restore imax
+
+0:02:54.479,0:02:57.239
+with you control expo
+
+0:02:57.239,0:03:01.019
+and we want to make sure that we've got
+karki mac server running all time so we
+
+0:03:01.019,0:03:04.090
+want to be able to asking us to add a
+file for us
+
+0:03:04.090,0:03:05.989
+sold to uh... minute w
+
+0:03:05.989,0:03:08.340
+copy this section
+
+0:03:08.340,0:03:09.469
+hand
+
+0:03:09.469,0:03:11.869
+pasted here with a controlled wine
+
+0:03:11.869,0:03:13.799
+and in this section
+
+0:03:13.799,0:03:15.340
+we have this
+
+0:03:15.340,0:03:19.659
+request here to not close the window
+after a dominating pathfinder like it's
+
+0:03:19.659,0:03:22.579
+a little confusing if things disappear
+quickly on this
+
+0:03:22.579,0:03:26.040
+and every time we starting next we want
+to run the server that will listen for
+
+0:03:26.040,0:03:30.099
+edit requests and take care of for us
+
+0:03:30.099,0:03:34.259
+and we're also going to have some
+shortcuts teen max so in here
+
+0:03:34.259,0:03:37.249
+we have some shortcuts for or grown
+
+0:03:37.249,0:03:39.550
+these are the recommended one cemented w
+
+0:03:39.550,0:03:41.749
+control exposed
+
+0:03:41.749,0:03:42.829
+paste
+
+0:03:42.829,0:03:46.840
+the shortcuts are often used to you
+handle things that were grown
+
+0:03:46.840,0:03:50.239
+real peace in the city of maxwell
+pertinent
+
+0:03:50.239,0:03:52.579
+into the ones that we will use
+
+0:03:52.579,0:03:56.079
+to figure out here and copied these
+shortcuts
+
+0:03:56.079,0:03:58.199
+a w towards over
+
+0:03:58.199,0:04:03.839
+the shortcuts are for the f one f kyuki
+some top left your keyboard
+
+0:04:03.839,0:04:07.669
+and the says control x controlled she is
+going to find in case you actually want
+
+0:04:07.669,0:04:10.689
+to jump to a line number explicitly
+
+0:04:10.689,0:04:13.790
+you can see right here the only numbers
+actually written on the screen seepage
+
+0:04:13.790,0:04:18.579
+of scrolled appointed for the big file
+becca get difficult
+
+0:04:18.579,0:04:22.000
+okay so now i need to u star restart
+mighty max
+
+0:04:22.000,0:04:27.909
+flamingo india and tells me to do them
+filter control x control c
+
+0:04:27.909,0:04:30.470
+imax is now gone
+
+0:04:30.470,0:04:35.819
+go ahead every thirty minutes ministry
+kept so it all fits in the
+
+0:04:35.819,0:04:38.660
+being
+
+0:04:38.660,0:04:41.780
+okay and let's close to the parent
+fireman's thank you and tell us that
+
+0:04:41.780,0:04:42.670
+shell
+
+0:04:42.670,0:04:45.219
+you can see that i have the delete
+
+0:04:45.219,0:04:49.439
+file here our actually make a
+subdirectory to make their
+
+0:04:49.439,0:04:50.659
+video
+
+0:04:50.659,0:04:54.509
+slash eight and to be able to make
+multiple directions him time after two
+
+0:04:54.509,0:04:55.669
+dash key
+
+0:04:55.669,0:04:57.229
+cd
+
+0:04:57.229,0:04:59.799
+last c_d_ into video
+
+0:04:59.799,0:05:01.319
+slash eight
+
+0:05:01.319,0:05:06.940
+and will move till two slash if u dash
+eat dot org
+
+0:05:06.940,0:05:10.889
+this way we have fewer things around and
+it'll be a lot more
+
+0:05:10.889,0:05:15.439
+awfully easy to follow sold now inside
+of arguments we're going to go
+
+0:05:15.439,0:05:19.149
+open that directory separate relax
+control half
+
+0:05:19.149,0:05:23.680
+and video parents of the event amt
+
+0:05:23.680,0:05:27.050
+and press enter this is going to go open
+the directory that were in
+
+0:05:27.050,0:05:31.379
+thirty reruns directory and i can just
+press return a rancher on that
+
+0:05:31.379,0:05:34.159
+wonderful for me
+
+0:05:34.159,0:05:39.429
+and then use the time ki to collapsed
+this down to an outline known so shift
+
+0:05:39.429,0:05:41.529
+time
+
+0:05:41.529,0:05:43.560
+now class down to the
+
+0:05:43.560,0:05:45.719
+papua heading so we can follow along
+
+0:05:45.719,0:05:49.959
+a little better
+
+0:05:49.959,0:05:52.629
+swung
+
+0:05:52.629,0:05:54.820
+nimble tread stance against it
+
+0:05:54.820,0:05:58.399
+so we've now restarted and our documents
+
+0:05:58.399,0:06:02.699
+and we're gonna skip onto running python
+
+0:06:02.699,0:06:06.009
+soon lots and lots of ways we can run
+python intimal walk through some of
+
+0:06:06.009,0:06:06.800
+these
+
+0:06:06.800,0:06:10.439
+first for a short offer some overtime
+and one ways to do it
+
+0:06:10.439,0:06:16.180
+sewing here we can just use the python
+schultz i had time on that takes tammy's
+
+0:06:16.180,0:06:19.889
+and we can just i placed on a breast
+cancer
+
+0:06:19.889,0:06:22.509
+so if i take place on
+
+0:06:22.509,0:06:27.069
+presenter and now i a python shell i
+can't say on post to
+
+0:06:27.069,0:06:29.830
+get the results
+
+0:06:29.830,0:06:32.580
+hello world
+
+0:06:32.580,0:06:34.300
+and if we can not
+
+0:06:34.300,0:06:38.129
+there's a couple different ways to exact
+decompress control team which is sort of
+
+0:06:38.129,0:06:40.570
+the and of the file representation or
+
+0:06:40.570,0:06:44.299
+prolly more clear here's a type exit and
+parentheses
+
+0:06:44.299,0:06:46.430
+and we're now back to our command line
+
+0:06:46.430,0:06:48.800
+fashion
+
+0:06:48.800,0:06:53.369
+so that's that one moorhead timed now go
+to the one-liner
+
+0:06:53.369,0:06:54.560
+with this position
+
+0:06:54.560,0:06:59.210
+mora pro-ltte style type thing but it
+works here too because it's a print
+
+0:06:59.210,0:07:01.430
+dash he says we're going to pass it
+
+0:07:01.430,0:07:05.120
+a little bit of pythons around in the
+state print
+
+0:07:05.120,0:07:06.770
+one plus two
+
+0:07:06.770,0:07:08.400
+to put this in quotes
+
+0:07:08.400,0:07:11.870
+anti come on now
+
+0:07:11.870,0:07:15.340
+we have a multi printable taipei taiwan
+
+0:07:15.340,0:07:19.770
+okay sizzle skin will hit enter came to
+get back to number three
+
+0:07:19.770,0:07:25.469
+comfort citing but can be helpful
+
+0:07:25.469,0:07:27.009
+through the next one is
+
+0:07:27.009,0:07:31.269
+we can actually create file monitoring
+that file from the command line
+
+0:07:31.269,0:07:36.419
+so if you use press control c control c
+inside here you know i think that
+
+0:07:36.419,0:07:37.779
+this file creating
+
+0:07:37.779,0:07:40.210
+so we'll do that control c
+
+0:07:40.210,0:07:44.680
+control c it wants to evaluate this code
+yes
+
+0:07:44.680,0:07:47.229
+and there was no results that's okay
+
+0:07:47.229,0:07:50.430
+let's take a look at this files create
+called
+
+0:07:50.430,0:07:53.529
+low topon
+
+0:07:53.529,0:07:59.539
+to tell us that shell we have a hell of
+a pauline cat followed up on
+
+0:07:59.539,0:08:01.690
+so here we have just back in there
+
+0:08:01.690,0:08:02.270
+and we can run
+
+0:08:02.270,0:08:06.560
+not like this tight on space in our file
+named so
+
+0:08:06.560,0:08:09.029
+eighty fallon press time
+
+0:08:09.029,0:08:12.309
+and it runs hello
+
+0:08:12.309,0:08:14.999
+works pretty well
+
+0:08:14.999,0:08:15.860
+let's close
+
+0:08:15.860,0:08:18.459
+that morning
+
+0:08:18.459,0:08:19.479
+and
+
+0:08:19.479,0:08:23.129
+the script file part here is is
+interesting unfpa walkers did buydig
+
+0:08:23.129,0:08:27.439
+rather than actually run protecting
+their own once
+
+0:08:27.439,0:08:29.410
+so that more creative file
+
+0:08:29.410,0:08:31.060
+like that in the second
+
+0:08:31.060,0:08:36.940
+but if we come here and we want to just
+try to run are hello
+
+0:08:36.940,0:08:38.760
+top i
+
+0:08:38.760,0:08:42.930
+like that led to the program has any old
+twenty three x programs
+
+0:08:42.930,0:08:46.220
+zinc going to work it's going to take a
+look at the first line and try to figure
+
+0:08:46.220,0:08:47.200
+out
+
+0:08:47.200,0:08:51.550
+what kind of scripted isn't things start
+off by assuming it's about trapped
+
+0:08:51.550,0:08:53.390
+and
+
+0:08:53.390,0:08:55.019
+we get permission denied
+
+0:08:55.019,0:08:58.570
+annexation he too had permission to pick
+if it's right there
+
+0:08:58.570,0:09:00.300
+so let's go
+
+0:09:00.300,0:09:01.680
+create this file
+
+0:09:01.680,0:09:03.510
+school say
+
+0:09:03.510,0:09:06.310
+hellos two top iron
+
+0:09:06.310,0:09:08.380
+the control x control path
+
+0:09:08.380,0:09:10.880
+the first line held back
+
+0:09:10.880,0:09:13.520
+that this is clearly a python script
+
+0:09:13.520,0:09:17.230
+u_b_s_ then he and he is a program that
+looks in the
+
+0:09:17.230,0:09:19.600
+the users paths figure out where
+
+0:09:19.600,0:09:21.390
+icons gennady
+
+0:09:21.390,0:09:25.750
+that way they can actually control which
+python difficult will take into account
+
+0:09:25.750,0:09:27.930
+in our case we just have one
+
+0:09:27.930,0:09:30.010
+trainer script will save print
+
+0:09:30.010,0:09:31.080
+hello
+
+0:09:31.080,0:09:35.350
+world
+
+0:09:35.350,0:09:38.940
+time period if you will stay with the
+trolex control its
+
+0:09:38.940,0:09:42.510
+and now we have a script on disk we can
+give it a lot of special
+
+0:09:42.510,0:09:43.680
+and if you look
+
+0:09:43.680,0:09:45.189
+paraded out here
+
+0:09:45.189,0:09:51.100
+their is no execute gets set so we need
+to tactile this uh... system that we
+
+0:09:51.100,0:09:53.850
+won't be able to run this associates mon
+
+0:09:53.850,0:10:00.850
+plus axe is going to set the execute
+will flag on this script
+
+0:10:00.980,0:10:04.040
+to chuck pine
+
+0:10:04.040,0:10:07.710
+and if you do it cost us shall you'll
+now see that their taxes through here
+
+0:10:07.710,0:10:10.560
+which means that
+
+0:10:10.560,0:10:15.440
+the user can execute this anybody in the
+critics keep that in anyone system can
+
+0:10:15.440,0:10:17.670
+also execute expert
+
+0:10:17.670,0:10:20.300
+so now we can go ahead and run our hello
+
+0:10:20.300,0:10:22.290
+to dot pine
+
+0:10:22.290,0:10:25.310
+and the princess hello world team
+
+0:10:25.310,0:10:28.050
+this is the typical way that you would
+set up a script if if you're going to
+
+0:10:28.050,0:10:32.830
+give to somebody and have them
+
+0:10:32.830,0:10:33.920
+all right
+
+0:10:33.920,0:10:37.730
+let's go into the fence here so i put on
+
+0:10:37.730,0:10:40.470
+and this is where it if you are
+developing stuff you're more likely to
+
+0:10:40.470,0:10:41.850
+spend your time
+
+0:10:41.850,0:10:42.900
+so we can type
+
+0:10:42.900,0:10:45.060
+i pump
+
+0:10:45.060,0:10:49.530
+it looks a little bit different than the
+regular price on show
+
+0:10:49.530,0:10:53.690
+and just like the rate of her time so we
+can type whatever we wanted to it
+
+0:10:53.690,0:10:55.380
+if they want to ask you
+
+0:10:55.380,0:10:59.470
+and i will tell us that the answer's
+three
+
+0:10:59.470,0:11:02.310
+we can't also run the script
+
+0:11:02.310,0:11:05.130
+so if we do it collapsed ashok
+
+0:11:05.130,0:11:07.340
+and look forward to the browns
+
+0:11:07.340,0:11:10.690
+now note that a pound file it is a
+backup file
+
+0:11:10.690,0:11:12.470
+to ignore those
+
+0:11:12.470,0:11:16.500
+and we can then say iran
+
+0:11:16.500,0:11:17.970
+topon
+
+0:11:17.970,0:11:21.880
+or we can actually even run safety a
+period the previous mentally to talk you
+
+0:11:21.880,0:11:22.670
+why
+
+0:11:22.670,0:11:25.530
+and i'll run that it doesn't need to
+know that there's
+
+0:11:25.530,0:11:29.240
+first-line are not saying that this is
+part of the justice into everything
+
+0:11:29.240,0:11:33.660
+inspect them
+
+0:11:33.660,0:11:36.880
+hands we can also important filed
+
+0:11:36.880,0:11:39.920
+so this assumes that this thing is
+what's called the modules we could see
+
+0:11:39.920,0:11:41.650
+imports
+
+0:11:41.650,0:11:42.670
+hello
+
+0:11:42.670,0:11:45.780
+and when it goes through that file able
+actually run any
+
+0:11:45.780,0:11:46.460
+anything through
+
+0:11:46.460,0:11:49.650
+mayor and set up into our environment
+
+0:11:49.650,0:11:55.930
+and part of that won the contents was
+print also catch hello dogpile
+
+0:11:55.930,0:11:57.460
+says print hello world
+
+0:11:57.460,0:12:01.670
+now straight again weaken the apparent
+place to go back to our old import
+
+0:12:01.670,0:12:03.820
+mindcrest enter
+
+0:12:03.820,0:12:06.450
+and nothing happens it's a little
+strange
+
+0:12:06.450,0:12:10.160
+but what's going on here is that tight
+on realizes it's already imported health
+
+0:12:10.160,0:12:11.860
+p hello module
+
+0:12:11.860,0:12:14.450
+so it doesn't need to do anything else
+
+0:12:14.450,0:12:17.220
+worksheet that we need to say reload
+
+0:12:17.220,0:12:20.160
+and you can either put the preface
+easier nantes
+
+0:12:20.160,0:12:23.670
+and anti-democrat u_n_ conferences that
+they're missing
+
+0:12:23.670,0:12:25.290
+so we can say
+
+0:12:25.290,0:12:26.340
+preloader
+
+0:12:26.340,0:12:28.540
+hello
+
+0:12:28.540,0:12:32.560
+and you see that you print that hello
+world of its reloading the module
+
+0:12:32.560,0:12:34.289
+and it tells a lot about that
+
+0:12:34.289,0:12:38.620
+paper that this particular module
+
+0:12:38.620,0:12:43.350
+so that was our comport
+
+0:12:43.350,0:12:44.870
+and
+
+0:12:44.870,0:12:48.680
+that will work quite well you can do a
+lot of work for mayor we can do it from
+
+0:12:48.680,0:12:53.390
+imax
+
+0:12:53.390,0:12:56.010
+so let's go ahead and create a file
+
+0:12:56.010,0:12:59.530
+called video feet
+
+0:12:59.530,0:13:02.250
+b_t_u_ pete stark time
+
+0:13:02.250,0:13:06.150
+birth control x controller open the file
+
+0:13:06.150,0:13:07.800
+and in their we're going to
+
+0:13:07.800,0:13:10.280
+clinton this text in the middle
+
+0:13:10.280,0:13:12.000
+so i do that controls
+
+0:13:12.000,0:13:13.480
+face at the beginning
+
+0:13:13.480,0:13:16.510
+and then uh... w at the bottom
+
+0:13:16.510,0:13:19.130
+and pasting without the buchanan and
+source
+
+0:13:19.130,0:13:22.830
+toasted dot controllers controller us
+
+0:13:22.830,0:13:24.590
+controllers control from that
+
+0:13:24.590,0:13:26.860
+and then just info without the control
+
+0:13:26.860,0:13:29.150
+jumps to the other windham
+
+0:13:29.150,0:13:30.640
+now we've got that suddam
+
+0:13:30.640,0:13:35.260
+will scroll down here to the run the
+whole file
+
+0:13:35.260,0:13:39.900
+control expo through in here for one
+more files you can be anywhere
+
+0:13:39.900,0:13:41.830
+and just have control c
+
+0:13:41.830,0:13:45.270
+and then a second controls the
+
+0:13:45.270,0:13:46.619
+what happens is
+
+0:13:46.619,0:13:49.999
+in this paper output buffer it will
+write out everything that would go on
+
+0:13:49.999,0:13:52.600
+here so for the through the first line
+
+0:13:52.600,0:13:56.870
+is printed star my script ended today
+right here
+
+0:13:56.870,0:14:00.100
+when we come in here print more stuff we
+see more stuff
+
+0:14:00.100,0:14:04.960
+and we see the three-plus he's come out
+here as eleven
+
+0:14:04.960,0:14:09.060
+control access and then i'd be happy to
+switch buffer unlucky enough to find
+
+0:14:09.060,0:14:12.240
+video preference in aspen re
+
+0:14:12.240,0:14:14.460
+so that was the whole file and
+
+0:14:14.460,0:14:17.790
+that worked pretty well but you don't
+always want to run the whole final and
+
+0:14:17.790,0:14:21.540
+part of that can be as justice like
+small portion of the code and
+
+0:14:21.540,0:14:23.160
+from that
+
+0:14:23.160,0:14:27.530
+so let's schedule expo analytic a range
+of current so what if we just want to
+
+0:14:27.530,0:14:30.600
+run the swine cited a control space
+
+0:14:30.600,0:14:31.760
+at the beginning
+
+0:14:31.760,0:14:33.449
+and i moved down one line
+
+0:14:33.449,0:14:36.780
+i covered all the code i want to run
+
+0:14:36.780,0:14:40.480
+i can do a control facts sees me a
+controlled
+
+0:14:40.480,0:14:42.580
+control g is quite so we'll see you
+
+0:14:42.580,0:14:43.720
+hurt the region
+
+0:14:43.720,0:14:46.090
+control c and the vertical bar or
+
+0:14:46.090,0:14:47.850
+type character
+
+0:14:47.850,0:14:52.740
+anymore and just want to work related to
+let me do that again the proliferation
+
+0:14:52.740,0:14:55.300
+soviet control space right here
+
+0:14:55.300,0:14:56.550
+with the prints
+
+0:14:56.550,0:15:01.370
+move down cover those two and controlled
+c_n_n_ vertical bar will run those two
+
+0:15:01.370,0:15:03.170
+lines
+
+0:15:03.170,0:15:05.339
+in that way you can run a bit of code
+
+0:15:05.339,0:15:07.040
+within a script if you're looking at
+
+0:15:07.040,0:15:10.260
+assuming that that actually makes sense
+to do if it's
+
+0:15:10.260,0:15:13.450
+something like opening a file was done
+before that and you have to run that
+
+0:15:13.450,0:15:19.340
+will follow re-open so if you get a
+little confusing sometimes
+
+0:15:19.340,0:15:21.020
+closed on them
+
+0:15:21.020,0:15:25.570
+now we can also switched to python shell
+insanity max
+
+0:15:25.570,0:15:27.530
+if we do u any
+
+0:15:27.530,0:15:30.560
+control c exclamation point
+
+0:15:30.560,0:15:33.100
+we are now inside of
+
+0:15:33.100,0:15:38.150
+so we can save three four six nine three
+eight seven eleven
+
+0:15:38.150,0:15:40.800
+and we can do whatever we want to print
+
+0:15:40.800,0:15:43.660
+hello world
+
+0:15:43.660,0:15:45.900
+and their church forgetting have
+
+0:15:45.900,0:15:49.160
+through a python terminal
+
+0:15:49.160,0:15:53.150
+we can also go back up here to our
+videotape simply select a region of code
+
+0:15:53.150,0:15:56.100
+on the run control c vertical bar
+
+0:15:56.100,0:15:57.139
+to run a region
+
+0:15:57.139,0:16:01.419
+you'll see that it's actually using
+michelle's to run that coding to make a
+
+0:16:01.419,0:16:05.190
+temporary file very strange immigrants
+often runs that
+
+0:16:05.190,0:16:08.820
+so we can also run the whole thing
+control c control c
+
+0:16:08.820,0:16:15.820
+and it went off create another temporary
+file and ran our entire trip from there
+
+0:16:18.120,0:16:20.050
+mystical career are
+
+0:16:20.050,0:16:24.160
+we can also use something called the
+compile commands to run the script
+
+0:16:24.160,0:16:26.150
+so if we do
+
+0:16:26.150,0:16:27.350
+acts
+
+0:16:27.350,0:16:28.710
+compile
+
+0:16:28.710,0:16:32.110
+but before you do that i will stand that
+stephen stephen doing
+
+0:16:32.110,0:16:34.540
+so many x compiled
+
+0:16:34.540,0:16:38.070
+is typically meant to compile seas were
+screwed with acting as if they can be
+
+0:16:38.070,0:16:41.640
+used for just about anything to get rid
+of this meeting dash k which we don't
+
+0:16:41.640,0:16:43.180
+care about
+
+0:16:43.180,0:16:45.160
+and we say python
+
+0:16:45.160,0:16:46.680
+hello dot pie
+
+0:16:46.680,0:16:50.130
+it's gonna look at the current directory
+and writer on the state run dot
+
+0:16:50.130,0:16:51.600
+hello tupac
+
+0:16:51.600,0:16:53.210
+to express entered
+
+0:16:53.210,0:16:55.630
+and it rain off and we actually see
+
+0:16:55.630,0:16:58.480
+a hello world right here
+
+0:16:58.480,0:17:00.270
+so that's very nice
+
+0:17:00.270,0:17:03.210
+and there's a sample of it in the notes
+
+0:17:03.210,0:17:06.990
+we can also run any script doesn't have
+to be
+
+0:17:06.990,0:17:08.640
+uh... python
+
+0:17:08.640,0:17:11.190
+space in the script name so we can do
+
+0:17:11.190,0:17:13.929
+matter x compiled
+
+0:17:13.929,0:17:17.329
+and we can also just replaced that with
+tonsillitis
+
+0:17:17.329,0:17:19.079
+hello
+
+0:17:19.079,0:17:23.579
+to job behind and more super on the
+scripts to have that first line
+
+0:17:23.579,0:17:27.449
+that looks like palin banking serving in
+the item
+
+0:17:27.449,0:17:28.400
+presenter
+
+0:17:28.400,0:17:35.170
+and there's our hello world
+
+0:17:35.170,0:17:37.000
+keeps going down here
+
+0:17:37.000,0:17:40.950
+now we also have and here is to be
+treated with r dot e max file so if we
+
+0:17:40.950,0:17:42.330
+do functioned
+
+0:17:42.330,0:17:44.750
+f_-one
+
+0:17:44.750,0:17:47.730
+it actually brings up that compartment
+right away you can see me at the
+
+0:17:47.730,0:17:49.970
+keyboard but that's what i didn't
+
+0:17:49.970,0:17:53.740
+and then you can rerun the script that
+makes it really easy to do with one
+
+0:17:53.740,0:17:58.110
+keystrokes just what the f one key and
+you re run your script
+
+0:17:58.110,0:18:01.500
+it's great for when you're developing
+stuff quickly
+
+0:18:01.500,0:18:04.470
+now let's see what happens if there's an
+air we need
+
+0:18:04.470,0:18:07.550
+to be able to have imax help us out with
+
+0:18:07.550,0:18:11.159
+trouble spots so limited control expo
+
+0:18:11.159,0:18:13.190
+control xvi
+
+0:18:13.190,0:18:17.290
+here we are going to go to the u_p_s_
+dot pine center
+
+0:18:17.290,0:18:22.610
+and that's been the line that is
+definitely not right
+
+0:18:22.610,0:18:26.460
+maybe we meant to put in single quotes
+for the string printout nothing then but
+
+0:18:26.460,0:18:28.810
+the stefan is not going to work
+
+0:18:28.810,0:18:33.850
+i think judy and foreign format x
+compiled
+
+0:18:33.850,0:18:35.750
+japan announced
+
+0:18:35.750,0:18:41.549
+or we can do a cc sold to a control c
+control seat
+
+0:18:41.549,0:18:42.280
+and
+
+0:18:42.280,0:18:43.770
+it says nothing did
+
+0:18:43.770,0:18:47.419
+and to take this to repair a message
+right here so we'll do that again store
+
+0:18:47.419,0:18:51.390
+cursory sitting right here in some of
+the wind control c
+
+0:18:51.390,0:18:53.080
+control scheme
+
+0:18:53.080,0:18:57.140
+and it takes is right to you
+
+0:18:57.140,0:19:01.030
+chicas rhetorical spot does not get
+showing us up here in our terminal
+
+0:19:01.030,0:19:04.100
+what's going on
+
+0:19:04.100,0:19:08.670
+so it's pretty nice being able to cd
+image pop up
+
+0:19:08.670,0:19:11.820
+now if we won't know really see what's
+going on what's
+
+0:19:11.820,0:19:14.250
+killed us yes
+
+0:19:14.250,0:19:17.870
+shows a controller skate kill them
+
+0:19:17.870,0:19:19.850
+piano three run the
+
+0:19:19.850,0:19:23.100
+without that shelves running around the
+background images
+
+0:19:23.100,0:19:25.740
+let's give it a go again animal to you
+
+0:19:25.740,0:19:27.840
+control c control c
+
+0:19:27.840,0:19:30.440
+and at this time without that shall
+running around
+
+0:19:30.440,0:19:33.509
+it popped up a nice little message
+appear
+
+0:19:33.509,0:19:37.049
+and it took us right along with the
+troubles on the move the cursory here to
+
+0:19:37.049,0:19:37.960
+print
+
+0:19:37.960,0:19:39.710
+and what do you control c
+
+0:19:39.710,0:19:41.610
+controls here in the whole script
+
+0:19:41.610,0:19:45.220
+and it says i'm actually jump into line
+six and taking your a career error
+
+0:19:45.220,0:19:48.940
+messages at least as far as i can tell
+
+0:19:48.940,0:19:52.110
+very nice if you're working with a long
+script and you have about somewhere if
+
+0:19:52.110,0:19:56.810
+you will take you right the trouble spot
+
+0:19:56.810,0:20:02.100
+payment schedule prior notice
+
+0:20:02.100,0:20:06.890
+okay let's try that with the compile
+commands so for norman tax compile some
+
+0:20:06.890,0:20:09.120
+here's my compiled
+
+0:20:09.120,0:20:15.570
+and we're gonna go ahead and say
+payphone the e_u_ h dot pine pressed
+
+0:20:15.570,0:20:17.090
+pinter
+
+0:20:17.090,0:20:18.260
+and that's the nice thing
+
+0:20:18.260,0:20:22.580
+when you're working for the email us if
+you've ever file it hasn't saved it
+
+0:20:22.580,0:20:26.240
+you are actually say do you really want
+it keep praying this without saving it
+
+0:20:26.240,0:20:30.440
+we wanna stated so yes it's asking us to
+save
+
+0:20:30.440,0:20:33.360
+and we have an error message it's a
+little bit more worried
+
+0:20:33.360,0:20:35.400
+but if we look down here it's actually
+saying
+
+0:20:35.400,0:20:37.390
+where it is just like before
+
+0:20:37.390,0:20:40.070
+and if we do
+
+0:20:40.070,0:20:41.320
+met attacks
+
+0:20:41.320,0:20:45.169
+next
+
+0:20:45.169,0:20:47.530
+error i'm in the press answer
+
+0:20:47.530,0:20:49.970
+that success rate connector message
+
+0:20:49.970,0:20:53.370
+and we also have an alias for that and
+that's the eft yuki
+
+0:20:53.370,0:20:56.320
+so we can't do that again took off one
+ball
+
+0:20:56.320,0:20:57.460
+run-ins
+
+0:20:57.460,0:21:04.460
+repressed journal for you got to it's
+because right along the trouble is
+
+0:21:06.250,0:21:09.170
+pretty heaney
+
+0:21:09.170,0:21:12.200
+animal keeps thrown down here and catch
+up
+
+0:21:12.200,0:21:15.760
+and now we're where the spot where we
+can actually run things from inside of
+
+0:21:15.760,0:21:20.670
+he max itself control ax ones which is
+look at that time impressed have
+
+0:21:20.670,0:21:22.299
+to expand the south
+
+0:21:22.299,0:21:27.070
+and wants press control c control c
+insider than or grows hoarse block
+
+0:21:27.070,0:21:30.070
+so the pressure just has to be in
+between these two u
+
+0:21:30.070,0:21:33.710
+begin and sources where you control c
+control c
+
+0:21:33.710,0:21:37.490
+it says do you want or violate this code
+yes we would like to suggest president
+
+0:21:37.490,0:21:38.970
+herb
+
+0:21:38.970,0:21:40.520
+in unfortunately
+
+0:21:40.520,0:21:43.350
+the results are magnet
+
+0:21:43.350,0:21:46.450
+now this is a slight problem with the
+way they did
+
+0:21:46.450,0:21:50.100
+power or go to set up for the court
+babble for papon
+
+0:21:50.100,0:21:51.320
+you actually have to return
+
+0:21:51.320,0:21:53.510
+earn thing that you want printed
+
+0:21:53.510,0:21:54.750
+so in this case will return
+
+0:21:54.750,0:21:57.980
+earned the string teller lord i will try
+to you
+
+0:21:57.980,0:22:01.190
+and we'll get more into returns we'll
+look into functions cannot upcoming
+
+0:22:01.190,0:22:05.990
+video so few controls the control see
+inside of this type yes
+
+0:22:05.990,0:22:09.230
+and your answer comes right back here so
+if we then said
+
+0:22:09.230,0:22:12.480
+let's take another one
+
+0:22:12.480,0:22:16.360
+count and aristide pound plus pekin
+
+0:22:16.360,0:22:17.309
+source
+
+0:22:17.309,0:22:18.620
+pipeline
+
+0:22:18.620,0:22:22.010
+will say return
+
+0:22:22.010,0:22:25.290
+fifties for sixty five times
+
+0:22:25.290,0:22:26.560
+ninety one
+
+0:22:26.560,0:22:30.060
+and pound plus and source
+
+0:22:30.060,0:22:32.870
+hemel tight control c controlled seat
+
+0:22:32.870,0:22:34.850
+we do it i read it yet
+
+0:22:34.850,0:22:37.630
+and here comes our muscle mass answer
+
+0:22:37.630,0:22:40.680
+so that way you can do for the
+repeatable researcher reproducible
+
+0:22:40.680,0:22:42.670
+research style of
+
+0:22:42.670,0:22:43.750
+riding out
+
+0:22:43.750,0:22:48.370
+what's going on so here in this case i
+would write out
+
+0:22:48.370,0:22:51.210
+a description
+
+0:22:51.210,0:22:53.650
+of what high ham
+
+0:22:53.650,0:22:54.490
+doing
+
+0:22:54.490,0:22:56.740
+and body
+
+0:22:56.740,0:22:57.960
+and then i would do the code
+
+0:22:57.960,0:22:59.820
+and have the results
+
+0:22:59.820,0:23:02.720
+and followed
+
+0:23:02.720,0:23:04.990
+with discussion
+
+0:23:04.990,0:23:10.010
+uh...
+
+0:23:10.010,0:23:12.750
+so this is a nice um...
+
+0:23:12.750,0:23:17.760
+why i've he's results
+
+0:23:17.760,0:23:21.289
+so those are some of the ways you can
+run python and there's also python but
+
+0:23:21.289,0:23:24.080
+in a number of different places that you
+might run into you
+
+0:23:24.080,0:23:28.550
+those places include such as uh... arc
+g_i_s_ soccer arc info
+
+0:23:28.550,0:23:31.420
+for those of us we're stuck with the old
+name in our heads
+
+0:23:31.420,0:23:37.780
+and across different tools that embed
+python inside at their depressing
+
+0:23:37.780,0:23:41.680
+that's it for today thank you for
+joining and uh... before tomorrow comes
+

@@ -1,0 +1,85 @@
+#+STARTUP: showall
+
+#+TITLE:     Video 17: emacs - replace string and xml
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-11-07 Mon>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: hdf hdf5 emacs
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+This matches up with lecture 18
+
+* Working with HDF5
+
+#+BEGIN_SRC sh
+wget http://vislab-ccom.unh.edu/~schwehr/rt/examples/old-bags/H11703_Office_5m.bag.bz2
+bunzip2 *.bz2
+
+sudo apt-get install hdf5-tools
+
+h5ls H11703_Office_5m.bag
+h5ls --recursive H11703_Office_5m.bag
+
+h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata  | head
+
+h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | egrep '"' | cut -f2 -d\" | tr -d '\n' > H11703_Office_5m-try1.xml
+
+emacsclient --no-wait H11703_Office_5m-try1.xml
+#+END_SRC
+
+http://en.wikipedia.org/wiki/XML
+
+- M-% query-replace
+- M-x replace-string > < <RET> > C-q C-j <
+
+#+BEGIN_SRC sh
+xmllint H11703_Office_5m-try1.xml
+echo h5dump -b FILE -o H11703_Office_5m.xml H11703_Office_5m.bag
+echo h5dump -b FILE -o H11703_Office_5m.{xml,bag}
+h5dump -b FILE -o H11703_Office_5m.{xml,bag}
+
+xmllint H11703_Office_5m.xml
+#+END_SRC
+
+* History
+
+#+BEGIN_SRC sh
+ 2002  cd ~/video/17
+ 2003  clear
+ 2004  wget http://vislab-ccom.unh.edu/~schwehr/rt/examples/old-bags/H11703_Office_5m.bag.bz2
+ 2005  file H11703_Office_5m.bag.bz2 
+ 2006  bunzip2 H11703_Office_5m.bag.bz2 
+ 2007  ls -l
+ 2008  file H11703_Office_5m.bag 
+ 2009  sudo apt-get install hdf5-tools
+ 2010  man h5ls
+ 2011  h5ls H11703_Office_5m.bag 
+ 2012  man h5ls
+ 2013  h5ls --recursive H11703_Office_5m.bag 
+ 2014  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | less
+ 2015  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | head
+ 2016  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | egrep '"' | head
+ 2017  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | egrep '"' | cut -d\" -f2 | head
+ 2018  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | egrep '"' | cut -d\" -f2 | tr -d '\n' | less
+ 2019  h5ls --simple -d H11703_Office_5m.bag/BAG_root/metadata | egrep '"' | cut -d\" -f2 | tr -d '\n' > H11703_Office_5m-try1.xml
+ 2020  emacsclient --no-wait H11703_Office_5m-try1.xml 
+ 2021  xmllint H11703_Office_5m-try1.xml 
+ 2022  #echo h5dump
+ 2023  man h5dump
+ 2024  echo h5dump -b FILE -o H11703_Office_5m.xml H11703_Office_5m.bag
+ 2025  echo h5dump -b FILE -d BAG_root/metadata -o H11703_Office_5m.xml H11703_Office_5m.bag
+ 2026  echo h5dump -b FILE -d BAG_root/metadata -o H11703_Office_5m.{xml,bag}
+ 2027  h5dump -b FILE -d BAG_root/metadata -o H11703_Office_5m.{xml,bag}
+ 2028  ls -l
+ 2029  less H11703_Office_5m.xml
+ 2030  xmllint H11703_Office_5m.xml 
+ 2031  emacsclient --no-wait H11703_Office_5m.xml
+ 2032  history
+#+END_SRC

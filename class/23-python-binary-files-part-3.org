@@ -1,0 +1,770 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 23: Python - parsing binary data 3 - SBET IMU data
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-11-17 Thu>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: struct numpy sbet imu navigation binary
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* COMMENT todo items for Kurt
+
+- reset ipython workspace
+- page ipython
+- psearch name* type
+
+* Introduction
+
+In this class, we do our first mercurial pull of changes.  We then add
+helper functions to our sbet.py module to give us the number of
+datagrams in an sbet file, tell us at what offset any particular
+datagram is located and add a *generator* function allowing
+cleaner for loops over sbet files.
+
+* TODO See also
+
+- [ ] link to assert documentation
+- [ ] link to sbet documentation
+- [ ] link to generator tutorial & video if possible
+
+* Setup
+
+Open emacs
+
+Open a terminal and get going:
+
+#+BEGIN_SRC sh
+# update your mercurial repository of the class notes
+cd ~/projects/researchtools
+hg pull
+hg update
+
+mkdir -p ~/class/23
+cd ~/class/23
+
+pwd
+# Make sure you are in the right location
+# ~/class/23
+
+# Rather than downloading the org file from a web browser
+# or using wget/curl, you can now get it from the researchtools
+# mercurial revision control repository
+cp ~/projects/researchtools/class/23-python-binary-files-part-3.org .
+
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+bunzip2 sample.sbet.bz2
+
+md5sum sample.sbet 
+196c21f16f07ceae180888b12e9edc56  sample.sbet
+#+END_SRC
+
+Start ipython in the terminal
+
+#+BEGIN_SRC python
+logstart -o -r log-class-23.py append
+
+import struct
+import numpy
+import math
+
+sbet_file = open('sample.sbet')
+sbet_data = sbet_file.read()
+
+whos
+#+END_SRC
+
+** Emacs                                                              :emacs:
+
+Make sure these two options are checked in your emacs:
+
+- Tools -> Source Code Parsers (Semantic)
+- Options -> Paren Match Highlighting
+
+Then do:
+
+- Options -> Save Options
+
+* Catching up from last time
+
+In the class 23 directory, open a new sbet.py file and put this in
+it.  This is what I had at the end of class 22.  I made one small
+change in that I altered the first comment about the file to be a
+triple quoted string so that it functions as a doc string.
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+'''Decode Applanix POSPac SBET IMU binary files'''
+
+import struct
+import math
+# Use the pprint function from the pprint module
+from pprint import pprint
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+def decode(data):
+    'Decipher a SBET datagram from binary'
+    values = struct.unpack('17d',data[0:8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+        
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    print 'Read this many bytes:', len(sbet_data)
+
+    datagram = decode(sbet_data)
+    # Use the pprint function from the pprint module
+    pprint(datagram)
+
+    print 'Finish main'
+    
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC
+
+* Being able to use the whole SBET file
+
+There are many datagrams / messages and they are spaced every 136
+bytes ( 8 byte double precision floating point numbers and we have 17
+of them, so 8*17 bytes).  We now need to add a 2nd parameter to our
+decode function - an =offset= into the =data= variable.   Make the
+default of =offset= to be the start of the data or the number "0".
+
+#+BEGIN_SRC python
+def decode(data, offset=0):
+#+END_SRC
+
+Now change the =struct.unpack= line to pass in a section of data that
+depends on the offset:
+
+#+BEGIN_SRC python
+    values = struct.unpack('17d',data[ offset + 0 : offset + 8*17 ])
+#+END_SRC
+
+* We need help from some additional functions
+
+The first help we need is something that tells us how many datagrams
+are in a file:
+
+#+BEGIN_SRC python
+datagram_size = 136 # 8*17 bytes per datagram
+
+def num_datagrams(data):
+    'How many packets are in data'
+
+    # Make sure we have an even number of datagrams
+    assert (len(data) % datagram_size == 0)
+
+    return len(data) / datagram_size
+#+END_SRC
+
+Try it out from ipython:
+
+#+BEGIN_SRC python
+reload sbet
+
+len(sbet_data)
+# 22712
+
+len(sbet_data) / 136
+# 167
+
+# % or "mod" is the remainder from a divide operator
+
+0 % 2
+1 % 2
+2 % 2
+3 % 2
+100 % 5
+104 % 5
+
+len(sbet_data) % 136
+# 0
+
+sbet.num_datagrams( sbet_data )
+# 167
+#+END_SRC
+
+So now we know that there are 167 messages in our SBET file!
+
+Our second helper that we need is the ability to get the offset for a
+datagram/message number:
+
+#+BEGIN_SRC python
+def get_offset(datagram_number):
+    'Calculate the starting offset of a datagram.  First is dg num 0'
+    return datagram_number * datagram_size
+#+END_SRC
+
+Try it!
+
+#+BEGIN_SRC python
+reload sbet
+
+sbet.get_offset(0)
+# 0
+
+sbet.get_offset(1)
+# 136
+
+sbet.get_offset(2)
+# 272
+
+sbet.get_offset(125)
+# 17000
+#+END_SRC
+
+* Now we can change main to loop through our datagrams
+
+Change the =main= function to look like this after the read:
+
+#+BEGIN_SRC python
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    # New code starts here
+    print 'Number of datagrams:', num_datagrams(sbet_data)
+
+    print 'Datagram Number, Time, x, y'
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data,offset)
+
+        print datagram_index, datagram['time'],datagram['lon_deg'], datagram['lat_deg']
+#+END_SRC
+
+Run it!
+
+#+BEGIN_EXAMPLE 
+In [32]: run sbet
+starting to run script...
+Starting main
+Number of datagrams: 167
+Datagram Number, Time, x, y
+0 334959.004823 -146.675232704 60.4443123064
+1 335009.003514 -146.671920256 60.448698066
+2 335059.002204 -146.667715067 60.4528836831
+3 335109.000894 -146.663165536 60.4570416942
+4 335158.999585 -146.659085911 60.4612950577
+5 335208.998275 -146.654515522 60.4654683305
+...
+In [32]: run sbet
+starting to run script...
+Starting main
+Number of datagrams: 167
+Datagram Number, Time, x, y
+0 334959.004823 -146.675232704 60.4443123064
+1 335009.003514 -146.671920256 60.448698066
+2 335059.002204 -146.667715067 60.4528836831
+3 335109.000894 -146.663165536 60.4570416942
+4 335158.999585 -146.659085911 60.4612950577
+5 335208.998275 -146.654515522 60.4654683305
+#+END_EXAMPLE
+
+* Creating a GENERATOR                                            :generator:
+
+Generators are things that when called, will return one item each
+time.  It will feel a bit like magic, but once you get used to them,
+it makes looping over files and data super easy to do.
+
+Add this function to your sbet.py:
+
+#+BEGIN_SRC python
+def load_sbet_file(filename):
+    '''This is a GENERATOR that we can loop over with a for'''
+    sbet_file = open(filename)
+    sbet_data = sbet_file.read()
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data,offset)
+        datagram['index'] = datagram_index
+        yield datagram  # <--- the is the magic
+
+    # When we get here, we are done looping
+#+END_SRC
+
+Now try it in ipython:
+
+#+BEGIN_SRC python
+reload sbet
+
+sample = sbet.load_sbet_file('sample.sbet')
+
+type( sample )
+# <type 'generator'>
+
+# print sample
+<generator object load_sbet_file at 0xa08c7ac>
+
+sample. # Press tab to see options
+
+sample.next()
+
+datagram = sample.next()
+
+# use the special "p" shortcut in ipython for print
+p datagram
+
+sample.next()
+sample.next()
+sample.next()
+#+END_SRC
+
+Now try it in a for loop:
+
+#+BEGIN_SRC python
+# This will print a lot of junk to the screen!
+for sample in sbet.load_sbet_file('sample.sbet'):
+   print sample
+
+# Nicer:
+for sample in sbet.load_sbet_file('sample.sbet'):
+    print sample['lon_deg'], sample['lat_deg']
+-146.675232704 60.4443123064
+-146.671920256 60.448698066
+-146.667715067 60.4528836831
+-146.663165536 60.4570416942
+-146.659085911 60.4612950577
+-146.654515522 60.4654683305
+# ... and lots more ...
+
+# Better would be to save the data to a variable
+data = [ ] 
+for sample in sbet.load_sbet_file('sample.sbet'):
+    data.append( [ sample['lon_deg'], sample['lat_deg'] ] )
+
+whos list
+
+data[0]
+data[-1]
+#+END_SRC
+
+But we have just thrown out most of the data.  Let's keep each datagram as a
+=dict= (dictionary) in a list and then make an =array= for each parameter.
+
+#+BEGIN_SRC python
+for sample in sbet.load_sbet_file('sample.sbet'):
+    data.append( sample )
+
+whos
+
+x_list = [ ]
+
+for sample in data:
+     x_list.append(sample['lon_deg'])
+
+import numpy
+x = numpy.array(x_list)
+
+from matplotlib import pyplot
+pyplot.interactive(True)
+pyplot.plot(x)
+
+for sample in data:
+    y_list.append(sample['lat_deg'])
+
+y = numpy.array(y_list)
+
+pyplot.cla()
+pyplot.plot(y)
+
+pyplot.cla()
+pyplot.plot(x,y)
+#+END_SRC
+
+And now you should be looking at a survey from Alaska.
+
+* History
+
+** ipython history
+
+#+BEGIN_SRC python
+In [95]: history 1 95
+1 : _ip.magic("logstart -o -r log-class-23.py append")
+2 : _ip.system("ls -F ")
+3 : import struct 
+4 : import numpy
+5 : import math
+6 : sbet_file = open('sample.sbet')
+7 : sbet_data = sbet_file.read()
+8 : _ip.magic("whos ")
+9 : _ip.magic("run sbet")
+10: #?assert
+11: help(assert)
+12: assert (0==0)
+13: assert (1==0)
+14: assert(True)
+15: assert(False)
+16: 21/ 4
+17: 21 % 4
+18: 0 % 2
+19: 1 % 2
+20: 2 % 2
+21: 3 % 2
+22: 100 % 5
+23: 104 % 5
+24: import sbet
+25: reload(sbet)
+26: len(sbet_data)
+27: len(sbet_data) / 136
+28: 22712 % 136
+29: sbet.num_datagrams( sbet_data )
+30: 50 * 136 
+31: reload(sbet)
+32: sbet.get_offset(0)
+33: sbet.get_offset(1)
+34: sbet.get_offset(125)
+35: sbet.get_offset(50)
+36: reload(sbet)
+37: _ip.magic("run sbet")
+38: 
+39: reload(sbet)
+40: sample = sbet.load_sbet_file('sample.sbet')
+41: type(sample)
+42: print sample
+43: sample.next()
+44: datagram = sample.next()
+45: _ip.magic("p datagram")
+46: datagram = sample.next()
+47: _ip.magic("p datagram")
+48: sample.next()
+49: sample.next()
+50: sample.next()
+51: sample.next()
+52: sample.next()
+
+56:
+for sample in sbet.load_sbet_file('sample.sbet'):
+    print sample
+    
+
+57: for sample in sbet.load_sbet_file('sample.sbet'):
+58:
+    print sample['lon_deg'], sample['lat_deg']
+
+59: 
+60: data = [ ]
+61: for sample in sbet.load_sbet_file('sample.sbet'):
+62:
+    data.append( [ sample['lon_deg'], sample['lat_deg']  ] )
+
+63: _ip.magic("whos list")
+64: data[0]
+65: data[-1]
+66: data = [ ]
+67: whost list
+68: _ip.magic("whos list")
+69: for sample in sbet.load_sbet_file('sample.sbet'):
+70:
+    data.append( sample )
+
+71: _ip.magic("whos list")
+72: data[0]['lon_deg']
+73: x_list = [ ]
+74:
+for sample in data:
+    x_list.append( sample['lon_deg']  )
+
+75: _ip.magic("whos list")
+76: import numpy
+77: x = numpy.array(x_list)
+78: _ip.magic("psearch x*")
+79: _ip.magic("whos ")
+80: _ip.magic("whos ndarray")
+81: from matplotlib import pyplot
+82: pyplot.interactive(True)
+83: pyplot.plot(x)
+84: y_list = [ ]
+85: for sample in data:
+86:
+    y_list.append( sample['lat_deg']  )
+    
+
+87: _ip.magic("whos list")
+88: y = numpy.array(y_list)
+89: _ip.magic("whos ndarray")
+90: pyplot.plot(y)
+91: pyplot.cla()
+92: pyplot.plot(y)
+93: pyplot.cla()
+94: pyplot.plot(x,y)
+#+END_SRC
+
+** ipython log file
+
+#+BEGIN_SRC python
+  #log# Automatic Logger file. *** THIS MUST BE THE FIRST LINE ***
+  #log# DO NOT CHANGE THIS LINE OR THE TWO BELOW
+  #log# opts = Struct({'__allownew': True, 'logfile': 'log-class-23.py'})
+  #log# args = []
+  #log# It is safe to make manual edits below here.
+  #log#-----------------------------------------------------------------------
+  ls
+  import struct 
+  import numpy
+  import math
+  sbet_file = open('sample.sbet')
+  sbet_data = sbet_file.read()
+  whos
+  run sbet
+  assert
+  help assert
+  assert (0==0)
+  assert (1==0)
+  assert(True)
+  assert(False)
+  21/ 4
+  #[Out]# 5
+  21 % 4
+  #[Out]# 1
+  0 % 2
+  #[Out]# 0
+  1 % 2
+  #[Out]# 1
+  2 % 2
+  #[Out]# 0
+  3 % 2
+  #[Out]# 1
+  100 % 5
+  #[Out]# 0
+  104 % 5
+  #[Out]# 4
+  import sbet
+  reload sbet
+  #[Out]# <module 'sbet' from 'sbet.pyc'>
+  len(sbet_data)
+  #[Out]# 22712
+  len(sbet_data) / 136
+  #[Out]# 167
+  22712 % 136
+  #[Out]# 0
+  sbet.num_datagrams( sbet_data )
+  #[Out]# 167
+  50 * 136 
+  #[Out]# 6800
+  reload sbet
+  #[Out]# <module 'sbet' from 'sbet.py'>
+  sbet.get_offset(0)
+  #[Out]# 0
+  sbet.get_offset(1)
+  #[Out]# 136
+  sbet.get_offset(125)
+  #[Out]# 17000
+  sbet.get_offset(50)
+  #[Out]# 6800
+  reload sbet
+  #[Out]# <module 'sbet' from 'sbet.py'>
+  run sbet
+  reload sbet
+  #[Out]# <module 'sbet' from 'sbet.py'>
+  sample = sbet.load_sbet_file('sample.sbet')
+  type(sample)
+  #[Out]# <type 'generator'>
+  print sample
+  sample.next()
+  #[Out]# {'x_acceleration': -0.8249097558096672, 'x_angular_rate': 0.021320176833628756, 'platform_heading': -0.09985686530029529, 'y_angular_rate': 0.029000032024608147, 'pitch': 0.11416603057936824, 'index': 0, 'altitude': 12.826300557342815, 'z_vel': 0.18282804536664027, 'lat_deg': 60.444312306421736, 'longitude': -2.559965741819528, 'roll': -0.0026283394812042344, 'y_vel': 0.998228318178983, 'y_acceleration': -0.3413483211034812, 'time': 334959.0048233234, 'latitude': 1.0549522638507869, 'lon_deg': -146.6752327043359, 'z_acceleration': 0.07018300645653144, 'z_angular': -0.006807197876212325, 'x_vel': 10.437825046453915, 'wander_angle': -0.40154673926674145}
+  datagram = sample.next()
+  p datagram
+  datagram = sample.next()
+  p datagram
+  sample.next()
+  #[Out]# {'x_acceleration': -0.3071850514762903, 'x_angular_rate': -0.008429658492294403, 'platform_heading': 0.09128695069219787, 'y_angular_rate': -0.02515848896213485, 'pitch': 0.09043903155137152, 'index': 3, 'altitude': 12.840535898329556, 'z_vel': -0.15489009763194184, 'lat_deg': 60.45704169418524, 'longitude': -2.559755130008818, 'roll': 0.0009330262766512799, 'y_vel': -1.00932576955684, 'y_acceleration': -0.46560264689789443, 'time': 335109.0008939397, 'latitude': 1.0551744335790232, 'lon_deg': -146.6631655364666, 'z_acceleration': 1.2471829447083047, 'z_angular': -0.002228522637782281, 'x_vel': 10.679625600740676, 'wander_angle': -0.40272627743016876}
+  sample.next()
+  #[Out]# {'x_acceleration': -0.7781552411019222, 'x_angular_rate': 0.0037764640503168607, 'platform_heading': 0.07502292511175909, 'y_angular_rate': 0.012224458693905094, 'pitch': 0.10343959764742486, 'index': 4, 'altitude': 12.78823959942903, 'z_vel': 0.05875875955094781, 'lat_deg': 60.461295057701584, 'longitude': -2.559683927110475, 'roll': -0.01468553064654312, 'y_vel': -0.733609805817454, 'y_acceleration': 0.027166522587356978, 'time': 335158.9995846264, 'latitude': 1.0552486687766676, 'lon_deg': -146.65908591090246, 'z_acceleration': 1.8927320987229657, 'z_angular': -0.0052805629838696905, 'x_vel': 10.460874039331822, 'wander_angle': -0.40245026747958385}
+  sample.next()
+  #[Out]# {'x_acceleration': -0.5607055114436477, 'x_angular_rate': -0.029028935688440435, 'platform_heading': 0.14698692876146935, 'y_angular_rate': -0.03278660140244006, 'pitch': 0.0998363364154671, 'index': 5, 'altitude': 12.875750980879767, 'z_vel': -0.17671459342051501, 'lat_deg': 60.465468330516764, 'longitude': -2.5596041587765965, 'roll': -0.0024510349714051347, 'y_vel': -1.4911959236249226, 'y_acceleration': 0.14738454712246674, 'time': 335208.9982748304, 'latitude': 1.0553215061278765, 'lon_deg': -146.65451552203243, 'z_acceleration': 1.9096859439115847, 'z_angular': -0.006806428282505694, 'x_vel': 10.419082967922375, 'wander_angle': -0.4028135661637119}
+  sample.next()
+  #[Out]# {'x_acceleration': 0.23537216506608838, 'x_angular_rate': -0.009193171744916176, 'platform_heading': 0.055552806990429415, 'y_angular_rate': 0.03129879307128389, 'pitch': 0.08957110191646712, 'index': 6, 'altitude': 12.80683750316026, 'z_vel': -0.012072032491867507, 'lat_deg': 60.46966975684085, 'longitude': -2.559528965293461, 'roll': 0.0029713456317729293, 'y_vel': -0.5973569270918889, 'y_acceleration': -0.13000155886025408, 'time': 335258.9969650349, 'latitude': 1.0553948348505118, 'lon_deg': -146.65020725280186, 'z_acceleration': -0.08296268114747367, 'z_angular': -0.01748763022336087, 'x_vel': 10.47244454858958, 'wander_angle': -0.4025896375458606}
+  sample.next()
+  #[Out]# {'x_acceleration': -0.24736255893743744, 'x_angular_rate': -0.01834912664122284, 'platform_heading': 0.06967619329354434, 'y_angular_rate': -0.030499856395247778, 'pitch': 0.10147588962736608, 'index': 7, 'altitude': 12.960005268824755, 'z_vel': -0.06231168080977078, 'lat_deg': 60.47390263597185, 'longitude': -2.559455141987675, 'roll': 0.0044983894046077945, 'y_vel': -0.7169424553980409, 'y_acceleration': -0.27380186702217646, 'time': 335308.99565622694, 'latitude': 1.0554687125281865, 'lon_deg': -146.64597748895065, 'z_acceleration': 0.5650814424664047, 'z_angular': -0.009095631575741477, 'x_vel': 10.534199831692101, 'wander_angle': -0.4025391616021506}
+  for sample in sbet.load_sbet_file('sample.sbet'):
+      print sample
+      
+  for sample in sbet.load_sbet_file('sample.sbet'):
+      print sample['lon_deg'], sample['lat_deg']
+      
+  data = [ ]
+  for sample in sbet.load_sbet_file('sample.sbet'):
+      data.append( [ sample['lon_deg'], sample['lat_deg']  ] )
+      
+  whos list
+  data[0]
+  #[Out]# [-146.6752327043359, 60.444312306421736]
+  data[-1]
+  #[Out]# [-146.69218794649456, 60.437070513780455]
+  data = [ ]
+  whost list
+  whos list
+  for sample in sbet.load_sbet_file('sample.sbet'):
+      data.append( sample )
+      
+  whos list
+  data[0]['lon_deg']
+  #[Out]# -146.6752327043359
+  x_list = [ ]
+  for sample in data:
+      x_list.append( sample['lon_deg']  )
+      
+  whos list
+  import numpy
+  x = numpy.array(x_list)
+  psearch x*
+  whos
+  whos ndarray
+  from matplotlib import pyplot
+  pyplot.interactive(True)
+  pyplot.plot(x)
+  #[Out]# [<matplotlib.lines.Line2D object at 0x9063e0c>]
+  y_list = [ ]
+  for sample in data:
+      y_list.append( sample['lat_deg']  )
+      
+  whos list
+  y = numpy.array(y_list)
+  whos ndarray
+  pyplot.plot(y)
+  #[Out]# [<matplotlib.lines.Line2D object at 0x92eddcc>]
+  pyplot.cla()
+  pyplot.plot(y)
+  #[Out]# [<matplotlib.lines.Line2D object at 0x92d788c>]
+  pyplot.cla()
+  pyplot.plot(x,y)
+  #[Out]# [<matplotlib.lines.Line2D object at 0x93c4c6c>]
+  history 1 95
+#+END_SRC
+
+** bash shell history
+
+#+BEGIN_SRC sh
+ 2000  sudo ntpdate ntp.ubuntu.com
+ 2001  ls -l
+ 2002  cd researchtools
+ 2003  hg pull
+ 2004  cd class/
+ 2005  ls
+ 2006  hg pull
+ 2007  cd ..
+ 2008  ls
+ 2009  find . -name 23\*
+ 2010  cd class/
+
+ 2012  hg update
+ 2013  ls -la
+ 2014  clear
+ 2015  hg update
+ 2016  ls -l
+ 2017  #wtf rtfm
+ 2018  #sudo apt-get install wtf # Whoops... not a ubuntu package
+       sudo apt-get install bsdgames # This is the correct package
+       wtf rtfm # NOT safe for work
+ 2019  cd
+ 2020  clear
+ 2021  mkdir -p ~/class/23
+ 2022  cd ~/class/23
+ 2023  pwd
+ 2024  cp ~/projects/researchtools/class/23-python-binary-files-part-3.org .
+ 2025  curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+ 2026  bunzip2 sample.sbet.bz2
+ 2027  md5sum sample.sbet 
+ 2028  ipython
+ 2029  history
+#+END_SRC
+
+* Final version of sbet.py
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+'''Decode Applanix POSPac SBET IMU binary files'''
+
+import struct
+import math
+# Use the pprint function from the pprint module
+from pprint import pprint
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+datagram_size = 136 # 8*17 bytes per datagram
+
+def num_datagrams(data):
+    'How many packets are in data'
+
+    assert( len(data) % datagram_size == 0 )
+
+    return len(data) / datagram_size
+
+def get_offset(datagram_number):
+    'Calculate the starting offset of a datagram.  First datagram is number 0'
+    return datagram_number * datagram_size
+
+def decode(data, offset=0):
+    'Decipher a SBET datagram from binary'
+    values = struct.unpack('17d',data[ offset + 0 : offset + 8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+
+def load_sbet_file(filename):
+    '''This is a GENERATOR that we can loop over with a for'''
+    sbet_file = open(filename)
+    sbet_data = sbet_file.read()
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+        datagram['index'] = datagram_index
+        yield datagram
+        
+        
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    print 'Number of datagrams:', num_datagrams(sbet_data)
+
+    print 'Datagram Number, Time, x, y'
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+
+        print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+    
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC

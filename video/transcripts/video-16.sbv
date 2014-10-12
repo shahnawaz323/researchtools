@@ -1,0 +1,342 @@
+0:00:02.060,0:00:06.440
+hello my name is purchased where tenses
+research tools video sixteen
+
+0:00:06.440,0:00:13.169
+camera talked today about simple signal
+processing using num pride and typed on
+
+0:00:13.169,0:00:17.099
+pretzels go ahead and get started for
+entrance and basics of signal processing
+
+0:00:17.099,0:00:22.900
+will say high place on dash dash pylon
+yourself into a python environment
+
+0:00:22.900,0:00:26.980
+and number hai provides some nice
+functionality for working with the rays
+
+0:00:26.980,0:00:30.329
+so we can construct some basic signal
+states
+
+0:00:30.329,0:00:32.160
+the first one take a look at
+
+0:00:32.160,0:00:36.380
+is to make the boxcar so we can say
+zeros
+
+0:00:36.380,0:00:42.120
+and the zeros functions it lets us
+create a list upper an array of
+
+0:00:42.120,0:00:45.460
+zero still say zeros
+
+0:00:45.460,0:00:48.790
+in will make about two hundred of them
+
+0:00:48.790,0:00:50.840
+so there's an array of two hundred
+cereals
+
+0:00:50.840,0:00:54.800
+anamika boxcar when have zeros fall by
+one's phone blazers
+
+0:00:54.800,0:00:57.220
+city council yonews
+
+0:00:57.220,0:00:58.730
+one hundred and
+
+0:00:58.730,0:01:00.690
+and there's a hundred one
+
+0:01:00.690,0:01:05.220
+and what we can do that in this can
+cadmium these together so we can say
+
+0:01:05.220,0:01:07.429
+and patni casket
+
+0:01:07.429,0:01:09.240
+a little bit about self
+
+0:01:09.240,0:01:13.479
+so we can can techniques have for all
+race together okay and uh... gloom
+
+0:01:13.479,0:01:19.009
+clinic at its allstate and patni
+
+0:01:19.009,0:01:20.690
+and will make a list
+
+0:01:20.690,0:01:24.010
+so we're gonna fill up this list with
+ones
+
+0:01:24.010,0:01:27.340
+let's make it a little bit bigger so a
+thousand of them
+
+0:01:27.340,0:01:30.690
+followed by maybe uh... will save
+
+0:01:30.690,0:01:33.030
+also is there a suspect there
+
+0:01:33.030,0:01:35.659
+view rooms
+
+0:01:35.659,0:01:39.710
+ones so make uh... about two hundred
+votes
+
+0:01:39.710,0:01:42.130
+and zeros
+
+0:01:42.130,0:01:46.720
+one thousand
+
+0:01:46.720,0:01:49.530
+simply have my prints these freight so
+there we go
+
+0:01:49.530,0:01:51.210
+now we really want
+
+0:01:51.210,0:01:55.270
+rather than using count five which pic
+dealing with the state data equals
+
+0:01:55.270,0:01:59.390
+and we can do a quick talk about the
+plot data
+
+0:01:59.390,0:02:02.590
+piano bring that to a first for a trip
+to see it
+
+0:02:02.590,0:02:06.530
+and there you have a simple square wave
+or boxcar
+
+0:02:06.530,0:02:09.759
+so we can do some interesting things
+with them for example maybe one of the
+
+0:02:09.759,0:02:13.240
+apply hemming filter and if you don't
+know him a filter looks like we'll just
+
+0:02:13.240,0:02:16.009
+go ahead and create one so to say
+
+0:02:16.009,0:02:17.499
+hemming
+
+0:02:17.499,0:02:19.150
+uh... will meet you meet me
+
+0:02:19.150,0:02:20.169
+thirty
+
+0:02:20.169,0:02:21.579
+samples for them
+
+0:02:21.579,0:02:22.489
+and that
+
+0:02:22.489,0:02:28.180
+is a hint of their doesn't look like
+much does it all say
+
+0:02:28.180,0:02:34.969
+we'll bring that in and it's just a
+simple responsible shape
+
+0:02:34.969,0:02:37.059
+if we bring them back
+
+0:02:37.059,0:02:38.590
+if we look here it
+
+0:02:38.590,0:02:41.890
+peaks to warn if you in a great honor
+this curve if it's going to be much more
+
+0:02:41.890,0:02:44.379
+than one so if we
+
+0:02:44.379,0:02:48.989
+going apply this filter to our data it's
+actually been increased the
+
+0:02:48.989,0:02:50.470
+people to of our signal
+
+0:02:50.470,0:02:54.429
+so even normalize its so that it sums to
+one so we can say
+
+0:02:54.429,0:03:01.239
+hemming up thirty in the detectives some
+of bands serpents salman
+
+0:03:01.239,0:03:03.959
+and that comes out for higher than one
+
+0:03:03.959,0:03:06.310
+so what we can do is say
+
+0:03:06.310,0:03:09.099
+are filter
+
+0:03:09.099,0:03:11.090
+copy filter
+
+0:03:11.090,0:03:13.089
+equals
+
+0:03:13.089,0:03:14.060
+thirty
+
+0:03:14.060,0:03:17.949
+and we'll divide by the some of uh...
+total filter
+
+0:03:17.949,0:03:20.459
+simply say some okay
+
+0:03:20.459,0:03:21.419
+filter
+
+0:03:21.419,0:03:22.730
+we get back one
+
+0:03:22.730,0:03:27.639
+so it's a plot g
+
+0:03:27.639,0:03:34.639
+and here's our filter and if you notice
+that this is much lower
+
+0:03:35.089,0:03:39.199
+so let's go ahead and learn how to
+control for arsenals together so we can
+
+0:03:39.199,0:03:41.379
+say
+
+0:03:41.379,0:03:45.299
+involve question mark in the gas cooktop
+involved
+
+0:03:45.299,0:03:49.130
+so here we have to play to raise
+together and unity
+
+0:03:49.130,0:03:51.729
+and nobody thought silicon saying
+
+0:03:51.729,0:03:55.029
+can involve
+
+0:03:55.029,0:03:56.659
+the where
+
+0:03:56.659,0:03:58.969
+j filter
+
+0:03:58.969,0:04:02.139
+and we get back in a rate it doesn't
+look like much of a commitment to run a
+
+0:04:02.139,0:04:05.109
+plot that treated plots
+
+0:04:05.109,0:04:07.779
+involved
+
+0:04:07.779,0:04:12.629
+there's our convo filter animals also
+plots partido along with this we can see
+
+0:04:12.629,0:04:14.399
+the difference between the two
+
+0:04:14.399,0:04:17.159
+so what actually happens here is that
+it's
+
+0:04:17.159,0:04:20.530
+kind not together and it's a little hard
+to see here
+
+0:04:20.530,0:04:25.949
+uh... it brown's the edges with him a
+filter
+
+0:04:25.949,0:04:29.789
+we can also generate raman signals so we
+can say
+
+0:04:29.789,0:04:31.749
+brand
+
+0:04:31.749,0:04:33.469
+and
+
+0:04:33.469,0:04:38.810
+one hundred or one thousand the image of
+random stuff so we can save plots
+
+0:04:38.810,0:04:39.720
+and
+
+0:04:39.720,0:04:42.870
+here it is some random data
+
+0:04:42.870,0:04:47.020
+we can also take it for a transfer
+announcements eight ten fifty
+
+0:04:47.020,0:04:53.309
+ray and and one thousand or maybe ten
+twenty four
+
+0:04:53.309,0:04:57.669
+doesn't look like much but then we can
+save wants
+
+0:04:57.669,0:04:59.429
+proper credits he's in there
+
+0:04:59.429,0:05:03.400
+and
+
+0:05:03.400,0:05:07.569
+simply plug the a fiftieth that they
+have there is the story transfer about
+
+0:05:07.569,0:05:08.710
+it
+
+0:05:08.710,0:05:11.039
+doesn't take much because when india
+
+0:05:11.039,0:05:14.629
+but that should be uh... let's get you
+started thinking about signal processing
+
+0:05:14.629,0:05:17.019
+anti-klan
+
+0:05:17.019,0:05:17.529
+so thanks for joining
+

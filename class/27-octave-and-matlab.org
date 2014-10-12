@@ -1,0 +1,29 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 27: Octave and Matlab (Additional class)
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-12-03 Sat>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: octave
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+This class is not a part of the core lectures.  I figured I might as
+well start the class notes while I'm thinking about it.
+
+* See Also
+
+** YouTube videos
+
+- [[http://www.youtube.com/user/MATLAB?feature%3Dwatch#g/u][MATLAB channel]]
+  - [[http://www.youtube.com/watch?v%3Dme53aM6n_1Y][Importing Data Files into MATLAB]]
+
+* Getting Data from Python to Octave
+
+** Formats that Octave and Matplot lib can read

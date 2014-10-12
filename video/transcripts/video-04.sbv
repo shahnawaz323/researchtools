@@ -1,0 +1,955 @@
+0:00:01.319,0:00:06.769
+welcome to u research tools video for
+yet more imax my name is curt schreiner
+
+0:00:06.769,0:00:10.819
+and statement to he threw a little bit
+more uh... imax
+
+0:00:10.819,0:00:15.289
+i've created in or growth file to have a
+overview of what we'll do today
+
+0:00:15.289,0:00:17.730
+inmates little short
+
+0:00:17.730,0:00:22.119
+will look at the car crash artsy file
+which sets up are shown
+
+0:00:22.119,0:00:25.869
+we'll take a look at some fun things
+inside at the imax cut rates and the
+
+0:00:25.869,0:00:27.679
+doctor program
+
+0:00:27.679,0:00:31.879
+will look at man pages inside of the max
+who look at documentation inside of the
+
+0:00:31.879,0:00:34.450
+max and infosystems
+
+0:00:34.450,0:00:38.040
+and we'll take a quick peak that's a
+large purple file
+
+0:00:38.040,0:00:43.430
+animal gravity tar file that's from that
+class hang watch a show you that you can
+
+0:00:43.430,0:00:44.550
+get into you
+
+0:00:44.550,0:00:49.680
+that insides avatar file without and
+concurrent on charges for unpacking this
+
+0:00:49.680,0:00:52.220
+archive of many files
+
+0:00:52.220,0:00:57.140
+let's go ahead and it started since but
+my screen here with control acts to
+
+0:00:57.140,0:01:00.870
+and and i put leave this up on the top
+of my list and i went to the bottom
+
+0:01:00.870,0:01:04.449
+window control accident an order over
+
+0:01:04.449,0:01:05.339
+and
+
+0:01:05.339,0:01:09.900
+let's start by opening up our docking
+max file a monument to annex
+
+0:01:09.900,0:01:12.880
+come for the default bachelor sea
+
+0:01:12.880,0:01:17.400
+this is a configuration file that
+controls how the shell runs
+
+0:01:17.400,0:01:20.590
+and this is a shell script basically
+tickets run every time you create new
+
+0:01:20.590,0:01:21.940
+shelved
+
+0:01:21.940,0:01:24.640
+and it's got lots of different options
+in it
+
+0:01:24.640,0:01:27.869
+but there's one i'd like to add to it
+isn't in there
+
+0:01:27.869,0:01:29.360
+and uh...
+
+0:01:29.360,0:01:34.190
+for the fear that they have a dot bashed
+aliases file so we can do control excuse
+
+0:01:34.190,0:01:37.860
+put that and we'll see if there is a dot
+bash
+
+0:01:37.860,0:01:40.200
+aliases
+
+0:01:40.200,0:01:42.210
+and there's not it's a new file
+
+0:01:42.210,0:01:45.280
+thoughts create some quick aliases
+
+0:01:45.280,0:01:48.610
+presage helios power and equals
+
+0:01:48.610,0:01:50.900
+are and that side
+
+0:01:50.900,0:01:54.980
+helios andy equals andy
+
+0:01:54.980,0:01:56.390
+nationally
+
+0:01:56.390,0:01:58.560
+alias c_p_ equals
+
+0:01:58.560,0:02:04.960
+sleepy
+
+0:02:04.960,0:02:11.259
+now before i say this and then switch
+over in the starter selma defects shall
+
+0:02:11.259,0:02:12.540
+and will type
+
+0:02:12.540,0:02:17.919
+alias and regret for or m
+
+0:02:17.919,0:02:22.899
+so there is no actually it's for our agm
+and its yet who did not to be leases
+
+0:02:22.899,0:02:24.799
+if we quit
+
+0:02:24.799,0:02:27.579
+the show exit the shelf pardon me
+
+0:02:27.579,0:02:29.869
+kill its control x k
+
+0:02:29.869,0:02:32.489
+and still ahead can save
+
+0:02:32.489,0:02:36.419
+control x control s our passion aliases
+
+0:02:36.419,0:02:42.659
+africa controllers go to go back to this
+window molding meta factional again
+
+0:02:42.659,0:02:46.579
+phenomena show on the tape helios r m
+
+0:02:46.579,0:02:49.629
+and we'll see now that we have an alias
+for or m
+
+0:02:49.629,0:02:51.599
+now what is the silliest q
+
+0:02:51.599,0:02:55.419
+the says if we touch a file touch
+
+0:02:55.419,0:02:56.980
+our agm through
+
+0:02:56.980,0:03:01.509
+it's not going to ask us to do we
+actually wants to leave this file not
+
+0:03:01.509,0:03:05.619
+this will happen dispute recovering from
+a file ask you yes or no
+
+0:03:05.619,0:03:09.509
+just remember that if you do in our and
+dash f fu it's not going to have to
+
+0:03:09.509,0:03:11.999
+anything aphids perforce
+
+0:03:11.999,0:03:14.889
+finality add a little bit of
+
+0:03:14.889,0:03:17.769
+safety to our show fireman's and
+
+0:03:17.769,0:03:23.179
+we're also seen r dot basher risky
+expand our passion releases
+
+0:03:23.179,0:03:26.989
+you can spend quite a time customizing
+your aries inside the shuttle
+
+0:03:26.989,0:03:28.519
+but i want to show you
+
+0:03:28.519,0:03:34.919
+out those three aces that i think should
+be an paul basher c files
+
+0:03:34.919,0:03:37.509
+so let's go back up to our toplist
+
+0:03:37.509,0:03:40.639
+animals you control it's one of the hide
+everything else and
+
+0:03:40.639,0:03:42.839
+whilst they were done with this
+
+0:03:42.839,0:03:45.879
+controls the controlled seek
+
+0:03:45.879,0:03:50.709
+imax isn't just support extending it has
+all kinds of people bilities
+
+0:03:50.709,0:03:54.289
+now well this is an important election
+shows you how powerful he mixes so let's
+
+0:03:54.289,0:03:57.379
+go ahead and run tetris cement acts
+
+0:03:57.379,0:03:58.940
+and give you the
+
+0:03:58.940,0:04:04.269
+play three k entering any interactive
+community max might have
+
+0:04:04.269,0:04:05.459
+tetris
+
+0:04:05.459,0:04:08.650
+from there's only one tetris i had to
+have to complete it
+
+0:04:08.650,0:04:10.589
+democrat nick
+
+0:04:10.589,0:04:14.289
+and this shows you that imax is actually
+quite powerful has all sorts of features
+
+0:04:14.289,0:04:15.219
+in it
+
+0:04:15.219,0:04:18.299
+we can play tetris to our hearts desire
+
+0:04:18.299,0:04:21.729
+you missed a lot of time
+
+0:04:21.729,0:04:25.330
+uh... pardon the care about the game
+scores is not set up
+
+0:04:25.330,0:04:27.759
+partly for games in this fertile machine
+
+0:04:27.759,0:04:29.699
+or not can actually care about
+
+0:04:29.699,0:04:32.990
+to control exchange kill tetris and make
+it go away
+
+0:04:32.990,0:04:36.229
+control that's warned to hide all the
+other windows
+
+0:04:36.229,0:04:40.380
+and word i'm looking at tetris control
+so you can proceed
+
+0:04:40.380,0:04:42.249
+so let's talk to the doctor
+
+0:04:42.249,0:04:46.199
+this is the elisa program based on
+commercial work in the sixties and
+
+0:04:46.199,0:04:47.190
+seventies
+
+0:04:47.190,0:04:49.599
+strength simulate human being
+
+0:04:49.599,0:04:52.539
+within the next dr
+
+0:04:52.539,0:04:56.829
+we run a program called the
+psychotherapist them if you talk to this
+
+0:04:56.829,0:04:58.330
+and we can say
+
+0:04:58.330,0:05:02.060
+i and trying to learned
+
+0:05:02.060,0:05:03.789
+immense
+
+0:05:03.789,0:05:05.549
+answer center
+
+0:05:05.549,0:05:06.840
+and
+
+0:05:06.840,0:05:10.360
+we couldn't get a response back from
+nineteen you can say
+
+0:05:10.360,0:05:17.289
+i do you know wants to houston the art
+
+0:05:17.289,0:05:23.969
+hi few not quite
+
+0:05:23.969,0:05:26.160
+now it's it's just uh... a little
+program
+
+0:05:26.160,0:05:28.490
+inside of the max
+
+0:05:28.490,0:05:30.050
+and doesn't make a lot of sense
+
+0:05:30.050,0:05:31.450
+but it's a lot of fun
+
+0:05:31.450,0:05:35.680
+and ticket distance tracy you can write
+interactive programs insanity maxim do
+
+0:05:35.680,0:05:37.229
+all sorts of things
+
+0:05:37.229,0:05:40.050
+let's go ahead and kill them with
+control at st
+
+0:05:40.050,0:05:41.409
+breast cancer
+
+0:05:41.409,0:05:48.149
+and it will now markets office has done
+with control c controlled seek
+
+0:05:48.149,0:05:50.570
+inside of the classes we talked about it
+
+0:05:50.570,0:05:54.770
+agreement pages for various programs
+instead of unix
+
+0:05:54.770,0:05:57.629
+who might want to do a statement from
+the inside of you max as much as
+
+0:05:57.629,0:06:02.400
+possible and we can still get those men
+pages so it's two men tax man press
+
+0:06:02.400,0:06:03.969
+enter
+
+0:06:03.969,0:06:05.629
+and we can then type in
+
+0:06:05.629,0:06:07.309
+safety are
+
+0:06:07.309,0:06:08.100
+and
+
+0:06:08.100,0:06:09.339
+press answer
+
+0:06:09.339,0:06:10.729
+we're now looking at
+
+0:06:10.729,0:06:12.139
+began patrol expo
+
+0:06:12.139,0:06:13.669
+through page
+
+0:06:13.669,0:06:17.369
+the main page for translation
+
+0:06:17.369,0:06:20.899
+and you can then scroll through to take
+control of you go down
+
+0:06:20.899,0:06:23.720
+meant to be to go up
+
+0:06:23.720,0:06:24.900
+kaspersky
+
+0:06:24.900,0:06:27.240
+or vena less then
+
+0:06:27.240,0:06:30.630
+top-ten skate greater than the right
+
+0:06:30.630,0:06:34.460
+and this will issue uh... trophy
+mentation take a look
+
+0:06:34.460,0:06:37.880
+now actually down here it's going to
+listen to our next topic
+
+0:06:37.880,0:06:40.199
+and info is the
+
+0:06:40.199,0:06:44.860
+the new style uh... information more
+than men pages they tend to focus more
+
+0:06:44.860,0:06:47.470
+of their rating into these info pages
+
+0:06:47.470,0:06:49.769
+do appear animals they were finished
+with
+
+0:06:49.769,0:06:51.430
+man
+
+0:06:51.430,0:06:56.219
+and parochial control act zero inside
+this window to hide it
+
+0:06:56.219,0:06:59.599
+and schoolwork pat info this info system
+
+0:06:59.599,0:07:00.539
+made attacks
+
+0:07:00.539,0:07:01.820
+info
+
+0:07:01.820,0:07:05.059
+his deep basically online books for
+
+0:07:05.059,0:07:07.849
+imax in all of the commute tools
+
+0:07:07.849,0:07:11.740
+this process sections and tons of
+documentation in here
+
+0:07:11.740,0:07:16.180
+and that fiction room care the most
+about is the in that section
+
+0:07:16.180,0:07:18.449
+and so inside of here you can see
+
+0:07:18.449,0:07:21.759
+there's lots of plugins for e_m_s_
+command and for example here is the
+
+0:07:21.759,0:07:27.479
+manual for the e r_c_ heresy trial
+contents that were used in the cards
+
+0:07:27.479,0:07:32.339
+and there's a how to program insider he
+maximalist there's the actual imax
+
+0:07:32.339,0:07:36.770
+manual self-selected for a look at that
+point in a press enter
+
+0:07:36.770,0:07:38.599
+salo dot the manual for
+
+0:07:38.599,0:07:41.940
+he met you could see that this man has
+been around for a long time since the
+
+0:07:41.940,0:07:43.900
+nineteen eighties
+
+0:07:43.900,0:07:47.699
+you can see there lots and lots of
+features available inside him acting you
+
+0:07:47.699,0:07:53.410
+can read all about all the details
+
+0:07:53.410,0:07:56.310
+and you can then use the mouse to scroll
+raring to go up
+
+0:07:56.310,0:07:57.929
+can you can see
+
+0:07:57.929,0:08:01.639
+click on the turret emmanuel and you
+couldn't say
+
+0:08:01.639,0:08:06.479
+next go to counter one and we can go
+back to the top
+
+0:08:06.479,0:08:08.340
+so there's a ton of documentation here
+
+0:08:08.340,0:08:11.559
+if you're looking for something specific
+you can go through it and try to find it
+
+0:08:11.559,0:08:14.819
+and if you're interested in more about
+the new tools and talk about incentives
+
+0:08:14.819,0:08:19.409
+max this is a great place to look at it
+for example chuckle
+
+0:08:19.409,0:08:20.680
+talks about
+
+0:08:20.680,0:08:25.900
+more what you can do in there and how to
+do all sorts of fancy advanced features
+
+0:08:25.900,0:08:29.759
+will control examen que to kill are
+confirming them
+
+0:08:29.759,0:08:33.920
+i marked up off is done with control c
+control c
+
+0:08:33.920,0:08:36.739
+analyst to something a little bit more
+focused on the task
+
+0:08:36.739,0:08:42.000
+let's look at what your five from
+research tools
+
+0:08:42.000,0:08:44.290
+inside of that
+
+0:08:44.290,0:08:48.299
+let's take a look starting with the copy
+that's i do that
+
+0:08:48.299,0:08:52.600
+controls pasted to the beginning of mark
+control each at the end
+
+0:08:52.600,0:08:56.820
+would know how the regional tournament w
+copy that
+
+0:08:56.820,0:09:00.400
+him have jumped back and show
+
+0:09:00.400,0:09:02.240
+and it's happened
+
+0:09:02.240,0:09:05.279
+and and answer for shown so that was
+
+0:09:05.279,0:09:08.740
+met acts maybe to get the buffer list
+and amp
+
+0:09:08.740,0:09:12.470
+so now i'm back in here
+
+0:09:12.470,0:09:15.670
+and take a look at our directory we have
+our video four
+
+0:09:15.670,0:09:18.650
+lecture we also have pound final
+
+0:09:18.650,0:09:22.330
+this is a temporary file written by
+email it's like a lot of states
+
+0:09:22.330,0:09:26.550
+two pcs coming go this is just enough
+time to protect you from a crash or
+
+0:09:26.550,0:09:27.140
+system
+
+0:09:27.140,0:09:28.860
+power failure
+
+0:09:28.860,0:09:31.640
+so we've got the difference between
+those two files that we can always do
+
+0:09:31.640,0:09:33.390
+edith
+
+0:09:33.390,0:09:35.310
+star video
+
+0:09:35.310,0:09:36.630
+four-star
+
+0:09:36.630,0:09:38.920
+and you'll see that there's just a
+little bit of difference between life
+
+0:09:38.920,0:09:41.920
+and i saved it from what i've done
+
+0:09:41.920,0:09:46.200
+let's let's go ahead and use it in that
+copy buffer is power probably want to
+
+0:09:46.200,0:09:48.140
+get the will to live w gets
+
+0:09:48.140,0:09:51.030
+and then they have control of wife
+regained
+
+0:09:51.030,0:09:55.949
+and here's our lord you are all for the
+org on file for the lecture five
+
+0:09:55.949,0:09:57.290
+presenter
+
+0:09:57.290,0:10:01.090
+did he get went off and grab that's open
+to the callousness shown will now see
+
+0:10:01.090,0:10:06.580
+that we have lecture five let's go ahead
+and open up
+
+0:10:06.580,0:10:08.880
+picture phones
+
+0:10:08.880,0:10:11.120
+such a control x control f
+
+0:10:11.120,0:10:12.260
+and then i did
+
+0:10:12.260,0:10:14.690
+if i've been in touch
+
+0:10:14.690,0:10:17.750
+i can see here is a very large
+government final with lots of stuff
+
+0:10:17.750,0:10:20.000
+going on
+
+0:10:20.000,0:10:22.580
+painted research down for
+
+0:10:22.580,0:10:25.430
+control last comment that he gets
+
+0:10:25.430,0:10:29.210
+you'll see here we're doing is passing
+over the death of this examples
+
+0:10:29.210,0:10:31.880
+nuances copy this your own
+
+0:10:31.880,0:10:34.990
+certain control space type he for and
+
+0:10:34.990,0:10:37.980
+and now the w two copy it
+
+0:10:37.980,0:10:41.820
+and let's go i'm switching to screen
+control tax control
+
+0:10:41.820,0:10:44.660
+and that first kisi control x manitoba
+
+0:10:44.660,0:10:50.060
+phenomena to bash the shelf so mena
+excuse me could relax and then a beat
+
+0:10:50.060,0:10:54.890
+uh... shelter the faults and press enter
+and say did you get
+
+0:10:54.890,0:10:57.650
+and this large how you are adults with
+heart
+
+0:10:57.650,0:11:02.090
+present at the moment what downloads its
+own united by final
+
+0:11:02.090,0:11:06.070
+it's working alone something's content
+generally work just like they do a
+
+0:11:06.070,0:11:09.730
+normal shell minus a few programs that
+we've seen that les has trouble
+
+0:11:09.730,0:11:14.350
+with not being able to control the
+screen
+
+0:11:14.350,0:11:16.460
+now inside of this example
+
+0:11:16.460,0:11:20.200
+we can't go back to tom and if we do
+
+0:11:20.200,0:11:22.140
+for passes will header stuff
+
+0:11:22.140,0:11:24.000
+anti-jewish shifts
+
+0:11:24.000,0:11:25.090
+and found
+
+0:11:25.090,0:11:28.960
+i think class the entire document into
+that folder that we talked about in the
+
+0:11:28.960,0:11:30.520
+apartment lecture
+
+0:11:30.520,0:11:34.730
+and i can go dangling examples and i
+compressed have just on this one and it
+
+0:11:34.730,0:11:37.300
+will spend just a little sample data
+
+0:11:37.300,0:11:39.930
+can heighten things
+
+0:11:39.930,0:11:43.460
+for thirty days just finished up their
+appeal to control expert with commando
+
+0:11:43.460,0:11:45.120
+without the controlled
+
+0:11:45.120,0:11:46.110
+and now
+
+0:11:46.110,0:11:47.420
+were in here please
+
+0:11:47.420,0:11:48.779
+are examples what's
+
+0:11:48.779,0:11:51.290
+uncompressed that the unzipped team
+
+0:11:51.290,0:11:53.060
+examples
+
+0:11:53.060,0:11:54.380
+stamp
+
+0:11:54.380,0:11:58.350
+and tab forged just the same way that
+would in almost all press center
+
+0:11:58.350,0:12:01.010
+and we're now on compressing that file
+
+0:12:01.010,0:12:04.510
+i'mma go back to appear in the through
+the ordinary simple
+
+0:12:04.510,0:12:06.780
+and in this lecture you actually see
+that we have
+
+0:12:06.780,0:12:10.350
+uh... example blocks that we haven't
+heard before but this is just an on
+
+0:12:10.350,0:12:11.540
+highlighted
+
+0:12:11.540,0:12:13.760
+example blocks and exactly is
+
+0:12:13.760,0:12:15.640
+here's a source for example
+
+0:12:15.640,0:12:17.100
+hands
+
+0:12:17.100,0:12:18.820
+person you can actually run
+
+0:12:18.820,0:12:21.150
+so if you control expo
+
+0:12:21.150,0:12:24.040
+and take a look at our directory we now
+have
+
+0:12:24.040,0:12:26.280
+an example dot park
+
+0:12:26.280,0:12:29.710
+imax is pretty powerful they can
+actually open up
+
+0:12:29.710,0:12:34.490
+and large number of archive formats so
+let's go ahead and just open up our
+
+0:12:34.490,0:12:37.850
+partner not consider buying might expect
+
+0:12:37.850,0:12:40.800
+it's really large we're going to say yes
+
+0:12:40.800,0:12:42.560
+and worn-out inside
+
+0:12:42.560,0:12:46.340
+of our car frescoes control x one to
+show just
+
+0:12:46.340,0:12:47.750
+this buffer
+
+0:12:47.750,0:12:50.400
+committee now take a look through here
+you can actually look at all these
+
+0:12:50.400,0:12:52.160
+examples and so on in
+
+0:12:52.160,0:12:54.860
+seem very similar to the juror admin
+
+0:12:54.860,0:12:58.110
+or if i can screw around i complete my
+cursor on the file
+
+0:12:58.110,0:13:01.930
+and i can take a look and find it uh...
+five presenter on shell script
+
+0:13:01.930,0:13:05.150
+i'm actually looking at uh... file
+inside of a car
+
+0:13:05.150,0:13:07.740
+ends of the contents of that file
+
+0:13:07.740,0:13:11.260
+and you can see here in these shell
+script bash moment we have
+
+0:13:11.260,0:13:17.470
+nice color and shows various parts of
+
+0:13:17.470,0:13:20.310
+going to take a look here we can take a
+look down pat
+
+0:13:20.310,0:13:24.840
+crystal world dot seasons able see
+program together since he before
+
+0:13:24.840,0:13:28.220
+the considers all sorts of helena show
+us datatypes
+
+0:13:28.220,0:13:29.810
+function names
+
+0:13:29.810,0:13:32.780
+and strings
+
+0:13:32.780,0:13:35.290
+attitude control x k kill dot
+
+0:13:35.290,0:13:36.209
+and
+
+0:13:36.209,0:13:37.510
+that we're now back to our
+
+0:13:37.510,0:13:40.370
+party you three new control x two
+
+0:13:40.370,0:13:44.870
+control exit the let's go back to
+compressed pound
+
+0:13:44.870,0:13:46.560
+our video four
+
+0:13:46.560,0:13:47.730
+lecture notes
+
+0:13:47.730,0:13:51.210
+and let's go ahead and marked off what
+we've done here
+
+0:13:51.210,0:13:54.720
+with got that one gun control c control
+seat at the park
+
+0:13:54.720,0:13:55.940
+and compress it
+
+0:13:55.940,0:13:57.680
+and look at what's inside
+
+0:13:57.680,0:14:01.070
+and that's it for this video i hope
+you've gotten something out of it
+
+0:14:01.070,0:14:03.040
+and uh... health and human future thank
+you
+

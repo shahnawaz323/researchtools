@@ -1,0 +1,212 @@
+#+STARTUP: showall
+
+* Sections to start with
+
+- Background of the class - what are we trying to do - aka what goes
+  into and comes out of ocean mapping / hydrography.  Field work + Data in and
+  cruise report, charts/maps, and archived raw+processed data out.
+- Making the computers and data work for you rather than against you.
+  Freedom to attack any problem.  Ability to work more effeciently
+  with a documented process hopefully aiming towards *repeatability*.
+- Using Linux.  What is linux, why am I push the normally windows
+  crowd into linux?  What is linux will come more through experience.
+
+* Misc notes to incorporate.
+
+- From Glen - 1999 http://www.python.org/doc/essays/ppt/hp-training/sld001.htm
+- From Glen http://www.whoi.edu/committees/WHIT/Archive/python.pdf
+- http://www.iho-ohi.net/iho_pubs/IHO_Download.htm S-44, S-52, S-57, etc
+- http://www.unols.org/committees/rvtec/doc_depot/doc_depot.html
+- Discussion of date formats and why you might choose different ones.
+  Why does the US format of Month day, year really suck?  Sorting
+  wants year first.  ISO format.  SQL format.
+- Discussion of the pain that is time zones and why to stay away from
+  them if at all possible
+- Creating a book from Wikipedia ala what Monica has done
+
+It is all about the process of going to see and the products that have to be done right at the end of the cruise with an emphasis on the cruise report.  Get the students started with several example cruise reports.  Also start with the NOAA survey guidelines and IHO.
+I need to get a new laptop so that I can get going on the virtual machine development
+
+Talk to the teacher of the data analysis class!!!
+
+Making computers work for you during your research and professional research.  When it comes to  how you work
+
+Backup - defense in depth
+- Corp backup
+- svn/git/hg services
+- flash drives
+- cd/DVD 
+- off site flood fire theft
+- being able to walk up to a computer and get work done
+- drop box and lack of security of the cloud
+- the danger of closed file formats
+- failure modes
+
+Archiving formats. Zip, gzip, compress, etc
+
+Citing Wikipedia, making a wikibook, creating your reference library for at sea/searching
+Google scholar + alerts
+Creating / editing wikipedia pages and internal CCOM wiki page
+Securely logging into cisunix and a security conscious student. KeypassX. 
+The QGIS lab from lfinitity 
+OSM on the isle of shoals and ocean charts?
+
+Jitsy/skype. Create video tutorials on topics.  Upload only if you are comfortable
+
+Sqlite is on more devices than ms office!  Every android or iPhone 
+
+Pros and cons of cloud services. Privacy, bankruptcy, government/Corp snooping, what if no Internet?
+
+Licensing your material. And working on small projects as a class.  Can we build towards a large library of python?  Ask the students to add to a contrib library and I will work on merging/cleaning
+
+If at the end of this course, you are working exactly as I taught you, then I have failed.  The goal is to put you through a work flow and thought process that is probably different than what you are accustomed to.  I presume that you will learn MS Windows and MS Office on your own.  I will push you to use the command line and some tools that have been around a lot longer than any or the commercial tools. Along with the Open Source tools, I will try to point out commercial tools that are available in the same or similar space.  I will attempt to show you the power of open research and collaboration.
+
+Tornado research with fluorescent dye  dr Rhines spelling?  Severe storm research. Amazing visual images.
+
+Create an email account just for the course?  Definitely need a discussion group and IRC channel that is visible inside CCOM's network and the guest network.
+
+Outlining, note taking, communication technologies, collaboration/wiki/bug tracking tools, 
+
+when it comes to data, you should not be held hostage.  You need to be able to write, parse, share, and understand data on your terms.  I will attempt to talk about what you can do for yourself, but also how your money spent is a vote for what you want in the long run.  If you make RFPs with clauses that protect you, you are voting for long term success.  E.g. The DOD open source guideline... I must read them and see if DOC and others have open source guidelines.  Open Source and Open Data lead to innovation and economic development. 
+
+Can I address patents, copyright and IP issues?
+
+Short term gain, long term pain versus short term pain, long term gain.
+
+ISPR process from Exxon Valdez ? Between that and Costco Busan
+
+I want you during this course to be exposed to many topics without being overly constrained by the topics.  Things such as tide, patch tests, sensor calibration, uncertainty, etc will come up and I want to to become familiar with the terms and I will attempt to provide key references. Other courses will have to provide the instruction about the theory.  I will reference these courses at UNH and other places with Open Course Ware (OCW) so that you can follow up on the topics.  
+
+And example is with satellite positioning and time.  We will parse, plot and use NMEA data from the US Global Position System, but we will not get into the details of calculating HDOP VDOP, etc. If you take XXX, you will cover this in the virtual GPS assignment.  Math for mapping will walk you through the math background.  Spatial Statistics will have to be you source for analyzing GPS based measurements from the environment.
+
+For regular statistical analysis, look to ESCI ???? That teaches R for statistics.
+
+At the end of the course, here are some things you should be able to answer
+
+Which formats support time and spatial recording... Jpg, png, tiff, ppm, etc
+
+Try to pre-record the classes as a screen cast
+Should I do iTunesU?
+Checklists for common tasks
+Readings... The GIS upenn videos
+Start working on the vm.  How do you make them smaller?
+
+What iOS/droids apps could help.
+
+Assignments
+
+First couple must be doable without any accounts.  Also, try to make the assignments workable from anywhere (outside UNH and without UNH accounts) or have an alternative route to the assignment.
+
+Try to have an assignment for every class and make it due in the next class.  How much time to allow?  Longer when Thursday to Tuesday. Make a script to generate org mode planning
+
+Start with something simple.  Ideas include 
+- Firefox plugins
+- open source licensing
+- trying Emacs
+- editing Wikipedia
+- writing about what they hope to get out of their program
+- a number of small readings
+
+Other assignments
+- python script using date math to create an org mode calendar
+- starting on JabRef.  Find references on a topic and make an HTML export.  Tag and make groups.
+- Zotero.  Moving refs to JabRef
+- parse BibTex?  That is actually hard
+- plot with gnu plot?
+- installing / updating software in the vm.  General vm tutorial
+- marking HTML kml from python.  Do we have python 2.7
+- logging and note taking.  Converting to kml
+
+
+** Opinions
+
+#+BEGIN_VERSE 
+After a chat with Rachel this morning it occurred to me that, whereas there
+is general consensus that the Research Tools curriculum needs to be
+re-vamped, HOW this should be done will differ in the view of different
+folks cycling through the CCOM/JHC program (NOAA, GEBCO, MS/PhD-track UNH
+grad students).  Non-thesis students, who are pressed for time, may be more
+motivated to learn a straightforward tool that will still get the job done.
+Thesis-option students (and/or those for whom research skills are
+career-relevant) may be more motivated to learn to use open-source tools,
+which are typically not as easy to pick up as Matlab or Excel.  Ideally the
+Research Tools class would be a big tent that would cater to both needs -
+but is this possible?  My thought is that if you can make the open-source
+tools easy to learn, easy to use, and directly relevant to the task at hand
+(processing hydrographic data), then everyone wins.  But more on that when I
+get back to you with my actual feedback.
+
+My opinion (for what it's worth) is that Research Tools shouldn't only prime
+us for completing a year of coursework/labs, but should also lay down the
+foundation of a skill set we'll bring to our post-CCOM careers.  So it might
+be good to ping some other recent grads from the other camps (NOAA, GEBCO,
+etc.) and see what their thoughts are now (what tools have worked, what
+haven't).  Folks from my cohort have been out of the CCOM program for a
+couple of years and now have some perspective to weigh in from - Nick
+Forfinski, Lynn Morgan and Nathan Wardwell come to mind, just to name a few.
+I'm sure they'd be happy to pipe in.
+#+END_VERSE 
+
+** Cruise reports / NOAA Descriptive Reports (DR's)
+
+- http://aquaticcommons.org/2150/  SBNMS Nancy Foster: 
+  - http://aquaticcommons.org/2150/1/NCCOS_TM_87.pdf
+  - http://nbi.noaa.gov/products/others/SBNMSCruiseReport_TechMemo87.pdf
+- nancy foster 2004 http://graysreef.noaa.gov/science/publications/pdfs/h-05.pdf
+- nancy foster 2009 hydrography em1002
+  - http://ccma.nos.noaa.gov/products/biogeography/usvi_nps/pdf/NF-09-01_DAPR.pdf
+- 2010 http://ccma.nos.noaa.gov/products/biogeography/usvi_nps/pdf/nf-10-03-usvi-dapr.pdf
+- Glen Rice knows this one: http://surveys.ngdc.noaa.gov/mgg/NOS/coast/H12001-H14000/H12072/DR/H12072.pdf
+
+
+** Writing tools of today
+
+Here are my experiences with modern writing tools. I am frustrated
+with the mindless use of MS Word by the masses.  Even I fall back to
+this lowest common denominator tool when tired.  It is a garbage dump
+of features created by faceless engineers at MS.  It only plays nice
+with a small world of tools and is totally unsuitable for many tasks
+(even if millions of users try these tasks every day).
+
+What should you think about when choosing a writing tool?  Which path
+do you want to take?  Short term gain, long term pain.  Or are you
+willing to invest in all of our futures and take the short term pain,
+long term gain?
+
+A tail of caution...
+
+Open Office?  Is it better or is it just an open source duplicate with
+all the same problems as MS Office?
+
+AsciiDoc is weird
+
+
+** more random stuff
+
+- Idrive youshareit etc for sharing and backup Backup 
+- Longterm reproducibility virtual box on floss
+- Can you rerun what you did to the data in the future? Archiving
+  whole virtual machines
+- Remote desktops and security 
+- Open source dropbox equiv for access anywhere
+- KeypassX best practices
+- Whole security chapter. Eg mailing lists
+- Making and reading ebooks?  Can we ebook from org mode?
+- Wiki discussion for data logging systems. Dds seismic ???
+- Checklisting and test hw sw and systems
+  - Floatplan mob. Work. Demob.  
+  - how to work in testing and maintainance?  Deadlines in the checklist
+  - linking crit info?
+  - example of template and finished
+- archive/backup processing delivery
+- Gtd
+- Not always checking email
+- Rss feeds and how to not let it take too much time 
+- Nathan Wardwell's email and code for geodetic surface 
+- JonnyB suggested the students write validators for data and metadata
+  as part of their assignments.
+
+From Racicot:
+
+- http://www.qgisworkshop.org/html/workshop/index.html
+- http://www.qgis.org/pyqgis-cookbook/

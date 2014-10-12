@@ -1,0 +1,4791 @@
+0:00:00.229,0:00:03.969
+there is a subsection in the notes to
+take a look at that and give yourself
+
+0:00:03.969,0:00:07.170
+setup in-class slash eleven
+
+0:00:07.170,0:00:11.089
+and pull down the uh... or about five
+runs off the radar
+
+0:00:11.089,0:00:11.969
+but if you
+
+0:00:11.969,0:00:13.649
+copy this link
+
+0:00:13.649,0:00:20.130
+he will give you the whole link to the
+or file
+
+0:00:20.130,0:00:22.850
+we're going to using the term or
+whatever
+
+0:00:22.850,0:00:24.630
+so we've been working with the split
+
+0:00:24.630,0:00:26.699
+he met someone side and uh...
+
+0:00:26.699,0:00:28.320
+the terminals actually
+
+0:00:28.320,0:00:30.449
+the good idea
+
+0:00:30.449,0:00:34.000
+yet were evident terminal any max
+together
+
+0:00:34.000,0:00:35.180
+and so i would
+
+0:00:35.180,0:00:38.620
+because when i recommend using a regular
+terminal as opposed to term onsite he
+
+0:00:38.620,0:00:40.320
+max
+
+0:00:40.320,0:00:42.800
+but if you want to use our there it's
+going
+
+0:00:42.800,0:00:49.800
+says he is the head and buddy
+
+0:00:50.550,0:00:53.210
+as little weird to kill a kiss
+reinstalled thought he might have to be
+
+0:00:53.210,0:00:56.660
+disabled
+
+0:00:56.660,0:00:57.819
+uh... you can turn
+
+0:00:57.819,0:00:59.350
+are off
+
+0:00:59.350,0:01:02.650
+things so if tools click on add ons
+
+0:01:02.650,0:01:05.620
+into should be one of those icons is
+like a
+
+0:01:05.620,0:01:06.700
+yet
+
+0:01:06.700,0:01:13.700
+uh... so extensions i think
+
+0:01:14.300,0:01:18.030
+yahoo looks like it's disappeared
+
+0:01:18.030,0:01:24.000
+it's possible the firefox update itself
+and
+
+0:01:24.000,0:01:27.940
+acutely bag
+
+0:01:27.940,0:01:28.710
+no no
+
+0:01:28.710,0:01:32.130
+so on the virtual machine if you are the
+usual research tools
+
+0:01:32.130,0:01:34.850
+that if you are logged into the research
+tool servers
+
+0:01:34.850,0:01:38.390
+and anyway the point of c_n_n_ went
+there
+
+0:01:38.390,0:01:39.860
+while we are
+
+0:01:39.860,0:01:41.860
+ballroom today
+
+0:01:41.860,0:01:42.860
+keep it
+
+0:01:42.860,0:01:46.230
+so make sure you get the uh... or fall
+down
+
+0:01:46.230,0:01:49.790
+rights and offer it to log into the
+aristide today for a class and i'll try
+
+0:01:49.790,0:01:53.610
+and do a better job of answering
+questions inside the irish sea
+
+0:01:53.610,0:01:56.960
+i'm interning keep it open inside of you
+max here
+
+0:01:56.960,0:01:59.860
+with the uh... p_r_c_ clients
+
+0:01:59.860,0:02:03.840
+which is an attack line for he max i'm
+not very familiar with it
+
+0:02:03.840,0:02:04.870
+and today
+
+0:02:04.870,0:02:07.459
+last time we showed you the very
+beginning said of looking at
+
+0:02:07.459,0:02:12.419
+i fight on and then use the plots today
+we're going to start filling up
+
+0:02:12.419,0:02:14.829
+knowledgebase with python
+
+0:02:14.829,0:02:18.819
+in terms of simple detected we can use
+without having to into know too much
+
+0:02:18.819,0:02:22.389
+it's got all kinds of nice functionality
+for us
+
+0:02:22.389,0:02:25.510
+they're really help out and make it easy
+to write programs
+
+0:02:25.510,0:02:26.709
+i'm hoping that
+
+0:02:26.709,0:02:31.879
+unlike bash which was kind of quirky in
+every single way we ran into
+
+0:02:31.879,0:02:35.069
+i thought is designed to be very uniform
+and some more
+
+0:02:35.069,0:02:39.519
+so that hopefully it looks the same as
+you go through it
+
+0:02:39.519,0:02:41.069
+couple announcements
+
+0:02:41.069,0:02:43.489
+remember that homework three is due
+today
+
+0:02:43.489,0:02:46.189
+i'll show you a little hints on homework
+three for those of you are having
+
+0:02:46.189,0:02:47.549
+trouble
+
+0:02:47.549,0:02:48.400
+for today
+
+0:02:48.400,0:02:50.070
+there's a playlist on
+
+0:02:50.070,0:02:53.650
+you see a for the videos
+
+0:02:53.650,0:02:56.079
+and i've created
+
+0:02:56.079,0:02:58.329
+the growth of seven videos now
+
+0:02:58.329,0:03:02.730
+that runs in the range of fifty minutes
+to you almost a half an hour video seven
+
+0:03:02.730,0:03:06.019
+covers a lot of material in class day
+but not all of it
+
+0:03:06.019,0:03:08.030
+if you're having trouble with the bass
+cell
+
+0:03:08.030,0:03:09.479
+parts one and two
+
+0:03:09.479,0:03:10.519
+go over
+
+0:03:10.519,0:03:12.499
+the basics and
+
+0:03:12.499,0:03:15.339
+a little bit different way than i do
+anything here
+
+0:03:15.339,0:03:18.379
+so hopefully the slight variations will
+help you figure out parts if there's any
+
+0:03:18.379,0:03:19.679
+trouble
+
+0:03:19.679,0:03:22.069
+if you're having trouble understanding v
+
+0:03:22.069,0:03:26.109
+section in the homework for homework
+three recruit the file name
+
+0:03:26.109,0:03:29.279
+research tools video six batch party
+variables will help you understand
+
+0:03:29.279,0:03:32.149
+variables
+
+0:03:32.149,0:03:33.350
+it's like specter
+
+0:03:33.350,0:03:37.029
+you guys are watching those and keeping
+up with them
+
+0:03:37.029,0:03:41.859
+there for a long but hopefully will give
+you the way down follow along
+
+0:03:41.859,0:03:43.189
+we won't go over
+
+0:03:43.189,0:03:45.949
+things like matlab and mathematica
+
+0:03:45.949,0:03:48.120
+too much if it on this class
+
+0:03:48.120,0:03:51.359
+but they're useful to know about and
+very powerful
+
+0:03:51.359,0:03:53.930
+so next uh... monday
+
+0:03:53.930,0:03:57.809
+on the ten th at two p_m_ over in
+kingsbury
+
+0:03:57.809,0:03:59.559
+there will be a presentation
+
+0:03:59.559,0:04:03.569
+going over some of the the stuff in
+mathematica that's pretty cool
+
+0:04:03.569,0:04:07.639
+mathematica has a heavy focus on a
+repeatable research so
+
+0:04:07.639,0:04:10.889
+you're basically building up a document
+that is your
+
+0:04:10.889,0:04:14.260
+and your description and your plots and
+so some of that
+
+0:04:14.260,0:04:16.949
+the stuff in repeatable research and
+that sort of
+
+0:04:16.949,0:04:18.359
+area of interest
+
+0:04:18.359,0:04:21.259
+they developed a mathematica and people
+are copying some of the functionality of
+
+0:04:21.259,0:04:22.480
+mathematica
+
+0:04:22.480,0:04:23.639
+advice for self
+
+0:04:23.639,0:04:25.119
+house or mention
+
+0:04:25.119,0:04:28.379
+that you age has and i_t_t_ newsletter
+
+0:04:28.379,0:04:31.270
+called signals
+
+0:04:31.270,0:04:35.229
+important announcements for the u_s_
+community terms of computers
+
+0:04:35.229,0:04:39.389
+there's an article by our chief
+information officer or c_i_o_
+
+0:04:39.389,0:04:42.840
+in the most recent one at some notes in
+here about how i disagree with what she
+
+0:04:42.840,0:04:43.879
+said
+
+0:04:43.879,0:04:45.109
+i think a rat
+
+0:04:45.109,0:04:49.259
+and justice on changing passwords is a
+little bit over exaggerated and i want
+
+0:04:49.259,0:04:53.119
+to remind you guys to focus on having a
+different password for each account
+
+0:04:53.119,0:04:56.489
+and think about keep at saks to help you
+there
+
+0:04:56.489,0:04:58.499
+watching us read out on your own
+
+0:04:58.499,0:05:00.580
+and let's talk quickly about
+
+0:05:00.580,0:05:02.699
+your
+
+0:05:02.699,0:05:04.960
+so you are having trouble coming up with
+
+0:05:04.960,0:05:07.610
+the file name and i gave you
+
+0:05:07.610,0:05:09.639
+something that looks like this
+
+0:05:09.639,0:05:12.470
+in a homework as to where to submit your
+homework
+
+0:05:12.470,0:05:13.959
+so if i do
+
+0:05:13.959,0:05:16.259
+copy
+
+0:05:16.259,0:05:19.449
+paste that into here
+
+0:05:19.449,0:05:22.059
+what i gave you was actually a shell
+script command that will actually
+
+0:05:22.059,0:05:24.309
+generates the name of your file
+
+0:05:24.309,0:05:28.780
+so i was expecting a type in the year
+month day i was really asking you
+
+0:05:28.780,0:05:31.169
+to use a command in the shell
+
+0:05:31.169,0:05:33.899
+degenerates pyrmont they have right now
+
+0:05:33.899,0:05:37.289
+if you typed in two thousand eleven
+
+0:05:37.289,0:05:38.569
+al four
+
+0:05:38.569,0:05:41.800
+i knew what he did that before today
+that you were sending from europe and
+
+0:05:41.800,0:05:43.800
+that's ok
+
+0:05:43.800,0:05:47.360
+the idea was that you can actually do
+this by hand
+
+0:05:47.360,0:05:49.789
+or you can do it a shell script so
+
+0:05:49.789,0:05:51.080
+bc he replied
+
+0:05:51.080,0:05:53.649
+created following these eco test it out
+
+0:05:53.649,0:05:55.089
+in this account
+
+0:05:55.089,0:05:59.719
+this section here with the dollar sign
+and black print see reference e
+
+0:05:59.719,0:06:03.740
+runs often runs the date command
+suffragists grab that section
+
+0:06:03.740,0:06:05.759
+and paste it
+
+0:06:05.759,0:06:07.300
+echo
+
+0:06:07.300,0:06:08.779
+it's the equivalent of
+
+0:06:08.779,0:06:10.830
+just rang date by itself
+
+0:06:10.830,0:06:13.629
+and has the syntax where you can specify
+
+0:06:13.629,0:06:15.819
+which part of the day you'd like to see
+
+0:06:15.819,0:06:18.770
+says you're building up scripts in the
+future think about
+
+0:06:18.770,0:06:21.830
+automating yours your process is so
+
+0:06:21.830,0:06:24.500
+if you do something every engineering
+airport for the day when you're on the
+
+0:06:24.500,0:06:25.419
+ship
+
+0:06:25.419,0:06:29.059
+why don't you have the code actually
+write out the file name with that did so
+
+0:06:29.059,0:06:30.550
+you don't have to remember
+
+0:06:30.550,0:06:34.529
+what's the date because you might be at
+sea going across the dateline it can get
+
+0:06:34.529,0:06:35.910
+really confusing
+
+0:06:35.910,0:06:39.080
+you can actually create the commander
+knows about time zones or you can ask
+
+0:06:39.080,0:06:40.180
+for
+
+0:06:40.180,0:06:41.479
+you can see
+
+0:06:41.479,0:06:43.490
+you cast for the uti cd
+
+0:06:43.490,0:06:45.519
+or third time zone
+
+0:06:45.519,0:06:46.560
+and so that way
+
+0:06:46.560,0:06:50.110
+we generate log files their always had
+the same way
+
+0:06:50.110,0:06:52.459
+and you haven't i priority review
+
+0:06:52.459,0:06:55.560
+say by starting date myself i might say
+two thousand
+
+0:06:55.560,0:06:56.559
+eleven
+
+0:06:56.559,0:06:58.199
+ten grow four
+
+0:06:58.199,0:06:59.679
+and happily go on
+
+0:06:59.679,0:07:00.979
+and if you noticed here
+
+0:07:00.979,0:07:02.539
+my ear is actually
+
+0:07:02.539,0:07:04.139
+quite a bit far in the future
+
+0:07:04.139,0:07:06.689
+if you add an extra zero in there
+
+0:07:06.689,0:07:08.099
+so every time you type stuff
+
+0:07:08.099,0:07:09.510
+your potential for
+
+0:07:09.510,0:07:10.800
+making a mistake
+
+0:07:10.800,0:07:14.319
+so use the computer to do things for you
+so that you have more time to focus on
+
+0:07:14.319,0:07:17.119
+your science and spend less time
+thinking about
+
+0:07:17.119,0:07:19.279
+what day of the week is it
+
+0:07:19.279,0:07:21.639
+so hopefully if you have it on the
+homework yet and this gave you some
+
+0:07:21.639,0:07:23.039
+trouble this might
+
+0:07:23.039,0:07:25.610
+give you a better explanation of what's
+going on
+
+0:07:25.610,0:07:27.680
+and you can see i try to on my
+
+0:07:27.680,0:07:28.389
+laptop
+
+0:07:28.389,0:07:30.110
+which is a mac and has a different
+
+0:07:30.110,0:07:33.460
+looking path and you'll see over on the
+research tools one
+
+0:07:33.460,0:07:35.630
+which over here was
+
+0:07:35.630,0:07:38.880
+so it could knows how to deal with each
+machine and i don't have to worry about
+
+0:07:38.880,0:07:42.449
+the changes between computers
+
+0:07:42.449,0:07:43.879
+okay here's a link to that
+
+0:07:43.879,0:07:45.990
+today's class video
+
+0:07:45.990,0:07:48.939
+so if it and before we begin a python
+
+0:07:48.939,0:07:52.150
+i'm appointed some resources but you
+need to remember that there are two
+
+0:07:52.150,0:07:55.369
+major groups of python right now
+
+0:07:55.369,0:07:57.189
+the pipe on in the wild
+
+0:07:57.189,0:07:58.609
+you know subpoena
+
+0:07:58.609,0:08:00.889
+there's python three which is the new
+
+0:08:00.889,0:08:02.699
+fancy version of python
+
+0:08:02.699,0:08:03.750
+that's
+
+0:08:03.750,0:08:06.479
+dotson slightly different features and
+syntax than the fact that we're using
+
+0:08:06.479,0:08:09.119
+raising typed onto
+
+0:08:09.119,0:08:12.460
+so if you start seeing dr addition of
+python three new use it
+
+0:08:12.460,0:08:15.810
+it's close to what you want but there's
+a few though things are going trip you
+
+0:08:15.810,0:08:16.529
+up
+
+0:08:16.529,0:08:19.229
+try to stick with python two
+documentation while doing stuff with
+
+0:08:19.229,0:08:20.280
+this class
+
+0:08:20.280,0:08:21.259
+in fact some of the
+
+0:08:21.259,0:08:22.889
+to mature and two points to
+
+0:08:22.889,0:08:26.089
+the default is actually a python three
+documentation need to be looking at the
+
+0:08:26.089,0:08:28.819
+python two point seven
+
+0:08:28.819,0:08:32.620
+that's good change in the next couple
+years but we're not really sure when
+
+0:08:32.620,0:08:35.000
+and i've got in here for you
+
+0:08:35.000,0:08:40.820
+some links to the quick references uh...
+link for our i've python quick reference
+
+0:08:40.820,0:08:42.350
+link to some books
+
+0:08:42.350,0:08:45.210
+the book that i think it's probably the
+best for beginning if you want are
+
+0:08:45.210,0:08:49.180
+totally different way of thinking about
+beginning python is driving a pipe on by
+
+0:08:49.180,0:08:51.360
+mark program
+
+0:08:51.360,0:08:55.160
+both free and for sale so if you are
+supporting offer you can buy the book
+
+0:08:55.160,0:08:56.540
+but you don't have to do
+
+0:08:56.540,0:08:59.100
+and there's a wiki book where you can
+actually change the book if you don't
+
+0:08:59.100,0:09:00.550
+like what's in there
+
+0:09:00.550,0:09:04.790
+think fight on is the computer science
+way to think about right on
+
+0:09:04.790,0:09:08.190
+and that's not what in the trend in this
+class i think by phone
+
+0:09:08.190,0:09:10.940
+is what a computer scientist with think
+about
+
+0:09:10.940,0:09:13.960
+and try to do approach by tommorow avoid
+that
+
+0:09:13.960,0:09:16.040
+fighter pilot on is
+
+0:09:16.040,0:09:20.390
+one were actually going to straight at
+fight on three t and watch out for that
+
+0:09:20.390,0:09:23.310
+and data structures not rhythms is
+another one that's very computer science
+
+0:09:23.310,0:09:24.710
+e
+
+0:09:24.710,0:09:28.420
+if that's helpful to you prefer to go
+for those
+
+0:09:28.420,0:09:29.850
+now the last one
+
+0:09:29.850,0:09:31.130
+is that we are going
+
+0:09:31.130,0:09:33.420
+it's the programming historian
+
+0:09:33.420,0:09:34.750
+so these are two
+
+0:09:34.750,0:09:36.910
+professors to do
+
+0:09:36.910,0:09:38.259
+history research
+
+0:09:38.259,0:09:40.460
+and so their point of view is from
+
+0:09:40.460,0:09:43.750
+historian and not a cure scientist is
+very much like this course in that
+
+0:09:43.750,0:09:45.280
+they're focused on
+
+0:09:45.280,0:09:46.790
+computing for history
+
+0:09:46.790,0:09:50.430
+and i have no idea with us really liked
+but they use things like that era for
+
+0:09:50.430,0:09:52.170
+demographic references
+
+0:09:52.170,0:09:53.280
+she'll find out
+
+0:09:53.280,0:09:55.790
+another completely different view
+
+0:09:55.790,0:09:56.910
+fight on
+
+0:09:56.910,0:10:00.240
+that might be helpful if you're not
+understanding what's going on this class
+
+0:10:00.240,0:10:04.060
+i meant to give you some links to books
+in safari and i am amounts of it'll fix
+
+0:10:04.060,0:10:05.560
+america
+
+0:10:05.560,0:10:07.100
+in here for afterwards
+
+0:10:07.100,0:10:11.299
+bear some really fancy stuff you can do
+when you're inside of my python where
+
+0:10:11.299,0:10:15.020
+you can ask it to edit files for you
+animal then pop open
+
+0:10:15.020,0:10:16.200
+email acts
+
+0:10:16.200,0:10:19.310
+i'm natalie that for you guys to work on
+and will get wilt
+
+0:10:19.310,0:10:22.000
+get back into that will definitely use
+it on thursday
+
+0:10:22.000,0:10:25.500
+went through here just set it up front
+and you guys can see it
+
+0:10:25.500,0:10:29.090
+it's very very he need to be able to be
+an ipod phone just after erika please
+
+0:10:29.090,0:10:30.810
+open at this file
+
+0:10:30.810,0:10:32.820
+and then you can tell from the max
+
+0:10:32.820,0:10:35.960
+doctype right on that you're done
+editing
+
+0:10:35.960,0:10:38.640
+so that's that's really nice the one
+thing you have to watch out for the
+
+0:10:38.640,0:10:39.650
+default mode
+
+0:10:39.650,0:10:42.030
+drops you into a program called the i
+
+0:10:42.030,0:10:43.740
+if you ever c_d_i_
+
+0:10:43.740,0:10:46.130
+which is i i see a budget
+
+0:10:46.130,0:10:47.149
+twenty percent
+
+0:10:47.149,0:10:49.780
+there's one b i command to know
+
+0:10:49.780,0:10:50.840
+catsup colin
+
+0:10:50.840,0:10:54.050
+akeel explosion point
+
+0:10:54.050,0:10:57.420
+they were not that that's right you know
+about it wonderful now
+
+0:10:57.420,0:11:01.360
+this is the command too quick out of the
+i without stating whatever filing or
+
+0:11:01.360,0:11:02.150
+anything
+
+0:11:02.150,0:11:05.470
+that barry if he can and i remember from
+the eye
+
+0:11:05.470,0:11:06.660
+and above all others
+
+0:11:06.660,0:11:09.910
+adapted but that's the one that i want
+everybody to know
+
+0:11:09.910,0:11:11.590
+if you get stuck in the eye
+
+0:11:11.590,0:11:13.029
+it's really hard to put out of it
+
+0:11:13.029,0:11:16.390
+he doesn't like control senior controls
+the yield the jewels
+
+0:11:16.390,0:11:18.310
+colin q
+
+0:11:18.310,0:11:20.850
+that gets out of you guys
+
+0:11:20.850,0:11:24.760
+sort of you'll may hit that today past
+may not realize it until
+
+0:11:24.760,0:11:26.920
+i'll point you thapar whiteboard
+
+0:11:26.920,0:11:30.730
+so they surely imax worried or not
+
+0:11:30.730,0:11:33.370
+it's the fun part of python
+
+0:11:33.370,0:11:35.280
+but overall
+
+0:11:35.280,0:11:37.430
+and start by pune
+
+0:11:37.430,0:11:38.750
+in that directory
+
+0:11:38.750,0:11:40.630
+had one i think on
+
+0:11:40.630,0:11:43.820
+then only i would've said make sure you
+add the dash dash by lab
+
+0:11:43.820,0:11:46.650
+or not they do it by today so i can make
+that out
+
+0:11:46.650,0:11:50.650
+and make sure if you are print working
+directory p debbie dvd-ram
+
+0:11:50.650,0:11:55.120
+class eleven if you're not there you can
+see teaching a class eleven if you're in
+
+0:11:55.120,0:11:56.880
+your home directory
+
+0:11:56.880,0:12:00.240
+so everyday type i thought it and it
+appeared to be a make sure that you're
+
+0:12:00.240,0:12:01.340
+sitting in
+
+0:12:01.340,0:12:04.310
+class eleven
+
+0:12:04.310,0:12:06.900
+once you open up your ipod fun terminal
+
+0:12:06.900,0:12:09.140
+control you to clear loin
+
+0:12:09.140,0:12:11.340
+tell us
+
+0:12:11.340,0:12:14.460
+you cv in the wrong place sita cv
+
+0:12:14.460,0:12:15.820
+into class
+
+0:12:15.820,0:12:16.970
+the cd
+
+0:12:16.970,0:12:19.580
+c l_ a_ s_ s_
+
+0:12:19.580,0:12:21.160
+they are doing a lot
+
+0:12:21.160,0:12:23.149
+anything you in and katie i_r_a_
+
+0:12:23.149,0:12:24.900
+for make directory
+
+0:12:24.900,0:12:27.400
+space eleven
+
+0:12:27.400,0:12:28.280
+presenter
+
+0:12:28.280,0:12:29.640
+cd into their
+
+0:12:29.640,0:12:31.660
+space eleven
+
+0:12:31.660,0:12:35.530
+now you can do a and b_ loss if this
+works and the space
+
+0:12:35.530,0:12:38.090
+and then tell the swatch
+
+0:12:38.090,0:12:39.790
+tilburg slash
+
+0:12:39.790,0:12:41.800
+amanda eleven
+
+0:12:41.800,0:12:43.270
+pressed count
+
+0:12:43.270,0:12:44.750
+space
+
+0:12:44.750,0:12:45.880
+and then period
+
+0:12:45.880,0:12:49.400
+now mister kerkorian
+
+0:12:49.400,0:12:52.880
+now doing dallas
+
+0:12:52.880,0:12:55.520
+so if you have failed to do or
+
+0:12:55.520,0:12:58.510
+org wrote files to the home directory
+
+0:12:58.510,0:13:01.790
+you could do a and b_ phyllis lives
+
+0:13:01.790,0:13:02.829
+eleven that
+
+0:13:02.829,0:13:07.550
+which and then i will press to tab ki to
+complete so i don't have it there
+
+0:13:07.550,0:13:09.980
+but it would be i think the on
+
+0:13:09.980,0:13:10.819
+dot org
+
+0:13:10.819,0:13:13.889
+and put a period for the current working
+record that were moving into your
+
+0:13:13.889,0:13:16.310
+current directory i'm not gonna run that
+
+0:13:16.310,0:13:18.700
+because i saved the file into my
+
+0:13:18.700,0:13:19.970
+current rectory
+
+0:13:19.970,0:13:22.720
+so if i do in our special you'll see
+that i have
+
+0:13:22.720,0:13:25.830
+eleven dash i_ python dot org
+
+0:13:25.830,0:13:28.370
+serbian-run this study get commands
+
+0:13:28.370,0:13:30.670
+and i i i thought
+
+0:13:30.670,0:13:34.530
+if you're in a tight on you can you add
+exclamation point
+
+0:13:34.530,0:13:36.220
+visit and i think the feature
+
+0:13:36.220,0:13:39.290
+uh... by python as you can run any back
+shelf
+
+0:13:39.290,0:13:40.960
+whiny wind here
+
+0:13:40.960,0:13:42.770
+survive paste
+
+0:13:42.770,0:13:44.500
+that they be get command
+
+0:13:44.500,0:13:46.360
+right there and press enter
+
+0:13:46.360,0:13:48.860
+it's going to go off and get that file
+
+0:13:48.860,0:13:51.600
+and what did you get if you keep doing
+it more pple times you'll end up with
+
+0:13:51.600,0:13:54.480
+uh... dot one q ten twenty
+
+0:13:54.480,0:13:56.800
+seating for a period after your room
+
+0:13:56.800,0:14:00.730
+to move to the destination so that the
+other way
+
+0:14:00.730,0:14:01.550
+space
+
+0:14:01.550,0:14:06.990
+and then period
+
+0:14:06.990,0:14:11.910
+pleasant when you get the aha moment
+
+0:14:11.910,0:14:14.790
+open estimation point before that if you
+get
+
+0:14:14.790,0:14:17.120
+if he started and i i don't
+
+0:14:17.120,0:14:18.400
+if you put it
+
+0:14:18.400,0:14:19.880
+and isolation point
+
+0:14:19.880,0:14:21.890
+and then the commands
+
+0:14:21.890,0:14:25.050
+in here you'll be running bash
+
+0:14:25.050,0:14:29.310
+so you were any dash commend you on
+after that
+
+0:14:29.310,0:14:32.500
+available from the regular shell you can
+get through by the spring escalation
+
+0:14:32.500,0:14:34.870
+point for the front
+
+0:14:34.870,0:14:36.560
+there's a couple weighs in
+
+0:14:36.560,0:14:37.520
+i fight on
+
+0:14:37.520,0:14:39.060
+to get help
+
+0:14:39.060,0:14:43.560
+the first one is you can go to
+
+0:14:43.560,0:14:47.180
+and if i click on that docs like you can
+go to the fight on documentation and you
+
+0:14:47.180,0:14:48.690
+can read all about it
+
+0:14:48.690,0:14:54.090
+that there's a lot there free to get
+lost
+
+0:14:54.090,0:14:58.450
+inside of my partner and we can get help
+on anything that we run into you
+
+0:14:58.450,0:15:01.730
+so it's trying
+
+0:15:01.730,0:15:04.690
+so then that's helped and then open
+
+0:15:04.690,0:15:08.990
+i fight on sky nice for you it lets you
+be lazy feels immediately see here
+
+0:15:08.990,0:15:11.510
+and i left out the parentheses on open
+
+0:15:11.510,0:15:14.860
+every wrote my command with parentheses
+for me and said i'm gonna go run this
+
+0:15:14.860,0:15:16.660
+instead
+
+0:15:16.660,0:15:19.420
+so you'll see that you got a lot in
+class
+
+0:15:19.420,0:15:22.450
+we could also say open and a question
+mark
+
+0:15:22.450,0:15:24.310
+teja i don't know what this is
+
+0:15:24.310,0:15:26.090
+press enter
+
+0:15:26.090,0:15:29.270
+and you get lots more
+
+0:15:29.270,0:15:30.950
+i think to question marks
+
+0:15:30.950,0:15:32.299
+betrayed me more help
+
+0:15:32.299,0:15:33.690
+but looks the same
+
+0:15:33.690,0:15:35.000
+now this is kind of tough
+
+0:15:35.000,0:15:38.810
+you'll see a lot of stuff in here that
+you don't necessarily understand
+
+0:15:38.810,0:15:42.250
+by the end of semester overstep becomes
+familiar
+
+0:15:42.250,0:15:48.020
+it we can use the question mark and help
+to get help on various things as we go
+
+0:15:48.020,0:15:49.230
+and we can also say
+
+0:15:49.230,0:15:51.480
+there's a question last time about exit
+
+0:15:51.480,0:15:53.300
+versus capitalize it
+
+0:15:53.300,0:15:57.630
+so if we do u anything with a question
+on the other side you can say exit
+
+0:15:57.630,0:15:59.330
+as this one
+
+0:15:59.330,0:16:00.870
+exit out of python
+
+0:16:00.870,0:16:04.550
+it right see you in a statement or were
+asking yes or no
+
+0:16:04.550,0:16:06.700
+if we ask about
+
+0:16:06.700,0:16:08.390
+capital exit
+
+0:16:08.390,0:16:11.850
+exit without confirmation so that means
+if you type
+
+0:16:11.850,0:16:14.590
+exit two princes
+
+0:16:14.590,0:16:16.960
+it says i don't know what that is
+
+0:16:16.960,0:16:18.720
+exit yes
+
+0:16:18.720,0:16:21.130
+you are in the armoured
+
+0:16:21.130,0:16:26.990
+so use you
+
+0:16:26.990,0:16:28.510
+so you're in a
+
+0:16:28.510,0:16:32.850
+if you next yr bank here in nyc ls mode
+it's a related to the uh...
+
+0:16:32.850,0:16:34.319
+uh...
+
+0:16:34.319,0:16:36.400
+view of a dell
+
+0:16:36.400,0:16:38.520
+at that time
+
+0:16:38.520,0:16:43.790
+exit exit quickly with a capital e
+exhibit lower case keeps their
+
+0:16:43.790,0:16:44.879
+if you do help
+
+0:16:44.879,0:16:47.220
+and open here in this mode
+
+0:16:47.220,0:16:51.299
+this very similar thank you also works
+without the collins execute
+
+0:16:51.299,0:16:54.570
+food
+
+0:16:54.570,0:16:57.840
+it's whichever side you're feeling like
+
+0:16:57.840,0:17:01.080
+so either side
+
+0:17:01.080,0:17:01.989
+you will do
+
+0:17:01.989,0:17:03.699
+i mean do you shift in time
+
+0:17:03.699,0:17:07.630
+amex collapse everything so i can get
+myself sorted out
+
+0:17:07.630,0:17:09.600
+press tab in here
+
+0:17:09.600,0:17:11.720
+listed getting help
+
+0:17:11.720,0:17:14.030
+when you see some examples you guys have
+been
+
+0:17:14.030,0:17:17.429
+very enthusiastic about the control c
+control scenes
+
+0:17:17.429,0:17:18.950
+which i think is great
+
+0:17:18.950,0:17:21.319
+we didn't even when i didn't expect you
+to
+
+0:17:21.319,0:17:25.550
+if you do you think this control c
+control c evaluate on this section
+
+0:17:25.550,0:17:27.760
+i type yes
+
+0:17:27.760,0:17:31.380
+when i say prints one if we did ah...
+
+0:17:31.380,0:17:32.840
+one over here
+
+0:17:32.840,0:17:35.110
+it prints one looks great
+
+0:17:35.110,0:17:37.720
+were in have a little bit troubled doing
+that so
+
+0:17:37.720,0:17:39.099
+don't expect this to work
+
+0:17:39.099,0:17:41.710
+frenzied media print whatever turns non
+
+0:17:41.710,0:17:43.300
+she's not really what you wanted
+
+0:17:43.300,0:17:47.180
+people away during this inside of here
+is returned one you're gonna get results
+
+0:17:47.180,0:17:50.510
+he didn't expect and you'll get more
+comfortable with this as we write
+
+0:17:50.510,0:17:52.680
+functions and understand
+
+0:17:52.680,0:17:57.010
+what a strategy for us so basically if
+you do control c control c today when i
+
+0:17:57.010,0:17:58.559
+didn't ask you to
+
+0:17:58.559,0:18:01.789
+don't expect to see any results that
+they actually meeting
+
+0:18:01.789,0:18:04.510
+there might be a whole lot of color the
+looks like it should be doing stuff
+
+0:18:04.510,0:18:06.710
+anxious can ignore you
+
+0:18:06.710,0:18:08.410
+so we start our pipeline
+
+0:18:08.410,0:18:10.900
+collapse the section
+
+0:18:10.900,0:18:15.500
+so let's go ahead and start playing with
+fight on inside of a ripe right on shall
+
+0:18:15.500,0:18:18.320
+before we do anything fancy
+
+0:18:18.320,0:18:20.380
+let's just start off by creating a
+string
+
+0:18:20.380,0:18:22.760
+this is any saying
+
+0:18:22.760,0:18:24.210
+now python has
+
+0:18:24.210,0:18:25.940
+freeways to the strengths
+
+0:18:25.940,0:18:27.210
+seal see them all
+
+0:18:27.210,0:18:28.419
+you can do
+
+0:18:28.419,0:18:29.809
+a single quote
+
+0:18:29.809,0:18:31.080
+my string
+
+0:18:31.080,0:18:32.680
+you can do it double quote
+
+0:18:32.680,0:18:33.950
+and some tax
+
+0:18:33.950,0:18:35.190
+and then you can do
+
+0:18:35.190,0:18:36.400
+three
+
+0:18:36.400,0:18:37.570
+single quotes
+
+0:18:37.570,0:18:39.930
+so those are three different things in
+there
+
+0:18:39.930,0:18:41.580
+and three single quotes
+
+0:18:41.580,0:18:43.350
+and syntax
+
+0:18:43.350,0:18:45.029
+if you see those any of the notes
+
+0:18:45.029,0:18:46.679
+we're just going to use the top one px
+
+0:18:46.679,0:18:48.020
+this guy right here
+
+0:18:48.020,0:18:52.260
+so that single quote around our
+strengths
+
+0:18:52.260,0:18:55.490
+unfortunately this is one of pleasant
+work and you can do a lots of ways and
+
+0:18:55.490,0:18:56.730
+with this confuse you
+
+0:18:56.730,0:18:59.670
+for starters so it's going to single
+quotes for strings
+
+0:18:59.670,0:19:01.140
+for the press center
+
+0:19:01.140,0:19:02.990
+you get this is a strength
+
+0:19:02.990,0:19:05.529
+we can do things with strings we can say
+
+0:19:05.529,0:19:07.059
+this is a string dot
+
+0:19:07.059,0:19:09.720
+capitalize
+
+0:19:09.720,0:19:11.870
+weak acid to capitalize a string
+
+0:19:11.870,0:19:13.640
+we can ask it to you
+
+0:19:13.640,0:19:17.330
+uppercase that string so it's really up
+with shouting at us
+
+0:19:17.330,0:19:20.070
+and we could do a lower if we wanted
+
+0:19:20.070,0:19:22.830
+we can also ask you to make it like a
+title
+
+0:19:22.830,0:19:25.360
+where capitalizes the beginning of
+
+0:19:25.360,0:19:27.170
+each word in there
+
+0:19:27.170,0:19:30.440
+so there's lots of functionality with
+each of these objects
+
+0:19:30.440,0:19:33.180
+we can even add strings together
+
+0:19:33.180,0:19:35.370
+it might sound a little weird to be
+adding strings
+
+0:19:35.370,0:19:36.660
+they're not really numbers
+
+0:19:36.660,0:19:38.510
+and so in python sometimes
+
+0:19:38.510,0:19:39.940
+things like the plots
+
+0:19:39.940,0:19:43.410
+try to give you a meeting that makes
+more sense for object so we can say
+
+0:19:43.410,0:19:44.870
+this is
+
+0:19:44.870,0:19:47.460
+group lawson between each one
+
+0:19:47.460,0:19:48.490
+stirring
+
+0:19:48.490,0:19:50.370
+what does it do them all together
+
+0:19:50.370,0:19:54.210
+except for it doesn't have the concept
+of a space between those you actually
+
+0:19:54.210,0:19:57.299
+have to admit faces you won't have a few
+
+0:19:57.299,0:19:59.690
+wanted to actually be flexible
+
+0:19:59.690,0:20:03.080
+so you can start building up things if
+you're going up a consensus and
+
+0:20:03.080,0:20:04.780
+something rebuilding a report
+
+0:20:04.780,0:20:05.640
+you could
+
+0:20:05.640,0:20:08.480
+put in the number in between eight that
+you want to have
+
+0:20:08.480,0:20:11.100
+and it was then circling your report
+
+0:20:11.100,0:20:14.240
+now python has a nice feature that you
+can ask it
+
+0:20:14.240,0:20:16.070
+what the type of something else
+
+0:20:16.070,0:20:18.080
+this is a strength
+
+0:20:18.080,0:20:22.309
+ever turns back it's a nasty are which
+is short for string impact on
+
+0:20:22.309,0:20:24.799
+we could also ask
+
+0:20:24.799,0:20:26.960
+the number one that is not now
+
+0:20:26.960,0:20:29.840
+will pick a different amber about thirty
+three
+
+0:20:29.840,0:20:33.660
+as in say that's an interval integer
+
+0:20:33.660,0:20:34.760
+so let's take a look
+
+0:20:34.760,0:20:38.860
+at the data types in python this is what
+we're gonna builds
+
+0:20:38.860,0:20:42.270
+the class of are these little components
+as you go along you're going to using
+
+0:20:42.270,0:20:43.560
+these
+
+0:20:43.560,0:20:46.700
+to keep your date around in various
+forms and work with
+
+0:20:46.700,0:20:48.630
+as your build your programs
+
+0:20:48.630,0:20:50.480
+so let me just walk through these
+
+0:20:50.480,0:20:53.050
+and give you a sense of 'em up on the
+white ford so we've got something to
+
+0:20:53.050,0:20:54.710
+hang on to you
+
+0:20:54.710,0:20:58.010
+we've gone strings and that's
+
+0:20:58.010,0:21:00.370
+referred to you by s t r
+
+0:21:00.370,0:21:03.080
+we've got numbers
+
+0:21:03.080,0:21:05.840
+and if you're a scientist this where
+life gets exciting right you can
+
+0:21:05.840,0:21:07.930
+actually have numbers of things and
+could stuff
+
+0:21:07.930,0:21:11.240
+we have a couple different types we
+haven't integers
+
+0:21:11.240,0:21:12.560
+and that's like
+
+0:21:12.560,0:21:13.860
+the number one
+
+0:21:13.860,0:21:15.630
+or to you
+
+0:21:15.630,0:21:17.549
+or negative five
+
+0:21:17.549,0:21:18.909
+etcetera
+
+0:21:18.909,0:21:20.860
+we have floats
+
+0:21:20.860,0:21:23.349
+cozier real numbers so one point
+
+0:21:23.349,0:21:25.860
+team to reinforce five
+
+0:21:25.860,0:21:28.280
+minus six point one
+
+0:21:28.280,0:21:29.309
+zero
+
+0:21:29.309,0:21:30.160
+period
+
+0:21:30.160,0:21:33.420
+if you want zero to be a floating point
+number you have to have appearing in
+
+0:21:33.420,0:21:34.549
+there
+
+0:21:34.549,0:21:37.220
+or you could say how about
+
+0:21:37.220,0:21:38.870
+one point two ye
+
+0:21:38.870,0:21:40.450
+twenty points
+
+0:21:40.450,0:21:42.679
+so that something to the power of twenty
+one
+
+0:21:42.679,0:21:44.260
+so that's a pretty big number
+
+0:21:44.260,0:21:47.140
+hopefully should take it the strike real
+quick
+
+0:21:47.140,0:21:49.990
+sold one point to use the twenty-one
+
+0:21:49.990,0:21:52.230
+that's a pretty big number
+
+0:21:52.230,0:21:54.410
+we also have what are called
+
+0:21:54.410,0:21:56.100
+pools or boolean
+
+0:21:56.100,0:21:59.840
+and i might be a little surprising of
+needs that were never capillary
+
+0:21:59.840,0:22:02.110
+but once you see what boolean czar
+
+0:22:02.110,0:22:05.100
+in terms of apostles eyes you probably
+get pretty quick that's
+
+0:22:05.100,0:22:07.190
+one possible is true
+
+0:22:07.190,0:22:09.440
+and everyone is false
+
+0:22:09.440,0:22:12.130
+this is the yes no true false world
+
+0:22:12.130,0:22:14.920
+with referred us boolean or
+
+0:22:14.920,0:22:17.090
+invite on its for
+
+0:22:17.090,0:22:20.360
+for mike that's you'll see that a lot
+and if you do not connect asked
+
+0:22:20.360,0:22:22.750
+then they tell us whether to boolean
+
+0:22:22.750,0:22:24.200
+or the true value
+
+0:22:24.200,0:22:25.940
+is true or false
+
+0:22:25.940,0:22:27.850
+we also have
+
+0:22:27.850,0:22:31.170
+lists for sequences
+
+0:22:31.170,0:22:33.660
+and these artists a series of stuff
+
+0:22:33.660,0:22:36.090
+some of them are or some of them or not
+
+0:22:36.090,0:22:38.150
+the most commonly used
+
+0:22:38.150,0:22:40.630
+is our list
+
+0:22:40.630,0:22:43.649
+and this is britain with square brackets
+
+0:22:43.649,0:22:48.410
+and inside can be a number of things
+they have like minus two
+
+0:22:48.410,0:22:51.860
+one point nine
+
+0:22:51.860,0:22:53.180
+the word
+
+0:22:53.180,0:22:54.890
+so you can put anything in there
+
+0:22:54.890,0:22:59.120
+they don't have to be the same type you
+can start putting things together
+
+0:22:59.120,0:23:02.890
+we have something called to polls
+
+0:23:02.890,0:23:06.720
+to pose a risk their lives that are less
+powerful so form i can talk too much
+
+0:23:06.720,0:23:10.280
+about those areas the sometimes print
+the seas
+
+0:23:10.280,0:23:12.809
+sets sets are fine
+
+0:23:12.809,0:23:16.549
+as you go through data so you're reading
+a list of ship names and there's lots of
+
+0:23:16.549,0:23:17.919
+duplicates
+
+0:23:17.919,0:23:21.020
+if you go into a set and you keep adding
+ship names
+
+0:23:21.020,0:23:25.640
+you have the same name my ten different
+times it's only a keep wanted of that
+
+0:23:25.640,0:23:27.770
+so it's a set contains
+
+0:23:27.770,0:23:30.930
+only up to one so here analysts we could
+have
+
+0:23:30.930,0:23:35.580
+the number one following along for black
+three followed by one
+
+0:23:35.580,0:23:36.559
+that's okay
+
+0:23:36.559,0:23:37.860
+intercepts
+
+0:23:37.860,0:23:40.150
+if we send sat down
+
+0:23:40.150,0:23:44.059
+one one
+
+0:23:44.059,0:23:47.240
+we're gonna get back
+
+0:23:47.240,0:23:48.940
+and three
+
+0:23:48.940,0:23:51.549
+so if you're trying to find unique set
+of things
+
+0:23:51.549,0:23:55.460
+that's a nice way to do it so featuring
+three day that's often
+
+0:23:55.460,0:23:58.030
+serena set of u_s_ strings these uh...
+
+0:23:58.030,0:24:00.740
+'cause we saw from our g_p_s_ upstairs
+
+0:24:00.740,0:24:03.630
+you could pull those out of each
+sentence throw them into a second
+
+0:24:03.630,0:24:05.679
+accurate early because he which
+
+0:24:05.679,0:24:08.100
+which nina sentences that i have
+
+0:24:08.100,0:24:12.360
+one that's actually really handy that
+you probably in if using a lot is called
+
+0:24:12.360,0:24:15.110
+the dictionary
+
+0:24:15.110,0:24:16.840
+and what this has
+
+0:24:16.840,0:24:19.120
+is it's going to be a set where you have
+a key
+
+0:24:19.120,0:24:21.279
+and a value
+
+0:24:21.279,0:24:25.030
+if you have a key you can ask the
+dictionary
+
+0:24:25.030,0:24:26.549
+do you know about that so
+
+0:24:26.549,0:24:28.779
+are key could be
+
+0:24:28.779,0:24:29.820
+geology
+
+0:24:29.820,0:24:33.910
+and then to go with it could be any
+value
+
+0:24:33.910,0:24:36.120
+and they said that if you look up table
+
+0:24:36.120,0:24:38.549
+where if you want to store values for
+something
+
+0:24:38.549,0:24:41.160
+you could have the speed he can be a
+name and number
+
+0:24:41.160,0:24:42.860
+a number of different things
+
+0:24:42.860,0:24:44.980
+and then you have a value go with it so
+it's a
+
+0:24:44.980,0:24:47.130
+matching preparing at things
+
+0:24:47.130,0:24:49.420
+and we'll go through examples of each of
+these
+
+0:24:49.420,0:24:50.880
+and see them
+
+0:24:50.880,0:24:54.080
+there's also to other ones that are
+pretty important
+
+0:24:54.080,0:24:56.530
+on the other one is
+
+0:24:56.530,0:24:59.039
+so we can have files that we can open
+
+0:24:59.039,0:25:03.720
+be able to meant the keeping there is
+really use the word open
+
+0:25:03.720,0:25:06.380
+especially one called non
+
+0:25:06.380,0:25:08.480
+and will see that a few times
+
+0:25:08.480,0:25:10.159
+none represents nothing
+
+0:25:10.159,0:25:13.620
+it's no i didn't have anything to give
+you some of you know on
+
+0:25:13.620,0:25:15.940
+or you don't have a value for you
+
+0:25:15.940,0:25:19.970
+so not as have a special case will keep
+running into and hope we'll get a feel
+
+0:25:19.970,0:25:21.950
+for it down the road
+
+0:25:21.950,0:25:26.000
+so those of the basic types of things
+were used to build up programs
+
+0:25:26.000,0:25:29.080
+and there are more acts and control
+logic for it
+
+0:25:29.080,0:25:30.440
+so let's do
+
+0:25:30.440,0:25:33.750
+a little bit of i've typed on before we
+dig into these days has it's going to
+
+0:25:33.750,0:25:35.130
+help us
+
+0:25:35.130,0:25:37.040
+figure things out
+
+0:25:37.040,0:25:40.190
+there's chicken and say what you guys to
+know crew and
+
+0:25:40.190,0:25:41.580
+whose
+
+0:25:41.580,0:25:43.260
+so the type who
+
+0:25:43.260,0:25:45.789
+there's nothing in our space this is
+
+0:25:45.789,0:25:48.910
+our commander people often use 'em out
+very similar events
+
+0:25:48.910,0:25:52.210
+the tells you all the variables that are
+in your working space if you do shoes
+
+0:25:52.210,0:25:54.659
+through the same thing there's nothing
+
+0:25:54.659,0:25:55.970
+so let's just say
+
+0:25:55.970,0:25:57.380
+ship name
+
+0:25:57.380,0:25:58.680
+equals
+
+0:25:58.680,0:26:00.679
+harvey
+
+0:26:00.679,0:26:02.080
+cogeco
+
+0:26:02.080,0:26:04.179
+so you might know much at
+
+0:26:04.179,0:26:06.059
+and now for a typo
+
+0:26:06.059,0:26:09.030
+itil says a ship name
+
+0:26:09.030,0:26:10.909
+if i can spell ship right
+
+0:26:10.909,0:26:12.299
+kitten
+
+0:26:12.299,0:26:13.620
+who
+
+0:26:13.620,0:26:14.730
+now is to love them
+
+0:26:14.730,0:26:17.940
+i can do it deleted of a variable
+
+0:26:17.940,0:26:19.770
+minus filled ship name
+
+0:26:19.770,0:26:22.640
+appetite to attend you can see that it's
+gone
+
+0:26:22.640,0:26:25.510
+if a type of shoes you got to see the
+values that go with a particular
+
+0:26:25.510,0:26:27.880
+variable
+
+0:26:27.880,0:26:31.590
+so if you're working with tested a
+second i python near trying to figure
+
+0:26:31.590,0:26:33.650
+out how to do something
+
+0:26:33.650,0:26:36.970
+this is a great way to look into your
+workspace and see whether overloaded if
+
+0:26:36.970,0:26:39.700
+you're doing a pretty big problem or a
+few hours you might forget what
+
+0:26:39.700,0:26:42.549
+variables you have loaded up into the
+system
+
+0:26:42.549,0:26:46.309
+who and who's our great tools to go look
+at what's in there
+
+0:26:46.309,0:26:48.100
+can change the type of variable
+
+0:26:48.100,0:26:50.840
+yep and we'll talk about that some
+aerials can we change in other types of
+
+0:26:50.840,0:26:53.840
+variables and will show some examples of
+that
+
+0:26:53.840,0:26:58.640
+with such a with numbers will be had a
+convert numbers to and from strings
+
+0:26:58.640,0:27:00.940
+there's also
+
+0:27:00.940,0:27:04.960
+a command that you may want to have
+finance called log start
+
+0:27:04.960,0:27:08.330
+sify do an ls dash l first
+
+0:27:08.330,0:27:10.760
+there's nothing up my sleeve
+
+0:27:10.760,0:27:14.590
+miss a log starts
+
+0:27:14.590,0:27:18.480
+and what this does is gonna record your
+session to a file
+
+0:27:18.480,0:27:23.210
+so if you wanna go in later on and find
+that you could type history
+
+0:27:23.210,0:27:25.610
+and copy paste that into a max
+
+0:27:25.610,0:27:27.510
+and deal with it that way
+
+0:27:27.510,0:27:28.800
+but with
+
+0:27:28.800,0:27:32.850
+log start you know i writing a file
+
+0:27:32.850,0:27:35.670
+and their status file called pipe length
+on blog
+
+0:27:35.670,0:27:36.710
+pot and you can actually
+
+0:27:36.710,0:27:37.330
+talented
+
+0:27:37.330,0:27:38.400
+pick a different name
+
+0:27:38.400,0:27:40.750
+but this way you're recording your
+session
+
+0:27:40.750,0:27:44.050
+and so if you're really working for a
+problem you don't want to worry about me
+
+0:27:44.050,0:27:46.690
+taking notes for a while you really need
+to think about it
+
+0:27:46.690,0:27:50.420
+a lot of a great way to see what's going
+on and then come back and pick out the
+
+0:27:50.420,0:27:53.070
+piece is a good one
+
+0:27:53.070,0:27:56.269
+and then you can say log
+
+0:27:56.269,0:27:57.630
+and it's done
+
+0:27:57.630,0:28:00.059
+noticed there's a special magic commands
+
+0:28:00.059,0:28:02.140
+feel sometimes see it with a percent
+
+0:28:02.140,0:28:05.179
+you can leave those often it will cast
+those
+
+0:28:05.179,0:28:07.910
+there were too much about these funny
+magic commands but if you see the
+
+0:28:07.910,0:28:09.500
+percent
+
+0:28:09.500,0:28:13.760
+a special i fight on only tool
+
+0:28:13.760,0:28:16.240
+so now you've got a lot of well if you
+want it
+
+0:28:16.240,0:28:18.430
+and i will say
+
+0:28:18.430,0:28:20.700
+start myself
+
+0:28:20.700,0:28:21.929
+make sure it's
+
+0:28:21.929,0:28:24.940
+profound therein noticed that is
+actually going to keep
+
+0:28:24.940,0:28:28.929
+other stuff around and to some backups
+its kind nice
+
+0:28:28.929,0:28:31.559
+and let's try it out someday types
+
+0:28:31.559,0:28:34.110
+so i think it's best just to see these
+things in action
+
+0:28:34.110,0:28:37.620
+and get a feel for what they can do you
+
+0:28:37.620,0:28:40.179
+so it's open up the strings one
+
+0:28:40.179,0:28:42.610
+instrument i check name equals
+
+0:28:42.610,0:28:43.570
+coastal
+
+0:28:43.570,0:28:45.580
+surveyor
+
+0:28:45.580,0:28:48.789
+and we'll see what we can deal with this
+ship name variable
+
+0:28:48.789,0:28:50.970
+we cast the length of it
+
+0:28:50.970,0:28:54.470
+america was pressed tab your part way
+through so ship
+
+0:28:54.470,0:28:55.970
+i'm in town
+
+0:28:55.970,0:28:58.530
+so we have sixteen characters
+
+0:28:58.530,0:29:01.630
+we can ask for a particular character
+
+0:29:01.630,0:29:04.340
+v square brackets after variable
+
+0:29:04.340,0:29:08.180
+is for about lookup into this list of
+things
+
+0:29:08.180,0:29:10.120
+so zero will be our first
+
+0:29:10.120,0:29:11.350
+in python
+
+0:29:11.350,0:29:15.700
+organized think by computer scientist
+semister accounting firm zero
+
+0:29:15.700,0:29:19.910
+so if you ask for one it's not the first
+letter it's the second letter
+
+0:29:19.910,0:29:24.320
+we can ask for arranger of things so
+let's get the fifth thirty eight
+
+0:29:24.320,0:29:26.400
+characters and their
+
+0:29:26.400,0:29:29.320
+and it's going to give you was that
+position
+
+0:29:29.320,0:29:30.300
+five
+
+0:29:30.300,0:29:31.780
+six
+
+0:29:31.780,0:29:33.720
+and seven
+
+0:29:33.720,0:29:37.529
+we can find a letter so let's go back
+here
+
+0:29:37.529,0:29:39.630
+if you have a very bold amy put it dot
+
+0:29:39.630,0:29:41.269
+and then something after it
+
+0:29:41.269,0:29:44.240
+that's something that comes with dot
+object
+
+0:29:44.240,0:29:45.470
+so it's got
+
+0:29:45.470,0:29:47.750
+a bunch of things that knows how to do
+
+0:29:47.750,0:29:49.850
+simply type find
+
+0:29:49.850,0:29:52.280
+animal picked the letter s
+
+0:29:52.280,0:29:54.730
+hopeless off on the letter at somewhere
+in there
+
+0:29:54.730,0:29:58.130
+and water s is that position aids
+
+0:29:58.130,0:30:02.400
+now what we can also do is now if you
+know where it is
+
+0:30:02.400,0:30:06.130
+you can say give me think everything
+from position eight on
+
+0:30:06.130,0:30:08.149
+by leaving out
+
+0:30:08.149,0:30:09.679
+this part
+
+0:30:09.679,0:30:12.920
+eileen leblanc in there you go to the
+end
+
+0:30:12.920,0:30:18.410
+if we just want the second word from the
+newest urban ask you can get
+
+0:30:18.410,0:30:20.340
+we could also come from the back
+
+0:30:20.340,0:30:23.030
+so minus one is the last character
+
+0:30:23.030,0:30:24.149
+stuff are
+
+0:30:24.149,0:30:26.299
+if we do minus four
+
+0:30:26.299,0:30:27.460
+that's the heat
+
+0:30:27.460,0:30:29.390
+and again if you do a colin
+
+0:30:29.390,0:30:31.420
+and go to the end
+
+0:30:31.420,0:30:33.980
+cesium sliced apart as string
+
+0:30:33.980,0:30:36.690
+get different bits of it
+
+0:30:36.690,0:30:37.960
+if we ah...
+
+0:30:37.960,0:30:40.520
+keep going here
+
+0:30:40.520,0:30:42.450
+think that's the same text repeated
+
+0:30:42.450,0:30:44.010
+summer exciting
+
+0:30:44.010,0:30:46.409
+and spit out and try some numbers
+
+0:30:46.409,0:30:52.230
+we can do the number one and that's a
+number of students a type one at singer
+
+0:30:52.230,0:30:53.859
+we can do one point one
+
+0:30:53.859,0:30:55.810
+you get back one point one
+
+0:30:55.810,0:30:58.019
+and you can say tight of that
+
+0:30:58.019,0:30:59.570
+and that's a floating point number
+
+0:30:59.570,0:31:01.540
+so that will be again this
+
+0:31:01.540,0:31:05.549
+range of things in there
+
+0:31:05.549,0:31:08.100
+if you've done that well before you
+should be bored by now
+
+0:31:08.100,0:31:09.900
+but we can say
+
+0:31:09.900,0:31:12.460
+three point one four one five
+
+0:31:12.460,0:31:15.380
+this is how it changes string into a
+number
+
+0:31:15.380,0:31:18.640
+and so that converted to a number so we
+can and say what is the type of what we
+
+0:31:18.640,0:31:25.170
+got back and actually converted that
+string and single quotes into a number
+
+0:31:25.170,0:31:30.980
+now what if we didn't something kinda
+crazy here
+
+0:31:30.980,0:31:32.770
+and that's going to work
+
+0:31:32.770,0:31:35.880
+probly not i don't know the number would
+be for that
+
+0:31:35.880,0:31:39.159
+as they tell you there's a value error
+could not convert string
+
+0:31:39.159,0:31:40.240
+to flow
+
+0:31:40.240,0:31:43.820
+few gonna start seeing some of their
+messages will start small
+
+0:31:43.820,0:31:45.000
+and you'll actually get
+
+0:31:45.000,0:31:46.340
+comfortable with them
+
+0:31:46.340,0:31:49.050
+they can be a little overwhelming
+sometimes in big programs to get what's
+
+0:31:49.050,0:31:50.490
+called the traceback
+
+0:31:50.490,0:31:52.179
+and and might tell you a lot
+
+0:31:52.179,0:31:55.470
+what more then you're ready four
+
+0:31:55.470,0:31:58.840
+so hopefully this will get you uh... a
+slow start that
+
+0:31:58.840,0:32:01.020
+let's do something
+
+0:32:01.020,0:32:02.810
+kinda funny what word
+
+0:32:02.810,0:32:03.870
+decent called
+
+0:32:03.870,0:32:05.630
+import mass
+
+0:32:05.630,0:32:09.800
+import goes off and brings in some extra
+functionality we might want
+
+0:32:09.800,0:32:11.200
+so important math
+
+0:32:11.200,0:32:14.540
+it's a map up high
+
+0:32:14.540,0:32:18.540
+suddenly we don't have to remember the
+number for pi it's given to us
+
+0:32:18.540,0:32:20.940
+we can do math dot sign
+
+0:32:20.940,0:32:22.520
+now thought
+
+0:32:22.520,0:32:25.620
+hi divided by two
+
+0:32:25.620,0:32:27.500
+and will get back
+
+0:32:27.500,0:32:30.410
+ensuing radians here for us
+
+0:32:30.410,0:32:33.600
+with golf it's a malfunction zone there
+
+0:32:33.600,0:32:35.860
+picking things like convert from radians
+
+0:32:35.860,0:32:38.240
+degree three iseries agrees to hear that
+
+0:32:38.240,0:32:40.910
+nafta radians
+
+0:32:40.910,0:32:42.550
+one eighty
+
+0:32:42.550,0:32:46.450
+so if i remember right that should be
+height
+
+0:32:46.450,0:32:47.890
+to get that politics
+
+0:32:47.890,0:32:49.070
+and if we did
+
+0:32:49.070,0:32:50.919
+tends to you
+
+0:32:50.919,0:32:52.570
+dreams as to buy it
+
+0:32:52.570,0:32:56.420
+we can also do you math dot degrees
+
+0:32:56.420,0:32:57.990
+tee times math
+
+0:32:57.990,0:32:59.620
+dot klein
+
+0:32:59.620,0:33:02.310
+guessing that's all the way around the
+circle so if i remember right they
+
+0:33:02.310,0:33:04.340
+should be three sixty
+
+0:33:04.340,0:33:06.210
+so there's degrees
+
+0:33:06.210,0:33:07.680
+we don't really know what's in there
+
+0:33:07.680,0:33:11.899
+you've got this march along we haven't
+looked inside so we can take math period
+
+0:33:11.899,0:33:13.200
+and tab
+
+0:33:13.200,0:33:17.789
+and it will list off all the things that
+are inside of their continues
+
+0:33:17.789,0:33:18.850
+and for now
+
+0:33:18.850,0:33:21.000
+if you see underscores
+
+0:33:21.000,0:33:24.549
+please don't worry about them just
+ignore them pretend they don't exist
+
+0:33:24.549,0:33:26.240
+anything with underscore etc
+
+0:33:26.240,0:33:29.650
+will be something fancy room i look at
+later on but for now just look at things
+
+0:33:29.650,0:33:31.230
+like
+
+0:33:31.230,0:33:33.620
+laptop by
+
+0:33:33.620,0:33:35.059
+this is power
+
+0:33:35.059,0:33:35.980
+and so we can save
+
+0:33:35.980,0:33:38.340
+math dot power question mark
+
+0:33:38.340,0:33:40.759
+and if you go ask you what his power to
+you
+
+0:33:40.759,0:33:41.419
+and here
+
+0:33:41.419,0:33:45.970
+he returns acts to the power of wine
+
+0:33:45.970,0:33:48.620
+now if you start doing things like
+acoustics you might need a different
+
+0:33:48.620,0:33:49.700
+kind of math
+
+0:33:49.700,0:33:52.730
+you might need complex numbers we've got
+those
+
+0:33:52.730,0:33:53.960
+for jane
+
+0:33:53.960,0:33:58.090
+there's a complex number
+
+0:33:58.090,0:34:01.229
+complex so it doesn't actually come as a
+part of the math tools
+
+0:34:01.229,0:34:04.630
+so complex itself right into the paper
+itself
+
+0:34:04.630,0:34:07.279
+the mac module was kind of like
+
+0:34:07.279,0:34:09.119
+parents tab which by sea
+
+0:34:09.119,0:34:11.629
+and uh... seventies were mathis
+
+0:34:11.629,0:34:14.719
+facts on the function sign function
+trades and whatnot are not a part of the
+
+0:34:14.719,0:34:15.889
+normal system
+
+0:34:15.889,0:34:17.849
+we can also do complex math
+
+0:34:17.849,0:34:20.259
+so for j
+
+0:34:20.259,0:34:21.999
+for us
+
+0:34:21.999,0:34:24.399
+ora klein's take your favorite operator
+
+0:34:24.399,0:34:27.659
+q plus nine j
+
+0:34:27.659,0:34:29.859
+and we get back that
+
+0:34:29.859,0:34:31.859
+complex number
+
+0:34:31.859,0:34:35.019
+and if you do complex map you'll get
+very familiar with this and you can use
+
+0:34:35.019,0:34:38.199
+it in
+
+0:34:38.199,0:34:40.739
+so's your basic numbers and strengths
+
+0:34:40.739,0:34:44.669
+let's go look at one of those containers
+that we have here the sequence items
+
+0:34:44.669,0:34:48.129
+list and if you're the c_e_o_ use all
+the time
+
+0:34:48.129,0:34:51.539
+school starts with a list
+
+0:34:51.539,0:34:54.019
+and maybe we want to create a list
+
+0:34:54.019,0:34:56.410
+as a sequence of numbers and i know
+
+0:34:56.410,0:34:58.669
+it was definitely have some of the
+classes
+
+0:34:58.669,0:35:02.929
+for the our part how to make a range of
+numbers because it really sucks type
+
+0:35:02.929,0:35:04.639
+our zero through
+
+0:35:04.639,0:35:07.289
+twenty three and i forgot zero in class
+
+0:35:07.289,0:35:09.779
+there's a command called range
+
+0:35:09.779,0:35:13.729
+if you take that this is where is very
+clear that pipeline is coming from zero
+
+0:35:13.729,0:35:15.769
+it's going to give us five numbers
+
+0:35:15.769,0:35:18.139
+but since our from zero
+
+0:35:18.139,0:35:19.289
+so we'll see
+
+0:35:19.289,0:35:23.019
+zero one two three four but not five
+
+0:35:23.019,0:35:25.609
+you can also tell where to start
+
+0:35:25.609,0:35:28.650
+so we can start from two and so it's
+going to give us
+
+0:35:28.650,0:35:32.749
+two three four but not five
+
+0:35:32.749,0:35:34.980
+with ranged we can also say
+
+0:35:34.980,0:35:36.230
+how often to jump
+
+0:35:36.230,0:35:38.019
+for how much jump
+
+0:35:38.019,0:35:40.059
+so still range three
+
+0:35:40.059,0:35:43.029
+so much twenty-eight
+
+0:35:43.029,0:35:46.169
+it's gonna jump by five spelling up and
+still
+
+0:35:46.169,0:35:49.739
+but not including the highest number of
+twenty eight so soon started three
+
+0:35:49.739,0:35:51.410
+jumped by fives
+
+0:35:51.410,0:35:52.420
+up to
+
+0:35:52.420,0:35:53.259
+twenty seven
+
+0:35:53.259,0:35:56.679
+bdsm but not put twenty
+
+0:35:56.679,0:35:59.659
+we can make our homeless which is
+probably more interesting most of the
+
+0:35:59.659,0:36:00.719
+time
+
+0:36:00.719,0:36:02.319
+so let's say
+
+0:36:02.319,0:36:05.219
+uh... take a much simpler example ended
+before
+
+0:36:05.219,0:36:06.679
+we have a tug
+
+0:36:06.679,0:36:08.089
+if the robo
+
+0:36:08.089,0:36:09.949
+and we have and
+
+0:36:09.949,0:36:12.169
+r_v_ for research vessel
+
+0:36:12.169,0:36:14.519
+separate used the wrong brackets
+
+0:36:14.519,0:36:17.749
+use the square brackets not the round
+ones
+
+0:36:17.749,0:36:20.229
+this etype
+
+0:36:20.229,0:36:21.529
+we had a list
+
+0:36:21.529,0:36:23.549
+sovereign creo est
+
+0:36:23.549,0:36:30.549
+we can also up and to ship
+
+0:36:32.989,0:36:34.779
+we could certainly make it could
+
+0:36:34.779,0:36:36.749
+fathers
+
+0:36:36.749,0:36:40.199
+its happy to do it from his a type time
+for temporary
+
+0:36:40.199,0:36:42.629
+at the table
+
+0:36:42.629,0:36:46.099
+vicious we can't now change that one
+such a force fixed
+
+0:36:46.099,0:36:47.730
+into memory you can overwrite
+
+0:36:47.730,0:36:51.039
+i'm totally new to pull but you can't
+change it so it's not very fun to work
+
+0:36:51.039,0:36:52.449
+with
+
+0:36:52.449,0:36:55.499
+triples you'll see them and people often
+start learning to both but they're
+
+0:36:55.499,0:36:56.789
+really boring
+
+0:36:56.789,0:36:59.469
+like you can't add onto a simple
+
+0:36:59.469,0:37:02.409
+you can make a new two hole but you
+can't change it
+
+0:37:02.409,0:37:04.130
+and i think it's really nice to just
+
+0:37:04.130,0:37:08.049
+mentally people change which are working
+with
+
+0:37:08.049,0:37:09.669
+exist for speed
+
+0:37:09.669,0:37:10.949
+it's a great question
+
+0:37:10.949,0:37:12.479
+so if you have a triple
+
+0:37:12.479,0:37:15.759
+it uses much less memory it's a much
+more
+
+0:37:15.759,0:37:20.349
+fast others to walk across the terms of
+the system so if you have a lot of these
+
+0:37:20.349,0:37:22.169
+and say you have a chameleon
+
+0:37:22.169,0:37:23.630
+uh... lists of things
+
+0:37:23.630,0:37:26.020
+if you make them all less it's gonna use
+more memory
+
+0:37:26.020,0:37:28.699
+and said take longer walk across them
+
+0:37:28.699,0:37:31.410
+you've got
+
+0:37:31.410,0:37:33.529
+you can always say
+
+0:37:33.529,0:37:35.559
+list
+
+0:37:35.559,0:37:37.419
+and will return back a list
+
+0:37:37.419,0:37:38.839
+we can also say
+
+0:37:38.839,0:37:40.269
+pupil
+
+0:37:40.269,0:37:41.799
+and ship
+
+0:37:41.799,0:37:44.569
+and get back triple from a list
+
+0:37:44.569,0:37:46.659
+it's easy to switch back and forth
+
+0:37:46.659,0:37:50.139
+and it doesn't matter too much and so
+you get to really get a sense that you
+
+0:37:50.139,0:37:52.569
+really want to be easy to fool so for
+beginning
+
+0:37:52.569,0:37:54.569
+just think about less and
+
+0:37:54.569,0:37:59.279
+when someone says to pull say i think
+you mean less than a minute
+
+0:37:59.279,0:38:02.179
+that stephenson advanced stuff
+
+0:38:02.179,0:38:04.919
+so let's go back to our ship west
+
+0:38:04.919,0:38:09.789
+and in here if we can ask the length of
+that swath of shift that three of them
+
+0:38:09.789,0:38:11.230
+but what if we forgot one
+
+0:38:11.230,0:38:13.089
+chip dot append
+
+0:38:13.089,0:38:14.269
+will say
+
+0:38:14.269,0:38:15.869
+passenger
+
+0:38:15.869,0:38:19.509
+and now for a look at shifts it's got
+one more on the end
+
+0:38:19.509,0:38:21.679
+so we can then add to this
+
+0:38:21.679,0:38:23.579
+sky nice week a m
+
+0:38:23.579,0:38:24.949
+sort this list
+
+0:38:24.949,0:38:28.619
+noses won the trips people up including
+myself pretty often
+
+0:38:28.619,0:38:30.779
+sort doesn't return anything
+
+0:38:30.779,0:38:35.319
+it sorts the worst in the actual list so
+you can't than sort something in
+
+0:38:35.319,0:38:36.959
+assigned to another variable
+
+0:38:36.959,0:38:40.170
+you have to sort it and then later on
+the side if you want to have a sort of
+
+0:38:40.170,0:38:41.489
+list separate
+
+0:38:41.489,0:38:44.909
+if i press enter it looks like nothing
+happened
+
+0:38:44.909,0:38:46.929
+so swords kind of weird like that
+
+0:38:46.929,0:38:47.809
+if we tied
+
+0:38:47.809,0:38:50.029
+ship again now
+
+0:38:50.029,0:38:51.619
+notice that
+
+0:38:51.619,0:38:53.549
+here's the before
+
+0:38:53.549,0:38:55.469
+so shut off a tug
+
+0:38:55.469,0:38:59.849
+and here's the after or starts off a
+passenger and time is now at the end so
+
+0:38:59.849,0:39:05.889
+it sort of them alphabetically
+
+0:39:05.889,0:39:07.170
+we can say ship
+
+0:39:07.170,0:39:10.319
+dot this sorts and we can ask it
+
+0:39:10.319,0:39:11.999
+you can
+
+0:39:11.999,0:39:15.619
+discourage ear which you're probably not
+comfortable with yet
+
+0:39:15.619,0:39:19.489
+the c_m_v_ as you can pass it some
+function and that does a comparison
+
+0:39:19.489,0:39:21.779
+anyway that you want
+
+0:39:21.779,0:39:24.440
+and that's a little more advanced deep
+things like that but you can create a
+
+0:39:24.440,0:39:28.259
+function that sorts it and you can
+define however it is that you want is
+
+0:39:28.259,0:39:30.859
+for good
+
+0:39:30.859,0:39:33.969
+america's youth home worked for fun
+
+0:39:33.969,0:39:35.589
+knows that for a while
+
+0:39:35.589,0:39:39.379
+this is where it takes a little while to
+get used to reading the documentation
+
+0:39:39.379,0:39:41.469
+but they're compare right now
+
+0:39:41.469,0:39:44.209
+is a simple one this just alphabetical
+
+0:39:44.209,0:39:48.089
+and you have to write some function ever
+turns negative ones here or one whether
+
+0:39:48.089,0:39:51.719
+or not mobsters last band peoples who
+were great event
+
+0:39:51.719,0:39:53.869
+so it's really powerful
+
+0:39:53.869,0:39:56.829
+but it's going to get confusing pretty
+quickly beginning
+
+0:39:56.829,0:40:01.739
+so we're not gonna worry too much about
+this work and i forget that
+
+0:40:01.739,0:40:07.219
+we can't just like the string we can say
+ships zero hitter first ship
+
+0:40:07.219,0:40:08.909
+we get the last year
+
+0:40:08.909,0:40:11.429
+with a minus one
+
+0:40:11.429,0:40:12.639
+and
+
+0:40:12.639,0:40:16.279
+we can also ask you what is ship so how
+do themselves
+
+0:40:16.279,0:40:18.699
+uh... than sinker run aground ur
+
+0:40:18.699,0:40:20.039
+sewing here
+
+0:40:20.039,0:40:23.179
+we have always underscore methods you're
+gonna totally ignore
+
+0:40:23.179,0:40:24.809
+and you know what just over here
+
+0:40:24.809,0:40:28.969
+at the app and counts index insert pop
+on the roof
+
+0:40:28.969,0:40:32.169
+so they've got some things they can do
+we can try some of those
+
+0:40:32.169,0:40:35.299
+and we can also try removed so ship dot
+remove
+
+0:40:35.299,0:40:36.699
+and
+
+0:40:36.699,0:40:39.019
+within the safe talented
+
+0:40:39.019,0:40:41.139
+and now if we take a look at our ship
+
+0:40:41.139,0:40:42.779
+we no longer have
+
+0:40:42.779,0:40:44.179
+that tug on the air
+
+0:40:44.179,0:40:45.699
+we can also say
+
+0:40:45.699,0:40:47.839
+there's one called
+
+0:40:47.839,0:40:51.039
+pop which is takes one-off the end
+
+0:40:51.039,0:40:54.299
+wave your hands around or are not to
+have any idea that you're having
+
+0:40:54.299,0:40:55.299
+troubles
+
+0:40:55.299,0:40:58.419
+so you could share ship carrying press
+center
+
+0:40:58.419,0:41:01.849
+that's gonna give you an error because
+you haven't told her what to do you
+
+0:41:01.849,0:41:04.949
+so you can do ship period press tab
+
+0:41:04.949,0:41:08.929
+and now you getting a list of functions
+and then you talk to you type more stuff
+
+0:41:08.929,0:41:10.199
+after that
+
+0:41:10.199,0:41:13.869
+so it's a good one if you guys don't
+leave your hands you're going to be
+
+0:41:13.869,0:41:16.169
+missing out on stuff that i assume
+
+0:41:16.169,0:41:18.339
+is obviously is not
+
+0:41:18.339,0:41:20.369
+so if you have all set of things
+
+0:41:20.369,0:41:22.419
+even pop one off the top
+
+0:41:22.419,0:41:23.220
+and
+
+0:41:23.220,0:41:26.240
+throwed out its uh... off the end off
+the boat
+
+0:41:26.240,0:41:28.479
+writing inside
+
+0:41:28.479,0:41:32.259
+when she type ship dot t_ o_ p_ and
+question mark and press enter and see if
+
+0:41:32.259,0:41:33.739
+it tells you
+
+0:41:33.739,0:41:35.849
+so hopefully it will tell us
+
+0:41:35.849,0:41:37.639
+so the falls as last yes
+
+0:41:37.639,0:41:40.019
+so ship period and now
+
+0:41:40.019,0:41:42.039
+the full stop
+
+0:41:42.039,0:41:43.269
+that time
+
+0:41:43.269,0:41:44.989
+and now you get a list
+
+0:41:44.989,0:41:49.180
+in the notes i call that ships within us
+in class i just it shipped without an
+
+0:41:49.180,0:41:50.549
+ass
+
+0:41:50.549,0:41:52.649
+for the confusion there
+
+0:41:52.649,0:41:55.559
+that's a good misheard so ship question
+mark
+
+0:41:55.559,0:41:59.379
+that soviet celeste if you say ships
+question mark
+
+0:41:59.379,0:42:00.849
+object not found
+
+0:42:00.849,0:42:03.909
+i don't have a ship's remember the lou
+
+0:42:03.909,0:42:05.360
+there my variables or
+
+0:42:05.360,0:42:07.669
+whose
+
+0:42:07.669,0:42:11.679
+will show you the different there was
+you've got and what's in them
+
+0:42:11.679,0:42:14.799
+now like for example if you look at this
+map one
+
+0:42:14.799,0:42:19.029
+don't worry about too much ill start to
+understand that down the road
+
+0:42:19.029,0:42:20.969
+that some guatemala joyous
+
+0:42:20.969,0:42:24.609
+for now i'll just use them without
+worrying too much
+
+0:42:24.609,0:42:28.369
+so let's try something else here stuffed
+with strings
+
+0:42:28.369,0:42:32.309
+new hunter restoring into a list of
+breaking into pieces
+
+0:42:32.309,0:42:33.400
+will do
+
+0:42:33.400,0:42:36.849
+numbers
+
+0:42:36.849,0:42:39.179
+one-two-three-four
+
+0:42:39.179,0:42:40.429
+ninety-nine
+
+0:42:40.429,0:42:43.159
+so it's going great that numbers
+variable
+
+0:42:43.159,0:42:47.249
+and what if we want a list of each of
+those in a separate
+
+0:42:47.249,0:42:52.499
+i says make it more interesting
+
+0:42:52.499,0:42:56.199
+there's blistering since we did say
+
+0:42:56.199,0:42:57.429
+numbers
+
+0:42:57.429,0:42:59.789
+so remember that number is is not
+
+0:42:59.789,0:43:01.449
+an actual number
+
+0:43:01.449,0:43:02.469
+weekend
+
+0:43:02.469,0:43:04.569
+kicker numbers
+
+0:43:04.569,0:43:07.529
+toughing it out there's lots of
+different functions but one of them is
+
+0:43:07.529,0:43:10.539
+right here is split
+
+0:43:10.539,0:43:12.709
+mccabe's split what is it to you
+
+0:43:12.709,0:43:15.419
+and what it does is it will break this
+into
+
+0:43:15.419,0:43:17.109
+various chunks
+
+0:43:17.109,0:43:21.820
+on some for a separate that we want to
+ask it so we can say numbers split
+
+0:43:21.820,0:43:24.449
+the defaults is a space
+
+0:43:24.449,0:43:25.659
+white-space
+
+0:43:25.659,0:43:27.059
+and so now
+
+0:43:27.059,0:43:28.509
+we have
+
+0:43:28.509,0:43:30.749
+our numbers per pinup into a list
+
+0:43:30.749,0:43:34.079
+where used please take numbers to greasy
+agreeable
+
+0:43:34.079,0:43:36.599
+it's going to break it up on white-space
+
+0:43:36.599,0:43:40.349
+so it's nice to be a little break things
+apart if we have
+
+0:43:40.349,0:43:43.049
+for example if we go
+
+0:43:43.049,0:43:44.239
+ship name
+
+0:43:44.239,0:43:46.519
+equals
+
+0:43:46.519,0:43:48.950
+challenger com ar harvey
+
+0:43:48.950,0:43:50.380
+maybe somebody likes to write
+
+0:43:50.380,0:43:53.589
+the type of a ship afterwards for the
+comma
+
+0:43:53.589,0:43:56.079
+so they say that very boldly say shit
+name
+
+0:43:56.079,0:43:57.669
+dot spoil it
+
+0:43:57.669,0:44:02.829
+it's not that he was what we want to
+take a break in the gulf challenger
+
+0:44:02.829,0:44:05.879
+atacama will be inside of here cigs hard
+to read
+
+0:44:05.879,0:44:06.949
+and then
+
+0:44:06.949,0:44:08.319
+r_v_ on the right
+
+0:44:08.319,0:44:10.339
+we want to split on that karma
+
+0:44:10.339,0:44:13.659
+so say i think you're dealing with
+comma-separated value data
+
+0:44:13.659,0:44:16.559
+you can split on anything you want to
+hear compressed return
+
+0:44:16.559,0:44:20.559
+as good a split on that comic character
+and give this golf challenge ur
+
+0:44:20.559,0:44:21.720
+as the first thing
+
+0:44:21.720,0:44:23.569
+in our view is the second
+
+0:44:23.569,0:44:25.459
+so now we can say
+
+0:44:25.459,0:44:26.939
+here's the first one
+
+0:44:26.939,0:44:29.279
+and we just kicked off challenger
+
+0:44:29.279,0:44:32.759
+so still a bit more clearly will sing
+fields
+
+0:44:32.759,0:44:34.899
+equals ship name
+
+0:44:34.899,0:44:36.479
+dot splits
+
+0:44:36.479,0:44:38.709
+and will split on the common
+
+0:44:38.709,0:44:42.079
+scenario this terrible caulfield
+switches
+
+0:44:42.079,0:44:43.319
+should be a list
+
+0:44:43.319,0:44:44.749
+to the list
+
+0:44:44.749,0:44:46.140
+we can save name
+
+0:44:46.140,0:44:47.439
+equals
+
+0:44:47.439,0:44:49.389
+field sub-zero
+
+0:44:49.389,0:44:50.909
+what if it's gonna be a name
+
+0:44:50.909,0:44:52.849
+you only have a guess
+
+0:44:52.849,0:44:56.739
+co-founder axle yes sofa tightening
+
+0:44:56.739,0:44:58.869
+we get back culturalcare
+
+0:44:58.869,0:45:03.419
+no she also did some funny things we can
+say name times four
+
+0:45:03.419,0:45:04.310
+leaders think
+
+0:45:04.310,0:45:07.469
+most petition with the string is going
+to be kept
+
+0:45:07.469,0:45:09.470
+you typed as yell on
+
+0:45:09.470,0:45:10.929
+without the team
+
+0:45:10.929,0:45:13.999
+so its political neophyte parentheses
+
+0:45:13.999,0:45:15.209
+referencing
+
+0:45:15.209,0:45:17.419
+that's right fields and press enter
+
+0:45:17.419,0:45:19.880
+type who c have ships foro
+
+0:45:19.880,0:45:21.250
+seemed to do this
+
+0:45:21.250,0:45:22.550
+for using shipping
+
+0:45:22.550,0:45:23.400
+so tight
+
+0:45:23.400,0:45:25.699
+fields equals
+
+0:45:25.699,0:45:27.879
+ship name
+
+0:45:27.879,0:45:30.169
+and then do the split
+
+0:45:30.169,0:45:32.139
+sochet named dot split
+
+0:45:32.139,0:45:36.719
+so if you see a number ninety three
+
+0:45:36.719,0:45:40.799
+you see me partially going through
+things so every time
+
+0:45:40.799,0:45:42.129
+i pressed tab
+
+0:45:42.129,0:45:43.709
+so i typed
+
+0:45:43.709,0:45:45.270
+i pressed how break here
+
+0:45:45.270,0:45:48.039
+if that your options are shipping ship
+name
+
+0:45:48.039,0:45:51.359
+source tele ninety three i have
+impressed answer yet
+
+0:45:51.359,0:45:55.229
+field equals ship name so i think we've
+got to their pressed
+
+0:45:55.229,0:45:57.279
+that period or full stop
+
+0:45:57.279,0:45:59.069
+type exp l body
+
+0:45:59.069,0:46:00.959
+and i asked to finish for me
+
+0:46:00.959,0:46:02.289
+pressed count
+
+0:46:02.289,0:46:04.359
+and a selective use plates
+
+0:46:04.359,0:46:05.750
+or split lines
+
+0:46:05.750,0:46:07.249
+which we don't know about
+
+0:46:07.249,0:46:08.459
+and so here
+
+0:46:08.459,0:46:10.099
+i said i just want split
+
+0:46:10.099,0:46:14.960
+fischer in a way here i press enter so i
+never pressed enter appear for either of
+
+0:46:14.960,0:46:16.099
+those plans
+
+0:46:16.099,0:46:18.899
+the only ones i have a full
+commemorating
+
+0:46:18.899,0:46:20.159
+i pressed answer
+
+0:46:20.159,0:46:21.309
+that i've been
+
+0:46:21.309,0:46:22.130
+you see here
+
+0:46:22.130,0:46:24.249
+visit command
+
+0:46:24.249,0:46:28.389
+workplan at use it was a great question
+
+0:46:28.389,0:46:31.129
+and so when you see a jump from ninety
+three ninety four
+
+0:46:31.129,0:46:32.369
+actually press enter
+
+0:46:32.369,0:46:33.809
+and ran the command
+
+0:46:33.809,0:46:35.839
+sitting when i want to hazard a guess
+
+0:46:35.839,0:46:39.259
+as to what made you find for
+
+0:46:39.259,0:46:41.039
+have a strange thing most
+
+0:46:41.039,0:46:45.239
+position too
+
+0:46:45.239,0:46:47.489
+uniformly correct
+
+0:46:47.489,0:46:50.809
+and what just happened here
+
+0:46:50.809,0:46:54.269
+that was lovely and so that was the
+secret answer you couldn't see
+
+0:46:54.269,0:46:55.849
+cut their heads
+
+0:46:55.849,0:46:57.169
+looks like uh...
+
+0:46:57.169,0:46:59.139
+the enter key got stuck
+
+0:46:59.139,0:47:01.869
+filter yes you can do somewhere
+functions like that
+
+0:47:01.869,0:47:05.230
+it might not matter much for you right
+now but say you want to do something
+
+0:47:05.230,0:47:08.249
+like a big dashed line in your output
+
+0:47:08.249,0:47:14.089
+newark eighty characters of dashes
+across the screen
+
+0:47:14.089,0:47:17.349
+it's helpful it's just not always
+obvious why you might want to learn
+
+0:47:17.349,0:47:20.759
+about these things until you run into a
+case where you're like awake
+
+0:47:20.759,0:47:25.889
+i can multiply that string times eighty
+and i've got a big long lines
+
+0:47:25.889,0:47:27.789
+takut
+
+0:47:27.789,0:47:30.109
+i'm gonna go ahead and show
+
+0:47:30.109,0:47:33.859
+what i've done here so hopefully that
+history won't look too terrible with the
+
+0:47:33.859,0:47:35.789
+uh...
+
+0:47:35.789,0:47:38.789
+million blank lines so history
+
+0:47:38.789,0:47:42.319
+over the uk
+
+0:47:42.319,0:47:44.210
+real data has real problems right
+
+0:47:44.210,0:47:45.160
+uh...
+
+0:47:45.160,0:47:47.959
+of the scrolling back here
+
+0:47:47.959,0:47:49.309
+so in here
+
+0:47:49.309,0:47:53.659
+command ninety-six is where iron maiden
+name
+
+0:47:53.659,0:47:57.539
+so i grabbed the first one of the
+entries in the fields in-store baton
+
+0:47:57.539,0:47:59.599
+verbal main
+
+0:47:59.599,0:48:00.250
+and then
+
+0:48:00.250,0:48:04.589
+in ninety seven i was just printing it
+out by typing in his enter
+
+0:48:04.589,0:48:09.059
+animal qualified for
+
+0:48:09.059,0:48:16.059
+where does it take the string picks for
+the man who's them together
+
+0:48:16.689,0:48:18.609
+they can't wonder
+
+0:48:18.609,0:48:23.779
+so if you want to joining together with
+a particular character
+
+0:48:23.779,0:48:27.969
+and it's very it's a hard to read color
+in the out but i need to get smarter act
+
+0:48:27.969,0:48:31.249
+my cascading style sheets which i don't
+really know
+
+0:48:31.249,0:48:33.409
+let's say who
+
+0:48:33.409,0:48:35.789
+who's in suva dot here for a very both
+
+0:48:35.789,0:48:37.220
+let's take our attempt
+
+0:48:37.220,0:48:39.009
+skimpy variable
+
+0:48:39.009,0:48:40.649
+and i want to join it
+
+0:48:40.649,0:48:45.449
+with uh... space two dash is in the
+space
+
+0:48:45.449,0:48:48.889
+this actually has something called
+drawing
+
+0:48:48.889,0:48:51.829
+it doesn't always know for you to help
+proportionally
+
+0:48:51.829,0:48:53.369
+but joining
+
+0:48:53.369,0:48:55.149
+t_n_t_
+
+0:48:55.149,0:48:58.699
+and what this does if you have a string
+and you want to use it to join things
+
+0:48:58.699,0:48:59.610
+together
+
+0:48:59.610,0:49:03.450
+you called joint deposit a list of items
+and it's gonna put this string in
+
+0:49:03.450,0:49:05.399
+between each of those items
+
+0:49:05.399,0:49:08.469
+so if i want to make at csd evidence
+
+0:49:08.469,0:49:11.159
+i cared if replace this with a comment
+
+0:49:11.159,0:49:13.119
+take all your fields
+
+0:49:13.119,0:49:14.400
+join in with a comma
+
+0:49:14.400,0:49:18.950
+and you now have a c_f_c_s had to try to
+write yourself a csd file to go alone
+
+0:49:18.950,0:49:21.099
+into something like excel
+
+0:49:21.099,0:49:24.109
+numbers or openoffice early bird office
+
+0:49:24.109,0:49:25.939
+isn't how you might do it
+
+0:49:25.939,0:49:27.759
+uh...
+
+0:49:27.759,0:49:30.589
+uh... king
+
+0:49:30.589,0:49:33.859
+this is just out for any of the service
+to the algeria's just reading it nowhere
+
+0:49:33.859,0:49:35.779
+so if you want to save it
+
+0:49:35.779,0:49:38.159
+who want to say
+
+0:49:38.159,0:49:40.099
+csd
+
+0:49:40.099,0:49:41.669
+now you have
+
+0:49:41.669,0:49:45.409
+i'm still getting snow some cores
+arrived by parliament refugee stuff off
+
+0:49:45.409,0:49:48.439
+and i only just figure it out
+
+0:49:48.439,0:49:51.819
+i've had done it like a crusty bad way
+that i didn't like
+
+0:49:51.819,0:49:53.810
+and so when i try and show you guys
+
+0:49:53.810,0:49:57.339
+i try to remove all of the stuff that i
+learned it was bad and remove my bad
+
+0:49:57.339,0:50:00.869
+habits and only teach you to have it
+
+0:50:00.869,0:50:01.930
+i don't always succeed
+
+0:50:01.930,0:50:03.649
+but right
+
+0:50:03.649,0:50:05.859
+let's go ahead and create a file
+
+0:50:05.859,0:50:09.529
+summer learn how to write a file from
+memory to read back in
+
+0:50:09.529,0:50:12.900
+you can just do a control c control
+scenes like this block
+
+0:50:12.900,0:50:16.159
+but i recommend skipping that because
+it's not as much fun
+
+0:50:16.159,0:50:18.569
+unfair how you define fun
+
+0:50:18.569,0:50:19.939
+and where to go ahead
+
+0:50:19.939,0:50:22.029
+and copy this
+
+0:50:22.029,0:50:24.469
+which is also met a w
+
+0:50:24.469,0:50:26.169
+went up a stunning
+
+0:50:26.169,0:50:29.459
+and what this is doing the open command
+opens a file
+
+0:50:29.459,0:50:32.569
+flows water here open will open a file
+
+0:50:32.569,0:50:34.849
+here to give it a file name
+
+0:50:34.849,0:50:38.119
+so data dot csd
+
+0:50:38.119,0:50:39.440
+and this park here
+
+0:50:39.440,0:50:43.559
+the in quotes w says we want to open it
+for breaks who want to be able to put
+
+0:50:43.559,0:50:45.379
+data into that file
+
+0:50:45.379,0:50:47.369
+it's important to know that
+
+0:50:47.369,0:50:50.179
+if you had some very important in that
+file
+
+0:50:50.179,0:50:51.989
+the minute we run this command
+
+0:50:51.989,0:50:55.569
+you can wave goodbye to united as it
+disappears
+
+0:50:55.569,0:50:57.210
+the w will stop on
+
+0:50:57.210,0:50:59.579
+or kill anything that there with that
+name
+
+0:50:59.579,0:51:00.849
+presenter
+
+0:51:00.849,0:51:02.139
+and you know have
+
+0:51:02.139,0:51:05.809
+this new variable called final will say
+tight
+
+0:51:05.809,0:51:06.699
+called out
+
+0:51:06.699,0:51:08.879
+which is of type file
+
+0:51:08.879,0:51:12.009
+and we can now say out dot right
+
+0:51:12.009,0:51:14.139
+so now we can write our data
+
+0:51:14.139,0:51:16.199
+one comment to you
+
+0:51:16.199,0:51:18.849
+slash and is a strange strengthened
+
+0:51:18.849,0:51:19.869
+diffusers
+
+0:51:19.869,0:51:22.729
+this watch that leans to the left
+
+0:51:22.729,0:51:25.359
+which is the one that's above your
+return key
+
+0:51:25.359,0:51:27.889
+and then a character those have special
+meaning
+
+0:51:27.889,0:51:29.649
+and if we'd want to put
+
+0:51:29.649,0:51:31.109
+a swatch in there
+
+0:51:31.109,0:51:35.569
+an actual sliced character we have to
+duties flashes and that would turn into
+
+0:51:35.569,0:51:37.189
+a squash in the output
+
+0:51:37.189,0:51:39.409
+but slash and is a new line
+
+0:51:39.409,0:51:41.049
+if we didn't do this
+
+0:51:41.049,0:51:42.259
+you would have
+
+0:51:42.259,0:51:46.279
+all of your numbers on the same line in
+trenton a big massive slash and put the
+
+0:51:46.279,0:51:48.449
+new line into
+
+0:51:48.449,0:51:51.209
+that string which then goes out to the
+following right
+
+0:51:51.209,0:51:52.629
+school go ahead
+
+0:51:52.629,0:51:54.389
+press printer
+
+0:51:54.389,0:51:55.779
+and let's do this
+
+0:51:55.779,0:51:57.939
+two more times
+
+0:51:57.939,0:51:58.890
+different data
+
+0:51:58.890,0:52:00.499
+or come off on it
+
+0:52:00.499,0:52:01.739
+unions
+
+0:52:01.739,0:52:03.159
+nine com ar
+
+0:52:03.159,0:52:10.159
+minus one
+
+0:52:11.599,0:52:15.209
+that was needed profound is the comments
+and then i was sort of showing you that
+
+0:52:15.209,0:52:17.769
+few slashes turn into a slash
+
+0:52:17.769,0:52:20.399
+a morning better to put a pound in there
+to make sure that
+
+0:52:20.399,0:52:22.020
+when people just had to endure without
+
+0:52:22.020,0:52:25.809
+realizing that they haven't done
+something completely crazy
+
+0:52:25.809,0:52:28.349
+it's not always obvious white
+
+0:52:28.349,0:52:32.009
+if i'm gonna write a note fucking look
+what i'm doing it's confusing
+
+0:52:32.009,0:52:34.799
+closer per file and hopefully it works
+
+0:52:34.799,0:52:37.159
+there's one thing to remember about this
+is that
+
+0:52:37.159,0:52:39.189
+think we're in the data
+
+0:52:39.189,0:52:41.349
+but i bet you um...
+
+0:52:41.349,0:52:44.689
+if we do an ls dash all look at our data
+file
+
+0:52:44.689,0:52:49.399
+who can see the size of our dated ucsd
+how big is that file
+
+0:52:49.399,0:52:50.739
+zero bytes
+
+0:52:50.739,0:52:52.259
+that's a little scary
+
+0:52:52.259,0:52:54.859
+when you write stuff itself was called
+by offering
+
+0:52:54.859,0:52:57.759
+and doesn't put up the desk and tell you
+say
+
+0:52:57.759,0:53:00.619
+i need to force the service can getting
+out there
+
+0:53:00.619,0:53:04.180
+and one of the easy way do that is to
+close the file the writing what's his
+
+0:53:04.180,0:53:07.869
+clothes it's going to finish writing up
+whatever's left over to write
+
+0:53:07.869,0:53:10.949
+so we can say alex dot close
+
+0:53:10.949,0:53:14.899
+an alpha q alistair cell data dot c_
+s_p_
+
+0:53:14.899,0:53:16.639
+i'm hoping
+
+0:53:16.639,0:53:18.719
+that we have
+
+0:53:18.719,0:53:20.479
+thirteen
+
+0:53:20.479,0:53:23.269
+let's go ahead and open that file
+
+0:53:23.269,0:53:25.529
+sophie you can chillax control f
+
+0:53:25.529,0:53:29.749
+i did a control extremists but first
+
+0:53:29.749,0:53:33.189
+soviet thirteen bites very small file
+
+0:53:33.189,0:53:36.169
+but it's a good start
+
+0:53:36.169,0:53:39.149
+there's data we can do with do stuff
+with
+
+0:53:39.149,0:53:43.209
+there's lots of ways to create this in
+the passages benedetti de tara curl to
+
+0:53:43.209,0:53:44.829
+go grab it
+
+0:53:44.829,0:53:46.100
+now churn i thought no
+
+0:53:46.100,0:53:52.389
+it's more fun to be created on your own
+
+0:53:52.389,0:53:57.689
+these type in the path to learning
+something class eleven uh...
+
+0:53:57.689,0:53:59.089
+mindcrest haven't
+
+0:53:59.089,0:54:00.399
+and time again
+
+0:54:00.399,0:54:05.909
+the nation's ciated did not see if the
+athens tech india tab
+
+0:54:05.909,0:54:08.089
+so it's in class all of them
+
+0:54:08.089,0:54:09.139
+so
+
+0:54:09.139,0:54:11.939
+till the slash c l_
+
+0:54:11.939,0:54:13.929
+press tab
+
+0:54:13.929,0:54:16.799
+first time again
+
+0:54:16.799,0:54:20.969
+they see that there's an eleven to
+twelve eleven
+
+0:54:20.969,0:54:24.609
+steve open the directory uh... press
+g_e_ in there
+
+0:54:24.609,0:54:27.629
+but just the letter g_ if you're
+interested in the world
+
+0:54:27.629,0:54:30.509
+showing the terminal we rewrote the
+final
+
+0:54:30.509,0:54:34.109
+couldn't bring a friend do api dvd
+
+0:54:34.109,0:54:36.239
+print working directory
+
+0:54:36.239,0:54:38.089
+see how you were in your home directory
+
+0:54:38.089,0:54:40.510
+so you didn't put it in class slash
+eleven
+
+0:54:40.510,0:54:43.239
+so you have to go back to email x
+
+0:54:43.239,0:54:45.559
+is ok support for the country
+
+0:54:45.559,0:54:47.739
+and you can't relax control f
+
+0:54:47.739,0:54:50.159
+to until it's just tell the swatch
+
+0:54:50.159,0:54:52.939
+now press time
+
+0:54:52.939,0:54:55.369
+press d_n_a_ and tab
+
+0:54:55.369,0:54:59.109
+singer evidence yes he said in an area
+that happen
+
+0:54:59.109,0:55:01.299
+thursday
+
+0:55:01.299,0:55:04.659
+events happen
+
+0:55:04.659,0:55:07.519
+into day also
+
+0:55:07.519,0:55:09.169
+going a terminal real quick
+
+0:55:09.169,0:55:11.859
+anti-peace lvgi in there
+
+0:55:11.859,0:55:12.549
+your thing is
+
+0:55:12.549,0:55:16.449
+the out dot close without the
+parentheses
+
+0:55:16.449,0:55:20.409
+at the affair too that uh... you see the
+same line again
+
+0:55:20.409,0:55:23.699
+and put left pretty right pretty
+
+0:55:23.699,0:55:26.180
+so it burns that uh... though function
+
+0:55:26.180,0:55:28.679
+citicorp up on the screen
+
+0:55:28.679,0:55:29.849
+at the end yet
+
+0:55:29.849,0:55:34.269
+so by putting a plant the seeds means
+program that's
+
+0:55:34.269,0:55:37.389
+disclosing that that files have
+
+0:55:37.389,0:55:39.240
+and i'm going to completely avoid
+
+0:55:39.240,0:55:43.380
+a discussion of object oriented
+programming if you hear that you can
+
+0:55:43.380,0:55:44.839
+close your ears
+
+0:55:44.839,0:55:45.979
+ang norick
+
+0:55:45.979,0:55:48.400
+you'll be doing object or a programming
+
+0:55:48.400,0:55:50.760
+but we don't care that we're doing that
+doesn't mean that it's a lot of
+
+0:55:50.760,0:55:51.809
+vocabulary
+
+0:55:51.809,0:55:53.519
+that you'll hear a little bit
+
+0:55:53.519,0:55:58.019
+and we could spend six months talking
+about it and i'd be really really boring
+
+0:55:58.019,0:55:59.459
+the fun
+
+0:55:59.459,0:56:01.089
+so we're gonna do
+
+0:56:01.089,0:56:04.619
+object type stuff and that's what this
+is the little thought
+
+0:56:04.619,0:56:07.319
+and then some clothes and practices
+
+0:56:07.319,0:56:10.459
+we're running some functions attached to
+some data
+
+0:56:10.459,0:56:12.139
+or file or something
+
+0:56:12.139,0:56:13.599
+sitting on a special
+
+0:56:13.599,0:56:15.779
+and do you have it the uh...
+
+0:56:15.779,0:56:18.019
+sixty yet there is apparently
+
+0:56:18.019,0:56:23.609
+so ceiling at front there didn't lions
+did not see if you don't want and a
+
+0:56:23.609,0:56:28.829
+campaigns boldly risking their own
+precedent
+
+0:56:28.829,0:56:30.259
+it just had a
+
+0:56:30.259,0:56:33.399
+i'm sorry you had to be that was good
+till two slash
+
+0:56:33.399,0:56:34.579
+d_n_a_
+
+0:56:34.579,0:56:36.869
+and everything
+
+0:56:36.869,0:56:38.479
+they go now press enter
+
+0:56:38.479,0:56:43.259
+cheat on this pack type yes so if you
+see a changed on disk that means that
+
+0:56:43.259,0:56:45.079
+something else has changed that file
+
+0:56:45.079,0:56:46.819
+and already knew about that
+
+0:56:46.819,0:56:51.149
+seed managed to open up your data cscs
+and hope for that realizing it
+
+0:56:51.149,0:56:54.019
+that datafile got changed and then you
+
+0:56:54.019,0:56:56.089
+reloaded
+
+0:56:56.089,0:56:59.219
+kal let's go see if we can read this
+data really quick in the last two
+
+0:56:59.219,0:57:04.669
+minutes we have here
+
+0:57:04.669,0:57:06.589
+you can't it's not
+
+0:57:06.589,0:57:09.159
+you might get ripped up on a couple of
+things
+
+0:57:09.159,0:57:11.119
+such are you a void those little
+
+0:57:11.119,0:57:13.279
+pickups today if we could
+
+0:57:13.279,0:57:16.579
+so let's go ahead and do a quick example
+of reading it
+
+0:57:16.579,0:57:18.719
+so to see that
+
+0:57:18.719,0:57:22.109
+commander book called datafile equals
+open
+
+0:57:22.109,0:57:25.229
+and before break here ad
+
+0:57:25.229,0:57:29.049
+comma and then a single quote w saying
+rights
+
+0:57:29.049,0:57:32.859
+the default is read which is a lot safer
+than writing because you can step on the
+
+0:57:32.859,0:57:34.059
+data
+
+0:57:34.059,0:57:35.359
+depress enter here
+
+0:57:35.359,0:57:36.729
+and say type
+
+0:57:36.729,0:57:38.709
+datafile
+
+0:57:38.709,0:57:40.999
+it's a file that's great
+
+0:57:40.999,0:57:42.269
+if we
+
+0:57:42.269,0:57:44.629
+say datafile
+
+0:57:44.629,0:57:46.369
+read lines
+
+0:57:46.369,0:57:48.559
+this is uh...
+
+0:57:48.559,0:57:51.419
+read everything all at once before then
+
+0:57:51.419,0:57:54.099
+just to enter
+
+0:57:54.099,0:57:57.029
+we've now pulled in a whole bunch of
+data
+
+0:57:57.029,0:57:58.699
+kinda went nowhere
+
+0:57:58.699,0:58:01.989
+reinstated so we can re-open the file
+
+0:58:01.989,0:58:04.979
+some escrow backup to my open command
+
+0:58:04.979,0:58:09.019
+if i run this again it's going to reopen
+the file instrument back at the
+
+0:58:09.019,0:58:11.199
+beginning of the file
+
+0:58:11.199,0:58:12.759
+and we can say
+
+0:58:12.759,0:58:15.419
+deduct file dot
+
+0:58:15.419,0:58:16.539
+wine
+
+0:58:16.539,0:58:21.619
+and noticed that before we have three
+lines quarrel witchcraft all of them
+
+0:58:21.619,0:58:26.059
+here we're gonna read one minute time
+there's no ass in there
+
+0:58:26.059,0:58:27.829
+so just hit reply in
+
+0:58:27.829,0:58:30.899
+and you get back that first line of your
+file
+
+0:58:30.899,0:58:33.099
+never do it again
+
+0:58:33.099,0:58:34.729
+the second line
+
+0:58:34.729,0:58:36.719
+the third line
+
+0:58:36.719,0:58:41.659
+and wait what
+
+0:58:41.659,0:58:44.079
+read lines perot
+
+0:58:44.079,0:58:46.190
+fifth
+
+0:58:46.190,0:58:49.829
+so datafile
+
+0:58:49.829,0:58:54.259
+read blindness
+
+0:58:54.259,0:58:55.319
+an imprint
+
+0:58:55.319,0:58:56.279
+that's just a
+
+0:58:56.279,0:58:59.410
+without the parentheses it's not gonna
+actually run
+
+0:58:59.410,0:59:02.659
+so princy referencing you're gonna call
+that
+
+0:59:02.659,0:59:05.449
+and even our approval filed yet
+
+0:59:05.449,0:59:07.979
+so the plane was read lines
+
+0:59:07.979,0:59:09.939
+so apparel
+
+0:59:09.939,0:59:11.379
+ted tab
+
+0:59:11.379,0:59:12.499
+okay so
+
+0:59:12.499,0:59:13.749
+he has not said
+
+0:59:13.749,0:59:16.589
+datafile modify instead decided
+
+0:59:16.589,0:59:18.459
+i think you're a few even
+
+0:59:18.459,0:59:20.499
+back before that
+
+0:59:20.499,0:59:21.619
+jeezy
+
+0:59:21.619,0:59:26.369
+d_c_ line two oh one up there on the
+screen
+
+0:59:26.369,0:59:30.419
+so you need to do with what i have is
+going to one on the screen today to file
+
+0:59:30.419,0:59:31.929
+equals open
+
+0:59:31.929,0:59:32.779
+data
+
+0:59:32.779,0:59:34.299
+csd
+
+0:59:34.299,0:59:35.949
+datafile equals
+
+0:59:35.949,0:59:38.879
+easy-going to a lot of them
+
+0:59:38.879,0:59:42.769
+if you don't open the file gets her with
+that
+
+0:59:42.769,0:59:44.169
+single quote
+
+0:59:44.169,0:59:46.819
+deduct csd
+
+0:59:46.819,0:59:47.989
+quote
+
+0:59:47.989,0:59:49.419
+press enter
+
+0:59:49.419,0:59:51.349
+now you can do datafile thought
+
+0:59:51.349,0:59:53.149
+freed lines
+
+0:59:53.149,0:59:55.489
+so we are out of time for today
+
+0:59:55.489,0:59:59.179
+david lee seen some of the basics out
+their holes
+
+0:59:59.179,1:00:01.789
+and green lines and files
+
+1:00:01.789,1:00:05.049
+please do watch the python video one
+
+1:00:05.049,1:00:07.329
+because you're very similar stuff
+
+1:00:07.329,1:00:09.549
+are also slightly differently
+
+1:00:09.549,1:00:12.729
+and the peso at your own pace because
+you can hit pause reading here it's
+
+1:00:12.729,1:00:16.399
+kinda hard to make me pause
+
+1:00:16.399,1:00:19.899
+see how that goes i'm not going to do a
+homer till next time and we'll keep
+
+1:00:19.899,1:00:21.509
+pretty simple
+
+1:00:21.509,1:00:24.639
+this is the basics of programming inward
+we're doing what
+
+1:00:24.639,1:00:28.359
+in a typical computer science class in
+with c programming
+
+1:00:28.359,1:00:33.039
+reading a file comes that condo a month
+or two into doing see in here
+
+1:00:33.039,1:00:36.579
+you've been doing python for an hour and
+forty minutes
+
+1:00:36.579,1:00:39.959
+so you're doing what i think your
+scientist would do after two months of
+
+1:00:39.959,1:00:40.909
+study
+
+1:00:40.909,1:00:42.889
+in an hour and a half
+
+1:00:42.889,1:00:45.329
+don't feel it's going overhead
+
+1:00:45.329,1:00:48.989
+you're going really fast compared to
+traditional ways heaps of stuff
+
+1:00:48.989,1:00:50.629
+but i'm hoping by
+
+1:00:50.629,1:00:53.499
+in the end of next week that you guys
+will be able to regain
+
+1:00:53.499,1:00:55.179
+text-based data pretty comfortably
+

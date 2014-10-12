@@ -1,0 +1,2561 @@
+0:00:01.599,0:00:06.360
+hello and welcome to research tools of
+video twenty secure shell versus h my
+
+0:00:06.360,0:00:07.890
+name is kurt shwarier
+
+0:00:07.890,0:00:13.110
+and z video for the u_n_ hcr difficult
+solution abington high graphics center
+
+0:00:13.110,0:00:17.130
+and this is a classes actually being
+done after uh... the research tools
+
+0:00:17.130,0:00:18.619
+classes finished
+
+0:00:18.619,0:00:21.909
+but there are many more topics yet to be
+covered that i wasn't able to make it to
+
+0:00:21.909,0:00:23.349
+you within the class
+
+0:00:23.349,0:00:27.519
+so they contain decreed videos as best
+they can to fill out more topics that
+
+0:00:27.519,0:00:30.989
+will help you out in your research
+
+0:00:30.989,0:00:34.670
+since they were talked about how to
+connect two computers securely in a way
+
+0:00:34.670,0:00:38.160
+that you don't give up your password in
+the clear across the network because of
+
+0:00:38.160,0:00:38.559
+it
+
+0:00:38.559,0:00:41.090
+if you things like telnet an escapee
+
+0:00:41.090,0:00:44.920
+your password can actually get side by
+the bad guys and it will get side of
+
+0:00:44.920,0:00:46.910
+actually
+
+0:00:46.910,0:00:50.480
+in that case they may be able to do bad
+things to your computers in houston for
+
+0:00:50.480,0:00:52.790
+things you would rather they didn't
+
+0:00:52.790,0:00:56.480
+with a to avoid as much as possible so i
+can remember not to run things like
+
+0:00:56.480,0:01:01.340
+telnet nasty pianist you understand what
+you're doing and why it's okay
+
+0:01:01.340,0:01:04.730
+if for some reason you end up having to
+use them for some reason
+
+0:01:04.730,0:01:05.940
+that
+
+0:01:05.940,0:01:09.880
+uh... but your password possibly get out
+there to suggest you quickly going to
+
+0:01:09.880,0:01:12.650
+japan for its recent secure means
+
+0:01:12.650,0:01:14.720
+let's go ahead and get started
+
+0:01:14.720,0:01:17.410
+and the first thing is that the stuff
+over showing today
+
+0:01:17.410,0:01:21.790
+is also available for those on mac and
+windows in the fury
+
+0:01:21.790,0:01:23.750
+windows user
+
+0:01:23.750,0:01:27.250
+microsoft windows you can use tools from
+cygwin
+
+0:01:27.250,0:01:30.940
+that will install a limits for unix like
+environment on
+
+0:01:30.940,0:01:33.079
+your windows computer
+
+0:01:33.079,0:01:36.590
+you'll then be able to run a cessation
+terminal window and
+
+0:01:36.590,0:01:40.939
+will look at command called crown that
+will actually run commands periodically
+
+0:01:40.939,0:01:44.119
+for you in the background
+
+0:01:44.119,0:01:46.490
+okay since this started
+
+0:01:46.490,0:01:50.690
+cammarata terminal now this is a yugo
+into let's first machines eleven point
+
+0:01:50.690,0:01:52.080
+zero four
+
+0:01:52.080,0:01:55.260
+so that was the police in two thousand
+eleven in april
+
+0:01:55.260,0:01:57.420
+in this machine is on my laptop
+
+0:01:57.420,0:02:02.140
+annemarie working with p remote clinics
+machine that's a virtual machine at citi
+
+0:02:02.140,0:02:02.979
+com
+
+0:02:02.979,0:02:05.930
+on network that unless your etsy com you
+won't be able to
+
+0:02:05.930,0:02:06.980
+two-seat
+
+0:02:06.980,0:02:10.429
+so if you're working with this class in
+united com
+
+0:02:10.429,0:02:13.360
+you'll have to find some other virtual
+machine to connect to you
+
+0:02:13.360,0:02:14.879
+try out these things
+
+0:02:14.879,0:02:19.409
+it works with uh... any mixer mac
+machine set to receive for milk actions
+
+0:02:19.409,0:02:23.449
+procurement straighter if you need
+figure out how to do that
+
+0:02:23.449,0:02:27.519
+so will go ahead and janae keep going on
+that
+
+0:02:27.519,0:02:31.559
+persecution of will demand ask a witches
+have propelled
+
+0:02:31.559,0:02:35.229
+and has to say ecstasy what's available
+on
+
+0:02:35.229,0:02:39.900
+machine terms of manual pages seed that
+you could arty f_m_
+
+0:02:39.900,0:02:43.680
+and we have been a cessation page has
+the for the main program will also be
+
+0:02:43.680,0:02:45.099
+looking at
+
+0:02:45.099,0:02:48.040
+and a half password but that's a stage
+keygen
+
+0:02:48.040,0:02:51.079
+which'll generator cryptographic keys
+that we used to you
+
+0:02:51.079,0:02:53.899
+took action without having to pay for a
+password
+
+0:02:53.899,0:02:55.580
+and then will also be
+
+0:02:55.580,0:02:58.659
+using a command called icp or secure
+copy
+
+0:02:58.659,0:03:01.579
+let's take a look at man at a stage
+
+0:03:01.579,0:03:04.829
+and uh... the secure shell which is
+actually open a cessation is what's on
+
+0:03:04.829,0:03:07.449
+most computers today
+
+0:03:07.449,0:03:10.729
+can be pretty simple but it can also be
+quite complicated and you could be some
+
+0:03:10.729,0:03:14.279
+very fancy things that we won't miss lee
+tried today
+
+0:03:14.279,0:03:17.929
+encourage you to learn a lot more
+because s_s_-eighteen really improve
+
+0:03:17.929,0:03:20.219
+what you're capable of doing with data
+
+0:03:20.219,0:03:24.089
+damaging computers around the globe
+
+0:03:24.089,0:03:27.769
+okay says let's take a look at our
+machine here so if we do know us dash
+
+0:03:27.769,0:03:30.979
+l_a_ dullest all files including hidden
+ones
+
+0:03:30.979,0:03:32.919
+and we say correct for
+
+0:03:32.919,0:03:37.109
+process h to see if there's anything
+related deaths each in our home retreat
+
+0:03:37.109,0:03:41.039
+there's not there's just this last file
+that became north
+
+0:03:41.039,0:03:41.810
+int
+
+0:03:41.810,0:03:42.949
+uh...
+
+0:03:42.949,0:03:45.829
+once we get going we're going to have a
+dog has to say star three it's gonna
+
+0:03:45.829,0:03:48.159
+start building up information
+
+0:03:48.159,0:03:51.789
+so it's type hosting this year we are
+right now sore on you go into virtual
+
+0:03:51.789,0:03:53.129
+machine
+
+0:03:53.129,0:03:57.579
+and we're going to ask the sage more
+secure shell into the research tools
+
+0:03:57.579,0:03:59.749
+computers he calms as the stage
+
+0:03:59.749,0:04:01.189
+research
+
+0:04:01.189,0:04:06.430
+tools dot secom dot ten h members
+antique home dot pages only for those
+
+0:04:06.430,0:04:09.089
+people inside ccom
+
+0:04:09.089,0:04:11.009
+if i pressed enter
+
+0:04:11.009,0:04:15.119
+came here starts seeing some interesting
+information about
+
+0:04:15.119,0:04:18.049
+secure shell as we get going here
+
+0:04:18.049,0:04:21.509
+i'm going to get control c and try again
+so that you can actually see what it
+
+0:04:21.509,0:04:22.970
+says
+
+0:04:22.970,0:04:25.530
+so we did our asa stage right here
+
+0:04:25.530,0:04:27.990
+and have been assets this question
+
+0:04:27.990,0:04:30.750
+what's going on is that secure shell
+actually
+
+0:04:30.750,0:04:34.500
+talks to the computer and get psyche for
+it
+
+0:04:34.500,0:04:36.469
+bhakti is
+
+0:04:36.469,0:04:39.909
+how cryptographic identifier for that
+computers that key changes you're
+
+0:04:39.909,0:04:43.709
+probably talking to a different computer
+or somebody screwed up the update to the
+
+0:04:43.709,0:04:44.439
+machine
+
+0:04:44.439,0:04:47.289
+and you might not want to trust that
+computer will see that more in a little
+
+0:04:47.289,0:04:49.710
+bit
+
+0:04:49.710,0:04:54.669
+so that we can type yes to say this is a
+new machine or willing to trust yes
+
+0:04:54.669,0:04:57.720
+and now it says that that's been
+permalink added
+
+0:04:57.720,0:04:59.949
+tillis of known homes
+
+0:04:59.949,0:05:02.930
+and then this message right here
+something we're gonna see a fair bit
+
+0:05:02.930,0:05:04.230
+from ccom
+
+0:05:04.230,0:05:08.030
+it's a requirement of the government's
+insist computer has
+
+0:05:08.030,0:05:10.509
+government funding is that a state
+university
+
+0:05:10.509,0:05:15.220
+it has to have warnings about that you
+have no right to privacy except center
+
+0:05:15.220,0:05:20.270
+so go ahead and take that my password
+for this account
+
+0:05:20.270,0:05:21.989
+and press enter
+
+0:05:21.989,0:05:25.850
+and i'm now log interrupt computer and
+it's got
+
+0:05:25.850,0:05:29.830
+as it logs in its tongue a little bit
+about itself
+
+0:05:29.830,0:05:34.689
+itself so you go into eleven oh four
+computer and scenery dot here
+
+0:05:34.689,0:05:36.800
+amplitype hostname
+
+0:05:36.800,0:05:40.430
+will see that this computers called
+research tools
+
+0:05:40.430,0:05:43.489
+so we're now in a remote computer
+
+0:05:43.489,0:05:46.169
+there's no one else for them
+
+0:05:46.169,0:05:52.440
+pickup time it is his computer has been
+up for ninety one days
+
+0:05:52.440,0:05:53.910
+flat screen appetite
+
+0:05:53.910,0:05:59.720
+exit were back to our original computer
+hostname
+
+0:05:59.720,0:06:04.699
+further where we are back on our virtual
+machine on our laptop
+
+0:06:04.699,0:06:07.459
+now could you tell us that selling
+
+0:06:07.459,0:06:09.890
+pipe that was a vertical bar to correct
+
+0:06:09.890,0:06:12.740
+the search for the string s h
+
+0:06:12.740,0:06:17.020
+nationalize case insensitive on your
+crap presenter
+
+0:06:17.020,0:06:21.699
+and lo and behold we have a new
+directory called dot as the sage
+
+0:06:21.699,0:06:25.669
+this treachery is super important for us
+to say chickens are also important that
+
+0:06:25.669,0:06:27.849
+nobody else can read this
+
+0:06:27.849,0:06:31.059
+not typically if you're just on a laptop
+by yourself this wouldn't matter too
+
+0:06:31.059,0:06:32.419
+much
+
+0:06:32.419,0:06:35.689
+but often times with a cessation you'll
+be working on computers for many people
+
+0:06:35.689,0:06:38.969
+again and you don't want other people to
+be able to get that you're a cessation
+
+0:06:38.969,0:06:41.749
+figuration information
+
+0:06:41.749,0:06:45.009
+so it's important that the other
+
+0:06:45.009,0:06:46.110
+and group
+
+0:06:46.110,0:06:49.430
+flags are all zeroed out can
+
+0:06:49.430,0:06:53.179
+your files christians that would be with
+the c_h_ mod commands
+
+0:06:53.179,0:06:55.949
+yugos same and c_h_ mon
+
+0:06:55.949,0:06:58.479
+and that will help you change the dates
+on those files
+
+0:06:58.479,0:07:03.000
+but what secure showed us the fed record
+as an existing create for you
+
+0:07:03.000,0:07:05.359
+let's take a look in there
+
+0:07:05.359,0:07:10.189
+ls dash l a dot s h can we have a file
+called known hosts let's take a look at
+
+0:07:10.189,0:07:11.029
+that
+
+0:07:11.029,0:07:14.120
+atlas dot that's the stage
+
+0:07:14.120,0:07:15.520
+loan hoax
+
+0:07:15.520,0:07:19.869
+and what this is is this is the keys for
+each computer it that's keeping track of
+
+0:07:19.869,0:07:22.940
+down the road to compare with these
+later on
+
+0:07:22.940,0:07:24.630
+not very user friendly but
+
+0:07:24.630,0:07:25.789
+at least
+
+0:07:25.789,0:07:28.659
+you have some sense of what's in there
+
+0:07:28.659,0:07:31.079
+queue to put some of what's
+
+0:07:31.079,0:07:32.549
+and we now have
+
+0:07:32.549,0:07:36.380
+uh... message directory created that we
+can then put in the heart
+
+0:07:36.380,0:07:40.110
+cryptographic paired is going to be a
+public key and a private key the prairie
+
+0:07:40.110,0:07:41.379
+keys for you
+
+0:07:41.379,0:07:43.389
+republic he goes elsewhere
+
+0:07:43.389,0:07:47.679
+and it gives you the ability to connect
+to various places using that key rather
+
+0:07:47.679,0:07:50.899
+than any other type of authentication
+
+0:07:50.899,0:07:57.199
+and the great thing about public keys is
+that the public he is only good for
+
+0:07:57.199,0:08:00.430
+for one end of the things that you have
+to have both parts and you can pass
+
+0:08:00.430,0:08:04.550
+around the public key if someone gets a
+hold of the reason that they have a deal
+
+0:08:04.550,0:08:08.330
+and you can see t_v_ email somebody your
+public he had been installing a computer
+
+0:08:08.330,0:08:11.710
+they can then set up a connection so you
+can login securely
+
+0:08:11.710,0:08:13.569
+very handy
+
+0:08:13.569,0:08:17.590
+and if treaty creek becky you can create
+with or without a password
+
+0:08:17.590,0:08:21.810
+tamarin a career with the passed without
+a password so that we can at this age
+
+0:08:21.810,0:08:23.990
+two
+
+0:08:23.990,0:08:27.810
+various places that i didn't have her
+password every single time
+
+0:08:27.810,0:08:31.369
+that's important if it's not my job for
+you might not even be
+
+0:08:31.369,0:08:36.880
+located at the computer winds coming on
+so many and has a six dash keygen
+
+0:08:36.880,0:08:39.380
+and this band page isn't the most fun
+
+0:08:39.380,0:08:42.910
+because they're all the details of
+creating keys i highly recommend you
+
+0:08:42.910,0:08:43.560
+read it
+
+0:08:43.560,0:08:47.090
+and hopefully ill killed out of their
+kids
+
+0:08:47.090,0:08:48.389
+not very exciting
+
+0:08:48.389,0:08:51.760
+and you probably won't mission a lot of
+it don't worry
+
+0:08:51.760,0:08:54.370
+will go ahead and create our first ki
+
+0:08:54.370,0:08:57.860
+pain will go ahead and say uh... stage
+dash
+
+0:08:57.860,0:09:03.090
+ki
+
+0:09:03.090,0:09:07.530
+and there several types of keys there's
+our essay india say keys
+
+0:09:07.530,0:09:12.650
+there's lots of detail so that will just
+go the defaults to create a r_n_c_ keep
+
+0:09:12.650,0:09:16.590
+now it's going to create a file called
+ideas korar saying he had seen right
+
+0:09:16.590,0:09:17.910
+here
+
+0:09:17.910,0:09:19.890
+will press answer
+
+0:09:19.890,0:09:24.440
+and we're going to have no pass phrase
+so empty presenter ten feet and press
+
+0:09:24.440,0:09:25.760
+enter
+
+0:09:25.760,0:09:29.200
+it give you some more phone initiative
+works
+
+0:09:29.200,0:09:36.200
+they're free to a new listing in our
+s_h_ directory tel slash l dot asus h
+
+0:09:36.270,0:09:39.540
+will see that there's no q files there's
+a public key
+
+0:09:39.540,0:09:43.610
+and property let's take a look at them
+less
+
+0:09:43.610,0:09:47.810
+i_d_ or it's a
+
+0:09:47.810,0:09:49.840
+dot as a safe splashed
+
+0:09:49.840,0:09:51.110
+and then start
+
+0:09:51.110,0:09:52.859
+now what's gonna happen is
+
+0:09:52.859,0:09:55.859
+typically you wouldn't want to do
+something like this video where people
+
+0:09:55.859,0:09:56.870
+can see your
+
+0:09:56.870,0:09:58.320
+your palate private key
+
+0:09:58.320,0:10:02.260
+now after the studios dot com anexo
+hadn't just delete entire research tools
+
+0:10:02.260,0:10:04.390
+count on that server so that
+
+0:10:04.390,0:10:06.850
+somebody continues my
+
+0:10:06.850,0:10:10.120
+private so the key to get into that
+computer
+
+0:10:10.120,0:10:13.670
+let's go ahead and hit enter must take a
+look at these finals
+
+0:10:13.670,0:10:18.440
+and here's the prayer they key its full
+of lots of data
+
+0:10:18.440,0:10:21.140
+don't worry about what's in there but
+that's your private
+
+0:10:21.140,0:10:23.310
+uh... cryptographic key
+
+0:10:23.310,0:10:26.880
+very secure there's not really meant for
+you to read but it is
+
+0:10:26.880,0:10:28.850
+configured such that you can
+
+0:10:28.850,0:10:31.809
+pieces around and work with it is just
+pure tax
+
+0:10:31.809,0:10:34.220
+it is actually binary idea
+
+0:10:34.220,0:10:35.650
+sinecure colon
+
+0:10:35.650,0:10:40.880
+and to the next file dances are public
+eats a little bit more manageable size
+
+0:10:40.880,0:10:45.170
+and it says where it was generated to
+research tools that you go into
+
+0:10:45.170,0:10:48.570
+and which type of key is as a sage arce
+
+0:10:48.570,0:10:51.420
+and then send data so the pair of those
+together
+
+0:10:51.420,0:10:54.459
+you can occur stuff with the public and
+you can keep it
+
+0:10:54.459,0:10:56.910
+her with the private and
+
+0:10:56.910,0:11:00.730
+co-anchor an intricate with the public
+
+0:11:00.730,0:11:05.340
+so let's go ahead and we want to copy
+that over to our server and put it in
+
+0:11:05.340,0:11:07.860
+something called the authorized keys so
+
+0:11:07.860,0:11:10.270
+if u_s_ cessation machine anymore
+
+0:11:10.270,0:11:13.860
+public key is in the authorized keys you
+will then be able to get internet
+
+0:11:13.860,0:11:14.940
+computer
+
+0:11:14.940,0:11:18.770
+irrespective of their regular password
+
+0:11:18.770,0:11:21.930
+so we're gonna go ahead and copy that
+over soviet icp
+
+0:11:21.930,0:11:22.760
+i_d_
+
+0:11:22.760,0:11:25.090
+arce hoops
+
+0:11:25.090,0:11:29.420
+dot at this age slash i_d_ arce top poem
+
+0:11:29.420,0:11:30.690
+too
+
+0:11:30.690,0:11:33.530
+research tools ta
+
+0:11:33.530,0:11:38.150
+secom dot an age colon so what this is
+is a secure copy
+
+0:11:38.150,0:11:41.340
+it's the same kind of protocol is at the
+stage for its
+
+0:11:41.340,0:11:45.190
+scripted connection between the two
+machines instead of copy a file from our
+
+0:11:45.190,0:11:46.390
+local machine
+
+0:11:46.390,0:11:48.650
+juror mcshane machine
+
+0:11:48.650,0:11:52.640
+figures are source file that we're gonna
+copy for just like the real issue pecan
+
+0:11:52.640,0:11:53.790
+and
+
+0:11:53.790,0:11:56.850
+but now we have italy specified
+
+0:11:56.850,0:12:01.710
+a computer name and that colin so this
+let's use a copy file anywhere
+
+0:12:01.710,0:12:04.820
+on the internet that you'd like to copy
+it do you have permission to
+
+0:12:04.820,0:12:06.890
+for breast cancer
+
+0:12:06.890,0:12:09.250
+civilians that same morning again
+
+0:12:09.250,0:12:12.960
+type in my room password
+
+0:12:12.960,0:12:15.700
+prosecutor for his great
+
+0:12:15.700,0:12:22.700
+and i didn't
+
+0:12:23.340,0:12:30.340
+and you get three trestles if i could do
+it here
+
+0:12:31.410,0:12:35.380
+every girl friday third-time wrong he
+wanted to take me out after the ten
+
+0:12:35.380,0:12:36.340
+million
+
+0:12:36.340,0:12:39.060
+the idea that has to prevent people from
+doing
+
+0:12:39.060,0:12:40.459
+brute force password
+
+0:12:40.459,0:12:45.700
+tries as fast possible the computer
+program it slows down a little bit
+
+0:12:45.700,0:12:50.690
+they still try anyway okay so now with
+copper that oversold to asus age too
+
+0:12:50.690,0:12:51.840
+for research
+
+0:12:51.840,0:12:54.630
+tools dot secom dot and each
+
+0:12:54.630,0:12:56.660
+record set up a car
+
+0:12:56.660,0:12:58.279
+authorized keys
+
+0:12:58.279,0:13:03.650
+in the caucuses direct requiring are
+remote computer
+
+0:13:03.650,0:13:08.200
+okay to network analysis age to research
+tools and we're going to work on getting
+
+0:13:08.200,0:13:09.090
+car
+
+0:13:09.090,0:13:11.000
+public key into
+
+0:13:11.000,0:13:17.020
+our at issue to set up on the server
+
+0:13:17.020,0:13:19.350
+so large and two
+
+0:13:19.350,0:13:20.850
+the remote computer
+
+0:13:20.850,0:13:23.150
+was named as research tools
+
+0:13:23.150,0:13:26.580
+but take a look around i've got
+
+0:13:26.580,0:13:31.850
+my i_d_ underscore our say dot poem
+however i don't have enough the stage
+
+0:13:31.850,0:13:33.329
+diocese directory
+
+0:13:33.329,0:13:36.160
+i can make one by just as a stage
+
+0:13:36.160,0:13:38.400
+to local host
+
+0:13:38.400,0:13:41.050
+and will type yes
+
+0:13:41.050,0:13:45.820
+hand rather than typing are password and
+cutting in locally jesus is the same
+
+0:13:45.820,0:13:47.110
+machine that
+
+0:13:47.110,0:13:48.280
+iran
+
+0:13:48.280,0:13:49.919
+weight control c
+
+0:13:49.919,0:13:51.530
+come back for a prompt
+
+0:13:51.530,0:13:56.380
+and that will actually create r dot the
+situation with the proper permissions
+
+0:13:56.380,0:13:57.250
+so we're going to me
+
+0:13:57.250,0:14:01.040
+uh... or i_d_ underscore our stayed up
+all of them
+
+0:14:01.040,0:14:03.250
+into darkness h
+
+0:14:03.250,0:14:07.060
+but before i do that was take a look at
+their us dash away
+
+0:14:07.060,0:14:09.030
+da has to say shit
+
+0:14:09.030,0:14:12.730
+and see if we just have unknown host
+file she's gonna have the info for local
+
+0:14:12.730,0:14:15.380
+host
+
+0:14:15.380,0:14:19.230
+locomotion a few or at least unix
+vicious refers to the computer that you
+
+0:14:19.230,0:14:22.360
+are on any one time to local host means
+a different thing on every single
+
+0:14:22.360,0:14:24.670
+computer
+
+0:14:24.670,0:14:27.570
+okay so we'll do that move commands
+
+0:14:27.570,0:14:31.090
+hamburger rename it to authorized
+
+0:14:31.090,0:14:34.790
+he uses when i hope i spelled right
+
+0:14:34.790,0:14:37.709
+anti-western chile dot that's a stage
+
+0:14:37.709,0:14:41.130
+penalty we have arthritis keys in there
+
+0:14:41.130,0:14:42.900
+now if we lucked out with
+
+0:14:42.900,0:14:44.980
+exit or control d
+
+0:14:44.980,0:14:47.080
+more back to our machine
+
+0:14:47.080,0:14:48.050
+locally
+
+0:14:48.050,0:14:50.230
+hostname
+
+0:14:50.230,0:14:54.060
+sore back are you going to virtual
+machine and i hope we do it has a sage
+
+0:14:54.060,0:14:56.100
+to research tools
+
+0:14:56.100,0:14:59.550
+login and it never asked my password
+
+0:14:59.550,0:15:03.080
+it didn't cryptographic signatures
+saying hey look i've got the right
+
+0:15:03.080,0:15:06.540
+person who get as the right person okay
+let him in
+
+0:15:06.540,0:15:08.360
+and that way you can do stuff
+
+0:15:08.360,0:15:11.030
+where you're copying files back and
+forth all the time you don't have to go
+
+0:15:11.030,0:15:14.320
+crazy transmitter password everytime
+
+0:15:14.320,0:15:18.070
+now just make sure you keep that private
+key secure that needs to stay as
+
+0:15:18.070,0:15:21.600
+protected as your password
+
+0:15:21.600,0:15:24.030
+and we'll go ahead int
+
+0:15:24.030,0:15:26.730
+and uh... that so we've now got
+
+0:15:26.730,0:15:29.300
+everything set up for
+
+0:15:29.300,0:15:33.730
+uh... logging-in remotely and pulling
+off the ruling neat tricks of the eight
+
+0:15:33.730,0:15:35.630
+going with us this page
+
+0:15:35.630,0:15:37.150
+and s_d_p_
+
+0:15:37.150,0:15:40.730
+this way you can copy files back and
+forth you can log into your heart server
+
+0:15:40.730,0:15:43.030
+and things you know faster
+
+0:15:43.030,0:15:46.810
+knows a couple config files need to know
+about he may need to modified among your
+
+0:15:46.810,0:15:48.720
+local machine
+
+0:15:48.720,0:15:53.330
+or on the remote server may have to have
+it mystery together for you
+
+0:15:53.330,0:15:55.540
+if the sage config
+
+0:15:55.540,0:15:59.780
+isn't slash at c slash associate
+justices for the side making the
+
+0:15:59.780,0:16:01.550
+connection going out
+
+0:16:01.550,0:16:05.290
+into there shit couple things that you
+may need to be changing and the key
+
+0:16:05.290,0:16:07.400
+things are typically
+
+0:16:07.400,0:16:11.980
+the forwarding of x eleven that is a
+graphical user interface forwarding
+
+0:16:11.980,0:16:16.080
+so you can run commands remotely on the
+real computer that require graphics that
+
+0:16:16.080,0:16:18.750
+can be displayed back on your local
+machine
+
+0:16:18.750,0:16:22.500
+and this has been around since way
+before things like remote desktop
+
+0:16:22.500,0:16:26.560
+where you can run programs on a trip you
+want and then display them back to work
+
+0:16:26.560,0:16:28.480
+for me to go
+
+0:16:28.480,0:16:32.330
+won't go into that in the studio but
+those are very keen to know about
+
+0:16:32.330,0:16:35.020
+okay so let's go ahead and try to use as
+a stage
+
+0:16:35.020,0:16:38.370
+to do some need tricks
+
+0:16:38.370,0:16:40.250
+for first off we rented
+
+0:16:40.250,0:16:44.450
+play around with research tools until we
+can do so we can estes h two research
+
+0:16:44.450,0:16:45.680
+tools
+
+0:16:45.680,0:16:49.610
+etsy com dot image but i'm not going to
+enter your man and actually put in
+
+0:16:49.610,0:16:51.100
+commands
+
+0:16:51.100,0:16:53.340
+through the type of stain
+
+0:16:53.340,0:16:56.790
+the sleazy assistant protocol the text
+of a computer
+
+0:16:56.790,0:16:57.720
+animal actually run
+
+0:16:57.720,0:16:59.170
+in the hosting command
+
+0:16:59.170,0:17:02.240
+amrita results but uh... us here on the
+local machine
+
+0:17:02.240,0:17:04.089
+so depressed enter
+
+0:17:04.089,0:17:06.270
+we get all of this annoying massive tom
+
+0:17:06.270,0:17:09.340
+and then we get back that this was
+running on research tools
+
+0:17:09.340,0:17:12.150
+so do a quick demo of some of them
+
+0:17:12.150,0:17:14.240
+become like what you might actually do
+
+0:17:14.240,0:17:16.050
+with a cessation
+
+0:17:16.050,0:17:20.420
+both credo scripted that does the disk
+usage on that serve meteor watching an
+
+0:17:20.420,0:17:24.339
+overtime as he pleases anyone make sure
+that you can call f
+
+0:17:24.339,0:17:29.670
+died usage of accuracy how much to space
+is needed on it for daily use
+
+0:17:29.670,0:17:33.470
+so we can do as the states to research
+tools for place hostname
+
+0:17:33.470,0:17:36.320
+tends to be up there again to do the
+command
+
+0:17:36.320,0:17:37.370
+history
+
+0:17:37.370,0:17:39.190
+full duty f
+
+0:17:39.190,0:17:40.670
+dash age
+
+0:17:40.670,0:17:43.230
+so that's disk usage
+
+0:17:43.230,0:17:45.880
+passages human readable story here
+
+0:17:45.880,0:17:49.290
+and dot as the current directory so
+worried happens to be which should be
+
+0:17:49.290,0:17:51.570
+our home directory
+
+0:17:51.570,0:17:54.809
+presenter and you can see this is as if
+we're running
+
+0:17:54.809,0:17:56.970
+d_f_ on that remote computer
+
+0:17:56.970,0:17:59.690
+and getting it back if we do it the f
+dash h
+
+0:17:59.690,0:18:00.990
+dot locally
+
+0:18:00.990,0:18:04.070
+will see it looks very different things
+were our local machine
+
+0:18:04.070,0:18:07.800
+and we have just one drive this is a
+server with some other setup
+
+0:18:07.800,0:18:09.309
+and it's got a
+
+0:18:09.309,0:18:13.900
+different size disk it's got twenty-one
+gigabytes using twenty percent
+
+0:18:13.900,0:18:17.610
+so what we can do is we need to first
+get rid of this annoying message because
+
+0:18:17.610,0:18:21.920
+at this comes through all of our scripts
+it's going to have us crazy
+
+0:18:21.920,0:18:25.040
+so we can do is
+
+0:18:25.040,0:18:28.179
+c were comes from for comes first
+standard-bearer
+
+0:18:28.179,0:18:31.590
+there's two different streams of tax
+coming out of programs their standard
+
+0:18:31.590,0:18:33.440
+output in standard bearer
+
+0:18:33.440,0:18:37.140
+error messages and warnings and why not
+go to standard-bearer and your regular
+
+0:18:37.140,0:18:38.720
+texas a standout
+
+0:18:38.720,0:18:43.370
+we can go lamp that was kind of a funky
+command redirected standard error
+
+0:18:43.370,0:18:49.650
+to someplace that neurosis appear canada
+special final on unix machines
+
+0:18:49.650,0:18:52.250
+it's called uh... no
+
+0:18:52.250,0:18:53.880
+and ul
+
+0:18:53.880,0:18:58.950
+and that is a special file that you can
+send anything you want to that file and
+
+0:18:58.950,0:19:00.960
+it will just gobble it up and throw it
+out
+
+0:19:00.960,0:19:03.150
+it's the great departed in the sky
+
+0:19:03.150,0:19:05.150
+where boys go to dive
+
+0:19:05.150,0:19:09.080
+and you can send india you want their
+just magically disappear so if we say
+
+0:19:09.080,0:19:10.900
+echo
+
+0:19:10.900,0:19:13.580
+hello world
+
+0:19:13.580,0:19:16.060
+if we redirect that too
+
+0:19:16.060,0:19:18.370
+to have known
+
+0:19:18.370,0:19:22.180
+nothing happens it just talk it's gone
+and again that naal still looks like the
+
+0:19:22.180,0:19:23.620
+same
+
+0:19:23.620,0:19:24.700
+files in there
+
+0:19:24.700,0:19:27.280
+uh... with nothing going on
+
+0:19:27.280,0:19:29.650
+so if we do our asses sage commands
+
+0:19:29.650,0:19:34.420
+with our d f dash h dot
+
+0:19:34.420,0:19:39.150
+normally you're probably stooges the
+greater the m we can say to you
+
+0:19:39.150,0:19:40.610
+and to use the number
+
+0:19:40.610,0:19:43.970
+reserved for standard bearer one the
+standard out
+
+0:19:43.970,0:19:45.160
+three concerns
+
+0:19:45.160,0:19:46.830
+to rather than
+
+0:19:46.830,0:19:50.820
+more into are dead known
+
+0:19:50.820,0:19:55.450
+and if things work out right we should
+just see the results of cardio
+
+0:19:55.450,0:19:58.430
+so that got rid of all of our warning
+messages they'll be he need to be able
+
+0:19:58.430,0:20:00.070
+to you that
+
+0:20:00.070,0:20:02.870
+and if you want to improve this coming a
+little bit
+
+0:20:02.870,0:20:07.370
+one wearing from falling it we don't
+want to human readable and lynn gist
+
+0:20:07.370,0:20:10.310
+the machine readable one
+
+0:20:10.310,0:20:14.070
+and will send up to speed up the root
+directory and then we'll piper to
+
+0:20:14.070,0:20:15.820
+correct
+
+0:20:15.820,0:20:17.990
+for
+
+0:20:17.990,0:20:20.890
+uh... my teeth to get rid of stuff so
+
+0:20:20.890,0:20:23.730
+dash for the is the inverse of
+
+0:20:23.730,0:20:27.100
+what we're looking for
+
+0:20:27.100,0:20:29.990
+we want to get rid of mapper
+
+0:20:29.990,0:20:32.620
+and they also want to get rid of
+filesystem
+
+0:20:32.620,0:20:36.420
+so will give it the vertical bar for or
+inside of a great command
+
+0:20:36.420,0:20:39.140
+final system
+
+0:20:39.140,0:20:41.140
+and now we have a nice little command
+
+0:20:41.140,0:20:44.309
+that
+
+0:20:44.309,0:20:47.320
+doesn't do exactly what i want for
+sarcasm
+
+0:20:47.320,0:20:51.289
+analysts is going on
+
+0:20:51.289,0:20:55.080
+media grant for telegraphed that will
+probably work a little better
+
+0:20:55.080,0:20:56.080
+there we go
+
+0:20:56.080,0:21:00.380
+i make this a little water
+
+0:21:00.380,0:21:02.780
+so we take a look here we are actually
+of god
+
+0:21:02.780,0:21:05.810
+ellis commands putting out and just
+
+0:21:05.810,0:21:08.430
+the disk usage for that particular
+
+0:21:08.430,0:21:11.539
+directory for flash on my computer
+
+0:21:11.539,0:21:15.770
+and if we can do that then move onto the
+next topic which is called crohn's c_r_
+
+0:21:15.770,0:21:16.980
+or end
+
+0:21:16.980,0:21:18.450
+man dash k
+
+0:21:18.450,0:21:20.280
+crime
+
+0:21:20.280,0:21:21.950
+and crime is
+
+0:21:21.950,0:21:25.620
+was called a mentor program that runs
+are in the background and does work
+
+0:21:25.620,0:21:28.450
+without a user being around
+
+0:21:28.450,0:21:30.140
+ilp running even if you're not
+
+0:21:30.140,0:21:34.080
+logged into computers phones computers
+powered on and going
+
+0:21:34.080,0:21:37.880
+into there's a couple things again your
+first read to set up park under
+
+0:21:37.880,0:21:40.510
+he never done this export
+
+0:21:40.510,0:21:41.860
+editor
+
+0:21:41.860,0:21:44.270
+paviter equals
+
+0:21:44.270,0:21:47.900
+and i'm gonna make it imax dash and
+debbie for no windows sold here written
+
+0:21:47.900,0:21:49.470
+terminal online head
+
+0:21:49.470,0:21:51.640
+files
+
+0:21:51.640,0:21:54.049
+and let's take a quick look
+
+0:21:54.049,0:21:55.039
+at
+
+0:21:55.039,0:21:56.200
+but wrong
+
+0:21:56.200,0:21:57.710
+so you're the three
+
+0:21:57.710,0:22:00.850
+relevant entries in the mid eighties
+
+0:22:00.850,0:22:02.720
+so we can type man
+
+0:22:02.720,0:22:04.330
+prawn
+
+0:22:04.330,0:22:07.260
+and i will talk about the actual program
+that runs
+
+0:22:07.260,0:22:10.299
+demands for you periodically in the
+background
+
+0:22:10.299,0:22:11.649
+and there's to you
+
+0:22:11.649,0:22:16.659
+man pages of the same name here in some
+we haven't seen before in the class
+
+0:22:16.659,0:22:20.020
+does number apprentice eases the section
+of the main page
+
+0:22:20.020,0:22:21.369
+at the same and one
+
+0:22:21.369,0:22:26.280
+cronin that'll give us
+
+0:22:26.280,0:22:28.530
+mourned prime time
+
+0:22:28.530,0:22:32.010
+will give us the program manual page
+
+0:22:32.010,0:22:37.440
+and there's actually a primetime file
+that's god's the set up for themselves
+
+0:22:37.440,0:22:39.600
+if we save five
+
+0:22:39.600,0:22:42.870
+this'll give us the actual thought
+condition on the format of the father
+
+0:22:42.870,0:22:44.330
+were creating
+
+0:22:44.330,0:22:45.929
+including things like
+
+0:22:45.929,0:22:47.389
+has specified
+
+0:22:47.389,0:22:51.639
+operandi run nearly annually every time
+the computer reboots or hourly things
+
+0:22:51.639,0:22:53.870
+like that they're pretty handy
+
+0:22:53.870,0:22:56.370
+so all the documentation is there on the
+computer
+
+0:22:56.370,0:23:01.179
+now let's go ahead and take a look at
+parker on time
+
+0:23:01.179,0:23:03.730
+now on this computer currently
+
+0:23:03.730,0:23:09.270
+no crime times for these orders actually
+attached to each person's account
+
+0:23:09.270,0:23:10.250
+and
+
+0:23:10.250,0:23:13.740
+each person can create their own outcry
+on and treats that will get run
+
+0:23:13.740,0:23:18.090
+periodically dash el esta lista con file
+command
+
+0:23:18.090,0:23:19.760
+so we need to go ahead
+
+0:23:19.760,0:23:24.169
+and create uh... to mean that we're
+gonna go ahead and put in
+
+0:23:24.169,0:23:25.640
+and we can save
+
+0:23:25.640,0:23:28.090
+cron tab dash eat
+
+0:23:28.090,0:23:31.140
+now what their content entry
+
+0:23:31.140,0:23:35.260
+now it's got some comments at this hour
+the pound there are
+
+0:23:35.260,0:23:37.010
+hideously samples
+
+0:23:37.010,0:23:39.340
+florida go ahead and create a command
+
+0:23:39.340,0:23:41.270
+for ourselves that wall
+
+0:23:41.270,0:23:42.320
+that will work out
+
+0:23:42.320,0:23:44.690
+for creating
+
+0:23:44.690,0:23:45.650
+puranik
+
+0:23:45.650,0:23:47.289
+updates of
+
+0:23:47.289,0:23:50.140
+the disk usage of put into a log file
+for s
+
+0:23:50.140,0:23:53.320
+chemical from the terminal to get ready
+for what we're doing
+
+0:23:53.320,0:23:55.470
+and want to be able to grab a timestamp
+
+0:23:55.470,0:23:57.160
+so we can save data
+
+0:23:57.160,0:23:58.659
+we'll give you the time
+
+0:23:58.659,0:24:01.190
+but if we're gonna be fought in the
+stuff down the road we don't really want
+
+0:24:01.190,0:24:05.299
+to i think it's not very useful week and
+then tell dates to you
+
+0:24:05.299,0:24:09.809
+being yuki see because all timestamp
+should be you can see in my opinion
+
+0:24:09.809,0:24:12.390
+and we can then say plus
+
+0:24:12.390,0:24:15.830
+and these are giving a format commands
+if he can read the man page for day to
+
+0:24:15.830,0:24:18.289
+see all all of the uh...
+
+0:24:18.289,0:24:20.550
+since you can put in here so percent
+
+0:24:20.550,0:24:22.169
+wide use a year per cent
+
+0:24:22.169,0:24:24.769
+and gives you more and percent
+
+0:24:24.769,0:24:26.430
+deed for dave
+
+0:24:26.430,0:24:32.119
+ke to the break between the date and
+time and then percent catholic
+
+0:24:32.119,0:24:34.740
+percent capital and
+
+0:24:34.740,0:24:35.680
+and then
+
+0:24:35.680,0:24:37.549
+might as well two percent
+
+0:24:37.549,0:24:41.230
+s with capital ananthi for zulu
+
+0:24:41.230,0:24:42.280
+to do that
+
+0:24:42.280,0:24:44.460
+it's gonna print out the and that time
+
+0:24:44.460,0:24:48.590
+well that looks nice and it's used by a
+lot of software tools when plotting you
+
+0:24:48.590,0:24:50.910
+the best thing to do this to you date
+
+0:24:50.910,0:24:52.030
+as
+
+0:24:52.030,0:24:53.980
+how do you teach me unix
+
+0:24:53.980,0:24:56.309
+timestamp switches seconds from
+
+0:24:56.309,0:25:00.400
+was called epic which is nineteen
+seventy thrusday
+
+0:25:00.400,0:25:02.850
+dates uh...
+
+0:25:02.850,0:25:03.490
+plus
+
+0:25:03.490,0:25:05.170
+percent house
+
+0:25:05.170,0:25:07.600
+and if we add dash dash duty-free
+
+0:25:07.600,0:25:09.990
+you can see that they're actually
+
+0:25:09.990,0:25:13.650
+it is and you can see so this is the
+number of seconds since nineteen seventy
+
+0:25:13.650,0:25:14.610
+eight
+
+0:25:14.610,0:25:17.990
+and that number makes it very easy to
+plot out pat
+
+0:25:17.990,0:25:19.630
+and do math with time
+
+0:25:19.630,0:25:23.330
+so use that as our tax tip him so much
+for coming up
+
+0:25:23.330,0:25:29.600
+saturday two may never know when user
+logfile
+
+0:25:29.600,0:25:35.440
+and let's go ahead mister building up or
+command so if we're going to an echo
+
+0:25:35.440,0:25:37.360
+dash and
+
+0:25:37.360,0:25:39.480
+not put out a new line
+
+0:25:39.480,0:25:44.360
+the backhoe runs are shell script inside
+of a command so
+
+0:25:44.360,0:25:45.139
+plus
+
+0:25:45.139,0:25:47.440
+percent house
+
+0:25:47.440,0:25:51.040
+suffragist ye that that's going to give
+us our timestamp
+
+0:25:51.040,0:25:53.980
+and then after that reindeer estes h
+
+0:25:53.980,0:25:55.140
+researched
+
+0:25:55.140,0:25:56.920
+tools
+
+0:25:56.920,0:26:01.590
+and their and
+
+0:26:01.590,0:26:03.809
+dot secom dot com h
+
+0:26:03.809,0:26:04.780
+hands
+
+0:26:04.780,0:26:08.049
+them in iran d_f_ swatch
+
+0:26:08.049,0:26:10.580
+ringer redirect standard-bearer
+
+0:26:10.580,0:26:12.309
+to you
+
+0:26:12.309,0:26:17.510
+slash stab slash no
+
+0:26:17.510,0:26:19.900
+and then we're going to you
+
+0:26:19.900,0:26:20.679
+he crept
+
+0:26:20.679,0:26:23.670
+minus the sorghum and get rid of
+
+0:26:23.670,0:26:26.460
+mapper and
+
+0:26:26.460,0:26:29.140
+for or is really the right argues
+
+0:26:29.140,0:26:32.400
+filesystem
+
+0:26:32.400,0:26:34.200
+for food run that commands
+
+0:26:34.200,0:26:37.140
+you can see that it paused briefly right
+here
+
+0:26:37.140,0:26:39.610
+acid rain this command locally to get
+the date
+
+0:26:39.610,0:26:42.490
+and then it went off and got the
+timestamp
+
+0:26:42.490,0:26:45.120
+now we want to your redirect that
+someplace
+
+0:26:45.120,0:26:48.340
+sore actually do this we're going to
+send that
+
+0:26:48.340,0:26:49.210
+too
+
+0:26:49.210,0:26:50.809
+strongly reviews
+
+0:26:50.809,0:26:54.650
+at greater length to redirect to a final
+but we're gonna append to file to
+
+0:26:54.650,0:26:56.429
+greater than this
+
+0:26:56.429,0:26:58.120
+and then slash home
+
+0:26:58.120,0:27:00.390
+research tools
+
+0:27:00.390,0:27:02.470
+disc mark
+
+0:27:02.470,0:27:06.250
+night specified with absolute path so we
+don't have to worry about till those
+
+0:27:06.250,0:27:08.799
+because prize winner in a funny
+environment
+
+0:27:08.799,0:27:12.010
+just don't worry about having to you
+it's been too much stuff
+
+0:27:12.010,0:27:15.200
+let's go ahead and hit enter to happens
+
+0:27:15.200,0:27:18.580
+and he didn't actually rate everything
+too
+
+0:27:18.580,0:27:22.110
+the final so we need to rap
+
+0:27:22.110,0:27:24.110
+everything inside
+
+0:27:24.110,0:27:28.899
+here including
+
+0:27:28.899,0:27:30.590
+that doesn't attend
+
+0:27:30.590,0:27:32.520
+had control to redraw
+
+0:27:32.520,0:27:33.520
+to put it up
+
+0:27:33.520,0:27:35.100
+beginning your privacy act
+
+0:27:35.100,0:27:36.660
+before the ako
+
+0:27:36.660,0:27:40.590
+and an ending prentice c right before
+the two greater bands in that will take
+
+0:27:40.590,0:27:43.840
+all that make that essentially one
+command for the shell
+
+0:27:43.840,0:27:46.780
+take the alpha that and send it all to
+you
+
+0:27:46.780,0:27:49.700
+the uh... disclosed
+
+0:27:49.700,0:27:53.460
+sophie saikat disc log
+
+0:27:53.460,0:27:56.880
+we have a line it didn't work out quite
+right for violent is great
+
+0:27:56.880,0:28:01.980
+let's go ahead and move that far to stop
+on
+
+0:28:01.980,0:28:05.480
+seller clean rady carol and now we need
+to create arc runtime
+
+0:28:05.480,0:28:08.900
+that's gonna handle this copy
+
+0:28:08.900,0:28:12.030
+and it copy
+
+0:28:12.030,0:28:13.260
+hit it
+
+0:28:13.260,0:28:14.380
+paste
+
+0:28:14.380,0:28:18.890
+so that's what we're gonna run we do you
+have to watch out for the percents
+
+0:28:18.890,0:28:20.230
+so
+
+0:28:20.230,0:28:24.500
+tied to the control a jump at the
+beginning
+
+0:28:24.500,0:28:28.410
+if they put a backslash reports percent
+it'll protected so that crime doesn't
+
+0:28:28.410,0:28:32.370
+try to fiddle with it otherwise they
+won't get past correctly to you are
+
+0:28:32.370,0:28:33.360
+command
+
+0:28:33.360,0:28:35.910
+and now we have to specify the format
+
+0:28:35.910,0:28:38.820
+for when the scan is gonna get run so
+
+0:28:38.820,0:28:41.970
+as you see here is from hence minute
+power
+
+0:28:41.970,0:28:43.440
+day of montana
+
+0:28:43.440,0:28:45.370
+i believe and dave week
+
+0:28:45.370,0:28:47.190
+couple things in there
+
+0:28:47.190,0:28:50.830
+ran trial runs for starters every minute
+so
+
+0:28:50.830,0:28:54.510
+enhancement here's zero two fifty nine
+
+0:28:54.510,0:28:55.770
+and then
+
+0:28:55.770,0:28:58.350
+uh... star means any hour
+
+0:28:58.350,0:29:00.700
+anyday
+
+0:29:00.700,0:29:02.059
+month and weak
+
+0:29:02.059,0:29:04.860
+signature unreimbursed are twenty three
+four
+
+0:29:04.860,0:29:06.210
+okay good
+
+0:29:06.210,0:29:09.230
+so please save this
+
+0:29:09.230,0:29:10.860
+that should
+
+0:29:10.860,0:29:14.670
+create crunch time for us now knows that
+there were a temporary file and that's
+
+0:29:14.670,0:29:17.029
+gonna copy that file over to the right
+people
+
+0:29:17.029,0:29:21.250
+location for the computer keeps track of
+it so that control x control seats
+
+0:29:21.250,0:29:25.380
+we've now installed our new crime time
+
+0:29:25.380,0:29:28.539
+and if we do you
+
+0:29:28.539,0:29:30.440
+detailed minus af
+
+0:29:30.440,0:29:32.050
+var along
+
+0:29:32.050,0:29:35.039
+sfas fog
+
+0:29:35.039,0:29:36.230
+you'll see that
+
+0:29:36.230,0:29:37.309
+great here
+
+0:29:37.309,0:29:41.399
+it was it kept track of the fact that we
+and our prime time for the research
+
+0:29:41.399,0:29:43.549
+tools user account
+
+0:29:43.549,0:29:47.070
+and if we wait a little bit we should
+see a new uh...
+
+0:29:47.070,0:29:50.919
+contact entry go into the log file
+monthly to an hour specialist so there's
+
+0:29:50.919,0:29:51.990
+no
+
+0:29:51.990,0:29:56.570
+disc long variance with the date we'll
+see you are about to come up on the moon
+
+0:29:56.570,0:29:58.210
+transition from
+
+0:29:58.210,0:30:01.920
+one twenty two two one twenty three
+
+0:30:01.920,0:30:03.130
+so jumped imminent
+
+0:30:03.130,0:30:06.659
+direct or a lot of folic actually see
+recorded
+
+0:30:06.659,0:30:08.799
+running our command
+
+0:30:08.799,0:30:10.789
+so they're ran this
+
+0:30:10.789,0:30:14.840
+only complicate command word print out
+the date stamped and then a cessation of
+
+0:30:14.840,0:30:19.650
+the research tools it got rid of the
+warning messages rained here
+
+0:30:19.650,0:30:22.210
+and remove the matheran filesystem
+
+0:30:22.210,0:30:26.090
+and then it will go to the swamp five
+
+0:30:26.090,0:30:29.330
+so hopefully that made sense to use it
+if you take any other classes in the
+
+0:30:29.330,0:30:32.820
+series out whats going some of those
+have bash basics
+
+0:30:32.820,0:30:37.500
+for you know a special man we see we
+have a disqualifier operate here so
+
+0:30:37.500,0:30:40.070
+feel myself disqualify
+
+0:30:40.070,0:30:42.890
+and we now have our first entry n
+
+0:30:42.890,0:30:44.730
+artist usage
+
+0:30:44.730,0:30:48.380
+so if somebody were copy a giant file
+onto the research tools computer right
+
+0:30:48.380,0:30:48.940
+now
+
+0:30:48.940,0:30:52.710
+ardyss key sigil bleed change
+
+0:30:52.710,0:30:54.820
+simply as a sage
+
+0:30:54.820,0:30:56.280
+over to you
+
+0:30:56.280,0:31:00.259
+research tools
+
+0:31:00.259,0:31:03.299
+sitcom means
+
+0:31:03.299,0:31:06.700
+protect last and pipe lasts
+
+0:31:06.700,0:31:11.130
+will see that content in the few times
+
+0:31:11.130,0:31:14.419
+now we've got entries coming in with
+different times
+
+0:31:14.419,0:31:19.440
+an artist usages rate their so if we
+were to copy a file
+
+0:31:19.440,0:31:22.700
+and i think you every damn difficult in
+the big file here
+
+0:31:22.700,0:31:24.710
+we carried
+
+0:31:24.710,0:31:27.940
+then cause something to you take a
+disgrace and be able to track it here
+
+0:31:27.940,0:31:32.929
+and we t_v_'s numbers changing
+
+0:31:32.929,0:31:35.640
+so that's the basics of crime
+
+0:31:35.640,0:31:39.200
+uh... there's a lot to it and you can
+spend time going through what's going on
+
+0:31:39.200,0:31:40.519
+and
+
+0:31:40.519,0:31:44.320
+it will uh... um...
+
+0:31:44.320,0:31:48.100
+take a little while to get really good
+at it but it's very handy and they can
+
+0:31:48.100,0:31:50.240
+run stuff all the time
+
+0:31:50.240,0:31:54.110
+and we can then change stuff to be at
+how we need to be so we can see control
+
+0:31:54.110,0:31:54.779
+c
+
+0:31:54.779,0:31:56.030
+do quickly
+
+0:31:56.030,0:31:58.050
+uh...
+
+0:31:58.050,0:32:00.510
+the crime town so if we say
+
+0:32:00.510,0:32:03.210
+contact that she first had it
+
+0:32:03.210,0:32:07.080
+there's lots of things you can't we can
+agree on the bottom here we can say
+
+0:32:07.080,0:32:08.660
+slash five
+
+0:32:08.660,0:32:10.169
+and i'll run it
+
+0:32:10.169,0:32:14.039
+from missus urich fifty-nine every five
+minutes
+
+0:32:14.039,0:32:15.860
+say that
+
+0:32:15.860,0:32:20.360
+and now has new content were only run
+every five minutes
+
+0:32:20.360,0:32:21.559
+was very handy
+
+0:32:21.559,0:32:23.360
+d_n_a_ use cron jobs
+
+0:32:23.360,0:32:26.930
+well they're running on time for me
+taking care of centered in the copying
+
+0:32:26.930,0:32:29.299
+files from one place to another
+
+0:32:29.299,0:32:30.859
+hailing things like
+
+0:32:30.859,0:32:34.249
+every time i get email from the u_s_
+coast guard healy
+
+0:32:34.249,0:32:38.129
+actually have a con job that every hour
+goes through and bills the latest
+
+0:32:38.129,0:32:41.309
+visualization for the ship
+
+0:32:41.309,0:32:46.059
+right so i'd like you one last thing
+with esa sage before i let you go
+
+0:32:46.059,0:32:50.000
+and that's to haiti's it from inside of
+you match to be able to at remote files
+
+0:32:50.000,0:32:53.420
+a specially if you're far away from the
+computer file words
+
+0:32:53.420,0:32:56.620
+if you ask the sage through a computer
+it takes time for a recovery keep
+
+0:32:56.620,0:33:00.050
+receipt you hit to go back out to that
+computer
+
+0:33:00.050,0:33:02.900
+do change and then come back to you
+
+0:33:02.900,0:33:07.130
+and that can be really annoying when
+those delays get long and disk it's very
+
+0:33:07.130,0:33:11.240
+hard to work with remote files
+efficiently it's very doable but it's
+
+0:33:11.240,0:33:13.669
+also a lot easier to be working
+
+0:33:13.669,0:33:17.610
+locally it with imax and working with
+the file
+
+0:33:17.610,0:33:22.510
+so i'm gonna try and here she is a tool
+called tramped inside of you max
+
+0:33:22.510,0:33:28.140
+and tramp is a system for using as a
+stage n_f_l_ sees other protocols
+
+0:33:28.140,0:33:32.150
+to ground files on different computers
+at them locally and every time you get
+
+0:33:32.150,0:33:36.950
+saved you'll use as a stage two go back
+to that on the computer
+
+0:33:36.950,0:33:40.020
+and the key thing is that if you have to
+take your password every time you hit
+
+0:33:40.020,0:33:42.300
+save your gonna go crazy
+
+0:33:42.300,0:33:43.950
+i certainly can't take that
+
+0:33:43.950,0:33:48.520
+so having your asses each key so that
+makes it pretty easy to do
+
+0:33:48.520,0:33:51.919
+solicitors who worked in trolex control
+f
+
+0:33:51.919,0:33:52.740
+and
+
+0:33:52.740,0:33:54.320
+now i can say
+
+0:33:54.320,0:33:56.039
+sloshed
+
+0:33:56.039,0:33:59.680
+s_s_-eighteen colin classes voting tramp
+
+0:33:59.680,0:34:03.809
+we're now have that module running and
+we can say research
+
+0:34:03.809,0:34:06.909
+tools dot ccom diane h
+
+0:34:06.909,0:34:11.270
+colin and then will to say dot for the
+current working directory will make it
+
+0:34:11.270,0:34:13.539
+to their such as we are home directory
+
+0:34:13.539,0:34:15.319
+i pressed enter
+
+0:34:15.319,0:34:18.490
+wouldn't waiting for a bookshelf alamo
+shall
+
+0:34:18.490,0:34:19.859
+time now adding
+
+0:34:19.859,0:34:24.399
+the directory upon the room she just
+like that kitty jerod on the current
+
+0:34:24.399,0:34:25.559
+computer
+
+0:34:25.559,0:34:26.699
+so i can
+
+0:34:26.699,0:34:28.360
+create a file called hello
+
+0:34:28.360,0:34:30.429
+world
+
+0:34:30.429,0:34:32.589
+t x t
+
+0:34:32.589,0:34:33.859
+hi there
+
+0:34:33.859,0:34:37.179
+and if i say this control x control
+house
+
+0:34:37.179,0:34:40.139
+you can see it's right in the file out
+across the desk
+
+0:34:40.139,0:34:42.059
+and if we as a stage
+
+0:34:42.059,0:34:43.490
+to a research
+
+0:34:43.490,0:34:46.539
+tools dot secom dot image
+
+0:34:46.539,0:34:51.719
+we can do in dallas dash coltie are for
+part-time panic disorder
+
+0:34:51.719,0:34:53.429
+and we have a file called
+
+0:34:53.429,0:34:55.899
+hello world
+
+0:34:55.899,0:34:57.249
+and pc
+
+0:34:57.249,0:34:58.479
+hostname
+
+0:34:58.479,0:35:02.039
+we can see that that his our research
+tools computer that's remote from our
+
+0:35:02.039,0:35:03.199
+laptop
+
+0:35:03.199,0:35:06.019
+so reading a final harm a computer
+
+0:35:06.019,0:35:07.329
+and
+
+0:35:07.329,0:35:10.539
+it just works so again the command is
+
+0:35:10.539,0:35:15.409
+uh... find file control x control of
+greeting to continue tom
+
+0:35:15.409,0:35:17.979
+and then sloshed s_h_ colin
+
+0:35:17.979,0:35:20.589
+the hosting is right here
+
+0:35:20.589,0:35:23.729
+that colin and then work what you'd like
+to add
+
+0:35:23.729,0:35:27.289
+so dispatch pray here is justin pathak
+you normally would
+
+0:35:27.289,0:35:28.609
+used on
+
+0:35:28.609,0:35:30.169
+a local computer
+
+0:35:30.169,0:35:33.769
+and that's all there is a tramp uh... it
+takes a little bit if you have problems
+
+0:35:33.769,0:35:35.119
+with it
+
+0:35:35.119,0:35:38.289
+it doesn't give you a very good error
+messages so i suggest starting over from
+
+0:35:38.289,0:35:40.019
+scratch in trying again
+
+0:35:40.019,0:35:43.439
+or find someone who's comfortable it ran
+to get get you through the first little
+
+0:35:43.439,0:35:44.389
+dates
+
+0:35:44.389,0:35:47.479
+but it's definitely an amazing tool for
+doing
+
+0:35:47.479,0:35:52.559
+pending a files an engine data on the
+computers such that especially if you're
+
+0:35:52.559,0:35:54.499
+going over satellite links
+
+0:35:54.499,0:35:58.609
+tranny files externally is of little
+pain
+
+0:35:58.609,0:36:00.769
+thanks for joining and that's research
+tools twenty
+

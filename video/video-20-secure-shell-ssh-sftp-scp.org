@@ -1,0 +1,185 @@
++STARTUP: showall
+
+#+TITLE:     Video 20: Secure Shell
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-12-26 Mon>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: emacs ssh scp cron
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+* commands
+
+#+BEGIN_SRC sh
+ls -la | grep -i ssh
+man ssh
+hostname
+ssh researchtools.ccom.nh
+hostname
+exit
+
+ls -la | grep -i ssh
+ls -la .ssh
+
+man ssh-keygen
+ssh-keygen  # just press enter for all the questions
+cd .ssh
+less id_rsa*
+
+scp id_rsa.pub researchtools.ccom.nh:
+
+ssh researchtools.ccom.nh
+ssh localhost # create the directory
+ls -la
+ls -la .ssh
+mv id_rsa.pub .ssh/authorized_keys
+ls -la .ssh
+exit
+
+ssh researchtools.ccom.nh # now you should not have to type a password
+exit
+
+less /etc/ssh/ssh_config
+#+END_SRC
+
+#+BEGIN_SRC sh
+ssh researchtools.ccom.nh hostname
+ssh researchtools.ccom.nh "df -h ."
+ssh researchtools.ccom.nh "df -h ." 2> /dev/null
+ssh researchtools.ccom.nh "df -h ." 2> /dev/null | grep home | grep -v mapper
+#+END_SRC
+
+* cron - running commands periodically
+
+#+BEGIN_SRC sh
+export EDITOR="emacs -nw"
+man -k crontab
+man crontab
+man 5 crontab
+crontab -l
+crontab -e
+tail -f /var/log/syslog
+date --utc +%Y%m%dT%M%SZ
+date +%s # UNIX UTC timestamps are "better"
+#+END_SRC
+
+#+BEGIN_EXAMPLE 
+0-59/5 * * * * (echo -n `date +\%s`; ssh researchtools.ccom.nh "df /" 2> /dev/null | egrep -v 'mapper|Filesystem') >> /home/researchtools/disk.log
+#+END_EXAMPLE
+
+* What does a host key failure
+
+#+BEGIN_EXAMPLE 
+ssh researchtools.ccom.nh
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@       WARNING: POSSIBLE DNS SPOOFING DETECTED!          @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+The RSA host key for ccom.unh.edu has changed,
+and the key for the corresponding IP address 192.168.2.177
+is unknown. This could either mean that
+DNS SPOOFING is happening or the IP address for the host
+and its host key have changed at the same time.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that the RSA host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+b0:15:9c:51:01:11:e2:dc:f7:5e:95:d4:78:01:0b:94.
+Please contact your system administrator.
+Add correct host key in /Users/schwehr/.ssh/known_hosts to get rid of this message.
+Offending key in /Users/schwehr/.ssh/known_hosts:27
+RSA host key for ccom.unh.edu has changed and you have requested strict checking.
+Host key verification failed.
+ssh_exchange_identification: Connection closed by remote host
+#+END_EXAMPLE
+
+* emacs tramp
+
+#+BEGIN_EXAMPLE 
+C-x C-f /ssh:researchtools.ccom.nh:.
+#+END_EXAMPLE
+
+* Command history
+
+#+BEGIN_SRC sh
+ 1991  ls -la
+ 1992  ls .ssh
+ 1993  rm -rf .ssh
+ 1994  ls -la | grep ssh
+ 1995  man -k ssh
+ 1996  man ssh
+ 1997  clear
+ 1998  hostname
+ 1999  fix-ntp 
+ 2000  man -k ssh
+ 2001  man ssh
+ 2002  ls -la | grep ssh
+ 2003  hostname
+ 2004  ssh researchtools.ccom.nh
+ 2005  hostname
+ 2006  ls -la | grep -i ssh
+ 2007  man chmod
+ 2008  ls -la .ssh
+ 2009  less .ssh/known_hosts 
+ 2010  man ssh-keygen
+ 2011  ssh-keygen
+ 2012  ls -l .ssh
+ 2013  less .ssh/id_rsa*
+ 2014  scp .ssh/id_rsa.pub researchtools.ccom.nh:
+ 2015  ssh researchtools.ccom.nh
+ 2016  ssh researchtools.ccom.nh -v
+ 2017  ping ccom.unh.edu
+ 2018  ssh researchtools.ccom.nh 
+ 2019  hostname
+ 2020  ssh researchtools.ccom.nh 
+ 2021  less /etc/ssh/ssh_config 
+ 2022  ssh researchtools.ccom.nh hostname
+ 2023  ssh researchtools.ccom.nh "df -h ."
+ 2024  df -h .
+ 2025  ls -l /dev/null
+ 2026  echo "hello world" > /dev/null 
+ 2027  ls -l /dev/null
+ 2028  ssh researchtools.ccom.nh "df -h ." 2> /dev/null
+ 2029  ssh researchtools.ccom.nh "df /" 2> /dev/null | grep -v mapper
+ 2030  ssh researchtools.ccom.nh "df /" 2> /dev/null | grep -v 'mapper|Filesystem'
+ 2031  ssh researchtools.ccom.nh "df /" 2> /dev/null | egrep -v 'mapper|Filesystem'
+ 2032  man -k cron
+ 2033  export EDITOR="emacs -nw"
+ 2034  man cron
+ 2035  man 1 cron
+ 2036  man 1 crontab
+ 2037  man 5 crontab
+ 2038  crontab -l
+ 2039  crontab -e
+ 2040  tail -f /var/log/syslog
+ 2041  crontab -e
+ 2042  ssh researchtools.ccom.nh
+ 2043  history
+#+END_SRC
+
+2nd terminal:
+
+#+BEGIN_SRC sh
+ 2000  date
+ 2001  date --utc +%Y%m%dT%H%M%SZ
+ 2002  date +%s
+ 2003  date --utc +%s
+ 2004  echo -n `date +%s`;
+ 2005  echo -n `date +%s`; ssh researchtools.ccom.nh "df /" 2> /dev/null | egrep -v 'mapper|Filesystem'
+ 2006  echo -n `date +%s`; ssh researchtools.ccom.nh "df /" 2> /dev/null | egrep -v 'mapper|Filesystem' >> /home/researchtools/disk.log
+ 2007  (echo -n `date +%s`; ssh researchtools.ccom.nh "df /" 2> /dev/null | egrep -v 'mapper|Filesystem') >> /home/researchtools/disk.log
+ 2008  cat disk.log 
+ 2009  rm disk.log
+ 2010  ls -l
+ 2011  date
+ 2012  ls -l
+ 2013  tail -f disk.log 
+#+END_SRC

@@ -1,0 +1,437 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 7: Emacs and org-mode (DRAFT)
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-09-20 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: emacs, org-mode
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Reminder to log in to the IRC                                         :irc:
+
+Please *only* use the Ubuntu virtual machine in class today.  There is
+too much confusion when switching between Windows and Ubuntu.
+
+Make sure to not use "researchtools" as your login name for the IRC channel!
+
+* Introduction
+
+Today, we will start off with a little more background on where to
+find material.  We will look at man pages online and the Safari Technical
+Books.  Last time, the question was asked how to find out about what
+software is available and which is already installed.  There is a
+section on that, but I will leave it to you to read outside of class.
+
+Next, we will dive into taking notes with emacs org-mode.  I take most
+of my work notes in org-mode and some students use it to keep track of
+the their research and draft material for their thesis.  All of the
+lecture notes for this class and the homework assignments are written
+in org-mode format.
+
+*HOMEWORK*:  The end of this document links to homework due on
+Thursday.  Please pay close attention to detail when doing the
+homework.
+
+* Emacs and org-mode reference cards
+
+Print these double sided:
+
+- http://orgmode.org/orgcard.pdf
+- [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/docs/emacs23-refcard.pdf][emacs23-refcard.pdf]]
+
+In the virtual machine, you can open either of these links:
+
+- [[file:/usr/share/emacs/23.2/etc/refcards/refcard.pdf][/usr/share/emacs/23.2/etc/refcards/refcard.pdf]]
+- [[/usr/share/doc/org-mode/org.pdf.gz]]
+
+Or run these commands:
+
+#+BEGIN_SRC sh
+xdg-open /usr/share/emacs/23.2/etc/refcards/refcard.pdf
+xdg-open /usr/share/doc/org-mode/org.pdf.gz
+#+END_SRC
+
+* Ubuntu man pages online                                               :man:
+
+Sometimes you have a second computer next to you when working. One of
+the many ways that you can take advantage of that computer by using it
+to view "man pages".  Ubuntu has the man pages online.  We are using
+"Ubuntu 11.04" during this class, but man pages for other versions
+should be very similar.
+
+http://manpages.ubuntu.com/
+
+Try searching for =minmax=. If you use the search box in the top left,
+you will be taken to a menu of Ubuntu versions.  Select 11.04 and you
+will be taken to this page:
+
+http://manpages.ubuntu.com/manpages/natty/en/man1/minmax.1gmt.html
+
+* Technical/Computer Online Books at UNH - Safari
+
+[[http://safaribooksonline.com][Safari Books Online]] provides technical books online.  UNH has a
+subscription, so if you are a student, staff or faculty at UNH, you
+can get access to a wide range of technical books.  If you are not at
+UNH and your job does not provide the service, you can sign up for 
+a personal account.  This can save you a lot of money over buying a
+large number of books.  However, I do not think that you can take
+these with you off line and I still like "dead tree" books (aka the
+real thing).
+
+- https://blackboard.unh.edu
+- Click "Library" Tab
+- Click "Connect to Databases" Link - http://www.library.unh.edu/researchtools/databases/index.shtml
+- Click "[S-T]"
+- Click on "Safari Books Online"
+
+You should now be able to get access to a very large number of books.
+Some books that might be useful for this lecture '''NOTE:''' I have
+not necessarily read these books.
+
+- Ubuntu Linux
+  - [[http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9781449382827][Ubuntu: Up and Running]] by Robin Nixon, O'Reilly, April, 2010.
+  - [[http://proquest.safaribooksonline.com/book/operating-systems/9781430230397][Beginning Ubuntu Linux, Fifth Edition]] by Emilio Raggi; Keir Thomas;
+    Trevor Parsons; Andy Channelle; Sander van Vugt, Apress, September 2010.
+- Emacs
+  - [[http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/emacs/0596006489][Learning GNU Emacs, Third Edition]] by Debra Cameron; James Elliott;
+    Marc Loy; Eric S. Raymond; Bill Rosenblatt, Dec, 2004.
+  - [[http://proquest.safaribooksonline.com/book/operating-systems-and-server-administration/linux/9780137057870/the-editors/ch07?reader=][A Practical Guide to Linux® Commands, Editors, and Shell Programming, Second Edition, Ch 7]]
+    by Mark G. Sobell, Nov. 2009.
+
+[[file:./figures/safari-books.jpg]]
+
+* A quick look at Ubuntu and Software                       :ubuntu:sysadmin:
+
+There have been questions in class as to how to find out which
+software is installed.  I'll give you a quick intruduction here.
+
+** Which version of Linux?
+
+First, how do you find out which version of linux you are using?  Most
+linux systems have a file that describes the version of linux.  It's
+usually a "release" file in the /etc directory.  "etc" is a directory
+tree that contains most of the system wide settings.  On Redhat and
+CentOS Linux systems, there is a /etc/redhad-release file:
+
+#+BEGIN_SRC sh
+ls -l /etc/*release
+# -rw-r--r-- 1 root root 27 Apr 25  2010 /etc/redhat-release
+
+cat /etc/redhat-release 
+CentOS release 5.5 (Final)
+
+cat /etc/issue
+CentOS release 5.5 (Final)
+Kernel \r on an \m
+#+END_SRC
+
+Ubuntu and any other system that follows the
+[[http://en.wikipedia.org/wiki/Linux_Standard_Base][Linux Standard Base (LSB)]] guidelines for Linux have one or both of two
+files named
+/etc/lsb-release and /etc/issue that document the version of the system:
+
+#+BEGIN_SRC sh
+cat /etc/issue
+Ubuntu 11.04
+
+cat /etc/lsb-release 
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=11.04
+DISTRIB_CODENAME=natty
+DISTRIB_DESCRIPTION="Ubuntu 11.04"
+#+END_SRC
+
+** Command line exploration of software on the system and available for install
+
+There are many different ways to look at the software on a Ubuntu
+computer, but this is the way that I go about it.
+
+First, what is installed?
+
+#+BEGIN_SRC sh
+researchtools@ubuntu:~$ dpkg --get-selections | wc -l
+1789
+
+dpkg --get-selections | head
+adduser						install
+apel						install
+apparmor					install
+apparmor-utils					install
+apport						install
+apport-symptoms					install
+apt						install
+apt-transport-https				install
+apt-utils					install
+apt-xapian-index				install
+
+dpkg --get-selections | grep emacs
+emacs						install
+emacs-jabber					install
+emacs23						install
+emacs23-bin-common				install
+emacs23-common					install
+emacsen-common					install
+python-ropemacs					install
+#+END_SRC
+
+If you want to read through them all, use a pager (e.g. more, less or most):
+
+#+BEGIN_SRC sh
+dpkg --get-selections | less
+#+END_SRC
+
+If you know a package that is installed, you can use listfiles option
+to dpkg.  A common task is to list the programs available in a package.
+
+#+BEGIN_SRC sh
+dpkg --listfiles gmt | grep bin | head
+/usr/bin
+/usr/bin/GMT
+/usr/lib/gmt/bin
+/usr/lib/gmt/bin/gmt_shell_functions.sh
+/usr/lib/gmt/bin/gmtget
+/usr/lib/gmt/bin/gmtlogo
+/usr/lib/gmt/bin/isogmt
+/usr/lib/gmt/bin/psbbox.sh
+/usr/lib/gmt/bin/blockmean
+/usr/lib/gmt/bin/blockmedian
+#+END_SRC
+
+If you would like to know which package a file belongs to, you can ask
+the system.  We can combine that with the command =type= that tells
+you where in your path a program is located.  For example, the sudo command
+that gives you access to administrator capabilities (aka "root").  The
+"hashed" means that the shell has an internal table of commands to
+speed up searching.
+
+#+BEGIN_SRC sh
+type sudo
+sudo is hashed (/usr/bin/sudo)
+
+dpkg --search /usr/bin/sudo
+sudo: /usr/bin/sudo
+#+END_SRC
+
+There are also an interactive text based program to examine packages
+without a full graphical interface:
+
+http://wiki.debian.org/Aptitude
+ 
+** Graphical software management - Synaptic
+
+[[file:./figures/synaptic-package-manager.png]]
+
+* Introduction to Emacs                                       :emacs:orgmode:
+
+Emacs is a very powerful text editing environment.  It is the editor
+that I use for writing this class, for programming, and many other
+tasks.  As you use emacs, you will discover that that many of the
+shortcuts in emacs have been adopted by other programs (especially
+bash).
+
+I got started in seriously using an electronic work log in 2004 at the
+suggestion of [[http://humansystemdebugging.blogspot.com/][Anne Wright]], while I was working at NASA JPL.  Paper
+logs are really helpful, but they are hard to search.
+
+We will start out jumping right into writing a log in emacs.  I use
+emacs [[http://orgmode.org/][org-mode]] to keep most of my work logs.  I don't use as many
+features of org-mode as I would like, but it really pushes me to take
+better notes.  I started using org-mode for my work log in 2010 (I
+found some old notes files and have since converted them into org
+mode.  e.g. 1998, 2000, and 2001).
+
+From the number of lines of log files, you can see that I take
+electronic logs very seriously.
+
+#+BEGIN_EXAMPLE 
+wc -l kurt-????.{txt,org}
+     192 kurt-1998.org
+     149 kurt-2000.org
+     327 kurt-2001.org
+      62 kurt-2002.txt
+     475 kurt-2003.txt
+   12139 kurt-2004.txt
+    6644 kurt-2005.txt
+   19332 kurt-2006.txt
+   28292 kurt-2007.txt
+   28746 kurt-2008.txt
+   18740 kurt-2009.txt
+   30945 kurt-2010.org
+   21929 kurt-2011.org
+#+END_EXAMPLE
+
+Org-mode is much more useful than just straight text.  It can produce
+a table of contents and helps me keep a much more organized log.
+
+[[file:./figures/org-mode-contents.png]]
+
+[[file:./figures/org-mode-example-entry.png]]
+
+** Initial setup
+
+I missed one emacs package that we need for today in the Virtual
+Machine.  Without a package called htmlize, org-mode output will not
+have code colored.  It is a part of the emacs goodies package.
+texlive is used to produce PDF documents.
+
+#+BEGIN_SRC sh
+sudo apt-get install emacs-goodies-el
+sudo apt-get install texlive
+sudo apt-get install texlive-latex-extra
+#+END_SRC
+
+** Opening files
+
+I will give an introduction to using emacs for basic files here.  This
+really needs a video of the section to show what I'm doing.
+
+- opening a directory
+- searching with C-s
+
+** Basic org-mode - outlining
+
+The format for org-mode is very similar to Mediawiki.  However, the
+characters used to mark up the text are slightly different.  There are
+large numbers of markup languages, but we will ignore the others right
+now.
+
+Start by opening a new org mode file.  Org-mode starts by default if
+the file name ends in ".org".  "File" -> "Visit New File" and pick
+type in "example.org".
+
+An alternative approach is to use the keyboard shortcut:  
+
+#+BEGIN_EXAMPLE 
+C-x C-f example.org
+#+END_EXAMPLE
+
+At the bottom of the window, you will see:
+
+#+BEGIN_EXAMPLE 
+--:--- example.org All L1 (Org)------------
+#+END_EXAMPLE
+
+You are staring at a blank page, but there are helpers under the "Org"
+and "Tbl" (meaning table) menus that just appeared at the top of the
+Window.  Select =Org= -> =New Heading=.  You will see a "*" appear.
+Headings are made up of 1 or more "*" characters followed by the text.
+
+#+BEGIN_EXAMPLE 
+* Introduction
+#+END_EXAMPLE
+
+Sub-headings have two like this: 
+
+#+BEGIN_EXAMPLE 
+** This is a sub heading
+#+END_EXAMPLE
+
+You can type paragraphs in any heading or sub-heading.
+
+Lists start with "-".  A list
+looks like this:
+
+#+BEGIN_EXAMPLE 
+- first item
+- another item
+- yet another
+#+END_EXAMPLE
+
+The list will look like this:
+
+- first item
+- another item
+- yet another
+
+** Seeing the results?
+
+But how do we see what the results are???  We have to "publish" or
+"export" the document.  There are many formats, but we will start with
+HTML.
+
+"Org" -> "Export/Publish"
+
+You will now see lots of options for the output.  Start off by trying
+"export as HTML and open in browser".  
+
+Press the letter "b"
+
+You now should see Firefox open up and show the file "example.html".
+
+You can also export to a pdf:
+
+"Org" -> "Export/Publish" -> press "d"
+
+** Tables
+
+Tables are built with the vertical "|" character.  Entries with all
+"---" characters create horizontal rulers.
+
+#+BEGIN_EXAMPLE 
+| Column header  | something else           |
+|----------------+--------------------------|
+| hello          | world                    |
+| a second entry | what do you want to say? |
+#+END_EXAMPLE
+
+Would look like this:
+
+| Column header  | something else           |
+|----------------+--------------------------|
+| hello          | world                    |
+| a second entry | what do you want to say? |
+
+** Examples and source code
+
+You can also create example blocks and source code blocks.  Inside of
+an example, it will not show the normal formatting.  Try this:
+
+: #+BEGIN_EXAMPLE 
+: * This is a heading
+: #+END_EXAMPLE
+
+* Alternative strategies for note taking
+
+- Wiki on a stick - Some people have had some data loss with WOAS
+- Twiki - Your own local wiki
+- https://github.com/github/gollum 
+- http://www.tiddlywiki.com/
+- http://www.google.com/notebook
+
+See also: [[http://en.wikipedia.org/wiki/Comparison_of_notetaking_software][Comparison of Notetaking Software]] and
+[[http://en.wikipedia.org/wiki/Comparison_of_wiki_software][Comparison of Wiki Software]]
+
+* TODO HOMEWORK - shell and org-mode
+  DEADLINE: <2011-09-22 Thu>
+
+Homework 2 is available online:
+
+http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/hw/hw-2-shell-and-org-mode.html
+
+or 
+
+http://tinyurl.com/3fjdphv 
+
+* history
+
+#+BEGIN_SRC sh
+ssh schwehr@researchtools.ccom.nh
+irssi
+# /connect researchtools.ccom.nh
+# /join #unhresearchtools
+
+uname -a
+cat /etc/lsb-release 
+
+mkdir -p class/07
+mkdir -p hw/2
+cd hw/2
+wget http://tinyurl.com/hw-2-shell-and-org-mode-dotorg
+mv hw-2-shell-and-org-mode-dotorg hw-2-shell-and-org-mode.org
+history > ~/Dropbox/07-history.txt
+#+END_SRC

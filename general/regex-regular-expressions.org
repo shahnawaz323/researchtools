@@ -1,0 +1,10 @@
+#+STARTUP: showall
+
+* Introduction
+
+Need to do a section on regular expressions!
+
+- https://plus.google.com/118290692893413959188/posts/Nw8zxS7Tpbm
+  - re.sub('!','!_',str('!test!').strip(),1)
+  - re.sub(r'!(.*?!)', '!_\g<1>', 'str(!test!).strip()')
+  - http://stackoverflow.com/questions/7715820/python-re-sub-with-pair-or-characters

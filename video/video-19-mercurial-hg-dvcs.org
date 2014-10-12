@@ -1,0 +1,323 @@
+#+STARTUP: showall
+
+#+TITLE:     Video 19: Mercurial (hg) for revision control
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-11-27 Sun>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: version-control hg mercurial tracking
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+- email is not a proper backup system
+- local only systems like TimeMachine are good, but not enough
+- DropBox and the like with some copies of older files is not enough
+
+This will be just the basics of Mercurial for version control.
+
+
+- Why revision control
+- A quick history of revision control
+- Other revision control tools
+ - FOSS: Mercurial, arch, bzr, ada yada
+- Comercial
+ - MS Visual Source Safe, Purify/ClearCase/and...?
+
+
+** Free Open Source Software (FOSS) Revision Control Systems (RCS)
+
+- Local only
+  - [[http://www.gnu.org/s/rcs/][Revision Control System]] (RCS)
+- Central Server
+  - [[http://cvs.nongnu.org/][Concurent Versions System]] (CVS)
+  - Apache [[http://subversion.apache.org%20%20][Subversion]] (SVN)
+- Patch management systems
+  - [[http://savannah.nongnu.org/projects/quilt][Quilt]]
+- Distributed Version Control Systems (DVCS)
+  - [[http://www.gnu.org/software/gnu-arch/][arch]] 
+  - [[http://bazaar.canonical.com/][Bazaar]] (bzr)
+  - [[http://git-scm.com/][git]]
+  - [[http://mercurial.selenic.com/][mercurial]] (hg)
+
+** Why mercurial?
+
+- CCOM's default
+- Ability to work effectively while offline (e.g. at sea or in a plane)
+- Centralized server not required
+
+** See Also
+
+- http://hginit.com/
+- http://hgbook.red-bean.com/
+- http://www.ibm.com/developerworks/aix/library/au-mercurial/index.html
+- http://www.catb.org/esr/dvcs-migration-guide.html
+- http://stackoverflow.com/questions/43995/why-is-branching-and-merging-easier-in-mercurial-than-in-subversion
+- http://www.joelonsoftware.com/items/2010/03/17.html
+
+** Installing mercurial
+
+On Ubuntu Linux, do
+
+#+BEGIN_SRC sh
+sudo apt-get install mercurial
+#+END_SRC
+
+* Using someone else's repository
+
+As shown in class many times, you can =clone= someone else's
+repository and follow their code by getting updates with the =pull=
+command.  For example, clone my research tools course repository
+from https://bitbucket.org/schwehr/researchtools
+
+#+BEGIN_SRC sh
+cd ~/
+mkdir projects
+cd projects
+hg clone https://bitbucket.org/schwehr/researchtools
+#+END_SRC
+
+To do updates, do 
+
+#+BEGIN_SRC sh
+cd ~/projects/researchtools
+hg pull   # Bring the changes down to the local "repo"
+hg update # Change the working files to have the latest changes
+#+END_SRC
+
+* Examining a repository on BitBucket
+
+- https://bitbucket.org/schwehr/researchtools
+- Browse the source: https://bitbucket.org/schwehr/researchtools/src
+- Commit history: https://bitbucket.org/schwehr/researchtools/changesets
+
+Linking to a file gives a fixed link to the current most recent
+version.  As changes are added, this will not necessarily be the most 
+recent version.  Changing the version id to "tip" will give a link to
+latest and greatest.
+
+- specific version: https://bitbucket.org/schwehr/researchtools/src/1c02f28342e1/scripts/screen-capture.bash
+- most recent: https://bitbucket.org/schwehr/researchtools/src/tip/scripts/screen-capture.bash
+
+* Examining a repository locally
+
+#+BEGIN_SRC sh
+cd ~/projects/researchtools
+hg --help
+hg log | less
+hg log Makefile
+#+END_SRC
+
+* Creating a repository
+
+#+BEGIN_SRC sh
+cd ~/projects
+hg status # Warns about this not being a Mercurial repository
+hg init --help | less
+hg -v help init
+hg init rtstudent
+cd rtstudent
+hg status
+hg log
+touch README.txt
+hg status
+hg add README.txt
+hg commit -m "empty file to start the project"
+# Oops... it complains about no username
+hg help config | less
+man hgrc
+#+END_SRC
+
+Edit ~/.hgrc.  Replace "First" and "Last" with your name and
+"username@gmail.com" with your email address.
+
+#+BEGIN_EXAMPLE
+[ui]
+username = First Last <username@example.net>
+verbose = True
+editor = emacs
+#+END_EXAMPLE
+
+Now you can commit your changes:
+
+#+BEGIN_SRC sh
+hg commit -m "empty file to start the project"
+hg log README.txt
+#+END_SRC
+
+Now edit your README.txt file and add a few lines.
+
+#+BEGIN_SRC sh
+hg status
+hg diff
+hg commit -m "Intro lines with basic description"
+hg log
+#+END_SRC
+
+Now make another edit to the README.txt file.
+
+#+BEGIN_SRC sh
+hg status
+hg diff
+hg commit -m "sign the file"
+#+END_SRC
+
+* Looking at older versions and changes
+
+#+BEGIN_SRC sh
+cd ~/projects/rtstudent
+hg log
+hg cat --rev 0 README.txt
+hg cat README.txt
+hg cat --rev 1 README.txt
+hg cat --rev 2 README.txt
+hg diff -r 1:2 README.txt
+#+END_SRC
+
+* Dealing with deleted files
+
+If you accidentally or intentionally delete a file, it is easy to
+restore the file.  Or if you don't like your changes, you can 
+revert an edited file to get rid of the changes.
+
+#+BEGIN_SRC sh
+cd ~/projects/rtstudent
+rm README.txt
+hg status
+hg revert README.txt
+hg status
+#+END_SRC
+
+* What makes it a Mercurial tree?
+
+#+BEGIN_SRC sh
+cd ~/projects/rtstudent
+ls -la
+du .hg
+ls -l .hg
+#+END_SRC
+
+* Adding directories
+
+#+BEGIN_SRC sh
+cd ~/projects/rtstudent
+mkdir -p class/01
+mkdir -p class/02
+mkdir -p class/0{3,4,5,6}
+hg add class
+#+END_SRC
+
+* Using Mercurial inside of emacs
+
+There is one main command to know for using revision control systems
+in emacs (thanks to ESR) that adds a file to a version control system
+and commits changes.  If the directory is under mercurial control, it
+will add the file to version control.  If not, it will default to
+using the very old RCS software.
+
+#+BEGIN_EXAMPLE
+C-x v v
+#+END_EXAMPLE
+
+When you have to type in a change comment, you finish it with this key 
+command:
+
+#+BEGIN_EXAMPLE
+C-c C-c
+#+END_EXAMPLE
+
+| Command | Action                             |
+|---------+------------------------------------|
+| C-x v l | will show the history of a file.   |
+| C-x v = | shows changes against last version |
+| C-x v ~ | Show other versions                |
+
+* History
+
+#+BEGIN_SRC sh
+ 2125  clear
+ 2126  cd ~/
+ 2127  pwd
+ 2128  mkdir projects
+ 2129  cd projects/
+ 2130  ls -l
+ 2131  mv researchtools old-res
+ 2132  ls -l
+ 2133  hg clone https://bitbucket.org/schwehr/researchtools
+ 2134  ls
+ 2135  ls -l researchtools/
+ 2136  cd ~/projects/researchtools/
+ 2137  hg pull
+ 2138  hg update
+ 2139  ls
+ 2140  hg --help | less
+ 2141  hg log | less
+ 2142  ls -l
+ 2143  hg log Makefile | less
+ 2144  cd ~/projects/
+ 2145  hg status
+ 2146  hg init --help | less
+ 2147  hg init rtstudent
+ 2148  ls -l
+ 2149  cd rtstudent
+ 2150  hg status
+ 2151  hg log
+ 2152  touch README.txt
+ 2153  ls -l
+ 2154  hg status
+ 2155  hg add README.txt 
+ 2156  hg status
+ 2157  hg commit -m "empty file to start the project" 
+ 2158  hg help config | less
+ 2159  hg commit -m "empty file to start the project" 
+ 2160  hg log README.txt 
+ 2161  hg status
+ 2162  hg diff
+ 2163  hg commit -m "Intro lines with basic description"
+ 2164  hg log README.txt 
+ 2165  hg commit -m "sign the file"
+ 2166  hg status
+ 2167  cd ~/projects/rtstudent/
+ 2168  hg log
+ 2169  hg log | less
+ 2170  hg cat --rev 0 README.txt 
+ 2171  hg cat README.txt 
+ 2172  hg cat --rev 1 README.txt 
+ 2173  hg cat --rev 2 README.txt 
+ 2174  hg diff -r 1:2 README.txt 
+ 2175  ls -l
+ 2176  rm README.txt 
+ 2177  hg status
+ 2178  hg revert README.txt 
+ 2179  ls -l
+ 2180  less README.txt 
+ 2181  hg status
+ 2182  ls -la
+ 2183  du .hg
+ 2184  ls -l .hg
+ 2185  mkdir -p class/01
+ 2186  mkdir -p class/02
+ 2187  mkdir -p class/0{3,4,5,6}
+ 2188  du class/
+ 2189  ls -l class/
+ 2190  hg add class
+ 2191  hg status
+ 2192  ls -la
+ 2193  hg commit class
+ 2194  hg add class
+ 2195  ls -la
+ 2196  hg status
+ 2197  history
+#+END_SRC
+
+* Additional material not covered
+
+** Branching
+
+- http://stevelosh.com/blog/2009/08/a-guide-to-branching-in-mercurial/
+- http://mercurial.aragost.com/kick-start/en/tasks/
+- http://mercurial.selenic.com/wiki/Branch

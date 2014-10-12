@@ -1,0 +1,1941 @@
+#+BEGIN_COMMENT
+Local Variables:
+mode: org
+mode: flyspell
+mode: auto-fill
+End:
+#+END_COMMENT
+
+#+STARTUP: showall
+
+#+TITLE:     Chapter XXX: The power of the command line and bash - introduction
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu>
+#+DATE:      $Date: $
+#+DESCRIPTION: Marine Research Data Manipulation and Practices - Databases
+#+TEXT:      $Id: kurt-2010.org 13030 2010-01-14 13:33:15Z schwehr $
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:nil LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_HOME: http://schwehr.org
+
+* Introduction
+
+** Why learn about the command line?
+
+Today people are often uncomfortable working on the command line to
+get things done with computers or perhaps have never even used the
+command line.  Before windowing systems and mice were common, this was
+really the only way that people were able to tell a computer what to do.
+The advent of the [[http://en.wikipedia.org/wiki/Graphical_user_interface][Graphical User Interface]] (GUI) made some tasks
+easier, but it also made many tasks harder.  If you need to rename
+hundreds of files, using a mouse is going to take you a long time or
+you are going to have to find and learn a small utility program.  With
+the command line, using a "shell", you can write a quick command to
+rename large numbers of files easily.  In the process, you have gained
+something over the GUI method: an inherently easy way to document or
+repeat the task - the text command.  You can paste that command into a
+text file for documentation.  You can even make the file executable and
+run it as a "script" in the future.  The shell will remember commands
+that you have run before and let you rerun them the same way you did
+before or help you edit the commands to run slightly altered versions.
+
+** Why choose bash as your shell environment?
+
+There are many flavors of shells with the most common being tcsh, sh
+bash, zsh, Windows/DOS command, and Windows PowerShell. The Microsoft
+Windows shells are too limited and are not portable to other operating
+systems.  Unix systems started with C-shell (csh) and the Bourne shell
+(sh) in the 1970's and 1980's. Both of these shells were pretty
+limited in features. tcsh, bash, and zsh are improved versions of the
+old csh and sh shells. If you gain experience with csh and sh, you
+will find the syntax of sh to be more flexible and consistent than
+csh. sh provides basic functions that you can call that make writing
+scripts a bit easier.  Additionally, sh is used on Unix type systems
+to start up the system and manage server type processes ("daemons",
+not demons) that work in the background to make the computer more
+functional. You will likely want to create or modify a daemon as you
+get comfortable with the Linux environment to do tasks such as logging
+data from serial ports.  If you learn csh/tcsh, you will likely later
+have to learn at least some sh/bash.  You are better off to just learn
+sh/bash and avoid having to waste time learning two slightly different
+shells.
+
+The Bourne Again Shell (bash) has become the defacto standard rewrite
+of sh that provides a more usable experience than the limited sh. It
+gives us command completion (hit tab to finish a word if it can),
+histories and scrollback of previous command, the ability to control
+processes, etc.
+
+* Debugging stategies
+
+If you are typing in the commands you find here, you might
+occasionally make mistakes that prevent the command from giving you
+exactly what you see here for output.  Here are a couple things that
+can help you figure out what is going on.
+
+First, read aloud the command that you have typed and what is in the
+document. 
+
+Check for common characters to confuse.  It is easy to replace a "1"
+(number one) with an "l" ([[http://en.wikipedia.org/wiki/ICAO_spelling_alphabet][Lima]]) or vice versa if the fonts you have in your
+terminal and web browser make those two characters.  Make sure you are
+using the right quote character (e.g. ", ', or ` are all different).
+Another pair of characters that is sometime trouble are the 0 (zero)
+and O (Oscar).
+
+Note that the pipe character is a vertical bar: "|".  This character
+is sometimes two vertical dashes.  On US keyboards it is located
+between the delete and return/enter keys and is the shift of "\".
+
+* Beginning bash
+
+You will now need to access a terminal running bash.  There are
+several different ways to accomplish this that depend on your computer
+setup.  Depending on your situation, you may be able to choose one of
+these routes, your information technology (IT) team may provide you a
+solution, or your instructor might dictate a setup.
+
+** Linux
+
+This is the most native environment for bash and has the best support
+for all the tools that will be covered in this chapter.  I recommend
+[[http://www.ubuntu.com/][Ubuntu]] or [[http://fedoraproject.org][Fedora]] versions of Linux (when I have a choice, I use
+Ubuntu).
+
+You can also use [[http://wiki.osgeo.org/wiki/Live_GIS_Disc][OSGeo Live]] or [[http://sites.google.com/site/poseidonlinux/details][Poseidon Linux]] for Linux distributions
+that are focused on science.
+
+Just open a terminal and you should be set.
+
+TODO: Describe running a virtual machine with either OSGeo Line or
+Poseidon Linux.
+
+In case you need something slightly different, here a list of about
+600 different types of Linux: [[http://lwn.net/Distributions/][The LWN.net Linux Distribution List]]
+
+** Windows with cygwin
+
+If you must work just with a Microsoft Windows environment, Cygwin is
+likely the best option for getting a Unix/Linux like command line and
+all the extra programs.  Cygwin has some rough edges, but it
+definitely gets the job done.
+
+If you have not installed Cygwin, please do so now or ask your system
+administrator to install Cygwin.  You will need to install these
+packages:
+
+#+BEGIN_EXAMPLE
+Start menu -> Cygwin -> Cygwin Bash Shell
+#+END_EXAMPLE
+
+TODO: how to properly start X11?
+
+** Mac OSX
+
+This assumes Mac OSX 10.6.  If you are using 10.5 or older, please
+update your computer.
+
+First, you will need to make sure that you have installed XCode from
+the DVDs that came with your Apple computer.  Then also install X11
+from the main DVD.  There is a supplemental programs installer that
+when run will give you the option for X11. 
+
+You will now need to [[http://www.finkproject.org/download/srcdist.php][install fink]].  I apologize that a chapter
+teaching you how to use the command line requires using the command
+line before you learn the skills.  The fink team is not able to
+produce a binary installer for fink at this time.
+
+Open the /Applications/Utilities/Terminal application.  In that
+window, you will need to run these commands.
+
+#+BEGIN_SRC sh
+# This URL might not work beyond 
+curl -O http://vislab-ccom.unh.edu/~schwehr/software/fink/fink-0.29.14.tar.gz
+tar -xf fink-0.29.14.tar.gz
+cd fink-0.29.14
+./bootstrap  # This will ask you a few questions - use the defaults
+/sw/bin/pathsetup
+fink selfupdate-rsync
+fink configure
+# Press enter for all questions to accept the default except...
+# Answer that you would like to activate the "unstable" tree.
+#+END_SRC
+
+Now you can install software through fink.  The software will compile
+from source which can takes hours.  It is good to run these overnight
+or in the background while you are doing other things.  When it asks
+you questions about the installation, it is generally okay to accept
+the default by pressing enter.
+
+#+BEGIN_SRC sh
+fink install gnuplot
+#+END_SRC
+
+Eventually, you will want to install a lot more software via fink, but
+gnuplot is all that is required for this chapter.
+
+** Connecting to your a computer running Linux
+
+Hopefully, you are working directly on a laptop or desktop computer
+that is running linux and you are already logged into the computer.
+However, if you are on a Windows computer and can not install cygwin
+or a virtual machine, you must securely log into a "remote" computer
+running Linux.  You will use ssh to log in.  If you do not have an X11
+server on your Windows computer, then
+
+*** Never use telnet, rsh, or ftp if you must type a password
+
+It is important to start off thinking a little bit about computer
+security.  When you are sending data across the network, for example,
+by typing your password, people can placing "sniffing" programs on the
+network connection to grab any un-encrypted text (things sent in the
+clear) and thereby grab your password.  In the 1980's and early 1990's
+people used programs called telnet and rsh (remote shell) to connect
+to other computers.  To send files, people used ftp (file transfer
+protocol).  These programs did not encrypt anything.  As a
+result, many passwords were stollen and computers were broken into.
+
+Thankfully, today we have free programs with excellent encryption to
+protect the text going between you and remote Linux computers.  From
+the command line, there is OpenSSH (SSH means "Secure Shell") and from
+Windows there is PuTTY that provides a GUI that will use the Secure
+Shell protocol to create a protected connection to a remote.  To
+transfer files, we now have, as a part of OpenSSH, scp for secure copy
+and sftp for secure file transfer protocol.  These programs encrypt
+all the data that goes between your computer and the remote computer.
+
+** What to do if you get stuck?
+
+Before we get into the commands, we need to talk about what to do if
+things get stuck.  If you mistype a command and it just sits there
+doing nothing, you should first try holding down the "control" key and
+hitting the "C" key.  This sends a "break" or "kill" message to the
+program.  This is often written as "Ctrl-C" or "C-c".  Here is a
+command that hangs.  I then use Ctrl-C to get out of it.  The bash
+shell responds with a "^C" and gives a prompt again.
+
+#+BEGIN_EXAMPLE
+egrep some-string
+^C
+#+END_EXAMPLE
+
+If the command really gets stuck and does not respond to the Ctrl-C,
+you can close the terminal window and open a new window.  Later on,
+you will learn fancier techniques for controlling programs (also known
+as processes), but this will work for now.
+
+* Where am I and what is here?  (pwd and ls)
+
+First, you need some basic command to know where you on the computer's
+storage disks and what files are there.  The first command that you
+need to know tells you the working directory: *pwd* (print
+working directory).  This command writes where you are to the
+terminal.
+
+#+BEGIN_SRC sh
+pwd
+#+END_SRC
+
+You type *pwd*, press enter/return and it will tell you where you
+are.  
+
+#+BEGIN_EXAMPLE
+/home/kurt
+#+END_EXAMPLE
+
+The *path* that you see will be different than I show above, but
+hopefully, you get the idea.
+
+If you are accustomed to DOS or Microsoft windows, you have seen that
+directories (called "Folders" on Windows) are separated by the "\"
+character.  With bash, directories are separated byt the "/"
+character.  It is definitely annoying that Microsoft decided to change
+the character, but we are now stuck with this difference.
+
+We can create a new directory with the *mkdir* (make directory)
+command.
+
+#+BEGIN_SRC sh
+mkdir example
+#+END_SRC
+
+Let's now move into that directory with the *cd* (change
+directory) command.
+
+#+BEGIN_SRC sh
+cd example
+#+END_SRC
+
+We should take a look at what is in that directory with the *ls*
+(list directory contents) command.
+
+#+BEGIN_SRC sh
+ls
+#+END_SRC
+
+This will print out nothing.  There are no files in the directory.
+Now is a good time to learn about options to command line programs.
+You can ask the *ls* command to behave differently.  First let's
+try asking for *all* files with the "-a" option.  This means it
+will show any *hidden* files that have a name starting with a ".".
+These are refered to as "dot" files. 
+
+#+BEGIN_SRC sh
+ls -a
+# .  ..
+#+END_SRC
+
+You can pass multiple options to a command.  With the *ls*
+command, we might also want to see the "long" output.  This will give
+us a lot more information than we want right now, but it will show you
+the date and time that the files were last changed and who "ownes"
+each file.
+
+#+BEGIN_SRC sh
+ls -a -l # That is "l" as in Lima
+# total 8
+# drwxr-xr-x  2 kurt kurt 4096 2010-10-15 08:13 .
+# drwxr-xr-x 42 kurt kurt 4096 2010-10-15 08:13 ..
+#+END_SRC
+
+You can often combine these options into one short option.  The
+previous command can be written like this.
+
+#+BEGIN_SRC sh
+ls -la
+#+END_SRC
+
+When working with bash, each directory has two special dot files.  One
+"." refers to the current working directory.  This is only
+occasionally useful.  More interesting is the file with two dots.  The
+".." entry refers to the directory above this one.  Let's try moving
+to the parent directory.
+
+#+BEGIN_SRC sh
+pwd
+# /home/kurt/example
+
+cd ..
+
+pwd
+# /home/kurt
+#+END_SRC
+
+Now is a good time to show you a special change directory command.
+Giving a directory of "-" takes you to the previous directory that you
+were just in.  Give it a try.
+
+#+BEGIN_SRC sh
+pwd
+# /home/kurt
+
+cd -
+# /home/kurt/example
+
+pwd
+# /home/kurt/example
+#+END_SRC
+
+Finally, if you are somewhere on the disk and want to get back to your
+home directory, the "~" points back to your home directory.  We can
+use the *echo* command to see what the "~" means and then give it
+a try.  *echo* prints what it is given to the terminal.
+
+#+BEGIN_SRC sh
+echo ~
+# /home/kurt
+
+cd ~
+
+pwd
+# /home/kurt
+
+cd ~/example
+
+pwd
+# /home/kurt/example
+#+END_SRC
+
+bash keeps track of all the commands that you run.  This is helpful
+when you want to run a command that you typed before or want to save
+what you have done to a notes file.
+#+BEGIN_SRC sh
+history
+#+END_SRC
+
+The results:
+
+#+BEGIN_EXAMPLE
+ 1  cd example
+ 2  ls
+ 3  ls -a
+ 4  ls -a -l
+ 5  ls -la
+ 6  pwd
+ 7  cd ..
+ 8  pwd
+ 9  cd -
+ 10 pwd
+ 11 echo ~
+ 12 pwd
+ 13 cd ~/example
+ 14 pwd
+ 15 history
+#+END_EXAMPLE
+
+You can scroll back to previous commands, edit them if necessary, and
+rerun them.  Press the up and down arrows to scroll back through
+previous commands and left/right to edit a command.  We will get into
+more advanced editing of commands later.
+
+We can also ask the shell to tell us which disks are "mounted" (aka
+"attached" or "installed") on the computer with the *df* (disk
+free) command.  Here is an example from a Linux system.  Windows with
+cygwin will look pretty different.  You can also ask it to write out 
+the space on the device in a more "human-readable* format with the
+"-h" option.  Note, you will see "non-disk" things on a linux
+computer, that I have hidden from you here.  Please ignore these
+extraneous entries. 
+
+#+BEGIN_SRC sh
+df 
+# Filesystem           1K-blocks      Used Available Use% Mounted on
+# /dev/sda1            237351616  11421400 213873436   6% /
+
+df -h
+# Filesystem            Size  Used Avail Use% Mounted on
+# /dev/sda1             227G   11G  204G   6% /
+#+END_SRC
+
+Here is an example from a Linux computer with two 2 terabyte (TB) drives
+attached.
+#+BEGIN_SRC sh
+df -h
+# Filesystem            Size  Used Avail Use% Mounted on
+# /dev/mapper/vg0-root   37G   29G  6.1G  83% /
+# /dev/sdb1             1.8T   75G  1.7T   5% /data1
+# /dev/sdc1             1.8T   27G  1.7T   2% /data2
+#+END_SRC
+
+* Find help and documentation for commands
+
+Linux and cygwin have what are called "manual pages" or "man pages"
+that describe most commands.  Give it a try.
+
+#+BEGIN_SRC sh
+man df
+#+END_SRC
+
+The results:
+
+#+BEGIN_EXAMPLE
+DF(1)                              User Commands                             DF(1)
+
+NAME
+       df - report file system disk space usage
+
+SYNOPSIS
+       df [OPTION]... [FILE]...
+
+DESCRIPTION
+       This  manual  page documents the GNU version of df.  df displays the amount
+       of disk space available on the file system containing each file name  argu‐
+       ment.   If  no  file  name  is  given, the space available on all currently
+       mounted file systems is shown.   Disk  space  is  shown  in  1K  blocks  by
+       default,  unless  the environment variable POSIXLY_CORRECT is set, in which
+       case 512-byte blocks are used.
+...
+#+END_EXAMPLE
+
+When you are in the man page, you are interacting with a "pager"
+program (it's actually a program called *less*).  You have use the
+up and down arrow keys, the space bar, the *b* key, *<*, and
+*>* to move up and down the manual.  A very important key to know
+is *q* to quit out of the manual.
+
+You can also search for commands that might help you get a job done.
+This is known as "apropos".  For example "apropos editor" You can also
+ask for it with the "-k" option to man.
+
+#+BEGIN_SRC sh
+man -k sort
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+apt-sortpkgs (1)     - Utility to sort package index files
+bunzip2 (1)          - a block-sorting file compressor, v1.0.4
+bzip2 (1)            - a block-sorting file compressor, v1.0.4
+comm (1)             - compare two sorted files line by line
+FcFontSetSort (3)    - Add to a font set
+FcFontSetSortDestroy (3) - DEPRECATED destroy a font set
+FcFontSort (3)       - Return list of matching fonts
+sort (1)             - sort lines of text files
+sort-dctrl (1)       - sort Debian control files
+tsort (1)            - perform topological sort
+winop (3blt)         - Perform assorted window operations
+#+END_EXAMPLE
+
+On the right, after the dash ("-"), is a description of the command.
+On the left is the name of the command.  Entries with a "(1)" after
+the name are things you can access from the bash command line.
+Entries with a "(2)" or "(3)" are things that are accessible from a
+full programming language such as C, perl, python, etc.
+
+On cygwin, sometimes you will have to look for a man page with a
+slightly different name than you would expect.  For example, later on,
+we will use *awk*.  In this case, there is not a man page for awk,
+so you will need to know that there is a "GNU" version of awk
+installed.
+
+#+BEGIN_SRC sh
+man gawk
+#+END_SRC
+
+# * Managing Files
+
+# Dealing with large numbers of files can be really painful if you are
+# not ready for it.  In this section, we will go over how to survive the
+# process of managing huge numbers of files.  In your research, you will
+# likely have to submit your data to an archive facility.  An example in
+# the United States is that government funded multibeam sonar data is
+# submitted to NGDC.  You will want to make the process easier and be
+# able to verify that all files have made it into the archive.  The
+# archiving service may have to rename your files to meet a standard
+# that they have agreed upon, so you will have to learn how to properly
+# verify your files.
+
+* Specifying groups of files (pattern matching)
+
+It is time to jump into the example directory and start working with
+directory listings.
+
+#+BEGIN_SRC sh
+cd ~/example
+#+END_SRC
+
+Now we can use a command called *touch* to create some files.
+touch is designed to update the last modified time, but if the file
+does not exist, it will create an empty file.  Here we will create
+three files.  Many commands can work on many files at the same time.
+
+#+BEGIN_SRC sh
+touch 1 2 3
+
+ls -l
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+total 0
+-rw-r--r-- 1 kurt kurt 0 2010-10-15 09:39 1
+-rw-r--r-- 1 kurt kurt 0 2010-10-15 09:39 2
+-rw-r--r-- 1 kurt kurt 0 2010-10-15 09:39 3
+#+END_EXAMPLE
+
+We can now try removing the files with the "rm" (remove) command.
+
+#+BEGIN_SRC sh
+rm 1 2 3
+#+END_SRC
+
+Now, let's create a bunch of files to give ourselves something to work with.
+
+#+BEGIN_SRC sh
+touch 1 2 3 4 5 6 7 8 9 10 11 12 13 100
+#+END_SRC
+
+We can now start trying out some of the shells abilities to select
+groups of files.  This is know in shell terminology as pattern
+matching or "glob".  The complete bash manual on matching files is
+here.
+
+http://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching
+
+This is a bit of a big topic, but just jump in and over time you will
+pick up these tricks.  I will use them throughout the rest of the book
+and with repetition, you will start to get the hang of them.
+
+First, the "*" matches anything.  By itself, it will match all the
+files.  When combined with text, it will match anything with that
+text.  Here are some examples to give you the idea.  In bash, the "#"
+character starts a comment on a line.  I will use comments to explain
+each entry.
+
+#+BEGIN_SRC sh
+# all files in a directory (effectively the same a just a plain "ls")
+ls *
+# 1  10  100  11  12  13  2  3  4  5  6  7  8  9
+
+# anything starting with "1"
+ls 1*
+# 1  10  100  11  12  13
+
+# anything ending with a "0" - This is the number zero
+ls *0
+# 10  100
+
+# anything starting with 1 and ending with a 0
+ls 1*0
+# 10  100
+#+END_SRC
+
+The "?" is more specific than the "*".  The "?" matches any single
+character.  Give it a try.
+
+#+BEGIN_SRC sh
+# Match anything that has just 1 character
+ls ?
+# 1  2  3  4  5  6  7  8  9
+
+# anything with exactly two letters
+ls ??
+# 10  11  12  13
+
+# the letter "1" followed by any single character
+ls 1?
+# 10  11  12  13
+#+END_SRC
+
+You can get fancier by using square brackets for "[]" specifying sets
+of characters or ranges by putting a dash between two characters.
+It's best to just see some examples.
+
+#+BEGIN_SRC sh
+# List files that are one character of the number 2 through 5
+ls [2-5]
+# 2  3  4  5
+
+# List files that start with 1 and have a 1 or 3 following.
+ls 1[13]
+# 11  13
+
+# Combine the * and [] to ask for any file ending in 1 or 3
+ls *[13]
+# 1  11  13  3
+
+# Here we are using a special system directory for an example using a
+# range of alphabetical characters (x, y, & z).
+# Please do not worry about what these files are
+ls /sbin/*[x-z]
+# /sbin/fsck.minix  /sbin/getty  /sbin/iwspy  /sbin/mkfs.minix  /sbin/pam_tally
+#+END_SRC
+
+* Making commands work together (pipes)
+
+Bash command line programs are frequently designed to be chained
+together.  The output from one command can be passed to the next
+command, then on to the next command, and so forth.  Each one helps
+you change the text a little bit more.  The is one of the features
+that makes the command line super powerful.  If your commands get too
+crazy, you will want to switch to a more powerful language than bash
+such as python.
+
+#+BEGIN_SRC sh
+ls 
+# 1  10  100  11  12  13  2  3  4  5  6  7  8  9
+
+ls -1
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+1
+10
+100
+11
+12
+13
+2
+3
+4
+5
+6
+7
+8
+9
+#+END_EXAMPLE
+
+If we take a look at the list of these files, we will see that they
+are coming in an alphabetical type order, not a numeric order.  This
+is a good time to introduce the *sort* command to get things into
+a numerical order.  It's default is to sort the same way as ls, but we
+can ask it to sort the files numerically with the "-n" flag.
+
+The "|" below is a "*pipe*" that takes the output from *ls* that would
+have gone to the screen and passes the results to the next program in
+line.  You can chain as many programs together as you like.
+
+#+BEGIN_SRC sh
+# "pipe" the output of ls to sort
+ls | sort -n
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+100
+#+END_EXAMPLE
+
+Now it is time to get away from the above made up example and use some
+real earth science data.  Let's go grab the global catalog of
+boreholes that says where the three ocean drilling projects gone.  The
+command line utility *curl* lets you grab data from any ftp or
+http url.  The "-O" (capital letter O as in [[http://en.wikipedia.org/wiki/ICAO_spelling_alphabet][Oscar]]) tells curl to use
+the same filename as on the remote web server.
+
+#+BEGIN_SRC sh
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/holes.csv
+
+ls -l holes.csv
+# -rw-r--r-- 1 kurt staff  122677 2010-10-15 10:37 holes.csv
+#+END_SRC
+
+Before we start chaining together programs with pipes to work with
+this database, you should take a look at the file in a pager program.
+The current best program for this is called *less*.  The name is a
+little strange in that there was original a program called *more*
+that was okay, but was replaced by something better and the author
+felt that *less* is more.  There is also a *most* that claims
+to be better than less.  Yes, computer programmers make these kinds of
+jokes all the time.
+
+#+BEGIN_SRC sh
+less holes.csv
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+Expedition,Site,Hole,Program,Longitude,Latitude,Water Depth (m),Core Recovered (m)
+1,1,,DSDP,-92.1833,25.8583,2827,50
+1,2,,DSDP,-92.0587,23.0455,3572,13
+1,3,,DSDP,-92.0433,23.03,3747,47
+1,4,,DSDP,-73.792,24.478,5319,15
+1,4,A,DSDP,-73.792,24.478,5319,5.8
+1,5,,DSDP,-73.641,24.7265,5354,6.4
+1,5,A,DSDP,-73.641,24.7265,5354,1.8
+1,6,,DSDP,-67.6477,30.8398,5124,28
+1,6,A,DSDP,-67.6477,30.8398,5124
+1,7,,DSDP,-68.2967,30.134,5182,9.8
+1,7,A,DSDP,-68.2967,30.134,5182,4.6
+2,10,,DSDP,-52.2153,32.8622,4712,77
+2,11,,DSDP,-44.7467,29.943,3571,6.1
+2,11,A,DSDP,-44.7467,29.9433,3571,6.7
+:
+#+END_EXAMPLE
+
+Use the arrow keys, space bar, "b", "<", and ">" to move through the
+file and examine the contents.  When you are done, press "q".  You
+should now have sense of generally what is in the file.  We will now
+start digging into the contents of the file with command line programs.
+
+First, let's start by counting lines in the file with the *wc*
+(word count, not water closet) command.
+
+#+BEGIN_SRC sh
+wc holes.csv 
+#  3047   3053 125783 holes.csv
+#+END_SRC
+
+The first column on the left is the number of lines in the file,
+followed by the number of words, and finishing with the number of
+characters.  Notice that the number of characters is the same as the
+size of the file when you did a =ls=.
+
+Now we are going to use a program called *cut* to try to extract
+the "Program" column of the file.  You can see above in the comma
+separated value (CSV) formatted data that there is at least a "DSDP",
+which is the [[http://en.wikipedia.org/wiki/Deep_Sea_Drilling_Program][Deep Sea Drill Program]] that ran from 1968 to 1983.  Cut
+can work a couple different ways, but here we are going to ask it to
+work in "field mode" and tell it that commas (",") are the delimiter
+(or separator) between fields.  We do that with a "-d" and the comma
+character.  We then specify the number of the field we want.  Looking
+at the first line of the file, you can see that "Program" appears in
+the fourth position.
+
+#+BEGIN_SRC sh
+cut -d, -f4 holes.csv
+#+END_SRC
+
+When you run the above command, you will see 3047 lines whiz by on the
+screen.  That is not very helpful.  We only want to see how many
+unique entry types there are.  The =uniq= command removes
+duplicates in the lines of text that it receives.
+
+#+BEGIN_SRC sh
+cut -d, -f4 holes.csv | uniq
+# Program
+# DSDP
+# ODP
+# IODP
+#+END_SRC
+
+We can see now that there are 3 programs in there and that the CSV
+first line that tells us what the fields in there gets lumped in there
+with it.
+
+There is a search tool for text that can help us separate apart lines
+of text called *egrep*.  This command has a very powerful syntax
+for specifying patters called a "regular expression".  Don't worry
+about what a regular expression is right now, but I want to you at
+least see the term.  Right now we are going to use a very simple
+pattern that is just the exact text that we are searching for.  Here
+is searching for all the DSDP bore holes.  We will give egrep the
+string that we are looking for followed by the file we want to search.
+
+#+BEGIN_SRC sh
+egrep DSDP holes.csv
+#+END_SRC
+
+You will get a lot of lines scrolling by, but they only are the lines
+that contain the string DSDP.
+
+Next, let's see how many lines there are for each program.  We can
+pass the output of the grep to the word count program we used before.
+*wc* has an option to only print the number of lines, so we will
+add "-l" to the command line.  
+
+The data gets passed from one program to another by a *pipe*.
+What goes in one side, comes out the other.  A pipe is created by the
+vertical bar character: "|".  This might look like 2 vertical bars on
+some keyboards and in the United States is between the return and
+delete keys to the right of the "p" key.
+
+#+BEGIN_SRC sh
+egrep DSDP holes.csv | wc -l  # "l" as in Lima
+# 1116
+
+egrep ODP holes.csv | wc -l
+# 1930
+
+egrep IODP holes.csv | wc -l
+# 153
+#+END_SRC
+
+We have a slight problem here in that the counts are not adding up.
+The string ODP is found in both the ODP and IODP entries.  Here I am
+using the "binary calculator" to do a little math.  I suspect you can
+just do this by hand, but the example shows another pipe.
+
+#+BEGIN_SRC sh
+# The 3 results from the word counts above
+echo  "1116 + 1930 + 153" | bc
+# 3199
+
+# That adds up to more than the number of lines in the file
+wc -l holes.csv
+# 3047 holes.csv
+#+END_SRC
+
+We can use the "," that precedes the ODP to help avoid the IODP.
+
+#+BEGIN_SRC sh
+egrep 'ODP' holes.csv  | wc -l
+# 1930
+
+egrep ',ODP' holes.csv  | wc -l
+# 1777
+#+END_SRC
+
+There are lots of other ways that we could have solved this, but this
+way is pretty simple compared to some of the others.
+
+*  Writing results to a file and making a quick plot with Gnuplot
+
+It is always important to get a graphical view of spatial data.  Later
+in this chapter, we will start using Google Earth and in a future
+chapter, we will load our data into a Geographical Information System
+(GIS).  For now, we will draw the locations with [[http://www.gnuplot.info/][Gnuplot]].  This
+graphing program is not as flexible as matplotlib that we will cover
+in the programming in Python chapters, but it can definitely get the
+job done.
+
+Gnuplot works most easily with files that have space delimited rather
+than comma delimited text data values.  We need to pull out the
+longitude and latitude values from the holes.csv file.  We can start
+back with the cut command that we used before.  This time we will give
+it two different fields in the csv to print with "-f5-6".  This means
+we are asking for fields 5 through 6.  We could also have said
+"-f5,6", which would be fields 5 and 6.
+
+#+BEGIN_SRC sh
+cut -d, -f5-6 holes.csv
+#+END_SRC
+
+While working on preparing the commands, we can use the *head*
+command to print just the first few lines of the results.  This keeps
+our last command from scrolling off the screen.  We could always use
+the up arrow or *history* to see the previous command, but it is
+annoying to have several thousand lines that keep scrolling across the
+screen.
+
+#+BEGIN_SRC sh
+cut -d, -f5-6 holes.csv | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+Longitude,Latitude
+-92.1833,25.8583
+-92.0587,23.0455
+-92.0433,23.03
+-73.792,24.478
+-73.792,24.478
+-73.641,24.7265
+-73.641,24.7265
+-67.6477,30.8398
+-67.6477,30.8398
+#+END_EXAMPLE
+
+Gnuplot will get confused by the "Longitude,Latitude" strings on the
+first line.  We can get rid of this line with the egrep command.
+Normally, egrep returns the lines that match, be we can ask it to
+return all lines that do not match by giving it the inverse option of
+"-v".  We then give it string "Longitude" to match and it returns all
+lines that do not match.
+
+#+BEGIN_SRC sh
+egrep -v Longitude holes.csv | cut -d, -f5-6 | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+-92.1833,25.8583
+-92.0587,23.0455
+-92.0433,23.03
+-73.792,24.478
+-73.792,24.478
+-73.641,24.7265
+-73.641,24.7265
+-67.6477,30.8398
+-67.6477,30.8398
+-68.2967,30.134
+#+END_EXAMPLE
+
+The output above is pretty close to being usable, but we have a ","
+characters between each longitude and latitude.  We can use the
+*tr* (translate) command to exchange the "," for a " " (space).
+Make sure to place the *tr* after the *cut* command or cut
+will not be able to tell the comma separated fields apart.
+
+#+BEGIN_SRC sh
+egrep -v Longitude holes.csv | cut -d, -f5-6 | tr "," " " | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+-92.1833 25.8583
+-92.0587 23.0455
+-92.0433 23.03
+-73.792 24.478
+-73.792 24.478
+-73.641 24.7265
+-73.641 24.7265
+-67.6477 30.8398
+-67.6477 30.8398
+-68.2967 30.134
+#+END_EXAMPLE
+
+This is the format that we need for Gnuplot, but we need the longitude
+and latitude lines saved to a file.  The ">" (great than character)
+"redirects" the output from the last program in the chain of pipes to
+a file that is named after the ">".  Be warned that ">" will overwrite
+a previous file with the same name if one existed.  First, try a
+simpler example to see ">" in action.  Here, I also use the *cat*
+(concatenate and print files) command to dump the contents of the
+"listing" file to the terminal.  *cat* is much simpler than
+*less*, but if a file is very long or you are not sure how long
+the file is, you are better off using *less*.
+
+Note: ">>" appends to a file if it already exists or create a new file
+when needed, whereas ">" will clobber a file in one already exists.
+
+#+BEGIN_SRC sh
+ls > listing
+
+# You output may be different depending on the files you have in your
+# current directory
+cat listing
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+1
+2
+3
+holes.csv
+listing
+#+END_EXAMPLE
+
+Now that you know how to redirect the output to a file, send the
+results of the chain of pipes consisting of =egrep=, =cut=,
+and =tr= to the file "xy.dat".
+
+#+BEGIN_SRC sh
+egrep -v Longitude holes.csv | cut -d, -f5-6 | tr "," " " > xy.dat
+
+head xy.dat
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+-92.1833 25.8583
+-92.0587 23.0455
+-92.0433 23.03
+-73.792 24.478
+-73.792 24.478
+-73.641 24.7265
+-73.641 24.7265
+-67.6477 30.8398
+-67.6477 30.8398
+-68.2967 30.134
+#+END_EXAMPLE
+
+It is time to give *gnuplot* a quick try.  This does not give you much
+of a sense of what Gnuplot can do, but we can at least look at the
+locations of the cores.  
+
+Note for Cygwin users:  You must be running a shell through X11 to be
+able to plot with Gnuplot.  If you are on Linux or Mac, this should
+just work with a graph popping up on your screen.
+
+#+BEGIN_SRC sh
+gnuplot
+plot 'xy.dat'
+# There should be a plot of the data on your screen.
+quit
+#+END_SRC
+
+You can see examples of the wide range of plots that can be made with
+Gnuplot here:
+
+http://www.gnuplot.info/screenshots/
+
+* Inspecting the contents of binary files
+
+Often times, files are not ascii text, but non-human readable binary.
+Binary files are usually much smaller for the same data and are much
+faster to work with.  The drawback is that it is harder for shell
+programs to work with the data contained in a file.  Here, we will
+take a short look at what can sometimes be done without writing any
+software.  This is not as powerful as writing a program that can
+understand all the bytes in a file, but it is sometimes enough for a
+particular need.  We will start with a Simrad/Kongsberg EM122A
+multibeam sonar file from the USCGC Healy's checkout cruise.  (Data
+courtesy Dale Chayes / Jonathan Beaudoin).
+
+As this file is larger than the holes.csv file that we used before, I
+have compressed the file with the bzip2 command.  You will need to
+uncompress the file with bunzip2 before using it.
+
+#+BEGIN_SRC sh
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/0034_20100604_005123_Healy.all.bz2
+
+# The -h option for ls gives a "human readable" file size.
+ls -lh 0034_20100604_005123_Healy.all.bz2 
+# -rw-r--r--  1 kurt  staff   5.2M Oct 15 13:57 0034_20100604_005123_Healy.all.bz2
+
+bunzip2 0034_20100604_005123_Healy.all.bz2 
+
+ls -lh 0034_20100604_005123_Healy.all     
+# -rw-r--r--  1 kurt  staff    11M Oct 15 13:57 0034_20100604_005123_Healy.all
+#+END_SRC
+
+You should also get a couple other files to work with in this
+section.  The focus will be on multibeam, but it is good to have these
+for our next command.
+
+#+BEGIN_SRC sh
+curl -O http://mgds.ldeo.columbia.edu/healy/reports/aloftcon/2010/20101009-1801.jpeg
+curl -O http://schwehr.org/blog/attachments/2010-03/sons-2010-usgs-gnis.png
+curl -O http://schwehr.org/blog/attachments/2006-11/CoreSheetBlank-v2.pdf
+curl -O http://schwehr.org/blog/attachments/2010-03/weather-try1-georss.xml
+curl -O http://schwehr.org/blog/attachments/2005-10/cracks-wireout-angle-fit.gif
+curl -O http://vislab-ccom.unh.edu/~schwehr/TTN136B/Data/hysweep/TN136HS.308.bz2
+bunzip2 TN136HS.308.bz2
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/terrain.grd
+#+END_SRC
+
+Now we have a collection of different file types with some being
+binary and some being ascii.  You can now use the command line program
+called *file* to see if it can identify the type of each file.  It
+does not look too deep into the contents of each file, so it sometimes
+gets things wrong, but it is a start.  One important note:  It does
+not use the extension after the "." to figure out file type.  People
+can rename files to whatever they like and using the file extension
+can be trouble.
+
+#+BEGIN_SRC sh
+file *
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+0034_20100604_005123_Healy.all: data
+1:                              empty
+20101009-1801.jpeg:             JPEG image data, JFIF standard 1.01
+CoreSheetBlank-v2.pdf:          PDF document, version 1.4
+TN136HS.308:                    ASCII text
+cracks-wireout-angle-fit.gif:   GIF image data, version 87a, 640 x 480
+holes.csv:                      ASCII text
+listing:                        ASCII text
+sons-2010-usgs-gnis.png:        PNG image, 600 x 296, 8-bit/color RGB, non-interlaced
+terrain.grd:                    NetCDF Data Format data
+weather-try1-georss.xml:        XML document text
+xy.dat:                         ASCII text
+#+END_EXAMPLE
+
+You can see that the 0034\_20100604\_005123\_Healy.all EM122 multibeam file
+came up just as "data", while "TN136HS.308" Hydrosweep file came up as
+"ASCII text".  Let's compare these two files using less.  Press "y"
+when it asks you if you want to "See it anyway?".  Then press "q" to quit.
+Using *cat* with binary data will likely really mess up your
+terminal window.  The window might interpret some of the strange
+characters going by as special control characters.
+
+#+BEGIN_SRC sh
+less 0034_20100604_005123_Healy.all 
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+"0034_20100604_005123_Healy.all" may be a binary file.  See it anyway? 
+
+<F4>^B^@^@^BIz^@<FC><B5>2^A<B8>^N/^@"^@j^@^@^@WLZ=0.53,SMH=106,S1X=-18.40,S1Y=-1
+.91,S1Z=8.92,S1H=0.00,S1P=-0.02,S1R=-0.01,S1S=1,S2X=-7.66,S2Y=0.00,S2Z=9.02,S2H=
+0.02,S2P=-0.14,S2R=0.02,S2S=2,GO1=0.00,TSV=1.1.1 080617,RSV=1.1.1080425,BSV=2.2.
+3 090702,PSV=1.1.9 100410,DSV=3.1.1 060110,DDS=3.4.9 070328,P1M=1,P1T=1,P1Q=1,P1
+X=0.00,P1Y=0.00,P1Z=0.00,P1D=0.000,P1G=WGS84,P2M=0,P2T=0,P2Q=1,P2X=0.00,P2Y=0.00
+,P2Z=0.00,P2D=0.000,P2G=WGS84,P3M=0,P3T=0,P3Q=1,P3X=0.00,P3Y=0.00,P3Z=0.00,P3D=0
+.000,P3G=WGS84,P3S=1,MSX=0.00,MSY=0.00,MSZ=0.00,MRP=RP,MSD=0,MSR=-0.15,MSP=0.15,
+MSG=0.00,NSX=0.00,NSY=0.00,NSZ=0.00,NRP=RP,NSD=0,NSR=0.00,NSP=0.00,NSG=0.00,MAS=
+1.000,GCG=0.00,APS=0,AHS=2,ARO=2,AHE=2,CLS=1,CLO=0,VSN=1,VSE=2,VSI=192.168.10.54
+,VSM=255.255.255.0,VSU=5602,SID=HLY10TC_survey1_2010-06-03,^@^C<U+052D>4^@^@^@
+^BRz^@<FC><B5>2^A<B8>^N/^@^C?j^@^@^@^@^@<93>^N<C4>       p^Ww^@^P'
+^@^@^TP^@^F^@ N^CA<86>A N^@^@^Q^C`      4^@^@^@^BRz^@<FC><B5>2^A<B8>^N/^@^C?j^@
+^@^@^@^@<93>^N<C4>       p^Ww^@^P'
+^@^@^TP^@^F^@ N^CA<86>A N^@^@^Q^C`      4^@^@^@^BRz^@<FC><B5>2^A<B8>^N/^@^C?j^@
+^@^@^@^@<93>^N<C4>       p^Ww^@^P'
+#+END_EXAMPLE
+
+#+BEGIN_SRC sh
+less TN136HS.308
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+ERGNMESS
+-124.4324645 +41.058044420011104031924  19924168.3     +4.8     +1.4B -.60001  466.7 .10 1
+29 123 247 373 497 623 752 879101211431279141515551695184019902139230124612623279029523146331135133730394441604383   0
+29467146774688467646744690468047014696   0470947164717472247314730474947524753475247354759473147454769477447714765   0
+29 124 247 371 497 620 747 873 99811261260138815211652179419372076222323722527268928393006316633433554373239274139   0
+294647464546514665464146484643462746234632461746094593460046034587458345764574457645504545452145134541451545024497   0
+ERGNSLZT
+-124.4324645 +41.058044420011104031924168.3166.8     +4.8  +.89 -.6 +1.60061620.0010
+2906170618062106200622062706280634063806290649065506610668067706850696070607160727073607520762077907980817083508540000
+2906130614061606190618062106230624062806330636064006440651065906640672068006890700070707180727074007600772078708050867
+168.2168.2168.2168.3168.3168.3168.3168.3168.2168.2168.2
+ERGNAMPL
+-124.4324645 +41.058044420011104031924M229226229030103432401000045808094149992 +2.70884001
+22223333290510510470780220320480620420300800450680660680661191671411561401301511
+#+END_EXAMPLE
+
+The second file, TN136HS.308, while strange, is all numbers and
+readable codes.  This file contains just readable text.
+
+# NOTE: The _ and ^ characters are escaped to prevent sub and super script
+
+For 0034\_20100604\_005123\_Healy.all, notice the "\^B", "\^@", "\^A", and
+so forth.  These are *less* trying to give you a printable version
+of binary data.  However, it does look like there is some human
+readable [[http://en.wikipedia.org/wiki/ASCII][ASCII]] text in the file.  ASCII is now the most common
+character set for text on the command line.  You might be familar with
+Unicode, but we can ignore that for working with the shell.  There is 
+man page for ASCII.  Each byte in a file is a number that represents a
+character.  Not all code are characters that can be directly display.
+For example, number 7 will make a terminal put out a beep sound.
+
+#+BEGIN_EXAMPLE
+ASCII(7)             BSD Miscellaneous Information Manual             ASCII(7)
+
+NAME
+     ascii -- octal, hexadecimal and decimal ASCII character sets
+
+DESCRIPTION
+     The octal set:
+
+     000 nul  001 soh  002 stx  003 etx  004 eot  005 enq  006 ack  007 bel
+     010 bs   011 ht   012 nl   013 vt   014 np   015 cr   016 so   017 si
+     020 dle  021 dc1  022 dc2  023 dc3  024 dc4  025 nak  026 syn  027 etb
+     030 can  031 em   032 sub  033 esc  034 fs   035 gs   036 rs   037 us
+     040 sp   041  !   042  "   043  #   044  $   045  %   046  &   047  '
+     050  (   051  )   052  *   053  +   054  ,   055  -   056  .   057  /
+     060  0   061  1   062  2   063  3   064  4   065  5   066  6   067  7
+     070  8   071  9   072  :   073  ;   074  <   075  =   076  >   077  ?
+     100  @   101  A   102  B   103  C   104  D   105  E   106  F   107  G
+...
+#+END_EXAMPLE
+
+Thankfully, there is a program on the command line called
+*strings* that tries to find all the human readable text in a
+binary file.  It finds all sequences of printable characters that are
+4 characters or longer.  Give it a try.
+
+#+BEGIN_SRC sh
+strings 0034_20100604_005123_Healy.all | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+WLZ=0.53,SMH=106,S1X=-18.40,S1Y=-1.91,S1Z=8.92,S1H=0.00,S1P=-0.02,S1R=-0.01,S1S=
+1,S2X=-7.66,S2Y=0.00,S2Z=9.02,S2H=0.02,S2P=-0.14,S2R=0.02,S2S=2,GO1=0.00,TSV=1.1
+.1 080617,RSV=1.1.1 080425,BSV=2.2.3 090702,PSV=1.1.9 100410,DSV=3.1.1 060110,DD
+S=3.4.9 070328,P1M=1,P1T=1,P1Q=1,P1X=0.00,P1Y=0.00,P1Z=0.00,P1D=0.000,P1G=WGS84,
+P2M=0,P2T=0,P2Q=1,P2X=0.00,P2Y=0.00,P2Z=0.00,P2D=0.000,P2G=WGS84,P3M=0,P3T=0,P3Q
+=1,P3X=0.00,P3Y=0.00,P3Z=0.00,P3D=0.000,P3G=WGS84,P3S=1,MSX=0.00,MSY=0.00,MSZ=0.
+00,MRP=RP,MSD=0,MSR=-0.15,MSP=0.15,MSG=0.00,NSX=0.00,NSY=0.00,NSZ=0.00,NRP=RP,NS
+D=0,NSR=0.00,NSP=0.00,NSG=0.00,MAS=1.000,GCG=0.00,APS=0,AHS=2,ARO=2,AHE=2,CLS=1,
+CLO=0,VSN=1,VSE=2,VSI=192.168.10.54,VSM=255.255.255.0,VSU=5602,SID=HLY10TC_surve
+y1_2010-06-03,
+$GRPg
+[A:@3*X
+}Mpv@
+$GRPg
+(_A:@
+Aqv@
+GINGGA,005124.508,2615.32662,N,15924.40376,W,2,07,1.0,3.83,M,,,2,0260*07
+@5Fo
+&54<
+#+END_EXAMPLE
+
+Sometimes we get unlucky and *strings* finds data that by chance
+happens to have 4 or more characters in a row.  However, we are seeing
+important parts of the multibeam file that we can read without writing
+software that understands the binary format of Kongsberg multibeam
+files.  The string starting with "WLZ" is the setup parameters for the
+multibeam and the ship.  We will ignore that part.  The 3rd line from
+the bottom contains the string "GGA".  This is an ASCII [[http://en.wikipedia.org/wiki/NMEA_0183][NMEA 0183]]
+string from the ships Global Position System (GPS) containing the
+position of the ship at that time.  We can combine *strings* with
+an *egrep* to see some of the position information in the sonar
+log file.
+
+#+BEGIN_SRC sh
+strings 0034_20100604_005123_Healy.all | egrep GGA | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+GINGGA,005124.508,2615.32662,N,15924.40376,W,2,07,1.0,3.83,M,,,2,0260*07
+GINGGA,005125.508,2615.32959,N,15924.40381,W,2,07,1.0,3.77,M,,,3,0260*03
+GINGGA,005126.508,2615.33258,N,15924.40389,W,2,07,1.0,3.72,M,,,4,0260*01
+GINGGA,005127.508,2615.33558,N,15924.40399,W,2,07,1.0,3.69,M,,,1,0260*09
+GINGGA,005128.508,2615.33858,N,15924.40406,W,2,07,1.0,3.70,M,,,2,0260*01
+GINGGA,005129.508,2615.34155,N,15924.40406,W,2,07,1.0,3.78,M,,,4,0260*0D
+GINGGA,005130.508,2615.34448,N,15924.40400,W,2,07,1.0,3.76,M,,,5,0260*05
+GINGGA,005131.508,2615.34739,N,15924.40393,W,2,07,1.0,3.57,M,,,3,0260*09
+GINGGA,005132.508,2615.35032,N,15924.40390,W,2,07,1.0,3.36,M,,,1,0260*01
+GINGGA,005133.507,2615.35324,N,15924.40389,W,2,07,1.0,3.26,M,,,2,0260*01
+#+END_EXAMPLE
+ 
+Here is the format for a GGA message taken from the GPSD [[http://gpsd.berlios.de/NMEA.txt][AIVDM.txt]] 
+document that describes many of the NMEA strings in use.
+
+#+BEGIN_EXAMPLE
+$--GGA,hhmmss.ss,llll.ll,a,yyyyy.yy,a,x,xx,x.x,x.x,M,x.x,M,x.x,xxxx*hh
+#+END_EXAMPLE
+
+The "llll.ll" is the latidude and "yyyyy.yy" is the longitude.  We can
+start to split out the position messages using *cut*.  First we
+will use *egrep* and *cut* to put all the "GGA" string's
+position text in a file called "position.raw."  Note that I
+will use head with a number of lines to return to shorten up the
+examples.  Here I specify "-5" for only five lines.
+
+#+BEGIN_SRC sh
+strings 0034_20100604_005123_Healy.all | egrep GGA | cut -d, -f3-6 > position.raw
+
+head -5 position.raw
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+2615.32662,N,15924.40376,W
+2615.32959,N,15924.40381,W
+2615.33258,N,15924.40389,W
+2615.33558,N,15924.40399,W
+2615.33858,N,15924.40406,W
+#+END_EXAMPLE
+
+The next task is to try to convert the position strings into decimal
+degrees longitude and degrees.  What you see here is evidence that we
+are starting to push the shell into tasks where it is not well
+suited.  This kind of task is much easier in *python*.
+
+First, let's start by trying to reconstruct the decimal latitude.  The
+first 2 characters in each line of "position.raw" are the degrees of
+latitude.  We can pick them off using *cut* but instead of
+separating fields with the "-d," as we did before, we can tell cut
+exactly which range of characters we want to include by giving it
+"-c1-2".  The means to return from position 1 to position 2.  Because
+position 1 is the beginning of the line, we can leave it off and cut
+will take that as "start from the beginning of the line."  
+
+#+BEGIN_SRC sh
+cut -c-2 position.raw > lat.deg
+
+head -5 lat.deg
+# 26
+# 26
+# 26
+# 26
+# 26
+#+END_SRC
+
+We can now grab the decimal minutes that are in positions 3-10 and
+store them in a file called "lat.min".
+
+#+BEGIN_SRC sh
+cut -c3-10 position.raw > lat.min
+
+head -5 lat.min
+# 15.32662
+# 15.32959
+# 15.33258
+# 15.33558
+# 15.33858
+#+END_SRC
+
+Now we have two files: "lat.deg" and "lat.min".  We need to combine
+these two files into a singe file with multiple columns so that we can
+do some math in a moment.  The *paste* command takes a line
+from each file given and combines them all together, but separates them
+with a tab character.
+
+#+BEGIN_SRC sh
+paste lat.deg lat.min | head -5
+
+# 26	15.32662
+# 26	15.32959
+# 26	15.33258
+# 26	15.33558
+# 26	15.33858
+#+END_SRC
+
+We can now use a text processing lanuage called *awk* to do some
+math with these columns.  We must divide the second column by 60 to
+convert from minutes to degrees and add it together with the first
+column.  *awk* refers to each column with a "$" followed by a number.
+
+Let's start with a very simple awk line.  We can use *echo* to
+create one line to test with and then we want to 
+
+#+BEGIN_SRC sh
+echo alice bob
+alice bob
+
+echo alice bob | awk '{print $2,$1}'
+bob alice
+#+END_SRC
+
+Now try to do the actual command.
+
+#+BEGIN_SRC sh
+head -5 lat.deg
+# 26
+# 26
+# 26
+# 26
+# 26
+
+head -5 lat.min
+# 2554
+# 2555
+# 2555
+# 2556
+# 2556
+
+paste lat.deg lat.min | awk '{print $1 + $2/60.}' | head -5
+# 26.2554
+# 26.2555
+# 26.2555
+# 26.2556
+# 26.2556
+#+END_SRC
+
+We can now save that result to a "lat" file.
+
+#+BEGIN_SRC sh
+paste lat.deg lat.min | awk '{print $1 + $2/60.}' > lat
+#+END_SRC
+
+We can do the same to the longitude.  One twist with this dataset is
+that we are in the western hemisphere and need to change the sign on
+the longitude.  We will force the longitude to be negative.
+
+#+BEGIN_SRC sh
+cut -c14-16 position.raw > lon.deg
+cut -c17-24 position.raw > lon.min
+paste lon.deg lon.min | awk '{print -($1 + $2/60.) }' > lon
+
+head -5 lon
+# -159.407
+# -159.407
+# -159.407
+# -159.407
+# -159.407
+#+END_SRC
+
+We now need to combine the longitude and latitude numbers and plot
+them with Gnuplot.  The results of the plot are not great as awk is
+not great at handling floating point numbers - giving us rounding
+errors and the ship was heading north for this time period.  Small
+changes in the latitude are not shown, giving a stair-step graph.  I
+am going to use *printf* instead of print inside of the awk to ask
+for more precision.  Don't worry about the details, but it is asking
+awk to print 5 decimal places.  While *awk* is a complete
+programming language, we will cover how to do this kind of thing in
+python and encourage you to avoid *awk* if at all possible.
+
+#+BEGIN_SRC sh
+# This new awk line works... "trust me"
+paste lat.deg lat.min | awk '{ printf "%.5f\n",   $1 + $2/60.  }' > lat
+paste lon.deg lon.min | awk '{ printf "%.5f\n", -($1 + $2/60.) }' > lon
+
+head -5 lon
+# -159.40673
+# -159.40673
+# -159.40673
+# -159.40673
+# -159.40673
+
+paste lon lat > position.xy
+
+head -5 position.xy
+# -159.40673	26.25544
+# -159.40673	26.25549
+# -159.40673	26.25554
+# -159.40673	26.25559
+# -159.40673	26.25564
+
+gnuplot
+plot 'position.xy'
+quit
+#+END_SRC
+
+* A first use of Google Earth!
+
+Now for the fun part!  It's time to get this ship track on a globe.  I
+will not example the Google Earth KML format beyond telling you that
+if you put some text in front of your points, the right text after
+your points and have one point per line with "x,y", Google Earth will
+draw your ship track on the map.
+
+We now need to convert the tabs in the "position.xy" file to commas
+and glue everything together.  We can again use the *tr* command,
+but there are two twists.  First, the *tr* command does not take a
+file name.  It only reads from what you type into it or from another
+program via a pipe.  We will use *cat* to send the contents of the
+"position.xy" file into *tr*.  The next hurdle is how to specify
+the tab character.  The trick is to use single quotes around a special
+character combination.  The '\t' means one tab character.
+
+#+BEGIN_SRC sh
+cat position.xy | tr '\t' ',' > position.csv
+head -5 position.csv
+# -159.40673,26.25544
+# -159.40673,26.25549
+# -159.40673,26.25554
+# -159.40673,26.25559
+# -159.40673,26.25564
+#+END_SRC
+
+Get the header and footer text for the KML line format:
+
+#+BEGIN_SRC sh
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/google-earth-line-start.kml
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/google-earth-line-end.kml
+#+END_SRC
+
+You can use cat to glue multiple files together end-to-end.
+
+#+BEGIN_SRC sh
+cat google-earth-line-start.kml position.csv google-earth-line-end.kml > position.kml
+#+END_SRC
+
+You might want to take a look at the "position.kml" file that you
+created using the *less* program.
+
+Now open the "position.kml" file in Google Earth.  If you are working
+on a Macintosh computer, you can use this command to open the file in
+Google Earth.
+
+#+BEGIN_SRC sh
+open position.kml
+#+END_SRC
+
+* Variables and looping
+
+FIX: write this section using a number of images from http://mgds.ldeo.columbia.edu/healy/reports/aloftcon/
+
+This section moves pretty fast and introduces a number of concepts
+that are somewhat complicated.   Do not expect to get them right
+away.  Give it a couple of reads and watch out for small typos in what
+you do.
+
+Like many other programming languages, bash has variables.  When you
+have a bash shell open, it already has a good number of variables that
+are already set.  Let's jump in and see some of the variables.  The
+*printenv* (print environment) command will show you all the
+variables.  The "environment" is the current workspace of variables
+for bash.
+
+#+BEGIN_SRC sh
+printenv
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+MANPATH=/usr/share/man:/sw32/share/man:/usr/local/share/man
+TERM=xterm
+SHELL=/bin/bash
+USER=kurt
+PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/home/kurt/bin
+LC_COLLATE=en_US.utf-8
+PWD=/home/kurt/examples
+EDITOR=emacs
+LANG=en_US.utf-8
+PS1=\n# 
+PS3=Pick a number:     
+PS2=   
+SHLVL=1
+HOME=/home/kurt
+#+END_EXAMPLE
+
+The convention is to name all settings variables to be all CAPITALS.
+Here, for example, *PATH* gives the locations that bash will
+search for programs that you are trying to run.  By setting the
+*EDITOR* variable to "emacs", any time a program wants to know which
+editor I prefer to use, it will go and run *emacs*.
+
+You can set variables with a special syntax two different ways.  
+
+#+BEGIN_SRC sh
+EDITOR=emacs
+export EDITOR=emacs
+#+END_SRC
+
+There are some key tricks to understanding variables in bash.  First,
+you must have no spaces before or after the equal sign.  Bash is very
+picky about this.  The other part is where your variable is available.
+Without the *export*, the variable is not available to other programs
+that are called from the command line.  For us, right now, the export
+is not important, but later on for things like the PATH variable that
+control where to look for programs, *export* is essential.
+
+To demonstrate variables, we will use the *echo* command which
+will just print out to the screen whatever we pass to it.  Give it a
+try.  The "$" character starts the use of a variable.
+
+#+BEGIN_SRC sh
+# Set a variable
+testing=123
+
+# Print the variable
+echo $testing
+# 123
+
+# Start a new bash shell inside the original one
+bash
+
+# See that "testing" is not set.  If there is no variable, bash gives
+# an empty string
+echo $testing
+
+# quit back to the main bash shell
+exit
+
+# Set testing to have a value that will be inherited
+export testing="hello world"
+
+bash
+
+# Now see that the exported variable went through
+echo $testing
+# hello world
+#+END_SRC
+
+That's great, but how can we use variables?  One way is to count
+through a range.  We can use this to download one file for every hour
+of the day.  The US Coast Guard Cutter Healy uploads a picture every
+hour from the camera mounted over the bridge.  The files look
+typically like this.  Here I am using curl to pull down one image.
+
+#+BEGIN_SRC sh
+curl -O http://mgds.ldeo.columbia.edu/healy/reports/aloftcon/2010/20101009-1801.jpeg
+#+END_SRC
+
+We now need to figure out how to count from 0 to 23 to get the hours
+of the day.  The *let* command does simple math for variables.
+
+#+BEGIN_SRC sh
+hour=0
+echo $hour
+# 0
+
+let hour=$hour+1
+echo $hour
+# 1
+#+END_SRC
+
+We can now combine that ability to do simple math with a *while* loop.
+The while loop keeps
+
+#+BEGIN_SRC sh
+hour=1
+while [[ $hour -le 23 ]]; do
+  echo $hour
+  let hour=$hour+1
+done 
+# 1
+# 2
+# 3
+# 4
+# 5
+# ... Trimmed to be a more reasonable length
+# 22
+# 23
+#+END_SRC
+
+One problem with the above is that we want to have the numbers
+written in in ## format.  For example "1" should bewritten as "01".
+The *printf* command can help us format a number.  The
+*printf* command is pretty complicated, but here the "%" and "d"
+says to present a decimal number and the "02" asks for 2 digit places
+padded on the left with 0's to make it 2 characters wide.  The "\n"
+asks for a new line such that we can read the output easier.
+
+#+BEGIN_SRC sh
+hour=2
+
+printf "%02d\n" $hour
+# 02
+#+END_SRC
+
+How can we get that 02 into our echo command?  We can use the "`"
+(back quote) character to put the text from some command that was run
+into another command's arguments.
+
+#+BEGIN_SRC sh
+hour=5
+
+echo Here it is with 2 digits: `printf "%02d" $hour`
+# Here it is with 2 digits: 05
+#+END_SRC
+
+We can now combine the printf into the while loop.
+
+#+BEGIN_SRC sh
+hour=1
+while [[ $hour -le 23 ]]; do
+  echo `printf "%02d" $hour`
+  let hour=$hour+1
+done 
+# 00
+# 01
+# 02
+# ..
+# 22
+# 23
+#+END_SRC
+
+Now we can replace the URL for the image and place in the hours for
+the day.
+
+#+BEGIN_SRC sh
+hour=0
+while [[ $hour -le 23 ]]; do
+  curl -O http://mgds.ldeo.columbia.edu/healy/reports/aloftcon/2010/20101009-`printf "%02d" $hour`01.jpeg
+  let hour=$hour+1
+done 
+#+END_SRC
+
+We now have 24 images in the directory.
+
+#+BEGIN_SRC sh
+ls -1 2010*
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+20101009-0001.jpeg
+20101009-0101.jpeg
+20101009-0201.jpeg
+20101009-0301.jpeg
+...
+20101009-2201.jpeg
+20101009-2301.jpeg
+#+END_EXAMPLE
+
+*Windows*: FIX: how do we open images on windows?
+
+*Linux* or *Mac*: You can use the ImageMagick *display* command:
+
+#+BEGIN_SRC sh
+display 20101009-1801.jpeg
+#+END_SRC
+
+*Mac*, you can easily view an image from the command line with
+the open command (this works for many other types of files too):
+
+#+BEGIN_SRC sh
+open 20101009-1801.jpeg
+# An image from the Healy at sea leaving Dutch Harbor, AK
+
+open .
+# The directory of images should appear in the Finder
+#+END_SRC
+
+We now have a slight issue.  Some programs do not recognize [[http://en.wikipedia.org/wiki/JPEG][JPEG]]
+compressed images unless the file extension at the end is ".jpg", but
+the images here have ".jpeg".  We can use bash to quickly rename all
+the variables in the directory.  This might seem like no big deal with
+a GUI, but if you have to rename hundreds of images, it will take you
+quite a while.  Once you get comfortable with the bash syntax, you
+will be renaming files with ease.
+
+First we need to figure out how to strip off the ".jpeg" from the file
+name.  If we have a file name in a "file" variable, we can use the
+special *%%* syntax to remove the end of a string.  Up until now, we have just
+used the "*$*" character to start variables: 
+
+#+BEGIN_SRC sh
+file=20101009-1801.jpeg
+
+echo $file
+# 20101009-1801.jpeg
+#+END_SRC
+
+However, bash allows variables to be inside of "curly braces": "*${}*"
+
+#+BEGIN_SRC sh
+echo ${file}
+# 20101009-1801.jpeg
+#+END_SRC
+
+That's more verbose and not interesting by itself, but with the *%%*
+to remove the end of a string it becomes much more powerful.
+
+#+BEGIN_SRC sh
+echo ${file%%.jpeg}
+# 20101009-1801
+
+# If there is no match, the %% and string just does nothing.
+echo ${file%%.junk}
+# 20101009-1801.jpeg
+#+END_SRC
+
+We can now construct the example mv command.  We need to append the
+new extension on the base name.  By putting an *echo* in
+front of the command, nothing will actually happen.  In bash, we use
+the *mv* (move) command to do renames.  
+
+#+BEGIN_SRC sh
+echo mv $file ${file%%.jpeg}.jpg
+
+# The output:
+mv 20101009-1801.jpeg 20101009-1801.jpg
+#+END_SRC
+
+The printed *mv* command looks like it is doing the correct thing.
+The "file" after the *for* is the variable that will contain each
+instance of what is contained in the list after the *in*.
+
+#+BEGIN_SRC sh
+for file in 1 2 three alice bob; do
+  echo $file
+done
+#+END_SRC
+
+Prints:
+#+BEGIN_EXAMPLE
+1
+2
+three
+alice
+bob
+#+END_EXAMPLE
+
+We now need to construct the for loop around it to handle all of the
+files.  With an *ls* command we can list the files: *ls \*.jpeg*.  We
+can put that list before the semi-colon.  This will print all the jpeg
+files in the current directory.  While it is more complicated than the
+*ls* it gets us towards our mass renaming of files.
+
+#+BEGIN_SRC sh
+for file in *.jpeg; do
+    echo $file
+done
+#+END_SRC
+
+Now we can put in the *mv* command after the *echo*.
+
+#+BEGIN_SRC sh
+for file in *.jpeg; do
+    echo mv $file ${file%%.jpeg}.jpg
+done
+#+END_SRC
+The output:
+#+BEGIN_EXAMPLE
+mv 20101009-0001.jpeg 20101009-0001.jpg
+mv 20101009-0101.jpeg 20101009-0101.jpg
+mv 20101009-0201.jpeg 20101009-0201.jpg
+mv 20101009-0301.jpeg 20101009-0301.jpg
+...
+#+END_EXAMPLE
+
+Remove the *echo* and you have the command that will do the actual work.
+
+#+BEGIN_SRC sh
+# How many of each do we have?
+ls *.jpeg | wc -l
+#      24
+
+ls *.jpg | wc -l
+ls: *.jpg: No such file or directory
+#       0
+
+# Silently rename all the jpeg files to jpg
+for file in *.jpeg; do
+    mv $file ${file%%.jpeg}.jpg
+done
+
+# Note that we now have no jpeg files and they are now all jpg
+ls *.jpeg | wc -l
+# ls: *.jpeg: No such file or directory
+#       0
+
+ls *.jpg | wc -l
+#      24
+#+END_SRC
+
+* Checksums
+
+Renaming of files does not change the contents of the file.  Smart
+software will look into files to verify that a file is indeed the type
+that it wants, but unfortunetely not all software is smart.  You may
+have need to determining if two files are the same.  If both files are
+on your computer, there are two command that can tell you if files are
+the same or different.  *diff* (difference) is meant for text and
+*cmp* (compare) is designed for binary files, but both can work with
+either to some extent.
+
+#+BEGIN_SRC sh
+cp 20101009-1401.jpg 20101009-1401.jpeg
+
+# No output when the files are the same
+cmp 20101009-1401.jpg 20101009-1401.jpeg
+
+cmp 20101009-1401.jpg 20101009-1301.jpg
+# 20101009-1401.jpg 20101009-1301.jpg differ: char 205, line 1
+
+# No output when the files are the same
+diff 20101009-1401.jpg 20101009-1401.jpeg
+
+diff 20101009-1401.jpg 20101009-1301.jpg
+# Binary files 20101009-1401.jpg and 20101009-1301.jpg differ
+#+END_SRC
+
+That's helpful, but often you need to compare a file on your computer
+with a file on a server.  In that case, if the provider of the data
+also puts a *checksum* up, you are in business.  With a small number,
+you can check to see if the file you have matches that on the remote
+server.  A checksum is a calculation based on the contents of the
+file.  It does *not* depend on the file name!  There are many types of
+checksum and all are not created equal.  Here are typical ones that
+you may run into.  
+
+The weaker checksums are calculated in a way such that it is easier
+for two different files to have the same checksum.  Random corruption
+of the file does have a reasonable chance to give the same checksum.
+
+- XOR (Exclusive OR) of bits.  This is the weakest.
+- Byte sum.  Better than XOR, but still very risky.
+
+Cryptographically designed algorithms work hard to make sure that
+small changes or corruptions in a file have a very tiny chance of
+producing the same checksum.
+
+- CRC32.  This was the standard for checksums in the 1980's and 90's.
+- MD5.  This was the standard for using in 2000's and is still in
+  common use.
+- SHA.  The SHA algorithm is stronger than md5 and is currently the
+  gold standard for common use.  There are 5 different levels of SHA
+  (1, 224, 256, 384, 512) in common use.  The higher the number, the
+  stronger the check, but the more time to calculate and the string it
+  returns starts to get very long.
+
+We are going to ignore the weak checksums and try out calculating each
+of the checksum types for a file.
+
+#+BEGIN_SRC sh
+crc32 20101009-1401.jpg
+# 9d1feaed
+
+md5 20101009-1401.jpg
+# MD5 (20101009-1401.jpg) = dd1452aa1074ee19f50e13139d0cec84
+
+# There are two different commands that calculate the MD5 sum.
+md5sum 20101009-1401.jpg
+# dd1452aa1074ee19f50e13139d0cec84  20101009-1401.jpg
+
+shasum 20101009-1401.jpg
+# 63f3e12bfd9527da36759748a3ae4148a4be397e  20101009-1401.jpg
+
+shasum -a 1 20101009-1401.jpg
+# 63f3e12bfd9527da36759748a3ae4148a4be397e  20101009-1401.jpg
+
+shasum -a 224 20101009-1401.jpg
+# fc93690fab4b18fb485122f43d82b5d88b0791f3aa758b38063ef059  20101009-1401.jpg
+
+shasum -a 256 20101009-1401.jpg
+# 118ae7bf4761231930efccd958ab84b809180549f90ddb0f5178becb08d9d352  20101009-1401.jpg
+
+shasum -a 384 20101009-1401.jpg
+# 73b4921412da4f8c756bf01dfd07097a648d751b53cd57d6ad8073389f3da3695c30cb95b10fc1fff97128c3cf5b1ee6  20101009-1401.jpg
+
+shasum -a 512 20101009-1401.jpg
+# 7a0a81fbba64f6b0d287a2fdad6c00ea6ade2498356564e1f23984887f0ce4577461c5a48691c5a261a278c0635ffec3fe32da1e6df121121d647f626e735d3e  20101009-1401.jpg
+#+END_SRC
+
+The key thing to note above is that the stronger the checksum, the
+more characters it has.  Using a SHA of 512 is really not fun for a
+human.  But imagine comparing two files that are more than 1G.  It
+might take a long time to transfer the file, but the checksum is a
+quick check.
+
+
+* Jobs control - running things in the background
+
+FIX: write about &, bg, fg, jobs, kill, ps
+
+* Making a bash script file that you can run
+
+FIX: write
+
+
+- What types of checksums are there and how are they different?
+  cryptographic hash (md5/sha), bytewise checksum, xor. 
+- Why is md5 the current standard for file checksums?
+
+* What did we cover in this chapter?
+
+* Additional resources
+
+- http://www.gnu.org/software/bash/manual/
+- http://tldp.org/LDP/abs/html/
+- http://www.digilife.be/quickreferences/QRC/Bash%20Quick%20Reference.pdf
+
+# * Acknowledgments
+#
+# Thanks to Tami Beduhn, Marcus Cole, and many others for feedback on
+# this chapter.

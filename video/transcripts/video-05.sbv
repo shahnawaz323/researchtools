@@ -1,0 +1,1207 @@
+0:00:03.050,0:00:07.580
+hello my name is courage where and
+welcome to video five for research tools
+
+0:00:07.580,0:00:10.840
+at the university of new hampshire
+center for coastal ocean mapping
+
+0:00:10.840,0:00:12.469
+trying graphic center
+
+0:00:12.469,0:00:16.890
+in his video i will be showing you a
+tutorial of using the yugo into bash
+
+0:00:16.890,0:00:19.099
+terminal
+
+0:00:19.099,0:00:23.029
+this is an environment that is all tax
+base where we can type
+
+0:00:23.029,0:00:24.840
+who want to use the mouse at all
+
+0:00:24.840,0:00:27.450
+i'm going to go through and run commands
+that will let us
+
+0:00:27.450,0:00:30.140
+creative all sorts of tasks handle them
+
+0:00:30.140,0:00:34.410
+and then figure out how we can put them
+into a script at the end
+
+0:00:34.410,0:00:37.409
+now michigan basics of moving around to
+the terminal
+
+0:00:37.409,0:00:38.420
+and uh... it
+
+0:00:38.420,0:00:43.060
+first commanding the show you is l_s_
+four list useless files you can also
+
+0:00:43.060,0:00:44.519
+give hip-hop shins
+
+0:00:44.519,0:00:47.600
+if you do along listing with a dash home
+
+0:00:47.600,0:00:49.449
+and i will tell you more information
+
+0:00:49.449,0:00:50.600
+in this case
+
+0:00:50.600,0:00:53.920
+you can see anti for directory
+
+0:00:53.920,0:00:56.680
+car w x for rewrite execute
+
+0:00:56.680,0:00:58.540
+greed and execute
+
+0:00:58.540,0:01:01.570
+so you can take a look at each of your
+things here the color on the right will
+
+0:01:01.570,0:01:02.320
+help
+
+0:01:02.320,0:01:03.890
+give you can store ads
+
+0:01:03.890,0:01:06.869
+this high profile so we have to retreat
+here at bloom
+
+0:01:06.869,0:01:07.800
+and
+
+0:01:07.800,0:01:11.980
+and archive of multiple files here and
+ready
+
+0:01:11.980,0:01:14.170
+we can also ask the system
+
+0:01:14.170,0:01:17.860
+where are we pick a bureaucrat working
+directory
+
+0:01:17.860,0:01:21.600
+and that tells us they were in home
+research tools and in this case freezing
+
+0:01:21.600,0:01:24.550
+account called research tools
+
+0:01:24.550,0:01:28.830
+you can do a cd so we can cv into
+homework
+
+0:01:28.830,0:01:31.570
+and you can write how us with change
+directory
+
+0:01:31.570,0:01:34.860
+into another draft folder or directory
+below that
+
+0:01:34.860,0:01:38.660
+and then you can say pvd on our talents
+that were
+
+0:01:38.660,0:01:40.380
+down below and
+
+0:01:40.380,0:01:41.640
+uh... the homework retreat
+
+0:01:41.640,0:01:44.259
+there's two ways to get back we can do
+cd
+
+0:01:44.259,0:01:48.490
+dot dot which is the parent directory
+and that temperatures back here research
+
+0:01:48.490,0:01:49.659
+tools
+
+0:01:49.659,0:01:52.040
+or we can if we go back in the homework
+
+0:01:52.040,0:01:53.879
+and reviewed cd filled up
+
+0:01:53.879,0:01:57.620
+have always take your
+
+0:01:57.620,0:02:00.399
+right let's go ahead and create a quick
+file so we can type
+
+0:02:00.399,0:02:04.079
+touch this is going to create an empty
+file or if the file are just two oldest
+
+0:02:04.079,0:02:05.530
+update i'm on it
+
+0:02:05.530,0:02:09.919
+golden touch one two and three now if we
+take a look we've created
+
+0:02:09.919,0:02:14.699
+three files called one two and three
+this calmer here it is the file size and
+
+0:02:14.699,0:02:16.180
+you can see that's
+
+0:02:16.180,0:02:18.959
+zero bytes
+
+0:02:18.959,0:02:23.260
+i'm free point to create retreat we
+could say make it d i heart for make
+
+0:02:23.260,0:02:24.869
+directory
+
+0:02:24.869,0:02:27.039
+and we'll see past
+
+0:02:27.039,0:02:29.199
+directory
+
+0:02:29.199,0:02:31.059
+enough to do tell us that show
+
+0:02:31.059,0:02:32.499
+we know at the bottom half
+
+0:02:32.499,0:02:35.279
+test directory
+
+0:02:35.279,0:02:38.119
+now is important to know how to be able
+to clean up after self
+
+0:02:38.119,0:02:42.109
+each very careful with the army command
+to camille hard to undo the files that
+
+0:02:42.109,0:02:45.259
+if you have no backup system they may be
+gone forever
+
+0:02:45.259,0:02:48.209
+return file secure the commanders our
+agm
+
+0:02:48.209,0:02:49.139
+and
+
+0:02:49.139,0:02:51.199
+farm into arms one
+
+0:02:51.199,0:02:54.120
+and in this case i have it set up so
+that it will actually asked a question
+
+0:02:54.120,0:02:55.309
+yes or no
+
+0:02:55.309,0:02:57.709
+for will likely not have that
+
+0:02:57.709,0:03:00.400
+so depressed wire say yes
+
+0:03:00.400,0:03:04.219
+or we can to lead to files from the
+scene command-line figures two and three
+
+0:03:04.219,0:03:06.129
+are in
+
+0:03:06.129,0:03:07.889
+and yes
+
+0:03:07.889,0:03:11.649
+now for trip are immature treats her or
+in dash
+
+0:03:11.649,0:03:13.240
+also at the command shell
+
+0:03:13.240,0:03:14.959
+if you're probably through and
+
+0:03:14.959,0:03:17.290
+there's one unique injury too much press
+tab
+
+0:03:17.290,0:03:20.539
+to complete down
+
+0:03:20.539,0:03:24.019
+sify tree pollen tests retrieved a
+complaint saying that it's the directory
+
+0:03:24.019,0:03:26.419
+or informing her of his finals
+
+0:03:26.419,0:03:29.399
+so we can do r_ and d_ a_ r_
+
+0:03:29.399,0:03:30.369
+press tab
+
+0:03:30.369,0:03:32.329
+directory
+
+0:03:32.329,0:03:33.409
+enough to take a look
+
+0:03:33.409,0:03:36.329
+we've cleaned up after assaults
+
+0:03:36.329,0:03:38.699
+you can also ask the system what time
+was it
+
+0:03:38.699,0:03:42.509
+and if you can do that by taking date
+
+0:03:42.509,0:03:44.879
+ninety minutes before appear
+
+0:03:44.879,0:03:50.209
+our files timestamp uh... too a m that's
+not correct me too a m
+
+0:03:50.209,0:03:53.419
+so we need to asses the sand update the
+times uh... virtual machine if it's been
+
+0:03:53.419,0:03:56.689
+asleep it may not be able to get the
+time right
+
+0:03:56.689,0:04:01.179
+and making the casket with time with the
+economy can go and check make sure it's
+
+0:04:01.179,0:04:02.549
+to date so
+
+0:04:02.549,0:04:06.830
+ceos the commandment lots of speak on
+basically recordings trader
+
+0:04:06.830,0:04:08.709
+and get extra privileges
+
+0:04:08.709,0:04:10.649
+seventy p date
+
+0:04:10.649,0:04:13.659
+is the commander dick time and then we
+need to ask it
+
+0:04:13.659,0:04:17.519
+is gonna wanna know which host to go get
+the time from
+
+0:04:17.519,0:04:20.979
+so the folks that you're going to
+provide it i'm sure that we can ask
+
+0:04:20.979,0:04:23.280
+and so i asked her to read gps data
+
+0:04:23.280,0:04:27.710
+and go off to the ante p server at you
+going to end at the time
+
+0:04:27.710,0:04:31.280
+tonight at my password and since this is
+the first machine i will tell you my
+
+0:04:31.280,0:04:32.199
+password
+
+0:04:32.199,0:04:33.969
+isn't xmission point
+
+0:04:33.969,0:04:35.330
+party
+
+0:04:35.330,0:04:36.900
+two thousand eleven
+
+0:04:36.900,0:04:39.600
+the m presenter
+
+0:04:39.600,0:04:42.179
+and now it's off working to set the time
+
+0:04:42.179,0:04:43.800
+working working
+
+0:04:43.800,0:04:45.719
+this might take awhile depending on
+
+0:04:45.719,0:04:49.019
+what all has to do the network and you
+can see here that is change the time
+
+0:04:49.019,0:04:50.180
+quite a bit
+
+0:04:50.180,0:04:52.240
+the offset was quite large
+
+0:04:52.240,0:04:55.909
+snapper type date again and actually
+says that it's ten in the morning which
+
+0:04:55.909,0:04:59.909
+is much more reasonable
+
+0:04:59.909,0:05:00.919
+if u
+
+0:05:00.919,0:05:04.270
+get confused by having too much stuff on
+the screen we can always run the clear
+
+0:05:04.270,0:05:06.030
+command that bold
+
+0:05:06.030,0:05:09.239
+fully everything that's currently on our
+screen presenter
+
+0:05:09.239,0:05:12.769
+and clear has cleared the screen
+
+0:05:12.769,0:05:13.810
+okay so
+
+0:05:13.810,0:05:16.630
+that's giving the basics of moving
+around a little it we've done our l_s_
+
+0:05:16.630,0:05:18.669
+four list
+
+0:05:18.669,0:05:21.160
+print working directly with people be
+deep
+
+0:05:21.160,0:05:22.470
+c_d_-four
+
+0:05:22.470,0:05:24.159
+accused iraq to read
+
+0:05:24.159,0:05:29.479
+touch to create a file orchid time and
+katie i or for make directory
+
+0:05:29.479,0:05:32.810
+korean for delete a file
+
+0:05:32.810,0:05:36.129
+are endure for doing directories
+
+0:05:36.129,0:05:38.389
+let's find out more about some news
+program then
+
+0:05:38.389,0:05:39.590
+built into
+
+0:05:39.590,0:05:43.640
+one x carvings called main pages so with
+the system comes a whole lot of
+
+0:05:43.640,0:05:45.949
+documentation when you get to that
+through that
+
+0:05:45.949,0:05:47.719
+program called me on
+
+0:05:47.719,0:05:49.330
+so if you may end
+
+0:05:49.330,0:05:52.139
+allowance for was coming and
+
+0:05:52.139,0:05:53.240
+and press enter
+
+0:05:53.240,0:05:54.819
+it now brings you into you
+
+0:05:54.819,0:05:58.750
+them and page for ls make a move down
+with the air peas
+
+0:05:58.750,0:06:00.599
+if we are working hard for him
+
+0:06:00.599,0:06:05.490
+you can suppress space to go down by
+page
+
+0:06:05.490,0:06:09.439
+if you need to gather secret press queue
+for quit
+
+0:06:09.439,0:06:11.479
+rescue ok sore back there
+
+0:06:11.479,0:06:12.800
+now we can save
+
+0:06:12.800,0:06:14.050
+man
+
+0:06:14.050,0:06:15.189
+dash k
+
+0:06:15.189,0:06:20.909
+and give their option options they say
+we want to know about
+
+0:06:20.909,0:06:23.150
+with some wording themself we take
+
+0:06:23.150,0:06:25.169
+take uh...
+
+0:06:25.169,0:06:26.650
+clean desk at length
+
+0:06:26.650,0:06:28.119
+it's then going to tell us
+
+0:06:28.119,0:06:30.009
+what things
+
+0:06:30.009,0:06:32.919
+ham and pages with a name life in them
+
+0:06:32.919,0:06:35.270
+so there's a whole bunch of different
+things on here
+
+0:06:35.270,0:06:37.529
+if you see a number to in there
+
+0:06:37.529,0:06:39.150
+that will be
+
+0:06:39.150,0:06:40.090
+uh...
+
+0:06:40.090,0:06:41.430
+four system
+
+0:06:41.430,0:06:44.590
+calls this is a c programming language
+thing you can ignore
+
+0:06:44.590,0:06:48.419
+and number three dozen other c
+programming language that you can ignore
+
+0:06:48.419,0:06:50.340
+you also seen mandated for
+
+0:06:50.340,0:06:54.029
+the permanent which parole and lots of
+other stuff hiding here
+
+0:06:54.029,0:06:56.849
+so if you're searching for something men
+
+0:06:56.849,0:06:59.219
+dash cayenne
+
+0:06:59.219,0:07:01.110
+conspicuously max
+
+0:07:01.110,0:07:04.919
+so this will actually go out there and
+search for it to hear some programs that
+
+0:07:04.919,0:07:05.599
+have
+
+0:07:05.599,0:07:08.440
+email acts in their one mine descriptor
+
+0:07:08.440,0:07:12.410
+severe example here is some program
+called c tags that you could use
+
+0:07:12.410,0:07:14.929
+that heaven and paid to protect me and
+
+0:07:14.929,0:07:16.349
+c tags
+
+0:07:16.349,0:07:18.610
+it's now been tells all about that
+program
+
+0:07:18.610,0:07:22.639
+you can take your time and read all out
+
+0:07:22.639,0:07:25.329
+and that was actually using up program
+called the pager
+
+0:07:25.329,0:07:28.520
+called lance
+
+0:07:28.520,0:07:30.060
+begin our special
+
+0:07:30.060,0:07:31.979
+i have an example to retire
+
+0:07:31.979,0:07:34.769
+tar file here which is called the tape
+archive
+
+0:07:34.769,0:07:37.659
+is very similar to a zip on windows
+
+0:07:37.659,0:07:40.289
+but it predates is it by quite a bit and
+it's
+
+0:07:40.289,0:07:41.080
+in my opinion
+
+0:07:41.080,0:07:44.370
+much more user-friendly for unix type
+
+0:07:44.370,0:07:47.649
+so let's take a look at what's in that
+car
+
+0:07:47.649,0:07:49.219
+said ta aren't
+
+0:07:49.219,0:07:51.509
+and then t f is
+
+0:07:51.509,0:07:52.349
+list
+
+0:07:52.349,0:07:55.619
+for his t for some reason antacids file
+
+0:07:55.619,0:07:58.609
+through analyst puts in their examples
+
+0:07:58.609,0:08:02.069
+dot two thousand level in the press
+pound complete
+
+0:08:02.069,0:08:04.969
+to know if you take a look what's in
+that part of a whole bunch of the sample
+
+0:08:04.969,0:08:06.610
+files that we can use to it
+
+0:08:06.610,0:08:09.099
+to try it more comments
+
+0:08:09.099,0:08:13.069
+savannah do at the uparrow to get your
+previous command
+
+0:08:13.069,0:08:14.430
+and bring to you and
+
+0:08:14.430,0:08:18.560
+acts for extra racked and you'll have to
+be at the end wanda presenter something
+
+0:08:18.560,0:08:20.129
+to read here
+
+0:08:20.129,0:08:24.340
+and it went off and extracted and so
+let's do it i wants dash aol
+
+0:08:24.340,0:08:25.769
+prolong listing
+
+0:08:25.769,0:08:28.879
+and you now see that condition to the
+tape archive
+
+0:08:28.879,0:08:31.029
+there's actually a director to go with
+it
+
+0:08:31.029,0:08:35.940
+let's go into that directory with the cd
+commands for change directory
+
+0:08:35.940,0:08:38.250
+with cd into examples
+
+0:08:38.250,0:08:41.029
+pvdf working directory and here we are
+
+0:08:41.029,0:08:43.960
+so now we can do and i watched that show
+
+0:08:43.960,0:08:45.760
+and take a look around
+
+0:08:45.760,0:08:48.190
+so as a whole bunch of sample files that
+i have
+
+0:08:48.190,0:08:49.459
+create here in this
+
+0:08:49.459,0:08:50.530
+little package
+
+0:08:50.530,0:08:55.020
+to help trial lots of different commands
+
+0:08:55.020,0:08:58.030
+one thing that we've got here is uh...
+
+0:08:58.030,0:09:01.490
+loop government comes word order in
+terms of files clones bear
+
+0:09:01.490,0:09:04.050
+missus file size in the middle
+
+0:09:04.050,0:09:07.880
+we'd like to have say haven't supported
+by fall scientists looking for that
+
+0:09:07.880,0:09:09.250
+he adam pass
+
+0:09:09.250,0:09:11.550
+capitalise on that
+
+0:09:11.550,0:09:12.600
+helen's
+
+0:09:12.600,0:09:14.620
+and that's been supported by
+
+0:09:14.620,0:09:17.500
+filesize with decreasing at the bottom
+
+0:09:17.500,0:09:22.380
+city for example we have a small program
+called shell script dot s_h_ that we can
+
+0:09:22.380,0:09:24.170
+take a look at
+
+0:09:24.170,0:09:26.500
+enemies that clean coal lots
+
+0:09:26.500,0:09:29.620
+amarillo take a look at celeste shell
+
+0:09:29.620,0:09:30.579
+script
+
+0:09:30.579,0:09:35.280
+s_h_ have pressed ham right here after
+the s_ h_
+
+0:09:35.280,0:09:38.550
+now for presenter worry a pager that's
+very similar
+
+0:09:38.550,0:09:42.030
+to down main page
+
+0:09:42.030,0:09:43.050
+and with that
+
+0:09:43.050,0:09:47.720
+it's not very interested in terms of
+short walk karke
+
+0:09:47.720,0:09:51.590
+but if this were a longer file and we
+can take a look at
+
+0:09:51.590,0:09:55.010
+uh... say let's look at pat
+
+0:09:55.010,0:09:56.720
+um... delicious
+
+0:09:56.720,0:10:00.080
+packaged him this is a huge team alfono
+
+0:10:00.080,0:10:01.670
+this one is a lot longer
+
+0:10:01.670,0:10:04.590
+and we can scroll down to that files for
+a backup
+
+0:10:04.590,0:10:07.810
+press spaced
+
+0:10:07.810,0:10:10.240
+okay so there's a couple other plans are
+helpful
+
+0:10:10.240,0:10:13.860
+that had come in and we'll take a look
+at the first time lines of uh... final
+
+0:10:13.860,0:10:17.020
+so we can say hey
+
+0:10:17.020,0:10:19.440
+hello world dot c
+
+0:10:19.440,0:10:22.670
+cannibal print the first time lines
+
+0:10:22.670,0:10:24.990
+began pressed detect a own
+
+0:10:24.990,0:10:27.280
+and increase a tail webpage
+
+0:10:27.280,0:10:31.220
+html it's going to give is the very last
+hemlines
+
+0:10:31.220,0:10:33.260
+so there's the last ten lines
+
+0:10:33.260,0:10:35.250
+right here of the tail
+
+0:10:35.250,0:10:38.810
+that's the bottom about filed
+
+0:10:38.810,0:10:42.070
+those are helpful to take a look at
+what's going on and came out to clear
+
+0:10:42.070,0:10:43.140
+data files
+
+0:10:43.140,0:10:45.020
+we can also do you all wordcount
+
+0:10:45.020,0:10:50.270
+so they'll give us the number of words
+and lines in a final silver account
+
+0:10:50.270,0:10:52.160
+hello world dot c
+
+0:10:52.160,0:10:54.530
+and this tells us that we have
+
+0:10:54.530,0:10:56.410
+uh... believe it's
+
+0:10:56.410,0:10:58.020
+eleven lines
+
+0:10:58.020,0:10:59.650
+twenty nine words
+
+0:10:59.650,0:11:02.420
+two hundred ninety eight characters
+
+0:11:02.420,0:11:04.580
+then we can also say
+
+0:11:04.580,0:11:10.050
+if we had apparel coming back and at
+this and dash l will give us lines only
+
+0:11:10.050,0:11:15.980
+so here we've got that we just have
+eleven line several c
+
+0:11:15.980,0:11:20.139
+now it is an important command in unix
+that will tell us all about what's
+
+0:11:20.139,0:11:22.160
+in files as much as they can
+
+0:11:22.160,0:11:24.220
+and that's the file command so
+
+0:11:24.220,0:11:27.160
+if we use star which represents any file
+
+0:11:27.160,0:11:29.420
+taken action on this directory
+
+0:11:29.420,0:11:30.860
+it's going to go through
+
+0:11:30.860,0:11:34.110
+soccer game is the file space star
+command
+
+0:11:34.110,0:11:35.090
+it will tell us
+
+0:11:35.090,0:11:36.960
+bullet things each of the files are
+
+0:11:36.960,0:11:39.410
+sort start off with
+
+0:11:39.410,0:11:42.710
+file sample dot piya
+
+0:11:42.710,0:11:43.959
+and that shows that
+
+0:11:43.959,0:11:45.300
+it looks in that file
+
+0:11:45.300,0:11:50.340
+didn't look at the pediatric on the file
+name excellence in the file
+
+0:11:50.340,0:11:53.279
+it's it's p_b_s_ document version one
+point five
+
+0:11:53.279,0:11:56.579
+now freezing laughs you got to take a
+look at that file
+
+0:11:56.579,0:12:03.430
+and see what it took a peek into
+
+0:12:03.430,0:12:06.530
+it wasn't very exciting
+
+0:12:06.530,0:12:10.560
+savimex command of arena duties
+identifying
+
+0:12:10.560,0:12:12.460
+now this command
+
+0:12:12.460,0:12:16.160
+knows about images certain knows more
+about what's going on so if we take a
+
+0:12:16.160,0:12:19.260
+look at how a startup p_n_g_
+
+0:12:19.260,0:12:23.800
+and helped i think i will start dot t_
+iof
+
+0:12:23.800,0:12:25.300
+j paying
+
+0:12:25.300,0:12:26.150
+affect
+
+0:12:26.150,0:12:28.900
+to have any images of mr trie everytime
+
+0:12:28.900,0:12:31.830
+so extensions are not necessarily
+
+0:12:31.830,0:12:32.650
+mandated
+
+0:12:32.650,0:12:37.070
+so in this case it's j_p_ he genes we
+have one jate hain
+
+0:12:37.070,0:12:39.130
+if we say file
+
+0:12:39.130,0:12:40.000
+and this
+
+0:12:40.000,0:12:41.330
+particular picture
+
+0:12:41.330,0:12:45.290
+it just tells the jury peg if we say
+identified
+
+0:12:45.290,0:12:47.210
+two thousand eleven pressed pam
+
+0:12:47.210,0:12:48.240
+tuesday
+
+0:12:48.240,0:12:52.220
+you'll see that tells us more actual
+tells us the width and height budget peg
+
+0:12:52.220,0:12:55.360
+and some other fancy information about
+that and keep it
+
+0:12:55.360,0:12:56.150
+image
+
+0:12:56.150,0:12:58.620
+a few things like that
+
+0:12:58.620,0:12:59.720
+now we've done a lot
+
+0:12:59.720,0:13:01.660
+but it might be hopeful to see
+
+0:13:01.660,0:13:03.250
+what we've got
+
+0:13:03.250,0:13:04.709
+that we've done our past
+
+0:13:04.709,0:13:09.090
+if you wanted to know stevie to paste
+some of those things marie run them
+
+0:13:09.090,0:13:14.550
+detected history command this is going
+to list out everything that we've done
+
+0:13:14.550,0:13:17.670
+press history there's a lot so in this
+case
+
+0:13:17.670,0:13:23.180
+you might want to do something like pay
+almost vertical bar here exculpate
+
+0:13:23.180,0:13:26.610
+and that pipe will actually take data
+that comes out of the history command
+
+0:13:26.610,0:13:28.700
+and pass it over to the tail command
+
+0:13:28.700,0:13:31.400
+so give us the washed and
+
+0:13:31.400,0:13:32.450
+uh... entries
+
+0:13:32.450,0:13:35.250
+if we were won a rerun one of those we
+can
+
+0:13:35.250,0:13:37.820
+to estimation market and then
+
+0:13:37.820,0:13:41.700
+that command number so let's go ahead a
+rerun this identified command here
+
+0:13:41.700,0:13:43.770
+sold to bang
+
+0:13:43.770,0:13:47.500
+which is the mother works best mission
+work seven three two
+
+0:13:47.500,0:13:53.370
+and there is room yet and if i can't
+
+0:13:53.370,0:13:57.500
+now you can also do hum
+
+0:13:57.500,0:14:02.190
+technical grep so if we have history
+they want to grab for
+
+0:14:02.190,0:14:06.950
+particular string this is a search
+commendable search inside of text for
+
+0:14:06.950,0:14:09.780
+any patterns that matches it's very
+fancy
+
+0:14:09.780,0:14:14.230
+when a simple case we just give it a our
+basic string so free trade
+
+0:14:14.230,0:14:15.800
+j_p_ ichi
+
+0:14:15.800,0:14:21.040
+we're gonna search for any commander in
+our history and i had before letters j p
+
+0:14:21.040,0:14:21.980
+ichi
+
+0:14:21.980,0:14:23.690
+the scripture
+
+0:14:23.690,0:14:25.500
+for breast cancer
+
+0:14:25.500,0:14:30.840
+will see that we actually ran a whole
+bunch of other commands
+
+0:14:30.840,0:14:33.460
+four letters to a pagan and you'll see
+that it's actually been nice enough to
+
+0:14:33.460,0:14:38.250
+highlight for us where found the matches
+for each of those lines
+
+0:14:38.250,0:14:42.140
+that could also do you uh... the exact
+opposite within two dash v was says
+
+0:14:42.140,0:14:48.400
+don't tell us anything rejected and it
+uh... anyone that has to pay wildcats
+
+0:14:48.400,0:14:50.440
+printed out
+
+0:14:50.440,0:14:54.770
+so that a prepaid telma gets group
+cheney's together certificate the last
+
+0:14:54.770,0:14:56.730
+time
+
+0:14:56.730,0:15:01.590
+our history grad j peg will not be in
+this live sofa detail
+
+0:15:01.590,0:15:03.220
+keeping history
+
+0:15:03.220,0:15:04.870
+but at the table
+
+0:15:04.870,0:15:08.870
+there is actually coming in here that we
+should have seen that that
+
+0:15:08.870,0:15:15.870
+grab for jay pence and that was removed
+by that the graph minus feed
+
+0:15:16.880,0:15:21.540
+can in the beginning i had to be our agm
+can actually showed me
+
+0:15:21.540,0:15:26.740
+that um... the r and commander boys
+asking a question yes or no it's not
+
+0:15:26.740,0:15:30.440
+their fault behavior and there's
+something called aliases so if i say the
+
+0:15:30.440,0:15:32.220
+commands tight
+
+0:15:32.220,0:15:34.340
+tfc type the word typed
+
+0:15:34.340,0:15:38.780
+and then i say arround it's gonna tell
+me that's helios too
+
+0:15:38.780,0:15:42.310
+par and with this dash high command in
+the nationalize what ask you do you
+
+0:15:42.310,0:15:44.980
+really want to delete that file
+
+0:15:44.980,0:15:50.720
+now thank you type space dash pay our
+agm and actually stands for pol here
+
+0:15:50.720,0:15:55.560
+said sent only all the places you can
+find our agm on this computer
+
+0:15:55.560,0:16:00.640
+and it's actually finding a program in
+this path called slash bin slash sharam
+
+0:16:00.640,0:16:03.790
+so that's a system program called r m
+
+0:16:03.790,0:16:05.480
+and i'm actually using
+
+0:16:05.480,0:16:09.520
+resilience which then gets a pass to
+this commitment so ends up
+
+0:16:09.520,0:16:11.170
+putting this together
+
+0:16:11.170,0:16:14.920
+make a list all other illnesses but just
+typing the word alias
+
+0:16:14.920,0:16:17.460
+and to see that there is actually quite
+a few releases that come with the
+
+0:16:17.460,0:16:22.370
+standard setup of your going to buckets
+
+0:16:22.370,0:16:24.220
+so now let's uh...
+
+0:16:24.220,0:16:27.940
+wrapped up for their and will do another
+video in the future nasa thanks for
+
+0:16:27.940,0:16:29.510
+joining and i hope this was helpful
+

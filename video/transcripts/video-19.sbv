@@ -1,0 +1,2582 @@
+0:00:01.469,0:00:04.779
+blew my name is courage clarence is
+video nineteen
+
+0:00:04.779,0:00:09.449
+for research tools the you in a chicago
+jc
+
+0:00:09.449,0:00:14.389
+cards on this will be on the career or
+htm also known
+
+0:00:14.389,0:00:16.309
+personal from mercury
+
+0:00:16.309,0:00:20.250
+and mercurial is a revision control
+systems that will be taking a look at in
+
+0:00:20.250,0:00:22.719
+this video
+
+0:00:22.719,0:00:26.529
+so let me jump into it and start with
+introduction
+
+0:00:26.529,0:00:30.269
+him let's first talk about version
+control and tracking
+
+0:00:30.269,0:00:34.120
+how things like software the first thing
+to note is that
+
+0:00:34.120,0:00:36.760
+hike email is not a proper backup system
+
+0:00:36.760,0:00:38.450
+it doesn't really give you
+
+0:00:38.450,0:00:42.510
+hanging way to deal with differences
+between things
+
+0:00:42.510,0:00:45.160
+uh... also looking at a rate here is
+that
+
+0:00:45.160,0:00:48.930
+the tracking changing and word doesn't
+really give you the same functionality
+
+0:00:48.930,0:00:50.830
+we talked about today so it's
+
+0:00:50.830,0:00:52.989
+trying to sell more of it doesn't really
+give you
+
+0:00:52.989,0:00:54.470
+much of which might see a bit
+
+0:00:54.470,0:00:58.170
+you might have seen the tracking changes
+in word
+
+0:00:58.170,0:00:59.399
+uh... local
+
+0:00:59.399,0:01:02.880
+police systems like time machine on the
+mac where you can
+
+0:01:02.880,0:01:06.530
+have the computer track changes and be
+able to go back
+
+0:01:06.530,0:01:09.810
+those are good things but they don't
+give you the same functionality
+
+0:01:09.810,0:01:13.600
+and again after reading that doesn't
+also give you wish you'd like is
+
+0:01:13.600,0:01:16.360
+datingsite dropbox can trigger sank
+
+0:01:16.360,0:01:19.619
+where they're tracking more files and
+not to the clouds
+
+0:01:19.619,0:01:22.780
+they often have tools to let you see if
+you persons but
+
+0:01:22.780,0:01:25.700
+again they don't give you all the
+functionality of a true revision control
+
+0:01:25.700,0:01:26.820
+system
+
+0:01:26.820,0:01:30.790
+so well those are definitely helpful
+they're not what we want forever things
+
+0:01:30.790,0:01:33.850
+we'd like to have more than just does
+
+0:01:33.850,0:01:37.479
+and let's take a quick peek at the
+history of free and open source software
+
+0:01:37.479,0:01:39.939
+revision control systems
+
+0:01:39.939,0:01:45.320
+and that way back when how we had
+revision control system which is a local
+
+0:01:45.320,0:01:47.999
+only it only deal for the local computer
+and uh...
+
+0:01:47.999,0:01:50.050
+subdirectories in
+
+0:01:50.050,0:01:52.010
+files
+
+0:01:52.010,0:01:56.270
+is really only hint of one percent i'm
+very effectively
+
+0:01:56.270,0:01:59.579
+and it's while it's useful it's
+definitely been superseded you no longer
+
+0:01:59.579,0:02:01.960
+need to really learn her c_s_
+
+0:02:01.960,0:02:04.920
+the things that i would have used this
+for uh...
+
+0:02:04.920,0:02:06.149
+upto recently
+
+0:02:06.149,0:02:08.340
+have been taken over very effectively by
+
+0:02:08.340,0:02:12.169
+typing secretarial walcott today
+
+0:02:12.169,0:02:16.459
+the once people got used to be a live
+version control things locally they also
+
+0:02:16.459,0:02:19.129
+want to be able to work in groups and a
+half
+
+0:02:19.129,0:02:23.239
+outside locations where your sinking
+west courage in history
+
+0:02:23.239,0:02:24.459
+and one of the early
+
+0:02:24.459,0:02:28.289
+very popular once was concurrent
+versions system
+
+0:02:28.289,0:02:32.289
+it's pretty effectively it's still in
+use today by quite a few projects as a
+
+0:02:32.289,0:02:33.769
+little crusty
+
+0:02:33.769,0:02:36.299
+but i think it's the job done but
+
+0:02:36.299,0:02:40.309
+it's got some edges where it's very hard
+to do things like managed directories
+
+0:02:40.309,0:02:42.169
+and files around
+
+0:02:42.169,0:02:43.529
+uh... it definitely
+
+0:02:43.529,0:02:44.829
+need some help
+
+0:02:44.829,0:02:50.789
+and people then try to improve on cd s
+with a system called subversion
+
+0:02:50.789,0:02:52.119
+or sdn
+
+0:02:52.119,0:02:53.810
+and subversion
+
+0:02:53.810,0:02:57.779
+and in t_v_ ads have this idea of a
+centralized repository of it
+
+0:02:57.779,0:03:02.430
+make we were contagious locally and then
+you pushed into the central site
+
+0:03:02.430,0:03:06.959
+and that's great for some systems but in
+this course of the year definite dealing
+
+0:03:06.959,0:03:11.629
+with people who go to see in don't
+always have internet access at all times
+
+0:03:11.629,0:03:14.180
+so things like subversion and c_v_s_
+
+0:03:14.180,0:03:17.510
+when you go up the shipping you don't
+have a great internet access for even
+
+0:03:17.510,0:03:18.559
+any at all
+
+0:03:18.559,0:03:21.979
+it becomes very hard to work and you
+might have to work for a couple weeks
+
+0:03:21.979,0:03:23.709
+and then put in changes
+
+0:03:23.709,0:03:28.469
+for all sorts of things on one date back
+to the end and that's not very effective
+
+0:03:28.469,0:03:31.069
+there's ways to work around mt by
+cloning
+
+0:03:31.069,0:03:34.480
+subversion repositories and then doing
+some thinking
+
+0:03:34.480,0:03:39.090
+while that different works if it's not
+necessarily very elegant
+
+0:03:39.090,0:03:42.189
+uh... with their lives colonel way back
+when
+
+0:03:42.189,0:03:46.099
+there was actually a system of things
+where they manage patches and the tool
+
+0:03:46.099,0:03:47.659
+called quilt
+
+0:03:47.659,0:03:48.669
+that
+
+0:03:48.669,0:03:50.409
+pad
+
+0:03:50.409,0:03:54.209
+the ability deal with pat sets and being
+able to manage things for events to be a
+
+0:03:54.209,0:03:58.509
+mechanism but it really was pretty loose
+and
+
+0:03:58.509,0:04:01.980
+i've never tried it because i really fit
+my work model very well
+
+0:04:01.980,0:04:05.809
+uh... is pretty powerful and useful
+
+0:04:05.809,0:04:08.249
+and the gold standard today
+
+0:04:08.249,0:04:11.439
+with revision control systems of
+something called distributed revision
+
+0:04:11.439,0:04:13.250
+control systems and that's where
+
+0:04:13.250,0:04:17.509
+you have a local server tight model
+where you can interact with
+
+0:04:17.509,0:04:21.340
+uh... changes locally you can connect
+them to show them to talk to some remote
+
+0:04:21.340,0:04:23.470
+server that you would with
+
+0:04:23.470,0:04:26.080
+c_v_s_ and subversion
+
+0:04:26.080,0:04:29.739
+but you can then push between various
+repositories and you can create the
+
+0:04:29.739,0:04:32.520
+concept of a central server if you'd
+like
+
+0:04:32.520,0:04:36.710
+and they don't have to but you can't can
+you can also have multiple our sites out
+
+0:04:36.710,0:04:39.910
+on the web where your pen pushing your
+changes too
+
+0:04:39.910,0:04:41.090
+and there isn't
+
+0:04:41.090,0:04:42.740
+a good number of these
+
+0:04:42.740,0:04:44.860
+press in the early ones are arches
+
+0:04:44.860,0:04:46.940
+hand is art
+
+0:04:46.940,0:04:50.259
+these are used by some projects but that
+you could common ones that most people
+
+0:04:50.259,0:04:55.780
+use today target and material gets was
+created by last four balls that and
+
+0:04:55.780,0:04:57.649
+uh... the creator of one x
+
+0:04:57.649,0:04:59.180
+and is
+
+0:04:59.180,0:05:03.060
+very similar to material it's a little
+bit speedier maybe it's got a lot more
+
+0:05:03.060,0:05:04.489
+functionality
+
+0:05:04.489,0:05:08.820
+but material is the the little bit more
+clean simple designed
+
+0:05:08.820,0:05:09.990
+interface
+
+0:05:09.990,0:05:11.480
+and hot
+
+0:05:11.480,0:05:14.540
+you know doesn't really matter where
+these getter mercurial behera be showing
+
+0:05:14.540,0:05:16.270
+the material because
+
+0:05:16.270,0:05:17.439
+uh...
+
+0:05:17.439,0:05:20.449
+and that leads us to our next thing of
+wire material
+
+0:05:20.449,0:05:21.479
+died
+
+0:05:21.479,0:05:25.789
+main reason is that seek thomas's side
+to make it it's defaults
+
+0:05:25.789,0:05:30.029
+revision control system that they
+support from nike team uh... could just
+
+0:05:30.029,0:05:31.660
+as easily abused its but
+
+0:05:31.660,0:05:32.690
+it's good to be
+
+0:05:32.690,0:05:34.500
+purity com working with
+
+0:05:34.500,0:05:35.889
+the same tools
+
+0:05:35.889,0:05:39.330
+ankit speedily to work offline so it's
+the same as kids
+
+0:05:39.330,0:05:43.499
+and socialized for ka servers that
+required but mccurry was actually pretty
+
+0:05:43.499,0:05:47.300
+polish in terms of its user interface
+and
+
+0:05:47.300,0:05:50.229
+it's a lot simpler than get so we
+figured that that'll probably be a good
+
+0:05:50.229,0:05:52.650
+thing to use form of scientists
+
+0:05:52.650,0:05:55.590
+now if you start with liquor you could
+switch to get later on our
+
+0:05:55.590,0:06:01.509
+back-and-forth over people for the same
+time this place to pull that off
+
+0:06:01.509,0:06:02.390
+and
+
+0:06:02.390,0:06:05.379
+in the sea all list i've got some good
+links for you
+
+0:06:05.379,0:06:07.409
+uh... htm its
+
+0:06:07.409,0:06:12.930
+is our web site that's kind of fun by
+uh... tolls boesky in in this tool
+
+0:06:12.930,0:06:13.980
+its fiscal web
+
+0:06:13.980,0:06:15.650
+introduction to
+
+0:06:15.650,0:06:19.209
+material and takes you through steps of
+
+0:06:19.209,0:06:21.729
+getting your halo around
+
+0:06:21.729,0:06:25.439
+material and i highly recommend reading
+this it's uh... very fun well put
+
+0:06:25.439,0:06:26.569
+together site
+
+0:06:26.569,0:06:29.440
+now you can probably skip the
+re-education of
+
+0:06:29.440,0:06:30.889
+for switching from
+
+0:06:30.889,0:06:34.189
+subversion to material if you haven't
+done revision control when you're not
+
+0:06:34.189,0:06:36.139
+hopped on subversion
+
+0:06:36.139,0:06:40.500
+it's actually easier to learn material
+if you haven't done some version first
+
+0:06:40.500,0:06:46.389
+because the actor concerts in mercurial
+are very different than subversion
+
+0:06:46.389,0:06:47.319
+hinted
+
+0:06:47.319,0:06:50.430
+it's got some ideas of talking about how
+to work in teams
+
+0:06:50.430,0:06:55.539
+uh... have worked up to about sixty
+people with c_b_s_ handgun few process
+
+0:06:55.539,0:06:57.259
+version of the few people
+
+0:06:57.259,0:07:02.009
+ankit immaterial can also handle large
+teams fairly easily and
+
+0:07:02.009,0:07:03.879
+uh... obese people say
+
+0:07:03.879,0:07:08.280
+kind kit and clinics colonel handling
+very large numbers of people working
+
+0:07:08.280,0:07:10.129
+together
+
+0:07:10.129,0:07:15.409
+so it's a very handy sites
+
+0:07:15.409,0:07:19.899
+uh... there's also a free online book
+specie book you can also buy that as a
+
+0:07:19.899,0:07:21.150
+dead tree or
+
+0:07:21.150,0:07:23.110
+real physical book
+
+0:07:23.110,0:07:26.789
+and as if your links that are helpful in
+terms of uh... looking at
+
+0:07:26.789,0:07:31.169
+trickery
+
+0:07:31.169,0:07:36.749
+so we'll start off looking at some of
+material and using it from our symbol or
+
+0:07:36.749,0:07:37.909
+use case
+
+0:07:37.909,0:07:41.659
+so start off by looking at someone
+else's repository
+
+0:07:41.659,0:07:45.159
+so what you can do is if someone's put
+something up in the cloud that you'd
+
+0:07:45.159,0:07:46.389
+like to use that incident
+
+0:07:46.389,0:07:47.470
+needed
+
+0:07:47.470,0:07:50.150
+or destroy the material format
+
+0:07:50.150,0:07:54.460
+what we can do is we can clone act or a
+local tree and start to work with those
+
+0:07:54.460,0:07:56.139
+files
+
+0:07:56.139,0:07:58.620
+so i'm gonna show you briefly
+
+0:07:58.620,0:07:59.889
+um...
+
+0:07:59.889,0:08:01.189
+the site that i have
+
+0:08:01.189,0:08:02.240
+for
+
+0:08:02.240,0:08:04.509
+research tools that ccom
+
+0:08:04.509,0:08:05.960
+and what i've done is
+
+0:08:05.960,0:08:09.400
+post the research tools class notes into
+
+0:08:09.400,0:08:11.389
+uh... material site
+
+0:08:11.389,0:08:14.039
+still be able to work with these things
+and
+
+0:08:14.039,0:08:18.060
+the actual site so let's go ahead and
+clone that to follow the instructions
+
+0:08:18.060,0:08:19.599
+here
+
+0:08:19.599,0:08:21.770
+so i'm gonna go into
+
+0:08:21.770,0:08:25.129
+my tree here
+
+0:08:25.129,0:08:31.449
+if i can actually use this for the
+trackpad
+
+0:08:31.449,0:08:32.600
+expect so
+
+0:08:32.600,0:08:36.209
+see till the swatches get this back in
+our main home directory
+
+0:08:36.209,0:08:38.110
+soar in the research tools
+
+0:08:38.110,0:08:41.370
+home directory if you're using a virtual
+machine for class
+
+0:08:41.370,0:08:47.220
+lichter projects i really have this
+direct resellers exist cv projects
+
+0:08:47.220,0:08:51.090
+in in here before i have research tools
+for a check this out
+
+0:08:51.090,0:08:52.910
+i'm going to you
+
+0:08:52.910,0:08:57.400
+uh... moved inside of the way so
+research tools
+
+0:08:57.400,0:09:01.290
+cold research tools
+
+0:09:01.290,0:09:04.830
+so going to go ahead into
+
+0:09:04.830,0:09:10.060
+his cheek long term is going to go ahead
+and copy paste tool on your own
+
+0:09:10.060,0:09:12.310
+madad w
+
+0:09:12.310,0:09:13.430
+me and
+
+0:09:13.430,0:09:14.860
+page that in there
+
+0:09:14.860,0:09:17.890
+press center this is going to reach out
+to the departed site
+
+0:09:17.890,0:09:21.140
+and check out the actual repository
+
+0:09:21.140,0:09:24.500
+now if we look here in a bit docket site
+they actually show you
+
+0:09:24.500,0:09:28.140
+this comming and had a clone that
+repository
+
+0:09:28.140,0:09:29.269
+for the vector
+
+0:09:29.269,0:09:33.570
+research tools there
+
+0:09:33.570,0:09:35.810
+amber and go ahead and run this
+
+0:09:35.810,0:09:37.750
+it's gonna go check out
+
+0:09:37.750,0:09:38.840
+all of that
+
+0:09:38.840,0:09:40.340
+uh... stuff
+
+0:09:40.340,0:09:45.420
+whatever it was in that repository bring
+it down to our local machine
+
+0:09:45.420,0:09:47.190
+so we can tell us
+
+0:09:47.190,0:09:51.820
+and we see as a research tools
+directories or special research tools
+
+0:09:51.820,0:09:55.280
+and so i will see that there's a whole
+tree of stuff that's come down from that
+
+0:09:55.280,0:09:57.750
+server that's now being tracked
+
+0:09:57.750,0:09:59.270
+and over time
+
+0:09:59.270,0:10:03.500
+when somebody else puts changes in that
+repository mike to bring them down to
+
+0:10:03.500,0:10:05.100
+this particular
+
+0:10:05.100,0:10:06.790
+account on this computer
+
+0:10:06.790,0:10:08.029
+you can tab
+
+0:10:08.029,0:10:10.370
+told the updates and
+
+0:10:10.370,0:10:13.380
+will go ahead and do that even though
+there's nothing to do
+
+0:10:13.380,0:10:16.780
+right now since no seems to happen in
+the last few seconds
+
+0:10:16.780,0:10:23.680
+but it's a good exercise granted anselm
+fetal slash projects research tools
+
+0:10:23.680,0:10:26.000
+and we can only if she
+
+0:10:26.000,0:10:30.310
+poll command which will bring down the
+contingents
+
+0:10:30.310,0:10:32.770
+and will see here that there were
+actually
+
+0:10:32.770,0:10:36.420
+no changes found which is expected
+
+0:10:36.420,0:10:40.280
+if there were changes in one-third
+pulled down into the repository they're
+
+0:10:40.280,0:10:43.620
+not actually applied to the local files
+and so you ask it to you
+
+0:10:43.620,0:10:46.280
+so we can actually do you
+
+0:10:46.280,0:10:50.420
+and htm update and the front
+
+0:10:50.420,0:10:54.970
+in our instructions we have use g
+
+0:10:54.970,0:10:58.160
+schools history
+
+0:10:58.160,0:11:02.760
+and in this case there were zero files
+updated no merges told files removed no
+
+0:11:02.760,0:11:05.040
+conflicts
+
+0:11:05.040,0:11:10.690
+life is good here we have a repository
+it's up to date
+
+0:11:10.690,0:11:12.360
+and what's reply
+
+0:11:12.360,0:11:15.700
+examine that repository on pickpocket so
+
+0:11:15.700,0:11:21.110
+mostly sokaya periods sites that provide
+revision control hosting sites for you
+
+0:11:21.110,0:11:24.240
+will provide lots of tools there's a
+number of them out there there's google
+
+0:11:24.240,0:11:24.690
+co
+
+0:11:24.690,0:11:26.680
+older there's pickpockets
+
+0:11:26.680,0:11:28.980
+there's lots of ones forget to
+
+0:11:28.980,0:11:30.549
+and i believe get hamas
+
+0:11:30.549,0:11:32.490
+picked up material support
+
+0:11:32.490,0:11:34.930
+so let's go ahead and take a look at
+
+0:11:34.930,0:11:38.770
+that but it's a for
+
+0:11:38.770,0:11:43.120
+research tools him as a number of things
+to take a peek at so the overviews where
+
+0:11:43.120,0:11:44.620
+we start off
+
+0:11:44.620,0:11:49.460
+it's got a little read me about the
+project now you can download the site
+
+0:11:49.460,0:11:52.340
+uh... tools of that
+
+0:11:52.340,0:11:54.690
+tar would use it to present
+
+0:11:54.690,0:11:56.400
+sees it too
+
+0:11:56.400,0:11:58.010
+possible options there
+
+0:11:58.010,0:11:59.420
+we can also take a look
+
+0:11:59.420,0:12:02.580
+at the source code
+
+0:12:02.580,0:12:05.980
+midterm following directions here yet to
+browse the source
+
+0:12:05.980,0:12:09.700
+sewing here once you're in the source
+time which is right here
+
+0:12:09.700,0:12:13.510
+we can go ahead and looked down here in
+washington d the same directory
+
+0:12:13.510,0:12:15.610
+structure as we have before
+
+0:12:15.610,0:12:17.420
+so you can click on things like
+
+0:12:17.420,0:12:18.770
+scripts
+
+0:12:18.770,0:12:20.639
+and it tells you that
+
+0:12:20.639,0:12:25.170
+it was changed forever to go and have a
+message of initial version post comments
+
+0:12:25.170,0:12:27.520
+how big is the file you can click on it
+
+0:12:27.520,0:12:30.750
+annual take a peek at uh... script
+
+0:12:30.750,0:12:32.940
+so it's very nice to be able to
+
+0:12:32.940,0:12:37.170
+take a peek at the site and to all sorts
+of stuff with looking at it without
+
+0:12:37.170,0:12:41.580
+having to use the command line or even
+have the coat check up and cheer
+
+0:12:41.580,0:12:43.700
+how working directory and in place
+
+0:12:43.700,0:12:46.570
+those are nice
+
+0:12:46.570,0:12:48.480
+now to talk we have
+
+0:12:48.480,0:12:51.520
+i've had called commits
+
+0:12:51.520,0:12:52.910
+intimates
+
+0:12:52.910,0:12:54.360
+well actually see
+
+0:12:54.360,0:12:56.580
+uh... treaty of changes now
+
+0:12:56.580,0:13:00.780
+it's just me working as project and i
+haven't made what are called forks of
+
+0:13:00.780,0:13:03.190
+the code antony branching
+
+0:13:03.190,0:13:06.430
+in terms of working on multi will
+concept in the same time ministering to
+
+0:13:06.430,0:13:09.250
+bring them back together to on the left
+here
+
+0:13:09.250,0:13:12.900
+are treated as a single straight-line
+without too much going on
+
+0:13:12.900,0:13:17.010
+it says who is the author and it's great
+because you can collaborate and
+
+0:13:17.010,0:13:21.150
+merciless together from different people
+as you try to collaborate on stuff
+
+0:13:21.150,0:13:25.080
+that revision numbers are a little bit
+funky with chicken material
+
+0:13:25.080,0:13:28.660
+it switched from version one two three
+four
+
+0:13:28.660,0:13:29.860
+cetera
+
+0:13:29.860,0:13:32.870
+that's used in cv essence version two
+
+0:13:32.870,0:13:34.930
+using a hash tag
+
+0:13:34.930,0:13:35.720
+and
+
+0:13:35.720,0:13:40.660
+liesl crazy numbers relate to the actual
+changes
+
+0:13:40.660,0:13:43.720
+they're not very user friendly but
+they're very unique and they were quite
+
+0:13:43.720,0:13:44.780
+well
+
+0:13:44.780,0:13:48.200
+i want to get used to them there's a
+star pieces without really worrying too
+
+0:13:48.200,0:13:49.790
+much about them
+
+0:13:49.790,0:13:51.919
+first go ahead and take a peek at one
+
+0:13:51.919,0:13:54.650
+so if we take a look at a particular
+patch
+
+0:13:54.650,0:13:56.140
+we can then see
+
+0:13:56.140,0:13:58.190
+scroll down here a little bit
+
+0:13:58.190,0:14:00.750
+we can take a peek inside of
+
+0:14:00.750,0:14:05.170
+particular file and see what's been
+changed serve green as additions
+
+0:14:05.170,0:14:06.380
+red
+
+0:14:06.380,0:14:09.420
+installations if your colorblind i'm
+very sorry
+
+0:14:09.420,0:14:12.410
+that many people haven't realized that
+red and green are
+
+0:14:12.410,0:14:16.020
+that traces of color schemes
+
+0:14:16.020,0:14:19.090
+so you can go through the uh... commit
+history and you can take a peek at
+
+0:14:19.090,0:14:23.170
+what's changed throughout time and you
+can look at what's going on and track
+
+0:14:23.170,0:14:25.050
+what's going on a project
+
+0:14:25.050,0:14:28.360
+and if you need to figure out what's
+suddenly broke in and britain he hadn't
+
+0:14:28.360,0:14:30.870
+used something for while you switch to
+it
+
+0:14:30.870,0:14:37.870
+and from exchange these are ways you can
+track and look in to see what's going on
+
+0:14:39.460,0:14:40.860
+that works pretty well
+
+0:14:40.860,0:14:41.519
+um...
+
+0:14:41.519,0:14:42.910
+we can also
+
+0:14:42.910,0:14:44.870
+if you look at the senate version
+
+0:14:44.870,0:14:47.050
+something click on this link here
+
+0:14:47.050,0:14:49.120
+when you go through the source to read
+
+0:14:49.120,0:14:53.880
+and you look at say that script if we
+pick on alaska back your source you can
+
+0:14:53.880,0:14:56.380
+see it's with the consul works
+
+0:14:56.380,0:14:58.490
+we're going to scripts
+
+0:14:58.490,0:15:01.720
+and if you look at our screen capture
+dot bash shell script
+
+0:15:01.720,0:15:04.400
+if you look at what are you are a lot of
+the top here
+
+0:15:04.400,0:15:05.970
+and actually has
+
+0:15:05.970,0:15:07.730
+hash tag in there
+
+0:15:07.730,0:15:08.720
+now if you want
+
+0:15:08.720,0:15:12.710
+deal to link to the most recent version
+as things change
+
+0:15:12.710,0:15:14.450
+can replace this with
+
+0:15:14.450,0:15:15.860
+the word tip
+
+0:15:15.860,0:15:17.300
+instead of having that
+
+0:15:17.300,0:15:19.590
+hash tag in there
+
+0:15:19.590,0:15:20.970
+presenter
+
+0:15:20.970,0:15:23.360
+and that you are all then will track
+
+0:15:23.360,0:15:26.840
+the latest version so if you give that
+to someone with tippin there instead of
+
+0:15:26.840,0:15:27.770
+the
+
+0:15:27.770,0:15:28.890
+perhaps tag
+
+0:15:28.890,0:15:32.400
+to always be seen wafers and it's up to
+you and i know you want to join us to be
+
+0:15:32.400,0:15:34.510
+consistent never change
+
+0:15:34.510,0:15:38.280
+soon attract the most recent changes
+
+0:15:38.280,0:15:40.849
+so that was here in terms of the most
+recent
+
+0:15:40.849,0:15:44.890
+uh... with that
+
+0:15:44.890,0:15:48.790
+right so let's switch from examining the
+repository
+
+0:15:48.790,0:15:49.570
+uh...
+
+0:15:49.570,0:15:53.220
+on the web to see you look at it locally
+
+0:15:53.220,0:15:57.060
+so go ahead and
+
+0:15:57.060,0:16:01.660
+take a peek here so we're now in private
+research tools
+
+0:16:01.660,0:16:03.910
+ls there's all of our stuff
+
+0:16:03.910,0:16:09.190
+we can say is g dash dash help hands
+take a peek pat
+
+0:16:09.190,0:16:11.270
+going on
+
+0:16:11.270,0:16:18.060
+i think that's a lot so we could see
+some more
+
+0:16:18.060,0:16:22.060
+and they'll tell you a little bit about
+uh... mercurial setup that will give you
+
+0:16:22.060,0:16:24.890
+a list of commands you can look through
+
+0:16:24.890,0:16:27.380
+what's your read on your own
+
+0:16:27.380,0:16:29.770
+there's a lot to material so
+
+0:16:29.770,0:16:33.210
+uh... take a peek through there and
+difficult to read
+
+0:16:33.210,0:16:34.780
+and the first thing you can do
+
+0:16:34.780,0:16:37.140
+instigated age she logged
+
+0:16:37.140,0:16:40.810
+and type that's a lesson this is a list
+of changes that have happened to in this
+
+0:16:40.810,0:16:43.430
+particular repository
+
+0:16:43.430,0:16:47.290
+very similar that change that thing we
+saw before with a little graph of green
+
+0:16:47.290,0:16:48.720
+on the left
+
+0:16:48.720,0:16:51.730
+and here it tells you attacks
+description that
+
+0:16:51.730,0:16:53.900
+the person committed typed in
+
+0:16:53.900,0:16:56.270
+and you can see that you know i've
+
+0:16:56.270,0:16:57.860
+britt made changes to things
+
+0:16:57.860,0:17:02.530
+and it shows you what's going on
+
+0:17:02.530,0:17:05.049
+so a lot going on in there
+
+0:17:05.049,0:17:12.049
+that was in my research tools that i've
+checked out
+
+0:17:13.150,0:17:15.549
+into do you think you are a lot with
+fast
+
+0:17:15.549,0:17:19.700
+so you can take a peek to various things
+hands
+
+0:17:19.700,0:17:21.929
+will get more into it as we work with
+
+0:17:21.929,0:17:25.189
+an actual depository but you can then
+take a peek at what's in those
+
+0:17:25.189,0:17:27.900
+things and we can also say
+
+0:17:27.900,0:17:33.150
+if we say going to to corporate relook
+at it as the file it is a hasty vlog
+
+0:17:33.150,0:17:35.260
+make file
+
+0:17:35.260,0:17:36.279
+pipelines
+
+0:17:36.279,0:17:40.250
+no we did before she say she lol will
+give us the log of every possible change
+
+0:17:40.250,0:17:41.880
+for all files
+
+0:17:41.880,0:17:43.480
+place a particular file
+
+0:17:43.480,0:17:46.590
+will now be looking at the changes just
+for that one particular files you can
+
+0:17:46.590,0:17:49.760
+see with this particular make file have
+only made one change
+
+0:17:49.760,0:17:50.549
+it's just
+
+0:17:50.549,0:17:54.140
+wasn't it
+
+0:17:54.140,0:17:57.360
+right so let's wish or even more
+interesting because you probably want to
+
+0:17:57.360,0:18:00.590
+make your own repository and work with
+it
+
+0:18:00.590,0:18:05.050
+so let's go ahead and create a new
+material repository for rico
+
+0:18:05.050,0:18:08.890
+as are often called since he vetoes
+slash projects
+
+0:18:08.890,0:18:10.200
+he ended now
+
+0:18:10.200,0:18:15.280
+police say issue status anniversary
+without amateur oppose a torrent
+
+0:18:15.280,0:18:16.010
+she says
+
+0:18:16.010,0:18:19.429
+i don't know which talking about this is
+an repository so
+
+0:18:19.429,0:18:21.630
+i'm confused
+
+0:18:21.630,0:18:26.150
+we can then do is we can say at least
+units to create a repository
+
+0:18:26.150,0:18:28.360
+and we can say dash dash help
+
+0:18:28.360,0:18:29.769
+type that's a lots
+
+0:18:29.769,0:18:34.549
+and that'll give us a chance to take a
+peek at help for amit animals show is
+
+0:18:34.549,0:18:36.000
+there some options
+
+0:18:36.000,0:18:38.630
+analyst you've read through that on your
+own
+
+0:18:38.630,0:18:42.360
+now we're gonna wanna create went
+through the cname slowest unit
+
+0:18:42.360,0:18:44.980
+and then will say
+
+0:18:44.980,0:18:49.580
+uh... and it could work all the parties
+students for research tools students
+
+0:18:49.580,0:18:50.300
+where you might
+
+0:18:50.300,0:18:51.100
+be doing here
+
+0:18:51.100,0:18:54.110
+work for costs
+
+0:18:54.110,0:18:56.220
+and then we'll hit concert
+
+0:18:56.220,0:18:59.220
+and it works really quick because now
+i'm doing a whole lot of this then sets
+
+0:18:59.220,0:19:00.040
+up
+
+0:19:00.040,0:19:04.140
+that will have a new directory called
+party students right here
+
+0:19:04.140,0:19:09.750
+so we can see the into r_t_e_ student
+
+0:19:09.750,0:19:10.790
+and
+
+0:19:10.790,0:19:13.750
+then we can say issue status
+
+0:19:13.750,0:19:17.400
+uh... nothing's going on here so not
+much is two-seat
+
+0:19:17.400,0:19:19.809
+and we can say steve martin
+
+0:19:19.809,0:19:24.410
+and there is nothing analog because we
+haven't had any files so let's go ahead
+
+0:19:24.410,0:19:28.020
+and out our first file into our mercure
+houses for it
+
+0:19:28.020,0:19:29.840
+tutsi issue g
+
+0:19:29.840,0:19:32.490
+initiative or we can take action
+
+0:19:32.490,0:19:36.980
+remi dot t_ exterior ever touch if the
+file doesn't exist for the screen empty
+
+0:19:36.980,0:19:38.179
+file
+
+0:19:38.179,0:19:39.550
+with that name
+
+0:19:39.550,0:19:41.419
+so ls dash o
+
+0:19:41.419,0:19:43.790
+we now have an empty like westphal
+
+0:19:43.790,0:19:45.620
+city she status
+
+0:19:45.620,0:19:46.789
+can't
+
+0:19:46.789,0:19:48.100
+pick a real then says
+
+0:19:48.100,0:19:51.270
+there is a following our repository if
+we don't know anything about that's
+
+0:19:51.270,0:19:53.720
+gonna put a question mark on the left to
+say
+
+0:19:53.720,0:19:56.200
+i don't understand what this file is
+
+0:19:56.200,0:20:00.950
+i don't have any information on it
+
+0:20:00.950,0:20:03.510
+so let's go ahead hands
+
+0:20:03.510,0:20:07.429
+uh... i'm in a quick to do something
+that i forgot to do
+
+0:20:07.429,0:20:14.429
+collection of before starting this
+
+0:20:14.720,0:20:16.150
+sorry about that
+
+0:20:16.150,0:20:19.830
+okay soon our set up to go ahead and
+give a try to you
+
+0:20:19.830,0:20:23.380
+adding that violent material so it's a
+if she
+
+0:20:23.380,0:20:24.190
+pad
+
+0:20:24.190,0:20:25.940
+read me dot taxed
+
+0:20:25.940,0:20:27.820
+so what this does says
+
+0:20:27.820,0:20:31.140
+i'm going to add this file into the
+repository
+
+0:20:31.140,0:20:32.210
+so
+
+0:20:32.210,0:20:35.539
+now actually hasn't done a whole lot yet
+so please save
+
+0:20:35.539,0:20:37.990
+packaged g status
+
+0:20:37.990,0:20:43.940
+we have and pay after recovery here it
+says it's ready to be added in
+
+0:20:43.940,0:20:45.510
+he and that's now
+
+0:20:45.510,0:20:47.270
+brady go four
+
+0:20:47.270,0:20:50.899
+being committed into this repository
+locally so let's go ahead and do that's
+
+0:20:50.899,0:20:53.570
+will say hey she commits
+
+0:20:53.570,0:20:56.750
+and then we give it a message anything
+about messages this is what goes in
+
+0:20:56.750,0:20:57.200
+there
+
+0:20:57.200,0:20:58.860
+the log file
+
+0:20:58.860,0:21:02.440
+novel filed at the log it goes with the
+file
+
+0:21:02.440,0:21:05.120
+so this is the kind of inflation tells a
+person
+
+0:21:05.120,0:21:08.380
+further overview summary of what the
+changes are
+
+0:21:08.380,0:21:11.960
+and it's a real arctic reading could log
+files
+
+0:21:11.960,0:21:14.769
+it's a full-scale that's many people had
+to
+
+0:21:14.769,0:21:16.440
+worked very hard to develop
+
+0:21:16.440,0:21:18.010
+patented
+
+0:21:18.010,0:21:19.020
+comments
+
+0:21:19.020,0:21:21.310
+and uh... i can tell you first
+
+0:21:21.310,0:21:25.660
+for certain that if you're a couple page
+essay in the long comment people just
+
+0:21:25.660,0:21:28.660
+get first-rate with you but if you don't
+get enough information also be
+
+0:21:28.660,0:21:30.440
+frustrated
+
+0:21:30.440,0:21:34.410
+so hein courage you to talk to the
+people and see what makes for a good or
+
+0:21:34.410,0:21:36.230
+bad blog entry
+
+0:21:36.230,0:21:37.950
+tool sort of saying empty
+
+0:21:37.950,0:21:40.700
+file to you start
+
+0:21:40.700,0:21:42.130
+project
+
+0:21:42.130,0:21:45.890
+and if we don't specify a file name it
+will commit anything that's really be
+
+0:21:45.890,0:21:47.430
+committed
+
+0:21:47.430,0:21:49.179
+so if we get cancer
+
+0:21:49.179,0:21:51.200
+uh... what we have a problem
+
+0:21:51.200,0:21:56.120
+we actually need to specify the username
+that will be associated with that's
+
+0:21:56.120,0:21:57.180
+commit
+
+0:21:57.180,0:21:59.740
+and we do that is we need to add
+
+0:21:59.740,0:22:01.800
+uh... some configuration information
+
+0:22:01.800,0:22:03.770
+fifty issue help
+
+0:22:03.770,0:22:07.360
+config type laughs
+
+0:22:07.360,0:22:11.370
+and this gives you information on how to
+configure mercurial
+
+0:22:11.370,0:22:13.330
+and what will need to do is actually
+
+0:22:13.330,0:22:17.399
+disc uh... described in section here
+under you live
+
+0:22:17.399,0:22:18.029
+hands
+
+0:22:18.029,0:22:20.929
+will be decreed it dot peacekeepers
+e-filed
+
+0:22:20.929,0:22:22.659
+that actually has
+
+0:22:22.659,0:22:25.100
+this information about who we are
+
+0:22:25.100,0:22:30.490
+and how r environments and he said i am
+sold over he max and take a look
+
+0:22:30.490,0:22:32.230
+you can also do man
+
+0:22:32.230,0:22:35.470
+he she or see for more information on
+that the research
+
+0:22:35.470,0:22:38.460
+the resource for sole control ex to you
+
+0:22:38.460,0:22:40.940
+post put our he must offer
+
+0:22:40.940,0:22:45.280
+with their control x control half to go
+open the file
+
+0:22:45.280,0:22:47.270
+fill the slot
+
+0:22:47.270,0:22:49.650
+dot east g r_c_
+
+0:22:49.650,0:22:50.670
+spencer
+
+0:22:50.670,0:22:53.029
+we're now opening kind you file
+
+0:22:53.029,0:22:56.760
+he may have one already banned edit but
+probably not
+
+0:22:56.760,0:22:59.030
+and we need to you
+
+0:22:59.030,0:23:01.870
+did tell it about our first name last
+name
+
+0:23:01.870,0:23:04.160
+can't email address
+
+0:23:04.160,0:23:07.950
+since the full editor is d_i_a_ which
+we're not using in this class when he
+
+0:23:07.950,0:23:10.710
+told me we prefer remax
+
+0:23:10.710,0:23:14.050
+silk review our section of the config
+file
+
+0:23:14.050,0:23:16.670
+username equals
+
+0:23:16.670,0:23:20.010
+kurt where
+
+0:23:20.010,0:23:22.360
+square at gmail dot com
+
+0:23:22.360,0:23:26.600
+so you put in your email address please
+don't put your mind
+
+0:23:26.600,0:23:29.610
+ferocious equals true
+
+0:23:29.610,0:23:31.480
+and editor
+
+0:23:31.480,0:23:33.520
+equals imax
+
+0:23:33.520,0:23:36.440
+save that control x control s
+
+0:23:36.440,0:23:40.910
+knee-deep in the morning and picture
+works controllers controllers
+
+0:23:40.910,0:23:43.299
+can we now have a material
+
+0:23:43.299,0:23:46.160
+uh... configuration files as who we are
+
+0:23:46.160,0:23:48.190
+to the contrary commit again
+
+0:23:48.190,0:23:49.790
+hit the apparent whites
+
+0:23:49.790,0:23:51.530
+we're now back at our committee
+
+0:23:51.530,0:23:53.649
+we can press center
+
+0:23:53.649,0:23:57.170
+and are changes were committed make it
+to you
+
+0:23:57.170,0:23:59.500
+that this was change zero
+
+0:23:59.500,0:24:02.419
+and here is the change that number
+
+0:24:02.419,0:24:05.460
+idea has died
+
+0:24:05.460,0:24:07.330
+food now committed our first
+
+0:24:07.330,0:24:08.269
+document
+
+0:24:08.269,0:24:10.360
+it's a h_g_
+
+0:24:10.360,0:24:11.380
+lawn
+
+0:24:11.380,0:24:13.740
+reading the taxed
+
+0:24:13.740,0:24:16.010
+it's not very exciting
+
+0:24:16.010,0:24:19.429
+seasick here is our command a stream of
+red-meat
+
+0:24:19.429,0:24:21.760
+and tells us or a change that
+
+0:24:21.760,0:24:25.010
+ad tag means tip means it's on that the
+lead
+
+0:24:25.010,0:24:28.029
+because part of our repository war
+adding stuff
+
+0:24:28.029,0:24:28.799
+who did it
+
+0:24:28.799,0:24:31.610
+when it was done which files changed
+
+0:24:31.610,0:24:35.100
+and here is our log message right here
+
+0:24:35.100,0:24:36.980
+that were pretty well
+
+0:24:36.980,0:24:42.250
+and let's go ahead and edit that file
+and make some changes so control x
+
+0:24:42.250,0:24:44.350
+control after to find it
+
+0:24:44.350,0:24:48.010
+animal same projects parties student
+
+0:24:48.010,0:24:50.360
+caned breast cancer
+
+0:24:50.360,0:24:53.470
+right now in that directory call select
+rebbe
+
+0:24:53.470,0:24:55.960
+breast cancer
+
+0:24:55.960,0:25:00.160
+animals say uh... some sort of comment
+
+0:25:00.160,0:25:03.529
+this is a place for
+
+0:25:03.529,0:25:04.720
+research
+
+0:25:04.720,0:25:06.840
+tools
+
+0:25:06.840,0:25:11.250
+work by students
+
+0:25:11.250,0:25:13.070
+to excuse me
+
+0:25:13.070,0:25:14.659
+working
+
+0:25:14.659,0:25:16.029
+proof
+
+0:25:16.029,0:25:19.740
+classes and figure
+
+0:25:19.740,0:25:22.640
+heard say that control x control s
+
+0:25:22.640,0:25:26.470
+this is in a very good reading papers
+trying to be quick and show the basic
+
+0:25:26.470,0:25:27.640
+concept
+
+0:25:27.640,0:25:32.940
+so let's take a look pat's material
+striking a balance within six g status
+
+0:25:32.940,0:25:34.080
+and if we
+
+0:25:34.080,0:25:39.120
+look here we see nam for modifying
+harini dot t_ exp
+
+0:25:39.120,0:25:43.070
+and the great part about materials now
+it knows about our last version
+
+0:25:43.070,0:25:46.830
+and if you look at our current file
+intel's was different
+
+0:25:46.830,0:25:48.220
+this is called a difference
+
+0:25:48.220,0:25:50.530
+and that's pretty done with the deaf
+
+0:25:50.530,0:25:52.240
+emancipation g
+
+0:25:52.240,0:25:55.900
+tiff if you don't specify a file name it
+will look for any follows different and
+
+0:25:55.900,0:25:57.570
+show you that
+
+0:25:57.570,0:26:00.590
+so if you have a lot going on you do you
+want to specify the pounding on the way
+
+0:26:00.590,0:26:03.920
+so get clobbered with tons of
+information
+
+0:26:03.920,0:26:06.660
+sonar kesar diff is actually pretty
+small
+
+0:26:06.660,0:26:08.970
+so here it is it says
+
+0:26:08.970,0:26:11.000
+here's uh... file we started with
+
+0:26:11.000,0:26:15.570
+and with the dayton time here's the file
+we have now date and time
+
+0:26:15.570,0:26:17.160
+or just a couple minutes later
+
+0:26:17.160,0:26:17.980
+and
+
+0:26:17.980,0:26:20.830
+it said that we've added to lawrence
+
+0:26:20.830,0:26:23.220
+that's great so now we can
+
+0:26:23.220,0:26:25.360
+they could change that he's g
+
+0:26:25.360,0:26:27.740
+mentor teams and so if you commit
+
+0:26:27.740,0:26:29.590
+professor pam
+
+0:26:29.590,0:26:32.840
+here's our message to intro lines with
+
+0:26:32.840,0:26:34.309
+basic
+
+0:26:34.309,0:26:36.250
+t_v_ scription
+
+0:26:36.250,0:26:38.260
+presenters should commit it
+
+0:26:38.260,0:26:42.090
+so now we made our change that's our
+second one an accounting firm zero
+
+0:26:42.090,0:26:44.830
+because were computer science types here
+
+0:26:44.830,0:26:48.670
+so one
+
+0:26:48.670,0:26:52.140
+and we can say h_g_ log
+
+0:26:52.140,0:26:55.060
+on
+
+0:26:55.060,0:26:55.990
+reading
+
+0:26:55.990,0:26:59.740
+or we can actually says five files will
+do it with the fire
+
+0:26:59.740,0:27:01.940
+and yes it is now two changes here
+
+0:27:01.940,0:27:04.110
+to here's our first change
+
+0:27:04.110,0:27:07.460
+and if we throw back a little bit here's
+our second chance
+
+0:27:07.460,0:27:10.179
+with her masters
+
+0:27:10.179,0:27:11.570
+that's pretty nice
+
+0:27:11.570,0:27:13.880
+now let's make a third one
+
+0:27:13.880,0:27:20.480
+and on the site in the final salute kurt
+twenty eleven november twenty
+
+0:27:20.480,0:27:23.620
+st dot com
+
+0:27:23.620,0:27:26.260
+control x control s
+
+0:27:26.260,0:27:28.110
+and we can now
+
+0:27:28.110,0:27:29.270
+commit that
+
+0:27:29.270,0:27:31.650
+kijiji
+
+0:27:31.650,0:27:36.110
+commit message spot in the file
+
+0:27:36.110,0:27:40.059
+so we've now got
+
+0:27:40.059,0:27:43.380
+she status
+
+0:27:43.380,0:27:47.660
+um... so now we have three changes in
+their can we can go start looking at our
+
+0:27:47.660,0:27:50.060
+older changes and see what they're like
+
+0:27:50.060,0:27:52.870
+sould take a look
+
+0:27:52.870,0:27:55.370
+house control x_y_ and to you
+
+0:27:55.370,0:27:58.800
+discover one buffered control exposed me
+to the opposite
+
+0:27:58.800,0:28:03.610
+preferred suppressed have almost
+extended
+
+0:28:03.610,0:28:04.440
+ball
+
+0:28:04.440,0:28:09.140
+cv where did their tools to animate
+projects
+
+0:28:09.140,0:28:11.179
+parties didn't
+
+0:28:11.179,0:28:12.850
+tasty log
+
+0:28:12.850,0:28:15.419
+we'll see our log of all the changes
+
+0:28:15.419,0:28:18.450
+now you probably want to take that
+celeste in the future
+
+0:28:18.450,0:28:20.370
+so if she'd want less
+
+0:28:20.370,0:28:22.710
+because there may be quite a few
+
+0:28:22.710,0:28:26.590
+now we can look at the acidic log
+entries in the final so we can see each
+
+0:28:26.590,0:28:28.530
+g
+
+0:28:28.530,0:28:32.410
+cap very much like the units coming and
+then we can specify a revision for final
+
+0:28:32.410,0:28:34.140
+so
+
+0:28:34.140,0:28:36.039
+revision zero
+
+0:28:36.039,0:28:40.669
+theaters first formal misfiring and it
+should show us the initial file which
+
+0:28:40.669,0:28:43.570
+was empty and in fact it was empty
+
+0:28:43.570,0:28:47.300
+now we can say pat
+
+0:28:47.300,0:28:50.550
+and root of all that revision
+information fml shows the current
+
+0:28:50.550,0:28:54.660
+version file sloth beginning in the end
+of what's going on right now
+
+0:28:54.660,0:28:59.670
+telecaster versions in between so he's
+cheat at dash dash revision
+
+0:28:59.670,0:29:02.190
+one after read me dot text
+
+0:29:02.190,0:29:05.640
+and that shows you are for first
+
+0:29:05.640,0:29:07.700
+second provisional or one
+
+0:29:07.700,0:29:09.400
+uh... format file
+
+0:29:09.400,0:29:13.060
+and we can also ask for revision number
+two
+
+0:29:13.060,0:29:14.770
+you'll see that version here
+
+0:29:14.770,0:29:18.590
+so you always have access to every
+change without you've got even if you
+
+0:29:18.590,0:29:23.910
+delete that file from material people
+have a laugh island all history of it
+
+0:29:23.910,0:29:28.140
+so that's the power of revision control
+systems that you have this ability to
+
+0:29:28.140,0:29:30.320
+look back into your files
+
+0:29:30.320,0:29:32.840
+even when you've left aversion behind us
+in the needed
+
+0:29:32.840,0:29:34.500
+in a month three years ago
+
+0:29:34.500,0:29:37.810
+and be able to see what's changed and
+why because you have the logs and you
+
+0:29:37.810,0:29:39.350
+have the differences
+
+0:29:39.350,0:29:43.980
+so how to look at the difference between
+two versions we can say he she deaf
+
+0:29:43.980,0:29:48.380
+and that'll give us the changes require
+more info which also say dash are for
+
+0:29:48.380,0:29:49.680
+her vision
+
+0:29:49.680,0:29:52.200
+and we'll compare revisions one and two
+
+0:29:52.200,0:29:53.980
+for remi
+
+0:29:53.980,0:29:57.510
+system and will show us the difference
+between revisions one and two
+
+0:29:57.510,0:30:01.600
+and they can see that we had a point
+point endorsing tour
+
+0:30:01.600,0:30:02.279
+so thats
+
+0:30:02.279,0:30:04.830
+really powerful tool to be able to look
+into
+
+0:30:04.830,0:30:09.780
+york odan
+
+0:30:09.780,0:30:15.250
+let's try out some of the functionality
+if we delete a file
+
+0:30:15.250,0:30:17.390
+so if we say
+
+0:30:17.390,0:30:18.240
+r_e_m_
+
+0:30:18.240,0:30:20.370
+read me dot texte
+
+0:30:20.370,0:30:23.480
+presenter sister it
+
+0:30:23.480,0:30:24.440
+groups weight
+
+0:30:24.440,0:30:27.300
+we actually want that file back
+
+0:30:27.300,0:30:29.610
+with a she's palace and see that
+
+0:30:29.610,0:30:33.160
+yes mission point says oh my goodness
+the files gone
+
+0:30:33.160,0:30:36.820
+it knows about the review presence in
+your current directory
+
+0:30:36.820,0:30:38.700
+so we can say is cheap
+
+0:30:38.700,0:30:41.520
+revert
+
+0:30:41.520,0:30:43.620
+remi dot t_ exp
+
+0:30:43.620,0:30:44.649
+and
+
+0:30:44.649,0:30:50.200
+it says it's comforting it we can take a
+look here and our review file his back
+
+0:30:50.200,0:30:54.340
+preemie dot t_ if he saw a fantastic if
+you are filling with the file
+
+0:30:54.340,0:30:57.450
+don't like what you've done to make
+himself turned around
+
+0:30:57.450,0:31:01.250
+as you try and get complex coating for
+example you can just with the final and
+
+0:31:01.250,0:31:05.610
+say revert me back to where you worked
+nothing he wished he status
+
+0:31:05.610,0:31:08.750
+everything is good there's no changes
+
+0:31:08.750,0:31:10.190
+very powerful
+
+0:31:10.190,0:31:15.679
+alright so what makes the material treat
+sevilla constrict realistic chelate
+
+0:31:15.679,0:31:19.200
+we have a dot htm correct resurgence
+uh...
+
+0:31:19.200,0:31:21.279
+now especially
+
+0:31:21.279,0:31:27.270
+uh... that's truce and we can then say
+do you dot h_g_ see what's in there
+
+0:31:27.270,0:31:29.820
+and there's a couple different
+directories speaking to an analyst at
+
+0:31:29.820,0:31:32.029
+shell dot g
+
+0:31:32.029,0:31:36.279
+as the materials that this directory out
+things changing tracking what's going on
+
+0:31:36.279,0:31:37.390
+directory
+
+0:31:37.390,0:31:42.210
+so don't fill with p dot h two drudgery
+only got to stay in their if you decide
+
+0:31:42.210,0:31:45.950
+that you don't want to be materially
+track anymore you can always point that
+
+0:31:45.950,0:31:49.060
+but i recommend being very careful about
+that
+
+0:31:49.060,0:31:52.000
+so how do we have directories
+
+0:31:52.000,0:31:53.980
+week a m
+
+0:31:53.980,0:32:00.080
+uh... do you make your dash keys to the
+supreme multiple directories zero one
+
+0:32:00.080,0:32:01.750
+increase here too
+
+0:32:01.750,0:32:06.460
+and we can be something recreate hold on
+to the same time zone three four five
+
+0:32:06.460,0:32:07.910
+six
+
+0:32:07.910,0:32:09.059
+presenter
+
+0:32:09.059,0:32:10.460
+and then
+
+0:32:10.460,0:32:12.840
+we now have
+
+0:32:12.840,0:32:16.150
+publisher directories alistair show
+clocks
+
+0:32:16.150,0:32:19.190
+that's correct we can now say he she had
+
+0:32:19.190,0:32:20.669
+klaus
+
+0:32:20.669,0:32:22.120
+presenter
+
+0:32:22.120,0:32:25.000
+if she's status
+
+0:32:25.000,0:32:30.429
+we now have which stuff we can see each
+g
+
+0:32:30.429,0:32:34.710
+connect clients
+
+0:32:34.710,0:32:38.160
+and apparently continued we do it so it
+should be
+
+0:32:38.160,0:32:40.649
+had constants in seemed to
+
+0:32:40.649,0:32:43.970
+tinting unless you have files in there
+
+0:32:43.970,0:32:47.679
+and again and pretty near record so
+we'll just go on from there
+
+0:32:47.679,0:32:51.580
+and i'll figure and directories later on
+i'll post a video
+
+0:32:51.580,0:32:56.270
+let's take a look at working with imax
+
+0:32:56.270,0:32:57.490
+there's a key
+
+0:32:57.490,0:33:03.659
+we need to know if the vision control
+nuts control acts d and d that's victor
+
+0:33:03.659,0:33:04.720
+using the term
+
+0:33:04.720,0:33:06.640
+and so
+
+0:33:06.640,0:33:09.080
+if we're now on our renamed
+
+0:33:09.080,0:33:12.570
+can also say another
+
+0:33:12.570,0:33:14.730
+file dot t_ xti
+
+0:33:14.730,0:33:16.580
+and if you look here
+
+0:33:16.580,0:33:19.720
+had gone he she and the version number
+
+0:33:19.720,0:33:24.370
+i'm showing you be in command of that
+particular file and this one shows no
+
+0:33:24.370,0:33:28.799
+material information so he filed for
+
+0:33:28.799,0:33:31.580
+correa or you know something like that
+person
+
+0:33:31.580,0:33:32.840
+some text
+
+0:33:32.840,0:33:36.700
+if we want to and that file and control
+xvi fee
+
+0:33:36.700,0:33:37.960
+is indeed
+
+0:33:37.960,0:33:41.730
+material arrogant version control next
+command
+
+0:33:41.730,0:33:47.770
+and it always stressed to ask you save
+file feet modified its will say yes
+
+0:33:47.770,0:33:52.410
+if you get a file isn't connor version
+control register that file
+
+0:33:52.410,0:33:57.250
+you're not gonna curls retreats going to
+go back to the old or so yes way
+
+0:33:57.250,0:33:59.609
+to make sure he remembered colonels
+retreat
+
+0:33:59.609,0:34:03.670
+and now control x dv will check in those
+changes
+
+0:34:03.670,0:34:04.930
+tools say
+
+0:34:04.930,0:34:05.699
+and
+
+0:34:05.699,0:34:07.060
+commercial
+
+0:34:07.060,0:34:09.979
+file to demonstrates
+
+0:34:09.979,0:34:15.639
+he max control c control c says were
+down in their control c control seat
+
+0:34:15.639,0:34:17.179
+it's not checked in
+
+0:34:17.179,0:34:21.240
+and who are making a change we can say
+another change
+
+0:34:21.240,0:34:24.219
+control xa defeat
+
+0:34:24.219,0:34:28.529
+files of state control x controller save
+that control x dvd
+
+0:34:28.529,0:34:30.980
+and now realizes there's something
+different
+
+0:34:30.980,0:34:33.939
+and we can say eight-second
+
+0:34:33.939,0:34:36.459
+changed for impacts
+
+0:34:36.459,0:34:39.819
+control c control c clothes that up
+
+0:34:39.819,0:34:43.419
+and we now have looked at
+
+0:34:43.419,0:34:47.059
+the material changes to control xvi
+
+0:34:47.059,0:34:49.979
+let's go take a look at some of the
+twins really quick
+
+0:34:49.979,0:34:52.839
+we have
+
+0:34:52.839,0:34:58.549
+uh... i'm going to put my window here
+sort of control x five two
+
+0:34:58.549,0:35:03.579
+so now we have to be next but first a
+contract things
+
+0:35:03.579,0:35:08.449
+angels around really fast
+
+0:35:08.449,0:35:10.579
+in thus far we can say
+
+0:35:10.579,0:35:13.599
+uh... control acts v
+
+0:35:13.599,0:35:15.270
+control acts the
+
+0:35:15.270,0:35:16.080
+at all
+
+0:35:16.080,0:35:19.510
+analysts the history for that particular
+finals if you're interested in what's
+
+0:35:19.510,0:35:21.299
+going on
+
+0:35:21.299,0:35:25.879
+if we've modified stuff so modifications
+
+0:35:25.879,0:35:29.939
+let's cut through stricken
+
+0:35:29.939,0:35:32.390
+modified
+
+0:35:32.390,0:35:34.459
+say that and we can say
+
+0:35:34.459,0:35:36.619
+control x v
+
+0:35:36.619,0:35:37.590
+equals
+
+0:35:37.590,0:35:42.910
+and it doesn't have to see what's going
+on you can then take a look at changes
+
+0:35:42.910,0:35:45.889
+and if you want to see an old version
+you can do
+
+0:35:45.889,0:35:47.889
+control except v
+
+0:35:47.889,0:35:54.409
+filled up can we can say zero prenatal
+version or maybe one
+
+0:35:54.409,0:35:58.269
+uh... maybe once you've got here
+
+0:35:58.269,0:36:02.429
+control just a quick relaxed beats
+restrictions flogged
+
+0:36:02.429,0:36:06.849
+editions fortune shift resourceful
+kitchen set three
+
+0:36:06.849,0:36:10.320
+so to control acts v
+
+0:36:10.320,0:36:13.559
+filled up and will say three presenter
+
+0:36:13.559,0:36:15.459
+ended now shows you
+
+0:36:15.459,0:36:18.069
+what was that version three
+
+0:36:18.069,0:36:22.929
+so that's out pretty powerful paint will
+talk more about material teacher videos
+
+0:36:22.929,0:36:27.690
+where we can talk about pushing up to
+uh... remote location and contains going
+
+0:36:27.690,0:36:31.920
+but that's it for now thank you for
+joining paint happy version control
+

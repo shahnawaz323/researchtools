@@ -1,0 +1,10 @@
+#+STARTUP: showall
+
+# Research Tools 2011 Homework Assignment by Kurt Schwehr.  2011-Sep-20
+# Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+#+TITLE:     Homework 1: 
+#+AUTHOR:    FIX: your name
+#+EMAIL:     FIX: your email
+#+DATE:      FIX: use C-. to put in the date
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/

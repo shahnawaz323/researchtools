@@ -1,0 +1,58 @@
+#+BEGIN_COMMENT
+Local Variables:
+mode: org
+mode: flyspell
+mode: auto-fill
+End:
+#+END_COMMENT
+
+#+STARTUP: showall
+
+#+TITLE:     Chapter XXX: Writing
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu>
+#+DATE:      $Date: $
+#+DESCRIPTION: Marine Research Data Manipulation and Practices - Writing
+#+TEXT:      $Id: kurt-2010.org 13030 2010-01-14 13:33:15Z schwehr $
+#+KEYWORDS: latex bibtex
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:nil LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_HOME: http://schwehr.org
+
+* Using org mode
+
+* Using latex 
+
+https://www.youtube.com/playlist?list=PLDD406480D35CE390
+
+* Managing Reference
+
+- http://www.mendeley.com/
+- zotero
+- *jabref*
+- what is bibtex
+- EndNote and...?
+- http://www.sugarexpletive.com/blog.cgi/code/pdf2bib
+- Using these with word / openoffice?
+
+* Publishing
+
+- http://arxiv.org/
+  - https://plus.google.com/117663015413546257905/posts/Kr7dsxsC7CT
+- http://en.wikipedia.org/wiki/Digital_object_identifier
+- http://en.wikipedia.org/wiki/Open_access_%28publishing%29
+- http://en.wikipedia.org/wiki/List_of_academic_databases_and_search_engines
+
+* TODO Incoming items
+
+- http://wiki.ccom.unh.edu/index.php/Writing
+- http://www.csc.ncsu.edu/faculty/mpsingh/local/advice/editing.html
+- http://www.csc.ncsu.edu/faculty/mpsingh/local/advice/writing.html
+- http://www.cs.purdue.edu/homes/dec/essay.dissertation.html
+- From Jim Gardner: http://public.wsu.edu/~brians/errors/errors.html
+- Directory of open access journals http://www.doaj.org/doaj?func=browse&
+- arXiv friendly journals http://front.math.ucdavis.edu/journals#journals

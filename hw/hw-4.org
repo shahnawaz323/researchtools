@@ -1,0 +1,35 @@
+#+STARTUP: showall
+
+# Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+
+#+TITLE:     Homework 4: Python
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     kurt@ccom.unh.edu
+#+DATE:      <2011-10-04 Tue>
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Actual assignment was to turn in your log file
+
+Items to put into a future version of the class
+
+- Make sure to specify exactly which classes should be in the
+  submitted log file
+- Log file should be saved as ~/hw/04/log-$USER-$(date +%Y%m%d).org 
+  where the user and date are expanded out
+- Specify the exact email title must be "Research Tools Homework 04"
+- md5 checksum should be exactly as output by the md5sum command
+- The word "FIX" must be removed from the title, author and email!
+- The org file must properly export with 
+   *C-c C-e b*
+
+* COMMENT HOMEWORK
+  DEADLINE: <2011-10-11 Tue> by 5PM EDT
+
+This was the planned homework
+
+- excercises with split and float()
+- Post a question on the google group
+- Post a question on one of the the videos
+- Post a question on one of the lectures in a blog post
+- Submit your log file
+- Reading - something from a cruise report

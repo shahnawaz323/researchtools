@@ -1,0 +1,609 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 26: LAST CLASS - Python - binary data 5
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-12-01 Thu>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: struct numpy sbet imu navigation binary hg mercurial ipython
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+This is the last class of Research Tools 2011.  This turned out to be
+the last time that I will be teaching Research Tools at CCOM/JHC.
+However, this does not mean that the material is dead.  Today, in part
+of the wrap up, I will talk about copyright for data and source code.
+
+* See Also
+
+- Original single document of [[https://bitbucket.org/schwehr/researchtools/src/tip/general/python-binary-files.org][Python - parsing binary data files]]
+  (points to the most recent version in bitbucket)
+
+* Reminder - class material copying is encouraged
+
+Class materials are copyright by the person creating them, so you are 
+not free to give class materials to others unless the author gives you
+permission.  
+
+For these class notes, videos, audio files, and examples, I encourage
+you to copy and modify them.  I've released everything under this license:
+
+Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License
+
+I am very interested in suggestions, corrections, additions and so
+forth.  It is especially good if they come as a "pull request" on
+BitBucket.
+
+* Faculty Review
+
+Please be honest about what is good and bad about this course.  This
+review is extra important.  Whoever comes after me teaching Research
+Tools needs your take on the class.  You should also feel free to talk
+to me or other CCOM faculty about the course and the material at any
+time in the future.
+
+* AGU poster prep session today
+
+#+BEGIN_EXAMPLE 
+Dear Earth Science Students and Faculty, 
+
+Please join us for our final Brown Bag of the year.  This Thursday we
+will have an AGU-style poster session.  It will also serve as a end of
+the semester get-together and refreshments will be served!
+
+Who*:  Posters by- Danielle Grogan, Jake Setera, Kaitlyn Steele, Claire Treat, Monica Wolfson, & Shan Zuidema 
+When:  Thursday, Dec. 1st at 12:40
+Where: James 240 (the other end of the hall from our usual room) 
+
+*Additional Posters by Faculty and Students are very welcome
+#+END_EXAMPLE
+
+* Copyright
+
+*WARNING:* I am not a lawyer!  However, most lawyers know little about
+software or data copyright/patent issues.  Yes, this topic is boring,
+but super important.
+
+#+BEGIN_SRC sh
+wtf ianal
+# IANAL: I am not a lawyer
+#+END_SRC
+
+For the United States: http://www.copyright.gov/circs/circ1.pdf (boring!)
+
+It is important to know that in most countries, if you produce raw
+data or write software or text, that material is automatically
+copyrighted by you or your employer.  That means that if you do not
+put a license with your data or in your code/writings, other people
+are *NOT* allowed to use that material.  Most scientists do not want
+to understand copyrights, but it is essential.
+
+"Intellectual Property" (IP) is a confusing and annoying mess!
+
+You can not just say something is "open source" or "public domain."
+Public domain requires that you legally give up your copyright.  I
+don't know how to do that.  For open source, you must specify a
+license.  "Open Source" has no legal meaning.
+
+- http://creativecommons.org/about/cc0
+- http://www.opensource.org/
+
+Please only pick a standard license.  Rolling your own will be a
+massive disaster!  Yes, really.  
+
+** An example of a big problem: Generic Sensor Format
+
+http://www.saic.com/maritime/gsf/
+
+#+BEGIN_SRC sh
+wget http://www.saic.com/maritime/gsf/download/gsf_0303.zip
+unzip gsf_0303.zip # YUCK!  Unpacks into the current directory
+rm gsf_0303.zip
+egrep -i 'license|copyright|gpl|bsd|apache|open source' *.[ch]
+#+END_SRC
+
+The results:
+
+#+BEGIN_EXAMPLE 
+egrep -i 'license|copyright|gpl|bsd|apache|open source' *.[ch]
+gsf.c: * Copyright (C) Science Applications International Corp.
+gsf.h: * Copyright (C) Science Applications International Corp.
+gsf_dec.c: * Copyright (C) Science Applications International Corp.
+gsf_dec.h: * Copyright (C) Science Applications International Corp.
+gsf_enc.c: * Copyright (C) Science Applications International Corp.
+gsf_enc.h: * Copyright (C) Science Applications International Corp.
+gsf_ft.h: * Copyright (C) Science Applications International Corp.
+gsf_indx.c: * Copyright (C) ACME Software, A Subsidiary of Fly By Night Industries, Inc.
+gsf_indx.h: * Copyright (C) Science Applications International Corp.
+gsf_info.c: * Copyright (C) Science Applications International Corp.
+#+END_EXAMPLE
+
+Searching the 3 pdfs in the zip, I find no mention of copyright or
+license.  But that does not give you *any* rights to do anything other
+than read what you downloaded.
+
+But, MB-System, Fledermaus, Hypack, Caris and many others use the GSF
+code.  While no one wants to cause trouble, this is a serious legal
+mine field.
+
+** Open Source Licenses for Source Code
+
+Here are the ones I think are useful for source code:
+
+- [[http://www.opensource.org/licenses/BSD-2-Clause][BSD]] - Most flexible license
+- [[http://www.opensource.org/licenses/LGPL-3.0][LGPL v3]] - safe for use by close sourced software, but changes to the
+  code to the LGPL code must be released if a product uses a modified
+  LGPL chunk of code.  
+- [[http://www.opensource.org/licenses/GPL-3.0][GPL v3]] - If you want to prevent close sourced use of the code.
+  Commercial use is okay, but the results based on GPL code must also
+  be GPL.
+
+e.g. http://code.google.com/hosting/createProject
+
+http://en.wikipedia.org/wiki/Comparison_of_free_software_licences
+
+** Data licenses
+
+I have not figured out this world.  Background:
+
+- http://en.wikipedia.org/wiki/Open_data
+- http://en.wikipedia.org/wiki/Open_science_data
+
+Licenses of interest.
+
+- http://opendatacommons.org/licenses/odbl/
+- http://creativecommons.org/choose/ Note: some of the CC licenses do not
+  allow for commercial use.  This license is the most permissive:
+  http://creativecommons.org/licenses/by/3.0/
+
+** Documentation / Text Licenses
+
+** US Government Employees
+
+There is preception that what is done by US Government Employees has
+no copyright or patent protection.  Be warned that there are
+many many exceptions and that only applies to *inside* the US.
+
+** Government Funded 
+
+Just because something is funded by the US Government does not mean
+that whatever comes out of that is free for use.  Usually, the results
+are owned by who ever did the work unless there is something
+specifically in the contract saying otherwise.
+
+If you work for the US Government, you should make sure contract is
+clear about material that you want released when using outside vendors
+for software or data collection.  Otherwise, you are funding a private
+business to develop closed source that you might loose access to.
+
+** Consider timed release / escrow
+
+*WARNING:* Experimental ideas follow.  I don't have good examples of
+this being done.
+
+These concepts may help many cases.  Make sure that you depend on
+software or data from an external provider is protected.  If the
+provider is purchased or goes out of business, what happens to you?
+Make sure that there is an escrow clause where a 3rd party holds the
+copies of what goes into the code and releases that under an open
+license in the event of going out of business or cancelling what you
+depend on!
+
+If you are a contractor and you should consider making sure that you
+are allowed to eventually release and show off what you are doing.
+For example, consider putting a clause into contracts that you are
+able to release multibeam data under open license XXXX after YYYY
+(e.g. 5) years from the date that the data was collected.  That way
+you protect both your own business interests and the interests of your
+clients.  There is nothing like talking to a contractor that is not
+allowed to share relevant past work as a demonstration of what they
+can deliver.
+
+An example of an escrow service: http://www.openaccess.org/index.php?section=86
+I really know nothing about this company.
+
+* Missing topics
+
+We haven't been able to cover quite a few topics this semester that I
+think are super helpful to ocean mapping / research:
+
+- BibTex / JabRef / Zotero for managing references
+- LaTeX and HTML for writing and publishing
+- Mercurial (hg) for true revision control.  But there is a video!
+- GeoMapApp
+- GMT / MB-System for mapping making and processing multibeam sonar
+  data
+- GRASS GIS and Octave (matlab work alike)
+- Google Earth / Google Fusion Tables / NASA World Wind
+- Collecting data from python
+  - with serial data in using pyserial
+  - over a network via TCP or UDP network protocols
+- projecting and processing data with proj and gdal
+- using python to get data into MatLab, ArcGIS, Caris, Hypack,
+  Fledermaus, etc
+
+I encourage you to read up on these topics or ask your fellow students
+
+* Setup
+
+Start emacs
+
+Open a terminal and start ipython
+
+In the past, we did the setup in the bash shell, but we can do everything from ipython.
+
+#+BEGIN_SRC python
+# update your mercurial repository of the class notes
+# Use your alias
+rtupdate
+
+# The alias should do this:
+# !(cd /home/researchtools/projects/researchtools/; hg pull; hg update)
+
+mkdir ~/class/26
+cd ~/class/26
+bookmark c26
+bookmark -l
+
+logstart -o -r log-class-26.py append
+
+# Fetch the sbet file:
+
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2010_202_S220_subsampled.sbet.bz2
+!curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2011_194_S250A_Stbd_subsampled.sbet.bz2
+
+!bunzip2 sample.sbet.bz2
+!bunzip2 2010_202_S220_subsampled.sbet.bz2
+!bunzip2 2011_194_S250A_Stbd_subsampled.sbet.bz2
+
+!md5sum sample.sbet
+196c21f16f07ceae180888b12e9edc56  sample.sbet
+
+!md5sum 2010_202_S220_subsampled.sbet
+e8f7283deb887e16b05b08581bd7d2bb  2010_202_S220_subsampled.sbet
+
+!md5sum 2011_194_S250A_Stbd_subsampled.sbet
+72e5bab716485b53ecde9aa1cfc90719  2011_194_S250A_Stbd_subsampled.sbet
+#+END_SRC
+
+* Where were we?
+
+Rather than paste in the code from the org file, we will copy the code
+from our mercurial (hg) checkout:
+
+#+BEGIN_SRC sh
+cd ~/class/26
+cp ~/projects/researchtools/class/code/26-sbet.py sbet.py
+#+END_SRC
+
+* Writing a KML
+
+We added KML writing last time.  But we are missing one thing!
+Coordinates that are close to 0,0 are going to be a big problem!
+First we need a function that will test if floating point numbers are
+almost equal.
+
+#+BEGIN_SRC python
+import sys
+
+def almost_equal(value1, value2, epsilon=sys.float_info.epsilon):
+    if value1 > value2+epsilon:
+        return False
+    if value1 < value2-epsilon:
+        return False
+    return True
+#+END_SRC
+
+Then we need to use that to skip points of no position data at 0,0:
+
+#+BEGIN_SRC python
+        for datagram_index, datagram in enumerate(load_sbet_file(filename)):
+            x=datagram['lon_deg']
+            y=datagram['lat_deg']
+
+            if datagram_index % 10 == 0:
+                print datagram_index, datagram['time'], x, y
+
+            if almost_equal(0., x) and almost_equal(0., y):
+                # skip points that are at zero,zero... no data
+                # good luck if you try to survey at 0,0
+                continue
+
+            out.write('{x},{y}\n'.format(x=x,y=y))
+#+END_SRC
+
+* Can we make an sqlite database?
+
+Just follow along on this one.  Databases are not unlike spreadsheets,
+but much easier to manage huge amounts of information.  There are
+tables with data.  We will quick try to write an SQLite database.
+Here is the command to create a database:
+
+#+BEGIN_SRC sql
+-- Two dashes/hyphens start a comment in SQL
+CREATE TABLE IF NOT EXISTS sbet_entry (
+       time REAL,
+       y REAL,
+       x REAL,
+       z REAL,
+       -- Everything from here to the z_ang is not needed for this demo
+       x_vel REAL,
+       y_vel REAL,
+       z_vel REAL,
+       roll REAL,
+       pitch REAL,
+       heading REAL,
+       wander_ang REAL,
+       x_accel REAL,
+       y_accel REAL,
+       z_accel REAL,
+       x_ang REAL,
+       y_ang REAL,
+       z_ang REAL
+);
+#+END_SRC
+
+Let's add sqlite to our script.  I've left out quite a few of the
+arguments to make things quicker today in class.
+
+#+BEGIN_SRC python
+def sbet_to_sql(sbet_filename, db_filename):
+    import sqlite3
+
+    cx = sqlite3.connect(db_filename)
+
+    # This leaves out most of the fields, but it's good enough for now
+    cx.execute('CREATE TABLE IF NOT EXISTS sbet_entry ( time REAL, y REAL, x REAL, z REAL, x_vel REAL);')
+
+    for datagram_index, datagram in enumerate(load_sbet_file(sbet_filename)):
+        cx.execute('INSERT INTO sbet_entry (time, x, y, z) VALUES (:time, :longitude, :latitude, :altitude);',
+                   datagram);
+    cx.commit()
+#+END_SRC
+
+Now edit the =main()= function:
+
+#+BEGIN_SRC python
+    parser = argparse.ArgumentParser(description='Parse SBET files')
+
+    # This next line creates an option to turn on writing to sqlite
+    parser.add_argument('--sqlite', action="store_true", default=False)
+
+    parser.add_argument('filenames', type=str, nargs='+', help='SBET files')
+    args = parser.parse_args() # uses sys.argv
+
+    for filename in args.filenames:
+        print 'Working on file:',filename
+
+        # If the --sqlite command line argument is true, then let's
+        # write an sqlite file!
+
+        if args.sqlite:
+            sbet_to_sql(filename, filename+'.sqlite')
+
+    # Code to write kml continues after this
+#+END_SRC
+
+** Viewing in the Firefox SQLite Manager plugin
+
+http://code.google.com/p/sqlite-manager/
+
+Open Firefox.  Under the Tools menu, select "Add-ons".  In the top
+right, search on "sqlite".
+
+Restart Firefox.
+
+Tools -> Sqlite Manager.  The 4th icon from the left is the "Connect
+to Database" icon.  Looks like a folder opening.
+
+
+* COMMENT todo items for Kurt
+
+- scipy.io.savemat
+    http://docs.scipy.org/doc/scipy/reference/tutorial/io.html
+- reset ipython workspace
+- page ipython
+- psearch name* type
+- filenames = !ls *.bag | sort
+- pycat
+- save filename 1-5 8 # Save to a script
+- ";" returns the return value in python
+
+Goals
+
+- [ ] add an option to the command line
+- [ ] saving binary data to matlab format.  Read it in octave
+- [ ] using numpy to save the file
+- [ ] writing a KML
+- [ ] creating an SQL database with sqlite3.  Viewing it with SQLite Manager
+
+* History
+
+#+BEGIN_SRC python
+1 : rtupdate
+2 : mkdir ~/class/26
+3 : cd ~/class/26
+4 : pwd
+5 : bookmark c26
+6 : bookmark -l
+7 : logstart -o -r log-class-26.py append
+8 : !curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+9 : !curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2010_202_S220_subsampled.sbet.bz2
+10: !curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/24/2011_194_S250A_Stbd_subsampled.sbet.bz2
+11: ls -l
+12: !bunzip2 sample.sbet.bz2
+13: !bunzip2 2010_202_S220_subsampled.sbet.bz2
+14: !bunzip2 2011_194_S250A_Stbd_subsampled.sbet.bz2
+15: ls -l
+16: cp ~/projects/researchtools/class/code/26-sbet.py sbet.py
+17: import sys
+18: sys.float_info.epsilon
+19: ls -l
+20: run sbet.py --help
+21: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet
+22: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet
+23: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet
+24: ls -l
+25: less 2011_194_S250A_Stbd_subsampled.sbet.kml
+26: cp 2011_194_S250A_Stbd_subsampled.sbet.kml /home/researchtools/Dropbox/
+27: run sbet.py --help
+28: run sbet.py --help
+29: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet --sqlite
+30: ls -l
+31: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet 
+32: run sbet.py 2011_194_S250A_Stbd_subsampled.sbet --sqlite
+33: ls -l
+34: !file 2011_194_S250A_Stbd_subsampled.sbet.sqlite
+35: history
+36: history -r
+
+#+END_SRC
+
+* Final code
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+'''Decode Applanix POSPac SBET IMU binary files
+
+Starting point for Class 26.
+'''
+
+import struct
+import math
+# Use the pprint function from the pprint module
+from pprint import pprint
+
+import sys
+
+def almost_equal(value1, value2, epsilon=sys.float_info.epsilon):
+    if value1 > value2+epsilon:
+        return False
+    if value1 < value2-epsilon:
+        return False
+    return True
+
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+datagram_size = 136 # 8*17 bytes per datagram
+
+def num_datagrams(data):
+    'How many packets are in data'
+
+    assert( len(data) % datagram_size == 0 )
+
+    return len(data) / datagram_size
+
+def get_offset(datagram_number):
+    'Calculate the starting offset of a datagram.  First datagram is number 0'
+    return datagram_number * datagram_size
+
+def decode(data, offset=0):
+    'Decipher a SBET datagram from binary'
+    values = struct.unpack('17d',data[ offset + 0 : offset + 8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+
+def load_sbet_file(filename):
+    '''This is a GENERATOR that we can loop over with a for'''
+    sbet_file = open(filename)
+    sbet_data = sbet_file.read()
+
+    for datagram_index in range( num_datagrams(sbet_data) ):
+        offset = get_offset(datagram_index)
+        datagram = decode(sbet_data, offset)
+        datagram['index'] = datagram_index
+        yield datagram
+
+
+def sbet_to_sql(sbet_filename, db_filename):
+    import sqlite3
+
+    cx = sqlite3.connect(db_filename)
+
+    # This leaves out most of the fields, but it's good enough for now
+    cx.execute('CREATE TABLE IF NOT EXISTS sbet_entry ( time REAL, y REAL, x REAL, z REAL, x_vel REAL);')
+
+    for datagram_index, datagram in enumerate(load_sbet_file(sbet_filename)):
+        cx.execute('INSERT INTO sbet_entry (time, x, y, z) VALUES (:time, :longitude, :latitude, :altitude);',
+                   datagram);
+    cx.commit()
+
+        
+def main():
+    import glob
+    import sys
+
+    print 'Starting main'
+
+    import sys, argparse
+
+    parser = argparse.ArgumentParser(description='Parse SBET files')
+    parser.add_argument('filenames', type=str, nargs='+', help='SBET files')
+    parser.add_argument('--sqlite', action="store_true", default=False, help='Write a SQLite database')
+    args = parser.parse_args() # uses sys.argv
+
+    print 'filenames:', args.filenames
+    print 'sqlite?', args.sqlite
+
+    for filename in args.filenames:
+
+        if args.sqlite:
+            sbet_to_sql(filename, filename + '.sqlite')
+        
+        print '====',filename,'===='
+        out = open(filename+'.kml', 'w')
+        out.write('''<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+            <Placemark>
+                    <name>{filename}</name>
+                    <LineString>
+                            <coordinates>
+        '''.format(filename=filename) )
+
+        print 'Datagram Number, Time, x, y'
+        for datagram_index, datagram in enumerate(load_sbet_file( filename )):
+
+            x=datagram['lon_deg']
+            y=datagram['lat_deg']
+            
+            if almost_equal(0.,x) and almost_equal(0.,y):
+                continue
+            if datagram_index % 20 == 0:
+                print datagram_index, datagram['time'], datagram['lon_deg'], datagram['lat_deg']
+            out.write('{x},{y}\n'.format(x=datagram['lon_deg'], y=datagram['lat_deg']))
+
+        out.write('''\t\t\t\t</coordinates>
+\t\t\t</LineString>
+\t\t</Placemark>
+\t</Document>
+</kml>
+        ''')
+
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC
+
+* Future material might include some of these:
+
+- http://all-geo.org/volcan01010/2011/11/all-the-software-a-geoscientists-needs-for-free
+- http://www.igc.usp.br/index.php?id=openstereo

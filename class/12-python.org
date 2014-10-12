@@ -1,0 +1,336 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 12: python and control structures
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-10-04 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: ipython matplotlib
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+
+* Introduction
+
+I am trying out adding in the time offsets in the lecture audio as
+comments.  It will be a minute:seconds offset into the audio.
+
+** Log files that you are keeping for the class                    :homework:
+
+# At 0:00
+
+- It is okay to keep one long log file for the course log
+- There must be one entry for each day of class
+- The entry must start with a single “*” header
+- The entry must be tagged with “day”.  More is okay
+- The entry line must contain the date
+- If you miss a class, I still expect an entry
+
+** Google Group
+
+# At 2:40
+
+I have set up a google group for the class. Feel free to discuss
+anything related to the class there. It is open to the public, so
+there might end up being more than just the people you see in the
+classroom.
+
+http://groups.google.com/group/researchtools2011
+
+** Comments per class
+
+# At 3:39
+
+I will try to make a post per class on my blog as a place to comment
+on a specific class. I leave it up to you to decide if you want to
+decide to comment on the Google Group or as a comment to a blog post
+on blogspot/blogger (Google's blog service)
+
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-11-ipython-and.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-10-qgis-bash.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-9-babel-bash.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-8-more-emacs-and.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-7-emacs-and-org.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-6-keepassx-and.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-5-filetypes.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-4-vmware-ubuntu.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-3-wiki-editing.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-2-irc-mediawiki.html
+- http://schwehr.blogspot.com/2011/10/research-tools-lecture-1-introduction.html
+
+** Slashdot and Steve Jobs                                  :apple:stevejobs:
+
+# 4:33
+
+If you haven't heard, Steve Jobs, co-founder of Apple Computers, passed away yesterday.
+
+http://apple.slashdot.org/story/11/10/06/000211/steve-jobs-dead-at-56
+
+* Setup
+
+# 4:45
+
+Before you start class, make sure you have your environment set up.
+Here is what I suggest
+
+#+BEGIN_SRC sh
+mkdir -p ~/class/12
+cd ~/class/12
+wget http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/src/12-python.org
+#+END_SRC
+
+** Setting your editor                            :emacs:editor:bashvariable:
+
+# 5:41 - Folded the org file to be able to see this section
+
+We can set the bash shell variable =EDITOR= to emacs, but then every
+time we want to edit a file, ipython is going to wait for us to
+"finish" editing and exit emacs.  We will loose our place each time.
+There is a special way to setup emacs as a "server" that can be told
+to open a file from somewhere else.  emacs will stay running and can
+get multiple requests.  Here is how to make it work!
+
+Start emacs.  =Applications -> Programming -> GNU Emacs 23=.
+
+In emacs, we need to start the server that will listen for requests to
+edit a file.
+
+#+BEGIN_EXAMPLE 
+M-x server-start
+#+END_EXAMPLE
+
+Now, open a terminal.  =Applications -> Accessories -> Terminal=
+Once we have a terminal, we can set the =EDITOR= variable to use the
+program called =emacsclient=.  Remember that you can read more about
+the program with =man emacsclient=.
+
+#+BEGIN_SRC sh
+export EDITOR=emacsclient
+#+END_SRC
+
+Now start ipython.  As ipython to edit a python script file:
+
+#+BEGIN_SRC python
+edit helloworld.py
+#+END_SRC
+
+Now you can finish editing the file with =C-x #=.  Unfortunately,
+a couple things are not yet correct.  First, emacs will close that file
+so we can't keep editing.  Second, this setup is not permanent.  It
+only exists as long as this copy of emacs and this terminal are
+running.  We need to fix both at the same time by editing two
+configuration files in our account.
+
+First, let us edit our [[file:~/.emacs][.emacs]] file and add two lines plus some
+comments. In emacs lisp, comments start with the ";" character. Please
+do not worry about trying to understand the lisp programming language.
+That is outside of the scope of this class. If you are interested,
+please talk to me and I can get you started.
+
+#+BEGIN_SRC emacs-lisp
+;;; Emacs server
+
+; Do not close the file that was being edited when C-x # is typed
+(setq server-kill-new-buffers nil)
+
+; Start the emacs server for emacsclient
+(server-start)
+#+END_SRC
+
+Now, add this line to the bottom of your [[~/.bashrc][.bashrc]]:
+
+#+BEGIN_SRC sh
+export EDITOR=emacsclient
+#+END_SRC
+
+Next time you log in to your virtual machine, everything should be
+setup for you!
+
+*NOTE:* remember to start emacs *before* using the edit command!
+Also, only start 1 emacs.  The way it is setup here, we can only have
+one emacs.  Any addition emacs instances will complain when they get
+to the =server-start= command and find there is already a server
+running.
+
+Now in ipython, editing a file should look like this.  When you use
+=C-x #= in emacs to let ipython know that you are done editing,
+ipython will try to run your code.
+
+#+BEGIN_EXAMPLE  
+In [1]: edit "helloworld.py"
+Editing...Waiting for Emacs...
+#+END_EXAMPLE
+
+In emacs, make the file look like this:
+
+#+BEGIN_SRC python
+print 'hello world'
+#+END_SRC
+
+Now press =C-x #= in emacs.
+
+#+BEGIN_EXAMPLE 
+ done. Executing edited code...
+hello world
+#+END_EXAMPLE
+
+* Creating a python script and running it from python :compile:script:python:ipython:
+
+Start ipython:
+
+#+BEGIN_SRC sh
+cd ~/class/12
+ipython --pylab
+#+END_SRC
+
+Check that your EDITOR variable is set correctly.
+
+#+BEGIN_SRC python
+import os
+os.environ['EDITOR']
+#+END_SRC
+
+It should respond with:
+
+#+BEGIN_EXAMPLE 
+'emacsclient'
+#+END_EXAMPLE
+
+** Running the script using ipython
+
+# 20:45 - slide 36
+
+Ask ipython to start editing a file. It will look at your EDITOR
+variable and call emacsclient:
+
+#+BEGIN_EXAMPLE
+edit first.py
+Editing...Waiting for Emacs...
+#+END_EXAMPLE
+
+You can now start editing the file.  Put this in your first.py:
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+print 'hello world'
+#+END_SRC
+
+Now let ipython know you are done editing with =C-x #=
+
+You can keep editing first.py. If you save in emacs and want to try
+the program again from ipython, you can "run" the code from ipython:
+
+#+BEGIN_SRC python
+run first.py
+#+END_SRC
+
+* Reading a file with python
+
+# 27:05 - slide 41
+
+Copy data.csv from ~/class/11 or just run =C-c C-c= in this source
+code block. The weird "<< EOF" syntax says to read in everything until
+it gets to a line with the string EOF on it. That could be any string,
+but EOF is a convention meaning "End Of File".
+
+This is your shell trick of the day.  Weird, but useful.
+
+#+BEGIN_SRC sh
+  cat << EOF > data.csv
+  1,2
+  4,5
+  9,-1
+  EOF
+#+END_SRC
+
+Last class, we left off with reading a file.  We read the file like this:
+
+#+BEGIN_SRC python 
+datafile = open('data.csv')
+type( datafile )
+datafile.readline()
+datafile.readline()
+datafile.readline()
+datafile.readline()
+#+END_SRC
+
+We can read an entire text file with one readlines (not the plural
+'s') command. This is easy and works for small files, but it will get
+really slow for large files.
+
+#+BEGIN_SRC python
+datafile = open('data.csv')
+lines = datafile.readlines()
+print lines
+print len(lines)
+
+line = lines[0]
+print 'line: ', line
+line = line.strip() # remove blank space on the left or right of the string
+print 'line with strip:', line
+fields = line.split(',')
+print 'first:', fields
+
+print lines[0]
+print lines[0].strip()
+print lines[0].strip().split(',')  # yikes!  you can chain things together
+print 'second:', lines[0].strip().split(',')
+#+END_SRC
+
+Run that with =F1=.  You will get a lot more back than I show here:
+
+#+BEGIN_EXAMPLE 
+./first.py
+hello world
+my mistake
+first: ['1', '2']
+second ['1', '2']
+#+END_EXAMPLE
+
+* A for loop                                                            :for:
+
+It is better (faster) to loop over each line with a for loop when it
+comes to huge files. Let's try some for loops.
+
+*Try these in ipython*
+
+#+BEGIN_SRC python
+for item in [ 1, 3, 6, 'nine' ]:
+    print item
+#+END_SRC
+
+Here is where I stop and talk about indentation controlling the
+beginning and ending of "blocks"!!!
+
+A file also works as a sequence.
+
+#+BEGIN_SRC python
+myfile = open('data.csv')
+for line in myfile:
+    print line
+#+END_SRC
+
+Gives:
+
+#+BEGIN_EXAMPLE 
+1,2
+
+4,5
+
+9,-1
+
+#+END_EXAMPLE
+
+Hmmm... why to the blank line in between? We get a new line from print
+and one from the line. We need to strip that line.
+
+#+BEGIN_SRC python
+myfile = open('data.csv')
+for line in myfile:
+    print line.strip()
+#+END_SRC
+

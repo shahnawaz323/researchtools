@@ -1,0 +1,613 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 11: ipython and python data types
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-10-04 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: ipython matplotlib
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Setup
+
+Before you start class, make sure you have your environment set up.
+Here is what I suggest
+
+#+BEGIN_SRC sh
+mkdir -p ~/class/11
+cd ~/class/11
+wget http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/src/11-ipython.org
+#+END_SRC
+
+Make sure you have this org file for class open in emacs from 
+[[file:~/class/11/11-ipython.org][~/class/11/11-ipython.org]]
+
+Open a terminal and =cd ~/class/11=.
+
+* Introduction
+
+** TODO Homework 3 due today!
+
+- http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/hw/hw-3-work-log.html
+- I will be periodically be sending you org text with all of your assignment grades
+
+** More videos online                                :videos:howto:videocast:
+
+There are 3 more videos online since the last class.  Make sure you
+watch them before the next class.  Runtime is 71 minutes for all 3.
+
+[[http://www.youtube.com/playlist?list%3DPL7E11B34616530F5E][Playlist of extra class videos on YouTube]]
+
+** Mathematica technical talk at UNH                :mathematica:proprietary:
+    SCHEDULED: <2011-10-10 Mon 14:00> 
+
+I forgot to announce a matlab session last week.  Next Monday, you may
+want to check out:
+
+- "Mathematica in Education and Research"
+- 2-3pm, including Q&A
+- Kingsbury Hall room N101
+
+#+BEGIN_EXAMPLE
+My talk is given 100% in Mathematica, and a big part of what I
+want to discuss is the exciting new free-form input in
+Mathematica 8. 
+#+END_EXAMPLE
+
+Here's a quick video preview:
+http://www.wolfram.com/common/includes/m8videos/quicktour.html
+
+** UNH Signals                                                          :unh:
+
+UNH has an Information Technology (IT) newsletter called [[http://signals.unh.edu/][Signals]].
+
+[[http://signals.unh.edu/2011/09/28/vantagepoint-inside-unh-it-with-chief-information-officer-joanna-young/][Vantagepoint: Inside UNH IT with Chief Information Officer Joanna Young]]
+
+You can meet our CIO.  If you read her answers to questions, you will
+see that I think she missed something *huge* with passwords: all your
+passwords should be different.  I worry less about people changing
+their passwords and more about each password being unrelated to
+compartmentalize any damage.  If someone grabbed your password for a
+site requiring your password, there is a non-zero chance that if you
+change your password that they will get that new password the same way
+Unless it is you that gave your password to a bad guy you thought was
+a good guy... and hopefully you learned never to give your password to
+*anyone* Do not have that stop you from changing your passwords, but
+it is important to understand the overall situation.
+
+Never give your password to *anyone*.  Period.  Full stop.  
+
+And do not get me started on "security questions".
+
+** What was that strange command in the homework?
+
+Did you try it with an echo command?
+
+#+BEGIN_SRC sh
+echo ~/hw/03/log-$USER-$(date +%Y%m%d).org
+#+END_SRC
+
+On my Mac laptop, I get:
+
+#+results:
+: /Users/schwehr/hw/03/log-schwehr-20111001.org
+
+I talk through the details of that command in [[http://youtu.be/BgPCGecN3FI][Video 6, Bash part 2: shell variables]]
+
+* Today's class has an associated video                       :youtube:video:
+
+[[http://youtu.be/v_3NjQB3q-Q][RT - Video 7 - Python/ipython part 1 - Introduction]]
+
+* Introduction to python and ipython                         :ipython:python:
+
+** Not Python 3
+
+In this class we are using Python 2.7.  You will want to avoid
+reference material for python 3.  While python 3 is even better than
+python 2.x, there is still work to be done to get all of the add ons
+ready for python 3 and you will have trouble with getting examples to
+work.  To reduce confusion, just avoid python 3 for now.  If you
+learn python 2.7, the switch to python 3 will be very easy and there
+is even a program to automatically make the number of small changes
+required for code to work with python 3.
+
+** See Also
+
+If you like the concept of a 1 double sided reference card, here some
+for python and ipython:
+
+- http://asd.gsfc.nasa.gov/Rodrigo.Nemmen/ipython_quickref.pdf
+# http://www.packtpub.com/matplotlib-python-development/book?utm_source=matplotlib.sourceforge.net&utm_medium=link&utm_content=pod&utm_campaign=mdb_002124
+
+There are a number of very good free books to get you started.  I've
+sorted them in the order that I think you might want to approach them.
+
+- [[http://diveintopython.org/][Dive Into Python]] by Mark Pilgram
+- [[http://rgruet.free.fr/#QuickRef][Python Quick Reference]] by Richard Gruet
+- http://en.wikibooks.org/wiki/Python_Programming
+- [[http://greenteapress.com/thinkpython/thinkpython.html][Think Python]] by Allen Downey
+- [[http://www.swaroopch.com/notes/Python][Byte of Python]] by Swaroop C H.  Make sure to get the 2.x version.
+  Not 3!
+- [[http://www.brpreiss.com/books/opus7/][Data Structures and Algorithms with Object-Oriented Design Patterns in Python]] by Bruno R. Preiss
+- [[http://niche-canada.org/programming-historian][The Programming Historian]] by William J. Turkel and Alan MacEachern
+  (for a research area focused take on python)
+
+
+Books in Safari:
+
+FIX
+
+** Setting your editor                            :emacs:editor:bashvariable:
+
+Inside of ipython, we can ask to edit a file.  The default editor to
+use is called [[http://www.vim.org/][vim]] (or often refered to as just vi).  We just spent a 
+number of lectures learning [[http://www.gnu.org/s/emacs/][GNU Emacs]] and we would rather take
+advantage of that.  Without setting anything up, here is vi as the editor:
+
+#+BEGIN_EXAMPLE 
+ipython
+edit helloworld.py
+:q!
+Exit()
+#+END_EXAMPLE
+
+That ":q!" is the vi command to "quit without saving".  
+
+We can set the bash shell variable =EDITOR= to emacs, but then every
+time we want to edit a file, ipython is going to wait for us to
+"finish" editing and exit emacs.  We will loose our place each time.
+There is a special way to setup emacs as a "server" that can be told
+to open a file from somewhere else.  emacs will stay running and can
+get multiple requests.  Here is how to make it work!
+
+Start emacs.  =Applications -> Programming -> GNU Emacs 23=.
+
+In emacs, we need to start the server that will listen for requests to
+edit a file.
+
+#+BEGIN_EXAMPLE 
+M-x server-start
+#+END_EXAMPLE
+
+Now, open a terminal.  =Applications -> Accessories -> Terminal=
+Once we have a terminal, we can set the =EDITOR= variable to use the
+program called =emacsclient=.  Remember that you can read more about
+the program with =man emacsclient=.
+
+#+BEGIN_SRC sh
+export EDITOR=emacsclient
+#+END_SRC
+
+Now start ipython.  As ipython to edit a python script file:
+
+#+BEGIN_SRC python
+edit helloworld.py
+#+END_SRC
+
+Now you can finish editing the file with =C-x #=.  Unfortunately,
+a couple things are not yet correct.  First, emacs will close that file
+so we can't keep editing.  Second, this setup is not permanent.  It
+only exists as long as this copy of emacs and this terminal are
+running.  We need to fix both at the same time by editing two
+configuration files in our account.
+
+First, let us edit our [[file:~/.emacs][.emacs]] file and add two lines plus some
+comments. In emacs lisp, comments start with the ";" character. Please
+do not worry about trying to understand the lisp programming language.
+That is outside of the scope of this class. If you are interested,
+please talk to me and I can get you started.
+
+#+BEGIN_SRC emacs-lisp
+;;; Emacs server
+
+; Do not close the file that was being edited when C-x # is typed
+(setq server-kill-new-buffers nil)
+
+; Start the emacs server for emacsclient
+(server-start)
+#+END_SRC
+
+Now, add this line to the bottom of your [[~/.bashrc][.bashrc]]:
+
+#+BEGIN_SRC sh
+export EDITOR=emacsclient
+#+END_SRC
+
+Next time you log in to your virtual machine, everything should be
+setup for you!
+
+*NOTE:* remember to start emacs *before* using the edit command!
+Also, only start 1 emacs.  The way it is setup here, we can only have
+one emacs.  Any addition emacs instances will complain when they get
+to the =server-start= command and find there is already a server
+running.
+
+Now in ipython, editing a file should look like this.  When you use
+=C-x #= in emacs to let ipython know that you are done editing,
+ipython will try to run your code.
+
+#+BEGIN_EXAMPLE  
+In [1]: edit "helloworld.py"
+Editing...Waiting for Emacs...
+#+END_EXAMPLE
+
+In emacs, make the file look like this:
+
+#+BEGIN_SRC python
+print "hello world"
+#+END_SRC
+
+Now press =C-x #= in emacs.
+
+#+BEGIN_EXAMPLE 
+ done. Executing edited code...
+hello world
+#+END_EXAMPLE
+
+** Getting help                                          :help:documentation:
+
+The main web page for python documentation is: http://docs.python.org/
+
+Inside of python, there are a number of ways to get help.
+
+First, you can directly ask for help.  Here we are asking for help on
+the open "function":
+
+#+BEGIN_SRC python
+help open
+#+END_SRC
+
+You can also put a "?" after a bunch of text and it will try to tell
+you what it can about that string.  You can put the "?" before or
+after then word.
+
+#+BEGIN_SRC python
+open?
+#+END_SRC
+
+And to answer the question from class last time about the difference
+between exit() and Exit().  We just have to ask!
+
+#+BEGIN_SRC python
+?exit
+?Exit
+#+END_SRC
+
+The key is to read through all that and ignore most of it.  The last
+line of =?Exit= tells us the key detail: "Exit IPython without
+confirmation."  That can also be said: you will not be asked =yes/no=
+when you quit ipython with =Exit()=.
+
+Later on, we will see more about functions or "methods" on variables
+that are accessed with a ".".  Here I will create a string variable
+and ask it what I can do with a string by pressing <TAB>.
+
+#+BEGIN_EXAMPLE 
+In [1]: mystring = "hello world"
+
+In [2]: mystring.
+mystring.__add__                      mystring.decode
+mystring.__class__                    mystring.encode
+mystring.__contains__                 mystring.endswith
+mystring.__delattr__                  mystring.expandtabs
+mystring.__doc__                      mystring.find
+mystring.__eq__                       mystring.format
+mystring.__format__                   mystring.index
+mystring.__ge__                       mystring.isalnum
+mystring.__getattribute__             mystring.isalpha
+...
+#+END_EXAMPLE
+
+There is a lot of "noise" in that output, but you will learn to read
+that and often be able to recognize what you want to do with a string.
+
+** Examples with org-babel and ipython                     :orgbabel:ipython:
+
+Here we are faced with a little problem before we go on.  I would like
+the examples to be runnable both in org-mode with =C-c C-c= and as
+something you can paste into ipython without modification.  However,
+that is not possible.  The setup for python in org-babel is that it
+ignores what we will print.  So if I try a print statement in python
+and run it with org-babel:
+
+#+BEGIN_SRC python
+print 1
+#+END_SRC
+
+#+results:
+: None
+
+The results above are "None".  Say what?!?!  It turns out that we have
+to "return" what we want org-babel to print.
+
+#+BEGIN_SRC python
+return 1
+#+END_SRC
+
+#+results:
+: 1
+
+That is more like what we wanted.  If you just paste the text without
+the return, all will be well.  So, in ipython, it will look like this:
+
+#+BEGIN_EXAMPLE 
+ipython
+Python 2.7.1+ (r271:86832, Apr 11 2011, 18:05:24) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 0.10.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object'. ?object also works, ?? prints more.
+
+In [1]: 1
+Out[1]: 1
+#+END_EXAMPLE
+
+** Time to try some actual python!  Playing with strings             :string:
+
+Onwards to working with some strings!  The python documentation is
+here:
+
+http://docs.python.org/library/string.html
+
+Strings can be 'in single quotes' or "in double quotes".  I will stick
+with singles quotes.
+
+First just a basic string:
+
+#+BEGIN_SRC python
+return 'this is a string'
+#+END_SRC
+
+#+results:
+: this is a string
+
+We can ask python to manipulate a string a little bit:
+
+#+BEGIN_SRC python
+return 'this is a string'.capitalize()
+#+END_SRC
+
+#+results:
+: This is a string
+
+Or we can get fancier.  The title method for a string makes it have
+each word capitialized.
+
+#+BEGIN_SRC python
+return 'this is a string'.title()
+#+END_SRC
+
+#+results:
+: This Is A String
+
+We can add strings together.
+
+#+BEGIN_SRC python
+return 'this ' + 'is ' + 'a string'
+#+END_SRC
+
+#+results:
+: this is a string
+
+We can ask python the type of a variable.
+
+#+BEGIN_SRC python
+return type('my string')
+#+END_SRC
+
+#+results:
+: <type 'str'>
+
+* Data types in python                                   :int:float:str:list:
+
+There are several basic data types in python.
+
+- =str= - a character or string --> 'a'  'hello'  "world"
+  '''lists with three quote characters
+  can span multiple lines'''
+- numbers
+  - =int= - integers (aka whole numbers)  1, 2, -1, 0
+  - =float= - real numbers  3.1415, 0.0, -9e20
+  - =complex= - imaginary numbers.  complex(1,4)
+- =bool= - Booleans.    True or False
+- sequences of items
+  - =list= - ordered sequence of items that can change.  
+     [1, -3, 1.3, 'hello', ['list', 'inside', 'a', 'list'] ]
+  - =tuple= - ordered sequence that can *not* change.  (1,-3,'hi')
+  - =set= - only one of each item
+    set( [1,4,1,1] )  -> set([1, 4])
+- =dict= - a fast lookup table or "dictionary"
+  { 1: 2, 99: 'second', 'third': 333 }
+- =file= - you can read and write to files
+- =None= - A special case
+
+Note that =str=, =dict= and =file= also act as sequences of items.  For
+example...  Jumping ahead and using a for loop before I've explained the
+concept of a for loop.  Sorry!
+
+#+BEGIN_SRC python
+  for c in 'geology':
+      print c
+#+END_SRC
+
+Gives this as it steps through each letter in the string:
+
+#+BEGIN_EXAMPLE 
+g
+e
+o
+l
+o
+g
+y
+#+END_EXAMPLE
+
+* A little ipython before we go on                                  :ipython:
+
+We need to learn a little bit about ipython before we try out those
+data types.  If you have ipython open, use =exit()= to quit and start
+a new ipython shell.
+
+#+BEGIN_SRC python
+who  # List interactive variables
+whos # Like who, but give the values
+#+END_SRC
+
+#+BEGIN_SRC python
+who
+Interactive namespace is empty.
+
+In [15]: shipname='R/V Cocheco'
+
+In [16]: who
+shipname	
+
+In [17]: whos
+Variable   Type    Data/Info
+----------------------------
+shipname   str     R/V Cocheco
+#+END_SRC
+
+We can also ask ipython to create a log file of our session.
+
+#+BEGIN_SRC python
+logstart
+a = 1+2
+b = 3+4
+who
+logstop
+less ipython_log.py
+#+END_SRC
+
+For the logging commands, type "%log" in ipython and then press <TAB>
+
+#+BEGIN_EXAMPLE 
+In [1]: %log
+%logoff    %logon     %logstart  %logstate  %logstop   
+
+In [2]: %logoff?
+#+END_EXAMPLE
+
+The 2nd command is asking for help with =logoff=.  You don't need to
+type the "%" with ipython commands.
+
+* Trying out the data types                         :str:list:int:float:list:
+
+** str - strings
+
+#+BEGIN_SRC python
+shipname='Coastal Surveyor'
+len(shipname)
+shipname[0] # Count from zero
+shipname[5:8]
+shipname.find('S') # returns 8
+shipname.find('x') # returns -1 ... not found
+shipname[8:] # from position 8 to the end
+shipname[-4:] # last 4 characters
+#+END_SRC
+
+As sequence of characters:
+
+#+BEGIN_SRC python
+shipname='Coastal Surveyor'
+len(shipname)
+shipname[0] # Count from zero
+shipname[5:8]
+shipname.find('S') # returns 8
+shipname.find('x') # returns -1 ... not found
+shipname[8:] # from position 8 to the end
+shipname[-4:] # last 4 characters
+#+END_SRC
+
+** =int= and =float= numbers
+
+#+BEGIN_SRC python
+1
+type(1)
+1.1
+type(1.1)
+str(1.1)
+float('3.1415')
+import math
+math.pi
+math.sin(math.pi/2)
+math.radians(180)
+math.degrees(2*math.pi)
+math. # then press the <TAB> key to get a list
+
+complex(1,4j)
+4j * (2 + 9j)
+#+END_SRC
+
+** =list= of items 
+
+#+BEGIN_SRC python
+range(4)
+range(3,7)
+range(3,28,5)
+
+ships = [ 'tug','row boat', 303902000, 123456789 ]
+type(ships)
+ships.append(369970120)
+ships.sort()
+ships[0]
+ships[-1]
+ships.remove('row boat')
+ships. # press <TAB>
+#+END_SRC
+
+** Basic operations on strings
+
+#+BEGIN_SRC python
+shipname='Gulf Challenger, R/V'
+shipname.split()
+fields = shipname.split(',')
+len(fields)
+name = fields[0]
+name * 4
+' -- '.join(fields)
+#+END_SRC
+
+* Working with files                                                   :file:
+
+We could use emacs to create a file called [[file:~/class/11/data.csv][~/class/11/data.csv]] by
+putting this in it the file, but *do not do this*!
+
+#+BEGIN_EXAMPLE 
+1,2
+4,5
+9,-1
+#+END_EXAMPLE
+
+Instead, we can use python to create the file.  You can use =C-c C-c=
+to execute the file in this file or you can paste this into your
+ipython shell.
+
+#+BEGIN_SRC python
+out = open('data.csv','w')
+out.write('1,2\n')
+out.write('4,5\n')
+out.write('9,-1\n')
+out.close()
+#+END_SRC
+
+Open up the file in emacs:  [[file:~/class/11/data.csv][~/class/11/data.csv]]
+
+We can now read that data from python!
+
+#+BEGIN_SRC python
+datafile = open('data.csv')
+type( datafile )
+datafile.readline()
+datafile.readline()
+datafile.readline()
+datafile.readline()
+del(datafile)
+#+END_SRC

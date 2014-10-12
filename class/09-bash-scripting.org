@@ -1,0 +1,302 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 9: org-babel, bash, Google Earth, QGIS, and a movie in Firefox
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-09-27 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: emacs, org-mode
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+Up to this point, we have been working hard as a class to get
+comfortable with a powerful text editor and the terminal.  We will do
+a little more setup today and in lecture 10 on <2011-09-29 Thu>, but
+we will be starting into learning Python in lecture 10.  Hopefully,
+you will appreciate the 4 weeks of setup when working with Python in
+emacs.
+
+Today we will setup org-babel so that we can execute code from inside
+of emacs org-mode files and write a shell script file.
+
+http://orgmode.org/worg/org-contrib/babel/
+
+* Extra content
+
+The first 4 videos are available:  [[http://www.youtube.com/playlist?list%3DPL7E11B34616530F5E][2011 Research Tools YouTube
+playlist]].  These supplementary videos cover using emacs.  They are
+modelled after the videos on http://showmedo.com.
+
+* Setup org-babel
+
+If you try to execute a "sh" (bash shell) source code block in an
+org-mode file (using =C-c C-c=), you will probably see an error
+message like this in the mini buffer at the bottom:
+
+#+BEGIN_EXAMPLE 
+No org-babel-execute function for sh!
+#+END_EXAMPLE
+
+We need to setup emacs to have org-mode fully installed.  Open the
+file [[file:~/.emacs][~/.emacs]]
+
+#+BEGIN_SRC emacs-lisp
+  ; Must have org-mode loaded before we can configure org-babel
+  (require 'org-install)
+  
+  ; Some initial langauges we want org-babel to support
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '(
+     (sh . t)
+     (python . t)
+     (R . t)
+     (ruby . t)
+     (ditaa . t)
+     (dot . t)
+     (octave . t)
+     (sqlite . t)
+     (perl . t)
+     ))
+  
+  ; Add short cut keys for the org-agenda
+  (global-set-key "\C-cl" 'org-store-link)
+  (global-set-key "\C-cc" 'org-capture)
+  (global-set-key "\C-ca" 'org-agenda)
+#+END_SRC
+
+Now restart emacs.
+
+** Testing org-babel                                                :testing:
+
+Try executing this block with =C-c C-c= while the point (aka cursor)
+is inside the SRC block.
+
+#+BEGIN_SRC sh
+echo $SHELL
+#+END_SRC
+
+You should see something like this appear:
+
+#+BEGIN_SRC org
+  ,#+results:
+  ,: /bin/bash
+#+END_SRC
+
+
+* Creating a log file                                               :logging:
+
+For the rest of the semester, you need to keep a log file for this
+class with =C-c C-c= inside the src block.
+
+#+BEGIN_SRC sh
+mkdir ~/Dropbox/logs
+#+END_SRC
+
+Start a log file.  Replace YOURUSERNAME below with your short username at CCOM.
+
+#+BEGIN_SRC sh
+log=~/Dropbox/logs/researchtools-YOURUSERNAME.org
+echo "#+STARTUP: showall" > $log 
+
+echo "Log contains:"
+cat $log
+#+END_SRC
+
+You can now open up that log file in another emacs window.  Add
+AUTHOR and EMAIL lines just line in homework 2.  
+
+
+#+BEGIN_SRC org
+#+TITLE:     Research Tools log file for FIX: your name
+#+AUTHOR:    FIX: your name
+#+EMAIL:     FIX: your email
+#+END_SRC
+
+And you can make entries that look something like this:
+
+#+BEGIN_SRC org
+* Log entry for a day <2011-09-27 Tue>                            :day:
+#+END_SRC
+
+I start them by typing line this: 
+
+#+BEGIN_SRC org
+* Log entry for a day 
+#+END_SRC
+
+Then I use =C-c .= to add the date.  I follow it up with at least the
+=day= tag by doing =C-c C-c= on the header line and typing "day".  I
+also use "travel" as a tag for days that I'm traveling.
+
+You can now make entries for that day with two "*" entries for a 2nd
+level heading:
+
+#+BEGIN_SRC org
+** Research Tools Class 09                              :researchtools:class:
+
+# FIX: Start writing about the class here.
+#+END_SRC
+
+* Creating a Google Earth KML                               :googleearth:kml:
+
+Now we are going to create our first KML file.  We are going to cheat
+a bit and not try to understand the file format, but this will at
+least show you how easy it can be.
+
+First, make sure we have a working directory for this class:
+
+#+BEGIN_SRC sh
+mkdir -p ~/class/09
+ls -ld ~/class/09
+#+END_SRC
+
+Now, get the header and footer text for the KML line format:
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/google-earth-line-start.kml
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/google-earth-line-end.kml
+#+END_SRC
+
+These two pieces give you the front and back of the KML and all we
+need to do is provide the coordinates for the 
+
+Get the coordinates file from the Boston Construction file used during
+the homework:
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/2007-boston-construction.csv.bz2
+
+bunzip2 2007-boston-construction.csv.bz2
+#+END_SRC
+
+Take a look at the file:
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+head 2007-boston-construction.csv 
+#+END_SRC
+
+We see that it has longitude, latitude, and a [[http://en.wikipedia.org/wiki/Unix_time][Unix UTC timestamp]].  We
+will ignore the timestamp for now.
+
+#+BEGIN_EXAMPLE 
+-70.5014566667,42.1006833333,1179617934
+-70.5016466667,42.101755,1179617991
+-70.501845,42.1028766667,1179618051
+-70.5020833333,42.1039,1179618111
+-70.5022083333,42.1049116667,1179618176
+-70.5022883333,42.1059316667,1179618233
+-70.502515,42.1069266667,1179618296
+-70.5027566667,42.10796,1179618356
+-70.5028616667,42.1090066667,1179618416
+-70.5029816667,42.1102133333,1179618486
+#+END_EXAMPLE
+
+We can reuse the cut command to get just the X and Y coordinates:
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+cut -d, -f1,2 2007-boston-construction.csv | head
+#+END_SRC
+
+Which should look like this:
+
+#+BEGIN_EXAMPLE 
+-70.5014566667,42.1006833333
+-70.5016466667,42.101755
+-70.501845,42.1028766667
+-70.5020833333,42.1039
+-70.5022083333,42.1049116667
+-70.5022883333,42.1059316667
+-70.502515,42.1069266667
+-70.5027566667,42.10796
+-70.5028616667,42.1090066667
+-70.5029816667,42.1102133333
+#+END_EXAMPLE
+
+
+We are lucky!  KML expects coordinates to come as x,y,z or x,y.  If
+you want to read more, you can look at the KML Reference section on
+[[http://code.google.com/apis/kml/documentation/kmlreference.html#coordinates][coordinates]], [[http://code.google.com/apis/kml/documentation/kmlreference.html#placemark][Placemark]] and [[http://code.google.com/apis/kml/documentation/kmlreference.html#linestring][LineString]].  We will talk more about KML in
+future lectures quite a bit.
+
+#+BEGIN_SRC xml
+  <Placemark>
+    <LineString>
+      <coordinates>
+        -125.810021667,48.4840316667
+        -125.810295,48.483705
+      </coordinates>
+    </LineString>
+  </Placemark>
+#+END_SRC
+
+Let's create the x,y pairs in a file:
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+cut -d, -f1,2 2007-boston-construction.csv > 2007-boston-construction.xy
+#+END_SRC
+
+We can now put the header, points and tail together to create a KML
+file.  Google Earth has trouble with lines with too many points in
+them, so we will use head to only output some of the points.
+
+The ">" redirects output to a file just as we have done in the past.
+However, if we use it a 2nd time to the same file, it will overwrite
+the first file and destroy anything that we did before.
+
+The ">>" string does redirection, but *appends* the data to any
+existing file.
+
+#+BEGIN_SRC sh
+cd ~/class/09
+
+cat        google-earth-line-start.kml >  2007-boston-construction.kml
+head -1000 2007-boston-construction.xy >> 2007-boston-construction.kml
+cat        google-earth-line-end.kml   >> 2007-boston-construction.kml
+#+END_SRC
+
+We can now open the file in Google Earth.  It appears that Google
+Earth on a Ubuntu 11.04 virtual machine on the Mac is very crash
+prone.  You can put the kml file into your dropbox folder and then
+download it through http://dropbox.com.
+
+#+BEGIN_SRC sh
+# This does NOT work
+google-earth ~/class/09/2007-boston-construction.kml
+#+END_SRC
+
+Or you can try running Google Earth and then doing a File->Open to
+select your KML.  That appears to be more stable.
+
+* TODO Earth Science Tea!
+
+If you have the time, head over to James hall for the Earth Science Tea!
+
+* TODO HOMEWORK
+  DEADLINE: <2011-10-04 Tue> by 5PM EDT
+
+Note: These check boxes are just to help you.
+
+- [ ] Watch youtube videos:  [[http://youtu.be/16Rd46SE-20][1]]  [[http://youtu.be/P2Q_WL0h-mY][2]]  [[http://youtu.be/ht4JtEbFtFI][3]]  [[http://youtu.be/2Cl_aiUkkG0][4]]   
+  - [ ] Put any questions that you have into your org-mode log file
+- [ ] Make sure you have log entries for both <2011-09-27 Tue> and
+      <2011-09-29 Thu> for the Research Tools course
+- [ ] Turn in your log file on the researchtools server as this file
+      ~/hw/03/log-$USER-$(date +%Y%m%d).org
+- [ ] Email mailto:kurt@ccom.unh.edu the md5 sum of the log file.  Do
+      not make this an attachment.

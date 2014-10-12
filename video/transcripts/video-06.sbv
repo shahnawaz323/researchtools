@@ -1,0 +1,1977 @@
+0:00:00.310,0:00:02.240
+well my name is kurt shwarier
+
+0:00:02.240,0:00:05.960
+and this is research tools two thousand
+eleven video number six
+
+0:00:05.960,0:00:07.530
+bash part two
+
+0:00:07.530,0:00:09.519
+variables
+
+0:00:09.519,0:00:13.959
+and this is for for the u_n_ hcr for
+coastal ocean mapping joint hajur fix
+
+0:00:13.959,0:00:15.079
+dinner
+
+0:00:15.079,0:00:16.839
+research tools class
+
+0:00:16.839,0:00:17.620
+and
+
+0:00:17.620,0:00:21.789
+today amid talk you through variables
+and bash
+
+0:00:21.789,0:00:27.259
+so let's go into a terminal and you
+going to use and here we have bash
+
+0:00:27.259,0:00:30.530
+emory talk about how to set variables
+and then work with them to get
+
+0:00:30.530,0:00:32.340
+picture stuff done
+
+0:00:32.340,0:00:36.990
+were shot up with a terrible
+manifestation
+
+0:00:36.990,0:00:38.720
+ship name
+
+0:00:38.720,0:00:40.630
+equals
+
+0:00:40.630,0:00:43.420
+nancy foster
+
+0:00:43.420,0:00:45.410
+we actually didn't care
+
+0:00:45.410,0:00:49.140
+bash is very picky about terrible
+sweeney said a very bold
+
+0:00:49.140,0:00:51.840
+you used to be co-sign with no spaces
+
+0:00:51.840,0:00:55.330
+and then we say ako dollar ship name
+
+0:00:55.330,0:00:57.590
+and get back in eighty four ster
+
+0:00:57.590,0:01:02.030
+thing to note here is that when you set
+the variable you don't need
+
+0:01:02.030,0:01:03.530
+the
+
+0:01:03.530,0:01:06.260
+uh... dollar sign and when you
+
+0:01:06.260,0:01:09.430
+use the variable you actually need the
+dollar sign
+
+0:01:09.430,0:01:14.550
+and if you're trying to use that rare
+both in something else
+
+0:01:14.550,0:01:17.880
+we have to protect it necessarily with
+uh...
+
+0:01:17.880,0:01:19.549
+or call curly braces
+
+0:01:19.549,0:01:21.810
+and so if we want to say
+
+0:01:21.810,0:01:27.010
+something howls
+
+0:01:27.010,0:01:28.900
+we now can
+
+0:01:28.900,0:01:31.189
+hamburger book inside of the senate
+
+0:01:31.189,0:01:32.460
+and gifted
+
+0:01:32.460,0:01:35.370
+if there's no space around this say
+
+0:01:35.370,0:01:42.370
+like this we wouldn't actually needed
+shows curly braces
+
+0:01:42.520,0:01:48.940
+louis's congress later on inside of
+uh... a number of little scripts
+
+0:01:48.940,0:01:52.970
+let's take a call look at what happens
+if we have processes that we start from
+
+0:01:52.970,0:01:55.520
+the shells organization name
+
+0:01:55.520,0:01:57.540
+ready for another ship name
+
+0:01:57.540,0:01:58.799
+and if we start
+
+0:01:58.799,0:02:01.670
+a trial process for example bashed
+
+0:02:01.670,0:02:07.619
+but first reacts to see that if we can
+tell what level dash one so co dollar
+
+0:02:07.619,0:02:09.249
+shell level
+
+0:02:09.249,0:02:10.579
+and i pressed howden
+
+0:02:10.579,0:02:11.650
+to complete
+
+0:02:11.650,0:02:13.540
+dont
+
+0:02:13.540,0:02:18.209
+and we're at level one that we sort of
+second dash will now see echo dollar
+
+0:02:18.209,0:02:19.809
+shell level
+
+0:02:19.809,0:02:21.240
+and we're now up to you
+
+0:02:21.240,0:02:25.389
+this is a trial process that's running
+inside at the first batch
+
+0:02:25.389,0:02:27.170
+and we can say echoed dollar
+
+0:02:27.170,0:02:28.479
+ship games
+
+0:02:28.479,0:02:29.349
+proportionally
+
+0:02:29.349,0:02:30.849
+are very bo has not made
+
+0:02:30.849,0:02:34.489
+along with her new shell so we can't use
+that inside
+
+0:02:34.489,0:02:38.639
+compass you shell or could be a script
+or some of the program
+
+0:02:38.639,0:02:40.129
+tools as it back at about
+
+0:02:40.129,0:02:43.869
+if we take a look russia levels back to
+one
+
+0:02:43.869,0:02:47.759
+into mel if we'd say export
+
+0:02:47.759,0:02:51.199
+ship name equals
+
+0:02:51.199,0:02:53.189
+research ice-breaker
+
+0:02:53.189,0:02:55.129
+homer
+
+0:02:55.129,0:02:57.529
+and now if we start a new batch
+
+0:02:57.529,0:02:59.499
+and we say
+
+0:02:59.499,0:03:00.759
+echo
+
+0:03:00.759,0:03:03.069
+torn shells level
+
+0:03:03.069,0:03:07.059
+if you were at level two and we say
+echoed dollar ship name
+
+0:03:07.059,0:03:10.069
+we now have the palmer phone this long
+
+0:03:10.069,0:03:11.849
+exit at that
+
+0:03:11.849,0:03:15.359
+so that's the basics of setting
+variables and keeping them around
+
+0:03:15.359,0:03:18.559
+i typically if you're just using an
+interval if you don't need that export
+
+0:03:18.559,0:03:20.809
+but if you want that variable to go
+farther
+
+0:03:20.809,0:03:23.849
+then you're gonna need the export
+
+0:03:23.849,0:03:26.139
+let's take a look at the environment
+
+0:03:26.139,0:03:31.199
+and dash has a whole bunch of variables
+that it means to keep around
+
+0:03:31.199,0:03:34.079
+vacancies for the program called pretty
+indeed
+
+0:03:34.079,0:03:36.989
+and the paper to last us vertical bar
+
+0:03:36.989,0:03:38.200
+craig here's the pipe
+
+0:03:38.200,0:03:42.609
+and going to last which is a pager
+that's their choice a bit of time
+
+0:03:42.609,0:03:44.429
+suppressed
+
+0:03:44.429,0:03:46.409
+anti we've got
+
+0:03:46.409,0:03:48.429
+uh... a whole bunch of variables here
+
+0:03:48.429,0:03:50.849
+handle go through some of them later on
+
+0:03:50.849,0:03:52.180
+and so it shows you
+
+0:03:52.180,0:03:55.669
+that it's keeping track a lot of
+information for you
+
+0:03:55.669,0:03:58.899
+let's take a quick look at some of the
+important ones
+
+0:03:58.899,0:04:04.139
+take a look at sako dollar path this is
+where it searches for programs
+
+0:04:04.139,0:04:09.089
+sikha manipulate that annexure locations
+like places for your own scripts
+
+0:04:09.089,0:04:13.289
+you can see ask it which version of dash
+you're running sort of compassion
+
+0:04:13.289,0:04:15.789
+version
+
+0:04:15.789,0:04:18.500
+so here were in bash version four point
+two
+
+0:04:18.500,0:04:20.169
+if somewhere down the road
+
+0:04:20.169,0:04:23.689
+dash five comes out and there's features
+that are new
+
+0:04:23.689,0:04:26.569
+you can look at our condition and figure
+out whether or not that feature you're
+
+0:04:26.569,0:04:28.830
+looking at is available in this
+
+0:04:28.830,0:04:32.259
+particular version of the shell
+
+0:04:32.259,0:04:36.629
+how much take a look at history science
+so echo
+
+0:04:36.629,0:04:37.909
+science
+
+0:04:37.909,0:04:40.169
+and in this case is set to a thousand
+
+0:04:40.169,0:04:43.610
+and suffice a head
+
+0:04:43.610,0:04:45.310
+history
+
+0:04:45.310,0:04:47.159
+pipe hadn't
+
+0:04:47.159,0:04:50.559
+that's the first time that we can see
+we've got her history going way back and
+
+0:04:50.559,0:04:53.710
+prepare tale to see the last most recent
+pic
+
+0:04:53.710,0:04:59.030
+we're now getting pretty close to that
+one thousand uh... entry list in the
+
+0:04:59.030,0:05:02.269
+most are dropping things from the
+beginning once we get there
+
+0:05:02.269,0:05:03.010
+so it's important
+
+0:05:03.010,0:05:06.259
+ain't to deal set those things and kya
+
+0:05:06.259,0:05:09.629
+q control how much you want to keep
+around maybe a thousand of free maybe
+
+0:05:09.629,0:05:12.129
+it's too much
+
+0:05:12.129,0:05:14.620
+house he can ask what you do you want
+
+0:05:14.620,0:05:15.490
+so
+
+0:05:15.490,0:05:18.540
+in this case it's research tools that's
+not very exciting
+
+0:05:18.540,0:05:20.949
+but if i asa sage to another host
+
+0:05:20.949,0:05:24.810
+so a cessation to my username pat ccom
+
+0:05:24.810,0:05:31.810
+uation eview
+
+0:05:33.999,0:05:35.960
+and watch and i can see echo
+
+0:05:35.960,0:05:37.439
+dollar user
+
+0:05:37.439,0:05:41.099
+an important one here when you're lying
+in a multiple machines and doing things
+
+0:05:41.099,0:05:43.099
+like that is
+
+0:05:43.099,0:05:46.689
+echo donor
+
+0:05:46.689,0:05:49.399
+sorry hostname
+
+0:05:49.399,0:05:51.209
+this is a computer ads
+
+0:05:51.209,0:05:52.430
+ccom
+
+0:05:52.430,0:05:57.369
+to phase it out back to my virtual
+machine hemispheric of dollar hostname
+
+0:05:57.369,0:05:58.899
+it's back to you going to
+
+0:05:58.899,0:06:01.949
+then this is a a host and that is it
+really attached to it
+
+0:06:01.949,0:06:06.529
+repairs is just in a virtual machine
+
+0:06:06.529,0:06:10.439
+how you can also ask where you are so we
+can say
+
+0:06:10.439,0:06:15.039
+you can use the command pvd or you can
+protect the variable
+
+0:06:15.039,0:06:18.319
+p w the print working directory
+
+0:06:18.319,0:06:21.139
+and so if we go into cd class
+
+0:06:21.139,0:06:23.379
+and echo dollar pvd
+
+0:06:23.379,0:06:24.819
+here now in class
+
+0:06:24.819,0:06:28.630
+cd minus takes you back to the previous
+treachery that you are in
+
+0:06:28.630,0:06:34.580
+so he'll tools leslie myers will take
+you back to classic plastics back home
+
+0:06:34.580,0:06:38.370
+and for those of you who speak a
+different language
+
+0:06:38.370,0:06:41.900
+there are ways in links to set the
+language and have
+
+0:06:41.900,0:06:44.629
+a lot of these props come out in your
+native tongue
+
+0:06:44.629,0:06:47.789
+i have no idea how to do that because i
+don't speak english
+
+0:06:47.789,0:06:50.400
+i'm not fortunate enough to be fluent in
+anything else
+
+0:06:50.400,0:06:52.150
+so ako dahil ang
+
+0:06:52.150,0:06:55.750
+well actually tell us that were in
+english and the u_s_ first of english
+
+0:06:55.750,0:07:00.550
+aka never using the uti s peter or one
+bite character set
+
+0:07:00.550,0:07:02.919
+so if you're using atlantic's foreseen
+for
+
+0:07:02.919,0:07:07.409
+for another language of see that be
+different
+
+0:07:07.409,0:07:09.569
+and god
+
+0:07:09.569,0:07:13.289
+we counsel ask we shall rent this might
+not always be bash if you are in
+
+0:07:13.289,0:07:14.949
+somebody else's
+
+0:07:14.949,0:07:18.020
+environment and they're running your
+scripts if you can check to make sure
+
+0:07:18.020,0:07:20.289
+that you're actually in bash and
+
+0:07:20.289,0:07:24.860
+the features and you're available
+
+0:07:24.860,0:07:29.220
+since in this class we've been talking
+about using the email exeter
+
+0:07:29.220,0:07:31.580
+it defaults to be i for
+
+0:07:31.580,0:07:32.610
+most
+
+0:07:32.610,0:07:35.529
+tools that he's a defender so if we say
+
+0:07:35.529,0:07:36.869
+less
+
+0:07:36.869,0:07:40.080
+example dot bash
+
+0:07:40.080,0:07:44.449
+in lasts weekly press that the he
+actually sponsored there
+
+0:07:44.449,0:07:45.409
+and
+
+0:07:45.409,0:07:47.699
+here we're stuck in
+
+0:07:47.699,0:07:49.139
+canoe nuno
+
+0:07:49.139,0:07:50.889
+which we're not going to be using
+
+0:07:50.889,0:07:52.939
+so will do a control
+
+0:07:52.939,0:07:54.529
+acts for exits
+
+0:07:54.529,0:07:55.560
+and quick
+
+0:07:55.560,0:07:56.819
+he was acquitted
+
+0:07:56.819,0:07:58.770
+we want to actually set
+
+0:07:58.770,0:08:03.759
+uh... leander variable to tell it that
+we want news imax so we can say
+
+0:08:03.759,0:08:05.049
+exports
+
+0:08:05.049,0:08:06.050
+editor
+
+0:08:06.050,0:08:08.000
+equals imax
+
+0:08:08.000,0:08:12.190
+so now let's take a look with less and
+that example dot bash
+
+0:08:12.190,0:08:14.259
+interpreted the ki
+
+0:08:14.259,0:08:15.510
+we should pop up
+
+0:08:15.510,0:08:17.820
+uh... a whole imax window
+
+0:08:17.820,0:08:20.120
+with our file are working on
+
+0:08:20.120,0:08:23.180
+pretty hindi
+
+0:08:23.180,0:08:24.589
+africa about
+
+0:08:24.589,0:08:27.580
+but perhaps if you don't want to
+actually have that
+
+0:08:27.580,0:08:30.270
+pop up the full graphical he max
+
+0:08:30.270,0:08:31.219
+if you do
+
+0:08:31.219,0:08:33.640
+dash n_w_ which means
+
+0:08:33.640,0:08:37.980
+no window don't sparkle for window so
+let's try this one out
+
+0:08:37.980,0:08:39.230
+back in the last
+
+0:08:39.230,0:08:41.589
+and now for press the delete key for the
+editor
+
+0:08:41.589,0:08:44.490
+you'll see that came out to start up in
+a small window
+
+0:08:44.490,0:08:48.180
+with internal is not creating some extra
+
+0:08:48.180,0:08:49.030
+environment
+
+0:08:49.030,0:08:51.760
+timidity trolex control sequin arafat
+
+0:08:51.760,0:08:53.970
+and accused quick out of
+
+0:08:53.970,0:08:55.880
+less
+
+0:08:55.880,0:08:59.760
+now what we really want to see wanna
+outside he max the keeps running that we
+
+0:08:59.760,0:09:03.290
+can tell it please go at this file for
+us
+
+0:09:03.290,0:09:08.310
+and if we started imax up here
+
+0:09:08.310,0:09:11.360
+shrink the substance on the screen
+
+0:09:11.360,0:09:16.420
+and inside of you next week and your
+mother acts server start
+
+0:09:16.420,0:09:19.850
+press center we now have let's bring in
+terms of server really worth listening
+
+0:09:19.850,0:09:20.970
+for
+
+0:09:20.970,0:09:23.170
+requested edit files
+
+0:09:23.170,0:09:24.890
+and if we go over here
+
+0:09:24.890,0:09:26.870
+and we say
+
+0:09:26.870,0:09:28.230
+even acts
+
+0:09:28.230,0:09:32.710
+client this is a school on the command
+minded will tally max please go at it
+
+0:09:32.710,0:09:35.140
+the file so antics
+
+0:09:35.140,0:09:38.180
+example
+
+0:09:38.180,0:09:39.550
+cria simpler one
+
+0:09:39.550,0:09:40.750
+hello dot
+
+0:09:40.750,0:09:42.740
+batch
+
+0:09:42.740,0:09:48.710
+so now it's opened up hello dot bash and
+sold to the bottom down here
+
+0:09:48.710,0:09:51.570
+we can do a control expound enameled
+
+0:09:51.570,0:09:55.960
+the credit card on cutting slits
+co-creator quick script
+
+0:09:55.960,0:09:57.230
+pang
+
+0:09:57.230,0:09:59.170
+and splash bash
+
+0:09:59.170,0:10:03.010
+petco
+
+0:10:03.010,0:10:07.390
+now control acts of kindness powell into
+the number sign
+
+0:10:07.390,0:10:09.830
+we do you want to say that say yes
+
+0:10:09.830,0:10:12.900
+the file closed and if we're back at the
+show
+
+0:10:12.900,0:10:15.270
+pretty real special hello
+
+0:10:15.270,0:10:16.640
+and source
+
+0:10:16.640,0:10:20.050
+hello we now have a script
+
+0:10:20.050,0:10:25.350
+if we don't want to wait around for us
+we can change that imax clients
+
+0:10:25.350,0:10:27.620
+teased a
+
+0:10:27.620,0:10:30.180
+ask it
+
+0:10:30.180,0:10:33.210
+and if we were appear
+
+0:10:33.210,0:10:36.520
+areas dash dash no wait
+
+0:10:36.520,0:10:41.100
+separate yuki max client
+
+0:10:41.100,0:10:44.680
+test session no dash weight
+
+0:10:44.680,0:10:46.920
+and hello uh... bash
+
+0:10:46.920,0:10:50.000
+note that our team axe is currently in
+that welcome screen
+
+0:10:50.000,0:10:51.090
+presenter
+
+0:10:51.090,0:10:53.130
+andy mac spring comes to the front
+
+0:10:53.130,0:10:57.390
+and it brings up that file for its now
+if we note back here we come to write
+
+0:10:57.390,0:10:59.040
+back to the command line
+
+0:10:59.040,0:11:01.070
+without waiting around for editing it
+
+0:11:01.070,0:11:04.610
+so what we can do now is exports editor
+
+0:11:04.610,0:11:06.270
+equals
+
+0:11:06.270,0:11:08.220
+and then we could see even acts
+
+0:11:08.220,0:11:10.700
+clients
+
+0:11:10.700,0:11:12.930
+uh... dash dash new dash
+
+0:11:12.930,0:11:17.210
+weight
+
+0:11:17.210,0:11:20.209
+let's kill this gun control x k
+
+0:11:20.209,0:11:21.670
+technical lead
+
+0:11:21.670,0:11:23.740
+okay so now if we go into laos
+
+0:11:23.740,0:11:26.470
+and we say hello dogpatch
+
+0:11:26.470,0:11:29.580
+now press the v_ kita at this file
+
+0:11:29.580,0:11:32.760
+it brings up
+
+0:11:32.760,0:11:34.270
+team x over here
+
+0:11:34.270,0:11:40.470
+and very confused touring with them
+
+0:11:40.470,0:11:44.810
+for that and there's no such families
+that in later parts of the class and
+
+0:11:44.810,0:11:50.890
+i'll go through setting up a lot of
+configuration in the next email tutorial
+
+0:11:50.890,0:11:56.630
+okay so let's talk about for loops
+
+0:11:56.630,0:12:00.650
+in the four enough for a loop were not
+walk over a bunch of variables and we're
+
+0:12:00.650,0:12:01.970
+gonna see
+
+0:12:01.970,0:12:03.070
+that
+
+0:12:03.070,0:12:06.860
+uh... we can look through and call
+things multiple times with a different
+
+0:12:06.860,0:12:09.620
+value on a very well each time
+
+0:12:09.620,0:12:10.580
+to bring up
+
+0:12:10.580,0:12:13.410
+example dot bash with our example for
+loop
+
+0:12:13.410,0:12:14.860
+so it's for
+
+0:12:14.860,0:12:18.980
+drina for loop our
+
+0:12:18.980,0:12:22.220
+is going to be are variable so it is
+time to loop hours can be sent to a
+
+0:12:22.220,0:12:24.270
+different valium
+
+0:12:24.270,0:12:28.440
+in says they were ready to give you the
+list of things are currently over
+
+0:12:28.440,0:12:30.850
+and then we can put a bunch of things
+
+0:12:30.850,0:12:34.100
+and they can be numbers they can be
+strings
+
+0:12:34.100,0:12:36.350
+and say hello
+
+0:12:36.350,0:12:39.820
+do starts the beginning uh... arlene
+
+0:12:39.820,0:12:40.860
+echoes
+
+0:12:40.860,0:12:44.240
+one commando trained in the loop to look
+and say
+
+0:12:44.240,0:12:45.350
+echo
+
+0:12:45.350,0:12:46.340
+and to see
+
+0:12:46.340,0:12:50.830
+blank one here to make a new lines he'll
+see each sleep through
+
+0:12:50.830,0:12:53.940
+and meet you can see and
+
+0:12:53.940,0:12:56.700
+co start
+
+0:12:56.700,0:12:59.950
+so if we source that source
+
+0:12:59.950,0:13:02.380
+sample dot bash
+
+0:13:02.380,0:13:05.560
+we have a lot of stuff it's way too
+confusing that you can see each block
+
+0:13:05.560,0:13:06.320
+here
+
+0:13:06.320,0:13:08.010
+figures one block
+
+0:13:08.010,0:13:09.860
+and here's the next block
+
+0:13:09.860,0:13:12.260
+and there's the help of the athens
+
+0:13:12.260,0:13:16.590
+so let's remove those echoes because
+they're too confusing for that weekend
+
+0:13:16.590,0:13:17.820
+source
+
+0:13:17.820,0:13:21.650
+and we'll see you pawned three six
+possible at the end
+
+0:13:21.650,0:13:24.460
+now we can also
+
+0:13:24.460,0:13:26.670
+copy this
+
+0:13:26.670,0:13:28.780
+river here and at
+
+0:13:28.780,0:13:29.860
+paste
+
+0:13:29.860,0:13:31.850
+and if you give me command-line
+
+0:13:31.850,0:13:34.090
+press enter and it works it's the same
+
+0:13:34.090,0:13:37.530
+now wanting on the list if you hit the
+uparrow to go back to previous command
+
+0:13:37.530,0:13:40.550
+is gonna pack it all into one line
+
+0:13:40.550,0:13:42.160
+and is a tricky in there
+
+0:13:42.160,0:13:44.970
+the shell dot to the summer colin
+
+0:13:44.970,0:13:47.620
+great here's one right there
+
+0:13:47.620,0:13:49.800
+and there's one right here
+
+0:13:49.800,0:13:54.250
+those are equal until a new plan
+climates going down to the next one
+
+0:13:54.250,0:13:58.390
+so this is effectively it one-line
+starring at the four the hello in the
+
+0:13:58.390,0:14:00.630
+summer colin starts the new line
+
+0:14:00.630,0:14:01.560
+it to you
+
+0:14:01.560,0:14:05.140
+and you actually didn't need a blank
+line between the deal in the echo
+
+0:14:05.140,0:14:07.730
+and then here's the camera and side of
+our lives
+
+0:14:07.730,0:14:10.770
+children that's exactly the same
+
+0:14:10.770,0:14:13.710
+you can use that for all kinds of things
+like you could
+
+0:14:13.710,0:14:17.350
+rename every single file in your
+directory for temple
+
+0:14:17.350,0:14:19.600
+oftentimes if you've got
+
+0:14:19.600,0:14:24.640
+uh... files namely dot jpg gene you want
+them to be called dot jpg for cheap a
+
+0:14:24.640,0:14:25.610
+picture
+
+0:14:25.610,0:14:29.200
+and confusing some of your programs you
+can look over even ten thousand files
+
+0:14:29.200,0:14:31.910
+pretty quickly and rename them all
+
+0:14:31.910,0:14:34.070
+it's very handy
+
+0:14:34.070,0:14:40.510
+nonetheless one i show you is the if
+statement
+
+0:14:40.510,0:14:42.540
+enemy his statement
+
+0:14:42.540,0:14:44.180
+where any used too
+
+0:14:44.180,0:14:45.510
+different path
+
+0:14:45.510,0:14:47.110
+programs to illustrate
+
+0:14:47.110,0:14:49.820
+what's going on with jeff if it's
+
+0:14:49.820,0:14:54.100
+definitely syntactic winnowing if you
+take a if they're so confusing syntax
+
+0:14:54.100,0:14:54.900
+feel
+
+0:14:54.900,0:14:55.739
+you'll see
+
+0:14:55.739,0:14:57.749
+in a moment but we're gonna straw simple
+
+0:14:57.749,0:15:02.290
+during these two programs was called
+been true
+
+0:15:02.290,0:15:05.910
+and that this program always returns
+true but how do we know that
+
+0:15:05.910,0:15:06.960
+michelle
+
+0:15:06.960,0:15:08.750
+has a return code from each
+
+0:15:08.750,0:15:12.490
+uh... program and it's hard to know what
+was saying just from looking at the
+
+0:15:12.490,0:15:17.020
+scene of the know that you can type
+echoed dollar question mark
+
+0:15:17.020,0:15:19.410
+and this will always tell you the return
+code
+
+0:15:19.410,0:15:22.760
+from the last program
+
+0:15:22.760,0:15:26.040
+bash unfortunately zero is true
+
+0:15:26.040,0:15:30.630
+which is the exact opposite of just
+about everything counts
+
+0:15:30.630,0:15:32.710
+five ten slash false
+
+0:15:32.710,0:15:33.450
+is
+
+0:15:33.450,0:15:35.570
+to return as a false cohen
+
+0:15:35.570,0:15:37.940
+mckinsey echo
+
+0:15:37.940,0:15:38.970
+question mark
+
+0:15:38.970,0:15:42.490
+and one happens dave defaults and the
+shuttle
+
+0:15:42.490,0:15:45.160
+so we can use this to construct a
+statement
+
+0:15:45.160,0:15:46.290
+and
+
+0:15:46.290,0:15:47.760
+if you take a half
+
+0:15:47.760,0:15:48.940
+been slashed
+
+0:15:48.940,0:15:50.900
+true
+
+0:15:50.900,0:15:52.020
+and then
+
+0:15:52.020,0:15:55.550
+to start instead of saying do we say
+then
+
+0:15:55.550,0:15:58.520
+and inside the block we can say hecho
+
+0:15:58.520,0:15:59.730
+yes
+
+0:15:59.730,0:16:05.170
+this is true which should get printed
+out because been true is always true
+
+0:16:05.170,0:16:07.740
+and then to finish up instead of saying
+
+0:16:07.740,0:16:09.020
+donned we say
+
+0:16:09.020,0:16:11.900
+five which is if backwards
+
+0:16:11.900,0:16:15.200
+the original after it was being very
+clever
+
+0:16:15.200,0:16:19.470
+so yep it's true mediocre against
+collapse at all to one line so it's a
+
+0:16:19.470,0:16:21.160
+little bit annoying but
+
+0:16:21.160,0:16:24.120
+offer you can read that from a change
+that
+
+0:16:24.120,0:16:26.460
+true to a false
+
+0:16:26.460,0:16:28.120
+we should see
+
+0:16:28.120,0:16:30.720
+that the eco is not around
+
+0:16:30.720,0:16:33.200
+so the national echo
+
+0:16:33.200,0:16:36.800
+so that's the basics of and if test and
+the reason i want to death we know this
+
+0:16:36.800,0:16:39.220
+one is going to go take a look at the
+
+0:16:39.220,0:16:41.850
+bash carseat
+
+0:16:41.850,0:16:44.350
+so if we go into imax
+
+0:16:44.350,0:16:45.670
+or actually let's do it
+
+0:16:45.670,0:16:47.890
+from art he max
+
+0:16:47.890,0:16:50.320
+clients
+
+0:16:50.320,0:16:51.160
+you know
+
+0:16:51.160,0:16:51.959
+waste
+
+0:16:51.959,0:16:55.940
+dot bash artsy service penner battersea
+
+0:16:55.940,0:16:56.899
+ending here
+
+0:16:56.899,0:17:01.429
+you're gonna see a number of if test so
+i'm going to matter greater than to jump
+
+0:17:01.429,0:17:04.280
+to the bottom of the file
+
+0:17:04.280,0:17:06.220
+here for example
+
+0:17:06.220,0:17:07.920
+is heck if block
+
+0:17:07.920,0:17:10.850
+words testing a c if the file
+
+0:17:10.850,0:17:13.179
+bash underscore aliases
+
+0:17:13.179,0:17:15.630
+exists with a dash
+
+0:17:15.630,0:17:17.150
+f in here
+
+0:17:17.150,0:17:20.339
+and if that file exists it's gonna use
+of this
+
+0:17:20.339,0:17:21.999
+crazy command of the dot
+
+0:17:21.999,0:17:22.929
+and then
+
+0:17:22.929,0:17:24.060
+the file name
+
+0:17:24.060,0:17:27.150
+dot is equivalent to running source
+
+0:17:27.150,0:17:30.690
+so free to tell us that show and we had
+
+0:17:30.690,0:17:31.990
+with source
+
+0:17:31.990,0:17:33.780
+hello dot bash
+
+0:17:33.780,0:17:36.190
+is the equivalent of
+
+0:17:36.190,0:17:40.100
+period or full stop and how attached
+
+0:17:40.100,0:17:45.230
+the daughter stefani harder to notice
+intact so i recommend prbly not using it
+
+0:17:45.230,0:17:46.740
+but always kept his open
+
+0:17:46.740,0:17:50.809
+let's go ahead and add our editor in
+here and say exports
+
+0:17:50.809,0:17:51.630
+commuter
+
+0:17:51.630,0:17:53.900
+equals
+
+0:17:53.900,0:17:55.920
+imax clients
+
+0:17:55.920,0:17:57.880
+and mostly been away ha for now
+
+0:17:57.880,0:18:01.250
+and what that will do is give us the
+ability
+
+0:18:01.250,0:18:03.060
+ronnie mack's clients
+
+0:18:03.060,0:18:05.440
+whenever we ask for an editor
+
+0:18:05.440,0:18:08.980
+and the dash for c_ is run every time a
+new shows created
+
+0:18:08.980,0:18:11.440
+so that will follow us around even after
+
+0:18:11.440,0:18:15.290
+diverse machines rebooted or priest or a
+new terminal sources very neat see that
+
+0:18:15.290,0:18:17.909
+with control x control us
+
+0:18:17.909,0:18:21.080
+and then we'll go ahead and killer
+control x contro
+
+0:18:21.080,0:18:22.539
+and uh... no control
+
+0:18:22.539,0:18:24.850
+kind kay
+
+0:18:24.850,0:18:29.340
+now the presenter and akong
+
+0:18:29.340,0:18:32.200
+so that'll be a
+
+0:18:32.200,0:18:35.170
+her response
+
+0:18:35.170,0:18:40.270
+we can also do some a neat things with
+something called command substitution sp
+
+0:18:40.270,0:18:43.500
+so if we say echo
+
+0:18:43.500,0:18:45.330
+and then run the command date
+
+0:18:45.330,0:18:46.970
+you can start building up inside
+
+0:18:46.970,0:18:48.740
+become and or
+
+0:18:48.740,0:18:49.880
+some sort of echo
+
+0:18:49.880,0:18:51.070
+statement with
+
+0:18:51.070,0:18:52.740
+whenever you want
+
+0:18:52.740,0:18:56.920
+n and run inside of
+
+0:18:56.920,0:18:57.820
+themselves
+
+0:18:57.820,0:19:00.559
+so we can create command that's got
+something
+
+0:19:00.559,0:19:02.440
+everyone have inside
+
+0:19:02.440,0:19:04.530
+we can say for example
+
+0:19:04.530,0:19:07.379
+date antics a really cool calm and to
+know it
+
+0:19:07.379,0:19:10.920
+it is very helpful so we can say year
+
+0:19:10.920,0:19:12.660
+percentp m
+
+0:19:12.660,0:19:15.820
+command percent
+
+0:19:15.820,0:19:20.590
+this is going to say capitalize year
+please give us the monthly commanded a
+
+0:19:20.590,0:19:22.130
+as numbers
+
+0:19:22.130,0:19:24.270
+so we can build a
+
+0:19:24.270,0:19:25.960
+power
+
+0:19:25.960,0:19:27.720
+minutes
+
+0:19:27.720,0:19:31.200
+and
+
+0:19:31.200,0:19:34.070
+second
+
+0:19:34.070,0:19:37.730
+that said everyday to have at the time
+stamp if you want to create file name
+
+0:19:37.730,0:19:38.809
+without
+
+0:19:38.809,0:19:39.850
+and
+
+0:19:39.850,0:19:42.010
+we can then also say
+
+0:19:42.010,0:19:45.180
+with i think the yuki see because we
+should always be logging into it and you
+
+0:19:45.180,0:19:46.700
+can see
+
+0:19:46.700,0:19:50.300
+so there's are taking yuki scene you can
+see that there's a a four hour time
+
+0:19:50.300,0:19:54.550
+change between where i'm sitting andy
+cheating
+
+0:19:54.550,0:19:57.940
+so we can say
+
+0:19:57.940,0:20:01.179
+echo
+
+0:20:01.179,0:20:03.770
+parts of the back quote around this
+
+0:20:03.770,0:20:07.080
+and
+
+0:20:07.080,0:20:08.179
+today
+
+0:20:08.179,0:20:15.020
+or safe now is
+
+0:20:15.020,0:20:16.929
+is a time
+
+0:20:16.929,0:20:18.800
+and so it create a sentence
+
+0:20:18.800,0:20:23.520
+and a lot of preparing to for example
+are probably could stay at logged on it
+
+0:20:23.520,0:20:26.520
+and do you
+
+0:20:26.520,0:20:28.860
+like that
+
+0:20:28.860,0:20:34.540
+copy
+
+0:20:34.540,0:20:39.059
+and i'll do it the last two dash kelty
+artwork teams sort by time and are is
+
+0:20:39.059,0:20:40.570
+your first thoughts were order
+
+0:20:40.570,0:20:45.929
+has he done here we have a log file with
+our timestamp parade in here
+
+0:20:45.929,0:20:47.059
+experience
+
+0:20:47.059,0:20:50.640
+and you could create if you need to have
+like your username in there
+
+0:20:50.640,0:20:53.130
+circuits eight dollar
+
+0:20:53.130,0:20:55.679
+user
+
+0:20:55.679,0:21:02.679
+dot can you can do whatever you want to
+our specialty are
+
+0:21:02.760,0:21:04.070
+easier
+
+0:21:04.070,0:21:09.640
+so here you can see we've got our
+username research tools added
+
+0:21:09.640,0:21:13.590
+if we hadn't done
+
+0:21:13.590,0:21:18.039
+parentheses for these curly braces
+around as we might have had trouble with
+
+0:21:18.039,0:21:21.450
+terrible being indistinguishable from
+the rest of the command
+
+0:21:21.450,0:21:25.980
+now wanting to know is that the
+
+0:21:25.980,0:21:29.070
+is the old style that you're not
+supposed to use anymore and i always use
+
+0:21:29.070,0:21:29.940
+it by default
+
+0:21:29.940,0:21:32.130
+so if you really want to know
+
+0:21:32.130,0:21:35.910
+is how to do it that way that's down the
+new improved way announce front date
+
+0:21:35.910,0:21:37.610
+with parentheses
+
+0:21:37.610,0:21:44.610
+around its we can say
+
+0:21:44.789,0:21:47.510
+loss percent
+
+0:21:47.510,0:21:48.800
+and there's the year
+
+0:21:48.800,0:21:52.230
+seeking out buildings up however you
+want
+
+0:21:52.230,0:21:54.549
+and that will help you
+
+0:21:54.549,0:21:59.090
+managing data on your system
+
+0:21:59.090,0:22:03.360
+plus a possible to do simple math and
+this is where we see that to shell
+
+0:22:03.360,0:22:05.590
+syntax is fairly confusing
+
+0:22:05.590,0:22:08.520
+and that we'd rather be in python right
+now
+
+0:22:08.520,0:22:09.520
+but with
+
+0:22:09.520,0:22:13.280
+two-part to prep the seas around solemn
+value
+
+0:22:13.280,0:22:16.809
+we can produce a mass if you need to
+calculate
+
+0:22:16.809,0:22:19.390
+some number
+
+0:22:19.390,0:22:23.740
+you can do a little calculator on the
+commitment
+
+0:22:23.740,0:22:25.330
+they really need for a lot of
+
+0:22:25.330,0:22:28.029
+little background scripts potent
+disprove
+
+0:22:28.029,0:22:31.370
+pretty well demonstrates that we'd
+rather be in python the language that
+
+0:22:31.370,0:22:34.380
+has less quirky mysterious and have the
+
+0:22:34.380,0:22:35.520
+beginning f
+
+0:22:35.520,0:22:40.160
+without dan and and uh... fires opposed
+to
+
+0:22:40.160,0:22:42.780
+for loop which has a do you have done
+
+0:22:42.780,0:22:44.870
+everything in bash
+
+0:22:44.870,0:22:48.140
+been around for a long time and people
+don't understand how important it was to
+
+0:22:48.140,0:22:49.159
+have a very
+
+0:22:49.159,0:22:50.180
+regular
+
+0:22:50.180,0:22:54.140
+syntax so here you have to respond
+different for
+
+0:22:54.140,0:23:01.140
+for loops and if luke's item will be
+much more uniform
+
+0:23:02.230,0:23:07.700
+i'd like to show you how to you
+
+0:23:07.700,0:23:10.830
+open up a program from the commitment so
+x
+
+0:23:10.830,0:23:15.799
+deje open as a key want to know and we
+can say two thousand
+
+0:23:15.799,0:23:18.830
+and then to have an i'll give us this
+image we have our directory
+
+0:23:18.830,0:23:21.690
+sixty g open it will bring up a picture
+
+0:23:21.690,0:23:23.070
+in this case
+
+0:23:23.070,0:23:25.960
+in you see things like this was a
+warnings in errors
+
+0:23:25.960,0:23:28.479
+you can just ignore them they're
+dividing stuff it should have been
+
+0:23:28.479,0:23:30.530
+turned off inside of
+
+0:23:30.530,0:23:32.970
+display program
+
+0:23:32.970,0:23:36.289
+if we could
+
+0:23:36.289,0:23:39.149
+go back to our for luke and would like
+to rename this
+
+0:23:39.149,0:23:43.900
+jpg and milwaukee through creating a
+quick scripts pebble to them
+
+0:23:43.900,0:23:44.669
+and
+
+0:23:44.669,0:23:45.760
+we want our
+
+0:23:45.760,0:23:49.190
+convert that to a p_n_g_ image so
+
+0:23:49.190,0:23:52.730
+logs loop over all of our images pretend
+there's more than one image
+
+0:23:52.730,0:23:53.960
+for
+
+0:23:53.960,0:23:55.350
+final in
+
+0:23:55.350,0:24:00.690
+star dot jpg said give me all the
+depends do
+
+0:24:00.690,0:24:02.179
+echo
+
+0:24:02.179,0:24:03.200
+dollar
+
+0:24:03.200,0:24:04.950
+file
+
+0:24:04.950,0:24:06.110
+uh... so this
+
+0:24:06.110,0:24:11.210
+should just list are for one final
+benefactors are one final
+
+0:24:11.210,0:24:12.720
+let's do it over here
+
+0:24:12.720,0:24:13.549
+in
+
+0:24:13.549,0:24:18.019
+rename dogpatch
+
+0:24:18.019,0:24:18.899
+and slash
+
+0:24:18.899,0:24:20.920
+batch
+
+0:24:20.920,0:24:23.020
+for file and
+
+0:24:23.020,0:24:27.310
+uh... jpg
+
+0:24:27.310,0:24:28.340
+do you
+
+0:24:28.340,0:24:31.660
+john inside echo
+
+0:24:31.660,0:24:33.890
+uh...
+
+0:24:33.890,0:24:37.500
+okay so now if we say source screenname
+
+0:24:37.500,0:24:40.970
+there's every name
+
+0:24:40.970,0:24:44.669
+there is a substitution mechanism inside
+of the variables
+
+0:24:44.669,0:24:46.390
+where we can actually say
+
+0:24:46.390,0:24:49.120
+unicef curly braces here
+
+0:24:49.120,0:24:53.760
+two pounds and the text you wanna strip
+off the end comes after so it's a dot
+
+0:24:53.760,0:24:55.300
+jpg
+
+0:24:55.300,0:24:56.860
+so let's just try
+
+0:24:56.860,0:24:57.830
+just that
+
+0:24:57.830,0:25:00.080
+mls distance you can see
+
+0:25:00.080,0:25:01.520
+so for here
+
+0:25:01.520,0:25:03.540
+and more era not source
+
+0:25:03.540,0:25:06.230
+and
+
+0:25:06.230,0:25:13.230
+hits didn't work
+
+0:25:16.260,0:25:17.120
+there we go
+
+0:25:17.120,0:25:19.410
+at the compound takes it off the
+beginning
+
+0:25:19.410,0:25:21.880
+and percent percent takes off the end
+
+0:25:21.880,0:25:24.380
+again you'll notice that
+
+0:25:24.380,0:25:26.200
+these funny syntax tricks
+
+0:25:26.200,0:25:28.190
+even i have done this for
+
+0:25:28.190,0:25:29.090
+about
+
+0:25:29.090,0:25:33.930
+fifteen years of these bash and i still
+get tripped up by the next time
+
+0:25:33.930,0:25:39.080
+so now we can add on card pensions and
+can say dot p and g
+
+0:25:39.080,0:25:41.440
+go ahead and save time
+
+0:25:41.440,0:25:44.640
+source renamed and now you can see that
+we've changed
+
+0:25:44.640,0:25:49.230
+dot j peg too dot p and g
+
+0:25:49.230,0:25:50.000
+now the
+
+0:25:50.000,0:25:51.570
+the command line uses
+
+0:25:51.570,0:25:54.659
+from toolset image magic or that
+
+0:25:54.659,0:25:58.240
+for four qab that was a different
+project with some more code which is
+
+0:25:58.240,0:25:59.230
+called him
+
+0:25:59.230,0:26:01.520
+graphics magic is convert
+
+0:26:01.520,0:26:03.130
+the cover command will
+
+0:26:03.130,0:26:07.630
+change images in a whole number of a
+range of the ways of resize them it will
+
+0:26:07.630,0:26:08.730
+also
+
+0:26:08.730,0:26:09.850
+change the type of
+
+0:26:09.850,0:26:13.640
+image format and to do all kinds of
+things you stuff
+
+0:26:13.640,0:26:17.350
+so if we say
+
+0:26:17.350,0:26:20.570
+family sources we are converting
+
+0:26:20.570,0:26:23.240
+tar file but with the echo
+
+0:26:23.240,0:26:27.130
+this is a great way the bug scripts you
+can now have a dual loop or do a test to
+
+0:26:27.130,0:26:30.070
+tell you what it would try to do with
+that actually doing
+
+0:26:30.070,0:26:32.040
+so let's delete
+
+0:26:32.040,0:26:35.190
+are account
+
+0:26:35.190,0:26:37.730
+state that control x control us
+
+0:26:37.730,0:26:39.610
+source rename
+
+0:26:39.610,0:26:45.130
+he didn't actually printed thing we
+should now see
+
+0:26:45.130,0:26:46.500
+two different pictures
+
+0:26:46.500,0:26:50.659
+one of the j peg that was our original
+are now p and g which is our new
+
+0:26:50.659,0:26:51.840
+version of that
+
+0:26:51.840,0:26:58.840
+and we can get x d t
+
+0:26:59.710,0:27:00.990
+histories
+
+0:27:00.990,0:27:03.710
+tales
+
+0:27:03.710,0:27:05.550
+together exit d
+
+0:27:05.550,0:27:09.350
+xti g cash open
+
+0:27:09.350,0:27:10.760
+two thousand leavened
+
+0:27:10.760,0:27:12.630
+and that we can try p_n_g_
+
+0:27:12.630,0:27:17.410
+and see that we have p_h_d_s version of
+our picture looking up healy
+
+0:27:17.410,0:27:21.409
+that's it for today hope that give you a
+sense of shell variables
+
+0:27:21.409,0:27:22.350
+and
+
+0:27:22.350,0:27:25.370
+with dot you should see that you really
+would rather be working in a permanent
+
+0:27:25.370,0:27:27.900
+which like python which will
+
+0:27:27.900,0:27:31.710
+be much more uniform and less surprising
+when you get into the details of it
+
+0:27:31.710,0:27:34.520
+thank you for joining me and uh...
+
+0:27:34.520,0:27:35.279
+become back from work
+

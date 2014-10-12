@@ -1,0 +1,26 @@
+#+STARTUP: showall
+
+* Classes that are very similar to this one
+
+** Scripps Institution of Oceanography
+
+- http://udcshel.blogspot.com/2010/11/scripps-class-introduction-to-computers.html
+- http://mahi.ucsd.edu/class233/
+- http://mahi.ucsd.edu/shearer/COMPCLASS/
+
+** Beyond the Mouse 2011 - The (geo)scientist's computational chest.  (A Short Course on Programming)
+
+By Ronni Grapenthin
+
+http://www.gps.alaska.edu/programming/
+
+#+BEGIN_VERSE 
+The intent is to hand you tools that will allow you to massage data in exactly the way you want it to be. We will start out manipulating your thinking, introduce you to programming in general, and then take off into specific working environments namely Unix/Linux and Matlab while teaching you how to map your data using GMT. We will cover many things in a short amount of time which means that we will give you many pointers which you can follow up on depending on your needs.
+#+END_VERSE
+
+
+
+** Scripting for Scientists, 2009
+
+Kyle Ambert & Steven Bedrick
+http://skynet.ohsu.edu/bmi507/

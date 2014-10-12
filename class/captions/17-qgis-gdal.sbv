@@ -1,0 +1,4952 @@
+0:00:00.769,0:00:03.149
+i didn't have in the notes that you get
+for it
+
+0:00:03.149,0:00:06.080
+today's lecture seventeen dot org
+
+0:00:06.080,0:00:08.989
+apprehended and taken your
+
+0:00:08.989,0:00:11.939
+there is a few
+
+0:00:11.939,0:00:14.619
+for this to make a difference for you
+guys are going to switch it up today
+
+0:00:14.619,0:00:16.070
+from
+
+0:00:16.070,0:00:18.220
+harp pipeline stuff in there
+
+0:00:18.220,0:00:20.220
+try and make a little bit
+
+0:00:20.220,0:00:21.330
+word review
+
+0:00:21.330,0:00:22.519
+some graphical stuff
+
+0:00:22.519,0:00:26.970
+i'm reading about the shall rarely
+python classic but
+
+0:00:26.970,0:00:28.469
+hopefully make some pictures
+
+0:00:28.469,0:00:30.789
+so for those of you know we're gonna
+
+0:00:30.789,0:00:33.970
+thank you very fast but i think that
+anyone expertise
+
+0:00:33.970,0:00:35.380
+what it what is a chart
+
+0:00:35.380,0:00:40.490
+the chart is a piece of paper but you
+know the u dot ok were done today
+
+0:00:40.490,0:00:42.489
+let's go ahead and get started today
+
+0:00:42.489,0:00:43.319
+we're gonna
+
+0:00:43.319,0:00:44.540
+go over
+
+0:00:44.540,0:00:50.070
+q g_i_s_ which is a graphical g_i_s_
+geographic information system
+
+0:00:50.070,0:00:53.350
+piece of software amber and also use
+until called
+
+0:00:53.350,0:00:56.230
+and is it where it pissed off about
+uh...
+
+0:00:56.230,0:00:57.369
+pronunciation
+
+0:00:57.369,0:00:59.500
+it's gta alle
+
+0:00:59.500,0:01:03.280
+and some people say brutal and some
+people say to you know i'm and people to
+
+0:01:03.280,0:01:05.100
+think a lot
+
+0:01:05.100,0:01:06.800
+so today its
+
+0:01:06.800,0:01:09.490
+q g_i_s_ ra quant india
+
+0:01:09.490,0:01:10.700
+and
+
+0:01:10.700,0:01:12.660
+i call it you know
+
+0:01:12.660,0:01:13.950
+now is a reminder
+
+0:01:13.950,0:01:15.310
+in homework
+
+0:01:15.310,0:01:17.680
+to resubmitted your organelle file
+
+0:01:17.680,0:01:18.680
+becomes too
+
+0:01:18.680,0:01:20.880
+i'd like you today to submit your
+
+0:01:20.880,0:01:26.750
+org logfile today put on the server and
+sent email me the mt five somehow fiore
+
+0:01:26.750,0:01:28.060
+logfile
+
+0:01:28.060,0:01:29.790
+and i think this is homework four
+
+0:01:29.790,0:01:31.820
+so you lose create a homework
+
+0:01:31.820,0:01:33.550
+flash zero
+
+0:01:33.550,0:01:35.500
+for directory and put in there
+
+0:01:35.500,0:01:38.580
+and just a million defied someone else
+but you've already done that
+
+0:01:38.580,0:01:39.790
+company no
+
+0:01:39.790,0:01:41.900
+midterms
+
+0:01:41.900,0:01:44.239
+so remind you get the end of class if i
+can remember
+
+0:01:44.239,0:01:46.610
+but just trying to get by
+
+0:01:46.610,0:01:47.890
+by midnight
+
+0:01:47.890,0:01:51.850
+few facilities before five a_m_ moments
+ago finance
+
+0:01:51.850,0:01:52.760
+feel like it
+
+0:01:52.760,0:01:54.100
+just for fun
+
+0:01:54.100,0:01:56.490
+okay so let's talk about nautical charts
+
+0:01:56.490,0:01:58.619
+we're gonna use them as our sample data
+said today
+
+0:01:58.619,0:02:01.539
+for two reasons one is we need a sample
+is that the play with the tools of
+
+0:02:01.539,0:02:02.710
+learning learning
+
+0:02:02.710,0:02:07.680
+into understanding chart formats is kind
+of important because you'll be probably
+
+0:02:07.680,0:02:09.179
+want to bring them in
+
+0:02:09.179,0:02:13.189
+throughout your work as background data
+if you're not navigating or doing
+
+0:02:13.189,0:02:14.279
+anything
+
+0:02:14.279,0:02:18.349
+or you may be working on after critter
+conducted so let's talk about the types
+
+0:02:18.349,0:02:19.399
+of charts
+
+0:02:19.399,0:02:24.099
+we've got and right now in the world
+their support of
+
+0:02:24.099,0:02:26.599
+for a three types of charts
+
+0:02:26.599,0:02:28.099
+and they come in uh...
+
+0:02:28.099,0:02:30.919
+patrol here if you for your soldiers
+
+0:02:30.919,0:02:32.189
+r_n_c_
+
+0:02:32.189,0:02:34.029
+and he and see
+
+0:02:34.029,0:02:35.209
+this is
+
+0:02:35.209,0:02:36.839
+raster
+
+0:02:36.839,0:02:38.059
+nautical
+
+0:02:38.059,0:02:39.209
+charts
+
+0:02:39.209,0:02:43.789
+missus up picture this drawn up by
+photographer as an actual image this is
+
+0:02:43.789,0:02:47.599
+the paper chart in white rock form
+
+0:02:47.599,0:02:51.349
+this is the d_n_c_ or electronic
+navigation chart
+
+0:02:51.349,0:02:54.069
+an
+
+0:02:54.069,0:02:57.579
+and in the u_s_ now there may be other
+formats off for the world but at least
+
+0:02:57.579,0:02:58.519
+areas
+
+0:02:58.519,0:03:00.229
+over here with our in sees
+
+0:03:00.229,0:03:03.449
+you have format called the f_b_
+
+0:03:03.449,0:03:05.989
+that is an image format incurable self
+
+0:03:05.989,0:03:08.060
+that's not really used for anything else
+
+0:03:08.060,0:03:11.099
+and over here we had two formats
+
+0:03:11.099,0:03:13.149
+one is called at fifty seven
+
+0:03:13.149,0:03:14.669
+and the other one is coming
+
+0:03:14.669,0:03:19.239
+slowly but surely through the stairs
+bodies and it'll arrive here some decade
+
+0:03:19.239,0:03:22.219
+and that's that past one hundred
+
+0:03:22.219,0:03:25.589
+and these are that i think it's a great
+show standards
+
+0:03:25.589,0:03:26.549
+for charts
+
+0:03:26.549,0:03:27.679
+this one
+
+0:03:27.679,0:03:28.939
+is
+
+0:03:28.939,0:03:32.669
+tonight he see standard will see the
+text for a company a few format a little
+
+0:03:32.669,0:03:33.739
+bit
+
+0:03:33.739,0:03:34.920
+he comes from selling that
+
+0:03:34.920,0:03:36.719
+the spatial data transform
+
+0:03:36.719,0:03:38.409
+as d_t_s_
+
+0:03:38.409,0:03:41.079
+the format is really not terribly fun
+
+0:03:41.079,0:03:43.549
+this one is going to be based on
+economic
+
+0:03:43.549,0:03:47.029
+life in all can be really awesome in
+helpful it can also be
+
+0:03:47.029,0:03:48.180
+a big mass
+
+0:03:48.180,0:03:51.819
+hopefully the stairs group will work
+really hard to make a very nice clean
+
+0:03:51.819,0:03:52.769
+design here about
+
+0:03:52.769,0:03:55.449
+we've yet to fully fee was coming out of
+that
+
+0:03:55.449,0:03:58.249
+and for the for the two formats that
+radio wave
+
+0:03:58.249,0:03:59.850
+days after the seven
+
+0:03:59.850,0:04:01.879
+and bs beads
+
+0:04:01.879,0:04:04.509
+animal also for your time and time for a
+way
+
+0:04:04.509,0:04:07.269
+back in a turkey had to be a grades or
+fags
+
+0:04:07.269,0:04:08.319
+i'm forcing
+
+0:04:08.319,0:04:12.409
+the version once we have contains igi
+all the too old to read
+
+0:04:12.409,0:04:14.559
+bags from hoping that
+
+0:04:14.559,0:04:15.830
+in the next couple classes
+
+0:04:15.830,0:04:17.969
+i'm fine i think readout
+
+0:04:17.969,0:04:21.109
+new package for g although it installer
+luxury bags
+
+0:04:21.109,0:04:23.639
+because right now and we can actually
+read those
+
+0:04:23.639,0:04:26.369
+which is a big bummer because
+
+0:04:26.369,0:04:29.960
+secretive data from hyderabad surveys
+that's really cool
+
+0:04:29.960,0:04:31.529
+i'd like you guys take a peek at
+
+0:04:31.529,0:04:35.210
+later in the class for ducking and look
+at that could you know later
+
+0:04:35.210,0:04:38.150
+tear into sentences that to stick with
+baghdad
+
+0:04:38.150,0:04:39.930
+mister
+
+0:04:39.930,0:04:42.490
+so let's start off with the electronic
+charts
+
+0:04:42.490,0:04:44.089
+before jumping to that
+
+0:04:44.089,0:04:45.569
+the b_s_t_ format
+
+0:04:45.569,0:04:47.479
+is are cautionary warning
+
+0:04:47.479,0:04:50.909
+some of you later on your curtly and
+upon standards committees and be
+
+0:04:50.909,0:04:53.610
+deciding before mappings
+
+0:04:53.610,0:04:56.750
+please don't pick a format owned by a
+company
+
+0:04:56.750,0:04:57.610
+you do that
+
+0:04:57.610,0:05:00.120
+unit yourself in a world of pain
+
+0:05:00.120,0:05:03.080
+know any other idea office had managed
+to pull out
+
+0:05:03.080,0:05:04.330
+a fast one
+
+0:05:04.330,0:05:08.099
+it's now okay to use b_s_t_ is but there
+is a few years whenever one said
+
+0:05:08.099,0:05:10.779
+i've refused to write tools for this
+format
+
+0:05:10.779,0:05:12.299
+and it got very on point
+
+0:05:12.299,0:05:15.109
+to try to stick with open standards when
+you work on things because it's very
+
+0:05:15.109,0:05:17.000
+hard to you
+
+0:05:17.000,0:05:19.110
+build reliable software and not
+
+0:05:19.110,0:05:21.369
+yourself soon in the process
+
+0:05:21.369,0:05:25.779
+uh... when you're using formats that are
+confused in close
+
+0:05:25.779,0:05:28.340
+let's take a peek at the no website
+
+0:05:28.340,0:05:32.770
+and i'll give you some opinions today
+that are just my opinions they are not
+
+0:05:32.770,0:05:36.319
+now as of course he comes up for you in
+ages opinions about
+
+0:05:36.319,0:05:39.559
+nautical charts and how you can akin to
+use them
+
+0:05:39.559,0:05:43.349
+similar website if you search for ian
+sees will take you to this and you're
+
+0:05:43.349,0:05:44.569
+gonna see a lot of
+
+0:05:44.569,0:05:46.839
+ours for registered trademarks
+
+0:05:46.839,0:05:49.529
+and a lot of warnings about stuff
+
+0:05:49.529,0:05:53.119
+in the notes you'll be able to straight
+through this
+
+0:05:53.119,0:05:56.659
+but the click on the download noy m_c_s_
+
+0:05:56.659,0:05:58.319
+walked in walked serve
+
+0:05:58.319,0:05:59.650
+legal he is
+
+0:05:59.650,0:06:01.070
+and it's not clear
+
+0:06:01.070,0:06:04.220
+that somewhere in the middle there's an
+actually a quick button to actually go
+
+0:06:04.220,0:06:05.440
+to the data
+
+0:06:05.440,0:06:07.100
+instead of hiding in there
+
+0:06:07.100,0:06:09.439
+so i've got wings of the gets right to
+it
+
+0:06:09.439,0:06:11.599
+there's a whole idea of what's permitted
+use
+
+0:06:11.599,0:06:13.149
+and if you're on the ship
+
+0:06:13.149,0:06:15.240
+if your inner soul its regulations
+
+0:06:15.240,0:06:17.440
+animal regulations like joel
+
+0:06:17.440,0:06:21.620
+the u_s_ coast guard stuff like that you
+may have all circles but if you're in
+
+0:06:21.620,0:06:22.459
+here
+
+0:06:22.459,0:06:25.129
+working with the davises u_s_ government
+data
+
+0:06:25.129,0:06:27.909
+and we can use and abuse it as we see
+fit
+
+0:06:27.909,0:06:29.459
+if we're trying to write a check
+
+0:06:29.459,0:06:32.169
+and you need carriage requirement for
+charts
+
+0:06:32.169,0:06:35.939
+you have to get the data directly from
+our prove person
+
+0:06:35.939,0:06:38.969
+and there are getting really good checks
+in that process
+
+0:06:38.969,0:06:40.850
+of talk a little about cutting it down
+
+0:06:40.850,0:06:44.070
+away with mt five songs and things like
+that where you can actually validate
+
+0:06:44.070,0:06:47.650
+that data there aren't any validations
+in their process things a little hard to
+
+0:06:47.650,0:06:48.879
+follow
+
+0:06:48.879,0:06:50.039
+in this class
+
+0:06:50.039,0:06:53.990
+we can use this data however we like so
+if you want a refund part of it and use
+
+0:06:53.990,0:06:55.789
+it in one of your projects
+
+0:06:55.789,0:07:00.089
+with the u_s_ government data gulfport
+so you're all on u_s_ soil from leaking
+
+0:07:00.089,0:07:03.229
+we can have fun with this chart here
+
+0:07:03.229,0:07:06.300
+so they have also a copy some of the
+uh... entertaining texting here about
+
+0:07:06.300,0:07:08.069
+copying and
+
+0:07:08.069,0:07:09.360
+displaying
+
+0:07:09.360,0:07:12.949
+yean season we can pretty much say
+whatever
+
+0:07:12.949,0:07:16.979
+so if you could superseded chart
+downloader
+
+0:07:16.979,0:07:17.840
+we've now
+
+0:07:17.840,0:07:20.689
+gotten a little bit closer to our charts
+
+0:07:20.689,0:07:22.039
+but not there yet
+
+0:07:22.039,0:07:23.310
+so there's a
+
+0:07:23.310,0:07:27.620
+click here to download karo it right now
+the nation charts
+
+0:07:27.620,0:07:28.969
+not there yet
+
+0:07:28.969,0:07:30.529
+in here
+
+0:07:30.529,0:07:33.939
+i thought to be fun to work with they
+charge for a local area because you're
+
+0:07:33.939,0:07:35.729
+going to be doing projects for
+
+0:07:35.729,0:07:37.490
+some ideal probably
+
+0:07:37.490,0:07:40.539
+and possibly a master's or ph d thesis
+
+0:07:40.539,0:07:43.969
+in this area and having char background
+it in your
+
+0:07:43.969,0:07:47.259
+material and your store things you can
+use is pretty
+
+0:07:47.259,0:07:48.650
+pretty handy
+
+0:07:48.650,0:07:51.110
+so there is a nice a link dot here for
+new hampshire
+
+0:07:51.110,0:07:54.750
+and h under a key in seized by state
+
+0:07:54.750,0:07:58.399
+this kind of nice is our new features an
+ordinary for a couple years
+
+0:07:58.399,0:07:59.900
+you can click on new hampshire
+
+0:07:59.900,0:08:01.050
+and she did a year
+
+0:08:01.050,0:08:02.579
+but you don't get data
+
+0:08:02.579,0:08:04.169
+you get another
+
+0:08:04.169,0:08:05.910
+permitted you statement
+
+0:08:05.910,0:08:08.599
+saying that there are still not be bad
+
+0:08:08.599,0:08:12.469
+and that you are except all of the
+liability for using this date at which
+
+0:08:12.469,0:08:16.150
+they actually can't enforcing liability
+on you know i've been lied to your
+
+0:08:16.150,0:08:17.309
+already have
+
+0:08:17.309,0:08:20.150
+and way down here at the bottom this
+little tiny okay
+
+0:08:20.150,0:08:23.400
+the kids you are way too it javascript
+finney
+
+0:08:23.400,0:08:24.869
+factor data
+
+0:08:24.869,0:08:28.680
+but the nice part is if you click
+battened down load it
+
+0:08:28.680,0:08:29.550
+once you
+
+0:08:29.550,0:08:31.019
+save it
+
+0:08:31.019,0:08:32.120
+you can always have
+
+0:08:32.120,0:08:34.830
+right-click in the download window
+
+0:08:34.830,0:08:36.610
+uh... firefox
+
+0:08:36.610,0:08:38.620
+copy download link
+
+0:08:38.620,0:08:41.440
+you know how the directly or else
+without data
+
+0:08:41.440,0:08:45.470
+and it's okay for you to just give that
+u r l someone else
+
+0:08:45.470,0:08:47.620
+uh... which is what i'm doing for you
+guys
+
+0:08:47.620,0:08:51.150
+so if you wanna skip all of that stuff
+
+0:08:51.150,0:08:52.700
+if i could find it here
+
+0:08:52.700,0:08:54.750
+you're actually ok to run
+
+0:08:54.750,0:08:58.590
+this debbie get commander describe the
+dating or all of those
+
+0:08:58.590,0:09:01.720
+went uh... like five or six steps to get
+towards the data
+
+0:09:01.720,0:09:07.180
+there's a lot of c_y_a_ disagree term
+covered door
+
+0:09:07.180,0:09:11.680
+will copy dot one q let's go ahead and
+get started in playing some games
+
+0:09:11.680,0:09:13.690
+have gone into
+
+0:09:13.690,0:09:17.610
+i think last seventeen emina paste in
+that debbie get command
+
+0:09:17.610,0:09:20.610
+and we're gonna see if we can cause no
+and i think they're being attacked by
+
+0:09:20.610,0:09:21.500
+ccom
+
+0:09:21.500,0:09:25.120
+thank you hadn't download that d_n_c_
+zip file
+
+0:09:25.120,0:09:25.990
+philip labels
+
+0:09:25.990,0:09:27.750
+a lot with cars
+
+0:09:27.750,0:09:29.230
+and compressed with
+
+0:09:29.230,0:09:31.790
+easy to u_n_ jeezy two files
+
+0:09:31.790,0:09:32.919
+go ahead and and
+
+0:09:32.919,0:09:35.360
+use this study get command here
+
+0:09:35.360,0:09:38.140
+to grab that they are or if you were in
+the weblink in you
+
+0:09:38.140,0:09:40.439
+went through all this craziness in fall
+on
+
+0:09:40.439,0:09:41.840
+you can do that
+
+0:09:41.840,0:09:44.030
+go ahead and rabat data
+
+0:09:44.030,0:09:47.830
+salty could not pay soon i received for
+change as i remembered
+
+0:09:47.830,0:09:50.980
+ever going to go and learn how to use
+those that tool thought about it is that
+
+0:09:50.980,0:09:52.120
+the typically
+
+0:09:52.120,0:09:53.530
+if you use to windows
+
+0:09:53.530,0:09:57.270
+he probably double click a zip file wins
+that comes up if you bought it
+
+0:09:57.270,0:10:01.850
+you get this graphical interface and you
+have to do everything by hand
+
+0:10:01.850,0:10:04.980
+we're able to scripted if we want to go
+with him and say
+
+0:10:04.980,0:10:06.560
+unzipped
+
+0:10:06.560,0:10:09.620
+well actually we back up here have a
+couple of things i want to show you were
+
+0:10:09.620,0:10:11.360
+the first one is
+
+0:10:11.360,0:10:13.940
+and the five some
+
+0:10:13.940,0:10:16.200
+if i were no and i'm not
+
+0:10:16.200,0:10:19.680
+i would provide with my files and mt
+five film
+
+0:10:19.680,0:10:23.250
+and there's also another check some
+called s_h_ a
+
+0:10:23.250,0:10:24.330
+as a number of different
+
+0:10:24.330,0:10:27.640
+f_h_a_ versions these are
+government-approved
+
+0:10:27.640,0:10:30.020
+checked some functions
+
+0:10:30.020,0:10:31.769
+that if you calculate them
+
+0:10:31.769,0:10:34.180
+you can tell you have the same file as
+me
+
+0:10:34.180,0:10:36.100
+and if i were no i i would say
+
+0:10:36.100,0:10:39.550
+in or if you have good church leadership
+you better and the check some on them
+
+0:10:39.550,0:10:42.300
+and make sure your check some matches
+what's on the telus site
+
+0:10:42.300,0:10:47.220
+trout and turned them on file and it
+might not actually match or might be a d
+
+0:10:47.220,0:10:49.470
+and we don't have any version numbers on
+here
+
+0:10:49.470,0:10:51.800
+so many of my little soap box and say
+
+0:10:51.800,0:10:56.930
+here know it'd be really great if u
+versions your charts delivery files
+
+0:10:56.930,0:10:59.180
+so now that i've said that and i feel
+better
+
+0:10:59.180,0:11:00.710
+there
+
+0:11:00.710,0:11:03.730
+whether one more checks some and then
+we're going to play with the file so
+
+0:11:03.730,0:11:05.380
+asstt jr
+
+0:11:05.380,0:11:06.720
+animated tab
+
+0:11:06.720,0:11:10.600
+that shows either some of the different
+s_h_ a_ algorithm that around
+
+0:11:10.600,0:11:13.080
+two fifty six is a commonly used one
+
+0:11:13.080,0:11:16.570
+them please if this is the number of
+beds in the checks on the generated
+
+0:11:16.570,0:11:20.090
+and the more beds the better purpose
+lower is to compute
+
+0:11:20.090,0:11:23.360
+so will do f_h_a_ eighty five six
+
+0:11:23.360,0:11:26.380
+some and then the file name so and h
+
+0:11:26.380,0:11:27.630
+union sees it
+
+0:11:27.630,0:11:29.480
+and if you notice here
+
+0:11:29.480,0:11:32.090
+the indy five some was this long
+
+0:11:32.090,0:11:35.240
+so that's fairly long
+
+0:11:35.240,0:11:38.010
+the s_ h_ a_ one is super long
+
+0:11:38.010,0:11:39.540
+scanning bigger and bigger
+
+0:11:39.540,0:11:43.290
+aniket every got over a phone somebody
+you'd probably get it wrong
+
+0:11:43.290,0:11:46.180
+but the idea with the water number is
+that
+
+0:11:46.180,0:11:49.700
+with big files they're doing these
+calculations about some number to go
+
+0:11:49.700,0:11:53.270
+with the file the more numbers you have
+the less likely they probably are to
+
+0:11:53.270,0:11:55.720
+collide with each other have the same
+number
+
+0:11:55.720,0:11:58.460
+something you really don't want to have
+his two different files that are really
+
+0:11:58.460,0:11:59.269
+different
+
+0:11:59.269,0:12:00.740
+then at the same checked some
+
+0:12:00.740,0:12:03.820
+an s_h_ a_ is even better than ninety
+five in terms of having
+
+0:12:03.820,0:12:06.620
+not having the chance of these
+collisions
+
+0:12:06.620,0:12:09.070
+and we'll see more of that throughout
+the semester will play without a little
+
+0:12:09.070,0:12:11.470
+bit with bags and some of the matter
+data
+
+0:12:11.470,0:12:14.500
+let's go ahead and take a look at that
+uh... wonder might you guys since were
+
+0:12:14.500,0:12:16.380
+back in the show and we haven't been
+here
+
+0:12:16.380,0:12:19.650
+too much in a while you can see man
+unzipped
+
+0:12:19.650,0:12:21.300
+and that will give you
+
+0:12:21.300,0:12:23.210
+the manual page four
+
+0:12:23.210,0:12:24.800
+the arms of command
+
+0:12:24.800,0:12:27.780
+if you think you can fall asleep in
+eastern reading
+
+0:12:27.780,0:12:29.550
+regardless of which is this week
+
+0:12:29.550,0:12:32.020
+this class of useful information about
+it
+
+0:12:32.020,0:12:36.070
+what you often really want is the unzip
+dash dash help is probably more along
+
+0:12:36.070,0:12:38.690
+the lines of something that you're going
+to want
+
+0:12:38.690,0:12:42.300
+is is usually froze commands and give
+you a quick summary
+
+0:12:42.300,0:12:44.140
+what we're looking for is
+
+0:12:44.140,0:12:45.610
+list files
+
+0:12:45.610,0:12:49.569
+team we're also looking for those of a
+roasted actually running around
+
+0:12:49.569,0:12:54.029
+that there's not uppercase warning to
+lower case one i'm not saying he's list
+
+0:12:54.029,0:12:55.740
+for mostly
+
+0:12:55.740,0:12:58.030
+sort of saying unzipped
+
+0:12:58.030,0:13:00.250
+dash l for list
+
+0:13:00.250,0:13:03.540
+really wise before you go and unzipped
+something
+
+0:13:03.540,0:13:04.750
+orion tarik
+
+0:13:04.750,0:13:06.000
+look inside
+
+0:13:06.000,0:13:09.230
+and make sure there is in something
+bazaar in crazy in there
+
+0:13:09.230,0:13:13.570
+otherwise you might spend the next hour
+trying to pick apart from any dot
+
+0:13:13.570,0:13:17.260
+stuck all over your computer with we are
+characters and whatnot sold two dash v
+
+0:13:17.260,0:13:20.420
+for verbose and an h
+
+0:13:20.420,0:13:22.390
+underscore d_n_c_'s dogs that
+
+0:13:22.390,0:13:25.550
+to go ahead and type that animal kondu
+uh...
+
+0:13:25.550,0:13:27.940
+listing of what's in our zip file
+
+0:13:27.940,0:13:29.400
+so thin tell you
+
+0:13:29.400,0:13:31.360
+uh... so i don't know if i don't
+
+0:13:31.360,0:13:32.220
+underlying
+
+0:13:32.220,0:13:34.130
+how it was compressed
+
+0:13:34.130,0:13:37.180
+who are not for the difference between
+life and size will just ignore that
+
+0:13:37.180,0:13:39.530
+the date that they were so far worse
+
+0:13:39.530,0:13:41.580
+so these files are from
+
+0:13:41.580,0:13:44.120
+ten twenty five supriya recent
+
+0:13:44.120,0:13:46.230
+and inside a zip file they have it
+
+0:13:46.230,0:13:49.600
+something like the mt five re
+essentially they have a c or c thirty
+
+0:13:49.600,0:13:51.350
+two
+
+0:13:51.350,0:13:54.670
+there aren't very many members in here
+so there's a much greater chance of a
+
+0:13:54.670,0:13:56.630
+c_r_ c thirty two
+
+0:13:56.630,0:13:59.660
+having the same number for two different
+files
+
+0:13:59.660,0:14:02.120
+and that was soft all the file names
+
+0:14:02.120,0:14:03.849
+and the no stared for
+
+0:14:03.849,0:14:08.160
+packaging charges they always unpacked
+into this p_n_c_ root directory
+
+0:14:08.160,0:14:10.830
+four that's two seven charts
+
+0:14:10.830,0:14:11.940
+so it looks
+
+0:14:11.940,0:14:15.170
+looks ok will go ahead nuns at that city
+state and zip
+
+0:14:15.170,0:14:16.210
+an h
+
+0:14:16.210,0:14:19.020
+underscore even sees dot zip
+
+0:14:19.020,0:14:20.810
+press enter
+
+0:14:20.810,0:14:23.630
+any should now have a bunch of files on
+this
+
+0:14:23.630,0:14:26.640
+so let's take a peek at those and show
+you a couple commands
+
+0:14:26.640,0:14:28.710
+their new as we go through taking a look
+
+0:14:28.710,0:14:33.510
+ls dash l will see that there should be
+d_n_c_ root directory
+
+0:14:33.510,0:14:37.060
+amra go ahead and c_b_n_ two million
+series
+
+0:14:37.060,0:14:38.970
+and will do it now it's tough sell
+
+0:14:38.970,0:14:41.810
+so you should see
+
+0:14:41.810,0:14:43.950
+a whole bunch of directories
+
+0:14:43.950,0:14:45.440
+there is u_s_
+
+0:14:45.440,0:14:47.180
+stands for united states
+
+0:14:47.180,0:14:49.550
+to is our resolution
+
+0:14:49.550,0:14:52.880
+and i think five arrive to really close
+up charts
+
+0:14:52.880,0:14:56.570
+few and one is like a big regional
+charts
+
+0:14:56.570,0:14:58.160
+and then it starts
+
+0:14:58.160,0:15:00.000
+how letter code
+
+0:15:00.000,0:15:02.780
+for l_h_ for new hampshire
+
+0:15:02.780,0:15:06.330
+and then followed by a recent chart
+numbers and i'm not sure if the and his
+
+0:15:06.330,0:15:08.390
+halen odiaum
+
+0:15:08.390,0:15:11.310
+okay while wall close up some time with
+the comeback in the notes
+
+0:15:11.310,0:15:15.610
+they're not only four and we know what
+goes on
+
+0:15:15.610,0:15:18.520
+coax yet there is a remains uh... what's
+
+0:15:18.520,0:15:20.190
+remain
+
+0:15:20.190,0:15:23.150
+i like to read the read me and kick the
+kicked me
+
+0:15:23.150,0:15:26.860
+so this should hopefully get it through
+something more than just more legalese
+
+0:15:26.860,0:15:28.800
+and back down to bottom
+
+0:15:28.800,0:15:32.200
+they've got a set of chart information
+
+0:15:32.200,0:15:33.640
+about what's in this
+
+0:15:33.640,0:15:35.180
+directory tree
+
+0:15:35.180,0:15:39.060
+legrand queue for quick if you forgot my
+fatwa flip-flops
+
+0:15:39.060,0:15:43.390
+let's play with some values command
+thirsty you for disk usage
+
+0:15:43.390,0:15:45.000
+just hit delete here
+
+0:15:45.000,0:15:46.300
+it's gonna list
+
+0:15:46.300,0:15:49.420
+probably in your k or half k
+
+0:15:49.420,0:15:50.660
+the number of
+
+0:15:50.660,0:15:51.560
+bytes image
+
+0:15:51.560,0:15:52.840
+each of these folders
+
+0:15:52.840,0:15:56.280
+remember that we can do an aged for
+human readable
+
+0:15:56.280,0:15:59.079
+so that i will tell you that you point
+six megabytes
+
+0:15:59.079,0:16:01.760
+four point three megabytes
+
+0:16:01.760,0:16:05.140
+i'm gonna show you our fun command
+called find
+
+0:16:05.140,0:16:06.959
+which you do it fine if you say
+
+0:16:06.959,0:16:09.780
+find space and i'm starting directory
+
+0:16:09.780,0:16:13.140
+and after that you can tell it please
+buy me certain kinds of files but if you
+
+0:16:13.140,0:16:16.790
+don't tell anything it'll find u every
+file onto that path
+
+0:16:16.790,0:16:21.060
+which if you do that for life flash on
+the computer the top root directory
+
+0:16:21.060,0:16:24.250
+it's gonna west every file on your
+computer
+
+0:16:24.250,0:16:25.570
+and if it might take
+
+0:16:25.570,0:16:27.210
+happening
+
+0:16:27.210,0:16:30.910
+but we're going to hear inside of the
+team c route which is not that they had
+
+0:16:30.910,0:16:32.310
+to go ahead and try it
+
+0:16:32.310,0:16:36.620
+and see every single file that in this
+directory tree
+
+0:16:36.620,0:16:39.900
+what what you do as you can then passed
+out to other commands and then they can
+
+0:16:39.900,0:16:42.410
+operate on such a files
+
+0:16:42.410,0:16:45.650
+there's a command called file if you
+remember from before
+
+0:16:45.650,0:16:47.890
+so it's a file star
+
+0:16:47.890,0:16:49.130
+and i'll tell us
+
+0:16:49.130,0:16:52.020
+what types of files we have
+
+0:16:52.020,0:16:55.780
+and you can see that uh... the user
+agreement from noah is in some
+
+0:16:55.780,0:16:58.580
+not ascii form
+
+0:16:58.580,0:17:00.190
+kinda funky
+
+0:17:00.190,0:17:03.790
+uh... but we can do is we can use that
+fine commander path on the list of all
+
+0:17:03.790,0:17:05.089
+the files
+
+0:17:05.089,0:17:05.900
+to you
+
+0:17:05.900,0:17:07.439
+true file command
+
+0:17:07.439,0:17:10.630
+and then we can pass the final every
+single thing in here so we can
+
+0:17:10.630,0:17:13.429
+if we didn't know what kind of far
+better and ran into which is going to be
+
+0:17:13.429,0:17:14.870
+at fifty-seven
+
+0:17:14.870,0:17:17.080
+here's how we would ask
+
+0:17:17.080,0:17:18.970
+through the file
+
+0:17:18.970,0:17:21.610
+will delete vertical bar for the years
+heights
+
+0:17:21.610,0:17:24.010
+there's a funky command called x args
+
+0:17:24.010,0:17:27.090
+which takes one-line out of the input
+
+0:17:27.090,0:17:31.400
+so each file estimate then passed out to
+the program that we're gonna get it
+
+0:17:31.400,0:17:35.500
+so sizzle full weird still say x-large
+file
+
+0:17:35.500,0:17:38.450
+press enter into negotiable name by name
+
+0:17:38.450,0:17:42.020
+find period pipe x args
+
+0:17:42.020,0:17:43.760
+so we want to run
+
+0:17:43.760,0:17:44.929
+this command
+
+0:17:44.929,0:17:48.100
+go ahead and hit enter you should see
+text goes feeling bein
+
+0:17:48.100,0:17:52.299
+to tell you the file type of a thanks
+for everything that's in here
+
+0:17:52.299,0:17:55.340
+and unfortunately when it comes to our
+charts
+
+0:17:55.340,0:17:57.730
+it just says this is some sort of data
+
+0:17:57.730,0:17:59.180
+not very helpful
+
+0:17:59.180,0:18:02.270
+i've been trying to work with the
+authors of
+
+0:18:02.270,0:18:06.000
+to ad in various charts types in things
+like that and i haven't quite figured
+
+0:18:06.000,0:18:06.740
+out
+
+0:18:06.740,0:18:11.029
+the best string to give them to identify
+at fifty seven or we're getting there
+
+0:18:11.029,0:18:14.640
+go ahead and get all the unique with the
+file types if you remember
+
+0:18:14.640,0:18:17.049
+to got each file listed here
+
+0:18:17.049,0:18:20.429
+and then a colin so you can split these
+up based on the coin
+
+0:18:20.429,0:18:22.880
+thing to remember that command in unix
+
+0:18:22.880,0:18:26.910
+to split on some character bubba type on
+one that's good
+
+0:18:26.910,0:18:29.140
+at that point goods rumors play but
+
+0:18:29.140,0:18:30.809
+if we're not in python
+
+0:18:30.809,0:18:33.290
+anybody remember our units command that
+might
+
+0:18:33.290,0:18:34.669
+split apart
+
+0:18:34.669,0:18:36.330
+based on a character
+
+0:18:36.330,0:18:38.680
+yes i heard i heard a cut
+
+0:18:38.680,0:18:40.850
+source they cut
+
+0:18:40.850,0:18:45.130
+the dash d options as what the woman
+there were any use for any use the colon
+
+0:18:45.130,0:18:46.529
+to cut that
+
+0:18:46.529,0:18:49.690
+and then you can say dash after which
+field
+
+0:18:49.690,0:18:52.049
+and remember pipe accounts from zero
+
+0:18:52.049,0:18:54.350
+lots of unix commands don't
+
+0:18:54.350,0:18:55.510
+so we wanted
+
+0:18:55.510,0:18:58.380
+take the second field so this would be
+our
+
+0:18:58.380,0:19:02.280
+fuel number one in the anything after
+that in the next group movie field of
+
+0:19:02.280,0:19:04.900
+the few so three dash f two
+
+0:19:04.900,0:19:06.640
+tried that press answer
+
+0:19:06.640,0:19:07.940
+forgive you second
+
+0:19:07.940,0:19:10.040
+you wanna run this command right here
+
+0:19:10.040,0:19:11.130
+so here we go
+
+0:19:11.130,0:19:13.419
+and that way the filings are
+disappearing
+
+0:19:13.419,0:19:18.029
+werner try that again ever had collapsed
+a into the unique set of entries
+
+0:19:18.029,0:19:21.000
+there's mobile ways to do this but this
+is the way that i can you do i do have
+
+0:19:21.000,0:19:22.060
+sort
+
+0:19:22.060,0:19:25.800
+and i get the dash hw for unique flag so
+that's a u
+
+0:19:25.800,0:19:28.590
+and what we should get back is a list
+just of
+
+0:19:28.590,0:19:31.120
+the unique types that were in there
+
+0:19:31.120,0:19:32.510
+can see that
+
+0:19:32.510,0:19:36.100
+reversed putting this together is using
+slightly different forms of taxed
+
+0:19:36.100,0:19:39.160
+something came back as an alias maya
+image file which is clearly
+
+0:19:39.160,0:19:43.340
+misidentified since i don't think we
+have any delete files in here
+
+0:19:43.340,0:19:46.210
+cd sql us not directory
+
+0:19:46.210,0:19:48.790
+you need to go into the d_n_c_ root
+directory
+
+0:19:48.790,0:19:50.690
+cd into that directory
+
+0:19:50.690,0:19:51.960
+and then you should be
+
+0:19:51.960,0:19:53.100
+with those files
+
+0:19:53.100,0:19:54.809
+if you look at my pumped up there
+
+0:19:54.809,0:19:59.220
+this is research tools that you're going
+to till the squash club seventeen slash
+
+0:19:59.220,0:20:01.750
+an indian theaters forwards
+
+0:20:01.750,0:20:03.380
+seemed to be in that same directory
+
+0:20:03.380,0:20:06.169
+well it isn't very interesting and this
+case
+
+0:20:06.169,0:20:08.570
+we're working with more more datatypes
+
+0:20:08.570,0:20:11.050
+so remember these kinds of commands
+
+0:20:11.050,0:20:13.090
+to get yourself reorient
+
+0:20:13.090,0:20:16.090
+there's nothing like getting a big blob
+of data from somebody and not knowing
+
+0:20:16.090,0:20:18.370
+what's in their what type of dating is
+
+0:20:18.370,0:20:22.730
+and this is a way to start out looking
+at that so we're gonna see a number of
+
+0:20:22.730,0:20:25.040
+work on data today
+
+0:20:25.040,0:20:28.910
+so let's go ahead and we're gonna go
+into a one of the new hampshire chart
+
+0:20:28.910,0:20:33.490
+so it's going to u_s_
+
+0:20:33.490,0:20:36.350
+and make it out here to get the list
+
+0:20:36.350,0:20:37.820
+there's an h
+
+0:20:37.820,0:20:43.830
+and we have zero one zero two i'm gonna
+pick randomly
+
+0:20:43.830,0:20:44.809
+so now
+
+0:20:44.809,0:20:47.550
+u_p_s_ bt actual do a clear
+
+0:20:47.550,0:20:50.140
+i don't read as its who's coming with me
+yet but if you
+
+0:20:50.140,0:20:53.280
+if your screen gets too crazy one in the
+back at the top
+
+0:20:53.280,0:20:54.630
+type clear
+
+0:20:54.630,0:20:55.730
+it's just a thought
+
+0:20:55.730,0:20:57.260
+leader p abt
+
+0:20:57.260,0:20:58.559
+that was a clear
+
+0:20:58.559,0:21:00.350
+to do and i have a pure sleeve
+
+0:21:00.350,0:21:04.460
+sometimes there's been a screen was just
+too much stuff if it's a little crazy
+
+0:21:04.460,0:21:06.480
+so let's take a look at what's in here
+
+0:21:06.480,0:21:10.520
+and we've got a bunch of text files the
+talk about what's in here
+
+0:21:10.520,0:21:12.970
+this down here with the zero zero zero
+
+0:21:12.970,0:21:14.350
+is actually going to be
+
+0:21:14.350,0:21:17.140
+arcadia you need to do ls
+
+0:21:17.140,0:21:18.700
+and see what you've got in there
+
+0:21:18.700,0:21:21.250
+you control you clear that morning
+
+0:21:21.250,0:21:24.049
+now type ls and see what you've got
+around
+
+0:21:24.049,0:21:25.350
+now if you look through here
+
+0:21:25.350,0:21:28.510
+you need to pick one of these so you're
+looking for the one like this one right
+
+0:21:28.510,0:21:33.429
+here is the one i went into of and so we
+need to go into that directly
+
+0:21:33.429,0:21:35.160
+so you're looking at my prompt
+
+0:21:35.160,0:21:38.210
+so we have is a couple times so i'm
+gonna go back to list really quick
+
+0:21:38.210,0:21:40.059
+when you're looking at my prompt up here
+
+0:21:40.059,0:21:41.800
+this is my username
+
+0:21:41.800,0:21:44.130
+then so if you name act
+
+0:21:44.130,0:21:47.490
+this is the host name so alton for the
+same for all of you guys universal
+
+0:21:47.490,0:21:50.590
+machine so this is the host name colin
+
+0:21:50.590,0:21:54.180
+this till that means by home directory
+flash
+
+0:21:54.180,0:21:56.090
+class this is a directory
+
+0:21:56.090,0:21:59.870
+seventeen directory yes here it is a
+directory flash and then this is the
+
+0:21:59.870,0:22:02.470
+director they were actually in right
+here
+
+0:22:02.470,0:22:03.529
+dollar sign
+
+0:22:03.529,0:22:05.700
+in this case it is the prompt so is that
+
+0:22:05.700,0:22:08.880
+and add the information that tells you
+about where you are
+
+0:22:08.880,0:22:11.020
+and then this is where i start typing
+
+0:22:11.020,0:22:14.980
+so when you see this if you want to know
+where i'm at need that dollar fine out
+
+0:22:14.980,0:22:15.650
+of there
+
+0:22:15.650,0:22:17.779
+so that that was a little bit confusing
+
+0:22:17.779,0:22:20.870
+so if you put the dollar fine in and try
+to get to where i'm at
+
+0:22:20.870,0:22:23.350
+you're going to have trouble if you
+could that are fine
+
+0:22:23.350,0:22:25.220
+and remember that till the isn't
+
+0:22:25.220,0:22:28.720
+an actual pack alltel dot that's a
+reference to your home directory
+
+0:22:28.720,0:22:30.240
+software that helps
+
+0:22:30.240,0:22:31.320
+and i'll do a quick
+
+0:22:31.320,0:22:32.590
+demonstration
+
+0:22:32.590,0:22:38.310
+so if we do from a copy this pettit copy
+and taste and media control a jump back
+
+0:22:38.310,0:22:39.880
+to being in that one
+
+0:22:39.880,0:22:44.029
+and i do and echo if u memories echoed
+try things out so this is the actual
+
+0:22:44.029,0:22:45.270
+power
+
+0:22:45.270,0:22:46.380
+of where i'm at
+
+0:22:46.380,0:22:48.090
+so hopefully that if you guys
+
+0:22:48.090,0:22:49.799
+begin back a little bit and
+
+0:22:49.799,0:22:54.020
+work on path skills important to be able
+to have a sense of where at
+
+0:22:54.020,0:22:55.050
+what's going on
+
+0:22:55.050,0:22:56.510
+and always remember
+
+0:22:56.510,0:22:59.470
+youth p_m_a_b_c_ where you're at if it's
+confusing
+
+0:22:59.470,0:23:01.880
+and allies to see what's in your
+directory
+
+0:23:01.880,0:23:04.500
+so if you're trying to find something is
+not coming up
+
+0:23:04.500,0:23:06.690
+those of the chief u_n_ z should use
+
+0:23:06.690,0:23:07.980
+along with the ako
+
+0:23:07.980,0:23:10.210
+to get yourself resorted
+
+0:23:10.210,0:23:12.590
+take a deep breath when you get confused
+with unix
+
+0:23:12.590,0:23:14.799
+and try again start with those guys
+
+0:23:14.799,0:23:15.650
+if we do it
+
+0:23:15.650,0:23:18.590
+file star so on everything in there
+
+0:23:18.590,0:23:19.789
+we've got our
+
+0:23:19.789,0:23:23.609
+couple tax that all it's you guys read
+on your own since it's not very exciting
+
+0:23:23.609,0:23:26.659
+halverson chart information these two
+files
+
+0:23:26.659,0:23:29.620
+are our effort to seven chart so in here
+
+0:23:29.620,0:23:32.700
+each church starts off as doctor zero
+zero zero
+
+0:23:32.700,0:23:33.620
+after
+
+0:23:33.620,0:23:37.929
+main file any other files and here that
+are the same name with thought and then
+
+0:23:37.929,0:23:39.620
+any current list of numbers
+
+0:23:39.620,0:23:44.200
+those are chart updates when the program
+reserve chart every set first file on
+
+0:23:44.200,0:23:45.640
+the list are supplying
+
+0:23:45.640,0:23:48.760
+all the files after it builds up the
+chart dataset
+
+0:23:48.760,0:23:50.230
+and let's take a peek in there
+
+0:23:50.230,0:23:51.480
+it's useful
+
+0:23:51.480,0:23:54.860
+alwaz big advocate of people jumping in
+and looking at the data even if you
+
+0:23:54.860,0:23:56.200
+don't understand it
+
+0:23:56.200,0:23:59.380
+there's actually a lot in there that
+you'll start to pick up
+
+0:23:59.380,0:24:02.530
+if you just pray that you look at it
+might be binary data
+
+0:24:02.530,0:24:04.060
+maybe means nothing
+
+0:24:04.060,0:24:04.990
+but give it a go
+
+0:24:04.990,0:24:06.300
+sold last
+
+0:24:06.300,0:24:07.019
+u_s_
+
+0:24:07.019,0:24:09.159
+five
+
+0:24:09.159,0:24:10.779
+go look at in our chart
+
+0:24:10.779,0:24:13.010
+and it's probably going to be kinda
+gross
+
+0:24:13.010,0:24:14.840
+and that's a lot gross
+
+0:24:14.840,0:24:16.720
+but in here
+
+0:24:16.720,0:24:19.100
+what's going on and if you've read
+through this
+
+0:24:19.100,0:24:22.580
+we start to learn to read through like
+this is the fact random numbers they're
+
+0:24:22.580,0:24:24.920
+probably important but i don't know it
+
+0:24:24.920,0:24:26.140
+right here
+
+0:24:26.140,0:24:29.980
+i think so slash i_t_c_ eight two one
+one
+
+0:24:29.980,0:24:32.000
+that's actually the standard
+
+0:24:32.000,0:24:34.530
+that's used to write a fifty-seven data
+
+0:24:34.530,0:24:38.020
+and that's how i figured out what format
+has to be seven running with bells on
+
+0:24:38.020,0:24:40.669
+any of his a bunch of other stuff you
+could probably figure out
+
+0:24:40.669,0:24:42.300
+a little bit about the chart
+
+0:24:42.300,0:24:43.100
+all we've got
+
+0:24:43.100,0:24:44.540
+if you're bored
+
+0:24:44.540,0:24:47.830
+we'll retrain you fools actually
+understand this rather than having to
+
+0:24:47.830,0:24:49.269
+dig into too much
+
+0:24:49.269,0:24:51.940
+even if you didn't have any tools on
+your computer
+
+0:24:51.940,0:24:55.870
+you can start to read up on what is this
+format and what's in this file
+
+0:24:55.870,0:24:57.179
+so cute equipped
+
+0:24:57.179,0:25:00.980
+let's go ahead and use a tool that
+actually knows about charts
+
+0:25:00.980,0:25:02.440
+so from that you know
+
+0:25:02.440,0:25:05.860
+we had to turn into the news today are
+two groups
+
+0:25:05.860,0:25:07.820
+we have which you are
+
+0:25:07.820,0:25:09.520
+these are the bacteria
+
+0:25:09.520,0:25:12.050
+thing so i can lines and points
+
+0:25:12.050,0:25:13.850
+in color over if you want
+
+0:25:13.850,0:25:16.919
+business had a winds point shapes
+polygons
+
+0:25:16.919,0:25:19.159
+all i thought you might drop at hand
+
+0:25:19.159,0:25:20.169
+and then
+
+0:25:20.169,0:25:22.790
+we have the actual g doll tools
+
+0:25:22.790,0:25:25.500
+so this is going to be your
+
+0:25:25.500,0:25:29.650
+and this is your rafter data worked for
+image like data
+
+0:25:29.650,0:25:34.480
+so revealing radio rhapsody
+seventy-year-old yard tools and we have
+
+0:25:34.480,0:25:38.539
+the first program here in the seat is
+bilgi are info
+
+0:25:38.539,0:25:41.440
+beget enter he'll give us a little bit
+of info
+
+0:25:41.440,0:25:46.070
+but we can see men fuji are
+
+0:25:46.070,0:25:50.430
+and you can read up on all the different
+options that it's got
+
+0:25:50.430,0:25:52.480
+and the key one we want to see first
+
+0:25:52.480,0:25:54.390
+is dash dash formats
+
+0:25:54.390,0:25:55.239
+fit q
+
+0:25:55.239,0:25:56.590
+fuji are
+
+0:25:56.590,0:25:59.130
+info
+
+0:25:59.130,0:26:00.470
+dash dash formats
+
+0:26:00.470,0:26:01.700
+so this command
+
+0:26:01.700,0:26:04.440
+right there
+
+0:26:04.440,0:26:07.359
+pass at the lessons i think it's going
+to give me a lot of stuff
+
+0:26:07.359,0:26:08.240
+self-pride
+
+0:26:08.240,0:26:09.080
+labs
+
+0:26:09.080,0:26:10.649
+and hit enter
+
+0:26:10.649,0:26:14.279
+and these are the format so that may be
+familiar to you some of the may sound
+
+0:26:14.279,0:26:15.760
+like gibberish
+
+0:26:15.760,0:26:18.909
+if you know all of them you could have
+my job happily
+
+0:26:18.909,0:26:21.919
+sit down there and you can teach you
+about it but i don't know the mall
+
+0:26:21.919,0:26:25.320
+for example i have no idea but at the
+end they is
+
+0:26:25.320,0:26:27.990
+but there's all kinds of musical files
+you may have run into you may have heard
+
+0:26:27.990,0:26:32.790
+of it has reshaped final you might have
+heard uh... at fifty seven
+
+0:26:32.790,0:26:34.370
+the few minutes ago
+
+0:26:34.370,0:26:37.500
+we have csd for comma-separated values
+
+0:26:37.500,0:26:42.440
+this is gpx is a format for g_p_s_ is
+came down support from the war
+
+0:26:42.440,0:26:43.500
+jere jason
+
+0:26:43.500,0:26:45.890
+is a very heaney internet format
+
+0:26:45.890,0:26:49.380
+g_m_t_ i'm not sure which for refugee in
+g_i_ is
+
+0:26:49.380,0:26:52.200
+anderson databases syndicates base
+
+0:26:52.200,0:26:52.969
+innocent
+
+0:26:52.969,0:26:55.620
+but there's quite a few format supported
+by the storm
+
+0:26:55.620,0:26:58.720
+but it supports our effort to seven
+chart so that means we don't need to
+
+0:26:58.720,0:27:00.299
+know the mechanics of how type
+
+0:27:00.299,0:27:02.650
+get in to rescue seven at the fights
+
+0:27:02.650,0:27:04.130
+so we can say
+
+0:27:04.130,0:27:06.080
+fuji are info
+
+0:27:06.080,0:27:09.970
+and our charts u_s_
+
+0:27:09.970,0:27:13.480
+presenter and hopefully it says
+something
+
+0:27:13.480,0:27:18.020
+saying quite a bit right away that gives
+you a warning that's pretty important
+
+0:27:18.020,0:27:19.750
+the driver in the software
+
+0:27:19.750,0:27:23.620
+doesn't support update which means that
+there is there a one file isn't being
+
+0:27:23.620,0:27:24.830
+read
+
+0:27:24.830,0:27:26.120
+unabomber
+
+0:27:26.120,0:27:29.399
+and then it goes through a research
+telling you about what's inside
+
+0:27:29.399,0:27:30.499
+and with a chart
+
+0:27:30.499,0:27:32.380
+if you think about the navigation chart
+
+0:27:32.380,0:27:36.110
+they have different layers the cover
+different types of data
+
+0:27:36.110,0:27:40.260
+anybody know what i see end ta already
+
+0:27:40.260,0:27:41.580
+often
+
+0:27:41.580,0:27:42.919
+caution area
+
+0:27:42.919,0:27:45.700
+there's all sorts of different areas and
+if you
+
+0:27:45.700,0:27:47.120
+if you've got to be a distt
+
+0:27:47.120,0:27:47.980
+if you're mariner
+
+0:27:47.980,0:27:49.860
+you probably know most of these
+
+0:27:49.860,0:27:54.460
+c_b_s_ is not a silly by that akram
+
+0:27:54.460,0:27:57.120
+bully locations there's bridges
+
+0:27:57.120,0:28:00.549
+there so i think there's all kinds of
+really useful information in there
+
+0:28:00.549,0:28:05.030
+and we can start to grab some of it
+
+0:28:05.030,0:28:06.690
+however you cannot scripted
+
+0:28:06.690,0:28:10.090
+not in this window and only runs on
+windows
+
+0:28:10.090,0:28:12.590
+so if you want to have an army of
+process
+
+0:28:12.590,0:28:15.130
+running on the server you're going to
+have a bit of a hard time with the
+
+0:28:15.130,0:28:15.929
+carrots one
+
+0:28:15.929,0:28:17.980
+it's not bad
+
+0:28:17.980,0:28:20.490
+you know one of the using it by hand
+
+0:28:20.490,0:28:22.769
+and at that place in great tools out
+there
+
+0:28:22.769,0:28:26.230
+by all sorts of different vendors i
+think has risk i think every year
+
+0:28:26.230,0:28:30.429
+terraces gotta get breeder high packed
+lots of other companies will do that
+
+0:28:30.429,0:28:33.279
+but we're gonna go through the command
+line style of things
+
+0:28:33.279,0:28:35.800
+busted two seven is going to be going
+away
+
+0:28:35.800,0:28:40.270
+i think it'll take a decade or two
+before his disappears
+
+0:28:40.270,0:28:41.740
+so let's try
+
+0:28:41.740,0:28:44.789
+converting this to couple different
+formats
+
+0:28:44.789,0:28:47.870
+let's use the o_j_ yar to hu g or
+command
+
+0:28:47.870,0:28:49.299
+you can do a dash age
+
+0:28:49.299,0:28:51.570
+for help i believe
+
+0:28:51.570,0:28:54.120
+i'll show you a quick command since it
+it's kind of
+
+0:28:54.120,0:28:55.220
+overwhelming
+
+0:28:55.220,0:28:58.200
+but there are some quick easy commence
+to do with
+
+0:28:58.200,0:29:00.050
+let's try making a came out
+
+0:29:00.050,0:29:02.260
+music and art
+
+0:29:02.260,0:29:06.340
+o_j_ yaar can you tell it the flat out
+that you want with the dash f
+
+0:29:06.340,0:29:07.799
+so came out
+
+0:29:07.799,0:29:12.120
+this is world to get back with you see
+your output file so u_s_
+
+0:29:12.120,0:29:13.070
+five
+
+0:29:13.070,0:29:14.940
+dot came out
+
+0:29:14.940,0:29:19.070
+and u_s_ five code zero zero zero for
+input
+
+0:29:19.070,0:29:21.750
+and go ahead and answer on this
+
+0:29:21.750,0:29:24.760
+we're not going to hoping that people
+are because it's not very good inside of
+
+0:29:24.760,0:29:26.600
+the virtual machine
+
+0:29:26.600,0:29:30.620
+but afterwards if u wanna put back in
+like your drop box
+
+0:29:30.620,0:29:34.440
+you can lead to kim il american bring up
+down the mac or windows
+
+0:29:34.440,0:29:37.620
+ornery one xbox and u_s_ to hit enter
+
+0:29:37.620,0:29:41.150
+it'll go off and create camo
+
+0:29:41.150,0:29:44.580
+i'd like to get a lot of visualizations
+that need charts in the background it
+
+0:29:44.580,0:29:47.770
+needs if airways and for traffic lanes
+
+0:29:47.770,0:29:50.130
+this is a great way to spread them out
+and put it in the background of your
+
+0:29:50.130,0:29:50.810
+data
+
+0:29:50.810,0:29:52.180
+so they can do a lots
+
+0:29:52.180,0:29:53.630
+star dot came out
+
+0:29:53.630,0:29:55.760
+which if you are female pop up
+
+0:29:55.760,0:29:58.940
+don't feel like you have to understand
+this but then you can go and searching a
+
+0:29:58.940,0:30:02.700
+sense of all these things that are being
+created in there for came out
+
+0:30:02.700,0:30:04.590
+and you'll see there's actually
+
+0:30:04.590,0:30:06.370
+here's some geometry
+
+0:30:06.370,0:30:10.750
+there's a polygon defining some object
+inside of uh... chart
+
+0:30:10.750,0:30:13.530
+this case i think it's probably a bridge
+
+0:30:13.530,0:30:15.630
+helpful but not great
+
+0:30:15.630,0:30:20.539
+let's try it comma-separated values
+we've worked without up again
+
+0:30:20.539,0:30:22.530
+go up to oral commands
+
+0:30:22.530,0:30:23.690
+rate change
+
+0:30:23.690,0:30:26.059
+came out the csd
+
+0:30:26.059,0:30:28.120
+and came out csd
+
+0:30:28.120,0:30:30.690
+and go ahead and answer on this
+
+0:30:30.690,0:30:34.200
+and you should see a whole lot of
+warnings and complaints
+
+0:30:34.200,0:30:37.699
+the csd format doesn't have a lot of
+support for geometry
+
+0:30:37.699,0:30:42.290
+it's not going to work too well the will
+take a peek
+
+0:30:42.290,0:30:44.250
+you can give me airs
+
+0:30:44.250,0:30:47.200
+okay so what you do is you actually met
+k mail
+
+0:30:47.200,0:30:50.460
+so he did he have changed both that
+hamas yet
+
+0:30:50.460,0:30:54.930
+they should change the activity i
+stepped and also the question on there's
+
+0:30:54.930,0:30:56.890
+two spots
+
+0:30:56.890,0:31:01.600
+civilian get their message you argue
+both of those
+
+0:31:01.600,0:31:06.500
+the capital's right here do matter yes
+
+0:31:06.500,0:31:10.520
+here is your choice that you can make
+that he was he same you'd like for a
+
+0:31:10.520,0:31:11.070
+year
+
+0:31:11.070,0:31:18.070
+and it will happily create something of
+whatever name it
+
+0:31:20.389,0:31:22.690
+the great thing about extensions is
+
+0:31:22.690,0:31:24.500
+you can make them whenever you want
+
+0:31:24.500,0:31:28.130
+and it might screw things up pretty good
+
+0:31:28.130,0:31:31.160
+that's the thing that he can run the
+file commando and might be a little tell
+
+0:31:31.160,0:31:34.370
+you that you're not looking at least i
+you worry he's less
+
+0:31:34.370,0:31:37.730
+and you can you start seeing things like
+a mailing your csd
+
+0:31:37.730,0:31:41.400
+is communal crazy so it's still in
+dallas dot showing here to see what it
+
+0:31:41.400,0:31:42.680
+created
+
+0:31:42.680,0:31:45.470
+always good to go back to the basics
+
+0:31:45.470,0:31:47.750
+his knows that this is blue
+
+0:31:47.750,0:31:51.019
+and surprisingly effective csd file
+rights
+
+0:31:51.019,0:31:54.490
+uh... there's a deal recur for directory
+
+0:31:54.490,0:31:56.000
+that's kinda on
+
+0:31:56.000,0:31:59.730
+yet you might need to do it became
+offline about csd thing first
+
+0:31:59.730,0:32:00.899
+so we have a directory
+
+0:32:00.899,0:32:05.490
+let's go in there soto ncd until u_s_
+five
+
+0:32:05.490,0:32:07.750
+plus years the number cabin
+
+0:32:07.750,0:32:09.169
+their auto complete
+
+0:32:09.169,0:32:12.500
+it often does what you doing so if you
+have a cd appear
+
+0:32:12.500,0:32:15.279
+it's content we realize that you don't
+care about anything else in the strict
+
+0:32:15.279,0:32:17.350
+rio grande
+
+0:32:17.350,0:32:18.640
+subdirectory
+
+0:32:18.640,0:32:20.110
+so cd into their
+
+0:32:20.110,0:32:22.200
+to halifax shell
+
+0:32:22.200,0:32:25.460
+and you should see a whole lot of junk
+
+0:32:25.460,0:32:29.150
+analyst take a look at one that might be
+interesting
+
+0:32:29.150,0:32:32.170
+for a blizzard doing out figure of about
+
+0:32:32.170,0:32:34.929
+great day and you've got something out
+there you might want to know
+
+0:32:34.929,0:32:36.250
+strong winds
+
+0:32:36.250,0:32:38.590
+one way to get that from the land area
+
+0:32:38.590,0:32:41.920
+right here is land area so maybe we can
+try and use that one
+
+0:32:41.920,0:32:43.360
+sold to you
+
+0:32:43.360,0:32:44.250
+lasts
+
+0:32:44.250,0:32:45.769
+and then
+
+0:32:45.769,0:32:47.830
+tell andy tab
+
+0:32:47.830,0:32:50.460
+area time okay there we go
+
+0:32:50.460,0:32:51.450
+hit enter
+
+0:32:51.450,0:32:54.370
+and take a peek inside of that file
+
+0:32:54.370,0:32:57.850
+so hit enter and natural gas
+
+0:32:57.850,0:33:02.470
+i kid from a life of me seeing here
+court if i can directly use
+
+0:33:02.470,0:33:06.899
+so i don't know what all of these things
+mean yet i haven't looked them all up
+
+0:33:06.899,0:33:11.450
+i'm wondering if this could be include
+accordance or it could be something else
+
+0:33:11.450,0:33:13.170
+you have to count
+
+0:33:13.170,0:33:16.670
+through here the number of commas and
+look through and say
+
+0:33:16.670,0:33:19.679
+which one is it and i think it's
+actually just a nineteen ember of some
+
+0:33:19.679,0:33:20.700
+sort
+
+0:33:20.700,0:33:23.440
+so it doesn't look like there's any good
+cordoned thing here
+
+0:33:23.440,0:33:25.040
+t three
+
+0:33:25.040,0:33:29.810
+six seventy knowing
+
+0:33:29.810,0:33:32.700
+seven eight nine it's domain
+
+0:33:32.700,0:33:35.290
+so those are all empty and most of these
+
+0:33:35.290,0:33:39.330
+so not very helpful
+
+0:33:39.330,0:33:41.479
+basis and that is down there but they're
+good
+
+0:33:41.479,0:33:42.869
+but we don't have coordinates
+
+0:33:42.869,0:33:45.770
+says kinda hard you spatial data without
+ordnance
+
+0:33:45.770,0:33:49.340
+so this is the format is not something
+that we really want
+
+0:33:49.340,0:33:53.160
+it was good idea but
+
+0:33:53.160,0:33:54.210
+so let's use
+
+0:33:54.210,0:33:57.059
+are g_i_s_ program q g_i_s_
+
+0:33:57.059,0:34:01.880
+guilty applications amarin that we've
+been doing so much command-line and i
+
+0:34:01.880,0:34:05.210
+thought and whatnot let's go perfectly
+program for a bit remember
+
+0:34:05.210,0:34:07.840
+duly means graphical user interface
+
+0:34:07.840,0:34:12.659
+as opposed to like sticky an old and
+yucky
+
+0:34:12.659,0:34:14.329
+donor science
+
+0:34:14.329,0:34:16.319
+quantum g_i_s_
+
+0:34:16.319,0:34:18.499
+and start that up
+
+0:34:18.499,0:34:22.599
+and you'll see something public this
+taking over your entire screen
+
+0:34:22.599,0:34:23.700
+i'm going to you
+
+0:34:23.700,0:34:25.649
+make that cover much of the screen
+
+0:34:25.649,0:34:28.399
+by clicking this right-hand mutton
+
+0:34:28.399,0:34:31.369
+thought one of you
+
+0:34:31.369,0:34:33.839
+we can have the layers
+
+0:34:33.839,0:34:37.789
+and you can build up whole max it's very
+much like uh... park maps and things
+
+0:34:37.789,0:34:39.159
+like that
+
+0:34:39.159,0:34:41.169
+and we're gonna go ahead and try and
+load up
+
+0:34:41.169,0:34:42.629
+our land area
+
+0:34:42.629,0:34:43.929
+so do you
+
+0:34:43.929,0:34:47.399
+abductor later
+
+0:34:47.399,0:34:49.679
+any should have a dialogue out
+
+0:34:49.679,0:34:52.349
+and the browse over here
+
+0:34:52.349,0:34:54.719
+will get you towards looking for the
+dataset
+
+0:34:54.719,0:34:55.789
+i'm really
+
+0:34:55.789,0:34:59.369
+if anybody can just type in huge long
+past correctly over time
+
+0:34:59.369,0:35:01.799
+impressed i guess you peaked in here
+
+0:35:01.799,0:35:04.719
+i'm typically using the browse when i do
+this
+
+0:35:04.719,0:35:06.909
+and you'll need to navigate
+
+0:35:06.909,0:35:11.039
+to research tools and i'm gonna go to
+class
+
+0:35:11.039,0:35:12.729
+class seventeen
+
+0:35:12.729,0:35:15.869
+d_n_c_ route because he is building up
+the path up here
+
+0:35:15.869,0:35:19.179
+and we were in the u_s_ an h one
+
+0:35:19.179,0:35:22.499
+you can see some of the father treated
+but we really want that original char
+
+0:35:22.499,0:35:23.759
+data
+
+0:35:23.759,0:35:25.989
+we need to hear press open
+
+0:35:25.989,0:35:30.999
+avoided a supplement to tell you guys
+and i forgot sardonic secret down here
+
+0:35:30.999,0:35:32.669
+typically starts off white
+
+0:35:32.669,0:35:34.339
+have reshaped files
+
+0:35:34.339,0:35:38.159
+and you won't see anything else i'm not
+sure why it does this look like this
+
+0:35:38.159,0:35:40.589
+i like to be off the all the files
+
+0:35:40.589,0:35:42.799
+summitry select of files
+
+0:35:42.799,0:35:44.099
+and then take your
+
+0:35:44.099,0:35:46.489
+over then more stuff will show up
+
+0:35:46.489,0:35:51.079
+services please visit rosier
+
+0:35:51.079,0:35:52.879
+yet actually using
+
+0:35:52.879,0:35:55.299
+thirty g acts as using gmail
+
+0:35:55.299,0:36:01.289
+too low that later
+
+0:36:01.289,0:36:04.140
+spent here this time and should say
+something else like it would yaar
+
+0:36:04.140,0:36:05.349
+something or other
+
+0:36:05.349,0:36:06.919
+are you in
+
+0:36:06.919,0:36:07.800
+sulekha
+
+0:36:07.800,0:36:09.239
+at that time
+
+0:36:09.239,0:36:11.770
+and then all files at the very bottom
+
+0:36:11.770,0:36:13.840
+so you want to do pat victor later
+
+0:36:13.840,0:36:15.179
+and browse
+
+0:36:15.179,0:36:19.309
+then i weeded first go to a tab worth a
+g_ r_ k_ n_ o_
+
+0:36:19.309,0:36:21.659
+and change that to all files
+
+0:36:21.659,0:36:22.529
+about
+
+0:36:22.529,0:36:23.910
+you needed to browse
+
+0:36:23.910,0:36:28.559
+quick open if you get to that point and
+then you have a quick open again
+
+0:36:28.559,0:36:32.389
+and hope we'll see a map on your screen
+
+0:36:32.389,0:36:33.399
+yes right
+
+0:36:33.399,0:36:35.269
+many many steps
+
+0:36:35.269,0:36:37.589
+so i'm gonna click open
+
+0:36:37.589,0:36:39.149
+sore on the uh...
+
+0:36:39.149,0:36:45.249
+u_s_ five h zero one and dot zero zero
+zero
+
+0:36:45.249,0:36:47.029
+it's now let me show you that
+
+0:36:47.029,0:36:50.729
+happen here's your data set you can
+click open
+
+0:36:50.729,0:36:54.209
+it doesn't just open the entire chart it
+once thought you pick which way you're
+
+0:36:54.209,0:36:55.679
+gonna look at
+
+0:36:55.679,0:36:57.240
+so we can scroll down
+
+0:36:57.240,0:37:01.259
+so land area
+
+0:37:01.259,0:37:05.819
+nineteen land area this tells us i think
+that we've got like sixty seven
+
+0:37:05.819,0:37:09.389
+well geometry features in there and
+click ok
+
+0:37:09.389,0:37:14.229
+and why does everybody have a different
+color
+
+0:37:14.229,0:37:16.539
+into things i didn't notice
+
+0:37:16.539,0:37:19.359
+fun fun
+
+0:37:19.359,0:37:22.649
+lesson number one is you can pick
+whatever color you want
+
+0:37:22.649,0:37:26.199
+so for me it's the chocolate for you
+it's been a br click
+
+0:37:26.199,0:37:28.529
+on that land area layer
+
+0:37:28.529,0:37:31.809
+so very similar to illustrator or
+
+0:37:31.809,0:37:33.060
+jim or
+
+0:37:33.060,0:37:34.949
+a number of programs it does layers
+
+0:37:34.949,0:37:36.769
+anchor properties
+
+0:37:36.769,0:37:38.349
+and then since i don't
+
+0:37:38.349,0:37:40.569
+through on the land hot pink
+
+0:37:40.569,0:37:42.899
+i might make it karine
+
+0:37:42.899,0:37:44.619
+and then you click ok
+
+0:37:44.619,0:37:47.059
+many it's quick ok ken
+
+0:37:47.059,0:37:48.420
+and i have green lands
+
+0:37:48.420,0:37:50.299
+you picked from land
+
+0:37:50.299,0:37:52.829
+okay so that's loading up some geometry
+
+0:37:52.829,0:37:54.739
+let's also load up the police
+
+0:37:54.739,0:37:57.659
+point is pretty handy to use
+
+0:37:57.659,0:38:00.390
+say got measures on the field so will go
+
+0:38:00.390,0:38:02.629
+view
+
+0:38:02.629,0:38:04.769
+british at another vector lawyer
+
+0:38:04.769,0:38:07.789
+and i would have browse it's been a
+remember where you were
+
+0:38:07.789,0:38:10.999
+so if you did all over the place your u
+still gonna suffer trying to find things
+
+0:38:10.999,0:38:12.619
+but if you have browse
+
+0:38:12.619,0:38:15.079
+should take you right back to where you
+are
+
+0:38:15.079,0:38:19.779
+so selective zero zero zero file again
+parts of the chart quick open
+
+0:38:19.779,0:38:21.419
+and open again
+
+0:38:21.419,0:38:24.349
+and now let's pick who were down the
+coast
+
+0:38:24.349,0:38:27.139
+pain from the bruins your wine
+
+0:38:27.139,0:38:29.239
+fired believe laps
+
+0:38:29.239,0:38:30.609
+so they know what the
+
+0:38:30.609,0:38:35.299
+fell eighty part of doing means
+
+0:38:35.299,0:38:36.640
+click ok
+
+0:38:36.640,0:38:39.879
+and i'm gonna make the screen bigger
+because that'll help
+
+0:38:39.879,0:38:42.799
+that crash
+
+0:38:42.799,0:38:44.589
+architect took you guys real quick
+
+0:38:44.589,0:38:46.259
+we're doing that
+
+0:38:46.259,0:38:50.479
+there is a uh... an info button it's
+like a little errol within our next to
+
+0:38:50.479,0:38:53.469
+it click that and try clicking on the
+police
+
+0:38:53.469,0:38:55.579
+and i'll try to catch a few guys faster
+
+0:38:55.579,0:38:57.259
+layer opened
+
+0:38:57.259,0:38:58.609
+advocate where
+
+0:38:58.609,0:39:01.409
+prowess veeru
+
+0:39:01.409,0:39:02.280
+hoping
+
+0:39:02.280,0:39:03.960
+uh... you'd see me do it again
+
+0:39:03.960,0:39:05.499
+net www
+
+0:39:05.499,0:39:07.399
+we in the area
+
+0:39:07.399,0:39:09.729
+they and i have yet to recover
+
+0:39:09.729,0:39:12.319
+layer have actor where
+
+0:39:12.319,0:39:13.819
+brown
+
+0:39:13.819,0:39:15.769
+my zero zero zero
+
+0:39:15.769,0:39:17.279
+orphan
+
+0:39:17.279,0:39:19.719
+open phenomena pic five
+
+0:39:19.719,0:39:22.229
+without the should be cokie guys
+
+0:39:22.229,0:39:23.439
+and now i have
+
+0:39:23.439,0:39:25.019
+by ending the lease
+
+0:39:25.019,0:39:26.599
+so if you haven't done it yet
+
+0:39:26.599,0:39:29.179
+there lots of tools to help you out of
+here
+
+0:39:29.179,0:39:30.549
+and one of them
+
+0:39:30.549,0:39:31.649
+he'd be
+
+0:39:31.649,0:39:32.659
+right here
+
+0:39:32.659,0:39:35.219
+identify features
+
+0:39:35.219,0:39:37.079
+and it changes your cursor in here
+
+0:39:37.079,0:39:38.700
+to be a little if i want
+
+0:39:38.700,0:39:40.659
+and you can click on the billy's
+
+0:39:40.659,0:39:42.289
+typically i_d_
+
+0:39:42.289,0:39:43.369
+and
+
+0:39:43.369,0:39:45.979
+get lots of information about the bully
+that you're going to need to know if you
+
+0:39:45.979,0:39:49.179
+look up in the ass descendants and if
+you want to know what
+
+0:39:49.179,0:39:51.430
+all these things are for
+
+0:39:51.430,0:39:52.319
+stays
+
+0:39:52.319,0:39:53.410
+he says yes
+
+0:39:53.410,0:39:54.180
+dept
+
+0:39:54.180,0:39:55.430
+uh...
+
+0:39:55.430,0:39:58.079
+hopefully
+
+0:39:58.079,0:39:58.890
+yeah
+
+0:39:58.890,0:40:01.039
+uh...
+
+0:40:01.039,0:40:05.079
+so that you were the air masses we saw
+about not using the updated version
+
+0:40:05.079,0:40:06.810
+were not using the updated version
+
+0:40:06.810,0:40:11.070
+sort of using the zero zero zero portion
+if you want to pay the author of acosta
+
+0:40:11.070,0:40:11.819
+at it
+
+0:40:11.819,0:40:14.689
+he will be happy to have it if
+
+0:40:14.689,0:40:18.969
+the the o_j_ art all i don't think it
+knows how to read deserves or wonder
+
+0:40:18.969,0:40:20.559
+your two files
+
+0:40:20.559,0:40:21.769
+i think we're out of luck
+
+0:40:21.769,0:40:25.180
+until now a co-op sizzle features
+together into a whole new char against
+
+0:40:25.180,0:40:26.849
+them
+
+0:40:26.849,0:40:30.949
+and there's update
+
+0:40:30.949,0:40:32.119
+sore kinda stuck
+
+0:40:32.119,0:40:34.800
+and the thing is it's open source code
+so that
+
+0:40:34.800,0:40:35.899
+resources are
+
+0:40:35.899,0:40:39.040
+we can't complain about it we can pay
+some of the fix it
+
+0:40:39.040,0:40:41.079
+or we can fix it ourselves
+
+0:40:41.079,0:40:44.679
+or we can just unfortunately with
+practical support that will this limited
+
+0:40:44.679,0:40:45.749
+category
+
+0:40:45.749,0:40:47.349
+so it's not perfect
+
+0:40:47.349,0:40:50.439
+but you get this going and if you need
+to chart update then you can either pick
+
+0:40:50.439,0:40:51.729
+errors tool
+
+0:40:51.729,0:40:54.039
+and tip echoing from but a lot of times
+
+0:40:54.039,0:40:56.809
+all you need is the basics
+
+0:40:56.809,0:41:00.529
+there are times to having the charges
+just your background data is fantastic
+
+0:41:00.529,0:41:01.899
+you just knowing where
+
+0:41:01.899,0:41:04.829
+the waterways are where the police are
+generally
+
+0:41:04.829,0:41:09.109
+is what's going on and then what you're
+doing a sunday to go on top of that
+
+0:41:09.109,0:41:12.159
+and if you actually building a nautical
+chart you're probably using
+
+0:41:12.159,0:41:16.659
+when the very expensive tools like
+carrots to put together your chart
+
+0:41:16.659,0:41:20.379
+separatism impose you'll see various
+buoys
+
+0:41:20.379,0:41:21.170
+out you can
+
+0:41:21.170,0:41:22.749
+zooming zoom out
+
+0:41:22.749,0:41:23.750
+with uh...
+
+0:41:23.750,0:41:26.689
+this guy's weakens using the
+intersections
+
+0:41:26.689,0:41:30.130
+there's lots of other stuff that we can
+do it this and hopefully will be getting
+
+0:41:30.130,0:41:33.189
+into more of it as we go throughout the
+whole
+
+0:41:33.189,0:41:34.289
+semester
+
+0:41:34.289,0:41:37.539
+this tool can actually read obsolete
+huge datasets
+
+0:41:37.539,0:41:40.209
+thank him for the men from big servers
+and we can do
+
+0:41:40.209,0:41:41.979
+all kinds of things you stuff
+
+0:41:41.979,0:41:47.319
+a lot of which i haven't tried yet so
+will be digging into his we go
+
+0:41:47.319,0:41:50.859
+and i think now's a good time to switch
+over to you
+
+0:41:50.859,0:41:52.349
+plaster charts
+
+0:41:52.349,0:41:53.849
+will still have the s_p_
+
+0:41:53.849,0:41:55.709
+gonna hide this guy
+
+0:41:55.709,0:42:01.549
+him
+
+0:42:01.549,0:42:04.269
+if you want the f_-fifteen to view
+
+0:42:04.269,0:42:07.529
+we do it with we have some software he
+received from the people bring this does
+
+0:42:07.529,0:42:09.179
+it
+
+0:42:09.179,0:42:11.129
+at fifty two is
+
+0:42:11.129,0:42:12.399
+hybrid nicely
+
+0:42:12.399,0:42:15.059
+a painful standard
+
+0:42:15.059,0:42:18.639
+to view visualizations with the
+traditional chart you
+
+0:42:18.639,0:42:22.129
+and everybody i've talked to his written
+and i think you can read a recovery that
+
+0:42:22.129,0:42:23.439
+the symbolically
+
+0:42:23.439,0:42:27.339
+there you pretty frustrated after doing
+that
+
+0:42:27.339,0:42:32.499
+it's doable place not very funny thick
+it's a very painful stands overplay
+
+0:42:32.499,0:42:35.599
+so in that case if you really need the
+church arts and logy
+
+0:42:35.599,0:42:39.549
+you can try to import from someplace
+
+0:42:39.549,0:42:42.969
+you can go under properties and you can
+start picking symbolically for things if
+
+0:42:42.969,0:42:44.689
+you've got some an icon set
+
+0:42:44.689,0:42:46.359
+but typically
+
+0:42:46.359,0:42:48.629
+char people don't use if this often
+
+0:42:48.629,0:42:52.259
+so isn't like you hear some of the first
+charting thai people to really spend
+
+0:42:52.259,0:42:54.109
+time with key g_i_s_
+
+0:42:54.109,0:42:55.849
+so people tend to use a little bit
+
+0:42:55.849,0:42:58.229
+buddies at a time for other tasks
+
+0:42:58.229,0:43:01.899
+so it's not had a lot of exposure in the
+chart world
+
+0:43:01.899,0:43:06.489
+writes let's go down and search for bsd
+
+0:43:06.489,0:43:08.240
+but getting a rash of charts or just
+
+0:43:08.240,0:43:09.479
+gone through
+
+0:43:09.479,0:43:12.429
+that louis loud and land area
+
+0:43:12.429,0:43:15.559
+andrew were common get navigation chart
+
+0:43:15.559,0:43:18.899
+so now we get to go back to you
+
+0:43:18.899,0:43:22.129
+the opposite coast survey website
+
+0:43:22.129,0:43:25.299
+and we're gonna get the new hampshire
+set of charts
+
+0:43:25.299,0:43:28.439
+now with images there almost always
+bigger than you or
+
+0:43:28.439,0:43:32.139
+in terms of filesize surrounding it
+twenty seven megabytes
+
+0:43:32.139,0:43:34.859
+but if we go back to that
+
+0:43:34.859,0:43:38.669
+tiki max i've actually saved going for
+you guys somewhere
+
+0:43:38.669,0:43:43.339
+wearing a crater sells all space to put
+that in so i'm gonna go
+
+0:43:43.339,0:43:44.230
+cv
+
+0:43:44.230,0:43:46.889
+tell the flash class
+
+0:43:46.889,0:43:48.879
+seventeen
+
+0:43:48.879,0:43:50.250
+submitted cleared
+
+0:43:50.250,0:43:51.650
+so in the way to be search
+
+0:43:51.650,0:43:54.329
+control us senior team x window
+
+0:43:54.329,0:43:55.889
+to the click of here
+
+0:43:55.889,0:43:57.489
+and you can show us
+
+0:43:57.489,0:43:59.639
+anti d_s_p_
+
+0:43:59.639,0:44:04.029
+and then control a or something like
+that or just go down there he's
+
+0:44:04.029,0:44:05.920
+and if you just click on like that
+
+0:44:05.920,0:44:09.279
+likely their at some point
+
+0:44:09.279,0:44:11.599
+now look at your right to the rest of
+charts
+
+0:44:11.599,0:44:16.509
+so i'd like to get the link right to
+know is that that we need
+
+0:44:16.509,0:44:18.039
+never youth
+
+0:44:18.039,0:44:19.839
+so if you look great down below
+
+0:44:19.839,0:44:22.129
+there's a big in source s_h_
+
+0:44:22.129,0:44:24.179
+amber and i got your getting
+
+0:44:24.179,0:44:26.069
+profiles with that you get
+
+0:44:26.069,0:44:28.289
+i'm going to be in class seventeen
+
+0:44:28.289,0:44:30.939
+an imminent grabbed this point
+
+0:44:30.939,0:44:32.889
+if you want to go through that chart
+
+0:44:32.889,0:44:33.939
+ppm
+
+0:44:33.939,0:44:36.179
+from a copy the debbie get
+
+0:44:36.179,0:44:37.819
+and be lazy
+
+0:44:37.819,0:44:41.019
+so we're gonna grab ads that we're gonna
+skip all those warnings
+
+0:44:41.019,0:44:44.579
+sql promise not to navigate
+thousand-foot ship off of what we do the
+
+0:44:44.579,0:44:47.649
+right
+
+0:44:47.649,0:44:51.139
+so that'll be under that getting a
+russian navigation chart section
+
+0:44:51.139,0:44:53.299
+and then class seventeen
+
+0:44:53.299,0:44:55.269
+and we go ahead and do again
+
+0:44:55.269,0:44:59.239
+seems like a little bit longer being
+twenty-seven megabytes
+
+0:44:59.239,0:45:02.469
+healthiest silver spring notices that
+they get a whole lot of chart downloads
+
+0:45:02.469,0:45:03.719
+from succumb
+
+0:45:03.719,0:45:07.319
+to be get yet you're gonna want probably
+move back up to the class seventeen
+
+0:45:07.319,0:45:08.489
+first
+
+0:45:08.489,0:45:13.029
+seeking to make a controlling
+
+0:45:13.029,0:45:17.239
+uh... yeah it alternative funds during
+the second half pounds for a comment
+
+0:45:17.239,0:45:20.079
+mostly these commands you can against
+that
+
+0:45:20.079,0:45:22.859
+shift his shift and not
+
+0:45:22.859,0:45:28.979
+so now go back to your cd concede you're
+missing a slash until late in the class
+
+0:45:28.979,0:45:30.440
+there's an article on ap
+
+0:45:30.440,0:45:33.559
+that uses the rapture dot will charge
+from now on
+
+0:45:33.559,0:45:37.499
+the application is in a written all that
+well it doesn't cash or save any of the
+
+0:45:37.499,0:45:38.919
+charts locally
+
+0:45:38.919,0:45:42.189
+if you pay in around a three gets the
+chart every time you come back to the
+
+0:45:42.189,0:45:43.689
+area
+
+0:45:43.689,0:45:46.649
+so someone spinning around like the
+whole u_s_ east coast up the down a
+
+0:45:46.649,0:45:47.759
+couple times
+
+0:45:47.759,0:45:51.519
+that means they download all the charts
+from noah like four or five times
+
+0:45:51.519,0:45:53.599
+chris two thousand nine
+
+0:45:53.599,0:45:57.019
+all of sudden no went all my goodness
+
+0:45:57.019,0:46:00.059
+third of our down off the charts are
+from the iphone
+
+0:46:00.059,0:46:01.109
+as you can see
+
+0:46:01.109,0:46:02.699
+which had an application
+
+0:46:02.699,0:46:06.319
+a felony and on what platform never
+liked while
+
+0:46:06.319,0:46:08.879
+i thought is super important to charting
+
+0:46:08.879,0:46:10.879
+well yet important
+
+0:46:10.879,0:46:15.479
+we had about aptitude kept telling
+charts as fast as possible from allah
+
+0:46:15.479,0:46:18.209
+basically what i meant is that no need
+to go find an offer and say can you
+
+0:46:18.209,0:46:22.079
+please put in cash is in your software
+if you don't keep downloading or charts
+
+0:46:22.079,0:46:23.249
+all day long
+
+0:46:23.249,0:46:26.619
+those bastards doing that respects your
+number of downloads is a dangerous
+
+0:46:26.619,0:46:28.099
+dangerous game
+
+0:46:28.099,0:46:29.100
+all right so we have it
+
+0:46:29.100,0:46:30.749
+we have a zip file
+
+0:46:30.749,0:46:33.609
+forever from before we can say unzip
+
+0:46:33.609,0:46:36.669
+dash held that he and others that file
+
+0:46:36.669,0:46:37.689
+to you
+
+0:46:37.689,0:46:39.159
+take a peek within their
+
+0:46:39.159,0:46:41.039
+r_n_c_ zip
+
+0:46:41.039,0:46:44.159
+services are unzip command the brett
+hume
+
+0:46:44.159,0:46:46.270
+and in the notes that i also talk about
+
+0:46:46.270,0:46:48.079
+for this one to because i like that
+
+0:46:48.079,0:46:53.339
+beat a dead horse doing mt five psalms
+an f_h_a_ two fifty six is
+
+0:46:53.339,0:46:57.179
+on the data if you come back and do
+these notes again in a couple months
+
+0:46:57.179,0:46:59.009
+those numbers might change
+
+0:46:59.009,0:47:01.679
+meaning that no i outdated the child
+
+0:47:01.679,0:47:03.030
+without any really
+
+0:47:03.030,0:47:06.460
+wait tell from the files that they've
+gone changed and other than the fact
+
+0:47:06.460,0:47:11.269
+that they did
+
+0:47:11.269,0:47:14.239
+sure its deep down in there
+
+0:47:14.239,0:47:16.359
+it's also an a catalog file
+
+0:47:16.359,0:47:17.920
+patella filed actually work
+
+0:47:17.920,0:47:24.819
+we get into but we don't have a
+correctional yet
+
+0:47:24.819,0:47:26.710
+alfonse for the critique
+
+0:47:26.710,0:47:30.099
+this is why indy five sons are awesome
+because then you
+
+0:47:30.099,0:47:33.209
+he starts going what's happening
+
+0:47:33.209,0:47:35.269
+okay sir
+
+0:47:35.269,0:47:40.009
+okay let's do an ally special at that
+files p
+
+0:47:40.009,0:47:45.009
+will be my luck if they have to go to
+work with
+
+0:47:45.009,0:47:46.339
+and then
+
+0:47:46.339,0:47:49.129
+and we've been dependent but somebody
+important
+
+0:47:49.129,0:47:50.969
+and stephanie differ
+
+0:47:50.969,0:47:52.609
+let me try to make it
+
+0:47:52.609,0:47:56.839
+uh... if anyone else going in different
+
+0:47:56.839,0:47:58.259
+let's see what happens
+
+0:47:58.259,0:48:00.869
+will i get
+
+0:48:00.869,0:48:02.889
+news interesting
+
+0:48:02.889,0:48:06.799
+me quick double-check that meet into the
+four mt five song
+
+0:48:06.799,0:48:08.339
+dropbox
+
+0:48:08.339,0:48:11.069
+house
+
+0:48:11.069,0:48:15.359
+would not be my luck it looks like noah
+has out there that file between this
+
+0:48:15.359,0:48:17.799
+moving in now
+
+0:48:17.799,0:48:21.489
+going on for an update now right
+
+0:48:21.489,0:48:23.079
+so do you uh... huh
+
+0:48:23.079,0:48:24.809
+we'll go back up a moron
+
+0:48:24.809,0:48:28.729
+the unzip dash l dash he and hopefully
+working here is the same thing that i
+
+0:48:28.729,0:48:30.509
+expected
+
+0:48:30.509,0:48:35.889
+and you should see a whole bunch of
+files that safe dot bsd and dots kgp
+
+0:48:35.889,0:48:41.709
+and the funny part about bs bs is
+decayed p files actually the b_s_t_ file
+
+0:48:41.709,0:48:46.119
+so that the actual image data is the
+katie steve i want to call this the kpc
+
+0:48:46.119,0:48:47.039
+format
+
+0:48:47.039,0:48:50.539
+we have to live with it because it's its
+old crusty and will be with us for a few
+
+0:48:50.539,0:48:52.239
+more years
+
+0:48:52.239,0:48:54.249
+so thought had nuns at that
+
+0:48:54.249,0:48:58.159
+cancer playing with some ratcheted up as
+it is actually i liked the look
+
+0:48:58.159,0:49:02.119
+of russia charts they just look pretty
+nice on the by mail or an lines all over
+
+0:49:02.119,0:49:04.289
+them that we don't use any more
+
+0:49:04.289,0:49:06.489
+within our country
+
+0:49:06.489,0:49:08.799
+fool do ans it ten h
+
+0:49:08.799,0:49:10.439
+r_n_c_
+
+0:49:10.439,0:49:13.519
+and it should say inflating inflating
+inflating and we have a whole bunch of
+
+0:49:13.519,0:49:15.179
+file fam
+
+0:49:15.179,0:49:17.969
+we can run uh...
+
+0:49:17.969,0:49:19.709
+do u dash h
+
+0:49:19.709,0:49:21.039
+on r and h
+
+0:49:21.039,0:49:22.219
+par n c
+
+0:49:22.219,0:49:25.150
+if we do know is that cell which is
+better to do first you'll see there's no
+
+0:49:25.150,0:49:25.780
+news
+
+0:49:25.780,0:49:32.780
+directory called bsd root
+
+0:49:34.239,0:49:35.180
+okay so
+
+0:49:35.180,0:49:36.599
+hit up here
+
+0:49:36.599,0:49:40.639
+this is a doing the same dash l dash he
+is doing it so fast that the screen is
+
+0:49:40.639,0:49:42.489
+refreshing
+
+0:49:42.489,0:49:46.909
+that's clock ticking with unix is when
+when you've got a machine is fast
+
+0:49:46.909,0:49:49.069
+any rerun the same commander beckham and
+
+0:49:49.069,0:49:50.849
+fully wrap the screen
+
+0:49:50.849,0:49:52.080
+it may actually
+
+0:49:52.080,0:49:54.140
+never look like the screening changed
+
+0:49:54.140,0:49:57.990
+senior commanders disappear he and you
+prompt actually means you've run
+
+0:49:57.990,0:49:59.769
+every drew the whole screen
+
+0:49:59.769,0:50:02.629
+and he was too fast rewrite a catch
+
+0:50:02.629,0:50:06.389
+uh... so you go and take off the
+national nasty predicament unzipped is
+
+0:50:06.389,0:50:08.319
+just on zip in the following
+
+0:50:08.319,0:50:10.859
+so you can do it to u dash h
+
+0:50:10.859,0:50:12.559
+and b_ if you were
+
+0:50:12.559,0:50:15.149
+and you'll see that there's a bunch of
+directories
+
+0:50:15.149,0:50:16.400
+unfortunately
+
+0:50:16.400,0:50:19.499
+unlike dyess fifty seven's
+
+0:50:19.499,0:50:23.009
+i don't know how to interpret those
+numbers in terms of which chart that is
+
+0:50:23.009,0:50:25.859
+without chart map in front of me
+
+0:50:25.859,0:50:27.659
+and i didn't bring one today
+
+0:50:27.659,0:50:30.939
+and she was one there's a lot of them
+online but i'm not going to go looking
+
+0:50:30.939,0:50:33.309
+was gonna pick one or random
+
+0:50:33.309,0:50:34.699
+so we're gonna
+
+0:50:34.699,0:50:41.699
+skippy can do the same file commands
+onto really quick through faith file
+
+0:50:42.059,0:50:45.049
+was going to be if you were in the
+western and look at what's more stuff we
+
+0:50:45.049,0:50:47.869
+intended to so we see the into their
+
+0:50:47.869,0:50:50.329
+to find period
+
+0:50:50.329,0:50:52.399
+so finds dot tight
+
+0:50:52.399,0:50:53.789
+x arcs
+
+0:50:53.789,0:50:55.979
+file so i take each line
+
+0:50:55.979,0:50:59.099
+from the fine commandment opposite over
+to file
+
+0:50:59.099,0:51:00.959
+them unless they cut
+
+0:51:00.959,0:51:02.619
+dash he cohen
+
+0:51:02.619,0:51:03.489
+desh f
+
+0:51:03.489,0:51:05.839
+to so effective field
+
+0:51:05.839,0:51:07.319
+it's going to have the name
+
+0:51:07.319,0:51:09.669
+and if i'm going to die for you
+
+0:51:09.669,0:51:12.480
+give it a go if you don't get go back to
+the notes later on
+
+0:51:12.480,0:51:14.719
+ticket i'm typing out you'll see
+
+0:51:14.719,0:51:17.779
+committed we're doing exact same thing
+as last time
+
+0:51:17.779,0:51:20.939
+and then sort dashiell
+
+0:51:20.939,0:51:22.989
+press center and hope that i take it
+right
+
+0:51:22.989,0:51:25.039
+and what we'd get is
+
+0:51:25.039,0:51:28.219
+ascii text data directories
+
+0:51:28.219,0:51:31.409
+and more ascii text of a slightly
+different form
+
+0:51:31.409,0:51:32.869
+so not very interesting
+
+0:51:32.869,0:51:36.429
+unfortunately file doesn't know much
+about charts so we got to work on that
+
+0:51:36.429,0:51:38.369
+yet
+
+0:51:38.369,0:51:42.099
+ul especial will see our directory
+cinnamon a look at which one i used
+
+0:51:42.099,0:51:44.249
+before
+
+0:51:44.249,0:51:46.039
+the cd thirteen
+
+0:51:46.039,0:51:48.299
+two seven four
+
+0:51:48.299,0:51:49.969
+or special
+
+0:51:49.969,0:51:51.419
+and we have
+
+0:51:51.419,0:51:52.769
+one
+
+0:51:52.769,0:51:53.839
+charts
+
+0:51:53.839,0:51:57.699
+but our chart of actually got five
+images and it looks like
+
+0:51:57.699,0:52:00.529
+but katie's r_d_ image data
+
+0:52:00.529,0:52:03.979
+and the b_s_t_ is actually some added a
+little with it
+
+0:52:03.979,0:52:05.839
+and we're gonna be brave
+
+0:52:05.839,0:52:10.179
+let's take a look at this bsd image is a
+little bit different notes
+
+0:52:10.179,0:52:13.459
+so let's take a look at our the s_p_ so
+what's
+
+0:52:13.459,0:52:15.019
+thirteen
+
+0:52:15.019,0:52:17.379
+two seven four dot bsd
+
+0:52:17.379,0:52:20.460
+now this one have a little less of the
+like reversed
+
+0:52:20.460,0:52:23.259
+uh... collard
+
+0:52:23.259,0:52:26.089
+and hopefully it's a little more
+readable
+
+0:52:26.089,0:52:28.039
+that's got these three-letter codes
+
+0:52:28.039,0:52:30.119
+and then some data after it
+
+0:52:30.119,0:52:32.119
+and if you look great here
+
+0:52:32.119,0:52:36.009
+c h t seems to be a coded tells us
+
+0:52:36.009,0:52:37.559
+well but the picture came
+
+0:52:37.559,0:52:39.359
+keeping into hampton harbor
+
+0:52:39.359,0:52:40.929
+side a lapsed
+
+0:52:40.929,0:52:42.489
+that sounds pretty good
+
+0:52:42.489,0:52:43.910
+so i think c h t s
+
+0:52:43.910,0:52:46.799
+probably the code printer canon
+
+0:52:46.799,0:52:50.129
+so let's try and use that real quick
+this kind of at the time when you look
+
+0:52:50.129,0:52:52.969
+at a file format you realize you can
+actually do a lot with something that
+
+0:52:52.969,0:52:54.579
+you don't know very much about
+
+0:52:54.579,0:52:56.139
+separates a cv
+
+0:52:56.139,0:52:59.399
+doc dot to go up one directly to our
+viewers
+
+0:52:59.399,0:53:00.969
+and let's say
+
+0:53:00.969,0:53:02.579
+find
+
+0:53:02.579,0:53:03.879
+and they were in a state
+
+0:53:03.879,0:53:06.789
+hex ours
+
+0:53:06.789,0:53:08.849
+and that was seized usery
+
+0:53:08.849,0:53:10.839
+p_h_d_
+
+0:53:10.839,0:53:13.300
+in the notated differently i actually
+did grep
+
+0:53:13.300,0:53:16.239
+c_h_ teen star slashed are not the s_p_
+
+0:53:16.239,0:53:17.470
+their similar
+
+0:53:17.470,0:53:19.539
+and terms of finding files
+
+0:53:19.539,0:53:20.969
+so hit enter
+
+0:53:20.969,0:53:22.250
+and that gives you
+
+0:53:22.250,0:53:25.279
+phil donahue and more answers
+
+0:53:25.279,0:53:28.389
+if you have a pile of charts sitting and
+directory
+
+0:53:28.389,0:53:31.069
+it may be the whole u_s_ charts it may
+not
+
+0:53:31.069,0:53:32.709
+you can go unused crap
+
+0:53:32.709,0:53:36.359
+to go find out which church you go out
+sitting on the computer
+
+0:53:36.359,0:53:38.699
+sumbly that's a nice example of
+
+0:53:38.699,0:53:42.959
+mixing and matching commands in the bash
+cell to start putting together
+
+0:53:42.959,0:53:45.149
+some knowledge about what you've got
+
+0:53:45.149,0:53:46.789
+you know for example
+
+0:53:46.789,0:53:48.559
+leading up right in your office
+
+0:53:48.559,0:53:50.299
+and somebody gives you
+
+0:53:50.299,0:53:53.389
+ten thousand charts from all over the
+world
+
+0:53:53.389,0:53:57.019
+going to be no fun to go heartened
+through for which you need you can start
+
+0:53:57.019,0:54:00.449
+learning how to run kit right commands
+like this they will ban help you big
+
+0:54:00.449,0:54:03.669
+through all that data really quickly
+
+0:54:03.669,0:54:05.109
+trying to know
+
+0:54:05.109,0:54:09.019
+you can remember these numbers is not
+very far
+
+0:54:09.019,0:54:10.669
+okay so let's go back in there
+
+0:54:10.669,0:54:12.329
+so cd
+
+0:54:12.329,0:54:13.289
+thirteen
+
+0:54:13.289,0:54:14.789
+two seven four
+
+0:54:14.789,0:54:17.719
+and certainly tight clear again
+
+0:54:17.719,0:54:20.839
+and let's go ahead and try to take a
+peek at some of the state a
+
+0:54:20.839,0:54:22.379
+now we use
+
+0:54:22.379,0:54:24.359
+fuji are purbeck today dot
+
+0:54:24.359,0:54:26.889
+and you know it's for rapture data
+
+0:54:26.889,0:54:31.629
+so we're gonna use a command called t
+doll info because they hope to have such
+
+0:54:31.629,0:54:33.009
+formats
+
+0:54:33.009,0:54:36.819
+and this has even more formats than the
+o_j_ our side of things
+
+0:54:36.819,0:54:40.079
+sergio info dash dash formats
+
+0:54:40.079,0:54:43.129
+all the formats the distal knows how to
+read
+
+0:54:43.129,0:54:46.689
+and there are some really crazy formats
+in here
+
+0:54:46.689,0:54:48.649
+i don't know what they are
+
+0:54:48.649,0:54:52.339
+if you if you know if formats off if
+you're probably uh...
+
+0:54:52.339,0:54:54.649
+pretty tired i've had it all that
+
+0:54:54.649,0:54:56.989
+usage ego info
+
+0:54:56.989,0:54:57.750
+and then
+
+0:54:57.750,0:54:59.670
+we can look at our charts i hit tab
+
+0:54:59.670,0:55:01.839
+and the first saw the files in here
+
+0:55:01.839,0:55:04.180
+and we have files one through
+
+0:55:04.180,0:55:06.869
+five of the types of member and hit
+enter yet
+
+0:55:06.869,0:55:08.939
+will just pick the first one
+
+0:55:08.939,0:55:11.369
+so here's the commander in iran
+
+0:55:11.369,0:55:16.999
+press answer and g all spent trying tell
+something about dot chart
+
+0:55:16.999,0:55:19.640
+some of its gonna make a lot of sense in
+someone's going to make very little
+
+0:55:19.640,0:55:21.909
+signs
+
+0:55:21.909,0:55:24.359
+and there's a lot of jcp
+
+0:55:24.359,0:55:25.569
+picture here
+
+0:55:25.569,0:55:27.349
+so there's the commander in
+
+0:55:27.349,0:55:28.729
+it tells us that it's
+
+0:55:28.729,0:55:31.039
+reading of the s_p_ map tak
+
+0:55:31.039,0:55:34.139
+it tells us about the projection system
+
+0:55:34.139,0:55:37.359
+so there's all the projection for all of
+this chart
+
+0:55:37.359,0:55:43.079
+peas are ground control points so that
+the point or chart that no locations
+
+0:55:43.079,0:55:46.929
+thereafter cure pixel and i think so
+take their place in the world and helps
+
+0:55:46.929,0:55:51.139
+you jewlery projections of toward either
+
+0:55:51.139,0:55:52.329
+and there's no
+
+0:55:52.329,0:55:54.099
+water-borne
+
+0:55:54.099,0:55:56.949
+and then tells you will have more
+mandated on here
+
+0:55:56.949,0:55:58.130
+and then it's got some
+
+0:55:58.130,0:56:00.909
+corner information in terms of the
+pixels
+
+0:56:00.909,0:56:03.659
+so we've now got a little bit of info
+
+0:56:03.659,0:56:05.199
+uh... b_s_t_
+
+0:56:05.199,0:56:08.329
+and i'll leave it up to you to go off
+and read about the if these if you want
+
+0:56:08.329,0:56:09.889
+to know
+
+0:56:09.889,0:56:13.629
+but let's convert one of those two
+picture rossi about charissa me care
+
+0:56:13.629,0:56:14.459
+around
+
+0:56:14.459,0:56:17.729
+and there's another g document called
+udall translate
+
+0:56:17.729,0:56:20.349
+that we can make was just make it into a
+p_n_g_
+
+0:56:20.349,0:56:24.639
+if that's not a geospatial format but we
+could definitely go look at the picture
+
+0:56:24.639,0:56:27.239
+dash aleph is output format
+
+0:56:27.239,0:56:28.710
+would say p_n_g_
+
+0:56:28.710,0:56:30.569
+buffet one three
+
+0:56:30.569,0:56:33.199
+q seven former school born dot
+
+0:56:33.199,0:56:34.299
+kpm
+
+0:56:34.299,0:56:35.519
+the first
+
+0:56:35.519,0:56:38.409
+assoc first comes our input so this is
+the
+
+0:56:38.409,0:56:40.699
+the b_s_t_ k p final
+
+0:56:40.699,0:56:43.710
+and then or help with so thirteen two
+seven four
+
+0:56:43.710,0:56:46.109
+explore one dot p and g
+
+0:56:46.109,0:56:48.709
+amid double check that before it hit
+enter
+
+0:56:48.709,0:56:52.799
+and the program's going to be a runoff
+and it's going to make a picture for us
+
+0:56:52.799,0:56:55.149
+let's do that for couple them
+
+0:56:55.149,0:56:57.099
+sold it for two
+
+0:56:57.099,0:57:00.499
+cd replaced two different numbers
+there's one right here
+
+0:57:00.499,0:57:02.419
+and that one right here with the field
+
+0:57:02.419,0:57:06.129
+press answer runs often does that
+
+0:57:06.129,0:57:07.259
+and three
+
+0:57:07.259,0:57:08.809
+so i think that work
+
+0:57:08.809,0:57:11.119
+now we can say display
+
+0:57:11.119,0:57:12.539
+startup p_n_g_
+
+0:57:12.539,0:57:15.179
+or reactions do you know a special first
+
+0:57:15.179,0:57:18.799
+so now we have a couple p_n_g_ images
+running around in there
+
+0:57:18.799,0:57:22.819
+and we can use the image magic display
+finance
+
+0:57:22.819,0:57:23.910
+to take a peek at them
+
+0:57:23.910,0:57:25.949
+so to display
+
+0:57:25.949,0:57:28.119
+startup p_n_g_
+
+0:57:28.119,0:57:30.549
+and press enter
+
+0:57:30.549,0:57:33.339
+philip and when they weren't here
+
+0:57:33.339,0:57:34.879
+so its display
+
+0:57:34.879,0:57:35.720
+star
+
+0:57:35.720,0:57:38.349
+period or for starting in june
+
+0:57:38.349,0:57:41.659
+so then you can use all pain window to
+drag around
+
+0:57:41.659,0:57:45.359
+where you are in chart in get nauseous
+looking at the screen
+
+0:57:45.359,0:57:49.099
+the just click you get image magic
+window you can save you
+
+0:57:49.099,0:57:51.689
+capsize
+
+0:57:51.689,0:57:54.839
+half size and you can see now return
+
+0:57:54.839,0:57:57.759
+it doesn't do very good job of zooming
+so it looks pretty
+
+0:57:57.759,0:57:59.459
+recruits spit
+
+0:57:59.459,0:58:02.719
+we always have a picture of our chart
+we've seen it
+
+0:58:02.719,0:58:06.089
+in making its base through the next
+turner believer
+
+0:58:06.089,0:58:09.420
+and then it works really hard for a bit
+and many of the next chart
+
+0:58:09.420,0:58:12.229
+dancing around
+
+0:58:12.229,0:58:14.679
+space again before us a little bit
+
+0:58:14.679,0:58:17.269
+and what you can see is that one know
+what chart
+
+0:58:17.269,0:58:19.579
+consists of a whole bunch of images
+
+0:58:19.579,0:58:24.099
+and hear the story to those little
+mapping sets as a separate k p file
+
+0:58:24.099,0:58:26.999
+otherwise it is a real hard to work with
+them because you have to have control
+
+0:58:26.999,0:58:29.489
+points deep inside of another picture
+
+0:58:29.489,0:58:32.079
+so here you can see the merrimack river
+
+0:58:32.079,0:58:34.039
+and then a queue to quit
+
+0:58:34.039,0:58:36.989
+right so let's try to in q g_i_s_
+
+0:58:36.989,0:58:39.879
+platforms yes down here
+
+0:58:39.879,0:58:42.660
+so if you bring up huge yes you can view
+file
+
+0:58:42.660,0:58:44.199
+new project
+
+0:58:44.199,0:58:49.929
+and we're not gonna save what we did so
+close without saving on our last one
+
+0:58:49.929,0:58:53.449
+and we can go back up to layers
+
+0:58:53.449,0:58:56.729
+and we did abductor lawyer before we're
+not going to you that we're gonna go
+
+0:58:56.729,0:58:57.589
+down
+
+0:58:57.589,0:58:59.450
+ab roster layer
+
+0:58:59.450,0:59:02.739
+so raptors are basically pictures
+
+0:59:02.739,0:59:05.589
+and i'm gonna go back
+
+0:59:05.589,0:59:10.099
+it seems to keep track of rafters and
+factors differently
+
+0:59:10.099,0:59:13.029
+and it keeps the old pop around so if
+you have your actors and doctor
+
+0:59:13.029,0:59:15.939
+separated you'll remember that
+
+0:59:15.939,0:59:17.879
+may go into class
+
+0:59:17.879,0:59:19.209
+seventeen
+
+0:59:19.209,0:59:23.599
+and before we re in c route now we're
+going to be espy route
+
+0:59:23.599,0:59:26.339
+and then thirteen two seven four
+
+0:59:26.339,0:59:28.329
+so you go in there
+
+0:59:28.329,0:59:32.139
+amber i picked one worldnews the first
+one i guess
+
+0:59:32.139,0:59:33.339
+teens could not
+
+0:59:33.339,0:59:35.599
+and if you don't see anything
+
+0:59:35.599,0:59:38.079
+member click that bottom went down here
+
+0:59:38.079,0:59:40.589
+the it but you might say something like
+you know
+
+0:59:40.589,0:59:44.419
+uh... it probably will default that's
+unlike virtual raster
+
+0:59:44.419,0:59:45.999
+before leaving to you
+
+0:59:45.999,0:59:48.609
+suffered for a full raster good on the
+bottom
+
+0:59:48.609,0:59:50.779
+pick haller finals
+
+0:59:50.779,0:59:53.749
+and then take that one
+
+0:59:53.749,0:59:59.539
+thirteen two seven four underscore one
+dot k p
+
+0:59:59.539,1:00:01.220
+the computer worked really hard
+
+1:00:01.220,1:00:03.569
+and you have a chart
+
+1:00:03.569,1:00:07.709
+paperless by money used a zoom in
+buttons you can see something
+
+1:00:07.709,1:00:09.419
+and you can and zoom in
+
+1:00:09.419,1:00:10.919
+tour region
+
+1:00:10.919,1:00:13.009
+he keeps coming
+
+1:00:13.009,1:00:15.839
+and you are now looking at chart
+
+1:00:15.839,1:00:20.309
+is north not up on that
+
+1:00:20.309,1:00:23.499
+this is the merrimack river i think it's
+actually pretty close
+
+1:00:23.499,1:00:25.779
+in
+
+1:00:25.779,1:00:28.039
+for you thinkin workers
+
+1:00:28.039,1:00:30.089
+vichar shouldn't be repeated
+
+1:00:30.089,1:00:33.139
+or should be reviewed
+
+1:00:33.139,1:00:35.929
+accounts for the car one
+
+1:00:35.929,1:00:38.799
+i think is the coastline isn't directing
+or south
+
+1:00:38.799,1:00:42.759
+it they try to get as much coastlines
+awful to space to have on the paper
+
+1:00:42.759,1:00:49.759
+i haven't looked at that shilpi for
+version of this
+
+1:00:51.209,1:00:53.519
+so you can also do you um
+
+1:00:53.519,1:00:55.029
+file new projects
+
+1:00:55.029,1:00:58.309
+close out saving
+
+1:00:58.309,1:01:00.519
+ab roster later
+
+1:01:00.519,1:01:02.639
+we can pick like number five
+
+1:01:02.639,1:01:05.439
+report
+
+1:01:05.439,1:01:08.579
+it was a cuppa north worth the north
+point
+
+1:01:08.579,1:01:10.679
+north is actually out there
+
+1:01:10.679,1:01:15.169
+yet so happy birthday to the north out
+
+1:01:15.169,1:01:18.519
+okay by computers working hard on that
+number five
+
+1:01:18.519,1:01:22.430
+america's so divert so much teens are
+not so the fastest they don't have that
+
+1:01:22.430,1:01:25.020
+much ram for them so they might actually
+have to work
+
+1:01:25.020,1:01:26.989
+pretty hard open a chart
+
+1:01:26.989,1:01:28.149
+pittsburgh
+
+1:01:28.149,1:01:31.659
+we should hang up here and we'll take a
+look at bags
+
+1:01:31.659,1:01:32.729
+next time
+
+1:01:32.729,1:01:34.469
+on tuesday
+
+1:01:34.469,1:01:39.309
+and hopefully if i can pull together are
+creating a g doll bill that actually can
+
+1:01:39.309,1:01:40.729
+read bags
+
+1:01:40.729,1:01:43.929
+because of the nice to be able actually
+see the day and the vatican
+
+1:01:43.929,1:01:44.919
+because there's a
+
+1:01:44.919,1:01:48.609
+there some fun ones in this area we have
+one of the white our file
+
+1:01:48.609,1:01:51.589
+and we have as some that have been the
+tree
+
+1:01:51.589,1:01:53.800
+and we can take a peek at the medea and
+see
+
+1:01:53.800,1:01:56.419
+i have the file from two thousand and
+ten
+
+1:01:56.419,1:02:00.609
+and you can see if the file actually now
+says the word wider and find it which it
+
+1:02:00.609,1:02:02.179
+didn't before
+
+1:02:02.179,1:02:03.269
+one of things that
+
+1:02:03.269,1:02:05.429
+to know about some these tools as that
+
+1:02:05.429,1:02:06.900
+if you're looking at parents
+
+1:02:06.900,1:02:10.290
+and your billing attorney fees are
+always speaker exporting banks thicker
+
+1:02:10.290,1:02:13.009
+interface doesn't let you type in very
+much
+
+1:02:13.009,1:02:14.920
+and so there's no way for the operator
+to
+
+1:02:14.920,1:02:17.869
+create the complete correct meredith
+file for our bag
+
+1:02:17.869,1:02:19.229
+from noah
+
+1:02:19.229,1:02:22.909
+so angie d_c_ has to go in use the same
+tools that were using
+
+1:02:22.909,1:02:26.049
+to rewrite committed to the correct
+after a gets to them
+
+1:02:26.049,1:02:26.539
+i guess
+

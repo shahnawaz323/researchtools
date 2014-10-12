@@ -1,0 +1,1791 @@
+0:00:01.759,0:00:07.300
+Hi.  My name is Kurt Schwehr and welcome to 
+video 2 for research tools at the
+
+0:00:07.300,0:00:11.299
+University New Hampshire, Center for Coastal
+and Ocean Mapping.
+
+0:00:11.299,0:00:13.320
+In this video, I'm going to show you
+
+0:00:13.320,0:00:14.239
+more advanced
+
+0:00:14.239,0:00:17.519
+techniques of using GNU Emacs
+
+0:00:17.519,0:00:22.339
+to do a lot more than we did last
+time when we just did keyboard motion.
+
+0:00:22.339,0:00:24.349
+Today, we're going to look at
+
+0:00:24.349,0:00:29.019
+dired mode looking at directories.
+We're going to open up the shell inside of emacs
+
+0:00:29.019,0:00:30.270
+And we are going to do
+
+0:00:30.270,0:00:31.609
+more advanced
+
+0:00:31.609,0:00:34.780
+manipulation of text inside of emacs.
+
+0:00:34.780,0:00:36.149
+Let's start off by
+
+0:00:36.149,0:00:40.060
+looking into the directory edit
+mode or "dired" mode.
+
+0:00:40.060,0:00:42.260
+In this mode, if we are open up a file:
+
+0:00:42.260,0:00:44.890
+Control x Control f
+
+0:00:44.890,0:00:46.520
+and for that file,
+
+0:00:46.520,0:00:49.650
+we're just gonna open up the current
+directory.  So if you look at the bottom
+
+0:00:49.650,0:00:53.789
+here, it says find file colon and then it syas
+tilde slash, which is our
+
+0:00:53.789,0:00:56.490
+home directory in Linux.  If I 
+
+0:00:56.490,0:01:00.790
+press enter there, we've entered into what's
+called dired mode.
+
+0:01:00.790,0:01:03.390
+And in directory edit mode we can
+actually
+
+0:01:03.390,0:01:05.979
+operate on files and directories.
+
+0:01:05.979,0:01:08.790
+There's a whole bunch of new menus up
+at the top.
+
+0:01:08.790,0:01:13.790
+We have operate. We can copy, rename,
+delete. etcetera etcetera.
+
+0:01:13.790,0:01:20.310
+We can mark things for actions.  We can go
+through and flag for deletion.
+
+0:01:20.310,0:01:22.470
+so let's go ahead and do that real
+quick.
+
+0:01:22.470,0:01:27.360
+I have a backup file.  Emacs writes tilde
+files that are back ups of old things.
+
+0:01:27.360,0:01:30.280
+So you can flag something with a "d" key.
+
+0:01:30.280,0:01:32.700
+And it will mark it for deletion.
+
+0:01:32.700,0:01:37.070
+And, for example, I can go down here and to another
+one to mark that one.
+
+0:01:37.070,0:01:40.490
+There's my dot emacs tilde back up.
+
+0:01:40.490,0:01:44.160
+And then you can press x to execute.
+
+0:01:44.160,0:01:45.790
+So, under mark.
+
+0:01:45.790,0:01:47.440
+We've done done the "d".
+
+0:01:47.440,0:01:51.930
+And operate should have an x somewhere in
+here. I don't see it, but we will just go ahead and do
+
+0:01:51.930,0:01:53.430
+it. We'll press the latter
+
+0:01:53.430,0:01:54.550
+x
+
+0:01:54.550,0:01:55.950
+for execute.
+
+0:01:55.950,0:02:00.550
+It says, "Do we want to delete it these
+two files?" We can type "yes" or "no."
+
+0:02:00.550,0:02:02.350
+"yes." Get rid of them.
+
+0:02:02.350,0:02:05.659
+And they are now gone for good.
+
+0:02:05.659,0:02:06.750
+Another
+
+0:02:06.750,0:02:09.560
+really nicely command under
+
+0:02:09.560,0:02:12.040
+immediate. The plus key (+)
+
+0:02:12.040,0:02:13.899
+will actually do a
+
+0:02:13.899,0:02:18.139
+directory creation. So  let's create ourselves a
+directory for this
+
+0:02:18.139,0:02:19.290
+tutorial.
+
+0:02:19.290,0:02:21.519
+We'll press the plus key.
+
+0:02:21.519,0:02:23.119
+Create directory.
+
+0:02:23.119,0:02:27.979
+And we'll write tutorial-2.
+
+0:02:27.979,0:02:33.589
+And so now you're looking at right here
+in the middle: tutorial-2.
+
+0:02:33.589,0:02:37.469
+On any of these entries, you can press the
+enter key
+
+0:02:37.469,0:02:41.229
+and it will take you either into the
+file or into the directory.
+
+0:02:41.229,0:02:43.269
+So I pressed enter on tutorial-2
+
+0:02:43.269,0:02:46.489
+and now we are in an empty directory.
+
+0:02:46.489,0:02:49.079
+Let's go ahead and open up
+
+0:02:49.079,0:02:53.400
+a file to write in: tutorial dot
+
+0:02:53.400,0:02:55.689
+t x t
+
+0:02:55.689,0:02:57.720
+So now we are inside a file in there.
+
+0:02:57.720,0:03:02.889
+And if you remember from before we, can split
+our display in two with control x 2
+
+0:03:02.889,0:03:06.959
+So, see that in the bottom left over here is
+a control x and then the
+
+0:03:06.959,0:03:09.269
+number 2.
+
+0:03:09.269,0:03:13.409
+And then we can do that control x b
+to switch buffers.
+
+0:03:13.409,0:03:17.319
+And we'll switch back to the tutorial-2 by
+pressing enter.
+
+0:03:17.319,0:03:18.049
+So,
+
+0:03:18.049,0:03:19.649
+control x
+
+0:03:19.649,0:03:22.499
+2
+
+0:03:22.499,0:03:23.409
+split
+
+0:03:23.409,0:03:28.639
+and control x b
+
+0:03:28.639,0:03:32.919
+switch to a
+
+0:03:32.919,0:03:35.450
+different buffer
+
+0:03:35.450,0:03:38.559
+inside of one window
+
+0:03:38.559,0:03:40.019
+and control
+
+0:03:40.019,0:03:45.149
+x o, which I've just been using without telling you, is
+
+0:03:45.149,0:03:48.439
+jump to other buffer.
+
+0:03:48.439,0:03:51.149
+Okay, great.
+
+0:03:51.149,0:03:54.779
+So now let's go look at this directory.
+We can keep it around.
+
+0:03:54.779,0:03:57.139
+And i'm going to split this again in 2.
+to know
+
+0:03:57.139,0:04:00.459
+So now we have lots of little windows.
+You can drag them around and give outselves a
+
+0:04:00.459,0:04:02.879
+little more space with the mouse.
+
+0:04:02.879,0:04:05.249
+Today I'm going to go ahead and use the
+mouse.
+
+0:04:05.249,0:04:08.339
+And in this top one, let's go ahead and
+open up a terminal.
+
+0:04:08.339,0:04:11.879
+We can then do it inside of emacs and keep
+everything the same between all of our
+
+0:04:11.879,0:04:12.969
+systems.
+
+0:04:12.969,0:04:18.509
+So we don't have to jump back and forth
+between external terminal and emacs.
+
+0:04:18.509,0:04:21.320
+So I'm going to type meta x or the escape key.
+
+0:04:21.320,0:04:25.940
+And then the letter x.  I'm letting go of all keys
+and then I'm going to type the word "shell" s h
+
+
+0:04:25.940,0:04:28.030
+e l l
+
+0:04:28.030,0:04:29.630
+Press enter.
+
+0:04:29.630,0:04:31.330
+And I'm now looking a 
+
+0:04:31.330,0:04:33.669
+shell.
+
+0:04:33.669,0:04:35.930
+I'll add that down here.
+
+0:04:35.930,0:04:39.960
+Meta x shell
+
+0:04:39.960,0:04:41.600
+start a
+
+0:04:41.600,0:04:43.300
+bash command
+
+0:04:43.300,0:04:45.489
+line.  Great.
+
+0:04:45.489,0:04:47.309
+So inside that shell
+
+0:04:47.309,0:04:50.490
+we can do normal things of "ls".
+There's not much in yet.
+
+0:04:50.490,0:04:52.330
+ls -la
+
+0:04:52.330,0:04:55.689
+And here again, you'll see that tilde
+file that's created.
+
+0:04:55.689,0:05:00.659
+The regular tutorial dot t x t
+is the file that I'm editing down below.
+
+0:05:00.659,0:05:06.339
+and the tutorial dot t x t is a file
+that I am currently working on.
+
+0:05:06.339,0:05:07.620
+and the backup.
+
+0:05:07.620,0:05:10.580
+Now if we go to the tutorial-2,
+
+0:05:10.580,0:05:14.899
+in here, nothing has changed even though 
+we know we've created a tutorial
+
+0:05:14.899,0:05:18.789
+file and there is a backup for it. But there's
+nothing here.  What can we do?
+
+0:05:18.789,0:05:21.999
+There is actually the "g" key. If you press
+that,
+
+0:05:21.999,0:05:23.820
+will update the directory.
+
+0:05:23.820,0:05:24.709
+And then,
+
+0:05:24.709,0:05:27.789
+you'll have everything set up so that
+
+0:05:27.789,0:05:31.900
+it's currently updated.
+
+0:05:31.900,0:05:35.930
+And again, we're now in dired mode and up
+above
+
+0:05:35.930,0:05:37.230
+we have the shell.
+
+0:05:37.230,0:05:40.949
+And do a "pwd".  You can do all the normal
+things.
+
+0:05:40.949,0:05:41.770
+Now if you are
+
+0:05:41.770,0:05:44.160
+if you're trying to work on something
+and it's 
+
+0:05:44.160,0:05:46.539
+giving you trouble.
+
+0:05:46.539,0:05:49.960
+Let's see if I can cause some trouble here.
+
+0:05:49.960,0:05:54.619
+Now we're in. I've typed less tutorial dot t x t.
+And this is not a normal terminal.
+
+0:05:54.619,0:05:57.999
+less doesn't know how to jump up and
+down pages
+
+0:05:57.999,0:06:00.889
+because it is actually a text editing buffer
+So it's confused
+
+0:06:00.889,0:06:02.380
+and stuck here.  We could
+
+0:06:02.380,0:06:04.479
+press return and it would all be fine.
+
+0:06:04.479,0:06:08.050
+But let me show you the signals: how to
+break out of a tool that's being
+
+0:06:08.050,0:06:09.809
+grumpy.
+
+0:06:09.809,0:06:14.110
+Under signals, we have control c control
+c, which is break.  And I will try to
+
+0:06:14.110,0:06:19.009
+break out of it with the normal control c.
+So, let's try that.
+
+0:06:19.009,0:06:20.979
+And that seemed to go okay.
+
+0:06:20.979,0:06:24.759
+But we can also.  If that doesn't work you,
+can go down and you can press
+
+0:06:24.759,0:06:26.580
+the killed one.
+
+0:06:26.580,0:06:31.389
+And that really forces it to quit out
+completely.
+
+0:06:31.389,0:06:35.319
+So if ever you need to get out of tools,
+don't forget about that
+
+0:06:35.319,0:06:37.009
+tool right there.
+
+0:06:37.009,0:06:40.999
+And let's go back to out tutorials.
+
+0:06:40.999,0:06:45.940
+I'll hide everything by typing control x
+1.
+
+0:06:45.940,0:06:50.690
+And let's look at some functionality
+inside of a buffer and what we can do
+
+0:06:50.690,0:06:53.599
+with are finding things.
+
+0:06:53.599,0:06:57.430
+And. So last time we had control s,
+which was search
+
+0:06:57.430,0:07:00.000
+and control g to quit out of that.
+
+0:07:00.000,0:07:03.419
+Now if we want to replace text, we can
+do meta x
+
+0:07:03.419,0:07:04.759
+query
+
+0:07:04.759,0:07:08.080
+replace
+
+0:07:08.080,0:07:11.560
+"hello" with "world" by pressing enter for
+each one.
+
+0:07:11.560,0:07:14.759
+This is a nonsensical things doesn't
+exist just to show you.
+
+0:07:14.759,0:07:17.440
+And nothing happened because they were
+not.
+
+0:07:17.440,0:07:20.479
+But you can also have done
+
+0:07:20.479,0:07:21.809
+meta
+
+0:07:21.809,0:07:24.249
+percent, which is
+
+0:07:24.249,0:07:25.690
+equivalent
+
+0:07:25.690,0:07:27.389
+a k a
+
+0:07:27.389,0:07:30.289
+meta x query
+
+0:07:30.289,0:07:32.309
+replace.
+
+0:07:32.309,0:07:36.889
+Then, if we want to replace all of them without
+any asking us, because if there's a huge
+
+0:07:36.889,0:07:40.979
+document you may want to be replacing
+hundreds of instances,
+
+0:07:40.979,0:07:42.770
+what we can do is
+
+0:07:42.770,0:07:46.539
+meta x replace string rather than query.
+
+0:07:46.539,0:07:49.369
+So we can
+
+0:07:49.369,0:07:53.660
+doing meta x replace string.
+
+0:07:53.660,0:07:56.110
+And now if you notice that, I'm going to 
+control g
+
+0:07:56.110,0:07:57.380
+We'll do meta x
+
+0:07:57.380,0:07:58.909
+replace
+
+0:07:58.909,0:08:03.189
+I hit tab after typing r e p. It completed out
+
+0:08:03.189,0:08:07.060
+not very much, but if I did and l,
+type out replace.
+
+0:08:07.060,0:08:08.849
+I've hit tab.
+
+0:08:08.849,0:08:10.969
+Not if I just hit s t r,
+
+0:08:10.969,0:08:11.939
+if I complete it,
+
+0:08:11.939,0:08:15.030
+with the tab key, we'll get the full
+string.  But if I back that up and just
+
+0:08:15.030,0:08:19.479
+give a unique string that's good enough and I
+know that s t r is enough, press enter
+
+0:08:19.479,0:08:20.569
+here,
+
+0:08:20.569,0:08:22.009
+it figured out thats
+
+0:08:22.009,0:08:23.589
+replace string.
+
+0:08:23.589,0:08:26.190
+So let's replace the word string
+
+0:08:26.190,0:08:29.580
+with capital String.
+
+0:08:29.580,0:08:31.349
+And so now, if you look at here,
+
+0:08:31.349,0:08:33.210
+we have
+
+0:08:33.210,0:08:34.610
+capital String.
+
+0:08:34.610,0:08:36.880
+Which brings me to my next set of
+commands
+
+0:08:36.880,0:08:39.970
+that I would like to show you.
+
+0:08:39.970,0:08:42.070
+And that's how to
+
+0:08:42.070,0:08:45.410
+change the capitalization of
+letters.
+
+0:08:45.410,0:08:47.230
+So, we have
+
+0:08:47.230,0:08:49.140
+meta u,
+
+0:08:49.140,0:08:51.740
+which is uppercase.  So meta u
+
+0:08:51.740,0:08:56.750
+makes that upper case.
+
+0:08:56.750,0:08:59.680
+Uppercase for the next word.
+
+0:08:59.680,0:09:01.700
+If we do meta l,
+
+0:09:01.700,0:09:07.840
+that's lower case.
+
+0:09:07.840,0:09:10.120
+So if I do meta l,
+
+0:09:10.120,0:09:14.240
+it's lower case.  Meta l, lower case.
+
+0:09:14.240,0:09:16.920
+And a third one is meta c:
+
+0:09:16.920,0:09:21.390
+capitalize.
+
+0:09:21.390,0:09:24.430
+now i can check the spelling on
+capitalizes.
+
+0:09:24.430,0:09:26.330
+And if I type escape 
+
+0:09:26.330,0:09:27.690
+dollar sign,
+
+0:09:27.690,0:09:31.020
+that will let me spell check and then I'll
+look up
+
+0:09:31.020,0:09:35.960
+and then I realize that I want capitalize.  It is
+number one and I will press 1.
+
+0:09:35.960,0:09:36.699
+So now we've 
+
+0:09:36.699,0:09:39.520
+capitalize.  So let's go try capitalize
+
+0:09:39.520,0:09:40.740
+and we'll do
+
+0:09:40.740,0:09:42.970
+meta c.  And meta c and we've
+
+0:09:42.970,0:09:44.710
+capitalized those two.
+
+0:09:44.710,0:09:49.360
+Now really, we want lower case, so I'll do 
+meta l for lower.
+
+0:09:49.360,0:09:50.790
+And our string is now
+
+0:09:50.790,0:09:53.180
+lower case.
+
+0:09:53.180,0:09:56.670
+Now, if we want to spell check more than just
+one word, we can highlight a region.
+
+0:09:56.670,0:09:59.200
+So I am going to press control space
+
+0:09:59.200,0:10:01.910
+Press control space
+
+0:10:01.910,0:10:03.640
+to start
+
+0:10:03.640,0:10:05.770
+marking a region.
+
+0:10:05.770,0:10:07.140
+Control space.
+
+0:10:07.140,0:10:09.730
+I'm gonna go up a ways.
+
+0:10:09.730,0:10:11.140
+Maybe here.
+
+0:10:11.140,0:10:14.410
+I can then do a meta x
+
+0:10:14.410,0:10:16.550
+ispell
+
+0:10:16.550,0:10:17.279
+region.
+
+0:10:17.279,0:10:21.260
+And that will spell check the region here.
+And so we'll walk through and checked all of it.
+
+0:10:21.260,0:10:24.390
+And there was nothing that was actually
+wrong in there.
+
+0:10:24.390,0:10:26.870
+If we want to spell check an entire buffer,
+
+0:10:26.870,0:10:31.140
+we can do meta x ispell buffer,
+
+0:10:31.140,0:10:34.110
+and it's going to walk through the entire file
+that you're working on.
+
+0:10:34.110,0:10:36.560
+So that was meta x
+
+0:10:36.560,0:10:40.380
+ispell region
+
+0:10:40.380,0:10:45.430
+to check a small region.
+
+0:10:45.430,0:10:48.370
+Now, this is important especially with code
+where you don't want to check the whole
+
+0:10:48.370,0:10:50.670
+document because
+
+0:10:50.670,0:10:54.740
+a lot of the words that are in code
+aren't necessarily in a spelling dictionary.
+
+0:10:54.740,0:10:56.080
+So ispell
+
+0:10:56.080,0:10:57.550
+buffer
+
+0:10:57.550,0:11:02.120
+will get the entire file.
+
+0:11:02.120,0:11:05.610
+Check all of the buffer.
+
+0:11:05.610,0:11:07.100
+Okay. Great. So now we've
+
+0:11:07.100,0:11:09.700
+got some pretty nice functional utilities
+
+0:11:09.700,0:11:11.690
+utilities inside of emacs
+
+0:11:11.690,0:11:13.090
+and
+
+0:11:13.090,0:11:16.320
+we want to be able to talk to other
+people and in the past in my class I've
+
+0:11:16.320,0:11:20.030
+had people use ChatZilla for IRC
+
+0:11:20.030,0:11:24.190
+or the IRSSI command-line client.
+
+0:11:24.190,0:11:26.100
+But I'm show you another
+
+0:11:26.100,0:11:29.190
+tool that's different than
+
+0:11:29.190,0:11:30.970
+that
+
+0:11:30.970,0:11:35.650
+called "erc" inside of the emacs.  And if you 
+haven't installed it,
+
+0:11:35.650,0:11:42.500
+here's the command that you'll be
+typing. So sudo apt-get install erc.
+
+0:11:42.500,0:11:46.810
+Now if I do control x 2 to split
+and then a control x b
+
+0:11:46.810,0:11:48.020
+for buffer
+
+0:11:48.020,0:11:51.740
+the default happens to shell whether to go
+back to my shell but if i didn't
+
+0:11:51.740,0:11:53.970
+actually no i can't tab
+
+0:11:53.970,0:11:57.570
+i'll see the possible things will see
+that i want to go to store shelves store
+
+0:11:57.570,0:12:00.360
+suppressed or aspect pam
+
+0:12:00.360,0:12:01.780
+getting closer
+
+0:12:01.780,0:12:05.010
+s_a_t_ cult aum and shelled
+
+0:12:05.010,0:12:06.270
+jump to the shell
+
+0:12:06.270,0:12:12.700
+let's go ahead and just see if we can
+install the capsule
+
+0:12:12.700,0:12:17.090
+nouns and asking for a password and less
+these accidents the bottom and has a
+
+0:12:17.090,0:12:19.910
+poor hopefully my password macho
+
+0:12:19.910,0:12:23.840
+in this case it's the research tools
+password for the personal machine
+
+0:12:23.840,0:12:26.200
+and that is
+
+0:12:26.200,0:12:29.310
+commemorated is a transmission point
+party
+
+0:12:29.310,0:12:31.000
+two zero one one
+
+0:12:31.000,0:12:33.620
+the agm
+
+0:12:33.620,0:12:39.030
+now in my case it's already been
+installed and
+
+0:12:39.030,0:12:40.450
+insolvent
+
+0:12:40.450,0:12:44.720
+but if it hadn't spent it would have
+gone ahead and saw a lot tougher for you
+
+0:12:44.720,0:12:47.900
+so let's go ahead
+
+0:12:47.900,0:12:48.930
+and start up
+
+0:12:48.930,0:12:51.810
+the p_r_c_
+
+0:12:51.810,0:12:56.500
+pretty common for perot and his men tax
+university
+
+0:12:56.500,0:13:01.670
+start piracy inside imax
+
+0:13:01.670,0:13:05.560
+so what i think you is jump over to the
+other buffer cecil where i want to
+
+0:13:05.560,0:13:07.000
+appear takeover
+
+0:13:07.000,0:13:09.740
+olzu now that tax so escape
+
+0:13:09.740,0:13:11.470
+and letter acts
+
+0:13:11.470,0:13:15.190
+multi p_r_c_ impressive
+
+0:13:15.190,0:13:17.199
+thank you it's going to prompt four
+
+0:13:17.199,0:13:21.459
+the server that you want to connect to
+and i highly recommend irish sea on fri
+
+0:13:21.459,0:13:25.269
+i would because it's a great place to
+find all sorts of open-source developers
+
+0:13:25.269,0:13:29.160
+if in our case we actually have an
+internal on them demonstrate
+
+0:13:29.160,0:13:30.710
+and that's called
+
+0:13:30.710,0:13:33.200
+research
+
+0:13:33.200,0:13:35.510
+tools dot secom dot the nation
+
+0:13:35.510,0:13:39.630
+and internal network so if you're not
+patsy column on one of our machines
+
+0:13:39.630,0:13:40.759
+just follow along
+
+0:13:40.759,0:13:44.020
+and use the free hota hai receipt
+
+0:13:44.020,0:13:48.140
+and then you pick the port number of a
+six six six seven years of
+
+0:13:48.140,0:13:49.960
+is the default server
+
+0:13:49.960,0:13:52.710
+port number so press enter
+
+0:13:52.710,0:13:56.100
+now our next game comes from are
+
+0:13:56.100,0:14:00.240
+handing over user inside of the same
+research tools is not a good tourists so
+
+0:14:00.240,0:14:02.400
+i'm gonna go ahead in taipei
+
+0:14:02.400,0:14:04.620
+press center for my nickname
+
+0:14:04.620,0:14:08.370
+or heresy server doesn't require a
+password someone had concern for the
+
+0:14:08.370,0:14:09.790
+password
+
+0:14:09.790,0:14:14.420
+and i'm not except for the aristide
+server
+
+0:14:14.420,0:14:17.850
+what i think you would like to go ahead
+and join channel tunnel already exists
+
+0:14:17.850,0:14:20.280
+and that's human nature research
+
+0:14:20.280,0:14:22.280
+tools
+
+0:14:22.280,0:14:25.740
+and i'm now connect up to unit research
+tools
+
+0:14:25.740,0:14:27.469
+now there is another user unknown
+
+0:14:27.469,0:14:30.430
+and i'll see if that usual actually send
+you back a message
+
+0:14:30.430,0:14:31.940
+this happens to be
+
+0:14:31.940,0:14:32.990
+myself
+
+0:14:32.990,0:14:36.560
+login from another computer
+
+0:14:36.560,0:14:42.240
+and i can say hi
+
+0:14:42.240,0:14:44.660
+we're lucky here they go parson hiney
+
+0:14:44.660,0:14:46.460
+and we can also say
+
+0:14:46.460,0:14:50.250
+kurt colin high and that should appear
+
+0:14:50.250,0:14:54.160
+and now what the mostar she clients do
+it so i actually show you
+
+0:14:54.160,0:14:54.990
+that
+
+0:14:54.990,0:14:58.439
+type your name is in here it'll
+highlighted so that you were you notice
+
+0:14:58.439,0:15:00.960
+when people are talking back to you
+
+0:15:00.960,0:15:04.940
+so now you've got harris each act that
+you can do within sight of the max
+
+0:15:04.940,0:15:06.160
+and you've got
+
+0:15:06.160,0:15:08.660
+your directory and it no ten-year shell
+
+0:15:08.660,0:15:11.090
+it looks like we've got pretty much
+everything you need to
+
+0:15:11.090,0:15:12.449
+to get going on
+
+0:15:12.449,0:15:17.550
+doing some actual shell scripting so
+let's go ahead and jump into
+
+0:15:17.550,0:15:19.470
+another topic
+
+0:15:19.470,0:15:21.750
+summoned jump back to you
+
+0:15:21.750,0:15:24.760
+different offer and see if we got on the
+buffers
+
+0:15:24.760,0:15:29.020
+and
+
+0:15:29.020,0:15:32.110
+simmering here that's my home directory
+
+0:15:32.110,0:15:36.730
+research tools i have a shell so here i
+mean the shell
+
+0:15:36.730,0:15:41.550
+yes i do know special there's just
+tutorial dot t_ extn jittery about sixty
+
+0:15:41.550,0:15:43.920
+tool dot the backup file
+
+0:15:43.920,0:15:46.250
+so let's go ahead and
+
+0:15:46.250,0:15:48.530
+open up a shell scripts
+
+0:15:48.530,0:15:51.890
+unit control access control of
+
+0:15:51.890,0:15:54.540
+and and my file name is going to be
+
+0:15:54.540,0:15:56.230
+simple thought
+
+0:15:56.230,0:15:57.880
+s_h_
+
+0:15:57.880,0:15:59.100
+press enter
+
+0:15:59.100,0:16:03.280
+and there's nothing in here now the
+first line initial script
+
+0:16:03.280,0:16:05.570
+there's a special syntax to use
+
+0:16:05.570,0:16:08.070
+ke specify the earring a shell script
+
+0:16:08.070,0:16:10.960
+and that's a pound the number sign
+
+0:16:10.960,0:16:12.620
+the escalation point
+
+0:16:12.620,0:16:14.100
+and then the script
+
+0:16:14.100,0:16:18.470
+scripting tool you wanna run so that
+could be perot or
+
+0:16:18.470,0:16:21.680
+group b_ or placed on our number too
+
+0:16:21.680,0:16:24.360
+in our case for any sadat shown
+
+0:16:24.360,0:16:28.770
+and now if you noticed there's actually
+color on this that we haven't had before
+
+0:16:28.770,0:16:32.390
+with scripting languages when you're or
+any other program in management imax
+
+0:16:32.390,0:16:34.760
+understands that you're in that moment
+
+0:16:34.760,0:16:36.969
+you can see here since the shell scripts
+
+0:16:36.969,0:16:39.460
+and it now knows that that's okay
+
+0:16:39.460,0:16:43.060
+shell script and select color eyes
+things based on what i can person the
+
+0:16:43.060,0:16:44.500
+tax of three type
+
+0:16:44.500,0:16:46.100
+echo
+
+0:16:46.100,0:16:48.000
+hello worlds
+
+0:16:48.000,0:16:51.940
+now if we cannot mcclellan it would be
+just black and white
+
+0:16:51.940,0:16:53.770
+and if we have a comment
+
+0:16:53.770,0:16:56.790
+comments are inline
+
+0:16:56.790,0:17:00.050
+your callers may be different depending
+on how your nexus at iop
+
+0:17:00.050,0:17:03.280
+but it's great to have coloring to help
+show you what's going on
+
+0:17:03.280,0:17:08.000
+so we've now say this with control x
+control us and i've already stated by
+
+0:17:08.000,0:17:09.220
+habit
+
+0:17:09.220,0:17:12.740
+and let's go to our other buffered
+
+0:17:12.740,0:17:17.900
+and co finer shell thank you and i lost
+my cell
+
+0:17:17.900,0:17:23.589
+now inside of that shell we can look at
+the permissions here
+
+0:17:23.589,0:17:25.840
+and this tells me that we have a problem
+
+0:17:25.840,0:17:29.100
+my people of are you reading stories but
+
+0:17:29.100,0:17:31.160
+letters over on the left tell me
+
+0:17:31.160,0:17:33.620
+permissions for the file
+
+0:17:33.620,0:17:37.390
+so here it says the owner of the file
+can read and write
+
+0:17:37.390,0:17:42.110
+anybody in the same group can read and
+end-user ounces and can read need to
+
+0:17:42.110,0:17:43.720
+change that
+
+0:17:43.720,0:17:45.670
+to be executed
+
+0:17:45.670,0:17:50.799
+so if you want to execute the script we
+can say c_h_a_ mind which is change
+
+0:17:50.799,0:17:52.600
+mods
+
+0:17:52.600,0:17:54.780
+and we can say
+
+0:17:54.780,0:17:57.120
+costs
+
+0:17:57.120,0:17:58.910
+execute
+
+0:17:58.910,0:18:02.900
+and then we can see our script sample
+dot s_h_
+
+0:18:02.900,0:18:08.510
+and press enter it's quick change this
+template and execute bit replied onto
+
+0:18:08.510,0:18:11.580
+the programs that we do know is that
+shell sample
+
+0:18:11.580,0:18:13.750
+uh... passage
+
+0:18:13.750,0:18:19.690
+you now see that it's marked an axe on
+every one of those
+
+0:18:19.690,0:18:23.440
+weakening around are simple but essays
+from the shona
+
+0:18:23.440,0:18:27.260
+now if we take simple dot passage
+
+0:18:27.260,0:18:28.670
+it's not found
+
+0:18:28.670,0:18:33.380
+what's going on here is that we have a
+path and color path
+
+0:18:33.380,0:18:36.929
+and that path does not include the
+current directory
+
+0:18:36.929,0:18:39.500
+to get around that weekend to you
+
+0:18:39.500,0:18:44.010
+dot slash sample thought xh
+
+0:18:44.010,0:18:46.350
+and we've now got our first program
+
+0:18:46.350,0:18:47.940
+they were stored on a computer
+
+0:18:47.940,0:18:52.549
+and we've run simple but i think units
+sent back to us hello world
+
+0:18:52.549,0:18:55.220
+now women are always want to do that
+maybe you want
+
+0:18:55.220,0:18:59.710
+stay with michelle anyone at do it's
+actually it called compile
+
+0:18:59.710,0:19:03.210
+in this case friesen were compiling a
+strange way we're just gonna run as
+
+0:19:03.210,0:19:07.430
+correct and that is the actual script so
+i made you mad at acts
+
+0:19:07.430,0:19:09.830
+compiled
+
+0:19:09.830,0:19:13.690
+now wants to run by default something
+called make we're gonna ignore that
+
+0:19:13.690,0:19:17.980
+and we'll see if we can take simple dot
+s_h_
+
+0:19:17.980,0:19:19.580
+now didn't find it
+
+0:19:19.580,0:19:23.700
+and what we have to do instead is meta
+tags
+
+0:19:23.700,0:19:25.880
+had compiled
+
+0:19:25.880,0:19:29.700
+and then we give its now look at the
+control a ruby's keys at work almost
+
+0:19:29.700,0:19:30.880
+anywhere
+
+0:19:30.880,0:19:33.760
+dot slash sample dot s_h_
+
+0:19:33.760,0:19:36.680
+and now we actually have anything
+
+0:19:36.680,0:19:40.130
+in the buffer below and the compiler
+shin window which really isnt compiling
+
+0:19:40.130,0:19:41.590
+a just running for us
+
+0:19:41.590,0:19:44.070
+and we can see our script running
+
+0:19:44.070,0:19:46.320
+so then we can go in
+
+0:19:46.320,0:19:47.049
+and
+
+0:19:47.049,0:19:50.450
+keep running our script
+
+0:19:50.450,0:19:51.730
+so that works pretty well
+
+0:19:51.730,0:19:55.070
+and let's go ahead and create a python
+scripts to go along with our shell
+
+0:19:55.070,0:19:55.900
+script
+
+0:19:55.900,0:19:57.190
+and we'll call it
+
+0:19:57.190,0:20:00.270
+simple dot p wife for python
+
+0:20:00.270,0:20:04.230
+so now if you look here it says ok were
+impact on the road
+
+0:20:04.230,0:20:08.160
+into the header for pythons little bit
+different the one i tend to use is tries
+
+0:20:08.160,0:20:08.820
+to be
+
+0:20:08.820,0:20:10.280
+more flexible
+
+0:20:10.280,0:20:12.250
+cisco ahead incompetence
+
+0:20:12.250,0:20:14.049
+user
+
+0:20:14.049,0:20:18.000
+eunji pipeline that's gonna search in
+the person's path for that
+
+0:20:18.000,0:20:20.080
+python program
+
+0:20:20.080,0:20:21.980
+and print
+
+0:20:21.980,0:20:23.630
+hello
+
+0:20:23.630,0:20:25.620
+world
+
+0:20:25.620,0:20:28.390
+python
+
+0:20:28.390,0:20:30.410
+go ahead and say that
+
+0:20:30.410,0:20:31.880
+ends
+
+0:20:31.880,0:20:33.880
+if we go back to you
+
+0:20:33.880,0:20:35.660
+the
+
+0:20:35.660,0:20:38.110
+shelves
+
+0:20:38.110,0:20:40.799
+are now in the show i did ah...
+
+0:20:40.799,0:20:44.610
+control x indiana types torres h tam
+
+0:20:44.610,0:20:48.910
+now michelle for title a special we have
+sampled up i-ninety excusable
+
+0:20:48.910,0:20:50.139
+association mine
+
+0:20:50.139,0:20:52.640
+plus axe to make it executed bold
+
+0:20:52.640,0:20:55.180
+and sample pocket
+
+0:20:55.180,0:20:57.170
+or special sample
+
+0:20:57.170,0:20:58.440
+pint
+
+0:20:58.440,0:21:03.160
+any receipt is changed colors to green
+that's how execute what
+
+0:21:03.160,0:21:05.710
+subsample occupied
+
+0:21:05.710,0:21:09.770
+perry we had our first report
+
+0:21:09.770,0:21:10.929
+now up here
+
+0:21:10.929,0:21:14.950
+how we can go ahead and do the same
+thing that i can say maddox compile
+
+0:21:14.950,0:21:20.100
+and i can change their simple the
+passage to sample dot pine
+
+0:21:20.100,0:21:23.870
+and i've had to control k here to tell
+to me and wine
+
+0:21:23.870,0:21:25.980
+as part of breast cancer
+
+0:21:25.980,0:21:27.200
+and moved now
+
+0:21:27.200,0:21:30.100
+ron harper transcript
+
+0:21:30.100,0:21:32.850
+now there's a hopeful thing when you
+start having a lot of scripts and you're
+
+0:21:32.850,0:21:35.510
+building up a suite of tools
+
+0:21:35.510,0:21:36.880
+and it's called speak bar
+
+0:21:36.880,0:21:40.000
+mentor text speed
+
+0:21:40.000,0:21:42.410
+ninety six p_m_ press tab
+
+0:21:42.410,0:21:43.460
+completed
+
+0:21:43.460,0:21:44.960
+and we now have
+
+0:21:44.960,0:21:46.460
+this he knew the widget
+
+0:21:46.460,0:21:52.450
+that'll help us maneuver around and our
+project
+
+0:21:52.450,0:21:57.140
+in the second to reorganize my windows
+so i can actually see this thing he and
+
+0:21:57.140,0:22:02.370
+united syndrome
+
+0:22:02.370,0:22:06.059
+now people are eating currently
+configured to notice shell scripts
+
+0:22:06.059,0:22:09.290
+but it will notice if we have honor
+python scripts
+
+0:22:09.290,0:22:14.540
+fell into a control acts and w and that
+rates to a different file
+
+0:22:14.540,0:22:15.429
+sold to you
+
+0:22:15.429,0:22:18.420
+simple
+
+0:22:18.420,0:22:21.470
+people to tough time
+
+0:22:21.470,0:22:22.330
+and
+
+0:22:22.330,0:22:26.669
+if you look over on the right magically
+speedo resorted to you
+
+0:22:26.669,0:22:29.340
+uh... show us a sample to that time
+
+0:22:29.340,0:22:31.150
+can't go back to
+
+0:22:31.150,0:22:33.650
+are directorate modem hit town
+
+0:22:33.650,0:22:35.960
+you control except the
+
+0:22:35.960,0:22:37.309
+during that time
+
+0:22:37.309,0:22:41.110
+now here's our list of buffers i'm
+looking forward to tory only answered
+
+0:22:41.110,0:22:44.420
+retreated tutorial to you
+
+0:22:44.420,0:22:44.970
+and
+
+0:22:44.970,0:22:48.960
+this is way out of determine oppressed
+g_m_ will catch up here
+
+0:22:48.960,0:22:53.580
+so you can see here that we do have a
+simple torres h
+
+0:22:53.580,0:22:54.690
+and that's
+
+0:22:54.690,0:22:59.210
+and not showing up in the city parks was
+just showing us our python scripts
+
+0:22:59.210,0:23:00.140
+zarate head
+
+0:23:00.140,0:23:03.279
+i'm sure you can configure it to you
+show shell scripts to you
+
+0:23:03.279,0:23:06.180
+but uh... that the other their time
+
+0:23:06.180,0:23:07.299
+let's go ahead
+
+0:23:07.299,0:23:08.270
+and
+
+0:23:08.270,0:23:12.610
+out make a mistake in our python scripts
+
+0:23:12.610,0:23:14.240
+what am i
+
+0:23:14.240,0:23:15.730
+doing
+
+0:23:15.730,0:23:18.000
+that we try to run the script
+
+0:23:18.000,0:23:19.780
+and if we go over here
+
+0:23:19.780,0:23:24.179
+and i will notice this is not executed
+wilson and go to the immediate
+
+0:23:24.179,0:23:29.149
+and we'll see if i can find
+
+0:23:29.149,0:23:30.030
+operates
+
+0:23:30.030,0:23:32.200
+center here
+
+0:23:32.200,0:23:34.640
+change mowing
+
+0:23:34.640,0:23:36.010
+capital time
+
+0:23:36.010,0:23:38.000
+can't
+
+0:23:38.000,0:23:41.440
+i'm guessing here that i have type in
+the binary numbers there was a little
+
+0:23:41.440,0:23:42.529
+less than fun
+
+0:23:42.529,0:23:44.510
+don't have seven five five
+
+0:23:44.510,0:23:49.580
+which is the way to have a read write
+execute breed executing read execute and
+
+0:23:49.580,0:23:52.520
+they're just like the other ones
+
+0:23:52.520,0:23:56.740
+info that you can go ahead and go way
+back to that show into a c_h_ mon plus
+
+0:23:56.740,0:23:58.630
+packs
+
+0:23:58.630,0:24:02.179
+let's go ahead and run the script cement
+acts
+
+0:24:02.179,0:24:04.280
+compile
+
+0:24:04.280,0:24:07.140
+endometriosis to be simple to
+
+0:24:07.140,0:24:09.890
+and it's going to have an error
+
+0:24:09.890,0:24:11.930
+figures show ever seen
+
+0:24:11.930,0:24:12.880
+pipeline
+
+0:24:12.880,0:24:14.770
+telling us that on line five
+
+0:24:14.770,0:24:18.029
+it didn't like what am i doing question
+mark
+
+0:24:18.029,0:24:19.540
+and when we continue
+
+0:24:19.540,0:24:24.220
+is is actually coming in to jump to the
+next here mass control x and that's the
+
+0:24:24.220,0:24:29.560
+backhoe his tacky begins with the till
+the right about the time
+
+0:24:29.560,0:24:33.210
+and it will jump to the next problem why
+so if you're a large set of code and the
+
+0:24:33.210,0:24:35.880
+typo or problem of some sort
+
+0:24:35.880,0:24:39.770
+you can then jump through those problems
+and affix them markets walter's comment
+
+0:24:39.770,0:24:43.300
+that out
+
+0:24:43.300,0:24:47.169
+so that's pretty exciting in terms of
+being able to run scripts
+
+0:24:47.169,0:24:51.580
+and we also unable search across
+multiple things so let's try to come and
+
+0:24:51.580,0:24:55.850
+who we can actually have i'd grab that
+spills into
+
+0:24:55.850,0:24:57.289
+he met
+
+0:24:57.289,0:25:01.990
+and let's go ahead and and run mena acts
+groove references research across the
+
+0:25:01.990,0:25:03.640
+directory
+
+0:25:03.640,0:25:05.500
+and that we will say
+
+0:25:05.500,0:25:06.650
+plant
+
+0:25:06.650,0:25:13.650
+and storks soar in a search for the word
+printed in any file in this directory
+
+0:25:13.720,0:25:17.350
+and what we've got here is this the
+examples that show nuns
+
+0:25:17.350,0:25:20.350
+and we can click on one and it will take
+us to it
+
+0:25:20.350,0:25:22.470
+we can also use that go to next
+
+0:25:22.470,0:25:24.539
+here and and control act
+
+0:25:24.539,0:25:29.109
+back quote and it will jump to the next
+morning to see the arab moved down and
+
+0:25:29.109,0:25:31.990
+the files changed control x that quote
+
+0:25:31.990,0:25:36.280
+have now moved through all three files
+unseemly to the instance of print
+
+0:25:36.280,0:25:41.809
+seeking a search around manipulated and
+work with a wide range of files
+
+0:25:41.809,0:25:42.830
+hope you enjoyed it
+
+0:25:42.830,0:25:44.990
+the school's to recruitment he
+
+0:25:44.990,0:25:46.590
+into building more to come thank you
+

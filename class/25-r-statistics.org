@@ -1,0 +1,305 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 25: R for statistical analysis
+#+AUTHOR:    Kurt Schwehr / Rob Braswell
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-12-01 Thu>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: r statistics cran
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+Rob Braswell will be teaching lecture today on using [[http://cran.r-project.org][R for statistical analysis]].
+
+* See Also
+
+* Setup
+
+Start emacs.
+
+Get the class notes:
+
+#+BEGIN_SRC sh
+cd ~/projects/researchtools
+hg pull
+hg update
+
+mkdir ~/class/25
+cd ~/class/25
+ln -s ~/projects/researchtools/class/25-r-statistics.org . # Make a "symbolic/soft link"
+
+wget http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/25-R-lab1-Intro.pdf
+wget http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/25-R-lab2-CO2.pdf
+wget http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/25-R-lab3-ANOVA.pdf
+
+xdg-open 25-R-lab1-Intro.pdf
+#+END_SRC
+
+#+BEGIN_SRC sh
+sudo apt-get install r-base
+dpkg -L r-base-core | grep bin
+R
+q()
+#+END_SRC
+
+* Why R?
+
+- Free
+- Tons of addons
+- Lots of developers and users
+
+Why not R?
+
+- R syntax is a little awkward
+- Complex heirarchy of objects - a little opaque
+- It's not python
+
+* Links / See also
+
+- usingR.pdf
+- http://r-project.org
+- R-intro.pdf
+- EO895 Course material  http://waage/~braswell/eos864/
+- http://waage.sr.unh.edu/~braswell/eos864/
+- http://r-bloggers.com
+- graphics gallery http://addictedtor.free.fr/graphiques/thumbs.php
+
+* Data types
+
+| vector      | all the same type                              |
+| array       | can have two or more dimensions, can be ragged |
+| matrix      | stricter than arrays.  2d and rectangular      |
+| list        | similar to python list                         |
+| factor      | describes discrete classes                     |
+| data frames |                                                |
+
+* R is a functional language
+
+* Introduction to R
+
+#+BEGIN_SRC r
+3
+x <- 3
+x = 3
+# comment
+# Both = and <- are the same
+#+END_SRC
+
+=+= is the continuation mark.  R is asking you for more stuff
+
+*WARNING:* R starts counting from 1, *not* zero.
+
+Also comes with build in datasets
+
+#+BEGIN_SRC r
+letters
+sunspots
+#+END_SRC
+
+Concatenate:
+
+#+BEGIN_SRC r
+x = c(2,4,5,60)
+#+END_SRC
+ 
+* Data frames
+
+- attach
+- detach
+
+* Searching for help
+
+Use this with Google searches:
+
+#+BEGIN_EXAMPLE
+site:r-project.org hyperbolic arc tangent
+#+END_SRC
+
+* History
+
+#+BEGIN_SRC r
+3
+x <- 3
+x = 3
+# comment
+# Both = and <- are the same
+sin(.1)
+y = sin(.1)
+4/3
+4/3.
+# This next line is not correct with just "stuff"
+# stuff
+?
+q
+3+
+4
+?
+# Control C or escape to get out of the line continuation
+sunspots
+z = x+sin(pi/4)* (x -
+ 4.5 + log(4.5) / 44.9)
+z
+# the + was added by R saying that it wants more input
+letters
+x = letters
+x[0]
+x[1]
+x[2]
+x[-1]
+x = c(1,2,3,4,5)
+x[-2]
+x = c(2,4,5,60)
+x
+month.abb
+month
+
+sunspot.month
+y = seq(1,4)
+y
+y/3
+seq(1,3)
+seq(1,3,by=0.1)
+q = 99
+q_vector = c(99)
+q
+q_vector
+q == q_vector
+n = c(3,4,100)
+m = c(4,4,4)
+n < m
+n[2]
+n[2]*m[3]
+n[1:2]
+n[1:2] + c(m[3], 5) 
+
+help(":")
+
+length(n) # len then press tab and it will complete to length
+mode(m)
+help(mode)
+pals = c('mike', 'steve', 'maria', 'maggie')
+length(pals)
+mode(pals)
+pals == 'steve'
+pals.named.steve = (pals == 'steve')
+pals.named.steve
+mode(pals.named.steve)
+aww = c(23, 44.45, 2002)
+names(aww) = c('count','value', 'year')
+aww
+attributes(aww)
+x = runif(100)
+x
+help (runif)
+y = x + 0.2*rnorm(100)
+plot(x,y)
+plot(x,y, type='b')
+plot(x,y, type='l')
+plot(x,y, type='l', xlab='Width', ylab='Height')
+help(plot)
+
+x = seq(0, 2*pi, by=pi/100)
+y.true = sin(x)
+y.obs = y.true + rnorm(length(y.true))
+y
+y.smoo = smooth.split(x,y.obs)
+y.smoo = smooth.spline(x,y.obs)
+y.low = lowess(x, y.obs)
+help (lowess)
+plot (x,y.obs, pch=16, cex=0.6, col='darkgray', ylab='y')
+lines(x, y.true, col='ping', lwd=3)
+lines(x, y.true, col='pink', lwd=3)
+lines(y.smoo$x, y.smoo$y, lwd=2, col='purple')
+lines(y.low$x, y.low$y, lwd=2, col='green')
+legend('bottomleft', c('True', 'Spline', 'Lowess'), lwd=c(3,2,2),
+col=c('pink', 'purple','green'))
+ind.max = which(y.obs == median(y.obs))
+ind.max
+median(y.obs)
+help (which)
+
+x.max = x[ind.max]
+x.max
+y.max = y.obs[ind.max]
+y.max
+points(x.max, y.max, pch=4)
+text(x.max,y.max, paste("Median:",format(y.max,digits=4)), pos=4)
+help(paste)
+paste('the answer is', log(1.31))
+paste('the answer is', format(log(1.31), digits=3))
+plot(x,y.obs, pcg=16, cex=0.6, col=rainbow(length(x))
+[rank(y.obs)])
+noise = abs(y.true - y.obs)
+plot(x,y.obs, pch=16, cex=noise)
+cut(noise, 3, c('L', 'M', 'H'))
+
+help(math)
+??math
+
+noise.level = cut(noise, 3, c('L', 'M', 'H'))
+plot(x, y.obs, pch=as.character(noise.level), cex=0.6)
+help(cut)
+
+list(23, 'resp', c(1,4,2), 33.3, list('day', 5), 1024)
+
+dat = c(1,3,7,9,11,35)
+dat
+dim(dat)
+help(dim)
+dim(dat) = c(2,3)
+dat
+my.data = data.frame(age=seq(10), wt=rnorm(10,30), grp=sample(c("A","B"),10,repl=T))
+# mydata
+my.data
+my.data[4,]
+my.data[,2]
+names(my.data)
+my.data$wt
+plot(my.data$age, my.data$wt)
+plot(wt ~
+help (~)
+help ("~")
+plot(wt ~ age, data=my.data, pch=as.character(grp))
+age
+
+attach(my.data)
+age
+plot(grp,wt)
+t.test(wt[grp=='A'], wt[grp=='B'])
+detach(my.data)
+
+trees
+names(trees)
+summary(trees)
+help(trees)
+plot(trees)
+plot(trees, panel=panel.smooth)
+trees
+#plot(trees$Height, panel=panel.smooth)
+
+pdf('plot.pdf')
+plot(rnorm(100))
+dev.off()
+
+# plot(trees$Height, panel=panel.smooth)
+plot(trees$Height)
+plot(trees)
+# plot(trees, panel=panel.smooth)
+
+attach(trees)
+# plot(Height, panel=panel.smooth)
+names(trees)
+help(plot)
+# plot(Height, Volume, panel=panel.smooth)
+# help(plot-data.frame)
+plot(Height, Volume)
+plot(Height)
+
+help (savehistory)
+savehistory('class-25-history-2.log')
+#+END_SRC

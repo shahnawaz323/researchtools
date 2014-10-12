@@ -1,0 +1,324 @@
+#+STARTUP: showall
+
+# FIX: the filename should be 6-keepassx-dropbox.org.  I will change
+# that after the semester.
+
+#+TITLE:     Class 6: KeePassX and Cloud storage with DropBox (DRAFT)
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-09-15 Thu>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+Today we will
+
+* Managing passwords with KeePassX                       :keepassx:passwords:
+
+[[http://www.keepassx.org/][KeePassX]] is a cross platform password manager that encrypts the data
+before saving it to disk.  You can download a Windows or Mac version
+of the software [[http://www.keepassx.org/downloads][here]].  The software is already installed in your Linux
+virtual machine.
+
+There are other alternatives to KeePassX, such as [[https://agilebits.com/products/1Password][1Password]].  They do
+not support linux, but give you a web version: [[http://help.agile.ws/1Password3/support_non_mac.html][1Password Support For Linux]].
+KeePassX is not available on the iPhone/iPad/Android devices, so if
+you have the Money, you might consider a tool like 1Password.
+
+** Setup KeePassX
+
+First add a quick link to the Panel across the top of Ubuntu.  Right
+click on the gray bar at the top of the display and select "Add to
+Panel...".  Double click "Application Launcher..." (the 2nd item from
+the top).  Click the small arrow to the left of "Accessories", select
+KeePassX, and "Add".  You can now close the "Add to Panel" tool.
+
+Start KeePassX.  Select "File" -> "New Database".  You now need to
+create a "Master Key".  This is the one password that will give you
+access to all the other passwords.  If you forget this password, you
+will loose all your passwords!!!!  
+
+Save the KeePassX database!  I named mine with my name.  Later we will
+move this file to your DropBox file to share it with other computers
+that you use, but for now, put it in your home directory.
+
+The program lets you organize passwords into groups.  I have a number
+of passwords associated with CCOM systems and you do too.  Let's
+create a group called "CCOM".  "Groups" -> "Add New Group...".  For
+title, put "CCOM".  You can pick what ever icon you wish.
+
+Select the CCOM group.
+
+You can now create password entries for web pages, computers, and
+other software.  I also often put license keys for software in as
+entries.  "Entries" -> "Add New Entry"
+
+Now create an entry for the virtual machine:
+
+| Field    | Value                                |
+|----------+--------------------------------------|
+| Title    | Virtual Machine, Research Tools 2011 |
+| Username | researchtools                        |
+| URL      |                                      |
+| Password | !rt2011vm                            |
+| Comment  | I also created my own user called "" |
+
+Now create an entry for your CCOM wiki account and your regular CCOM
+account.
+
+** Unique passwords for each account
+
+You should always use a different password for each service or login
+system that you use.  It is very hard to come up with unique passwords
+for each system.  You also need to change your password periodically.
+This gets extremely challenging to do.  KeePassX can help!  It has a
+"Generate" function to create random passwords.  
+
+Create a new entry called "test".  To the right of the "Repeat" entry
+for passwords, there is a "Gen" button.  Press that and you will see a
+"Password Generator" tool appear.  You can control the length of the
+password and which characters will be in the password.  The best
+possible password will be long and have characters from every
+category.  Select all the types and the ensure to use all character
+groups check boxes.  Set the password length to 25 characters.  Press
+the eye icon to let you see the results and then press generate.  You
+will see something like this:
+
+#+BEGIN_EXAMPLE 
+Jbzc }K#/q!_ -N8c24QsS@z#
+#+END_EXAMPLE
+
+You are not going to be able to remember this password, but it is
+super secure.  However, if you need to type the password into an iOS
+(iphone/ipad) or Android device, you are going to go crazy.  A
+reasonable compromise for accounts where that is necessary is to pick
+lower letters and numbers with 15 characters.  For example, I got:
+
+#+BEGIN_EXAMPLE 
+4ox3oc2ejc7lx1u
+#+END_EXAMPLE
+
+If you will have to remember the password without KeePassX, you can
+pick your own password or try the "Pronouceable" tab.  For example, I
+got:
+
+#+BEGIN_EXAMPLE 
+nuOsackujBeDren
+#+END_EXAMPLE
+
+** Make sure to save
+
+After you create, modify or delete any entry, make sure to save!
+
+* Setting up drop box                                                 :cloud:
+
+Being able share files easily can make or break your work.  There are
+many many services to automatically sync files between computers.
+There are many of these services:
+
+http://en.wikipedia.org/wiki/List_of_online_backup_services
+
+As a student at UNH, you have access to a Microsoft Live [[http://skydrive.live.com][SkyDrive]] with
+25GB of space via [[http://studentemail.unh.edu/?q=content/skydrive][WildcatsMail! SkyDrive]].  However, this service only
+supports Linux via a web browser.  Be warned, faculty and staff do not
+have access to a SkyDrive through UNH, so they might not have
+experience with it if you need help.
+
+Common services that support Linux are:
+
+- https://www.jungledisk.com/
+- http://www.sugarsync.com/
+- https://spideroak.com/
+
+One of the most popular services is DropBox.  If you do not have a
+drop box account, you can either click this link below (this will give
+both
+you and me a referal credit) or if you have someone else who can send
+you a referral, then you can both get a little extra free storage
+space over the default 2GB free account.  If you have a .edu email
+address, be sure to use that email address as dropbox gives more space
+to education accounts.  
+
+** Limitations of dropbox
+
+Sadly, if you don't have internet, dropbox will not work.  Even if you
+have multiple machines on a ship network that can talk to each other,
+dropbox does not currently support synchronization unless it can talk
+back to the company's main servers.  There are other ways to share
+files on a ship than range from mounting network drives, to portable
+drives/usb sticks, and more.
+
+It is possible that some of the OpenSource alternatives to DropBox
+that are being developed may become useful in restricted network
+environments, but I cannot yet offer any advice.  See for example:
+
+- http://yro.slashdot.org/story/11/06/16/1618206/Open-Source-Alternative-To-Dropbox
+- http://en.wikipedia.org/wiki/SheevaPlug
+
+** Security warning for cloud storage
+
+Remember that this is a company storing your files on their servers.
+They have a privacy policy that says they will not look at your files,
+but that does not guarantee that they will not be hacked or that a
+government agency might force them to reveal your files.
+Additionally, it might be illegal to save certain types of data to the
+cloud (for example, confidential personal data or restricted data such
+as ITAR controlled material).
+
+Think before putting files into a cloud drive!!!
+
+You can encrypt data before putting into the service for extra
+protection.  For example, KeePassX does not store your raw passwords,
+so it should be safe for use with DropBox.
+
+An example of one of the security issues:
+
+http://it.slashdot.org/story/11/04/08/1838220/Dropbox-Authentication-Insecure-By-Design
+
+
+** Creating an account
+
+This is my referral link.  Please feel free to use a referral from
+someone else.
+
+http://db.tt/qj5etLX 
+
+NOTE: I am not sure if it really is okay for a professor to give out a
+referral URL in class.  If you are not comfortable with that, get a
+referral from someone you know who already has a dropbox account.  You
+do not want to miss out on a little extra free space.
+
+You can get extra space by referring other people you know (be warned
+that other people might not appreciate the invite).  Once you have
+signed in, make sure to go to this address to verify that are getting
+credit for your educational account and to get extra free space.
+
+https://www.dropbox.com/edu
+
+You can pay for more space if you desire, but for this class, I am
+assuming that you only have the base free account.  You will not need
+more space than that for the class.
+
+** Installing Drop Box
+
+WARNING: If you use these notes after  September 2011, there is like a
+newer version of dropbox.  You will want to skip to the next section
+and download dropbox through a web browser.
+
+If dropbox is not installed in your virtual machine (my first version
+of the Ubuntu VM does *not* have dropbox), you need to install it.
+This is not open source software, so you will have to go through a 
+different process for normal software in Ubuntu.  First you will need
+to download an Ubuntu package from here:
+
+https://www.dropbox.com/downloading?os=lnx
+
+You will need to get the 32-bit Ubuntu version (referred to as "x86 .deb")
+
+e.g.
+
+#+BEGIN_SRC sh
+wget --output-document=nautilus-dropbox_0.6.9_i386.deb https://www.dropbox.com/download?dl=packages/nautilus-dropbox_0.6.9_i386.deb
+#+END_SRC
+
+It is a good idea to verify that what we downloaded is what we
+expected.  First, we can use the file command from the last class to
+ask if it knows what type of file this is:
+
+#+BEGIN_SRC sh
+file *.deb
+nautilus-dropbox_0.6.9_i386.deb: Debian binary package (format 2.0)
+#+END_SRC
+
+We will talk more about checksums, but there the basic idea is that
+you can run an algorithm on the contents of a file to make sure that
+the file probably contains the same bytes that you expect it to.  The
+[[http://en.wikipedia.org/wiki/MD5][md5 algorithm]] is one of the most commonly used today.  Give it a try
+and see if you get the same results:
+
+#+BEGIN_SRC sh
+md5sum *.deb
+64f62fc8921d9ddc1b24c2b911c48921  nautilus-dropbox_0.6.9_i386.deb
+#+END_SRC
+
+If you were able to download the deb correctly, you can skip the next
+step.  If you got a file that did not match, you will need to try to
+download the deb via a web browser in the next section.
+
+** Getting dropbox via a web browser
+
+If you are working through these notes after September 2011, you will
+like be facing a newer version of the "deb" package.  Get it via a web
+browser inside of your virtual machine (e.g. using Firefox).
+
+https://www.dropbox.com/downloading?os=lnx
+
+This virtual machine is a 32-bit Ubuntu image, so you want to get the
+'''Ubuntu (x86 .deb)''' version.  "x86_64" implies an Intel processor
+in 64 bit mode.
+
+[[file:figures/dropbox-ubuntu.jpg]]
+
+** run the installer
+
+Then you need to install the software:
+
+#+BEGIN_SRC sh
+sudo dpkg -i nautilus-dropbox_0.6.9_i386.deb
+#+END_SRC
+
+Answer yes to what it asks and then click the button to "Restart
+Nautilus".  Click the "Next" button.  Then click "Start Dropbox".  You
+can then sign in and dropbox will start to synchronize your files.
+There will now be a icon on the top right of your screen that is
+supposed to look like a box with an open top.  This will give you a
+short cut to see what files have recently been changed in your account
+and see other dropbox functions.
+
+'''NOTE:''' you can just stick with the 2GB free account.
+
+* Finish up
+
+You now need to put your keepassx database into dropbox.
+
+#+BEGIN_SRC sh
+mv yourname.kdb ~/Dropbox/
+#+END_SRC
+
+* Risks of the Cloud
+
+FIX: write up more about the risk of cloud services and how you might
+weigh those against the benefits.
+
+- http://ask.slashdot.org/story/11/12/08/0327211/ask-slashdot-is-your-data-safe-in-the-cloud
+
+* History
+
+#+BEGIN_SRC sh
+sudo apt-get install texlive-latex-extra
+sudo apt-get install texlive
+sudo apt-get install emacs-goodies-el
+apt-cache search python | less
+apt-cache search python | wc -l
+apt-cache search keepassx
+wget -O dropbox_1.4.0_i386.deb https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_1.4.0_i386.deb
+ls -l dropbox_1.4.0_i386.deb 
+file *.deb
+sudo dpkg -i dropbox_1.4.0_i386.deb 
+man md5sum
+ls -l ~/Dropbox/kurt.kdb*
+ls ~/Dropbox/rt/
+pwd
+cd Dropbox/
+ls -l kurt*
+ls -l kurt.kdb*
+history > ~/Dropbox/rt/06-history.txt
+#+END_SRC

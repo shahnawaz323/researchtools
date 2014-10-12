@@ -1,0 +1,18 @@
+* Introduction
+This repo represents material from a course "Research Tools" taught by
+Kurt Schwehr in the Fall of 2011 at the University of New Hampshire's
+Center for Coastal and Ocean Mapping/Joint Hydrographic Center
+([[http://ccom.unh.edu/][CCOM/JHC]]).  The course website is
+http://vislab-ccom.unh.edu/~schwehr/rt/
+
+* Notes
+I am keeping this repo on Github to:
+1. Keep a copy of the [[https://bitbucket.org/jdcorless/researchtools][forked repo]] that I can access through Git and Github
+2. Keep a copy of my notes
+
+My notes are maintained in the wiki for this repo, which can be
+accessed by clicking on the Wiki icon for the repo on Github, or by
+making a local copy through the command
+
+=git clone https://github.com/jdcorless/researchtools.wiki.git=
+

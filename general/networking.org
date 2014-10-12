@@ -1,0 +1,29 @@
+#+STARTUP: showall
+
+#+TITLE:     Chapter XXX: Networking
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu>
+#+DATE:      $Date: $
+#+DESCRIPTION: Marine Research Data Manipulation and Practices - Databases
+#+TEXT:      $Id: kurt-2010.org 13030 2010-01-14 13:33:15Z schwehr $
+#+KEYWORDS: scp ping traceroute nmap
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_HOME: http://schwehr.org
+
+* Introduction
+
+This would be a first lecture that goes over understanding some of how
+networks work, how to use them, and how to debug them when things are 
+not working right for you.
+
+* TODO items
+
+- TCP Accelerators
+- traceroute
+- nmap
+- ssh, scp, and key generation

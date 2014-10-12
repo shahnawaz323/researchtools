@@ -1,0 +1,334 @@
+
+# Do not use _ as subscript
+#+OPTIONS: ^:{}
+#+STARTUP: showall
+
+* A first try at using autotools
+
+I have being trying to get a handle on the GNU autotools (autoconf,
+automake, libtool, etc) for quite some time.  I've gotten the very
+simple helloworld figured out in my own way and I'm hoping that by
+blogging what I did that it will stick a bit more to my brain.  I'm
+doing this on mac osx 10.7 with fink.
+
+#+BEGIN_SRC sh
+fink list -i autoconf autogen automake libtool
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+ i   autoconf2.6      2.68-1       System for generating configure scripts
+ i   automake1.11     1.11.1-3     GNU Standards-compliant Makefile generator
+ i   libtool2         2.4.2-1      Shared library build helper, v2.x
+ i   libtool2-shlibs  2.4.2-1      Shared libraries for libtool, v2.x
+#+END_EXAMPLE
+
+I am starting out by using autoscan with a very simple helloworld C program.
+Can't get much simpler than this.
+
+#+BEGIN_SRC sh
+cd ~/Desktop
+
+mkdir -p tryautotools/src
+cd tryautotools
+
+# Dump a helloworld.c program into the src directory
+cat <<EOF > src/helloworld.c
+#include <stdio.h>
+
+int main (int argc, char *argv[]) {
+    printf("Hello world from %s\n", argv[0]);
+    return 0;
+}
+EOF
+
+autoscan
+mv configure.scan configure.ac 
+#+END_SRC
+
+Do not call the configure input configure.in.  ".in" is the old style.
+The newer documentation says to use configure.ac.  We now need to edit
+the starting configure.ac input file.  I edited AC_INIT and commented
+out AC_CONFIG_HEADERS as I do not have any need for a header file in
+this overly simple case.
+
+#+BEGIN_SRC m4
+AC_PREREQ([2.68])
+AC_INIT([tryautotools], [0.1], [schwehr@gmail.com])
+AC_CONFIG_SRCDIR([src/helloworld.c])
+#AC_CONFIG_HEADERS([config.h])
+
+# Checks for programs.
+AC_PROG_CC
+
+# Actually generate output
+AC_OUTPUT
+#+END_SRC
+
+Now run autoconf to try creating the build system.  It will not yet do
+anything, but we are on the way.
+
+#+BEGIN_SRC sh
+autoconf
+
+ls -lF
+# total 200
+# drwxr-xr-x  5 schwehr  eng    170 Feb  7 07:47 autom4te.cache/
+# -rw-r--r--  1 schwehr  eng      0 Feb  7 07:45 autoscan.log
+# -rwxr-xr-x  1 schwehr  eng  95692 Feb  7 07:47 configure*
+# -rw-r--r--  1 schwehr  eng    467 Feb  7 07:47 configure.ac
+# drwxr-xr-x  3 schwehr  eng    102 Feb  7 07:45 src/
+#+END_SRC
+
+Now we con run the configure script that was generated.  It won't
+really do anything as we have work ahead of us to get this to build a
+Makefile.
+
+#+BEGIN_SRC sh
+./configure --help
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+`configure' configures tryautotools 0.1 to adapt to many kinds of systems.
+
+Usage: ./configure [OPTION]... [VAR=VALUE]...
+
+To assign environment variables (e.g., CC, CFLAGS...), specify them as
+VAR=VALUE.  See below for descriptions of some of the useful variables.
+
+Defaults for the options are specified in brackets.
+
+Configuration:
+  -h, --help              display this help and exit
+      --help=short        display options specific to this package
+...
+  --pdfdir=DIR            pdf documentation [DOCDIR]
+  --psdir=DIR             ps documentation [DOCDIR]
+
+Some influential environment variables:
+  CC          C compiler command
+  CFLAGS      C compiler flags
+  LDFLAGS     linker flags, e.g. -L<lib dir> if you have libraries in a
+              nonstandard directory <lib dir>
+  LIBS        libraries to pass to the linker, e.g. -l<library>
+  CPPFLAGS    (Objective) C/C++ preprocessor flags, e.g. -I<include dir> if
+              you have headers in a nonstandard directory <include dir>
+
+Use these variables to override the choices made by `configure' or to help
+it to find libraries and programs with nonstandard names/locations.
+
+Report bugs to <schwehr@gmail.com>.
+#+END_EXAMPLE
+
+#+BEGIN_SRC sh
+./configure
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+configure: creating ./config.status
+#+END_EXAMPLE
+
+The is the shortest configure run that I've every seen.  Usually they
+go on for page after page of mind numbing checks.
+
+#+BEGIN_SRC sh
+ls -l
+#+END_SRC
+
+#+BEGIN_EXAMPLE
+total 248
+drwxr-xr-x  5 schwehr  eng    170 Feb  7 07:47 autom4te.cache
+-rw-r--r--  1 schwehr  eng      0 Feb  7 07:45 autoscan.log
+-rw-r--r--  1 schwehr  eng   7032 Feb  8 17:28 config.log
+-rwxr-xr-x  1 schwehr  eng  13366 Feb  8 17:28 config.status
+-rwxr-xr-x  1 schwehr  eng  95692 Feb  7 07:47 configure
+-rw-r--r--  1 schwehr  eng    467 Feb  7 07:47 configure.ac
+drwxr-xr-x  3 schwehr  eng    102 Feb  7 07:45 src
+#+END_EXAMPLE
+
+The configure run created a "autom4te.cache", a config.log, and a
+config.status.
+
+Time to start creating a Makefile for our little hello world program.
+Create a Makefile.am:
+
+#+BEGIN_SRC sh
+cat <<EOF > Makefile.am
+bin_PROGRAMS = helloworld
+
+helloworld_SOURCES = src/helloworld.c
+EOF
+#+END_SRC
+
+We have to tell the configure.am that we want to have a Makefile
+build.  Add these two lines to the configure.am:
+
+#+BEGIN_SRC m4
+AC_CONFIG_FILES([Makefile])
+AM_INIT_AUTOMAKE
+#+END_SRC
+
+We also need to add some missing files and ask the tools to add other
+missing files.
+
+#+BEGIN_SRC sh
+touch NEWS README INSTALL AUTHORS ChangeLog
+automake --add-missing  
+aclocal
+autoconf
+automake --add-missing
+autoconf
+./configure
+make
+./helloworld # Yeah!  We have a binary
+# Hello world from ./helloworld
+#+END_SRC
+
+If you change the configure.ac or Makefile.am, you need to rebuild the
+whole deal.  Typically this is done with the autoreconf command in a
+"autogen.sh"
+
+#+BEGIN_SRC sh
+cat <<EOF > autogen.sh
+#!/bin/sh
+
+autoreconf --verbose --force --install
+EOF
+
+chmod +x autogen.sh
+make clean
+./autogen.sh
+./configure
+make
+./helloworld
+#+END_SRC
+
+*Final config*
+
+Here is what the files look like at the end:
+
+#+BEGIN_EXAMPLE
+ls -lFR
+total 704
+-rw-r--r--  1 schwehr  eng       0 Feb  9 08:24 AUTHORS
+lrwxr-xr-x  1 schwehr  eng      31 Feb  9 08:24 COPYING@ -> /sw/share/automake-1.11/COPYING
+-rw-r--r--  1 schwehr  eng       0 Feb  9 08:24 ChangeLog
+-rw-r--r--  1 schwehr  eng   15578 Feb  9 08:34 INSTALL
+-rw-r--r--  1 schwehr  eng   20458 Feb  9 08:34 Makefile
+-rw-r--r--  1 schwehr  eng      65 Feb  9 08:29 Makefile.am
+-rw-r--r--  1 schwehr  eng   20567 Feb  9 08:34 Makefile.in
+-rw-r--r--  1 schwehr  eng       0 Feb  9 08:24 NEWS
+-rw-r--r--  1 schwehr  eng       0 Feb  9 08:24 README
+-rw-r--r--  1 schwehr  eng   34611 Feb  9 08:34 aclocal.m4
+-rwxr-xr-x  1 schwehr  eng      50 Feb  9 08:34 autogen.sh*
+drwxr-xr-x  9 schwehr  eng     306 Feb  9 08:34 autom4te.cache/
+-rw-r--r--  1 schwehr  eng       0 Feb  7 07:45 autoscan.log
+-rw-r--r--  1 schwehr  eng    9292 Feb  9 08:34 config.log
+-rwxr-xr-x  1 schwehr  eng   29298 Feb  9 08:34 config.status*
+-rwxr-xr-x  1 schwehr  eng  134473 Feb  9 08:34 configure*
+-rw-r--r--  1 schwehr  eng     361 Feb  9 08:22 configure.ac
+-rwxr-xr-x  1 schwehr  eng   18615 Feb  9 08:34 depcomp*
+-rwxr-xr-x  1 schwehr  eng    8936 Feb  9 08:34 helloworld*
+-rw-r--r--  1 schwehr  eng    2572 Feb  9 08:34 helloworld.o
+-rwxr-xr-x  1 schwehr  eng   13663 Feb  9 08:34 install-sh*
+-rwxr-xr-x  1 schwehr  eng   11419 Feb  9 08:34 missing*
+drwxr-xr-x  3 schwehr  eng     102 Feb  7 07:45 src/
+
+./autom4te.cache:
+total 904
+-rw-r--r--  1 schwehr  eng  107508 Feb  9 08:24 output.0
+-rw-r--r--  1 schwehr  eng  134926 Feb  9 08:25 output.1
+-rw-r--r--  1 schwehr  eng  134926 Feb  9 08:34 output.2
+-rw-r--r--  1 schwehr  eng    9563 Feb  9 08:34 requests
+-rw-r--r--  1 schwehr  eng   12333 Feb  9 08:24 traces.0
+-rw-r--r--  1 schwehr  eng   32558 Feb  9 08:25 traces.1
+-rw-r--r--  1 schwehr  eng   20135 Feb  9 08:34 traces.2
+
+./src:
+total 8
+-rw-r--r--  1 schwehr  eng  118 Feb  7 07:45 helloworld.c
+#+END_EXAMPLE
+
+configure.ac:
+
+#+BEGIN_SRC m4
+# -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ([2.68])
+AC_INIT([tryautotools], [0.1], [schwehr@gmail.com])
+AC_CONFIG_SRCDIR([src/helloworld.c])
+
+AC_PROG_CC
+
+AC_CONFIG_FILES([Makefile])
+AM_INIT_AUTOMAKE
+
+AC_OUTPUT
+#+END_SRC
+
+Makefile.am:
+
+#+BEGIN_SRC makefile
+bin_PROGRAMS = helloworld
+
+helloworld_SOURCES = src/helloworld.c
+#+END_SRC
+
+autogen.sh:
+
+#+BEGIN_SRC sh
+#!/bin/sh
+
+autoreconf --verbose --force --install
+#+END_SRC
+
+src/helloworld.c:
+
+#+BEGIN_SRC c
+#include <stdio.h>
+
+int main (int argc, char *argv[]) {
+    printf("Hello world from %s\n", argv[0]);
+    return 0;
+}
+#+END_SRC
+
+*Where next?*
+
+My next goal is to slowly build out examples on how to add features in
+my own style.  This feels like I am rewriting the autobook, but I had
+a hard time trying to follow those and I really want to be able to use
+the pkg-config programs to get the correct flags for each program.
+For example, see the gdal-config below.
+
+I just ripped through the process of building gdal, qgis, and grass
+for linux.  That renewed my commitment to get there with the other
+tools I use that are not there on the packaging front.
+
+#+BEGIN_EXAMPLE
+gdal-config --help
+Usage: gdal-config [OPTIONS]
+Options:
+	[--prefix[=DIR]]
+	[--libs]
+	[--dep-libs]
+	[--cflags]
+	[--datadir]
+	[--version]
+	[--ogr-enabled]
+	[--formats]
+
+gdal-config --cflags
+-I/sw32/include/gdal1
+
+gdal-config --libs    
+-L/sw32/lib -lgdal
+#+END_EXAMPLE

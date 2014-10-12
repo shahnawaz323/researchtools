@@ -1,0 +1,165 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 13: python - if, while, def functions, classes
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-10-13 Thu>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: ipython matplotlib
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+
+* Introduction
+
+* Using =if=                                                             :if:
+
+#+BEGIN_SRC python
+if True:
+    print 'yes'
+#+END_SRC
+
+#+BEGIN_SRC python
+if False:
+    print 'yes'
+#+END_SRC
+
+** =else=
+
+#+BEGIN_SRC python
+if True:
+    print 'yes'
+else:
+    print 'no'
+#+END_SRC
+
+#+BEGIN_SRC python
+if False:
+    print 'yes'
+else:
+    print 'no'
+#+END_SRC
+
+** A special one line =if=
+
+#+BEGIN_SRC python
+'equal' if 1==0 else 'really not-equal'
+#+END_SRC
+
+#+BEGIN_SRC python
+print 'equal' if 1==0 else 'really not-equal'
+#+END_SRC
+
+#+BEGIN_SRC python
+answer = 'equal' if 1==0 else 'really not-equal'
+#+END_SRC
+
+#+BEGIN_SRC python
+if False:
+    print 'case 1'
+elif 1==2:
+    print 'case 2'
+elif 2==2:
+    print 'case 3'
+else:
+    print 'default at the end'
+#+END_SRC
+
+* While loops
+
+#+BEGIN_SRC python
+  count = 0
+
+  while count < 10:
+      print count
+      count += 2
+#+END_SRC
+
+* Making a function                                                :function:
+
+You will want to break you problem down into sections. One way to do
+that is to write functions.
+
+#+BEGIN_SRC python
+def hello():
+    print 'hello world function'
+
+# Call it
+hello()
+#+END_SRC
+
+
+#+BEGIN_SRC python
+def add_one(number):
+    new_number = number + 1
+    return new_number
+
+# Calling our function.  Pass in the number 9
+add_one(9)
+#+END_SRC
+
+* classes
+
+containers that work together
+
+#+BEGIN_SRC python
+import math
+
+class Circle(object):
+    def __init__(self, radius):
+        self.radius = radius
+
+    def get_area(self):
+        return 2 * math.pi * self.radius
+
+    def __str__(self):
+        return 'Circle of radius ' + str(self.radius)
+        
+a_circle = Circle(10.2)
+print 'area is:', a_circle.get_area()
+print str(a_circle)
+#+END_SRC
+
+* modules
+
+composed of
+
+- variables
+- functions
+- classes
+
+* Getting data!                                                       :socat:
+
+#+BEGIN_SRC sh
+sudo apt-get install socat
+#+END_SRC
+
+#+BEGIN_SRC sh
+socat TCP4:datalogger1.ccom.nh:36000 - | head
+#+END_SRC
+
+#+BEGIN_EXAMPLE 
+socat TCP4:datalogger1.ccom.nh:36000 - | head
+$WIMDA,30.0261,I,1.0168,B,13.0,C,,,,,,,14.1,T,29.5,M,1.8,N,0.9,M*2A,rccom-airmar,1318512281.75
+$WIMWD,14.9,T,30.3,M,1.8,N,0.9,M*56,rccom-airmar,1318512281.83
+$HCHDT,26.0,T*1D,rccom-airmar,1318512281.87
+$WIMWV,348.9,T,1.8,N,A*2A,rccom-airmar,1318512281.92
+$WIMWV,347.2,R,1.9,N,A*29,rccom-airmar,1318512281.98
+$HCHDT,26.0,T*1D,rccom-airmar,1318512282.27
+$GPVTG,339.3,T,354.7,M,0.1,N,0.2,K,D*2A,rccom-airmar,1318512282.35
+$GPZDA,132442,13,10,2011,00,00*4B,rccom-airmar,1318512282.42
+$WIMWV,347.8,R,1.9,N,A*23,rccom-airmar,1318512282.48
+$GPGGA,132442,4308.1264,N,07056.3757,W,2,9,0.9,35.8,M,,,,*00,rccom-airmar,1318512282.6
+2011/10/13 09:24:42 socat[82807] E write(1, 0x802e00, 95): Broken pipe
+#+END_EXAMPLE
+
+http://gpsd.berlios.de/NMEA.html
+
+Save a bunch to a file:
+
+#+BEGIN_SRC sh
+socat TCP4:datalogger1.ccom.nh:36000 - | head -1000 > ccom-weather.log
+#+END_SRC

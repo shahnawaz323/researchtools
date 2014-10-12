@@ -1,0 +1,137 @@
+#+STARTUP: showall
+#+TITLE: 2011 Research Tools
+#+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:nil LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+
+* Class material:
+
+- Video playlists on YouTube - 32 hours in 46 videos:
+  - [[http://www.youtube.com/playlist?list%3DPLEB9CCD61FA858FC5][Lectures and Screencasts (all videos)]]
+  - [[http://www.youtube.com/playlist?list%3DPL38859FD61FEEF0FE][Lectures]]
+  - [[http://www.youtube.com/playlist?list%3DPL7E11B34616530F5E][Screencasts]]
+- [[file:audio][Audio podcasts of class]]
+- Mercurial (hg) repository: https://bitbucket.org/schwehr/researchtools
+
+* Instructors:
+
+All but 1 of the classes were taught by [[http://schwehr.org][Kurt Schwehr]].  I am an Affiliate
+Research Professor in the [[http://ccom.unh.edu][Center for Coastal and Ocean Mapping / Joint Hydrographic Center]] at the [[http://unh.edu][University of New Hampshire]] and a GIS Data Engineer at Google for Oceans.
+  
+[[http://waage.sr.unh.edu/~braswell/][Rob Braswell]] taught class 25 on R for statistics.  Rob is an Affiliate Faculty in EOS
+at UNH and works at [[http://appliedgeosolutions.com/][Applied Geosolutions]].
+
+* Introduction
+
+The goal of this UNH course is to
+give students skills that will help them conquer data throughout their
+career.  I am hoping to get this wrapped together as a book that
+people can take with them when they leave CCOM.  I am releasing all
+course material under a creative commons non-commercial license, so
+that you can pass copies to your co-workers.  2011 is the first year
+that the course is being taught in this style.  Please email me if you
+find any typos.
+
+*NOTE:* The order was flipped on 2012-June-26 to have the beginning at the top.
+
+#+ATTR_HTML: border="1" rules="all" frame="all"
+|    No. |       Date | Video        | Present  | Blog    | Audio | Title/Notes                                       |
+|--------+------------+--------------+----------+---------+-------+---------------------------------------------------|
+|     01 | 2011-08-30 | [[http://youtu.be/_ighuXFVGZM][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/01-introduction.mp4][mp4]]  | [[./present/01-introduction.pdf][pdf]] [[./present/01-introduction.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-1-introduction.html][comment]] | [[./audio/1-introduction.mp3][mp3]]   | [[./1-introduction.html][Introduction]]                                      |
+|     02 | 2011-09-01 | [[http://youtu.be/7qtOyg19Jbw][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/02-irc-wiki-basic-shell.mp4][mp4]]  | [[./present/02-irc-wiki-basic-shell.pdf][pdf]] [[./present/02-irc-wiki-basic-shell.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-2-irc-mediawiki.html][comment]] | [[./audio/2-irc-wiki-basic-shell.mp3][mp3]]   | [[./2-irc-wiki-basic-shell.html][IRC, Wiki, Basic Shell]]                            |
+|     03 | 2011-09-06 | [[http://youtu.be/6MtEw8MPiy4][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/03-basic-command-line.mp4][mp4]]  | [[./present/03-basic-command-line.pdf][pdf]] [[./present/03-basic-command-line.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-3-wiki-editing.html][comment]] | [[./audio/3-wiki-weather-shell.mp3][mp3]]   | [[./3-basic-command-line.html][Wiki editing, Weather Demo, Command Line]]          |
+|     04 | 2011-09-08 | [[http://youtu.be/1ZX9IikY77c][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/04-ubuntu-virtual-machine.mp4][mp4]]  | [[./present/04-ubuntu-virtual-machine.pdf][pdf]] [[./present/04-ubuntu-virtual-machine.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-4-vmware-ubuntu.html][comment]] | [[./audio/4-vmware-ubuntu-virtual-machine.mp3][mp3]]   | [[./4-ubuntu-virtual-machine.html][VMWare Ubuntu Image]]                               |
+|     05 | 2011-09-13 | [[http://youtu.be/Rluu6J_GASM][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/05-identifying-file-types.mp4][mp4]]  | [[./present/05-identifying-file-types.pdf][pdf]] [[./present/05-identifying-file-types.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-5-filetypes.html][comment]] | [[./audio/5-identifying-file-types.mp3][mp3]]   | [[./5-filetypes-emacs.html][File types, Emacs intro, beginning scripts]]        |
+|     06 | 2011-09-15 | [[http://youtu.be/rPVNSWnP_LQ][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/06-keepassx-dropbox.mp4][mp4]]  | [[./present/06-keepassx-dropbox.pdf][pdf]] [[./present/06-keepassx-dropbox.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-6-keepassx-and.html][comment]] | [[./audio/06-keepassx-dropbox.mp3][mp3]]   | [[./06-keepassx-dropbox.html][KeePassX and Dropbox]]                              |
+|     07 | 2011-09-20 | [[http://youtu.be/_QG8KwqgP-I][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/07-emacs-and-org-mode.mp4][mp4]]  | [[./present/07-emacs-and-org-mode.pdf][pdf]] [[./present/07-emacs-and-org-mode.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-7-emacs-and-org.html][comment]] | [[./audio/7-emacs-and-org-mode.mp3][mp3]]   | [[./7-emacs-and-org-mode.html][Emacs and org-mode]]                                |
+|  HW 02 | 2011-09-20 |              |          |         |       | [[./hw/hw-2-shell-and-org-mode.html][Homework 2: shell and org-mode]]                    |
+|     08 | 2011-09-22 | [[http://youtu.be/L_VIS2bUhfo][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/08-more-emacs-and-script-files.mp4][mp4]]  | [[./present/8-more-emacs-and-script-files.pdf][pdf]] [[./present/8-more-emacs-and-script-files.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-8-more-emacs-and.html][comment]] | [[./audio/8-more-emacs.mp3][mp3]]   | [[./8-more-emacs-and-script-files.html][More emacs and script files]]                       |
+| Vid 01 | 2011-09-24 | [[http://youtu.be/16Rd46SE-20][YouTube]] [[./video/video-1-emacs-keyboard.mov][H264]] |          |         |       | [[http://youtu.be/16Rd46SE-20][Emacs part 1: emacs keyboard introduction]] and [[http://vislab-ccom.unh.edu/~schwehr/rt/video/video-1-intro-emacs.txt][txt]] |
+| Vid 02 | 2011-09-25 | [[http://youtu.be/P2Q_WL0h-mY][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-2-more-advanced-emacs.mov][H264]] | [[./present/video-2-more-advanced-emacs.pdf][pdf]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/present/video-2-more-advanced-emacs.key][key]]  |         |       | [[http://youtu.be/P2Q_WL0h-mY][Emacs part 2: more advanced emacs]]                 |
+| Vid 03 | 2011-09-25 | [[http://youtu.be/ht4JtEbFtFI][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-3-emacs-org-mode.mov][H264]] |          |         |       | [[http://youtu.be/ht4JtEbFtFI][Emacs part 3: org-mode and org-babel]]              |
+| Vid 04 | 2011-09-26 | [[http://youtu.be/2Cl_aiUkkG0][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-4-yet-more-emacs.mov][H264]] |          |         |       | [[http://youtu.be/2Cl_aiUkkG0][Emacs part 4: yet more emacs]]                      |
+|     09 | 2011-09-27 | [[http://youtu.be/YlWRaoUpUqg][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/09-bash-scripting.mp4][mp4]]  | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/present/9-babel-bash-scripting.pdf][pdf]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/present/9-babel-bash-scripting.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-9-babel-bash.html][comment]] | [[./audio/9-babel-bash-scripting.mp3][mp3]]   | [[http://vislab-ccom.unh.edu/~schwehr/rt/9-bash-scripting.html][babel, bash, Google Earth]]                         |
+|  HW 03 | 2011-09-27 |              |          |         |       | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/hw/hw-3-work-log.html][Homework 3: work log / journal]]                    |
+|     10 | 2011-09-29 | [[http://youtu.be/uzB6tCi6eZs][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/10-qgis-bash-python.mp4][mp4]]  | [[./present/10-qgis-bash-python.pdf][pdf]] [[./present/10-qgis-bash-python.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-10-qgis-bash.html][comment]] | [[./audio/10-qgis-bash-python.mp3][mp3]]   | [[http://vislab-ccom.unh.edu/~schwehr/rt/10-qgis-bash-python.html][QGIS, Bash, Healy Movie, ipython+matplotlib]]       |
+| Vid 05 | 2011-09-30 | [[http://youtu.be/nv1HGsUsiJc][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-5-shell-pt-1.mov][H264]] |          |         |       | [[http://youtu.be/nv1HGsUsiJc][Bash part 1: introduction to the shell]]            |
+| Vid 06 | 2011-10-02 | [[http://youtu.be/BgPCGecN3FI][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-6-bash-2-variables.mov][H264]] |          |         |       | [[http://youtu.be/BgPCGecN3FI][Bash part 2: variables]]                            |
+| Vid 07 | 2011-10-02 | [[http://youtu.be/v_3NjQB3q-Q][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-7-ipython-1-intro.mov][H264]] |          |         |       | [[http://www.youtube.com/watch?v%3Dv_3NjQB3q-Q][Python part 1: intro to python/ipython]]            |
+|     11 | 2011-10-04 | [[http://youtu.be/pk6UcBm2PPU][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/11-ipython.mp4][mp4]]  | [[./present/11-ipython.pdf][pdf]] [[./present/11-ipython.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-11-ipython-and.html][comment]] | [[./audio/11-ipython.mp3][mp3]]   | [[./11-ipython.html][ipython and python data types]]                     |
+|     12 | 2011-10-06 | [[http://youtu.be/VEISs7hbFTc][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/12-python.mp4][mp4]]  | [[./present/12-python.pdf][pdf]] [[./present/12-python.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-12-python-for.html][comment]] | [[./audio/12-python.mp3][mp3]]   | [[./12-python.html][Python: files, for loops]]                          |
+|  Vid 8 | 2011-10-09 | [[http://youtu.be/EHvQG7dbk_8][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-8-python-2-running.mov][H264]] |          |         |       | [[http://youtu.be/EHvQG7dbk_8][Python part 2: ways to run python code]]            |
+|  Vid 9 | 2011-10-09 | [[http://youtu.be/j6jZxRUheVE][YouTube]] [[./video/video-9-python-3-parts.mov][H264]] |          |         |       | [[http://www.youtube.com/watch?v%3Dj6jZxRUheVE][Python part 3: parts]]                              |
+| Vid 10 | 2011-10-10 | [[http://youtu.be/LLhSroiMexE][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-10-emacs-5-modes.mov][H264]] |          |         |       | [[http://www.youtube.com/watch?v%3DLLhSroiMexE][Emacs part 5 - modes]]                              |
+|   HW 4 | 2011-10-11 |              |          |         |       | Submit your log file with lectures 09 and 10      |
+| Vid 11 | 2011-10-12 | [[http://youtu.be/-Qu3YrckJgA][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-11-python-if-argv.mov][H264]] | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-11-python-part-4-if-argv.pdf][pdf]] [[./video/video-11-python-part-4-if-argv.key][key]]  |         |       | [[http://www.youtube.com/watch?v%3D-Qu3YrckJgA][Python part 4 - if, modules, command line args]]    |
+| Vid 12 | 2011-10-13 | [[http://youtu.be/M_98sy6xGxY][YouTube]] [[./video/video-12-python-5-while.m4v][m4v]]  | [[./video/video-12-python-part-5-while.pdf][pdf]] [[./video/video-12-python-part-5-while.key][key]]  |         |       | [[http://youtu.be/M_98sy6xGxY][Python part 5 - while loops]]                       |
+|     13 | 2011-10-13 | [[http://youtu.be/O_R1lTnq8c8][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/13-python-if-while-def-class.mp4][mp4]]  | [[./present/13-python-if-while-def-class.pdf][pdf]] [[./present/13-python-if-while-def-class.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-13-if-while.html][comment]] | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/audio/13-python-if-while-def-class.mp3][mp3]]   | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/13-python.html][Python: if, while, functions, classes]]             |
+| Vid 13 | 2011-10-15 | [[http://youtu.be/d9hsQ_OhD20][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-13-python-gps-data.mov][H264]] | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-13-python-gps-data.pdf][pdf]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-13-python-gps-data.key][key]]  |         |       | [[http://youtu.be/d9hsQ_OhD20][Python part 6 - parsing GPS data]]                  |
+|   Rd 1 | 2011-10-13 |              | [[http://oceanservice.noaa.gov/podcast/oct11/mw101311transcript.html][txt]]      |         | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/audio/noaa-20111013-ep85-building-a-better-geoid.mp3][mp3]]   | [[http://oceanservice.noaa.gov/podcast/oct11/mw101311.mp3][NOAA - Making Waves: Building a Better Geoid]]      |
+| Vid 14 | 2011-10-18 | [[http://youtu.be/XWxTtOE2i7g][YouTube]] [[./video/video-14-python-more-reusable-code.mp4][mp4]]  |          |         |       | [[http://youtu.be/XWxTtOE2i7g][Python part 7 - more reusable code]]                |
+|     14 | 2011-10-18 | [[http://youtu.be/AP2-r3YOpTo][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/14-python-parse-gps.mp4][mp4]]  | [[./present/14-python-parse-gps.pdf][pdf]] [[./present/14-python-parse-gps.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-14-parsing-gps.html][comment]] | [[./audio/14-python-parsing-gps-data.mp3][mp3]]   | [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/14-python-gps-data.html][Python: parsing GPS data]]                          |
+|     15 | 2011-10-20 | [[http://youtu.be/1n2qQFVF6ws][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/lecture-videos/15-python-matplotlib-part-1.mp4][mp4]]  | [[./present/15-python-matplotlib-part-1.pdf][pdf]] [[./present/15-python-matplotlib-part-1.key][key]]  | [[http://schwehr.blogspot.com/2011/10/research-tools-lecture-15-python.html][comment]] | [[./audio/15-python-matplotlib-part-1.mp3][mp3]]   | [[./15-matplotlib.html][Python: Matplotlib part 1]]                         |
+| Vid 15 | 2011-10-23 | [[http://youtu.be/zwzR0z0_Gn0][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-15-python8-matplotlib1.mov][H264]] | [[./video/video-15-python8-matplotlib1.pdf][pdf]] [[./video/video-15-python8-matplotlib1.key][key]]  |         |       | [[http://youtu.be/zwzR0z0_Gn0][Python part 8: Matplotlib part 1]]                  |
+| Vid 16 | 2011-10-24 | [[http://youtu.be/3NZxXskG21g][YouTube]] [[./video/video-16-python-signal-processing.mov][H264]] | [[./video/video-16-python-signal-processing.pdf][pdf]] [[./video/video-16-python-signal-processing.key][key]]  |         |       | [[http://youtu.be/3NZxXskG21g][Python part 9: Simple signal processing]]           |
+|     16 | 2011-10-25 | [[http://youtu.be/FLLfqrEA-VA][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/16-matplotlib-2.mp4][mp4]]  | [[./present/16-matplotlib-2.pdf][pdf]] [[./present/16-matplotlib-2.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-lecture-16-python-matplotlib-part-2.html][comment]] | [[./audio/16-matplotlib-2.mp3][mp3]]   | [[./16-matplotlib-2.html][Python: matplotlib 2 - graphing]]                   |
+|     17 | 2011-10-27 | [[http://youtu.be/_CicIUiKIW4][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/17-qgis-gdal.mp4][mp4]]  | [[./present/17-qgis-gdal.pdf][pdf]] [[./present/17-qgis-gdal.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-lecture-17-qgis-and-gdal-with-charts.html][comment]] | [[./audio/17-qgis-ggal.mp3][mp3]]   | [[./17-qgis-gdal.html][QGIS and GDAL for Raster/Vector Charts]]            |
+|     18 | 2011-11-01 | [[http://youtu.be/5VhMc5lsX2k][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/18-bag-hdf-xml.mp4][mp4]]  | [[./present/18-bag-hdf-xml.pdf][pdf]] [[./present/18-bag-hdf-xml.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-18-bags-hdf5-and-xml.html][comment]] | [[./audio/18-bag-hdf-xml.mp3][mp3]]   | [[./18-bag-hdf-xml.html][BAGs, HDF5 and XML]]                                |
+|     19 | 2011-11-03 | [[http://youtu.be/Ud-CWRjSjSo][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/19-bag-2-xml-metadata.mp4][mp4]]  | [[./present/19-bag-2-xml-metadata.pdf][pdf]] [[./present/19-bag-2-xml-metadata.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-19-bags-2-xml-metadata.html][comment]] | [[./audio/19-bag-2-xml-metadata.mp3][mp3]]   | [[./19-bag-2-xml-metadata.html][BAGs 2, XML Metadata]]                              |
+| Vid 17 | 2011-11-07 | [[http://youtu.be/Nd-cBRpszdc][YouTube]] [[./video/video-17-emacs-replace-string.mov][H264]] | [[./video/video-17-emacs-replace-string.pdf][pdf]] [[./video/video-17-emacs-replace-string.key][key]]  |         |       | [[http://youtu.be/Nd-cBRpszdc][Emacs, HDF5 BAGs and XML Metadata]]                 |
+| Vid 18 | 2011-11-08 | [[http://youtu.be/dEtC6bRcjvc][YouTube]] [[./video/video-18-python-hdf-h5py.mov][H264]] | [[./video/video-18-python-hdf-h5py.pdf][pdf]] [[./video/video-18-python-hdf-h5py.key][key]]  |         |       | [[http://youtu.be/dEtC6bRcjvc][Python: Reading a HDF5 BAGs - h5py, matplotlib]]    |
+|     20 | 2011-11-08 | [[http://youtu.be/SePadYITcFs][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/20-bags-3-xml-kml-gshhs.mp4][mp4]]  | [[./present/20-bags-3-xml-kml-gshhs.pdf][pdf]] [[./present/20-bags-3-xml-kml-gshhs.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-20-bags-3.html][comment]] | [[./audio/20-bags-3-xml-kml-gshhs.mp3][mp3]]   | [[./20-bags-3-xml-kml-gshhs.html][BAGs 3, XML Metadata, KML, and GSHHS shapefile]]    |
+|     21 | 2011-11-10 | [[http://youtu.be/T_3zaOJnTIU][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/21-python-binary-files.mp4][mp4]]  | [[./present/21-python-binary-files.pdf][pdf]] [[./present/21-python-binary-files.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-21-parsing-binary-sbet-files-with.html][comment]] | [[./audio/21-python-binary-files.mp3][mp3]]   | [[./21-python-binary-files.html][Python: parsing binary data - SBETs - Part 1]]      |
+|     22 | 2011-11-15 | [[http://youtu.be/44vvVKb0vkA][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/22-python-binary-files-part-2.mp4][mp4]]  | [[./present/22-python-binary-files-part-2.pdf][pdf]] [[./present/22-python-binary-files-part-2.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-22-part-2-parsing-binary-sbet-files.html][comment]] | [[./audio/22-python-binary-files-part-2.mp3][mp3]]   | [[./22-python-binary-files-part-2.html][Python: parsing binary data - SBETs - Part 2]]      |
+|     23 | 2011-11-17 | [[http://youtu.be/HFLEpSoqF3w][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/23-python-binary-files-part-3.mp4][mp4]]  | [[./present/23-python-binary-files-part-3.pdf][pdf]] [[./present/23-python-binary-files-part-3.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-23-part-3-parsing-binary-sbet-files.html][comment]] | [[./audio/23-python-binary-files-part-3.mp3][mp3]]   | [[./23-python-binary-files-part-3.html][Python: parsing binary data - SBETs - Part 3]]      |
+|     24 | 2011-11-22 | [[http://youtu.be/2D9WS2l9OzA][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/24-python-binary-files-part-4.mp4][mp4]]  | [[./present/24-python-binary-files-part-4.pdf][pdf]] [[./present/24-python-binary-files-part-4.key][key]]  | [[http://schwehr.blogspot.com/2011/11/rt-24-part-4-parsing-binary-sbet-files.html][comment]] | [[./audio/24-python-binary-files-part-4.mp3][mp3]]   | [[./24-python-binary-files-part-4.html][Python: parsing binary data - SBETs - Part 4]]      |
+| Vid 19 | 2011-11-27 | [[http://youtu.be/wup-lP32MUQ][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/video/video-19-mercurial-hg-dvcs.mov][H264]] | [[./video/video-19-mercurial-hg-dvcs.pdf][pdf]] [[./video/video-19-mercurial-hg-dvcs.key][key]]  |         |       | [[http://youtu.be/wup-lP32MUQ][Mercurial (hg) for version control]]                |
+|     25 | 2011-11-29 | [[http://youtu.be/xtYKs8sfZRs][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/25-r-statistics.mp4][mp4]]  | [[./present/25-braswell-intro-R.pdf][pdf]] [[./present/25-r-statistics.pdf][pdf2]] | [[http://schwehr.blogspot.com/2011/11/rt-25-r-for-statistics.html][comment]] | [[./audio/25-r-statistics.mp3][mp3]]   | Rob Braswell: [[./25-R-lab1-Intro.pdf][1-Intro]] [[./25-R-lab2-CO2.pdf][2-CO2]] [[./25-R-lab3-ANOVA.pdf][3-ANOVA]]               |
+|     26 | 2011-12-01 | [[http://youtu.be/d0r2ACWS8c8][YouTube]] [[http://vislab-ccom.unh.edu/~schwehr/rt/lecture-videos/26-python-binary-files-part-5.mp4][mp4]]  | [[./present/26-python-binary-files-part-5.pdf][pdf]] [[./present/26-python-binary-files-part-5.key][key]]  | [[http://schwehr.blogspot.com/2011/12/rt-26-part-6-parsing-binary-sbet-files.html][comment]] | [[./audio/26-python-binary-files-part-5.mp3][mp3]]   | [[./26-python-binary-files-part-5.html][Python: parsing binary data - SBETs - Part 5]]      |
+|   HW 5 | 2011-12-06 |              |          |         |       | [[https://bitbucket.org/schwehr/researchtools/src/tip/hw/hw-5-final-log.org][Turn in final log file for the whole class]]        |
+| Vid 20 | 2011-12-26 | [[http://youtu.be/BsM58rADjMI][YouTube]] [[./video/video-20-secure-shell-ssh.mov][H264]] | [[./video/video-20-secure-shell-ssh.pdf][pdf]] [[./video/video-20-secure-shell-ssh.key][key]]  |         |       | [[https://bitbucket.org/schwehr/researchtools/src/tip/video/video-20-secure-shell-ssh-sftp-scp.org][Secure shell (ssh, scp), crontab and emacs tramp]]  |
+
+The blog column points to posts on blogger where people can leave
+comments and have discussions.  http://schwehr.org/blog, my normal
+blog channel is not setup for comments, so I will be using my blogger
+account for feedback.
+
+* Short links
+
+- http://vislab-ccom.unh.edu/~schwehr/rt/ is an alias to [[http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/][ResearchTools 2011]]
+- http://tinyurl.com/researchtools2011
+
+* More Course Materials
+
+- Google Group for discussions: [[http://groups.google.com/group/researchtools2011]]
+- [[file:virtual-machines][Ubuntu Virtual Machines]] for VMWare
+
+* Virtual Machine account:
+
+- user: researchtools
+- pass: !rt2011vm
+
+* Final
+
+*There will be NO final*.  The real test will be how well you are able
+to use and adapt the material from this class for your own research
+and future classes.
+
+* Lectures:
+
+*NOTE:* Starting at lecture 22, org files should now be "pulled" using
+mercurial ("hg"). I have removed the org links to encourage people to
+do exactly that. To get setup with the notes via hg:
+
+#+BEGIN_SRC sh
+mkdir ~/projects
+cd ~/projects
+sudo apt-get install mercurial # hg
+hg clone https://bitbucket.org/schwehr/researchtools
+#+END_SRC
+
+You should update the notes before everytime you work on the material:
+
+#+BEGIN_SRC sh
+cd ~/projects/researchtools
+hg pull   # Bring the changes down to the local "repo"
+hg update # Change the working files to have the latest changes
+#+END_SRC
+

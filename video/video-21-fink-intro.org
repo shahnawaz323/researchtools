@@ -1,0 +1,143 @@
++STARTUP: showall
+
+#+TITLE:     Video 21: Introduction to fink packaging on the Mac
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@gmail.com
+#+DATE:      <2012-01-15 Sun>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: emacs ssh scp cron
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Introduction
+
+http://www.youtube.com/watch?v=Ao3_UtsIOgM
+
+Up to know, everything that I've shown has been on Ubuntu Linux
+running in a virtual machine.  If you would like to use the same tools 
+directly on a Mac, you can install all the software your self.  While
+this is a great educational thing to try once, it is much better to
+use a packaging system such as fink, macports or homebrew.  You will 
+be a part of the collective knowledge of everyone who has worked to 
+package these tools for the mac.  If you have a problem with an
+install and get that fix back into the package, you will help to
+improve the utility of these tools for all.  
+
+I am a fink developer, so I am going to focus on fink rather than any
+of the other packaging tools.
+
+* Notes from before making the actual video
+
+Make sure XCode is install from the App Store.  This gives you the C
+and C++ compilers need by fink.
+
+#+BEGIN_SRC sh
+sudo hostname "macosx-10_7"
+uname -a
+
+open http://www.finkproject.org/
+open http://www.finkproject.org/download/srcdist.php
+open http://sourceforge.net/projects/fink/files/fink/
+
+tar tf ~/Downloads/fink-0.31.6.tar.gz | less
+tar xf ~/Downloads/fink-0.31.6.tar.gz
+
+./bootstrap
+# All the defaults
+# Talk about curl to fetch files
+# 64 bit and intel only on 10.7
+# Talk about being build on deb tools just like Debian and Ubuntu
+# However, do not have binary deb's available for download.
+# All programs are built from source each time.
+
+fink # This fails!
+type fink
+echo $PATH
+
+/sw/bin/pathsetup.sh
+type fink # Still not found
+ls -ltra ~/ | tail -2  # Notice there is now a .profile
+less ~/.profile
+source ~/.profile
+
+fink
+fink --version
+fink list | head
+fink list | wc -l
+fink list -i | wc -l
+
+fink selfupdate # Use the rsync method
+
+fink list | wc -l # tons more
+
+# installing 
+fink list proj
+fink describe proj | less
+
+cd /
+sudo mv sw sw-off
+sudo mv sw-orig sw
+
+fink selfupdate
+fink list -o
+fink update-all
+
+fink cleanup
+
+http://pdb.finkproject.org/pdb/
+
+http://pdb.finkproject.org/pdb/browse.php?maintainer=Kurt+Schwehr&dist_name=10.7
+
+http://pdb.finkproject.org/pdb/package.php/mbsystem
+#+END_SRC
+
+
+* History of the actual making of the video
+
+#+BEGIN_SRC sh
+uname -a
+open http://www.finkproject.org
+pwd
+tar tf ~/Downloads/fink-0.31.6.tar.gz 
+tar xf ~/Downloads/fink-0.31.6.tar.gz 
+cd fink-0.31.6/
+ls
+less bootstrap
+./bootstrap 
+fink
+type fink
+echo $PATH
+/sw/bin/pathsetup.sh
+fink
+ls -ltra ~/ | tail -2
+less ~/.profile
+source ~/.profile
+type fink
+fink | less
+fink --version
+fink list | head
+fink list | wc -l 
+fink list -i | wc -l
+fink selfupdate
+fink list | wc -l
+fink list proj
+fink describe proj
+fink install proj-bin
+type -a proj
+man proj
+dpkg -L proj-bin | less
+fink list mbsystem gmt
+cd /
+ls -l | grep sw
+mv sw sw-off
+sudo mv sw sw-off
+sudo mv sw-orig sw
+fink list mbsystem
+fink selfupdate
+fink list -o
+fink cleanup
+open http://pdb.finkproject.org/pdb/
+#+END_SRC

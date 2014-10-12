@@ -1,0 +1,2978 @@
+0:00:00.280,0:00:04.060
+go ahead and get your file for today's
+fecha fifteen
+
+0:00:04.060,0:00:05.100
+and
+
+0:00:05.100,0:00:06.990
+open up rather set up
+
+0:00:06.990,0:00:09.289
+for that work for oil and the
+
+0:00:09.289,0:00:14.049
+datafile that create for crossover don't
+uncompressed that file
+
+0:00:14.049,0:00:16.250
+you can if you really want to
+
+0:00:16.250,0:00:19.439
+but all my instructions were really the
+compressed into slow today to write a
+
+0:00:19.439,0:00:21.770
+compressed file
+
+0:00:21.770,0:00:25.080
+do you what that means that there might
+be too imax
+
+0:00:25.080,0:00:26.189
+windows open
+
+0:00:26.189,0:00:29.260
+and you may treat the other one
+
+0:00:29.260,0:00:34.130
+it doesn't look like that's the case and
+we do a controlled ki
+
+0:00:34.130,0:00:38.570
+he's free to go back to the child's used
+in the actual for suffer
+
+0:00:38.570,0:00:41.660
+and i don't get reread offers the desk
+
+0:00:41.660,0:00:46.040
+so as possible
+
+0:00:46.040,0:00:48.020
+press enter
+
+0:00:48.020,0:00:49.790
+yes collapses
+
+0:00:49.790,0:00:54.090
+it's been lately his reasoning
+
+0:00:54.090,0:00:57.060
+yes that's a good fit problem here
+finally
+
+0:00:57.060,0:01:00.620
+c handful even from your startup
+
+0:01:00.620,0:01:02.270
+you probably
+
+0:01:02.270,0:01:03.290
+uh...
+
+0:01:03.290,0:01:07.540
+surfcontrol t
+
+0:01:07.540,0:01:11.040
+now save it and in the work of operating
+
+0:01:11.040,0:01:13.080
+and all the alexander
+
+0:01:13.080,0:01:14.289
+if you want to call after that
+
+0:01:14.289,0:01:15.490
+shipped out
+
+0:01:15.490,0:01:17.980
+clocks
+
+0:01:17.980,0:01:19.640
+so today
+
+0:01:19.640,0:01:24.280
+it's time to stop being boring with just
+tax burger plot stuff today
+
+0:01:24.280,0:01:25.700
+stuff you guys are ready
+
+0:01:25.700,0:01:28.050
+i try to make it easier so that
+
+0:01:28.050,0:01:31.830
+uh... you don't have to worry about
+right now what we did last time
+
+0:01:31.830,0:01:33.700
+when you download this
+
+0:01:33.700,0:01:35.380
+the zip file
+
+0:01:35.380,0:01:37.130
+that's right here
+
+0:01:37.130,0:01:38.500
+that file
+
+0:01:38.500,0:01:41.710
+is got the data that's been parsed
+
+0:01:41.710,0:01:44.080
+taking it from that really crazy
+
+0:01:44.080,0:01:47.350
+nema format and turn into something a
+lot simpler
+
+0:01:47.350,0:01:49.850
+so we're going to work through that
+
+0:01:49.850,0:01:53.410
+what they had people look at what our
+g_p_s_ is doing on earth
+
+0:01:53.410,0:01:57.329
+and decide whether i think the g_p_s_ is
+doing a good job
+
+0:01:57.329,0:01:59.080
+hopefully you've got
+
+0:01:59.080,0:02:00.830
+uh... directory like this week
+
+0:02:00.830,0:02:03.100
+you are bio if you want it there
+
+0:02:03.100,0:02:04.370
+and
+
+0:02:04.370,0:02:05.740
+the visa to file
+
+0:02:05.740,0:02:06.790
+we don't need to
+
+0:02:06.790,0:02:09.920
+uncompressed it because the two
+attorneys and python so they can
+
+0:02:09.920,0:02:11.249
+actually read
+
+0:02:11.249,0:02:13.469
+the zip compressed files
+
+0:02:13.469,0:02:17.449
+there is the amount that is that if you
+have a time of text data they can get
+
+0:02:17.449,0:02:19.609
+very big quickly
+
+0:02:19.609,0:02:23.669
+anyone whose log to pass a multi being
+the events in the text format
+
+0:02:23.669,0:02:27.180
+will know that it likes to philip brutus
+too fast as possible so maybe a
+
+0:02:27.180,0:02:28.790
+compressed is a good thing
+
+0:02:28.790,0:02:30.409
+so we can do
+
+0:02:30.409,0:02:32.509
+uh... bc acts
+
+0:02:32.509,0:02:34.439
+and then in our file
+
+0:02:34.439,0:02:38.180
+and like that to happen with the done
+many times at this point
+
+0:02:38.180,0:02:41.249
+and we can see the first lines of our
+data file
+
+0:02:41.249,0:02:46.469
+and i'm hoping is that looks to you guys
+a lot friendlier then that format we had
+
+0:02:46.469,0:02:47.799
+last time
+
+0:02:47.799,0:02:49.859
+so we should see
+
+0:02:49.859,0:02:53.919
+first-line that's a comments line with a
+pound beginning
+
+0:02:53.919,0:02:54.859
+and then
+
+0:02:54.859,0:02:56.349
+i've put in
+
+0:02:56.349,0:02:58.989
+that column names so that we can
+remember them without having to
+
+0:02:58.989,0:03:00.929
+magically know what they are
+
+0:03:00.929,0:03:03.549
+so we've got in here
+
+0:03:03.549,0:03:05.039
+longitude
+
+0:03:05.039,0:03:06.799
+and a lot of skin
+
+0:03:06.799,0:03:10.919
+now be warned high tend to do things can
+x_y_z_
+
+0:03:10.919,0:03:13.000
+and a lot of people will do
+
+0:03:13.000,0:03:16.649
+why at city which to me seems very
+strange
+
+0:03:16.649,0:03:19.169
+because that's not arrayed in a corner
+frame
+
+0:03:19.169,0:03:22.559
+so i try to stick with the right
+according frame x_y_z_
+
+0:03:22.559,0:03:25.149
+and stay away from flat
+
+0:03:25.149,0:03:26.959
+lat long interview long live
+
+0:03:26.959,0:03:29.959
+if you see me going backwards instru
+dept
+
+0:03:29.959,0:03:32.429
+set out because
+
+0:03:32.429,0:03:34.290
+so there's no dissent for today
+
+0:03:34.290,0:03:36.379
+and we can also do a quick
+
+0:03:36.379,0:03:39.509
+wordcount see how much data we have
+
+0:03:39.509,0:03:40.389
+we have
+
+0:03:40.389,0:03:42.349
+eighty six thousand
+
+0:03:42.349,0:03:45.209
+points i'd like it everything all and
+double check and make sure they're good
+
+0:03:45.209,0:03:46.469
+points
+
+0:03:46.469,0:03:49.769
+admitted when grappling is important
+because we never had a look at all those
+
+0:03:49.769,0:03:51.029
+points there's no
+
+0:03:51.029,0:03:52.679
+there's no way
+
+0:03:52.679,0:03:54.939
+so let's go ahead and start up
+
+0:03:54.939,0:03:56.429
+fight on
+
+0:03:56.429,0:03:58.919
+typewriters are shell with pi lab
+
+0:03:58.919,0:04:00.989
+and if you forget by eleven
+
+0:04:00.989,0:04:04.459
+it's gonna be really unfunded a because
+we are definitely
+
+0:04:04.459,0:04:08.339
+doing lots of
+
+0:04:08.339,0:04:10.829
+slowly started i'd played on
+
+0:04:10.829,0:04:12.269
+were going to work with
+
+0:04:12.269,0:04:14.769
+of very command called
+
+0:04:14.769,0:04:20.189
+loaded tfc this is a part of a package
+called number line
+
+0:04:20.189,0:04:22.509
+brought in by pi lab
+
+0:04:22.509,0:04:24.379
+and load taxed
+
+0:04:24.379,0:04:25.399
+is
+
+0:04:25.399,0:04:29.969
+i'm very neat tool that knows how to
+read in alarms number are
+
+0:04:29.969,0:04:30.890
+formats
+
+0:04:30.890,0:04:32.280
+we enter here
+
+0:04:32.280,0:04:33.759
+and get some help
+
+0:04:33.759,0:04:35.419
+it'll give us some description
+
+0:04:35.419,0:04:36.729
+emphatically
+
+0:04:36.729,0:04:39.419
+assume everything is a floating point
+number of which
+
+0:04:39.419,0:04:41.629
+should work for us okay today
+
+0:04:41.629,0:04:43.889
+it knows that if a wind starts with that
+
+0:04:43.889,0:04:47.110
+found that the comment that's pretty
+cool for us
+
+0:04:47.110,0:04:51.610
+to a mature nine it'll say down below
+that if we don't tell anyone that are
+
+0:04:51.610,0:04:55.740
+it seems that center of white space
+between each of our columns
+
+0:04:55.740,0:04:59.309
+how we could also talent explicitly we
+wanna comically did the here we just
+
+0:04:59.309,0:05:00.949
+have white-space
+
+0:05:00.949,0:05:03.680
+ross of entrapment this unpack
+
+0:05:03.680,0:05:07.449
+featured down here so we can take a look
+through those
+
+0:05:07.449,0:05:09.979
+really give it up by a lame
+
+0:05:09.979,0:05:13.029
+and if we notice in the description here
+it says if the file an extension is
+
+0:05:13.029,0:05:15.740
+going to easy or dot be easy to
+
+0:05:15.740,0:05:16.810
+it no list
+
+0:05:16.810,0:05:19.889
+to first uncompressed that file on the
+flying
+
+0:05:19.889,0:05:21.159
+so that's our
+
+0:05:21.159,0:05:24.269
+he needs a ticket to keep the compressed
+
+0:05:24.269,0:05:27.009
+or not there were about to die
+
+0:05:27.009,0:05:30.020
+and we're going to come back and look at
+
+0:05:30.020,0:05:33.569
+unpack and then to be able to pull apart
+the data
+
+0:05:33.569,0:05:34.629
+if you are
+
+0:05:34.629,0:05:37.400
+data is nicely format as attached file
+
+0:05:37.400,0:05:39.559
+load tax is a great way
+
+0:05:39.559,0:05:44.499
+he did it in so that you can work with
+it
+
+0:05:44.499,0:05:47.650
+so if you didn't fight
+
+0:05:47.650,0:05:49.750
+which is on the screen
+
+0:05:49.750,0:05:56.419
+low-tax will not appear to have a pilot
+
+0:05:56.419,0:06:00.280
+yep i didn't put in our class notes here
+for him because i figured if somebody
+
+0:06:00.280,0:06:01.490
+differently
+
+0:06:01.490,0:06:03.759
+not remember the q
+
+0:06:03.759,0:06:06.330
+from the back from tijuana ron
+
+0:06:06.330,0:06:10.110
+uh... high python dash dash highlight
+
+0:06:10.110,0:06:15.249
+in your case they are keeping a low tax
+question marks who happens
+
+0:06:15.249,0:06:16.120
+so now
+
+0:06:16.120,0:06:17.830
+let's go ahead and try out
+
+0:06:17.830,0:06:21.039
+the sample of lawyer david we have here
+
+0:06:21.039,0:06:22.799
+sold to data
+
+0:06:22.799,0:06:27.519
+equals and if you don't do the equal
+sign is going to dump a giant amount
+
+0:06:27.519,0:06:30.379
+in fact eighty six thousand lines of
+text on your screen you don't really
+
+0:06:30.379,0:06:32.029
+want
+
+0:06:32.029,0:06:35.739
+solo t exceeds recall the function
+
+0:06:35.739,0:06:38.749
+remember that we can use tabs to
+complete file names
+
+0:06:38.749,0:06:40.740
+so ill completely out
+
+0:06:40.740,0:06:43.489
+a memo and the privacy on the right
+
+0:06:43.489,0:06:45.299
+and if you hit enter
+
+0:06:45.299,0:06:48.490
+it should take left for the second floor
+data and
+
+0:06:48.490,0:06:51.710
+and you can then type
+
+0:06:51.710,0:06:54.110
+and print the seas and data
+
+0:06:54.110,0:06:56.500
+and it will tell us what it did
+
+0:06:56.500,0:07:02.099
+this is a special day tight there's a
+whole i recall the numbed by design four
+
+0:07:02.099,0:07:04.829
+high-performance numerical analysis
+
+0:07:04.829,0:07:07.800
+we can run for a transforms on the stock
+
+0:07:07.800,0:07:11.199
+for all kinds of really cool features
+and is designed to be
+
+0:07:11.199,0:07:12.939
+compact in fast
+
+0:07:12.939,0:07:17.500
+all you need to know is that it's
+convenient networks
+
+0:07:17.500,0:07:18.870
+so if we typed
+
+0:07:18.870,0:07:22.179
+justia to see what happens to see what's
+in there
+
+0:07:22.179,0:07:26.080
+the nice thing about this is the nearby
+python it's not gonna
+
+0:07:26.080,0:07:29.310
+it gives you a nice and i like this it
+will actually trying to get you out
+
+0:07:29.310,0:07:31.580
+fairly friendly version of it
+
+0:07:31.580,0:07:33.939
+and what we've got here
+
+0:07:33.939,0:07:35.469
+arrays
+
+0:07:35.469,0:07:36.729
+that represents
+
+0:07:36.729,0:07:41.159
+it's basically a list of a arrays aneesh
+one of those entries and there is going
+
+0:07:41.159,0:07:42.750
+to be one of our records
+
+0:07:42.750,0:07:46.170
+so let's go ahead and idea of sub-zero
+and get one the back and see what it
+
+0:07:46.170,0:07:47.479
+looks like
+
+0:07:47.479,0:07:49.559
+and what would get back is
+
+0:07:49.559,0:07:55.409
+we look at our columns so we have x_y_z_
+quality satellites and h dot as your
+
+0:07:55.409,0:07:57.749
+report on world lucien of persuasion
+
+0:07:57.749,0:08:01.589
+which if you haven't taken a class about
+but you will see them
+
+0:08:01.589,0:08:03.669
+that comes back and one record
+
+0:08:03.669,0:08:05.460
+unfortunate we really wants
+
+0:08:05.460,0:08:09.030
+all of our taxes and one bigger rates
+will comply accidents why things like
+
+0:08:09.030,0:08:09.949
+that
+
+0:08:09.949,0:08:13.469
+so this isn't really a convenient form
+for us to have the data
+
+0:08:13.469,0:08:14.829
+is really kind of
+
+0:08:14.829,0:08:16.880
+wausau kind it is very annoying
+
+0:08:16.880,0:08:20.569
+so over into is used that unpack feature
+
+0:08:20.569,0:08:24.839
+to pull apart day types that are in
+there
+
+0:08:24.839,0:08:26.550
+and the way we do that
+
+0:08:26.550,0:08:30.419
+is we give it a name for each of the
+fields so we've got
+
+0:08:30.419,0:08:33.530
+if we say
+
+0:08:33.530,0:08:36.860
+uh... at one of those records we have
+six different fields that we've got to
+
+0:08:36.860,0:08:38.520
+give names to you
+
+0:08:38.520,0:08:40.960
+and they're going to come in the order
+of our columns
+
+0:08:40.960,0:08:42.590
+sewers a calm
+
+0:08:42.590,0:08:43.600
+acts
+
+0:08:43.600,0:08:45.610
+orion z
+
+0:08:45.610,0:08:48.110
+and then we get
+
+0:08:48.110,0:08:49.830
+quality
+
+0:08:49.830,0:08:52.400
+satellites
+
+0:08:52.400,0:08:54.800
+do you know p
+
+0:08:54.800,0:08:57.800
+loads the ecstasy
+
+0:08:57.800,0:09:02.810
+and ignoring the notes we have the and
+pete dot that's not break right now
+
+0:09:02.810,0:09:04.329
+this is what we had before
+
+0:09:04.329,0:09:08.890
+so it's not over for adam anu option and
+their certainly a comma
+
+0:09:08.890,0:09:11.630
+and we're gonna say unpack
+
+0:09:11.630,0:09:15.350
+equals troops as tells it to go off
+
+0:09:15.350,0:09:16.629
+pull apart each of those
+
+0:09:16.629,0:09:20.720
+columns from our data and fill 'em out
+has problems as opposed to getting into
+
+0:09:20.720,0:09:22.040
+this rose
+
+0:09:22.040,0:09:27.040
+bc i have an extra people find that
+they're cdbaby equals dole load text
+
+0:09:27.040,0:09:31.650
+you have just overwritten below text
+fortune you've resigned low-tech fifty
+
+0:09:31.650,0:09:32.900
+that string
+
+0:09:32.900,0:09:36.450
+so i would suggest that you quit attbi
+point on
+
+0:09:36.450,0:09:38.180
+and restart i fight on
+
+0:09:38.180,0:09:40.320
+because you've wiped out
+
+0:09:40.320,0:09:43.470
+in python you can assign anything to a
+function
+
+0:09:43.470,0:09:47.130
+and he will then replace that function
+so you've lost will text in that
+
+0:09:47.130,0:09:50.270
+so go ahead and quit out of our
+part-time restarted
+
+0:09:50.270,0:09:52.700
+so go ahead and hit enter with this
+
+0:09:52.700,0:09:53.450
+and hopefully
+
+0:09:53.450,0:09:58.990
+works for all of you
+
+0:09:58.990,0:10:00.490
+doing allies
+
+0:10:00.490,0:10:03.340
+so you've got it there so do
+
+0:10:03.340,0:10:05.870
+in the notes i have an extra and p dot
+
+0:10:05.870,0:10:07.270
+but that's a typo
+
+0:10:07.270,0:10:08.179
+i'll need it
+
+0:10:08.179,0:10:09.140
+i think that's
+
+0:10:09.140,0:10:13.709
+meant to come in later in the class so
+go back up and remove the and peed on
+
+0:10:13.709,0:10:15.080
+because that's incorrect
+
+0:10:15.080,0:10:17.720
+and then it should work gets done about
+that
+
+0:10:17.720,0:10:19.490
+then the charges that you just have
+
+0:10:19.490,0:10:21.850
+reached house
+
+0:10:21.850,0:10:25.760
+yet this happens this is my tries to
+look around the lives of canada and
+
+0:10:25.760,0:10:27.800
+probably working with the file name
+
+0:10:27.800,0:10:30.390
+someone to give you the filing press
+office and
+
+0:10:30.390,0:10:31.710
+matches
+
+0:10:31.710,0:10:34.050
+now we have our delivery as
+
+0:10:34.050,0:10:36.040
+nice separate variables we can take up
+
+0:10:36.040,0:10:37.980
+peek at what they look like
+
+0:10:37.980,0:10:39.440
+go ahead and tight
+
+0:10:39.440,0:10:42.490
+acts in to see what happens
+
+0:10:42.490,0:10:46.590
+and what we have here is an array of for
+longitude
+
+0:10:46.590,0:10:51.330
+we've got all of our launch he's coming
+back from the g_p_s_ in series
+
+0:10:51.330,0:10:53.320
+within the same with wine
+
+0:10:53.320,0:10:54.740
+you'll see
+
+0:10:54.740,0:10:56.980
+are latitudes
+
+0:10:56.980,0:11:00.580
+there's some really nice functions built
+and we can say
+
+0:11:00.580,0:11:01.840
+aborigine can
+
+0:11:01.840,0:11:04.060
+a team in town
+
+0:11:04.060,0:11:05.770
+and then he said acts
+
+0:11:05.770,0:11:08.840
+disconnect average everything in an
+array in the back
+
+0:11:08.840,0:11:10.260
+the average
+
+0:11:10.260,0:11:13.800
+value for the position for the archie
+p_s_
+
+0:11:13.800,0:11:16.990
+prepared for this one because we know
+the g_p_s_ isn't moving unless someone
+
+0:11:16.990,0:11:19.120
+is dragging her building away
+
+0:11:19.120,0:11:21.450
+itself it's just that they're on the
+roof
+
+0:11:21.450,0:11:24.520
+our best estimate is taking all but they
+didn't have urging it is our best
+
+0:11:24.520,0:11:27.360
+estimate the location of our g_p_s_
+
+0:11:27.360,0:11:30.210
+you can do the same for wine
+
+0:11:30.210,0:11:32.580
+he fought those two up on a map you
+should
+
+0:11:32.580,0:11:33.690
+foothold
+
+0:11:33.690,0:11:36.270
+mark breakdown pop barbell
+
+0:11:36.270,0:11:39.120
+they could also be fun things like you
+can say noon
+
+0:11:39.120,0:11:40.370
+of acts
+
+0:11:40.370,0:11:42.430
+and get a minimum back
+
+0:11:42.430,0:11:45.580
+if you forget women as you can always do
+you a question mark on it helps a little
+
+0:11:45.580,0:11:47.250
+bit about it
+
+0:11:47.250,0:11:52.910
+might be a little confusing to some of
+you
+
+0:11:52.910,0:11:54.140
+if you do you
+
+0:11:54.140,0:11:57.170
+percent who you can't say to leave
+
+0:11:57.170,0:12:00.410
+anyone the variables that you want to
+get rid of
+
+0:12:00.410,0:12:02.600
+you're always welcome to do that
+
+0:12:02.600,0:12:05.490
+but they're right now there's no reason
+to believe anything that we've got to be
+
+0:12:05.490,0:12:08.690
+made
+
+0:12:08.690,0:12:09.500
+year old data
+
+0:12:09.500,0:12:13.220
+only a few on belief that you're welcome
+to do it
+
+0:12:13.220,0:12:14.550
+how do you know it kept
+
+0:12:14.550,0:12:16.050
+them all in the right
+
+0:12:16.050,0:12:20.890
+orders and i wish that disk does for
+registered with the uh... kentucky acts
+
+0:12:20.890,0:12:22.830
+incident coming in order
+
+0:12:22.830,0:12:25.820
+you could also take a couple numbers and
+to compete
+
+0:12:25.820,0:12:29.110
+if you'd you'd like to have you can take
+a look at the first couple of theater
+
+0:12:29.110,0:12:30.760
+coming out right
+
+0:12:30.760,0:12:32.440
+let's just get a plot up
+
+0:12:32.440,0:12:33.960
+of our expel you
+
+0:12:33.960,0:12:36.800
+this is going to give us our first
+peaking too
+
+0:12:36.800,0:12:39.390
+how would you guess is doing
+
+0:12:39.390,0:12:41.240
+so this is the plot of
+
+0:12:41.240,0:12:45.460
+the longitude of our g_p_s_
+
+0:12:45.460,0:12:47.750
+now i'll expect you to know exactly how
+
+0:12:47.750,0:12:49.830
+the any
+
+0:12:49.830,0:12:50.910
+thousandth of a lot
+
+0:12:50.910,0:12:53.390
+wanted to greens here right
+
+0:12:53.390,0:12:56.820
+outstanding is completely useless number
+for us
+
+0:12:56.820,0:12:59.810
+so we're going out in a bit look at how
+i convert that
+
+0:12:59.810,0:13:02.079
+the motion of the x and y into a meters
+
+0:13:02.079,0:13:03.500
+from our average
+
+0:13:03.500,0:13:05.630
+but this gives you a general sense that
+
+0:13:05.630,0:13:09.220
+it's pretty stable you know compared to
+you something from the nineteen fifties
+
+0:13:09.220,0:13:12.640
+if you're doing a satellite picks in the
+early sixties from
+
+0:13:12.640,0:13:13.730
+when the first
+
+0:13:13.730,0:13:16.470
+fatten that system that would be moving
+quite a bit more
+
+0:13:16.470,0:13:19.790
+so so it's probably pretty good you can
+plot
+
+0:13:19.790,0:13:21.170
+the wire variable
+
+0:13:21.170,0:13:23.360
+so that's going to be are a lot of
+seeing
+
+0:13:23.360,0:13:25.440
+we have something that we don't want
+
+0:13:25.440,0:13:29.920
+it's trying to plot both the acts in the
+wise to separate one for the same graph
+
+0:13:29.920,0:13:31.560
+which means that
+
+0:13:31.560,0:13:33.900
+the variation into those is
+
+0:13:33.900,0:13:36.240
+pretty much probably want
+
+0:13:36.240,0:13:39.720
+bears a couple ways you can do without
+
+0:13:39.720,0:13:40.790
+the first one
+
+0:13:40.790,0:13:43.610
+as you can always say c l_ a_ n_
+
+0:13:43.610,0:13:45.429
+which cleared out your graph
+
+0:13:45.429,0:13:47.850
+and i don't actually know what c l_ a_
+stands for
+
+0:13:47.850,0:13:50.290
+tacit clear the current axes
+
+0:13:50.290,0:13:52.480
+and then you can reply
+
+0:13:52.480,0:13:54.100
+just by itself
+
+0:13:54.100,0:13:56.510
+and then if you want to go back to
+exceed three plot
+
+0:13:56.510,0:14:03.510
+nuclear unemployed acts
+
+0:14:05.800,0:14:09.249
+it's basically sort of interactive and
+elite figured out
+
+0:14:09.249,0:14:11.590
+active vs
+
+0:14:11.590,0:14:13.150
+delays in private
+
+0:14:13.150,0:14:14.160
+breed upon that
+
+0:14:14.160,0:14:16.020
+so i'm showing you
+
+0:14:16.020,0:14:19.569
+i try to teach you guys the way i wish i
+had been taught to plot
+
+0:14:19.569,0:14:23.120
+because i want the plot with the new
+plot allies friends
+
+0:14:23.120,0:14:26.750
+fifteen years of canoe plot and writes
+me insane
+
+0:14:26.750,0:14:28.470
+it's not very flexible
+
+0:14:28.470,0:14:29.980
+it's really grumpy
+
+0:14:29.980,0:14:34.130
+and it doesn't like to do things like
+poor plots and there's nothing to do
+
+0:14:34.130,0:14:35.930
+very well
+
+0:14:35.930,0:14:38.930
+map pollard is way more powerful but
+that means i also don't know what as
+
+0:14:38.930,0:14:40.670
+well as i hope in the plot
+
+0:14:40.670,0:14:42.420
+so i'm still trying to act
+
+0:14:42.420,0:14:44.129
+figure out all melissa
+
+0:14:44.129,0:14:45.770
+at holland
+
+0:14:45.770,0:14:47.630
+but the nice thing is we didn't
+
+0:14:47.630,0:14:50.070
+tell it to switch between figures
+
+0:14:50.070,0:14:53.060
+did a good thing to go with this is
+anything you or what this if you go over
+
+0:14:53.060,0:14:54.230
+to matlab
+
+0:14:54.230,0:14:56.160
+applauding in matlab
+
+0:14:56.160,0:14:58.010
+uh... this is trying to mimic
+
+0:14:58.010,0:14:59.810
+how matt my brother's plodding
+
+0:14:59.810,0:15:02.490
+clotting in matlab is really awesome
+
+0:15:02.490,0:15:03.749
+and so they copied
+
+0:15:03.749,0:15:05.569
+what they thought was a great design
+
+0:15:05.569,0:15:07.670
+it's works really well by phone
+
+0:15:07.670,0:15:12.110
+they're keeping we can do is we can say
+figure to you could have a number of
+
+0:15:12.110,0:15:13.360
+numbered figures
+
+0:15:13.360,0:15:15.470
+and it's gonna pull up
+
+0:15:15.470,0:15:17.770
+on the screen a second window
+
+0:15:17.770,0:15:20.260
+that i have no space to really put
+somewhere
+
+0:15:20.260,0:15:23.700
+you can switch back and forth between
+easily can plot
+
+0:15:23.700,0:15:24.640
+x
+
+0:15:24.640,0:15:25.670
+in
+
+0:15:25.670,0:15:28.960
+this figure to and why in figure one
+
+0:15:28.960,0:15:31.220
+so then you can start if you've got a
+
+0:15:31.220,0:15:34.970
+screen is big enough to see what's going
+on you can start plotting up all over
+
+0:15:34.970,0:15:38.150
+different graphs and look at the next to
+each other
+
+0:15:38.150,0:15:40.910
+but really what we wanted to you is
+probably more like something like this
+
+0:15:40.910,0:15:43.480
+will do a c l_ a_ to clear
+
+0:15:43.480,0:15:44.319
+and really
+
+0:15:44.319,0:15:47.230
+want to be doing plot x comma y
+
+0:15:47.230,0:15:49.270
+so if this is going to use plot
+
+0:15:49.270,0:15:52.380
+the excel use against the white values
+franklin plotting
+
+0:15:52.380,0:15:54.350
+are latching onto separately
+
+0:15:54.350,0:15:56.990
+we get caning what test
+
+0:15:56.990,0:15:58.830
+so this is our g_p_s_
+
+0:15:58.830,0:16:02.180
+the position of it over an entire day
+
+0:16:02.180,0:16:06.030
+if that's not too many years and that's
+probably a pretty good thing that you
+
+0:16:06.030,0:16:08.570
+can see that it's pretty random is
+
+0:16:08.570,0:16:09.629
+it's uh...
+
+0:16:09.629,0:16:10.990
+senator i'm area without
+
+0:16:10.990,0:16:14.530
+any via fax one way or the other we have
+one mls bike sticking out the top
+
+0:16:14.530,0:16:15.550
+in general
+
+0:16:15.550,0:16:20.360
+it's a very nice type old stuff it's not
+paying off to too far
+
+0:16:20.360,0:16:23.600
+and we'll have to later on cm years that
+is
+
+0:16:23.600,0:16:27.310
+misses a lot better plot bernard katz
+and why separately but sometimes you
+
+0:16:27.310,0:16:30.960
+just wanna plot took the part of that
+
+0:16:30.960,0:16:32.940
+uh... tickets once a second
+
+0:16:32.940,0:16:36.020
+from eighty six thousand yet so i want
+to second
+
+0:16:36.020,0:16:39.430
+i don't know if it's tightly controlled
+to one second purposes going as fast as
+
+0:16:39.430,0:16:41.120
+they can
+
+0:16:41.120,0:16:41.899
+that's great
+
+0:16:41.899,0:16:43.650
+but when you start having local figures
+
+0:16:43.650,0:16:46.980
+it's kind of important to be able to
+label things and if you want to print
+
+0:16:46.980,0:16:48.040
+them out
+
+0:16:48.040,0:16:51.030
+and do something your notebook you don't
+have labels on things it's going to get
+
+0:16:51.030,0:16:52.410
+that fast
+
+0:16:52.410,0:16:55.030
+so let's go or how to put some labels on
+
+0:16:55.030,0:16:57.210
+the first thing we can use that i don't
+
+0:16:57.210,0:17:00.850
+speedy trial prep the season in the
+string inside that you want
+
+0:17:00.850,0:17:04.300
+and will call a g_p_s_ warner
+
+0:17:04.300,0:17:05.640
+one day
+
+0:17:05.640,0:17:08.640
+if you were actually doing this for your
+notebook
+
+0:17:08.640,0:17:11.610
+i want for your the date that this was
+for a few more
+
+0:17:11.610,0:17:13.770
+you more things on here
+
+0:17:13.770,0:17:17.289
+so you actually figure out which they
+have a real funny
+
+0:17:17.289,0:17:19.880
+bioflavonoids and why i think it's
+
+0:17:19.880,0:17:21.720
+so we can say x label
+
+0:17:21.720,0:17:23.980
+james warren g_
+
+0:17:23.980,0:17:25.600
+the
+
+0:17:25.600,0:17:28.429
+and plessy wanted appears
+
+0:17:28.429,0:17:29.900
+right up here
+
+0:17:29.900,0:17:34.000
+we can say that while able
+
+0:17:34.000,0:17:36.420
+by the two
+
+0:17:36.420,0:17:40.830
+quality of aroma left's and works pretty
+well
+
+0:17:40.830,0:17:44.950
+before i go any further let me give you
+a sense of how powerful this is and how
+
+0:17:44.950,0:17:47.510
+little i know of map pollen
+
+0:17:47.510,0:17:49.760
+you can go way beyond my skills
+
+0:17:49.760,0:17:51.440
+really cover the top
+
+0:17:51.440,0:17:53.470
+there's uh... gallery
+
+0:17:53.470,0:17:55.080
+on that follows
+
+0:17:55.080,0:17:56.419
+website
+
+0:17:56.419,0:17:59.260
+and when you're boring you wanna see
+pretty pictures
+
+0:17:59.260,0:18:01.620
+and you feel like grass
+
+0:18:01.620,0:18:05.130
+here's some of the sample graphic they
+were able to see their even able to draw
+
+0:18:05.130,0:18:05.820
+part
+
+0:18:05.820,0:18:08.000
+they've got polar plots
+
+0:18:08.000,0:18:09.190
+they've got
+
+0:18:09.190,0:18:12.420
+from old triangle taping they've got
+
+0:18:12.420,0:18:15.020
+through some sort of system
+
+0:18:15.020,0:18:18.559
+these are all graphs made with map plot
+led and they give you the sample script
+
+0:18:18.559,0:18:20.840
+on how to make each one of those
+
+0:18:20.840,0:18:22.180
+if u
+
+0:18:22.180,0:18:25.370
+thank you for your biologist both i'd
+like to do with your plot to kill a
+
+0:18:25.370,0:18:26.929
+whisker plots
+
+0:18:26.929,0:18:28.490
+uh... you can do
+
+0:18:28.490,0:18:30.960
+things that are to be images
+
+0:18:30.960,0:18:32.880
+you could do all kinds of stuff
+
+0:18:32.880,0:18:35.310
+draw crazy pictures
+
+0:18:35.310,0:18:37.740
+departure arts
+
+0:18:37.740,0:18:39.690
+and there's a picture of a
+
+0:18:39.690,0:18:40.880
+person
+
+0:18:40.880,0:18:44.200
+you can do all kinds of crazy stuff with
+it so that's cool
+
+0:18:44.200,0:18:47.330
+the more you are with the demo reel be
+able to pull off some of these pool
+
+0:18:47.330,0:18:48.690
+graphs that
+
+0:18:48.690,0:18:52.390
+i don't get no idea myself
+
+0:18:52.390,0:18:53.240
+you can turn
+
+0:18:53.240,0:18:58.680
+into s fijian skill doctor graphics that
+that working illustrator you can make
+
+0:18:58.680,0:19:02.080
+images of p_n_g_ zinc it's things like
+that
+
+0:19:02.080,0:19:05.850
+it's pretty flexible in terms of what it
+while quit
+
+0:19:05.850,0:19:08.350
+so if you're trying to make a figure
+career poster
+
+0:19:08.350,0:19:10.860
+this is a great tool for being able to
+uh...
+
+0:19:10.860,0:19:13.950
+recreate simple graphics
+
+0:19:13.950,0:19:16.560
+so let's do a little bit more to make
+this
+
+0:19:16.560,0:19:21.180
+more useful we can add once you've got a
+plot up you can add other plots on top
+
+0:19:21.180,0:19:21.820
+of it
+
+0:19:21.820,0:19:23.730
+let's floppy average
+
+0:19:23.730,0:19:26.190
+of the accent why so so the center
+
+0:19:26.190,0:19:27.990
+points that this uh... is
+
+0:19:27.990,0:19:30.400
+wandering around so we can say plots
+
+0:19:30.400,0:19:32.190
+and we can say coverage
+
+0:19:32.190,0:19:33.150
+acts
+
+0:19:33.150,0:19:35.330
+com ar have a rich
+
+0:19:35.330,0:19:36.570
+wine
+
+0:19:36.570,0:19:38.590
+and then i had some special
+
+0:19:38.590,0:19:39.840
+text rings
+
+0:19:39.840,0:19:42.750
+however a couple more pop my head
+
+0:19:42.750,0:19:45.080
+but we can say oh or
+
+0:19:45.080,0:19:47.150
+inside therefore red
+
+0:19:47.150,0:19:49.080
+and hope for circle
+
+0:19:49.080,0:19:50.870
+so the default is
+
+0:19:50.870,0:19:53.250
+i start off with a blue line
+
+0:19:53.250,0:19:54.750
+to connect all the points
+
+0:19:54.750,0:19:57.980
+if we just wanted to a red circle
+
+0:19:57.980,0:20:01.120
+we now have a little tiny red circle
+medal at the center point
+
+0:20:01.120,0:20:02.250
+uh... pat
+
+0:20:02.250,0:20:04.630
+massive twelve points
+
+0:20:04.630,0:20:08.090
+and we can do something like we could
+throw label on it computer labels that
+
+0:20:08.090,0:20:09.820
+ticker locations
+
+0:20:09.820,0:20:11.350
+so you can say
+
+0:20:11.350,0:20:13.850
+indicates
+
+0:20:13.850,0:20:20.140
+center tereko center text there let me
+say it's gonna be a x_y_ of
+
+0:20:20.140,0:20:21.960
+coverage acts
+
+0:20:21.960,0:20:23.770
+how much have a rich
+
+0:20:23.770,0:20:25.190
+wine
+
+0:20:25.190,0:20:29.500
+and uh... getting it done a great number
+of pregnancies and sometimes hard
+
+0:20:29.500,0:20:33.230
+so there need to be three practices on
+the right time this one came back down
+
+0:20:33.230,0:20:34.680
+side
+
+0:20:34.680,0:20:36.690
+there's nothing right there at the
+moment
+
+0:20:36.690,0:20:41.260
+so if it hasn't drawn that particular
+part of the graph you can save show
+
+0:20:41.260,0:20:43.760
+and it will try to draw everything
+
+0:20:43.760,0:20:44.779
+and frank
+
+0:20:44.779,0:20:47.250
+that's right you there dallas center
+
+0:20:47.250,0:20:50.409
+that's part of projector you really
+can't see
+
+0:20:50.409,0:20:54.750
+but on your screen you can hopefully see
+a little black center written on there
+
+0:20:54.750,0:20:57.770
+if you look at the new notes it's got
+all kinds of things we can change the
+
+0:20:57.770,0:20:59.740
+font you can make it bold
+
+0:20:59.740,0:21:01.070
+it's which the color
+
+0:21:01.070,0:21:04.170
+critical you can actually see
+
+0:21:04.170,0:21:06.100
+here
+
+0:21:06.100,0:21:09.190
+if we want to go to figure two
+
+0:21:09.190,0:21:12.950
+we're now on figure to use overall now
+other one that's back here
+
+0:21:12.950,0:21:15.870
+it's got a lot of state so we're gonna
+see some work that we're gonna build
+
+0:21:15.870,0:21:21.060
+some subplots worry to one figure with
+local plots together
+
+0:21:21.060,0:21:23.020
+you have to remember
+
+0:21:23.020,0:21:27.440
+which partner on sees how it'll pay now
+i'm working on the subplot lovely way to
+
+0:21:27.440,0:21:28.649
+ask it
+
+0:21:28.649,0:21:31.920
+but typically that's kind of confusing
+and hard to find so
+
+0:21:31.920,0:21:35.230
+he's long as you keep telling it where
+you're at then you're good
+
+0:21:35.230,0:21:39.840
+so let's get dainty now and let's do
+some actual geospatial work
+
+0:21:39.840,0:21:42.310
+so we're gonna go ahead and try to you
+
+0:21:42.310,0:21:46.380
+you know why recalled proj pure o_j_
+that was a reason britain at the u_s_
+
+0:21:46.380,0:21:47.480
+g_s_
+
+0:21:47.480,0:21:50.240
+in uh... leave the seventies
+
+0:21:50.240,0:21:53.460
+and insert often for training that was
+kinda scary
+
+0:21:53.460,0:21:56.960
+but it's been improved over the years
+and turned into a really amazing
+
+0:21:56.960,0:22:01.520
+projection library so it knows all about
+ellipsoids projections
+
+0:22:01.520,0:22:04.750
+and he transformed a tiff between all
+sorts of different core difference for
+
+0:22:04.750,0:22:05.670
+you
+
+0:22:05.670,0:22:07.240
+bring it back
+
+0:22:07.240,0:22:11.060
+it actually knows about distances on the
+ellipsoids
+
+0:22:11.060,0:22:15.230
+and so we can talk to a great circle
+distance between two points so that you
+
+0:22:15.230,0:22:20.010
+don't have to do it
+
+0:22:20.010,0:22:23.760
+there's updates fairly often as people
+add new projections
+
+0:22:23.760,0:22:24.769
+and it's god
+
+0:22:24.769,0:22:25.539
+several
+
+0:22:25.539,0:22:28.899
+like baby and twenty thousand
+projections and
+
+0:22:28.899,0:22:31.050
+turkey is that controls the issue
+
+0:22:31.050,0:22:32.610
+bailout nightline
+
+0:22:32.610,0:22:33.720
+so let's give
+
+0:22:33.720,0:22:35.480
+project right
+
+0:22:35.480,0:22:37.750
+and we'll see if we can project some
+data
+
+0:22:37.750,0:22:40.640
+subjected to at least get ourselves out
+
+0:22:40.640,0:22:42.650
+assistance
+
+0:22:42.650,0:22:45.419
+soldiers were giving useful ever called
+
+0:22:45.419,0:22:46.480
+by proj
+
+0:22:46.480,0:22:48.940
+that's a wrapper around some c code
+
+0:22:48.940,0:22:50.540
+so important
+
+0:22:50.540,0:22:51.940
+by proj
+
+0:22:51.940,0:22:55.340
+you need to really know what's in there
+and then it works
+
+0:22:55.340,0:23:00.170
+you have to create object that knows
+which ellipsoids working with
+
+0:23:00.170,0:23:02.180
+so we're say
+
+0:23:02.180,0:23:06.310
+g_e_ odi and i don't really know what it
+
+0:23:06.310,0:23:07.909
+that stands for
+
+0:23:07.909,0:23:10.309
+and we're going to try proj module
+
+0:23:10.309,0:23:12.640
+and leave their g_o_t_
+
+0:23:12.640,0:23:14.640
+and in fact before eating that
+
+0:23:14.640,0:23:15.770
+were asking for help
+
+0:23:15.770,0:23:16.880
+and you can see
+
+0:23:16.880,0:23:19.240
+that is not terribly helpful
+
+0:23:19.240,0:23:21.010
+the piper i start
+
+0:23:21.010,0:23:22.669
+geology owed
+
+0:23:22.669,0:23:24.340
+with a capital g
+
+0:23:24.340,0:23:25.610
+presenter
+
+0:23:25.610,0:23:28.140
+and we'll tell you a little bit about
+
+0:23:28.140,0:23:32.510
+forwarded inverse geodetic refereed
+circle computations
+
+0:23:32.510,0:23:36.770
+an area did you not enough information
+to really figure out what's good
+
+0:23:36.770,0:23:40.050
+all guide you through the actual process
+of
+
+0:23:40.050,0:23:42.420
+setting up so
+
+0:23:42.420,0:23:44.120
+so if you see right
+
+0:23:44.120,0:23:46.549
+so here i was just typing time
+
+0:23:46.549,0:23:50.070
+it gave me the simplest uh... three
+things are possible
+
+0:23:50.070,0:23:52.620
+and i had to finish it out
+
+0:23:52.620,0:23:53.970
+yet that was me
+
+0:23:53.970,0:23:55.700
+income
+
+0:23:55.700,0:23:59.020
+so if you noticed on the screen if there
+is a thirty four dash two thirty four
+
+0:23:59.020,0:24:00.080
+again
+
+0:24:00.080,0:24:01.940
+didn't i didn't answer
+
+0:24:01.940,0:24:04.990
+so you try to run the command that
+wasn't going to work
+
+0:24:04.990,0:24:06.289
+that's not yet so
+
+0:24:06.289,0:24:10.480
+i'm working on the command thirty-five
+so start with thirty five
+
+0:24:10.480,0:24:11.860
+my thirty five
+
+0:24:11.860,0:24:16.700
+so i know there's a good keep your can
+you guys up for the rest of semester but
+
+0:24:16.700,0:24:20.700
+katie he stopped myself at this point i
+hit tab all the time
+
+0:24:20.700,0:24:21.560
+and so
+
+0:24:21.560,0:24:25.650
+you're gonna see partial completion to
+come along to you gotta keep an eye on
+
+0:24:25.650,0:24:27.680
+figures number thirty four
+
+0:24:27.680,0:24:31.360
+and here's again thirty four that means
+i haven't hit enter
+
+0:24:31.360,0:24:34.820
+you're looking at a partial coming and
+that if you press the enter
+
+0:24:34.820,0:24:36.390
+after typing in
+
+0:24:36.390,0:24:37.750
+the facts
+
+0:24:37.750,0:24:40.730
+you're gonna get some sort of strange
+air
+
+0:24:40.730,0:24:42.950
+uh... probably say i don't know what
+heights
+
+0:24:42.950,0:24:45.090
+so i apologize for it
+
+0:24:45.090,0:24:46.980
+because you can't make it
+
+0:24:46.980,0:24:49.810
+hopefully do you guys will start
+catching them
+
+0:24:49.810,0:24:51.710
+more often
+
+0:24:51.710,0:24:54.730
+if he had figured why do you guys enough
+time to write you know you'll figure it
+
+0:24:54.730,0:24:56.060
+out at home
+
+0:24:56.060,0:25:00.530
+so let's get this thing settled and we
+just thought which ellipsoid
+
+0:25:00.530,0:25:03.830
+curtly don't over how to ask if
+ellipsoids
+
+0:25:03.830,0:25:06.110
+tulips equals
+
+0:25:06.110,0:25:10.330
+though the u_s_ eighty-four so if you
+know anything about ellipsoids
+
+0:25:10.330,0:25:14.340
+this is the one that's used for g_p_s_
+systems
+
+0:25:14.340,0:25:17.330
+your hope we can all learn alzheimer
+about
+
+0:25:17.330,0:25:18.259
+geography
+
+0:25:18.259,0:25:20.670
+but you're not going for me
+
+0:25:20.670,0:25:25.630
+soaring to more of the mechanics and
+only would be ritu probably some up
+
+0:25:25.630,0:25:27.740
+who will be talking to you about
+
+0:25:27.740,0:25:29.870
+ellipsoids angie are seeing a lot
+
+0:25:29.870,0:25:30.870
+here were disconnect
+
+0:25:30.870,0:25:34.630
+get it done continued to go after the
+details of the matter
+
+0:25:34.630,0:25:36.559
+sofa run back to me and
+
+0:25:36.559,0:25:38.320
+that's going to give us this
+
+0:25:38.320,0:25:41.950
+g_ o_ d_ who do you know i don't know
+how to say this
+
+0:25:41.950,0:25:43.540
+objects
+
+0:25:43.540,0:25:47.910
+put a period after a few hit tab to find
+out what is going to billable
+
+0:25:47.910,0:25:51.270
+but that sonya four ignore open
+governor's scores a goal of over on the
+
+0:25:51.270,0:25:52.880
+right
+
+0:25:52.880,0:25:56.830
+and has to things in here that we care
+about forward
+
+0:25:56.830,0:25:59.380
+an inverse
+
+0:25:59.380,0:26:01.330
+whether you're going from
+
+0:26:01.330,0:26:02.260
+uh... points
+
+0:26:02.260,0:26:06.399
+and a distance and direction or if
+you're going from two points
+
+0:26:06.399,0:26:09.630
+and you want to figure out the distance
+and direction between the two
+
+0:26:09.630,0:26:11.200
+we're gonna use
+
+0:26:11.200,0:26:13.730
+the inverse which takes two points
+
+0:26:13.730,0:26:15.380
+and give it back
+
+0:26:15.380,0:26:18.520
+direction and distance between those two
+points
+
+0:26:18.520,0:26:20.230
+those given a shot
+
+0:26:20.230,0:26:22.680
+school say inverse
+
+0:26:22.680,0:26:26.270
+we can pick two points so i'm gonna take
+acts
+
+0:26:26.270,0:26:27.220
+morning
+
+0:26:27.220,0:26:29.470
+y_-one
+
+0:26:29.470,0:26:30.710
+and i'm gonna do
+
+0:26:30.710,0:26:31.930
+take a gamble
+
+0:26:31.930,0:26:35.049
+i'm anti-tax minus one
+
+0:26:35.049,0:26:38.250
+and why minus one thought the very last
+point
+
+0:26:38.250,0:26:41.010
+if you guys remember delays that we've
+done
+
+0:26:41.010,0:26:43.560
+minus one is the very last one
+
+0:26:43.560,0:26:46.510
+slash this isn't the first one that
+would be thrilled onto the actual
+
+0:26:46.510,0:26:48.220
+firstborn
+
+0:26:48.220,0:26:51.419
+zero was the first ones will be first in
+last
+
+0:26:51.419,0:26:52.989
+this is debbie the distance
+
+0:26:52.989,0:26:56.239
+and direction between the first point
+was taken during that day and a lot
+
+0:26:56.239,0:26:57.850
+point
+
+0:26:57.850,0:27:00.880
+solar hit enter cross our fingers
+
+0:27:00.880,0:27:03.230
+what you're going to get back
+
+0:27:03.230,0:27:04.900
+rapid ask it
+
+0:27:04.900,0:27:06.559
+question mark on the
+
+0:27:06.559,0:27:08.799
+inverse call
+
+0:27:08.799,0:27:11.820
+and it's going to tell us hopefully
+
+0:27:11.820,0:27:15.580
+returns before and back as most which is
+the direction
+
+0:27:15.580,0:27:17.070
+india grease
+
+0:27:17.070,0:27:20.029
+and then the distance so we have
+
+0:27:20.029,0:27:23.300
+this is going to be the direction from
+
+0:27:23.300,0:27:25.570
+the first point uh... watch points
+
+0:27:25.570,0:27:29.980
+this is the opulent direction from the
+last point to the first point
+
+0:27:29.980,0:27:32.649
+and then this is how far apart they are
+
+0:27:32.649,0:27:35.980
+and i believe it's in meters doesn't
+actually tell us that you know it's a
+
+0:27:35.980,0:27:39.020
+newspaper yes distances are in years
+
+0:27:39.020,0:27:44.250
+in one day this g_p_s_ has drifted five
+point two meters from that starting
+
+0:27:44.250,0:27:45.570
+point to the ending point
+
+0:27:45.570,0:27:49.030
+which doesn't seem too bad in the stock
+great but
+
+0:27:49.030,0:27:51.930
+doesn't mean that agrees
+
+0:27:51.930,0:27:52.539
+no
+
+0:27:52.539,0:27:56.419
+that's just during those points and it
+might have wonder back closer so there's
+
+0:27:56.419,0:27:59.820
+probably uh... distance that this was
+greater than that
+
+0:27:59.820,0:28:03.990
+solely at least nobody able to calculate
+the distance and we know our g_p_s_ is
+
+0:28:03.990,0:28:05.940
+rightfully ok if we
+
+0:28:05.940,0:28:09.450
+if that distance of five years isn't too
+terrible for us
+
+0:28:09.450,0:28:11.170
+if you're trying to do
+
+0:28:11.170,0:28:15.360
+before one of the party k the real fun
+imax g_p_s_ for surveying you want some
+
+0:28:15.360,0:28:16.490
+centimeter
+
+0:28:16.490,0:28:19.210
+with the fact we have a problem
+
+0:28:19.210,0:28:23.720
+so meeting quite uses g_p_s_ for fixing
+stuff like that
+
+0:28:23.720,0:28:26.179
+so let's go ahead and try to use this
+
+0:28:26.179,0:28:29.519
+to create a function rekindle cross all
+of our data
+
+0:28:29.519,0:28:32.840
+and calculate the distance from the
+appalachian and the direction from the
+
+0:28:32.840,0:28:33.760
+average
+
+0:28:33.760,0:28:35.470
+for every single point
+
+0:28:35.470,0:28:37.320
+for our data set
+
+0:28:37.320,0:28:38.529
+business is good
+
+0:28:38.529,0:28:42.580
+be going back to wearing at a rate
+functions and creating something they
+
+0:28:42.580,0:28:44.309
+can actually handle
+
+0:28:44.309,0:28:45.920
+i do that
+
+0:28:45.920,0:28:49.250
+so let's go ahead and create something
+mccall wonder
+
+0:28:49.250,0:28:50.690
+dot pines
+
+0:28:50.690,0:28:54.050
+for calculating longer
+
+0:28:54.050,0:28:59.760
+so we're gonna need are pipe raj library
+against wind import that into this final
+
+0:28:59.760,0:29:02.110
+import higher price that we can do that
+
+0:29:02.110,0:29:03.799
+that you know it
+
+0:29:03.799,0:29:05.950
+in berkeley need to create a function
+
+0:29:05.950,0:29:07.870
+wanderlust
+
+0:29:07.870,0:29:10.290
+so it's going to create a list
+
+0:29:10.290,0:29:12.320
+the wonders
+
+0:29:12.320,0:29:14.870
+deviate from our average points
+
+0:29:14.870,0:29:18.289
+so this is creating a function if you
+remember
+
+0:29:18.289,0:29:21.290
+says i want to create function
+
+0:29:21.290,0:29:22.940
+and then
+
+0:29:22.940,0:29:26.980
+here we're doing it by the name of our
+function so wonder lists
+
+0:29:26.980,0:29:29.760
+to parentheses will be our arguments
+
+0:29:29.760,0:29:32.640
+what we're gonna pass then reynolds
+wrapping up again
+
+0:29:32.640,0:29:35.269
+cohen says we're going to go ahead and
+start it
+
+0:29:35.269,0:29:41.750
+inside there
+
+0:29:41.750,0:29:43.220
+we can certainly do that we do
+
+0:29:43.220,0:29:45.059
+we don't have to have it here its
+
+0:29:45.059,0:29:48.870
+i can do it just because it's great
+because then you can right from the back
+
+0:29:48.870,0:29:51.760
+shell later on to
+
+0:29:51.760,0:29:53.750
+is not required
+
+0:29:53.750,0:29:57.230
+it's tends to be a good thing to do so
+i'll go ahead and do it
+
+0:29:57.230,0:30:01.270
+if we didn't do it we'll be ok for now
+might later on find out that we had some
+
+0:30:01.270,0:30:03.110
+trouble
+
+0:30:03.110,0:30:07.600
+so let's go ahead and start working on
+this functions we need to bring back in
+
+0:30:07.600,0:30:10.850
+but we did with it you know
+
+0:30:10.850,0:30:13.450
+adornment announces some hope that some
+way
+
+0:30:13.450,0:30:16.410
+so history misti we've been doing
+
+0:30:16.410,0:30:18.710
+so here is our import that we didn't
+
+0:30:18.710,0:30:23.380
+the reader create one of these are
+different use it in the transformations
+
+0:30:23.380,0:30:24.950
+edit copy
+
+0:30:24.950,0:30:26.770
+it's the same here
+
+0:30:26.770,0:30:31.510
+then grew more load in all of that data
+that we did before
+
+0:30:31.510,0:30:34.460
+way back here for me this is number
+seven
+
+0:30:34.460,0:30:36.210
+we were in that area
+
+0:30:36.210,0:30:37.810
+at copley
+
+0:30:37.810,0:30:42.770
+paste that into limo the day inside of
+our function
+
+0:30:42.770,0:30:46.220
+now this is an agreat function because
+typically run one right functions you
+
+0:30:46.220,0:30:47.860
+can reuse later on
+
+0:30:47.860,0:30:50.950
+and having a hard coded by elaine just
+kind of bad
+
+0:30:50.950,0:30:53.920
+but we're going to be lazy finale felt
+works
+
+0:30:53.920,0:30:54.700
+because
+
+0:30:54.700,0:30:58.570
+worrying about too many things at once
+will contact you not
+
+0:30:58.570,0:31:02.120
+okay so now we want to have our average
+is that we can use as we went through
+
+0:31:02.120,0:31:05.700
+all the points source computer are
+averages
+
+0:31:05.700,0:31:07.880
+so x
+
+0:31:07.880,0:31:09.290
+equals
+
+0:31:09.290,0:31:11.200
+cabarets
+
+0:31:11.200,0:31:12.299
+uh... acts
+
+0:31:12.299,0:31:16.660
+and why i have equals average of y
+
+0:31:16.660,0:31:18.310
+now i'm doing this
+
+0:31:18.310,0:31:22.110
+once at the beginning rather than each
+somewhere in the loop we could kapiti
+
+0:31:22.110,0:31:23.769
+average on-the-fly
+
+0:31:23.769,0:31:27.330
+but that's an expensive thing to do
+because to calculate the average it has
+
+0:31:27.330,0:31:29.430
+to read the entire right
+
+0:31:29.430,0:31:32.570
+and then runs a map on that computer
+number
+
+0:31:32.570,0:31:36.460
+so we want to have things like averages
+particularly if you can
+
+0:31:36.460,0:31:39.520
+and there's going to be a a big problem
+here
+
+0:31:39.520,0:31:40.510
+if we eat
+
+0:31:40.510,0:31:42.780
+you over here and we say
+
+0:31:42.780,0:31:44.180
+average
+
+0:31:44.180,0:31:48.520
+dysfunction came in with our pile up
+
+0:31:48.520,0:31:52.180
+well i think that that espy lab is
+pretty cool
+
+0:31:52.180,0:31:53.600
+hides things
+
+0:31:53.600,0:31:58.100
+and typically opine python programmers
+always like to be explicit saying where
+
+0:31:58.100,0:32:00.440
+the models come from
+
+0:32:00.440,0:32:01.760
+which for the code
+
+0:32:01.760,0:32:03.710
+gives you a particular function
+
+0:32:03.710,0:32:04.629
+and doing these
+
+0:32:04.629,0:32:08.850
+massive imports were you just take
+entire project and pull in tears
+
+0:32:08.850,0:32:10.540
+uh... working space
+
+0:32:10.540,0:32:13.530
+museo have no idea where average came
+from
+
+0:32:13.530,0:32:17.240
+and and i have to tell you the average
+comes from something called num five so
+
+0:32:17.240,0:32:19.220
+we've got to go get numb by it
+
+0:32:19.220,0:32:20.940
+and find average
+
+0:32:20.940,0:32:24.570
+if things like plotkin average on our
+part of the normal python shell so we
+
+0:32:24.570,0:32:27.350
+have to bring them back into one
+
+0:32:27.350,0:32:28.950
+so we'll have to do
+
+0:32:28.950,0:32:30.380
+imports
+
+0:32:30.380,0:32:32.830
+non-buying
+
+0:32:32.830,0:32:34.700
+if we use something a lot
+
+0:32:34.700,0:32:37.730
+make an alias for two comes into the
+different name
+
+0:32:37.730,0:32:39.139
+because it has
+
+0:32:39.139,0:32:40.940
+and pete
+
+0:32:40.940,0:32:44.470
+normally i wouldn't trade heat you guys
+something like this but everybody does
+
+0:32:44.470,0:32:45.560
+it
+
+0:32:45.560,0:32:48.460
+so if you read someone else's
+co-dependency
+
+0:32:48.460,0:32:53.680
+and p dot all over in vertices stuck in
+my notes accidentally
+
+0:32:53.680,0:32:57.000
+happen or show you that import ads
+
+0:32:57.000,0:33:00.210
+so what you can do here here is the
+creating a new name for it so we could
+
+0:33:00.210,0:33:03.440
+say in four prior prior to something
+else to we wanted
+
+0:33:03.440,0:33:07.330
+we could say
+
+0:33:07.330,0:33:09.250
+annoying name
+
+0:33:09.250,0:33:12.720
+and we could then refer to it as some
+really annoying name
+
+0:33:12.720,0:33:14.660
+but i don't want to do that
+
+0:33:14.660,0:33:19.280
+this is one everybody seems to do so
+we're just gonna stick with it
+
+0:33:19.280,0:33:20.830
+so we don't need to say
+
+0:33:20.830,0:33:22.170
+and p dot
+
+0:33:22.170,0:33:23.640
+coverage
+
+0:33:23.640,0:33:28.330
+and p dot average if you want to see
+that was right over here and uh...
+
+0:33:28.330,0:33:29.889
+i fight on terminal
+
+0:33:29.889,0:33:33.650
+will say imports
+
+0:33:33.650,0:33:35.749
+here in implied as
+
+0:33:35.749,0:33:36.940
+and he
+
+0:33:36.940,0:33:39.020
+and then you can see emptied period
+
+0:33:39.020,0:33:43.150
+and then the tab ki and you'll see all
+the things that come in
+
+0:33:43.150,0:33:45.000
+umpire
+
+0:33:45.000,0:33:46.520
+so it's got lots of
+
+0:33:46.520,0:33:48.419
+fun stuff in there
+
+0:33:48.419,0:33:50.550
+that you can going through a cure
+
+0:33:50.550,0:33:51.970
+leisure
+
+0:33:51.970,0:33:53.340
+site it actually has
+
+0:33:53.340,0:33:55.360
+average
+
+0:33:55.360,0:33:58.940
+i apologize is a little more confusing
+than i would like to be but i'm trying
+
+0:33:58.940,0:34:01.350
+to follow the content of the people tend
+to use
+
+0:34:01.350,0:34:03.440
+so their function now
+
+0:34:03.440,0:34:04.890
+it should hopefully
+
+0:34:04.890,0:34:07.670
+compute the average x and y
+
+0:34:07.670,0:34:14.519
+so why would go ahead and try it save
+print x
+
+0:34:14.519,0:34:17.749
+and then remember to save
+
+0:34:17.749,0:34:20.049
+so control x control s
+
+0:34:20.049,0:34:23.909
+there should be no stars down here at
+the bottom
+
+0:34:23.909,0:34:25.499
+so could you tell us
+
+0:34:25.499,0:34:28.079
+will see that we have a wanted up high
+in there
+
+0:34:28.079,0:34:31.139
+and i cross my fingers will seem run
+
+0:34:31.139,0:34:32.999
+wonder
+
+0:34:32.999,0:34:34.749
+an agreement
+
+0:34:34.749,0:34:36.899
+hope it works hit enter
+
+0:34:36.899,0:34:38.989
+gets what he did nothing
+
+0:34:38.989,0:34:41.039
+so you have no idea why
+
+0:34:41.039,0:34:42.149
+bring the scripts
+
+0:34:42.149,0:34:43.829
+printed absolutely nothing
+
+0:34:43.829,0:34:45.940
+and why didn't the load anything
+
+0:34:45.940,0:34:48.269
+friend blvd
+
+0:34:48.269,0:34:50.979
+exact really never called the function
+
+0:34:50.979,0:34:52.090
+let's not run it
+
+0:34:52.090,0:34:54.149
+will do in civil duty import
+
+0:34:54.149,0:34:55.489
+wonder
+
+0:34:55.489,0:34:58.439
+like we did last time and then we'll say
+wonder
+
+0:34:58.439,0:34:59.529
+a period
+
+0:34:59.529,0:35:01.459
+lah tab
+
+0:35:01.459,0:35:04.800
+and bullsandbears actually wanderlust
+down here
+
+0:35:04.800,0:35:06.579
+wanderlust
+
+0:35:06.579,0:35:12.239
+and to put his or her run that function
+with inside of our wander model
+
+0:35:12.239,0:35:13.679
+presenter
+
+0:35:13.679,0:35:17.969
+and we're gonna find our first set of
+bugs that we didn't know about
+
+0:35:17.969,0:35:19.239
+rotex
+
+0:35:19.239,0:35:21.690
+also comes from num buying and i missed
+
+0:35:21.690,0:35:23.619
+and p dot there
+
+0:35:23.619,0:35:24.619
+hopefully
+
+0:35:24.619,0:35:26.909
+i don't miss any more of them
+
+0:35:26.909,0:35:28.289
+so now
+
+0:35:28.289,0:35:29.939
+if we did
+
+0:35:29.939,0:35:31.449
+import
+
+0:35:31.449,0:35:35.799
+it's not gonna work so import only works
+the first time and then it's
+
+0:35:35.799,0:35:37.180
+kind words cashed
+
+0:35:37.180,0:35:40.579
+it's bloated and and they operate system
+tries to beat
+
+0:35:40.579,0:35:44.399
+careful about keeping around for doesn't
+try to work harder than it has to do
+
+0:35:44.399,0:35:45.759
+this
+
+0:35:45.759,0:35:46.929
+and run it
+
+0:35:46.929,0:35:52.239
+is exactly same bug we have to do a
+reload
+
+0:35:52.239,0:35:53.720
+so there was reloaded
+
+0:35:53.720,0:35:56.199
+and now if we go back up and money
+
+0:35:56.199,0:35:59.869
+gave me her average are exxon our lives
+
+0:35:59.869,0:36:01.429
+remember when you guys
+
+0:36:01.429,0:36:05.699
+type of stuff and python karen berry
+much about your indentation
+
+0:36:05.699,0:36:06.919
+so if you're deaf
+
+0:36:06.919,0:36:11.039
+for function is not on the left hand
+side of the spring
+
+0:36:11.039,0:36:12.799
+you're going to have problems
+
+0:36:12.799,0:36:15.179
+so if you have any extra spaces in here
+
+0:36:15.179,0:36:17.539
+like say something like that
+
+0:36:17.539,0:36:20.420
+it's not going to work see one of the
+all the way up against the left-hand
+
+0:36:20.420,0:36:22.169
+column
+
+0:36:22.169,0:36:25.649
+and remember to use the tab he too
+intense
+
+0:36:25.649,0:36:27.989
+sify pressed happen here
+
+0:36:27.989,0:36:31.890
+give invasion scared looks old walkie
+econnect cabinet will take you right
+
+0:36:31.890,0:36:33.929
+back to the right indentation
+
+0:36:33.929,0:36:37.699
+let me max do the work for you for
+indentation
+
+0:36:37.699,0:36:39.929
+it's not going to try and count
+
+0:36:39.929,0:36:41.549
+spaces
+
+0:36:41.549,0:36:46.589
+and he imported singaporean saying he
+will load
+
+0:36:46.589,0:36:50.549
+yet once you've important you have to do
+a remote from downtown
+
+0:36:50.549,0:36:54.329
+are you gonna call the function so you
+have parentheses after
+
+0:36:54.329,0:36:55.669
+yet so
+
+0:36:55.669,0:37:00.619
+you can also put the cursor analysis is
+actually english words of click on that
+
+0:37:00.619,0:37:03.169
+he could do price pal
+
+0:37:03.169,0:37:04.669
+method dollar
+
+0:37:04.669,0:37:08.159
+and see how it saying at this point
+misspelled
+
+0:37:08.159,0:37:11.119
+so prices here are hoping it will give
+you everything
+
+0:37:11.119,0:37:13.909
+surprise zero speedy yet
+
+0:37:13.909,0:37:15.399
+guessed by now
+
+0:37:15.399,0:37:20.990
+note so that even though the modules
+united steel wanted on one who knows
+
+0:37:20.990,0:37:27.289
+us he had a phone sex with different
+he'd had this file name in him
+
+0:37:27.289,0:37:29.069
+co had
+
+0:37:29.069,0:37:31.319
+i had been working there for a final
+
+0:37:31.319,0:37:33.289
+and so i have a wall follow
+
+0:37:33.289,0:37:38.139
+seem to change that to be myself
+
+0:37:38.139,0:37:41.689
+socio it's got to do you think that that
+that means that you would
+
+0:37:41.689,0:37:44.529
+we don't have anything because
+
+0:37:44.529,0:37:48.739
+the without the parentheses you're just
+actually referencing the functions the
+
+0:37:48.739,0:37:52.419
+election call parentheses hopeful
+
+0:37:52.419,0:37:57.099
+uh... yet is it so well uses friends
+about when you are ron one that's what
+
+0:37:57.099,0:37:58.319
+this means
+
+0:37:58.319,0:37:59.720
+i think a lot of missus
+
+0:37:59.720,0:38:03.069
+people watching and every time we do it
+just repeat yourself which one of the
+
+0:38:03.069,0:38:04.029
+human body
+
+0:38:04.029,0:38:06.759
+and hopefully it's terrific
+
+0:38:06.759,0:38:09.549
+here i will start picking up those
+things happen
+
+0:38:09.549,0:38:11.920
+and on tuesday we're going to keep going
+through this
+
+0:38:11.920,0:38:15.920
+i wold do this all up in the video so if
+you want to watch that video before the
+
+0:38:15.920,0:38:20.210
+next class that'll be great then we can
+go through it and make sure everybody's
+
+0:38:20.210,0:38:23.109
+up to speed on plotting
+
+0:38:23.109,0:38:27.319
+you get here for all of your data so
+can't be able to plot is super important
+
+0:38:27.319,0:38:28.529
+general research
+
+0:38:28.529,0:38:31.009
+for trying to all he really comfortable
+with it
+

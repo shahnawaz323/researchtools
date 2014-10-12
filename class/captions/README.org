@@ -1,0 +1,18 @@
+
+* Introduction
+
+These are the caption files for YouTube.  They start off as the
+machine transcriptions downloaded from YouTube.  The transripts then
+*heavily* edited to get them to be close to what I said.  YouTube's
+auto transcription does not work well for technical discussions.
+
+I welcome transcript patches!  I would be especially excited to have
+translations into other languages.
+
+These lecture(s) failed the YouTube process and have nothing to start
+with:
+
+- Lecture 13
+- Lecture 20
+
+ 

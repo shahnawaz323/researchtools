@@ -1,0 +1,722 @@
+#+STARTUP: showall
+
+#+TITLE:     Class 22: Python - parsing binary data 2 - SBET IMU data
+#+AUTHOR:    Kurt Schwehr
+#+EMAIL:     schwehr@ccom.unh.edu
+#+DATE:      <2011-11-15 Tue>
+#+DESCRIPTION: Marine Research Data Manipulation and Practices
+#+KEYWORDS: struct sbet imu navigation binary
+#+LANGUAGE:  en
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:nil skip:t d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:nil ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+LINK_HOME: http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/
+
+* Announcements
+
+** Google Oceans
+
+I will be at CCOM/JHC through the end of the year.
+
+** NSF Sample and Data Policy
+
+National Science Foundation's
+Division of Ocean Sciences Sample and Data Policy:
+
+http://www.nsf.gov/pubs/2011/nsf11060/nsf11060.pdf
+
+** RVTEC
+
+- http://www.unols.org/committees/rvtec/index.html
+- http://www.unols.org/committees/rvtec/Videos/video_library.html
+- http://www.unols.org/committees/rvtec/doc_depot/doc_depot.html
+
+** FOSS4G videos
+
+- http://www.fosslc.org/drupal/search/node/foss4g2011
+- http://www.postgresonline.com/journal/archives/229-Many-PostGIS-FOSS4G-2011-videos-have-landed.html
+
+Frank Warmerdam on GDAL Raster Perfomance
+
+http://www.fosslc.org/drupal/content/tuning-gdal-raster-performance
+
+* See Also
+
+- http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/python-binary-files.org
+- YouTube Videos on Bits, Bytes and binary
+  - [[http://www.youtube.com/user/MyWhyU?v%3D5sS7w-CMHkU][3 - Decimal, Binary, Octal, & Hexadecimal]]
+  - [[http://www.youtube.com/watch?v%3Dvc-9uASeU7I][Binary (full understanding in 10 min)]]
+  - [[http://www.youtube.com/watch?v%3DUmSelKbP4sc][Computer Architecture Lesson 1: Bits and Bytes]]
+- Wikipedia
+  - http://en.wikipedia.org/wiki/Integer_%28computer_science%29
+  - http://en.wikipedia.org/wiki/Floating_point
+  - http://en.wikipedia.org/wiki/Binary_numeral_system
+
+* Public Mercurial (hg) repository                               :hg:vc:dvcs:
+
+[[http://mercurial.selenic.com/][Mercurial]] is a distributed version control system (DVCS).  It is very
+similar to [[http://git-scm.com/][git]].  [[http://subversion.apache.org/][Subversion]] (svn) is a more traditional version
+control system.
+
+https://bitbucket.org/schwehr/researchtools
+
+#+BEGIN_SRC sh
+mkdir projects
+cd projects
+sudo apt-get install mercurial # hg
+hg clone https://bitbucket.org/schwehr/researchtools
+tree researchtools
+#+END_SRC
+
+If you are inside of CCOM, you can read more about Mercurial on the
+internal wiki:
+
+http://wiki.ccom.unh.edu/index.php/Mercurial
+
+Dolly the cloned sheep:
+
+http://en.wikipedia.org/wiki/Dolly_(sheep)
+
+* Setup
+
+Open emacs
+
+Open a terminal and get going:
+
+#+BEGIN_SRC sh
+# update your mercurial repository of the class notes
+cd ~/projects/researchtools
+hg pull
+hg update
+
+mkdir -p ~/class/22
+cd ~/class/22
+
+pwd
+# Make sure you are in the right location
+# ~/class/22
+
+# Rather than downloading the org file from a web browser
+# or using wget/curl, you can now get it from the researchtools
+# mercurial revision control repository
+cp ~/projects/researchtools/class/22-python-binary-files-part-2.org .
+
+curl -O http://vislab-ccom.unh.edu/~schwehr/Classes/2011/esci895-researchtools/examples/21/sample.sbet.bz2
+bunzip2 sample.sbet.bz2
+
+md5sum sample.sbet 
+196c21f16f07ceae180888b12e9edc56  sample.sbet
+#+END_SRC
+
+Start ipython in the terminal
+
+#+BEGIN_SRC python
+logstart -o -r log-class-22.py append
+
+import struct
+import math
+
+sbet_file = open('sample.sbet')
+sbet_data = sbet_file.read()
+
+whos
+#+END_SRC
+
+* Functions and arguments
+
+See also:
+
+- http://docs.python.org/tutorial/controlflow.html#defining-functions
+- http://www.penzilla.net/tutorials/python/functions/
+- [[http://www.youtube.com/watch?v%3Dy_2uy1TOH1M][Python Programming Tutorial - 27 - Building Functions]] on YouTube
+
+Since functions are a bit tricky, we should go over them again.  You
+start a function with "def" followed by the name of a function, "()"
+and a ":" to finish the function.
+
+Open the file ~/class/22/sonar.py and put this in it:
+
+#+BEGIN_SRC python
+def setfrequency():
+    print 'Setting frequency'
+    # Write code here to set the frequency
+#+END_SRC
+
+*Be sure to save the file*.  That means that the bottom left of your
+emacs window should have a status of "-U:---" with *no* "**"
+
+Now in ipython, run it to see what happens:
+
+#+BEGIN_SRC python
+run sonar
+#+END_SRC
+
+You get nothing, because we have not called the function.  So add a
+function call to your code that uses setfrequency:
+
+#+BEGIN_SRC python
+# "Define" or create the function
+def setfrequency():
+    print 'Setting frequency'
+    # Write code here to set the frequency
+
+# Use the function
+setfrequency()
+#+END_SRC
+
+Run it again and you should see this, but the command number =[16]=
+will be different for you:
+
+#+BEGIN_EXAMPLE 
+In [16]: run sonar
+Setting frequency
+#+END_EXAMPLE
+
+But if we want to set a specific frequency for the sonar, we must be
+able to pass in the frequency as an "argument" or "parameter" to the
+function.  That is done by putting a name inside the "()".  The
+argument name is *only used inside the function*.  It has no meaning
+outside of the function.
+
+Change the "def" line and the print right after it to have a parameter
+called "freq"
+
+#+BEGIN_SRC python
+# "Define" or create the function
+def setfrequency(freq):
+    print 'Setting frequency to', freq, 'Hz'
+    # Write code here to set the frequency
+
+# Use the function
+setfrequency()
+#+END_SRC 
+
+Now if we run the code, we get an error!
+
+#+BEGIN_EXAMPLE 
+In [17]: run sonar
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+
+/home/researchtools/class/test-22/sonar.py in <module>()
+      6 
+      7 # Use the function
+
+----> 8 setfrequency()
+      9 
+     10 
+
+TypeError: setfrequency() takes exactly 1 argument (0 given)
+WARNING: Failure executing file: <sonar.py>
+#+END_EXAMPLE
+
+By calling "setfrequency()", we did not pass in a value for freq.
+Oops!  
+
+For arguments, we can assign a "default" value that will be used if
+nothing is passed in when calling (aka using) the function.  You don't
+have to do this, but it is often a smart thing to do.  Why don't we
+make the default frequency be 12kHz (12000 cycles per second).
+Change the def line to look like this:
+
+#+BEGIN_SRC python
+def setfrequency(freq = 12000):
+#+END_SRC
+
+Now when you run the function, you will see this:
+
+#+BEGIN_EXAMPLE 
+In [18]: run sonar
+Setting frequency to 12000
+#+END_EXAMPLE
+
+So what do we do now if we want to change it to a different frequency?
+We need to call =setfrequency= with a different number.  Let's double
+the frequency to 24kHz.  Change the call to look like this:
+
+#+BEGIN_SRC python
+setfrequency(24000)
+#+END_SRC
+
+Running the sonar.py code in ipython looks like this:
+
+#+BEGIN_EXAMPLE 
+In [19]: run sonar
+Setting frequency to 24000
+#+END_EXAMPLE
+
+What if we want to have a variable that has the frequency?  Try making
+a variable called =my_sonar_freq= and set it to 15kHz:
+
+#+BEGIN_SRC python
+# "Define" or create the function
+def setfrequency(freq = 12000):
+    print 'Setting frequency to', freq
+    # Write code here to set the frequency
+
+my_sonar_freq = 15000
+
+# Use the function
+setfrequency( my_sonar_freq )
+#+END_SRC
+
+Now run it:
+
+#+BEGIN_EXAMPLE 
+run sonar
+Setting frequency to 15000
+#+END_EXAMPLE
+
+You can even have a lookup table using a dictionary.
+
+#+BEGIN_SRC python
+# "Define" or create the function
+def setfrequency(freq = 12000):
+    print 'Setting frequency to', freq
+    # Write code here to set the frequency
+
+sonar_freq_table = {
+    'em122': 12000,
+    'knudsen': 3500,
+    }
+
+setfrequency( sonar_freq_table['knudsen'] )
+#+END_SRC
+
+#+BEGIN_EXAMPLE 
+In [21]: run sonar
+Setting frequency to 3500
+#+END_EXAMPLE
+
+Hopefully that gives you a better field for functions!  Now we will
+get back to creating our sbet.py module with functions to handle
+reading IMU navigation data.
+
+* Last time, where were we?
+
+Last time we were editing ~/class/22/sbet.py.  Here is a cleaned up version of
+where we left off.  I have removed the extra print statements.
+
+#+BEGIN_SRC python
+# Decode Applanix POSPac SBET IMU binary files
+
+def decode(data):
+    'Decipher a SBET datagram from binary'
+    print 'Data length:', len(data)
+    
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    print 'Read this many bytes:',len(sbet_data)
+
+    decode(sbet_data)
+    
+    print 'Finishing main'
+#+END_SRC
+
+Open ~/class/22/sbet.py and put the above code into the file.
+
+* Writing a decode method for an sbet data record 
+
+Get started on working with your sbet file in ipython
+
+#+BEGIN_SRC python
+import sbet
+sbet.decode()
+
+# remember that after you have done an import, you must use this to
+# get updates
+reload sbet
+#+END_SRC
+
+Try out the decode function.  If you run =whos=, you will see we have
+an sbet_data variable in our workspace.
+
+#+BEGIN_SRC python
+sbet.decode(sbet_data)
+# Data length: 22712
+#+END_SRC
+
+We can also call our main function:
+
+#+BEGIN_SRC python
+sbet.main()
+# Starting main
+# Read this many bytes: 22712
+# Data length: 22712
+# Finishing main
+#+END_SRC
+
+It is time improve decode to start pulling apart the SBET data into
+values that we can use.  Add imports for math and struct.  Then change
+decode to unpack the 17 doubles in a SBET report that we discussed in
+class 21.   
+
+The =values= variable will be a list of 17 values
+
+#+BEGIN_SRC python
+  import math
+  import struct
+  
+  def decode(data):
+      "Decipher a SBET datagram from binary"
+      print "Start decoding datagram"
+      values = struct.unpack('17d',data[0:8*17])
+  
+      print 'type of values:', type(values)
+      print 'contents of values:', values
+  
+      time = values[0]
+  
+      latitude = values[1]
+      lat_deg = math.degrees(latitude)
+  
+      longitude = values[2]
+      lon_deg = math.degrees(longitude)
+  
+      print 'results:', time, lat_deg, lon_deg
+#+END_SRC
+
+We also would like to make this a run-able script from within ipython,
+so add this to the end of sbet.py:
+
+#+BEGIN_SRC python
+if __name__=='__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC
+
+And add this as the very first line of sbet.py to make it run-able
+from the bash shell:
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+#+END_SRC
+
+To complete making sbet.py work from the bash prompt, you need to set
+the file as executable with chmod.  Remember that "!" tells ipython
+that we want to run a shell command:
+
+#+BEGIN_SRC python
+!chmod +x sbet.py
+
+ls -l sbet.py
+# -rwxr-xr-x 1 researchtools researchtools 739 2011-11-15 08:00 sbet.py*
+
+# try running it!  There are now two ways
+
+# Using bash from inside of ipython:
+!sbet.py
+# sh: sbet.py: not found
+
+# Oops!  We need to tell bash where the program is located 
+!./sbet.py
+
+# It should print out quite a bit here
+
+# Or you can run it directly from ipython
+run sbet
+#+END_SRC
+
+Which will look like this:
+
+#+BEGIN_EXAMPLE 
+In [29]: run sbet
+starting to run script...
+Starting main
+Read this many bytes: 22712
+Start decoding datagram
+type of values: <type 'tuple'>
+contents of values: (334959.0048233234, 1.0549522638507869,
+-2.559965741819528, 12.826300557342815, 10.437825046453915,
+0.998228318178983, 0.18282804536664027, -0.0026283394812042344,
+0.11416603057936824, -0.09985686530029529, -0.40154673926674145,
+-0.8249097558096672, -0.3413483211034812, 0.07018300645653144,
+0.021320176833628756, 0.029000032024608147, -0.006807197876212325) 
+results: 334959.004823 60.4443123064 -146.675232704
+Finishing main
+script done!
+#+END_EXAMPLE
+
+Rather than working with the values list and having to know the number
+position of each variable, we should create a dictionary like we did
+last time.  Add =field_names= to the sbet.py file and replace the
+=decode= function with this decode
+
+#+BEGIN_SRC python
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+def decode(data):
+    "Decipher a SBET datagram from binary"
+    values = struct.unpack('17d',data[0:8*17])
+
+    # Create a dictionary for all the values
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    print 'results:'
+    for key in sbet_values:
+        print '    ', key, sbet_values[key]
+#+END_SRC
+
+The results of running it should look like this:
+
+#+BEGIN_EXAMPLE 
+In [30]: run sbet
+starting to run script...
+Starting main
+Read this many bytes: 22712
+results:
+     x_acceleration -0.82490975581
+     x_angular_rate 0.0213201768336
+     platform_heading -0.0998568653003
+     y_angular_rate 0.0290000320246
+     pitch 0.114166030579
+     altitude 12.8263005573
+     z_vel 0.182828045367
+     lat_deg 60.4443123064
+     longitude -2.55996574182
+     roll -0.0026283394812
+     y_vel 0.998228318179
+     y_acceleration -0.341348321103
+     time 334959.004823
+     latitude 1.05495226385
+     lon_deg -146.675232704
+     z_acceleration 0.0701830064565
+     z_angular -0.00680719787621
+     x_vel 10.4378250465
+     wander_angle -0.401546739267
+Finishing main
+script done!
+#+END_EXAMPLE
+
+Rather than printing from inside of the sbet =decode= function, we
+should return the dictionary to main.
+
+First add this to the imports at the top of the sbet.py file.  pprint
+stands for "pretty print".
+
+#+BEGIN_SRC python
+from pprint import pprint
+#+END_SRC
+
+Now replace the print and for loop at the end of =decode= so that
+decode looks like this with just a =return sbet_values=.
+
+#+BEGIN_SRC python
+def decode(data):
+    "Decipher a SBET datagram from binary"
+    values = struct.unpack('17d',data[0:8*17])
+
+    # Create a dictionary for all the values
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values  # Send the sbet_values dictionary back to the caller
+#+END_SRC
+
+Now the =main= function needs to handle the printing of the
+dictionary.
+
+#+BEGIN_SRC python
+def main():
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    datagram = decode(sbet_data)
+    pprint(datagram)  # Note that we are using pretty print, not print
+#+END_SRC
+
+You should see:
+
+#+BEGIN_EXAMPLE 
+In [34]: run sbet.py
+starting to run script...
+Starting main
+Read this many bytes: 22712
+{'altitude': 12.826300557342815,
+ 'lat_deg': 60.444312306421736,
+ 'latitude': 1.0549522638507869,
+ 'lon_deg': -146.6752327043359,
+ 'longitude': -2.559965741819528,
+ 'pitch': 0.11416603057936824,
+ 'platform_heading': -0.09985686530029529,
+ 'roll': -0.0026283394812042344,
+ 'time': 334959.0048233234,
+ 'wander_angle': -0.40154673926674145,
+ 'x_acceleration': -0.8249097558096672,
+ 'x_angular_rate': 0.021320176833628756,
+ 'x_vel': 10.437825046453915,
+ 'y_acceleration': -0.3413483211034812,
+ 'y_angular_rate': 0.029000032024608147,
+ 'y_vel': 0.998228318178983,
+ 'z_acceleration': 0.07018300645653144,
+ 'z_angular': -0.006807197876212325,
+ 'z_vel': 0.18282804536664027}
+Finishing main
+script done!
+#+END_EXAMPLE
+
+
+* History
+1: _ip.magic("logstart -o -r log-class-22.py append")
+2 : _ip.system("ls -F -l")
+3 : import struct
+4 : import numpy
+5 : import math
+6 : sbet_file = open('sample.sbet')
+7 : sbet_data = sbet_file.read()
+8 : _ip.magic("history ")
+9 : _ip.magic("whos ")
+10: _ip.system("ls -F ")
+11: _ip.magic("run sonar")
+12: _ip.magic("run sonar")
+13: _ip.magic("run sonar")
+14: _ip.magic("run sonar")
+15: _ip.magic("run sonar")
+16: _ip.magic("run sonar")
+17: _ip.magic("run sonar")
+18: _ip.magic("run sonar")
+19: import sbet
+20: del sbet
+21: _ip.magic("whos ")
+22: import sbet
+23: sbet.decode()
+24: sbet.decode(sbet_data)
+25: reload(sbet)
+26: sbet.main()
+27: 8*17
+28: reload(sbet)
+29: sbet.main()
+30: _ip.system("ls -F -l")
+31: _ip.system("chmod +x sbet.py")
+32: _ip.system("ls -F -l")
+33: _ip.system("sbet.py")
+34: _ip.system("./sbet.py")
+35: _ip.magic("run sbet.py")
+36: _ip.magic("run sbet")
+37: _ip.magic("whos ")
+38: from pprint import pprint
+39: pprint(sonar_freq_table)
+40: _ip.magic("run sbet")
+41: _ip.magic("history ")
+#+END_SRC
+
+#+BEGIN_SRC python
+ls -l
+import struct
+import numpy
+import math
+sbet_file = open('sample.sbet')
+sbet_data = sbet_file.read()
+history
+whos
+ls
+run sonar
+# ... more run sonar commands ...
+run sonar
+import sbet
+del sbet
+whos
+import sbet
+sbet.decode()
+sbet.decode(sbet_data)
+reload sbet
+#[Out]# <module 'sbet' from 'sbet.pyc'>
+sbet.main()
+8*17
+#[Out]# 136
+reload sbet
+#[Out]# <module 'sbet' from 'sbet.py'>
+sbet.main()
+ls -l
+!chmod +x sbet.py
+ls -l
+!sbet.py
+!./sbet.py
+run sbet.py
+run sbet
+whos
+from pprint import pprint
+pprint(sonar_freq_table)
+run sbet
+history
+#+END_SRC
+
+sonar.py:
+
+#+BEGIN_SRC python
+
+# "Define" or create the fuction
+def setfrequency(freq = 12000, name='unknown'):
+    print 'Setting frequency', freq, 'Hz', 'name is', name
+    # Write code here to set the frequency
+
+sonar_freq_table = {
+    'em122': 12000,
+    'knudsen': 3500,
+    }
+
+setfrequency( sonar_freq_table['knudsen'], 'R/V Super Slow' )
+#+END_SRC
+
+sbet.py:
+
+#+BEGIN_SRC python
+#!/usr/bin/env python
+
+# Decode Applanix POSPac SBET IMU binary files
+
+import struct
+import math
+
+# This says, import the pprint function from the pprint module
+# Yes, this is very confusing
+from pprint import pprint
+
+field_names = ('time', 'latitude', 'longitude', 'altitude', \
+          'x_vel', 'y_vel', 'z_vel', \
+          'roll', 'pitch', 'platform_heading', 'wander_angle', \
+          'x_acceleration', 'y_acceleration', 'z_acceleration', \
+          'x_angular_rate', 'y_angular_rate', 'z_angular')
+
+def decode(data):
+    'Decipher a SBET datagram from binary'
+    print 'Data length:', len(data)
+    values = struct.unpack('17d',data[0:8*17])
+
+    sbet_values = dict(zip (field_names, values))
+
+    sbet_values['lat_deg'] = math.degrees(sbet_values['latitude'])
+    sbet_values['lon_deg'] = math.degrees(sbet_values['longitude'])
+
+    return sbet_values
+        
+def main():
+    print 'Starting main'
+    sbet_file = open('sample.sbet')
+    sbet_data = sbet_file.read()
+
+    print 'Read this many bytes:', len(sbet_data)
+
+    datagram = decode(sbet_data)
+    pprint(datagram)
+
+    print 'Finish main'
+    
+if __name__ == '__main__':
+    print 'starting to run script...'
+    main()
+    print 'script done!'
+#+END_SRC
